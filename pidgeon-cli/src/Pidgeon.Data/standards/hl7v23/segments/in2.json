@@ -1,0 +1,730 @@
+{
+  "code": "IN2",
+  "name": "Insurance additional info",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The IN2 segment contains additional insurance policy coverage and benefit information necessary for proper billing and reimbursement. Fields used by this segment are defined by HCFA or other regulatory agencies.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "IN2.1",
+      "field_description": "Insured's Employee ID",
+      "length": "59",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "IN2.2",
+      "field_description": "Insured's Social Security Number",
+      "length": "11",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "IN2.3",
+      "field_description": "Insured's Employer Name",
+      "length": "130",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "IN2.4",
+      "field_description": "Employer Information Data",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0139"
+    },
+    {
+      "position": 5,
+      "field_name": "IN2.5",
+      "field_description": "Mail Claim Party",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0137"
+    },
+    {
+      "position": 6,
+      "field_name": "IN2.6",
+      "field_description": "Medicare Health Ins Card Number",
+      "length": "15",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "IN2.7",
+      "field_description": "Medicaid Case Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "IN2.8",
+      "field_description": "Medicaid Case Number",
+      "length": "15",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "IN2.9",
+      "field_description": "Champus Sponsor Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "IN2.10",
+      "field_description": "Champus ID Number",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "IN2.11",
+      "field_description": "Dependent of Champus Recipient",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "IN2.12",
+      "field_description": "Champus Organization",
+      "length": "25",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "IN2.13",
+      "field_description": "Champus Station",
+      "length": "25",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "IN2.14",
+      "field_description": "Champus Service",
+      "length": "14",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0140"
+    },
+    {
+      "position": 15,
+      "field_name": "IN2.15",
+      "field_description": "Champus Rank/Grade",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0141"
+    },
+    {
+      "position": 16,
+      "field_name": "IN2.16",
+      "field_description": "Champus Status",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0142"
+    },
+    {
+      "position": 17,
+      "field_name": "IN2.17",
+      "field_description": "Champus Retire Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "IN2.18",
+      "field_description": "Champus Non-Avail Cert on File",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 19,
+      "field_name": "IN2.19",
+      "field_description": "Baby Coverage",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 20,
+      "field_name": "IN2.20",
+      "field_description": "Combine Baby Bill",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 21,
+      "field_name": "IN2.21",
+      "field_description": "Blood Deductible",
+      "length": "1",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "IN2.22",
+      "field_description": "Special Coverage Approval Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "IN2.23",
+      "field_description": "Special Coverage Approval Title",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "IN2.24",
+      "field_description": "Non-Covered Insurance Code",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0143"
+    },
+    {
+      "position": 25,
+      "field_name": "IN2.25",
+      "field_description": "Payor ID",
+      "length": "59",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "IN2.26",
+      "field_description": "Payor Subscriber ID",
+      "length": "59",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "IN2.27",
+      "field_description": "Eligibility Source",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0144"
+    },
+    {
+      "position": 28,
+      "field_name": "IN2.28",
+      "field_description": "Room Coverage Type/Amount",
+      "length": "25",
+      "data_type": "CM_RMC",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "IN2.29",
+      "field_description": "Policy Type/Amount",
+      "length": "25",
+      "data_type": "CM_PTA",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "IN2.30",
+      "field_description": "Daily Deductible",
+      "length": "25",
+      "data_type": "CM_DDI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "IN2.31",
+      "field_description": "Living Dependency",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0223"
+    },
+    {
+      "position": 32,
+      "field_name": "IN2.32",
+      "field_description": "Ambulatory Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0009"
+    },
+    {
+      "position": 33,
+      "field_name": "IN2.33",
+      "field_description": "Citizenship",
+      "length": "4",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0171"
+    },
+    {
+      "position": 34,
+      "field_name": "IN2.34",
+      "field_description": "Primary Language",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0296"
+    },
+    {
+      "position": 35,
+      "field_name": "IN2.35",
+      "field_description": "Living Arrangement",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0220"
+    },
+    {
+      "position": 36,
+      "field_name": "IN2.36",
+      "field_description": "Publicity Indicator",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0215"
+    },
+    {
+      "position": 37,
+      "field_name": "IN2.37",
+      "field_description": "Protection Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 38,
+      "field_name": "IN2.38",
+      "field_description": "Student Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0231"
+    },
+    {
+      "position": 39,
+      "field_name": "IN2.39",
+      "field_description": "Religion",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0006"
+    },
+    {
+      "position": 40,
+      "field_name": "IN2.40",
+      "field_description": "Mother s Maiden Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 41,
+      "field_name": "IN2.41",
+      "field_description": "Nationality Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0212"
+    },
+    {
+      "position": 42,
+      "field_name": "IN2.42",
+      "field_description": "Ethnic Group",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0189"
+    },
+    {
+      "position": 43,
+      "field_name": "IN2.43",
+      "field_description": "Marital Status",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0002"
+    },
+    {
+      "position": 44,
+      "field_name": "IN2.44",
+      "field_description": "Employment Start Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 45,
+      "field_name": "IN2.45",
+      "field_description": "Employment Stop Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 46,
+      "field_name": "IN2.46",
+      "field_description": "Job Title",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 47,
+      "field_name": "IN2.47",
+      "field_description": "Job Code/Class",
+      "length": "20",
+      "data_type": "JCC",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 48,
+      "field_name": "IN2.48",
+      "field_description": "Job Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0311"
+    },
+    {
+      "position": 49,
+      "field_name": "IN2.49",
+      "field_description": "Employer Contact Person Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 50,
+      "field_name": "IN2.50",
+      "field_description": "Employer Contact Person Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 51,
+      "field_name": "IN2.51",
+      "field_description": "Employer Contact Reason",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0222"
+    },
+    {
+      "position": 52,
+      "field_name": "IN2.52",
+      "field_description": "Insured's Contact Person Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 53,
+      "field_name": "IN2.53",
+      "field_description": "Insured s Contact Person Telephone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 54,
+      "field_name": "IN2.54",
+      "field_description": "Insured s Contact Person Reason",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0222"
+    },
+    {
+      "position": 55,
+      "field_name": "IN2.55",
+      "field_description": "Relationship To The Patient Start Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 56,
+      "field_name": "IN2.56",
+      "field_description": "Relationship To The Patient Stop Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 57,
+      "field_name": "IN2.57",
+      "field_description": "Insurance Company Contact Reason",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0232"
+    },
+    {
+      "position": 58,
+      "field_name": "IN2.58",
+      "field_description": "Insurance Company Contact Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 59,
+      "field_name": "IN2.59",
+      "field_description": "Policy Scope",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0312"
+    },
+    {
+      "position": 60,
+      "field_name": "IN2.60",
+      "field_description": "Policy Source",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0313"
+    },
+    {
+      "position": 61,
+      "field_name": "IN2.61",
+      "field_description": "Patient Member Number",
+      "length": "60",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 62,
+      "field_name": "IN2.62",
+      "field_description": "Guarantor's Relationship To Insured",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0063"
+    },
+    {
+      "position": 63,
+      "field_name": "IN2.63",
+      "field_description": "Insured's Telephone Number - Home",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 64,
+      "field_name": "IN2.64",
+      "field_description": "Insured's Employer Telephone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 65,
+      "field_name": "IN2.65",
+      "field_description": "Military Handicapped Program",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 66,
+      "field_name": "IN2.66",
+      "field_description": "Suspend Flag",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 67,
+      "field_name": "IN2.67",
+      "field_description": "Co-pay Limit Flag",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 68,
+      "field_name": "IN2.68",
+      "field_description": "Stoploss Limit Flag",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 69,
+      "field_name": "IN2.69",
+      "field_description": "Insured Organization Name And ID",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 70,
+      "field_name": "IN2.70",
+      "field_description": "Insured Employer Organization Name And ID",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 71,
+      "field_name": "IN2.71",
+      "field_description": "Race",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0005"
+    },
+    {
+      "position": 72,
+      "field_name": "IN2.72",
+      "field_description": "Patient Relationship to Insured",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 72
+}

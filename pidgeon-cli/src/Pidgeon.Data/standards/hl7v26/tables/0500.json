@@ -1,0 +1,29 @@
+{
+  "code": "0500",
+  "name": "Consent Disclosure Level",
+  "version": "HL7 v2.6",
+  "chapter": "Medical Records/Information Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "F",
+      "description": "Full Disclosure",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No Disclosure",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Partial Disclosure",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

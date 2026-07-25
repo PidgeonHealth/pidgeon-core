@@ -1,0 +1,40 @@
+{
+  "code": "JCC",
+  "name": "Job Code/Class",
+  "version": "HL7 v2.5.1",
+  "description": "Example 1: Codified job (where 1 represents the code for Administrator and F represents full time) |1^F^Administrator| \nExample 2: Uncodified job (where job codes are not codified and PT represents part time) |^PT^Analyst|.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "JCC.1",
+      "field_description": "Job Code",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0327"
+    },
+    {
+      "position": 2,
+      "field_name": "JCC.2",
+      "field_description": "Job Class",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0328"
+    },
+    {
+      "position": 3,
+      "field_name": "JCC.3",
+      "field_description": "Job Description Text",
+      "length": "250",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

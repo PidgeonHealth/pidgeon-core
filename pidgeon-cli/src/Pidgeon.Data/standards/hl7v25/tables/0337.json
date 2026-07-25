@@ -1,0 +1,23 @@
+{
+  "code": "0337",
+  "name": "Certification status",
+  "version": "HL7 v2.5",
+  "chapter": "Personnel Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Certified",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Eligible",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

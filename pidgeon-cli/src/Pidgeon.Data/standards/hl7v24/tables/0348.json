@@ -1,0 +1,59 @@
+{
+  "code": "0348",
+  "name": "Special program indicator",
+  "version": "HL7 v2.4",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "EPSDT-CHAP",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "Physically handicapped children’s program",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "03",
+      "description": "Special federal funding",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "04",
+      "description": "Family planning",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "05",
+      "description": "Disability",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "06",
+      "description": "PPV/Medicare 100% payment",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "07",
+      "description": "Induced abortion-danger to life",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "08",
+      "description": "Induced abortion victim rape/incest",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

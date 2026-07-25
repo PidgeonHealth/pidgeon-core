@@ -1,0 +1,143 @@
+{
+  "code": "0203",
+  "name": "Identifier type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AM",
+      "description": "American Express",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AN",
+      "description": "Account number",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BR",
+      "description": "Birth registry number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DI",
+      "description": "Diners Club card",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "DL",
+      "description": "Drivers license number",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DN",
+      "description": "Doctor number",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DS",
+      "description": "Discover Card",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "EI",
+      "description": "Employee number",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "EN",
+      "description": "Employer number",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "GI",
+      "description": "Guarantor internal identifier",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "GN",
+      "description": "Guarantor external identifier",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "MA",
+      "description": "Medicaid number",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "MC",
+      "description": "Medicare number",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "MR",
+      "description": "Medical record number",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "MS",
+      "description": "MasterCard",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "PI",
+      "description": "Patient internal identifier",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "PT",
+      "description": "Patient external identifier",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "RR",
+      "description": "Railroad Retirement number",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "SS",
+      "description": "Social Security number",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "VN",
+      "description": "Visit number",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "VS",
+      "description": "VISA",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "XX",
+      "description": "Organization Identifier",
+      "comment": "",
+      "sort_order": 22
+    }
+  ],
+  "value_count": 22
+}

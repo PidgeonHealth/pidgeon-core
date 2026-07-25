@@ -1,0 +1,50 @@
+{
+  "code": "ODS",
+  "name": "Dietary orders, supplements, and preferences",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "The ORC sequence items of interest to ODS are ORC-1-order control,ORC-2-placer order number, ORC-3filler order number, ORC-7-quantity/timing, ORC-9-date/time of transaction, ORC-10-entered by, and ORC-11-verified by.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ODS.1",
+      "field_description": "Type",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0159"
+    },
+    {
+      "position": 2,
+      "field_name": "ODS.2",
+      "field_description": "Service Period",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "10",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "ODS.3",
+      "field_description": "Diet, Supplement, or Preference Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "20",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "ODS.4",
+      "field_description": "Text Instruction",
+      "length": "80",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "2",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

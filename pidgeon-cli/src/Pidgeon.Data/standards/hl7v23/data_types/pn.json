@@ -1,0 +1,20 @@
+{
+  "code": "PN",
+  "name": "Person Name",
+  "version": "HL7 v2.3",
+  "description": "Example: \n|SMITH^JOHN^J^III^DR^PHD| \n\nThis data type includes multiple free text components. Each component is specified to be an HL7 ST data type. The maximum length of a PN field is 48 characters including component separators. The sending system may send upper- and lowercase or all uppercase. The receiving system may convert to all uppercase if required.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PN.1",
+      "field_description": "Family name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

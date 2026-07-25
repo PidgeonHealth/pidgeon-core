@@ -1,0 +1,47 @@
+{
+  "code": "0404",
+  "name": "Language Proficiency",
+  "version": "HL7 v2.7",
+  "chapter": "Personnel Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "1",
+      "description": "Excellent",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Good",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Fair",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "Poor",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5",
+      "description": "Some (level unknown)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "6",
+      "description": "None",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

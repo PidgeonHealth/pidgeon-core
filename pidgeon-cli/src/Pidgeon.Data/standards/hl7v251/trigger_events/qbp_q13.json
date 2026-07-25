@@ -1,0 +1,70 @@
+{
+  "code": "QBP_Q13",
+  "name": "Query by Parameter Requesting an RTB Tabular Response",
+  "version": "HL7 v2.5.1",
+  "chapter": "Query",
+  "description": "The QBP_Q13 structure supports a Tabular Response and contains the MSH, RDF, RCP, and DSC segments. Its default trigger event is Q13.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QPD",
+      "segment_desc": "Query Parameter Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "RDF",
+      "segment_desc": "Table Row Definition",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "RCP",
+      "segment_desc": "Response Control Parameter",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

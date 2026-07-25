@@ -1,0 +1,76 @@
+{
+  "code": "ADT_A44",
+  "name": "Move account information - patient account number",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "A move has been done at the account identifier level. That is, a PID-18-patient account number associated with one internal identifier (PID-3-patient identifier list) has been moved to another internal identifier.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge patient information segment-",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

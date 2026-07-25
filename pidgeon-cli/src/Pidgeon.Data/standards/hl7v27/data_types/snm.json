@@ -1,0 +1,9 @@
+{
+  "code": "SNM",
+  "name": "String Of Telephone Number Digits",
+  "version": "HL7 v2.7",
+  "description": ":A string whose characters are limited to \"+\" and/or the decimal digits 0  through 9.  As a string, leading zeros are always considered significant. \n\nUsed only in the XTN data type as of v2.7. \n\nSNM is used for telephone numbers, so it is never appropriate to truncate values of type SNM.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

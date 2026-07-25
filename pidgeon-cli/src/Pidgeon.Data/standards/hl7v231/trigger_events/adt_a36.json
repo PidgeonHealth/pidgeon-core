@@ -1,0 +1,60 @@
+{
+  "code": "ADT_A36",
+  "name": "Merge patient information - patient id and account number",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "Event A36 is being retained for backward compatibility.  Both the patient identification-internal and the patient account number have changed as a result of the merge.  See Section 3.5.2, “Merging patient/person information,” for a discussion of issues related to the implementation of merge messages.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge patient information segment-",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    }
+  ],
+  "segment_count": 5
+}

@@ -1,0 +1,380 @@
+{
+  "code": "NK1",
+  "name": "Next of kin",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The NK1 segment contains information about the patient’s other related parties. Any associated parties may be identified. Utilizing NK1-1-set ID, multiple NK1 segments can be sent to patient accounts",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NK1.1",
+      "field_description": "Set ID - Next of Kin",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "NK1.2",
+      "field_description": "NK Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "NK1.3",
+      "field_description": "Relationship",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0063"
+    },
+    {
+      "position": 4,
+      "field_name": "NK1.4",
+      "field_description": "Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "NK1.5",
+      "field_description": "Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "NK1.6",
+      "field_description": "Business Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "NK1.7",
+      "field_description": "Contact Role",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0131"
+    },
+    {
+      "position": 8,
+      "field_name": "NK1.8",
+      "field_description": "Start Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "NK1.9",
+      "field_description": "End Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "NK1.10",
+      "field_description": "Next of Kin/Associated Parties Job Title",
+      "length": "60",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "NK1.11",
+      "field_description": "Next of Kin Job/Associated Parties Code/Class",
+      "length": "20",
+      "data_type": "JCC",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "NK1.12",
+      "field_description": "Next of Kin/Associated Parties Employee Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "NK1.13",
+      "field_description": "Organization Name",
+      "length": "60",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "NK1.14",
+      "field_description": "Marital Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0002"
+    },
+    {
+      "position": 15,
+      "field_name": "NK1.15",
+      "field_description": "Sex",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0001"
+    },
+    {
+      "position": 16,
+      "field_name": "NK1.16",
+      "field_description": "Date of Birth",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "NK1.17",
+      "field_description": "Living Dependency",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0223"
+    },
+    {
+      "position": 18,
+      "field_name": "NK1.18",
+      "field_description": "Ambulatory Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0009"
+    },
+    {
+      "position": 19,
+      "field_name": "NK1.19",
+      "field_description": "Citizenship",
+      "length": "4",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0171"
+    },
+    {
+      "position": 20,
+      "field_name": "NK1.20",
+      "field_description": "Primary Language",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0296"
+    },
+    {
+      "position": 21,
+      "field_name": "NK1.21",
+      "field_description": "Living Arrangement",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0220"
+    },
+    {
+      "position": 22,
+      "field_name": "NK1.22",
+      "field_description": "Publicity Indicator",
+      "length": "1",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0215"
+    },
+    {
+      "position": 23,
+      "field_name": "NK1.23",
+      "field_description": "Protection Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 24,
+      "field_name": "NK1.24",
+      "field_description": "Student Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0231"
+    },
+    {
+      "position": 25,
+      "field_name": "NK1.25",
+      "field_description": "Religion",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0006"
+    },
+    {
+      "position": 26,
+      "field_name": "NK1.26",
+      "field_description": "Mother s Maiden Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "NK1.27",
+      "field_description": "Nationality Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0212"
+    },
+    {
+      "position": 28,
+      "field_name": "NK1.28",
+      "field_description": "Ethnic Group",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0189"
+    },
+    {
+      "position": 29,
+      "field_name": "NK1.29",
+      "field_description": "Contact Reason",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0222"
+    },
+    {
+      "position": 30,
+      "field_name": "NK1.30",
+      "field_description": "Contact Person's Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "NK1.31",
+      "field_description": "Contact Person s Telephone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 32,
+      "field_name": "NK1.32",
+      "field_description": "Contact Person s Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "NK1.33",
+      "field_description": "Next of kin/associated party identifiers",
+      "length": "32",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "NK1.34",
+      "field_description": "Job Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0311"
+    },
+    {
+      "position": 35,
+      "field_name": "NK1.35",
+      "field_description": "Race",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0005"
+    },
+    {
+      "position": 36,
+      "field_name": "NK1.36",
+      "field_description": "Handicap",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0295"
+    },
+    {
+      "position": 37,
+      "field_name": "NK1.37",
+      "field_description": "Contact Person Social Security Number",
+      "length": "16",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 37
+}

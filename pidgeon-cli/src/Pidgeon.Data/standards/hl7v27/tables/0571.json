@@ -1,0 +1,59 @@
+{
+  "code": "0571",
+  "name": "Invoice Processing Results Status",
+  "version": "HL7 v2.7",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ACK",
+      "description": "Acknowledge",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ADJ",
+      "description": "Adjudicated with Adjustments",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ADJSUB",
+      "description": "Adjudicated as Submitted",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ADJZER",
+      "description": "Adjudicated to Zero",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PAID",
+      "description": "Paid",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PEND",
+      "description": "Pending",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PRED",
+      "description": "Pre-Determination",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "REJECT",
+      "description": "Reject",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

@@ -1,0 +1,330 @@
+{
+  "code": "SPM",
+  "name": "Specimen",
+  "version": "HL7 v2.7",
+  "chapter": "Observation Reporting",
+  "description": "The intent of this segment is to describe the characteristics of a specimen. It differs from the intent of the OBR in that the OBR addresses order-specific information.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SPM.1",
+      "field_description": "Set Id - Spm",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SPM.2",
+      "field_description": "Specimen Id",
+      "length": "0",
+      "data_type": "EIP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SPM.3",
+      "field_description": "Specimen Parent Ids",
+      "length": "0",
+      "data_type": "EIP",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SPM.4",
+      "field_description": "Specimen Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0487"
+    },
+    {
+      "position": 5,
+      "field_name": "SPM.5",
+      "field_description": "Specimen Type Modifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0541"
+    },
+    {
+      "position": 6,
+      "field_name": "SPM.6",
+      "field_description": "Specimen Additives",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0371"
+    },
+    {
+      "position": 7,
+      "field_name": "SPM.7",
+      "field_description": "Specimen Collection Method",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0488"
+    },
+    {
+      "position": 8,
+      "field_name": "SPM.8",
+      "field_description": "Specimen Source Site",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 9,
+      "field_name": "SPM.9",
+      "field_description": "Specimen Source Site Modifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0542"
+    },
+    {
+      "position": 10,
+      "field_name": "SPM.10",
+      "field_description": "Specimen Collection Site",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0543"
+    },
+    {
+      "position": 11,
+      "field_name": "SPM.11",
+      "field_description": "Specimen Role",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0369"
+    },
+    {
+      "position": 12,
+      "field_name": "SPM.12",
+      "field_description": "Specimen Collection Amount",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "SPM.13",
+      "field_description": "Grouped Specimen Count",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "SPM.14",
+      "field_description": "Specimen Description",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "SPM.15",
+      "field_description": "Specimen Handling Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0376"
+    },
+    {
+      "position": 16,
+      "field_name": "SPM.16",
+      "field_description": "Specimen Risk Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0489"
+    },
+    {
+      "position": 17,
+      "field_name": "SPM.17",
+      "field_description": "Specimen Collection Date/Time",
+      "length": "0",
+      "data_type": "DR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "SPM.18",
+      "field_description": "Specimen Received Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "SPM.19",
+      "field_description": "Specimen Expiration Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "SPM.20",
+      "field_description": "Specimen Availability",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 21,
+      "field_name": "SPM.21",
+      "field_description": "Specimen Reject Reason",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0490"
+    },
+    {
+      "position": 22,
+      "field_name": "SPM.22",
+      "field_description": "Specimen Quality",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0491"
+    },
+    {
+      "position": 23,
+      "field_name": "SPM.23",
+      "field_description": "Specimen Appropriateness",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0492"
+    },
+    {
+      "position": 24,
+      "field_name": "SPM.24",
+      "field_description": "Specimen Condition",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0493"
+    },
+    {
+      "position": 25,
+      "field_name": "SPM.25",
+      "field_description": "Specimen Current Quantity",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "SPM.26",
+      "field_description": "Number Of Specimen Containers",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "SPM.27",
+      "field_description": "Container Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 28,
+      "field_name": "SPM.28",
+      "field_description": "Container Condition",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0544"
+    },
+    {
+      "position": 29,
+      "field_name": "SPM.29",
+      "field_description": "Specimen Child Role",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0494"
+    },
+    {
+      "position": 30,
+      "field_name": "SPM.30",
+      "field_description": "Accession Id",
+      "length": "0",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "SPM.31",
+      "field_description": "Other Specimen Id",
+      "length": "0",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 32,
+      "field_name": "SPM.32",
+      "field_description": "Shipment Id",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 32
+}

@@ -1,0 +1,41 @@
+{
+  "code": "0353",
+  "name": "CWE statuses",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "NA",
+      "description": "Not applicable",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "NASK",
+      "description": "Not asked",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NAV",
+      "description": "Not available",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "UASK",
+      "description": "Asked but Unknown",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

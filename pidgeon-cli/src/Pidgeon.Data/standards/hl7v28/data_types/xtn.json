@@ -1,0 +1,190 @@
+{
+  "code": "XTN",
+  "name": "Extended Telecommunication Number",
+  "version": "HL7 v2.8",
+  "description": "Example 1: A Work fax number\n^WPN^FX^^^734^6777777\n\nExample 2: Telephone number with extension\n^WPN^PH^^^734^6777777^1\n\nTelephone number with internal code. In this example, assume that a corporation's telephone system supports a full external telephone number (area code and telephone number). It also supports internal dialing standards that assign a code to each facility and an extension to each telephone (which happens to be the last 4 digits of the external telephone number, by convention).",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "XTN.1",
+      "field_description": "Telephone Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": "PhoneNumber"
+    },
+    {
+      "position": 2,
+      "field_name": "XTN.2",
+      "field_description": "Telecommunication Use Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0201"
+    },
+    {
+      "position": 3,
+      "field_name": "XTN.3",
+      "field_description": "Telecommunication Equipment Type",
+      "length": "8",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0202"
+    },
+    {
+      "position": 4,
+      "field_name": "XTN.4",
+      "field_description": "Communication Address",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "XTN.5",
+      "field_description": "Country Code",
+      "length": "0",
+      "data_type": "SNM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "XTN.6",
+      "field_description": "Area/City Code",
+      "length": "0",
+      "data_type": "SNM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "XTN.7",
+      "field_description": "Local Number",
+      "length": "0",
+      "data_type": "SNM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "XTN.8",
+      "field_description": "Extension",
+      "length": "0",
+      "data_type": "SNM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "XTN.9",
+      "field_description": "Any Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "XTN.10",
+      "field_description": "Extension Prefix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "XTN.11",
+      "field_description": "Speed Dial Code",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "XTN.12",
+      "field_description": "Unformatted Telephone Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "XTN.13",
+      "field_description": "Effective Start Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "XTN.14",
+      "field_description": "Expiration Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "XTN.15",
+      "field_description": "Expiration Reason",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0868"
+    },
+    {
+      "position": 16,
+      "field_name": "XTN.16",
+      "field_description": "Protection Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0618"
+    },
+    {
+      "position": 17,
+      "field_name": "XTN.17",
+      "field_description": "Shared Telecommunication Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "XTN.18",
+      "field_description": "Preference Order",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 18
+}

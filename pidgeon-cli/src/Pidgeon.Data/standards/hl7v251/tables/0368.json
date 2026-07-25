@@ -1,0 +1,125 @@
+{
+  "code": "0368",
+  "name": "Remote control command",
+  "version": "HL7 v2.5.1",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AB",
+      "description": "Abort",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CL",
+      "description": "Clear",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CN",
+      "description": "Clear Notification",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DI",
+      "description": "Disable Sending Events",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "EN",
+      "description": "Enable Sending Events",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ES",
+      "description": "Emergency -stop",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "EX",
+      "description": "Execute (command specified in field Parameters (ST) 01394)",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "IN",
+      "description": "Initialize/Initiate",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "LC",
+      "description": "Local Control Request",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "LK",
+      "description": "Lock",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "LO",
+      "description": "Load",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PA",
+      "description": "Pause",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "RC",
+      "description": "Remote Control Request",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "RE",
+      "description": "Resume",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "SA",
+      "description": "Sampling",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "SU",
+      "description": "Setup",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "TT",
+      "description": "Transport To",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "UC",
+      "description": "Unlock",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "UN",
+      "description": "Unload",
+      "comment": "",
+      "sort_order": 19
+    }
+  ],
+  "value_count": 19
+}

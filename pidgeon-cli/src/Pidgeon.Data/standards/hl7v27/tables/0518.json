@@ -1,0 +1,29 @@
+{
+  "code": "0518",
+  "name": "Override Type",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "EQV",
+      "description": "Equivalence Override",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EXTN",
+      "description": "Extension Override",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "INLV",
+      "description": "Interval Override",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

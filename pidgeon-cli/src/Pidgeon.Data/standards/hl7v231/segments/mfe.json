@@ -1,0 +1,60 @@
+{
+  "code": "MFE",
+  "name": "Master file entry segment",
+  "version": "HL7 v2.3.1",
+  "chapter": "Master Files",
+  "description": "Figure 8-2. MFE attributes",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MFE.1",
+      "field_description": "Record-Level Event Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0180"
+    },
+    {
+      "position": 2,
+      "field_name": "MFE.2",
+      "field_description": "MFN Control ID",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MFE.3",
+      "field_description": "Effective Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "MFE.4",
+      "field_description": "Primary Key Value - MFE",
+      "length": "200",
+      "data_type": "VARIES",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "MFE.5",
+      "field_description": "Primary Key Value Type",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": "0355"
+    }
+  ],
+  "field_count": 5
+}

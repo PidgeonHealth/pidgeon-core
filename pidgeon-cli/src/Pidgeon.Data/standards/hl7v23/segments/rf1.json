@@ -1,0 +1,120 @@
+{
+  "code": "RF1",
+  "name": "Referral Information Segment",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "This segment represents information that may be useful when sending referrals from the referring provider to the referred-to provider.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RF1.1",
+      "field_description": "Referral Status",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0283"
+    },
+    {
+      "position": 2,
+      "field_name": "RF1.2",
+      "field_description": "Referral Priority",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0280"
+    },
+    {
+      "position": 3,
+      "field_name": "RF1.3",
+      "field_description": "Referral Type",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0281"
+    },
+    {
+      "position": 4,
+      "field_name": "RF1.4",
+      "field_description": "Referral Disposition",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0282"
+    },
+    {
+      "position": 5,
+      "field_name": "RF1.5",
+      "field_description": "Referral Category",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0284"
+    },
+    {
+      "position": 6,
+      "field_name": "RF1.6",
+      "field_description": "Originating Referral Identifier",
+      "length": "30",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "RF1.7",
+      "field_description": "Effective Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "RF1.8",
+      "field_description": "Expiration Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "RF1.9",
+      "field_description": "Process Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "RF1.10",
+      "field_description": "Referral Reason",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0336"
+    },
+    {
+      "position": 11,
+      "field_name": "RF1.11",
+      "field_description": "External Referral Identifier",
+      "length": "30",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 11
+}

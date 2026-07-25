@@ -1,0 +1,110 @@
+{
+  "code": "AIS",
+  "name": "Appointment Information - Service",
+  "version": "HL7 v2.3",
+  "chapter": "Scheduling",
+  "description": "The AIS segment contains information about various kinds of services that can be scheduled. Services included in a transaction using this segment are assumed to be controlled by a schedule on a schedule filler application. Services not controlled by a schedule are not identified on a schedule request using this segment.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AIS.1",
+      "field_description": "Set ID - AIS",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "AIS.2",
+      "field_description": "Segment Action Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0206"
+    },
+    {
+      "position": 3,
+      "field_name": "AIS.3",
+      "field_description": "Universal Service Identifier",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "AIS.4",
+      "field_description": "Start Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "AIS.5",
+      "field_description": "Start Date/Time Offset",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "AIS.6",
+      "field_description": "Start Date/Time Offset Units",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "AIS.7",
+      "field_description": "Duration",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "AIS.8",
+      "field_description": "Duration Units",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "AIS.9",
+      "field_description": "Allow Substitution Code",
+      "length": "10",
+      "data_type": "IS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0279"
+    },
+    {
+      "position": 10,
+      "field_name": "AIS.10",
+      "field_description": "Filler Status Code",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0278"
+    }
+  ],
+  "field_count": 10
+}

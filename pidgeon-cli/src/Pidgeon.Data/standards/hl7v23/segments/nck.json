@@ -1,0 +1,20 @@
+{
+  "code": "NCK",
+  "name": "System Clock",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The NCK segment is used to allow the various systems on the network to synchronize their system clocks (system date and time).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NCK.1",
+      "field_description": "System Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

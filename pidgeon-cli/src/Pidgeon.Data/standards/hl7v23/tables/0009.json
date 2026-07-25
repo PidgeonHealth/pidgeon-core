@@ -1,0 +1,107 @@
+{
+  "code": "0009",
+  "name": "Ambulatory status",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A0",
+      "description": "No functional limitations",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "A1",
+      "description": "Ambulates with assistive device",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "A2",
+      "description": "Wheelchair/stretcher bound",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "A3",
+      "description": "Comatose; non-responsive",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "A4",
+      "description": "Disoriented",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "A5",
+      "description": "Vision impaired",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "A6",
+      "description": "Hearing impaired",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "A7",
+      "description": "Speech impaired",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "A8",
+      "description": "Non-English speaking",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "A9",
+      "description": "Functional level unknown",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "B1",
+      "description": "Oxygen therapy",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "B2",
+      "description": "Special equipment (tubes, IVs, catheters)",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "B3",
+      "description": "Amputee",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "B4",
+      "description": "Mastectomy",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "B5",
+      "description": "Paraplegic",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "B6",
+      "description": "Pregnant",
+      "comment": "",
+      "sort_order": 16
+    }
+  ],
+  "value_count": 16
+}

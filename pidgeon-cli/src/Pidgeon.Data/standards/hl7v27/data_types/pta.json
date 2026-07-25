@@ -1,0 +1,50 @@
+{
+  "code": "PTA",
+  "name": "Policy Type And Amount",
+  "version": "HL7 v2.7",
+  "description": "This data type specifies the policy type and amount covered by the insurance.\n\nNote: Replaces the CM data type used in section 6.5.7.29 IN2-29, as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PTA.1",
+      "field_description": "Policy Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0147"
+    },
+    {
+      "position": 2,
+      "field_name": "PTA.2",
+      "field_description": "Amount Class",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0193"
+    },
+    {
+      "position": 3,
+      "field_name": "PTA.3",
+      "field_description": "Money Or Percentage Quantity",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PTA.4",
+      "field_description": "Money Or Percentage",
+      "length": "0",
+      "data_type": "MOP",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

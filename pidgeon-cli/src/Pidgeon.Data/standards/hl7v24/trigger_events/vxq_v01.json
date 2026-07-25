@@ -1,0 +1,40 @@
+{
+  "code": "VXQ_V01",
+  "name": "Query for vaccination record",
+  "version": "HL7 v2.4",
+  "chapter": "Order Entry",
+  "description": "When an immunization registry does not already have the complete patient vaccination record, it will send a query (with a V01 event) for the definitive (last updated) record.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Original-Style Query Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Original Style Query Filter",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

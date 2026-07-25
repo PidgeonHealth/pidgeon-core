@@ -1,0 +1,35 @@
+{
+  "code": "0179",
+  "name": "Response level",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AL",
+      "description": "Always.  All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ER",
+      "description": "Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NE",
+      "description": "Never.  No application-level response needed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SU",
+      "description": "Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

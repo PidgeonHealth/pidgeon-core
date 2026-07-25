@@ -1,0 +1,84 @@
+{
+  "code": "VXX_V02",
+  "name": "Response to vaccination query",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "In response to a query for the definitive patient vaccination record, the system holding the record will return it to the system originating the query",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message acknowledgement segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Query definition segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Query filter segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next of kin",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 6
+    }
+  ],
+  "segment_count": 7
+}

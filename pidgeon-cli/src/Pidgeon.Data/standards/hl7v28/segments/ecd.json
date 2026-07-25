@@ -1,0 +1,60 @@
+{
+  "code": "ECD",
+  "name": "Equipment Command",
+  "version": "HL7 v2.8",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The equipment command segment contains the information required to notify the receiving component what is to happen.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ECD.1",
+      "field_description": "Reference Command Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ECD.2",
+      "field_description": "Remote Control Command",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0368"
+    },
+    {
+      "position": 3,
+      "field_name": "ECD.3",
+      "field_description": "Response Required",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 4,
+      "field_name": "ECD.4",
+      "field_description": "Requested Completion Time",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "ECD.5",
+      "field_description": "Parameters",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

@@ -1,0 +1,30 @@
+{
+  "code": "CCD",
+  "name": "Charge Code and Date",
+  "version": "HL7 v2.5.1",
+  "description": "Specifies whether a charge action is based on an invocation event or is time-based.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CCD.1",
+      "field_description": "Invocation Event",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0100"
+    },
+    {
+      "position": 2,
+      "field_name": "CCD.2",
+      "field_description": "Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

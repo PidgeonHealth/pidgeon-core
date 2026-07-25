@@ -1,0 +1,59 @@
+{
+  "code": "0370",
+  "name": "Container Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "I",
+      "description": "Identified",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "L",
+      "description": "Left Equipment",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Missing",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "O",
+      "description": "In Process",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "P",
+      "description": "In Position",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "R",
+      "description": "Process Completed",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "X",
+      "description": "Container Unavailable",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

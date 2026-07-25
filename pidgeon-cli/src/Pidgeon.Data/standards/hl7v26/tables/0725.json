@@ -1,0 +1,65 @@
+{
+  "code": "0725",
+  "name": "Mood Codes",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "APT",
+      "description": "Appointment",
+      "comment": "Planned act for specific time and place",
+      "sort_order": 1
+    },
+    {
+      "value": "ARQ",
+      "description": "Appointment Request",
+      "comment": "Request for Booking of an Appointment",
+      "sort_order": 2
+    },
+    {
+      "value": "EVN",
+      "description": "Event",
+      "comment": "Service actually happens or happened or is ongoing.",
+      "sort_order": 3
+    },
+    {
+      "value": "EVN.CRT",
+      "description": "Event Criterion",
+      "comment": "Criterion applying to Events for another Service to be applied. This is an Act Mood PredicateSimilar uses of above moods may be defined.Eg Use in Care Plans,",
+      "sort_order": 4
+    },
+    {
+      "value": "EXP",
+      "description": "Expectation",
+      "comment": "Expecting that something will occur independently of  deliberate intent. Eg expect a patient will discard medications.",
+      "sort_order": 5
+    },
+    {
+      "value": "INT",
+      "description": "Intent",
+      "comment": "Plan to perform a service",
+      "sort_order": 6
+    },
+    {
+      "value": "PRMS",
+      "description": "Promise",
+      "comment": "An intent to perform a service",
+      "sort_order": 7
+    },
+    {
+      "value": "PRP",
+      "description": "Proposal",
+      "comment": "Non-mandated intent to perform an act",
+      "sort_order": 8
+    },
+    {
+      "value": "RQO",
+      "description": "Request-Order",
+      "comment": "Request or Order for a service",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

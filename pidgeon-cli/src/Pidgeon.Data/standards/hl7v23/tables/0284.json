@@ -1,0 +1,35 @@
+{
+  "code": "0284",
+  "name": "Referral category",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Ambulatory",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Emergency",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "I",
+      "description": "Inpatient",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "O",
+      "description": "Outpatient",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

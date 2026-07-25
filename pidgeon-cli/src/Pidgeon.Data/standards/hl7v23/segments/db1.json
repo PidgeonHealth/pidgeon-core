@@ -1,0 +1,90 @@
+{
+  "code": "DB1",
+  "name": "Disability Segment",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The disability segment contains information related to the disability of a person. This segment was created instead of adding disability attributes to each segment that contains a person (to which disability may apply). This is an optional segment that can be used to send disability information about a person already defined by the Patient Administration Chapter. The disabled person code and identifier allow for the association of the disability information to the person.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DB1.1",
+      "field_description": "Set ID - DB1",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "DB1.2",
+      "field_description": "Disabled person code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0334"
+    },
+    {
+      "position": 3,
+      "field_name": "DB1.3",
+      "field_description": "Disabled person identifier",
+      "length": "32",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "DB1.4",
+      "field_description": "Disabled Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 5,
+      "field_name": "DB1.5",
+      "field_description": "Disability start date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "DB1.6",
+      "field_description": "Disability end date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "DB1.7",
+      "field_description": "Disability return to work date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "DB1.8",
+      "field_description": "Disability unable to work date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 8
+}

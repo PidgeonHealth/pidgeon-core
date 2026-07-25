@@ -1,0 +1,17 @@
+{
+  "code": "0634",
+  "name": "Item Importance Codes",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CRT",
+      "description": "Critical",
+      "comment": "",
+      "sort_order": 1
+    }
+  ],
+  "value_count": 1
+}

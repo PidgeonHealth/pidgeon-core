@@ -1,0 +1,71 @@
+{
+  "code": "0177",
+  "name": "Confidentiality code",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AID",
+      "description": "AIDS patient",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EMP",
+      "description": "Employee",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ETH",
+      "description": "Alcohol/drug treatment patient",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "HIV",
+      "description": "HIV(+) patient",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PSY",
+      "description": "Psychiatric patient",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "R",
+      "description": "Restricted",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "U",
+      "description": "Usual control",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "UWM",
+      "description": "Unwed mother",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "V",
+      "description": "Very restricted",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "VIP",
+      "description": "Very important person or celebrity",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

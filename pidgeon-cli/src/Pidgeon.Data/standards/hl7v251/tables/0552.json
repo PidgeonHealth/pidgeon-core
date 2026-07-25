@@ -1,0 +1,10 @@
+{
+  "code": "0552",
+  "name": "Advanced beneficiary notice override reason",
+  "version": "HL7 v2.5.1",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [],
+  "value_count": 0
+}

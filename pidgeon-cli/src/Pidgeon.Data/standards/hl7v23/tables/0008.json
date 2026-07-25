@@ -1,0 +1,47 @@
+{
+  "code": "0008",
+  "name": "Acknowledgment code",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AA",
+      "description": "Original mode: Application Accept - Enhanced mode: Application acknowledgment: Accept",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AE",
+      "description": "Original mode: Application Error - Enhanced mode: Application acknowledgment: Error",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AR",
+      "description": "Original mode: Application Reject - Enhanced mode: Application acknowledgment: Reject",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CA",
+      "description": "Enhanced mode: Accept acknowledgment: Commit Accept",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CE",
+      "description": "Enhanced mode: Accept acknowledgment: Commit Error",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CR",
+      "description": "Enhanced mode: Accept acknowledgment: Commit Reject",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

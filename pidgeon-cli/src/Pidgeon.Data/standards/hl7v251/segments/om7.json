@@ -1,0 +1,250 @@
+{
+  "code": "OM7",
+  "name": "Additional Basic Attributes",
+  "version": "HL7 v2.5.1",
+  "chapter": "Master Files",
+  "description": "The OM7 segment contains additional basic attributes that apply to the definition of most observations/services.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OM7.1",
+      "field_description": "Sequence Number - Test/Observation Master File",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "OM7.2",
+      "field_description": "Universal Service Identifier",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "OM7.3",
+      "field_description": "Category Identifier",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0412"
+    },
+    {
+      "position": 4,
+      "field_name": "OM7.4",
+      "field_description": "Category Description",
+      "length": "200",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "OM7.5",
+      "field_description": "Category Synonym",
+      "length": "200",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "OM7.6",
+      "field_description": "Effective Test/Service Start Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "OM7.7",
+      "field_description": "Effective Test/Service End Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "OM7.8",
+      "field_description": "Test/Service Default Duration Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "OM7.9",
+      "field_description": "Test/Service Default Duration Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "OM7.10",
+      "field_description": "Test/Service Default Frequency",
+      "length": "60",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0335"
+    },
+    {
+      "position": 11,
+      "field_name": "OM7.11",
+      "field_description": "Consent Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 12,
+      "field_name": "OM7.12",
+      "field_description": "Consent Identifier",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0413"
+    },
+    {
+      "position": 13,
+      "field_name": "OM7.13",
+      "field_description": "Consent Effective Start Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "OM7.14",
+      "field_description": "Consent Effective End Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "OM7.15",
+      "field_description": "Consent Interval Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "OM7.16",
+      "field_description": "Consent Interval Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0414"
+    },
+    {
+      "position": 17,
+      "field_name": "OM7.17",
+      "field_description": "Consent Waiting Period Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "OM7.18",
+      "field_description": "Consent Waiting Period Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0414"
+    },
+    {
+      "position": 19,
+      "field_name": "OM7.19",
+      "field_description": "Effective Date/Time of Change",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "OM7.20",
+      "field_description": "Entered By",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "OM7.21",
+      "field_description": "Orderable-at Location",
+      "length": "200",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "OM7.22",
+      "field_description": "Formulary Status",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0473"
+    },
+    {
+      "position": 23,
+      "field_name": "OM7.23",
+      "field_description": "Special Order Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 24,
+      "field_name": "OM7.24",
+      "field_description": "Primary Key Value - CDM",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0132"
+    }
+  ],
+  "field_count": 24
+}

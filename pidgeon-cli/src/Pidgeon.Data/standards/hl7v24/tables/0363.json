@@ -1,0 +1,125 @@
+{
+  "code": "0363",
+  "name": "Assigning authority",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AUSDVA",
+      "description": "Australia - Dept. of Veterans Affairs",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AUSHIC",
+      "description": "Australia - Health Insurance Commission",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CANAB",
+      "description": "Canada - Alberta",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CANBC",
+      "description": "Canada - British Columbia",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CANMB",
+      "description": "Canada - Manitoba",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CANNB",
+      "description": "Canada - New Brunswick",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CANNF",
+      "description": "Canada - Newfoundland",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "CANNS",
+      "description": "Canada - Nova Scotia",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "CANNT",
+      "description": "Canada - Northwest Territories",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "CANNU",
+      "description": "Canada - Nanavut",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "CANON",
+      "description": "Canada - Ontario",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "CANPE",
+      "description": "Canada - Prince Edward Island",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "CANQC",
+      "description": "Canada - Quebec",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CANSK",
+      "description": "Canada - Saskatchewan",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "CANYT",
+      "description": "Canada - Yukon Territories",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "NLVWS",
+      "description": "NL - Ministerie van Volksgezondheid, Welzijn en Sport",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "USCDC",
+      "description": "US Center for Disease Control",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "USHCFA",
+      "description": "US Healthcare Finance Authority",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "USSSA",
+      "description": "US Social Security Administration",
+      "comment": "",
+      "sort_order": 19
+    }
+  ],
+  "value_count": 19
+}

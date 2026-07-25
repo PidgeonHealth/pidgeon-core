@@ -1,0 +1,35 @@
+{
+  "code": "0155",
+  "name": "Accept/application acknowledgment conditions",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AL",
+      "description": "Always",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ER",
+      "description": "Error/reject conditions only",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NE",
+      "description": "Never",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SU",
+      "description": "Successful completion only",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

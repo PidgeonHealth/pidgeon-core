@@ -1,0 +1,70 @@
+{
+  "code": "QAK",
+  "name": "Query Acknowledgment",
+  "version": "HL7 v2.6",
+  "chapter": "Query",
+  "description": "The QAK segment contains information sent with responses to a query. Although the QAK segment is required in the responses to the enhanced queries (see section Error! Reference source not found. , \"Error! Reference source not found.\"), it may appear as an optional segment placed after the (optional) ERR segment in any query response (message) to any original mode query.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QAK.1",
+      "field_description": "Query Tag",
+      "length": "32",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "QAK.2",
+      "field_description": "Query Response Status",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0208"
+    },
+    {
+      "position": 3,
+      "field_name": "QAK.3",
+      "field_description": "Message Query Name",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0471"
+    },
+    {
+      "position": 4,
+      "field_name": "QAK.4",
+      "field_description": "Hit Count",
+      "length": "10",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "QAK.5",
+      "field_description": "This payload",
+      "length": "10",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "QAK.6",
+      "field_description": "Hits remaining",
+      "length": "10",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

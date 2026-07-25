@@ -1,0 +1,150 @@
+{
+  "code": "BPO",
+  "name": "Blood product order",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "Blood product order messages require additional information that is not available in other standard HL7 order messages.  Blood product order messages need to contain accompanying details regarding the blood product component, such as special processing requirements (e.g. irradiation and leukoreduction) and the amount of the blood product to be administered.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "BPO.1",
+      "field_description": "Set ID - BPO",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "BPO.2",
+      "field_description": "BP Universal Service ID",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "BPO.3",
+      "field_description": "BP  Processing Requirements",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0508"
+    },
+    {
+      "position": 4,
+      "field_name": "BPO.4",
+      "field_description": "BP Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "BPO.5",
+      "field_description": "BP Amount",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "BPO.6",
+      "field_description": "BP Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "BPO.7",
+      "field_description": "BP Intended Use Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "BPO.8",
+      "field_description": "BP Intended Dispense From Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "BPO.9",
+      "field_description": "BP Intended Dispense From Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "BPO.10",
+      "field_description": "BP Requested Dispense Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "BPO.11",
+      "field_description": "BP Requested Dispense To Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "BPO.12",
+      "field_description": "BP Requested Dispense To Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "BPO.13",
+      "field_description": "BP Indication for Use",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0509"
+    },
+    {
+      "position": 14,
+      "field_name": "BPO.14",
+      "field_description": "BP Informed Consent Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 14
+}

@@ -1,0 +1,29 @@
+{
+  "code": "0524",
+  "name": "Sequence condition",
+  "version": "HL7 v2.7",
+  "chapter": "",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Repeating cycle of orders",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Reserved for possible future use",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "S",
+      "description": "Sequence conditions",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,77 @@
+{
+  "code": "0443",
+  "name": "Provider role",
+  "version": "HL7 v2.6",
+  "chapter": "Personnel Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AD",
+      "description": "Admitting",
+      "comment": "PV1-17 Admitting doctor",
+      "sort_order": 1
+    },
+    {
+      "value": "AI",
+      "description": "Assistant/Alternate Interpreter",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AT",
+      "description": "Attending",
+      "comment": "PV1-7 Attending doctor",
+      "sort_order": 3
+    },
+    {
+      "value": "CP",
+      "description": "Consulting Provider",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "FHCP",
+      "description": "Family Health Care Professional",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PI",
+      "description": "Primary Interpreter",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PP",
+      "description": "Primary Care Provider",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RP",
+      "description": "Referring Provider",
+      "comment": "PV1-8 Referring doctor",
+      "sort_order": 8
+    },
+    {
+      "value": "RT",
+      "description": "Referred to Provider",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "TN",
+      "description": "Technician",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "TR",
+      "description": "Transcriptionist",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

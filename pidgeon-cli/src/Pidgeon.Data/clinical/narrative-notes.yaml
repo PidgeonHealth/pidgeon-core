@@ -1,0 +1,110 @@
+# Narrative-note template corpus — non-lab clinical axes (b73).
+#
+# WHAT THIS IS
+#   A checked-in, versioned corpus of free-text NTE (Notes and Comments) template families for the
+#   clinical axes b69's runtime grammar does NOT cover. b69 (Hl7NarrativeNoteComposer) restates a
+#   numeric OBX fact; the coherent-note space across medications, diagnoses and specimens is far
+#   wider. This corpus grows that space the safe way: authored offline, drawn from at generation time
+#   BY COORDINATE (never a model at runtime), exactly the pattern reference-ranges.yaml and the
+#   comorbidity matrix already follow.
+#
+# THE NON-CONTRADICTION INVARIANT (enforced by NarrativeNoteCorpusVerifierTests — the repo lint)
+#   Every template here is STRUCTURALLY INCAPABLE of contradicting the fact it wraps, for ANY fact in
+#   its axis's allowed source set. Two rules make that true and the verifier proves both:
+#     1. A template's only clinical content is a placeholder substitution of the axis's own coded
+#        fact (the {required} field). The authored wrapper text carries NO clinical assertion of its
+#        own — no disposition (normal/abnormal/high/low), no severity, no negation, no outcome, no
+#        specimen-condition word. A note can therefore only NAME the fact, never re-characterize it.
+#     2. Qualifiers appended after the fact clause are procedural only (operational workflow steps),
+#        so they cannot interact with the coded value either.
+#   Because the wrapper asserts nothing clinical, substituting any real coded value (even one whose
+#   own text contains a clinical word, e.g. "Acute myocardial infarction") yields a note that restates
+#   that value and contradicts nothing.
+#
+# SCOPE
+#   Single-fact restatement: each template references ONLY its axis's `required` placeholder. The
+#   axes here are wired to the structural NTE slots at generation time (determinism v9): medication
+#   after an RXE/RXO, order-status after an OBR (the ordered test). One cross-segment note the corpus
+#   deliberately does NOT hold — the order<->result linkage — is composed from the emitted OBX facts
+#   directly by Hl7CorpusNoteComposer, because it names more than one fact (a single observation's own
+#   test/value/units). A message-wide all-normal panel summary is deferred: a forward-pass composer
+#   cannot see a later cell's OBX, so "all results within reference limits" could contradict an
+#   abnormal result it has not reached — it needs whole-message OBX visibility (a post-assembly pass).
+#   The diagnosis and specimen axes stay authored-but-dormant: no DG1/SPM-adjacent NTE sits in a
+#   fact-recording generation position, so they are reachable only by an explicit caller pin.
+#   The `placeholders` list on each axis declares the full guaranteed-present field set future
+#   families may draw on; today's templates use only `required`.
+#
+# RUNTIME CONTRACT (for the future draw-by-coordinate leg)
+#   A caller composes a note by: pick the axis for the segment that carries the fact; draw one template
+#   and one qualifier from that axis's family by two independent coordinate-addressed draws (as
+#   Hl7NarrativeNoteComposer does for labs); substitute the coded fact for `{required}`; trim. Same
+#   (fact, coordinate) -> byte-identical note.
+
+version: 1
+
+axes:
+  # Medication order narrative (RXE/RXO/RXA text). Restates the ordered drug; never asserts an
+  # indication, effect, dose adequacy, or interaction (all of which could contradict the message).
+  - axis: medication
+    required: drug
+    placeholders: [drug, dose, route, frequency]
+    templates:
+      - "{drug} ordered."
+      - "Medication order placed for {drug}."
+      - "{drug} on the active order list."
+      - "Order: {drug}."
+    qualifiers:
+      - ""
+      - " Order entered."
+      - " Reviewed by pharmacy."
+      - " Reported to ordering provider."
+
+  # Order-status narrative (OBR text). Restates the ordered test (OBR-4, the order's universal service
+  # identifier); never asserts a result, a disposition, or an order outcome — the OBX and ORC fields
+  # own those. Fires on the NTE after an OBR, before the observation group's results are stated.
+  - axis: order-status
+    required: order
+    placeholders: [order, control]
+    templates:
+      - "{order} ordered."
+      - "Order placed for {order}."
+      - "{order} requested by the ordering provider."
+      - "Test order on file: {order}."
+    qualifiers:
+      - ""
+      - " Order entered."
+      - " Sent to the laboratory."
+      - " Acknowledged by the receiving system."
+
+  # Diagnosis narrative (DG1 text). Restates the coded diagnosis; never asserts status (acute/chronic),
+  # certainty (rule-out/confirmed), severity, or resolution — the DG1 fields own those.
+  - axis: diagnosis
+    required: diagnosis
+    placeholders: [diagnosis, code]
+    templates:
+      - "{diagnosis} documented."
+      - "Diagnosis of record: {diagnosis}."
+      - "{diagnosis} noted in the assessment."
+      - "Coded diagnosis: {diagnosis}."
+    qualifiers:
+      - ""
+      - " Documented in the chart."
+      - " Added to the problem list."
+      - " Reviewed by the care team."
+
+  # Specimen narrative (SPM/OBR specimen text). Restates the specimen type; never asserts condition
+  # (hemolyzed/clotted/contaminated) or adequacy — those are separate coded facts that could conflict.
+  - axis: specimen
+    required: specimen
+    placeholders: [specimen, source]
+    templates:
+      - "{specimen} specimen received."
+      - "Specimen type: {specimen}."
+      - "{specimen} sample logged by the laboratory."
+      - "Specimen on file: {specimen}."
+    qualifiers:
+      - ""
+      - " Accessioned by the laboratory."
+      - " Logged at receipt."
+      - " Reported to ordering provider."

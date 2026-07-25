@@ -1,0 +1,23 @@
+{
+  "code": "0210",
+  "name": "Relational conjunction",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AND",
+      "description": "Default",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "OR",
+      "description": null,
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

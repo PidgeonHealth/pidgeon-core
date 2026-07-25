@@ -1,0 +1,100 @@
+{
+  "code": "CWE",
+  "name": "Coded With Exceptions",
+  "version": "HL7 v2.4",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CWE.1",
+      "field_description": "Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CWE.2",
+      "field_description": "Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CWE.3",
+      "field_description": "Name Of Coding System",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 4,
+      "field_name": "CWE.4",
+      "field_description": "Alternate Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CWE.5",
+      "field_description": "Alternate Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CWE.6",
+      "field_description": "Name Of Alternate Coding System",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 7,
+      "field_name": "CWE.7",
+      "field_description": "Coding System Version Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "CWE.8",
+      "field_description": "Alternate Coding System Version Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CWE.9",
+      "field_description": "Original Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

@@ -1,0 +1,70 @@
+{
+  "code": "VAR",
+  "name": "Variance",
+  "version": "HL7 v2.6",
+  "chapter": "Patient Care",
+  "description": "The variance segment contains the data necessary to describe differences that may have occurred at the time when a healthcare event was documented.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "VAR.1",
+      "field_description": "Variance Instance ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "VAR.2",
+      "field_description": "Documented Date/Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "VAR.3",
+      "field_description": "Stated Variance Date/Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "VAR.4",
+      "field_description": "Variance Originator",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "VAR.5",
+      "field_description": "Variance Classification",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "VAR.6",
+      "field_description": "Variance Description",
+      "length": "512",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

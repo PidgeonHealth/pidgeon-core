@@ -1,0 +1,65 @@
+{
+  "code": "0133",
+  "name": "Procedure Practitioner Identifier Code",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AN",
+      "description": "Anesthesiologist",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AS",
+      "description": "Assistant Surgeon",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CM",
+      "description": "Certified Nurse Midwife",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "NP",
+      "description": "Nurse Practitioner",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PR",
+      "description": "Procedure MD (surgeon)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PS",
+      "description": "Primary Surgeon",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "RD",
+      "description": "Radiologist",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RS",
+      "description": "Resident",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "SN",
+      "description": "Scrub Nurse",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

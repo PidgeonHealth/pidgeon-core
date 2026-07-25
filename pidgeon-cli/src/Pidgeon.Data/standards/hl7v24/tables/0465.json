@@ -1,0 +1,29 @@
+{
+  "code": "0465",
+  "name": "Name/address representation",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Alphabetic (i.e., Default or some single-byte)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "I",
+      "description": "Ideographic (i.e., Kanji)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Phonetic (i.e., ASCII, Katakana, Hiragana, etc.)",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

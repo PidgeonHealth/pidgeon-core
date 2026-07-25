@@ -1,0 +1,40 @@
+{
+  "code": "CM_RMC",
+  "name": "Room Coverage",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_RMC.1",
+      "field_description": "Room Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0145"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_RMC.2",
+      "field_description": "Amount Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0146"
+    },
+    {
+      "position": 3,
+      "field_name": "CM_RMC.3",
+      "field_description": "Coverage Amount",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

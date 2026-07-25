@@ -1,0 +1,50 @@
+{
+  "code": "CM2",
+  "name": "Clinical Study Schedule Master",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The Clinical Study Schedule Master (CM2) contains the information about the scheduled time points for study or phase-related treatment or evaluation events. The fact that a patient has data satisfying a scheduled time point is sent in the CSS segment, sequence 2. The CM2 segment describes the scheduled time points in general.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM2.1",
+      "field_description": "CM2 - Set ID",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM2.2",
+      "field_description": "Scheduled Time Point",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM2.3",
+      "field_description": "Description of Time Point",
+      "length": "300",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CM2.4",
+      "field_description": "Events Scheduled This Time Point",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "200",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

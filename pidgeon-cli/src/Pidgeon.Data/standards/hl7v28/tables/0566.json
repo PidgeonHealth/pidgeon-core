@@ -1,0 +1,53 @@
+{
+  "code": "0566",
+  "name": "Blood Unit Type",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "GRN",
+      "description": "Granulocytes",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "LYM",
+      "description": "Lymphocytes",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "PLS",
+      "description": "Plasma",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "PLT",
+      "description": "Platelets",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PSC",
+      "description": "Peripheral Stem Cells",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "RBC",
+      "description": "Red Blood Cells",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "WBL",
+      "description": "Whole Blood",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

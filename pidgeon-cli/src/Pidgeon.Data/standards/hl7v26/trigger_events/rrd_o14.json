@@ -1,0 +1,253 @@
+{
+  "code": "RRD_O14",
+  "name": "Pharmacy/Treatment Dispense Acknowledgement",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "The RDS/RRD message may be created by the pharmacy/treatment application for each instance of dispensing a drug or treatment to fill an existing order or orders.  In the most common case, the RDS messages would be routed to a Nursing application or to some clinical application, which needs the data about drugs dispensed or treatments given.  As a site-specific variant, the original order segments (RXO, RXE and their associated RXR/RXCs) may be sent optionally (for comparison).",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "RESPONSE",
+      "segment_desc": "RESPONSE group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "ORDER",
+      "segment_desc": "ORDER group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 11
+    },
+    {
+      "segment_code": "TIMING",
+      "segment_desc": "TIMING group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 12
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/Quantity",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "TIMING"
+      ],
+      "level": 3,
+      "order_index": 13
+    },
+    {
+      "segment_code": "TQ2",
+      "segment_desc": "Timing/Quantity Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "TIMING"
+      ],
+      "level": 3,
+      "order_index": 14
+    },
+    {
+      "segment_code": "DISPENSE",
+      "segment_desc": "DISPENSE group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 15
+    },
+    {
+      "segment_code": "RXD",
+      "segment_desc": "Pharmacy/Treatment Dispense",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "DISPENSE"
+      ],
+      "level": 3,
+      "order_index": 16
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "DISPENSE"
+      ],
+      "level": 3,
+      "order_index": 17
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/Treatment Route",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "DISPENSE"
+      ],
+      "level": 3,
+      "order_index": 18
+    },
+    {
+      "segment_code": "RXC",
+      "segment_desc": "Pharmacy/Treatment Component Order",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "DISPENSE"
+      ],
+      "level": 3,
+      "order_index": 19
+    }
+  ],
+  "segment_count": 20
+}

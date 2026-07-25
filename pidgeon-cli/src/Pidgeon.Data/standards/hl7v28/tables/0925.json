@@ -1,0 +1,89 @@
+{
+  "code": "0925",
+  "name": "Phlebotomy Issue",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ACN",
+      "description": "Air Contamination",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CLT",
+      "description": "Clotted",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "COL",
+      "description": "Collapse",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DAK",
+      "description": "Defective Apheresis Kit",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "DBG",
+      "description": "Defective Bag",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DMT",
+      "description": "Defective Instrument",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DND",
+      "description": "Defective Needle",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "INF",
+      "description": "Infiltration",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "IPF",
+      "description": "Instrument Power Failure",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "MIS",
+      "description": "Missed / in tissue",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "NAD",
+      "description": "Needle adjustment",
+      "comment": "(this may not end a procedure, if successful will impact component production)",
+      "sort_order": 11
+    },
+    {
+      "value": "PFL",
+      "description": "Poor flow",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "VSM",
+      "description": "Vein Spasm",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

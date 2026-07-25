@@ -1,0 +1,30 @@
+{
+  "code": "CM_MSG",
+  "name": "Message Type",
+  "version": "HL7 v2.3",
+  "description": "This field contains the message type and trigger event for the message.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_MSG.1",
+      "field_description": "Message Type",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0076"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_MSG.2",
+      "field_description": "Trigger Event",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0003"
+    }
+  ],
+  "field_count": 2
+}

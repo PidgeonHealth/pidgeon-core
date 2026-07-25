@@ -1,0 +1,59 @@
+{
+  "code": "0201",
+  "name": "Telecommunicationuse code",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ASN",
+      "description": "Answering Service Number",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BPN",
+      "description": "Beeper Number",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "EMR",
+      "description": "Emergency Number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "NET",
+      "description": "Network (email) Address",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ORN",
+      "description": "Other Residence Number",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PRN",
+      "description": "Primary Residence Number",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "VHN",
+      "description": "Vacation Home Number",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "WPN",
+      "description": "Work Number",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

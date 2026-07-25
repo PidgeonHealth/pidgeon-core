@@ -1,0 +1,50 @@
+{
+  "code": "SID",
+  "name": "Substance Identifier",
+  "version": "HL7 v2.7",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The Substance Identifier segment contains data necessary to identify the substance (e.g., reagents) used in the production of analytical test results.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SID.1",
+      "field_description": "Application/Method Identifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 2,
+      "field_name": "SID.2",
+      "field_description": "Substance Lot Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SID.3",
+      "field_description": "Substance Container Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SID.4",
+      "field_description": "Substance Manufacturer Identifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0385"
+    }
+  ],
+  "field_count": 4
+}

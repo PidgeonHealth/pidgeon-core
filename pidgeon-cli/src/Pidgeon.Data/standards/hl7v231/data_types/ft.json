@@ -1,0 +1,9 @@
+{
+  "code": "FT",
+  "name": "Formatted Text Data",
+  "version": "HL7 v2.3.1",
+  "description": "For additional examples of formatting commands see Section 2.9, Use of escape sequences in text fields .",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

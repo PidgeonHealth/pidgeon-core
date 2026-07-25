@@ -1,0 +1,47 @@
+{
+  "code": "0156",
+  "name": "Which date/time qualifier",
+  "version": "HL7 v2.3",
+  "chapter": "Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ANY",
+      "description": "Any date/time within a range",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "COL",
+      "description": "Collection date/time, equivalent to film or sample collection date/time",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ORD",
+      "description": "Order date/time",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "RCT",
+      "description": "Specimen receipt date/time, receipt of specimen in filling ancillary (Lab)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "REP",
+      "description": "Report date/time, report date/time at filing ancillary (i.e., Lab)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "SCHED",
+      "description": "Schedule date/time",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

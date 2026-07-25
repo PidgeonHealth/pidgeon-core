@@ -1,0 +1,70 @@
+{
+  "code": "UDM_Q05",
+  "name": "Unsolicited Display Update",
+  "version": "HL7 v2.5",
+  "chapter": "Query",
+  "description": "This section is retained for backward compatibility and the framework for the existing functional queries.\n\nThe UDM message does not have a direct replacement in the new methodology. It is not clear how extensively this message is used.\n\nThere is a simple HL7 message that allows for unsolicited display update messages to be sent in HL7 format from one system to another.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "URD",
+      "segment_desc": "Results/update Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "URS",
+      "segment_desc": "Unsolicited Selection",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "DSP",
+      "segment_desc": "Display Data",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

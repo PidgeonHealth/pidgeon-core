@@ -1,0 +1,18 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
+  "name": "USCoreAllergyIntoleranceProfile",
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "snapshot": {
+    "element": [
+      { "path": "AllergyIntolerance", "min": 0, "max": "*" },
+      { "path": "AllergyIntolerance.id", "min": 0, "max": "1", "type": [{ "code": "id" }] },
+      { "path": "AllergyIntolerance.clinicalStatus", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "AllergyIntolerance.verificationStatus", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "AllergyIntolerance.code", "min": 1, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "AllergyIntolerance.patient", "min": 1, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"] }] },
+      { "path": "AllergyIntolerance.reaction", "min": 0, "max": "*", "type": [{ "code": "BackboneElement" }] }
+    ]
+  }
+}

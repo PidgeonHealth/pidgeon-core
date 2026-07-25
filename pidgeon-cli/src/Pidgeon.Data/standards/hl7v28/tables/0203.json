@@ -1,0 +1,665 @@
+{
+  "code": "0203",
+  "name": "Identifier Type",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ACSN",
+      "description": "Accession ID",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AM",
+      "description": "American Express",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AMA",
+      "description": "American Medical Association Number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AN",
+      "description": "Account number",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "An Identifier for a provi",
+      "description": null,
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ANC",
+      "description": "Account number Creditor",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "AND",
+      "description": "Account number debitor",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ANON",
+      "description": "Anonymous identifier",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "ANT",
+      "description": "Temporary Account Number",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "APRN",
+      "description": "Advanced Practice Registered Nurse number",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ASID",
+      "description": "Ancestor Specimen ID",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "BA",
+      "description": "Bank Account Number",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "BC",
+      "description": "Bank Card Number",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "BCT",
+      "description": "Birth Certificate",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "BR",
+      "description": "Birth registry number",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "BRN",
+      "description": "Breed Registry Number",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "BSNR",
+      "description": "Primary physician office number",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "CC",
+      "description": "Cost Center number",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "CONM",
+      "description": "Change of Name Document",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "CY",
+      "description": "County number",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "CZ",
+      "description": "Citizenship Card",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "DDS",
+      "description": "Dentist license number",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "DEA",
+      "description": "Drug Enforcement Administration registration number",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "DFN",
+      "description": "Drug Furnishing or prescriptive authority Number",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "DI",
+      "description": "Diner's Club card",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "DL",
+      "description": "Driver's license number",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "DN",
+      "description": "Doctor number",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "DO",
+      "description": "Osteopathic License number",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "DP",
+      "description": "Diplomatic Passport",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "DPM",
+      "description": "Podiatrist license number",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "DR",
+      "description": "Donor Registration Number",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "DS",
+      "description": "Discover Card",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "EI",
+      "description": "Employee number",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "EN",
+      "description": "Employer number",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "ESN",
+      "description": "Staff Enterprise Number",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "FI",
+      "description": "Facility ID",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "GI",
+      "description": "Guarantor internal identifier",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "GL",
+      "description": "General ledger number",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "GN",
+      "description": "Guarantor external  identifier",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "HC",
+      "description": "Health Card Number",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "IND",
+      "description": "Indigenous/Aboriginal",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "JHN",
+      "description": "Jurisdictional health number (Canada)",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "LACSN",
+      "description": "Laboratory Accession ID",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "LANR",
+      "description": "Lifelong physician number",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "LI",
+      "description": "Labor and industries number",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "LN",
+      "description": "License number",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "LR",
+      "description": "Local Registry ID",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "MA",
+      "description": "Patient Medicaid number",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "MB",
+      "description": "Member Number",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "MC",
+      "description": "Patient's Medicare number",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "MCD",
+      "description": "Practitioner Medicaid number",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "MCN",
+      "description": "Microchip Number",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "MCR",
+      "description": "Practitioner Medicare number",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "MCT",
+      "description": "Marriage Certificate",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "MD",
+      "description": "Medical License number",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "MI",
+      "description": "Military ID number",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "MR",
+      "description": "Medical record number",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "MRT",
+      "description": "Temporary Medical Record Number",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "MS",
+      "description": "MasterCard",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "NBSNR",
+      "description": "Secondary physician office number",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "NCT",
+      "description": "Naturalization Certificate",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "NE",
+      "description": "National employer identifier",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "NH",
+      "description": "National Health Plan Identifier",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "NI",
+      "description": "National unique individual identifier",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "NII",
+      "description": "National Insurance Organization Identifier",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "NIIP",
+      "description": "National Insurance Payor Identifier (Payor)",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "NNxxx",
+      "description": "National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "NP",
+      "description": "Nurse practitioner number",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "NPI",
+      "description": "National provider identifier",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "OD",
+      "description": "Optometrist license number",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "PA",
+      "description": "Physician Assistant number",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "PC",
+      "description": "Parole Card",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "PCN",
+      "description": "Penitentiary/correctional institution Number",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "PE",
+      "description": "Living Subject Enterprise Number",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "PEN",
+      "description": "Pension Number",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "PI",
+      "description": "Patient internal identifier",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "PN",
+      "description": "Person number",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "PNT",
+      "description": "Temporary Living Subject Number",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "PPIN",
+      "description": "Medicare/CMS Performing Provider Identification Number",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "PPN",
+      "description": "Passport number",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "PRC",
+      "description": "Permanent Resident Card Number",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "PRN",
+      "description": "Provider number",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "PT",
+      "description": "Patient external identifier",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "QA",
+      "description": "QA number",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "RI",
+      "description": "Resource identifier",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "RN",
+      "description": "Registered Nurse Number",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "RPH",
+      "description": "Pharmacist license number",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "RR",
+      "description": "Railroad Retirement number",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "RRI",
+      "description": "Regional registry ID",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "RRP",
+      "description": "Railroad Retirement Provider",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "SID",
+      "description": "Specimen ID",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "SL",
+      "description": "State license",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "SN",
+      "description": "Subscriber Number",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "SP",
+      "description": "Study Permit",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "SR",
+      "description": "State registry ID",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "SS",
+      "description": "Social Security number",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "TAX",
+      "description": "Tax ID number",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "TN",
+      "description": "Treaty Number/ (Canada)",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "TPR",
+      "description": "Temporary Permanent Resident (Canada)",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "U",
+      "description": "Unspecified identifier",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "UPIN",
+      "description": "Medicare/CMS (formerly HCFA)'s Universal Physician Identification numbers",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "USID",
+      "description": "Unique Specimen ID",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "VN",
+      "description": "Visit number",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "VP",
+      "description": "Visitor Permit",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "VS",
+      "description": "VISA",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "WC",
+      "description": "WIC identifier",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "WCN",
+      "description": "Workers' Comp Number",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "WP",
+      "description": "Work Permit",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "XX",
+      "description": "Organization identifier",
+      "comment": "",
+      "sort_order": 109
+    }
+  ],
+  "value_count": 109
+}

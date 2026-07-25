@@ -1,0 +1,70 @@
+{
+  "code": "ADT_A30",
+  "name": "Merge Person Information",
+  "version": "HL7 v2.5.1",
+  "chapter": "Patient Administration",
+  "description": "Event A30 has been retained for backward compatibility only. An A30 event was used to merge person information on an MPI.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge Patient Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

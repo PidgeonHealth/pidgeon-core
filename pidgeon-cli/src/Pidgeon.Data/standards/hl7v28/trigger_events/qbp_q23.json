@@ -1,0 +1,71 @@
+{
+  "code": "QBP_Q23",
+  "message_structure": "QBP_Q21",
+  "name": "Get corresponding identifiers",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "This query/response is designed for interaction between a client system and an MPI (Master Person Index). The query consists of an identifier for a person, and the response is a list of identifiers for that person from the domains specified.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "QPD",
+      "segment_desc": "Query Parameter Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "RCP",
+      "segment_desc": "Response Control Parameter",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

@@ -1,0 +1,170 @@
+{
+  "code": "CSR",
+  "name": "Clinical Study Registration",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "The CSR segment will contain fundamental administrative and regulatory information required to document a patient’s enrollment on a clinical trial. This segment is all that is required if one needs to message another system that an enrollment has taken place, i.e., from clinical trials to pharmacy, accounting, or order entry systems. The CSR segment may also be used to identify that OBR, OBX, RXA, and RXR segments that follow represent data applicable to the identified study",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CSR.1",
+      "field_description": "Sponsor Study ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CSR.2",
+      "field_description": "Alternate Study ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CSR.3",
+      "field_description": "Institution Registering the Patient",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CSR.4",
+      "field_description": "Sponsor Patient ID",
+      "length": "30",
+      "data_type": "CX",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CSR.5",
+      "field_description": "Alternate Patient ID",
+      "length": "30",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CSR.6",
+      "field_description": "Date/Time of Patient Study Registration",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "CSR.7",
+      "field_description": "Person Performing Study Registration",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "CSR.8",
+      "field_description": "Study Authorizing Provider",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CSR.9",
+      "field_description": "Date/time Patient Study Consent Signed",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "CSR.10",
+      "field_description": "Patient Study Eligibility Status",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "CSR.11",
+      "field_description": "Study Randomization Date/time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "CSR.12",
+      "field_description": "Study Randomized Arm",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "CSR.13",
+      "field_description": "Stratum for Study Randomization",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "CSR.14",
+      "field_description": "Patient Evaluability Status",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "CSR.15",
+      "field_description": "Date/time Ended Study",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "CSR.16",
+      "field_description": "Reason Ended Study",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 16
+}

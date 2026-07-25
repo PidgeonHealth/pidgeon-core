@@ -1,0 +1,60 @@
+{
+  "code": "AFF",
+  "name": "Professional Affiliation",
+  "version": "HL7 v2.6",
+  "chapter": "Personnel Management",
+  "description": "The AFF segment adds detailed information regarding professional affiliations with which the staff member identified by the STF segment is/was associated.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AFF.1",
+      "field_description": "Set ID - AFF",
+      "length": "60",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "AFF.2",
+      "field_description": "Professional Organization",
+      "length": "250",
+      "data_type": "XON",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "AFF.3",
+      "field_description": "Professional Organization Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "AFF.4",
+      "field_description": "Professional Organization Affiliation Date Range",
+      "length": "52",
+      "data_type": "DR",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "AFF.5",
+      "field_description": "Professional Affiliation Additional Information",
+      "length": "60",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

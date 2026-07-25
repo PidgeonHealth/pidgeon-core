@@ -1,0 +1,100 @@
+{
+  "code": "CWE",
+  "name": "Coded with Exceptions",
+  "version": "HL7 v2.6",
+  "description": "Specifies a coded element and its associated detail. The CWE data type is used when 1) more than one table may be applicable or 2) the specified HL7 or externally defined table may be extended with local values or 3) when text is in place, the code may be omitted.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CWE.1",
+      "field_description": "Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CWE.2",
+      "field_description": "Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CWE.3",
+      "field_description": "Name Of Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 4,
+      "field_name": "CWE.4",
+      "field_description": "Alternate Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CWE.5",
+      "field_description": "Alternate Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CWE.6",
+      "field_description": "Name Of Alternate Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 7,
+      "field_name": "CWE.7",
+      "field_description": "Coding System Version Id",
+      "length": "10",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "CWE.8",
+      "field_description": "Alternate Coding System Version Id",
+      "length": "10",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CWE.9",
+      "field_description": "Original Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

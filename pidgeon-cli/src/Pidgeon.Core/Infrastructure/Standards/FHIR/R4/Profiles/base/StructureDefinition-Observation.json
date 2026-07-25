@@ -1,0 +1,26 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "name": "Observation",
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "snapshot": {
+    "element": [
+      { "path": "Observation", "min": 0, "max": "*" },
+      { "path": "Observation.id", "min": 0, "max": "1", "type": [{ "code": "id" }] },
+      { "path": "Observation.identifier", "min": 0, "max": "*", "type": [{ "code": "Identifier" }] },
+      { "path": "Observation.status", "min": 1, "max": "1", "type": [{ "code": "code" }], "binding": { "strength": "required", "valueSet": "http://hl7.org/fhir/ValueSet/observation-status" } },
+      { "path": "Observation.category", "min": 0, "max": "*", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Observation.code", "min": 1, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Observation.subject", "min": 0, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Patient"] }] },
+      { "path": "Observation.encounter", "min": 0, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Encounter"] }] },
+      { "path": "Observation.effective[x]", "min": 0, "max": "1", "type": [{ "code": "dateTime" }, { "code": "Period" }, { "code": "Timing" }, { "code": "instant" }] },
+      { "path": "Observation.value[x]", "min": 0, "max": "1", "type": [{ "code": "Quantity" }, { "code": "CodeableConcept" }, { "code": "string" }, { "code": "boolean" }, { "code": "integer" }, { "code": "Range" }, { "code": "Ratio" }, { "code": "dateTime" }, { "code": "time" }, { "code": "Period" }] },
+      { "path": "Observation.interpretation", "min": 0, "max": "*", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Observation.referenceRange", "min": 0, "max": "*", "type": [{ "code": "BackboneElement" }] },
+      { "path": "Observation.component", "min": 0, "max": "*", "type": [{ "code": "BackboneElement" }] },
+      { "path": "Observation.component.code", "min": 1, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Observation.component.value[x]", "min": 0, "max": "1", "type": [{ "code": "Quantity" }, { "code": "CodeableConcept" }, { "code": "string" }, { "code": "boolean" }, { "code": "integer" }] }
+    ]
+  }
+}

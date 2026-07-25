@@ -1,0 +1,70 @@
+{
+  "code": "ORA_R41",
+  "name": "Observation Report Alert Acknowledgement",
+  "version": "HL7 v2.8",
+  "chapter": "Observation Reporting",
+  "description": "This message enables application level acknowledgements in response to the ORU^R40 alert observation message. The R41 trigger event is used to indicate that the alert observation has been delivered to, and acknowledged by, a clinical user.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PRT",
+      "segment_desc": "Participation Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

@@ -1,0 +1,77 @@
+{
+  "code": "0369",
+  "name": "Specimen Role",
+  "version": "HL7 v2.5.1",
+  "chapter": "Observation Reporting",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Blind Sample",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Calibrator",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "E",
+      "description": "Electronic QC, used with manufactured reference providing signals that simulate QC results",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "F",
+      "description": "Specimen used for testing proficiency of the organization performing the testing (Filler)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "G",
+      "description": "Group (where a specimen consists of multiple individual elements that are not individually identified)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "L",
+      "description": "Pool (aliquots of individual specimens combined to form a single specimen representing all of the components.)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "O",
+      "description": "Specimen used for testing Operator Proficiency",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "P",
+      "description": "Patient (default if blank component value)",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Q",
+      "description": "Control specimen",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "R",
+      "description": "Replicate (of patient sample as a control)",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "V",
+      "description": "Verifying Calibrator, used for periodic calibration checks",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

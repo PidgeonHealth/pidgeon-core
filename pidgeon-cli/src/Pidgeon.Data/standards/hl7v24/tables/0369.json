@@ -1,0 +1,41 @@
+{
+  "code": "0369",
+  "name": "Specimen role",
+  "version": "HL7 v2.4",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Blind Sample",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Calibrator",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Patient (default if blank component value)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Q",
+      "description": "Control specimen",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "R",
+      "description": "Replicate (of patient sample as a control)",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

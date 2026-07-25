@@ -1,0 +1,71 @@
+{
+  "code": "0104",
+  "name": "Version ID",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "2.0",
+      "description": "Release 2.0",
+      "comment": "September 1988",
+      "sort_order": 1
+    },
+    {
+      "value": "2.0D",
+      "description": "Demo 2.0",
+      "comment": "October 1988",
+      "sort_order": 2
+    },
+    {
+      "value": "2.1",
+      "description": "Release 2. 1",
+      "comment": "March 1990",
+      "sort_order": 3
+    },
+    {
+      "value": "2.2",
+      "description": "Release 2.2",
+      "comment": "December 1994",
+      "sort_order": 4
+    },
+    {
+      "value": "2.3",
+      "description": "Release 2.3",
+      "comment": "March 1997",
+      "sort_order": 5
+    },
+    {
+      "value": "2.3.1",
+      "description": "Release 2.3.1",
+      "comment": "May 1999",
+      "sort_order": 6
+    },
+    {
+      "value": "2.4",
+      "description": "Release 2.4",
+      "comment": "November 2000",
+      "sort_order": 7
+    },
+    {
+      "value": "2.5",
+      "description": "Release 2.5",
+      "comment": "May 2003",
+      "sort_order": 8
+    },
+    {
+      "value": "2.5.1",
+      "description": "Release 1.5.1",
+      "comment": "January 2007",
+      "sort_order": 9
+    },
+    {
+      "value": "2.6",
+      "description": "Release 2.6",
+      "comment": "July 2007",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

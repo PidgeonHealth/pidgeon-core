@@ -1,0 +1,47 @@
+{
+  "code": "0200",
+  "name": "Name type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Alias Name",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Adopted Name",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "D",
+      "description": "Display Name",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "L",
+      "description": "Legal Name",
+      "comment": "The legal name is the same as the current married name",
+      "sort_order": 4
+    },
+    {
+      "value": "M",
+      "description": "Maiden Name",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

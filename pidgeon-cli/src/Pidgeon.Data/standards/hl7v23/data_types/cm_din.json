@@ -1,0 +1,20 @@
+{
+  "code": "CM_DIN",
+  "name": "Activation Date",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_DIN.1",
+      "field_description": "Date",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

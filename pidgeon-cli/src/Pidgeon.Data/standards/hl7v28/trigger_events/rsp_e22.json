@@ -1,0 +1,159 @@
+{
+  "code": "RSP_E22",
+  "name": "Authorization Request Status Query Response",
+  "version": "HL7 v2.8",
+  "chapter": "Claims and Reimbursement",
+  "description": "TThis message is used to respond to a QPB^E22 – Query Authorization Request Status. It provides Authorization status information to a Provider.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "QUERY_ACK",
+      "segment_desc": "QUERY_ACK group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "QAK",
+      "segment_desc": "Query Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY_ACK"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "QPD",
+      "segment_desc": "Query Parameter Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY_ACK"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "AUTHORIZATION_INFO",
+      "segment_desc": "AUTHORIZATION_INFO group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "QUERY_ACK"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "IVC",
+      "segment_desc": "Invoice Segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY_ACK",
+        "AUTHORIZATION_INFO"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PSG",
+      "segment_desc": "Product/service Group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY_ACK",
+        "AUTHORIZATION_INFO"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "PSL_ITEM_INFO",
+      "segment_desc": "PSL_ITEM_INFO group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "QUERY_ACK",
+        "AUTHORIZATION_INFO"
+      ],
+      "level": 2,
+      "order_index": 11
+    },
+    {
+      "segment_code": "PSL",
+      "segment_desc": "Product/service Line Item",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY_ACK",
+        "AUTHORIZATION_INFO",
+        "PSL_ITEM_INFO"
+      ],
+      "level": 3,
+      "order_index": 12
+    }
+  ],
+  "segment_count": 13
+}

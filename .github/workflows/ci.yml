@@ -1,0 +1,130 @@
+# Read-only CI for PidgeonHealth/pidgeon-core.
+#
+# Triggers only on pull_request (against the default branch) and workflow_dispatch. Never on
+# push or pull_request_target — an untrusted fork's PR runs with contents: read and no secrets.
+# SHA provenance for every pinned action: ../../CONTRACT.md § 3.
+
+name: ci
+
+on:
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: build + test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 8.0.423
+
+      # NOTE: root-relative paths assume the projected repo's solution lives at the repo root
+      # (per config/public-projections/core.yaml § D1). Adjust if the hygiene slice's file
+      # manifest places it elsewhere.
+      - name: Restore
+        run: dotnet restore --locked-mode
+
+      - name: Build
+        run: dotnet build --no-restore -c Release
+
+      - name: Test
+        run: dotnet test --no-build -c Release --logger "console;verbosity=normal"
+
+      - name: Public architecture invariants
+        run: dotnet test --no-build -c Release --filter "FullyQualifiedName~Pidgeon.Core.Architecture.Tests"
+
+      - name: Pack exact public packages
+        shell: bash
+        run: |
+          dotnet pack pidgeon-cli/src/Pidgeon.Core/Pidgeon.Core.csproj \
+            --no-build --no-restore -c Release -o artifacts/packages
+          dotnet pack pidgeon-cli/src/Pidgeon.Data.Baseline/Pidgeon.Data.Baseline.csproj \
+            --no-build --no-restore -c Release -o artifacts/packages
+          test -f artifacts/packages/Pidgeon.Core.0.1.0-beta.1.nupkg
+          test -f artifacts/packages/Pidgeon.Core.0.1.0-beta.1.snupkg
+          test -f artifacts/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg
+          test -f artifacts/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.snupkg
+          test "$(find artifacts/packages -maxdepth 1 -name '*.nupkg' | wc -l)" -eq 2
+          test "$(find artifacts/packages -maxdepth 1 -name '*.snupkg' | wc -l)" -eq 2
+
+      - name: Verify symbols and Source Link against the exact public commit
+        working-directory: artifacts/packages
+        run: |
+          dotnet run \
+            --project ../../pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj \
+            --configuration Release \
+            --no-build \
+            -- \
+            --commit "$GITHUB_SHA"
+
+      - name: Install pinned Microsoft SBOM Tool
+        shell: bash
+        env:
+          SBOM_TOOL_SHA256: bf5d4f99bc98c119d549d08fc02ae92598a7a42772f17317c01031a92632e05b
+        run: |
+          curl --fail --location --silent --show-error \
+            --output "$RUNNER_TEMP/sbom-tool" \
+            https://github.com/microsoft/sbom-tool/releases/download/v4.1.5/sbom-tool-linux-x64
+          echo "$SBOM_TOOL_SHA256  $RUNNER_TEMP/sbom-tool" | sha256sum --check
+          chmod 0555 "$RUNNER_TEMP/sbom-tool"
+
+      - name: Generate source and package SBOM
+        shell: bash
+        run: |
+          commit_epoch="$(git show -s --format=%ct "$GITHUB_SHA")"
+          generated_at="$(date --utc --date="@$commit_epoch" +'%Y-%m-%dT%H:%M:%SZ')"
+          mkdir -p "$GITHUB_WORKSPACE/artifacts/sbom"
+          "$RUNNER_TEMP/sbom-tool" generate \
+            -b "$GITHUB_WORKSPACE/artifacts/packages" \
+            -bc "$GITHUB_WORKSPACE" \
+            -m "$GITHUB_WORKSPACE/artifacts/sbom" \
+            -pn Pidgeon.Core-public-source \
+            -pv 0.1.0-beta.1 \
+            -ps "Pidgeon Health" \
+            -nsb https://pidgeon.health/sbom \
+            -nsu "$GITHUB_SHA" \
+            -gt "$generated_at" \
+            -pm true \
+            -li false \
+            -F false
+          manifest="artifacts/sbom/_manifest/spdx_2.2/manifest.spdx.json"
+          jq --sort-keys --arg candidate "$GITHUB_SHA" \
+            'walk(if type == "string" then sub("tag_id=[0-9a-fA-F-]+"; "tag_id=" + $candidate) elif type == "array" then sort_by(tostring) else . end)' \
+            "$manifest" > "$RUNNER_TEMP/manifest.spdx.json"
+          mv "$RUNNER_TEMP/manifest.spdx.json" "$manifest"
+          sha256sum "$manifest" | awk '{print $1}' > "$manifest.sha256"
+          "$RUNNER_TEMP/sbom-tool" validate \
+            -b "$GITHUB_WORKSPACE/artifacts/packages" \
+            -m "$GITHUB_WORKSPACE/artifacts/sbom/_manifest" \
+            -o "$GITHUB_WORKSPACE/artifacts/sbom/validation.json" \
+            -mi SPDX:2.2 \
+            -n true \
+            -F false
+          (
+            cd artifacts/sbom
+            find . -type f ! -name SHA256SUMS -print0 \
+              | sort --zero-terminated \
+              | xargs --null sha256sum > "$RUNNER_TEMP/SHA256SUMS"
+            mv "$RUNNER_TEMP/SHA256SUMS" SHA256SUMS
+          )
+
+      - name: Upload SBOM evidence
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pidgeon-core-sbom-${{ github.sha }}
+          path: artifacts/sbom
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,30 @@
+{
+  "code": "CM_EIP",
+  "name": "Parent Order",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_EIP.1",
+      "field_description": "Parent s Placer Order Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_EIP.2",
+      "field_description": "Parent s Filler Order Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

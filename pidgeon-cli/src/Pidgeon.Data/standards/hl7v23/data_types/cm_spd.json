@@ -1,0 +1,50 @@
+{
+  "code": "CM_SPD",
+  "name": "Specialty",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_SPD.1",
+      "field_description": "Specialty Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_SPD.2",
+      "field_description": "Governing Board",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM_SPD.3",
+      "field_description": "Eligible Or Certified",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0337"
+    },
+    {
+      "position": 4,
+      "field_name": "CM_SPD.4",
+      "field_description": "Date Of Certification",
+      "length": "0",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

@@ -1,0 +1,30 @@
+{
+  "code": "QID",
+  "name": "Query Identification",
+  "version": "HL7 v2.8",
+  "chapter": "Query",
+  "description": "The QID segment contains the information necessary to uniquely identify a query. Its primary use is in query cancellation or subscription cancellation",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QID.1",
+      "field_description": "Query Tag",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "QID.2",
+      "field_description": "Message Query Name",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0471"
+    }
+  ],
+  "field_count": 2
+}

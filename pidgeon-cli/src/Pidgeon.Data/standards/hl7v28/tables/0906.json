@@ -1,0 +1,101 @@
+{
+  "code": "0906",
+  "name": "ActPriority",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "ASAP - As soon as possible, next highest priority after stat",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CR",
+      "description": "Callback results - filler should contact the placer as soon as results are available, even for preliminary results",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CS",
+      "description": "Callback for scheduling - Filler should contact the placer (or target) to schedule the service.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CSP",
+      "description": "Callback placer for scheduling - filler should contact the placer to schedule the service",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CSR",
+      "description": "Contact recipient for scheduling - Filler should contact the service recipient (target) to schedule the service",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "EL",
+      "description": "Elective - Beneficial to the patient but not essential for survival.",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "EM",
+      "description": "Emergency - An unforeseen combination of circumstances or the resulting state that calls for immediate action",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "P",
+      "description": "Preop - Used to indicate that a service is to be performed prior to a scheduled surgery.  When ordering a service and using the pre-op priority, a check is done to see the amount of time that must be allowed for performance of the service.  When the order",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PRN",
+      "description": "As needed - An \"as needed\" order should be accompanied by a description of what constitutes a need.  This description is represented by an observation service predicate as a precondition.",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "R",
+      "description": "Routine - Routine service, do at usual work hours",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "RR",
+      "description": "Rush reporting - A report should be prepared and sent as quickly as possible",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "S",
+      "description": "Stat - With highest priority (e.g. emergency).",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "T",
+      "description": "Timing critical - It is critical to come as close as possible to the requested time (e.g. for a through antimicrobial level).",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "UD",
+      "description": "Use as directed - Drug is to be used as directed by the prescriber.",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "UR",
+      "description": "Urgent - Calls for prompt action",
+      "comment": "",
+      "sort_order": 15
+    }
+  ],
+  "value_count": 15
+}

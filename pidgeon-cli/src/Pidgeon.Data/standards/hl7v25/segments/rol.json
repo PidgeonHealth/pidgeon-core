@@ -1,0 +1,130 @@
+{
+  "code": "ROL",
+  "name": "Role",
+  "version": "HL7 v2.5",
+  "chapter": "Personnel Management",
+  "description": "The role segment contains the data necessary to add, update, correct, and delete from the record persons involved, as well as their functional involvement with the activity being transmitted.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ROL.1",
+      "field_description": "Role Instance ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ROL.2",
+      "field_description": "Action Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0287"
+    },
+    {
+      "position": 3,
+      "field_name": "ROL.3",
+      "field_description": "Role-ROL",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0443"
+    },
+    {
+      "position": 4,
+      "field_name": "ROL.4",
+      "field_description": "Role Person",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "ROL.5",
+      "field_description": "Role Begin Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "ROL.6",
+      "field_description": "Role End Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "ROL.7",
+      "field_description": "Role Duration",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "ROL.8",
+      "field_description": "Role Action Reason",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "ROL.9",
+      "field_description": "Provider Type",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "ROL.10",
+      "field_description": "Organization Unit Type",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0406"
+    },
+    {
+      "position": 11,
+      "field_name": "ROL.11",
+      "field_description": "Office/Home Address/Birthplace",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "ROL.12",
+      "field_description": "Phone",
+      "length": "250",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 12
+}

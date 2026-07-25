@@ -1,0 +1,115 @@
+{
+  "code": "RSP_K33",
+  "message_structure": "RSP_O33",
+  "name": "Get Donor Record Candidates Response",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "This query/response is designed for interaction between a registration system and the system which contains the Donor Book of Record.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "QAK",
+      "segment_desc": "Query Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "QPD",
+      "segment_desc": "Query Parameter Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "DONNOR",
+      "segment_desc": "DONNOR group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "DONNOR"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "ARV",
+      "segment_desc": "Access Restriction",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "DONNOR"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    }
+  ],
+  "segment_count": 10
+}

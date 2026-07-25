@@ -1,0 +1,40 @@
+{
+  "code": "RMI",
+  "name": "Risk Management Incident",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "The RMI segment is used to report an occurrence of an incident event pertaining or attaching to a patient encounter.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RMI.1",
+      "field_description": "Risk Management Incident Code",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0427"
+    },
+    {
+      "position": 2,
+      "field_name": "RMI.2",
+      "field_description": "Date/Time Incident",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RMI.3",
+      "field_description": "Incident Type Code",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0428"
+    }
+  ],
+  "field_count": 3
+}

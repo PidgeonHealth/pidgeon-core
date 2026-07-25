@@ -1,0 +1,380 @@
+{
+  "code": "PV2",
+  "name": "Patient visit - additional information",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The PV2 segment is a continuation of visit-specific information contained on the PV1 segment",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PV2.1",
+      "field_description": "Prior Pending Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PV2.2",
+      "field_description": "Accommodation Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0129"
+    },
+    {
+      "position": 3,
+      "field_name": "PV2.3",
+      "field_description": "Admit Reason",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PV2.4",
+      "field_description": "Transfer Reason",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PV2.5",
+      "field_description": "Patient Valuables",
+      "length": "25",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PV2.6",
+      "field_description": "Patient Valuables Location",
+      "length": "25",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PV2.7",
+      "field_description": "Visit User Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0130"
+    },
+    {
+      "position": 8,
+      "field_name": "PV2.8",
+      "field_description": "Expected Admit Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "PV2.9",
+      "field_description": "Expected Discharge Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "PV2.10",
+      "field_description": "Estimated Length of Inpatient Stay",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "PV2.11",
+      "field_description": "Actual Length of Inpatient Stay",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "PV2.12",
+      "field_description": "Visit Description",
+      "length": "50",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "PV2.13",
+      "field_description": "Referral Source Code",
+      "length": "90",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "PV2.14",
+      "field_description": "Previous Service Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PV2.15",
+      "field_description": "Employment Illness Related Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 16,
+      "field_name": "PV2.16",
+      "field_description": "Purge Status Code",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0213"
+    },
+    {
+      "position": 17,
+      "field_name": "PV2.17",
+      "field_description": "Purge Status Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "PV2.18",
+      "field_description": "Special Program Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0214"
+    },
+    {
+      "position": 19,
+      "field_name": "PV2.19",
+      "field_description": "Retention Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 20,
+      "field_name": "PV2.20",
+      "field_description": "Expected Number of Insurance Plans",
+      "length": "1",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "PV2.21",
+      "field_description": "Visit Publicity Code",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0215"
+    },
+    {
+      "position": 22,
+      "field_name": "PV2.22",
+      "field_description": "Visit Protection Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 23,
+      "field_name": "PV2.23",
+      "field_description": "Clinic Organization Name",
+      "length": "90",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "PV2.24",
+      "field_description": "Patient Status Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0216"
+    },
+    {
+      "position": 25,
+      "field_name": "PV2.25",
+      "field_description": "Visit Priority Code",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0217"
+    },
+    {
+      "position": 26,
+      "field_name": "PV2.26",
+      "field_description": "Previous Treatment Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "PV2.27",
+      "field_description": "Expected Discharge Disposition",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0112"
+    },
+    {
+      "position": 28,
+      "field_name": "PV2.28",
+      "field_description": "Signature on File Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "PV2.29",
+      "field_description": "First Similar Illness Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "PV2.30",
+      "field_description": "Patient Charge Adjustment Code",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0218"
+    },
+    {
+      "position": 31,
+      "field_name": "PV2.31",
+      "field_description": "Recurring Service Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0219"
+    },
+    {
+      "position": 32,
+      "field_name": "PV2.32",
+      "field_description": "Billing Media Code",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 33,
+      "field_name": "PV2.33",
+      "field_description": "Expected Surgery Date & Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "PV2.34",
+      "field_description": "Military Partnership Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 35,
+      "field_name": "PV2.35",
+      "field_description": "Military Non-Availabiltiy Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 36,
+      "field_name": "PV2.36",
+      "field_description": "Newborn Baby Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 37,
+      "field_name": "PV2.37",
+      "field_description": "Baby Detained Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 37
+}

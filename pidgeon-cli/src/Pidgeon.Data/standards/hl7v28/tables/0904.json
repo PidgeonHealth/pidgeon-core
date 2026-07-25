@@ -1,0 +1,29 @@
+{
+  "code": "0904",
+  "name": "Security Check Scheme",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BCV",
+      "description": "Bank Card Validation Number",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CCS",
+      "description": "Credit Card Security code",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "VID",
+      "description": "Version ID",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

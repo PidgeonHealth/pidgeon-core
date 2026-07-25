@@ -1,0 +1,35 @@
+{
+  "code": "0339",
+  "name": "Advanced Beneficiary Notice Code",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "Service is subject to medical necessity procedures",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Patient has been informed of responsibility, and agrees to pay for service",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Patient has been informed of responsibility, and asks that the payer be billed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "Advanced Beneficiary Notice has not been signed",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

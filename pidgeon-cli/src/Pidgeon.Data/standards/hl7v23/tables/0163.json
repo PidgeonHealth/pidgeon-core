@@ -1,0 +1,335 @@
+{
+  "code": "0163",
+  "name": "Administrative Site",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BE",
+      "description": "Bilateral Ears",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BN",
+      "description": "Bilateral Nares",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BU",
+      "description": "Buttock",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CT",
+      "description": "Chest Tube",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LA",
+      "description": "Left Arm",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "LAC",
+      "description": "Left Anterior Chest",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "LACF",
+      "description": "Left Antecubital Fossa",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "LD",
+      "description": "Left Deltoid",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "LE",
+      "description": "Left Ear",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "LEJ",
+      "description": "Left External Jugular",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "LF",
+      "description": "Left Foot",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "LG",
+      "description": "Left Gluteus Medius",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "LH",
+      "description": "Left Hand",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "LIJ",
+      "description": "Left Internal Jugular",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "LLAQ",
+      "description": "Left Lower Abd Quadrant",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "LLFA",
+      "description": "Left Lower Forearm",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "LMFA",
+      "description": "Left Mid Forearm",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "LN",
+      "description": "Left Naris",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "LPC",
+      "description": "Left Posterior Chest",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "LSC",
+      "description": "Left Subclavian",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "LT",
+      "description": "Left Thigh",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "LUA",
+      "description": "Left Upper Arm",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "LUAQ",
+      "description": "Left Upper Abd Quadrant",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "LUFA",
+      "description": "Left Upper Forearm",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "LVG",
+      "description": "Left Ventragluteal",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "LVL",
+      "description": "Left Vastus Lateralis",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "NB",
+      "description": "Nebulized",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "OD",
+      "description": "Right Eye",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "OS",
+      "description": "Left Eye",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "OU",
+      "description": "Bilateral Eyes",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "PA",
+      "description": "Perianal",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "PERIN",
+      "description": "Perineal",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "RA",
+      "description": "Right Arm",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "RAC",
+      "description": "Right Anterior Chest",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "RACF",
+      "description": "Right Antecubital Fossa",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "RD",
+      "description": "Right Deltoid",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "RE",
+      "description": "Right Ear",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "REJ",
+      "description": "Right External Jugular",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "RF",
+      "description": "Right Foot",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "RG",
+      "description": "Right Gluteus Medius",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "RH",
+      "description": "Right Hand",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "RIJ",
+      "description": "Right Internal Jugular",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "RLAQ",
+      "description": "Rt Lower Abd Quadrant",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "RLFA",
+      "description": "Right Lower Forearm",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "RMFA",
+      "description": "Right Mid Forearm",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "RN",
+      "description": "Right Naris",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "RPC",
+      "description": "Right Posterior Chest",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "RSC",
+      "description": "Right Subclavian",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "RT",
+      "description": "Right Thigh",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "RUA",
+      "description": "Right Upper Arm",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "RUAQ",
+      "description": "Right Upper Abd Quadrant",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "RUFA",
+      "description": "Right Upper Forearm",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "RVG",
+      "description": "Right Ventragluteal",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "RVL",
+      "description": "Right Vastus Lateralis",
+      "comment": "",
+      "sort_order": 54
+    }
+  ],
+  "value_count": 54
+}

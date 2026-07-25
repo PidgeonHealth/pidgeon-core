@@ -1,0 +1,642 @@
+{
+  "code": "RSP_K31",
+  "name": "Dispense History Response",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "The purpose of this query/response pair is to retrieve patient pharmacy dispense history information from the Server.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "QAK",
+      "segment_desc": "Query Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "QPD",
+      "segment_desc": "Query Parameter Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "RCP",
+      "segment_desc": "Response Control Parameter",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "RESPONSE",
+      "segment_desc": "RESPONSE group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "ADDITIONAL_DEMOGRAPHICS",
+      "segment_desc": "ADDITIONAL_DEMOGRAPHICS group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 11
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "ADDITIONAL_DEMOGRAPHICS"
+      ],
+      "level": 3,
+      "order_index": 12
+    },
+    {
+      "segment_code": "PRT",
+      "segment_desc": "Participation Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "ADDITIONAL_DEMOGRAPHICS"
+      ],
+      "level": 3,
+      "order_index": 13
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 14
+    },
+    {
+      "segment_code": "AL1",
+      "segment_desc": "Patient Allergy Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 15
+    },
+    {
+      "segment_code": "PATIENT_VISIT",
+      "segment_desc": "PATIENT_VISIT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 16
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient Visit",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "PATIENT_VISIT"
+      ],
+      "level": 3,
+      "order_index": 17
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient Visit - Additional Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "PATIENT_VISIT"
+      ],
+      "level": 3,
+      "order_index": 18
+    },
+    {
+      "segment_code": "PRT",
+      "segment_desc": "Participation Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "PATIENT_VISIT"
+      ],
+      "level": 3,
+      "order_index": 19
+    },
+    {
+      "segment_code": "ORDER",
+      "segment_desc": "ORDER group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 20
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 21
+    },
+    {
+      "segment_code": "TIMING",
+      "segment_desc": "TIMING group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 22
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/quantity",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "TIMING"
+      ],
+      "level": 3,
+      "order_index": 23
+    },
+    {
+      "segment_code": "TQ2",
+      "segment_desc": "Timing/quantity Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "TIMING"
+      ],
+      "level": 3,
+      "order_index": 24
+    },
+    {
+      "segment_code": "ORDER_DETAIL",
+      "segment_desc": "ORDER_DETAIL group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 25
+    },
+    {
+      "segment_code": "RXO",
+      "segment_desc": "Pharmacy/treatment Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER_DETAIL"
+      ],
+      "level": 3,
+      "order_index": 26
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER_DETAIL"
+      ],
+      "level": 3,
+      "order_index": 27
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/treatment Route",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER_DETAIL"
+      ],
+      "level": 3,
+      "order_index": 28
+    },
+    {
+      "segment_code": "COMPONENTS",
+      "segment_desc": "COMPONENTS group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER_DETAIL"
+      ],
+      "level": 3,
+      "order_index": 29
+    },
+    {
+      "segment_code": "RXC",
+      "segment_desc": "Pharmacy/treatment Component Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER_DETAIL",
+        "COMPONENTS"
+      ],
+      "level": 4,
+      "order_index": 30
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER_DETAIL",
+        "COMPONENTS"
+      ],
+      "level": 4,
+      "order_index": 31
+    },
+    {
+      "segment_code": "ENCODING",
+      "segment_desc": "ENCODING group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 32
+    },
+    {
+      "segment_code": "RXE",
+      "segment_desc": "Pharmacy/treatment Encoded Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING"
+      ],
+      "level": 3,
+      "order_index": 33
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING"
+      ],
+      "level": 3,
+      "order_index": 34
+    },
+    {
+      "segment_code": "TIMING_ENCODED",
+      "segment_desc": "TIMING_ENCODED group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING"
+      ],
+      "level": 3,
+      "order_index": 35
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/quantity",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING",
+        "TIMING_ENCODED"
+      ],
+      "level": 4,
+      "order_index": 36
+    },
+    {
+      "segment_code": "TQ2",
+      "segment_desc": "Timing/quantity Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING",
+        "TIMING_ENCODED"
+      ],
+      "level": 4,
+      "order_index": 37
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/treatment Route",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING"
+      ],
+      "level": 3,
+      "order_index": 38
+    },
+    {
+      "segment_code": "RXC",
+      "segment_desc": "Pharmacy/treatment Component Order",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ENCODING"
+      ],
+      "level": 3,
+      "order_index": 39
+    },
+    {
+      "segment_code": "RXD",
+      "segment_desc": "Pharmacy/treatment Dispense",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 40
+    },
+    {
+      "segment_code": "PRT",
+      "segment_desc": "Participation Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 41
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/treatment Route",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 42
+    },
+    {
+      "segment_code": "RXC",
+      "segment_desc": "Pharmacy/treatment Component Order",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 43
+    },
+    {
+      "segment_code": "OBSERVATION",
+      "segment_desc": "OBSERVATION group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 44
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "OBSERVATION"
+      ],
+      "level": 3,
+      "order_index": 45
+    },
+    {
+      "segment_code": "PRT",
+      "segment_desc": "Participation Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "OBSERVATION"
+      ],
+      "level": 3,
+      "order_index": 46
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "OBSERVATION"
+      ],
+      "level": 3,
+      "order_index": 47
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 48
+    }
+  ],
+  "segment_count": 49
+}

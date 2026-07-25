@@ -1,0 +1,80 @@
+{
+  "code": "RFR",
+  "name": "Reference Range",
+  "version": "HL7 v2.3.1",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RFR.1",
+      "field_description": "Numeric Range",
+      "length": "0",
+      "data_type": "NR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RFR.2",
+      "field_description": "Administrative Sex",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0001"
+    },
+    {
+      "position": 3,
+      "field_name": "RFR.3",
+      "field_description": "Age Range",
+      "length": "0",
+      "data_type": "NR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "RFR.4",
+      "field_description": "Gestational Age Range",
+      "length": "0",
+      "data_type": "NR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "RFR.5",
+      "field_description": "Species",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "RFR.6",
+      "field_description": "Race/subspecies",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "RFR.7",
+      "field_description": "Conditions",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 7
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0538",
+  "name": "Institution Relationship Type",
+  "version": "HL7 v2.8",
+  "chapter": "Personnel Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CON",
+      "description": "Contractor",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CST",
+      "description": "Consultant",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "EMP",
+      "description": "Employee",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "VOL",
+      "description": "Volunteer",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

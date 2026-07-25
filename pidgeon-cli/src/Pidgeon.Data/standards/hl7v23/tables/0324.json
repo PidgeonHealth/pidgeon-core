@@ -1,0 +1,83 @@
+{
+  "code": "0324",
+  "name": "Location characteristic ID",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "GEN",
+      "description": "Gender of patient(s)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "IMP",
+      "description": "Implant: can be used for radiation implant patients",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "INF",
+      "description": "Infectious disease: this location can be used for isolation",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "LCR",
+      "description": "Level of care",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LIC",
+      "description": "Licensed",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "OVR",
+      "description": "Overflow",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PRL",
+      "description": "Privacy level: indicating the level of private versus non-private room",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "SET",
+      "description": "Bed is set up",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "SHA",
+      "description": "Shadow: a temporary holding location that does not physically exist",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "SMK",
+      "description": "Smoking",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "STF",
+      "description": "Bed is staffed",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "TEA",
+      "description": "Teaching location",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

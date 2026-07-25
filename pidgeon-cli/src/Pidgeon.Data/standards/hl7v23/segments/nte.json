@@ -1,0 +1,40 @@
+{
+  "code": "NTE",
+  "name": "Notes and comments segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The NTE segment is defined here for inclusion in messages defined in other chapters. It is a common format for sending notes and comments",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NTE.1",
+      "field_description": "Set ID - Notes and Comments",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "NTE.2",
+      "field_description": "Source of Comment",
+      "length": "8",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0105"
+    },
+    {
+      "position": 3,
+      "field_name": "NTE.3",
+      "field_description": "Comment",
+      "length": "65536",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

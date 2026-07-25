@@ -1,0 +1,530 @@
+{
+  "code": "PV1",
+  "name": "Patient visit",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The PV1 segment is used to communicate information on an account or visit-specific basis. The default is to send account level data. To use this segment for visit level data PV1-51 - Visit Indicator must be valued to \"V\". The value of PV1-51 affects the level of data being sent on the PV1, PV2, and any other segments that are part of the associated PID/PV1 hierarchy (e.g. ROL, DG1, or OBX).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PV1.1",
+      "field_description": "Set ID - Patient Visit",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PV1.2",
+      "field_description": "Patient Class",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0004"
+    },
+    {
+      "position": 3,
+      "field_name": "PV1.3",
+      "field_description": "Assigned Patient Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PV1.4",
+      "field_description": "Admission Type",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0007"
+    },
+    {
+      "position": 5,
+      "field_name": "PV1.5",
+      "field_description": "Preadmit Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PV1.6",
+      "field_description": "Prior Patient Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PV1.7",
+      "field_description": "Attending Doctor",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0010"
+    },
+    {
+      "position": 8,
+      "field_name": "PV1.8",
+      "field_description": "Referring Doctor",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0010"
+    },
+    {
+      "position": 9,
+      "field_name": "PV1.9",
+      "field_description": "Consulting Doctor",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0010"
+    },
+    {
+      "position": 10,
+      "field_name": "PV1.10",
+      "field_description": "Hospital Service",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0069"
+    },
+    {
+      "position": 11,
+      "field_name": "PV1.11",
+      "field_description": "Temporary Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "PV1.12",
+      "field_description": "Preadmit Test Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0087"
+    },
+    {
+      "position": 13,
+      "field_name": "PV1.13",
+      "field_description": "Readmission Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0092"
+    },
+    {
+      "position": 14,
+      "field_name": "PV1.14",
+      "field_description": "Admit Source",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0023"
+    },
+    {
+      "position": 15,
+      "field_name": "PV1.15",
+      "field_description": "Ambulatory Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0009"
+    },
+    {
+      "position": 16,
+      "field_name": "PV1.16",
+      "field_description": "VIP Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0099"
+    },
+    {
+      "position": 17,
+      "field_name": "PV1.17",
+      "field_description": "Admitting Doctor",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0010"
+    },
+    {
+      "position": 18,
+      "field_name": "PV1.18",
+      "field_description": "Patient Type",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0018"
+    },
+    {
+      "position": 19,
+      "field_name": "PV1.19",
+      "field_description": "Visit Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "PV1.20",
+      "field_description": "Financial Class",
+      "length": "50",
+      "data_type": "FC",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "PV1.21",
+      "field_description": "Charge Price Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0032"
+    },
+    {
+      "position": 22,
+      "field_name": "PV1.22",
+      "field_description": "Courtesy Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0045"
+    },
+    {
+      "position": 23,
+      "field_name": "PV1.23",
+      "field_description": "Credit Rating",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0046"
+    },
+    {
+      "position": 24,
+      "field_name": "PV1.24",
+      "field_description": "Contract Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0044"
+    },
+    {
+      "position": 25,
+      "field_name": "PV1.25",
+      "field_description": "Contract Effective Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "PV1.26",
+      "field_description": "Contract Amount",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "PV1.27",
+      "field_description": "Contract Period",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "PV1.28",
+      "field_description": "Interest Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0073"
+    },
+    {
+      "position": 29,
+      "field_name": "PV1.29",
+      "field_description": "Transfer to Bad Debt Code",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0110"
+    },
+    {
+      "position": 30,
+      "field_name": "PV1.30",
+      "field_description": "Transfer to Bad Debt Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "PV1.31",
+      "field_description": "Bad Debt Agency Code",
+      "length": "10",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0021"
+    },
+    {
+      "position": 32,
+      "field_name": "PV1.32",
+      "field_description": "Bad Debt Transfer Amount",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "PV1.33",
+      "field_description": "Bad Debt Recovery Amount",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "PV1.34",
+      "field_description": "Delete Account Indicator",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0111"
+    },
+    {
+      "position": 35,
+      "field_name": "PV1.35",
+      "field_description": "Delete Account Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 36,
+      "field_name": "PV1.36",
+      "field_description": "Discharge Disposition",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0112"
+    },
+    {
+      "position": 37,
+      "field_name": "PV1.37",
+      "field_description": "Discharged to Location",
+      "length": "25",
+      "data_type": "CM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0113"
+    },
+    {
+      "position": 38,
+      "field_name": "PV1.38",
+      "field_description": "Diet Type",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0114"
+    },
+    {
+      "position": 39,
+      "field_name": "PV1.39",
+      "field_description": "Servicing Facility",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0115"
+    },
+    {
+      "position": 40,
+      "field_name": "PV1.40",
+      "field_description": "Bed Status",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0116"
+    },
+    {
+      "position": 41,
+      "field_name": "PV1.41",
+      "field_description": "Account Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0117"
+    },
+    {
+      "position": 42,
+      "field_name": "PV1.42",
+      "field_description": "Pending Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 43,
+      "field_name": "PV1.43",
+      "field_description": "Prior Temporary Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 44,
+      "field_name": "PV1.44",
+      "field_description": "Admit Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 45,
+      "field_name": "PV1.45",
+      "field_description": "Discharge Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 46,
+      "field_name": "PV1.46",
+      "field_description": "Current Patient Balance",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 47,
+      "field_name": "PV1.47",
+      "field_description": "Total Charges",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 48,
+      "field_name": "PV1.48",
+      "field_description": "Total Adjustments",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 49,
+      "field_name": "PV1.49",
+      "field_description": "Total Payments",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 50,
+      "field_name": "PV1.50",
+      "field_description": "Alternate Visit ID",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0203"
+    },
+    {
+      "position": 51,
+      "field_name": "PV1.51",
+      "field_description": "Visit Indicator",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0326"
+    },
+    {
+      "position": 52,
+      "field_name": "PV1.52",
+      "field_description": "Other Healthcare Provider",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0010"
+    }
+  ],
+  "field_count": 52
+}

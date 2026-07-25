@@ -1,0 +1,70 @@
+{
+  "code": "SFT",
+  "name": "Software Segment",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "This segment provides additional information about the software product(s) used as a Sending Application. The primary purpose of this segment is for diagnostic use.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SFT.1",
+      "field_description": "Software Vendor Organization",
+      "length": "0",
+      "data_type": "XON",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SFT.2",
+      "field_description": "Software Certified Version Or Release Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SFT.3",
+      "field_description": "Software Product Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SFT.4",
+      "field_description": "Software Binary Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "SFT.5",
+      "field_description": "Software Product Information",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "SFT.6",
+      "field_description": "Software Install Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

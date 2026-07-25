@@ -1,0 +1,29 @@
+{
+  "code": "0299",
+  "name": "Encoding",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "no encoding - data are displayable ASCII characters",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Base64",
+      "description": "encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and lower case alphabetic characters, digits \"0\" through “9,” “+,” “/,” and “=.”.",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Hex",
+      "description": "hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

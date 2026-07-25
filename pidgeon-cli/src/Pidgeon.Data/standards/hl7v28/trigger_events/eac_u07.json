@@ -1,0 +1,147 @@
+{
+  "code": "EAC_U07",
+  "name": "Automated equipment command",
+  "version": "HL7 v2.8",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "This message is used to send equipment commands from one application to another (e.g., a Laboratory Automation System to automated Equipment).  The OBR segments attached to the SAC should be used for transfer of information about tests assigned to a specific aliquot in the aliquoting command (not included in the SAC segment, but relevant for automating processing).",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "EQU",
+      "segment_desc": "Equipment Detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "COMMAND",
+      "segment_desc": "COMMAND group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "ECD",
+      "segment_desc": "Equipment Command",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/quantity",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "SPECIMEN_CONTAINER",
+      "segment_desc": "SPECIMEN_CONTAINER group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "COMMAND"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "SAC",
+      "segment_desc": "Specimen Container Detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND",
+        "SPECIMEN_CONTAINER"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "OBR",
+      "segment_desc": "Observation Request",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "COMMAND",
+        "SPECIMEN_CONTAINER"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "SPM",
+      "segment_desc": "Specimen",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "COMMAND",
+        "SPECIMEN_CONTAINER"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "CNS",
+      "segment_desc": "Clear Notification",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND"
+      ],
+      "level": 1,
+      "order_index": 11
+    }
+  ],
+  "segment_count": 12
+}

@@ -1,0 +1,89 @@
+{
+  "code": "0357",
+  "name": "Message error condition codes",
+  "version": "HL7 v2.3",
+  "chapter": "Unknown",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "0",
+      "description": "Message accepted",
+      "comment": "Success. Optional, as the AA conveys success. Used for systems that must always return a status code.",
+      "sort_order": 1
+    },
+    {
+      "value": "100",
+      "description": "Segment sequence error",
+      "comment": "The message segments were not in the proper order, or required segments are missing.",
+      "sort_order": 2
+    },
+    {
+      "value": "101",
+      "description": "Required field missing",
+      "comment": "A required field is missing from a segment",
+      "sort_order": 3
+    },
+    {
+      "value": "102",
+      "description": "Data type error",
+      "comment": "The field contained data of the wrong data type, e.g. an NM field contained \"FOO\".",
+      "sort_order": 4
+    },
+    {
+      "value": "103",
+      "description": "Table value not found",
+      "comment": "A field of data type ID or IS was compared against the corresponding table, and no match was found.",
+      "sort_order": 5
+    },
+    {
+      "value": "200",
+      "description": "Unsupported message type",
+      "comment": "The Message Type is not supported.",
+      "sort_order": 6
+    },
+    {
+      "value": "201",
+      "description": "Unsupported event code",
+      "comment": "The Event Code is not supported.",
+      "sort_order": 7
+    },
+    {
+      "value": "202",
+      "description": "Unsupported processing id",
+      "comment": "The Processing ID is not supported.",
+      "sort_order": 8
+    },
+    {
+      "value": "203",
+      "description": "Unsupported version id",
+      "comment": "The Version ID is not supported.",
+      "sort_order": 9
+    },
+    {
+      "value": "204",
+      "description": "Unknown key identifier",
+      "comment": "The ID of the patient, order, etc., was not found. Used for transactions other than additions, e.g. transfer of a non-existent patient.",
+      "sort_order": 10
+    },
+    {
+      "value": "205",
+      "description": "Duplicate key identifier",
+      "comment": "The ID of the patient, order, etc., already exists. Used in response to addition transactions (Admit, New Order, etc.).",
+      "sort_order": 11
+    },
+    {
+      "value": "206",
+      "description": "Application record locked",
+      "comment": "The transaction could not be performed at the application storage level, e.g.  database locked.",
+      "sort_order": 12
+    },
+    {
+      "value": "207",
+      "description": "Application internal error",
+      "comment": "A catchall for internal errors not explicitly covered by other codes.",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

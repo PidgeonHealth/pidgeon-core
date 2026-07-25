@@ -1,0 +1,29 @@
+{
+  "code": "0757",
+  "name": "Status Respiration Minutes",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "Respiration minutes not used for grouping",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Listed respiration minutes used for grouping",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "OPS code value used for grouping",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

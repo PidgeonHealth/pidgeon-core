@@ -1,0 +1,450 @@
+{
+  "code": "RXE",
+  "name": "Pharmacy/Treatment Encoded Order",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "The RXE segment details the pharmacy or treatment application's encoding of the order. It also contains several pharmacy-specific order status fields, such as RXE-16-number of refills remaining, RXE-17-number of refills/doses dispensed, RXE-18-D/T of most recent refill or dose dispensed, and RXE-19-total daily dose.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RXE.1",
+      "field_description": "Quantity/Timing",
+      "length": "200",
+      "data_type": "TQ",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RXE.2",
+      "field_description": "Give Code",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RXE.3",
+      "field_description": "Give Amount - Minimum",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "RXE.4",
+      "field_description": "Give Amount - Maximum",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "RXE.5",
+      "field_description": "Give Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "RXE.6",
+      "field_description": "Give Dosage Form",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "RXE.7",
+      "field_description": "Provider's Administration Instructions",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "RXE.8",
+      "field_description": "Deliver-To Location",
+      "length": "200",
+      "data_type": "LA1",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "RXE.9",
+      "field_description": "Substitution Status",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0167"
+    },
+    {
+      "position": 10,
+      "field_name": "RXE.10",
+      "field_description": "Dispense Amount",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "RXE.11",
+      "field_description": "Dispense Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "RXE.12",
+      "field_description": "Number Of Refills",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "RXE.13",
+      "field_description": "Ordering Provider's DEA Number",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "C",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "RXE.14",
+      "field_description": "Pharmacist/Treatment Supplier's Verifier ID",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "RXE.15",
+      "field_description": "Prescription Number",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "RXE.16",
+      "field_description": "Number of Refills Remaining",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "RXE.17",
+      "field_description": "Number of Refills/Doses Dispensed",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "RXE.18",
+      "field_description": "D/T of Most Recent Refill or Dose Dispensed",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "RXE.19",
+      "field_description": "Total Daily Dose",
+      "length": "10",
+      "data_type": "CQ",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "RXE.20",
+      "field_description": "Needs Human Review",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 21,
+      "field_name": "RXE.21",
+      "field_description": "Pharmacy/Treatment Supplier's Special Dispensing Instructions",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "RXE.22",
+      "field_description": "Give Per (Time Units)",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "RXE.23",
+      "field_description": "Give Rate Amount",
+      "length": "6",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "RXE.24",
+      "field_description": "Give Rate Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "RXE.25",
+      "field_description": "Give Strength",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "RXE.26",
+      "field_description": "Give Strength Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "RXE.27",
+      "field_description": "Give Indication",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "RXE.28",
+      "field_description": "Dispense Package Size",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "RXE.29",
+      "field_description": "Dispense Package Size Unit",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "RXE.30",
+      "field_description": "Dispense Package Method",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0321"
+    },
+    {
+      "position": 31,
+      "field_name": "RXE.31",
+      "field_description": "Supplementary Code",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 32,
+      "field_name": "RXE.32",
+      "field_description": "Original Order Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "RXE.33",
+      "field_description": "Give Drug Strength Volume",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "RXE.34",
+      "field_description": "Give Drug Strength Volume Units",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 35,
+      "field_name": "RXE.35",
+      "field_description": "Controlled Substance Schedule",
+      "length": "60",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0477"
+    },
+    {
+      "position": 36,
+      "field_name": "RXE.36",
+      "field_description": "Formulary Status",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0478"
+    },
+    {
+      "position": 37,
+      "field_name": "RXE.37",
+      "field_description": "Pharmaceutical Substance Alternative",
+      "length": "60",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 38,
+      "field_name": "RXE.38",
+      "field_description": "Pharmacy of Most Recent Fill",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 39,
+      "field_name": "RXE.39",
+      "field_description": "Initial Dispense Amount",
+      "length": "250",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 40,
+      "field_name": "RXE.40",
+      "field_description": "Dispensing Pharmacy",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 41,
+      "field_name": "RXE.41",
+      "field_description": "Dispensing Pharmacy Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 42,
+      "field_name": "RXE.42",
+      "field_description": "Deliver-to Patient Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 43,
+      "field_name": "RXE.43",
+      "field_description": "Deliver-to Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 44,
+      "field_name": "RXE.44",
+      "field_description": "Pharmacy Order Type",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0480"
+    }
+  ],
+  "field_count": 44
+}

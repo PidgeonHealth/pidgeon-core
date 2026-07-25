@@ -1,0 +1,17 @@
+{
+  "code": "0291",
+  "name": "Subtype of referenced data",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "x-hl7-cda-level-one",
+      "description": "HL7 Clinical Document Architecture Level One document",
+      "comment": "Retained for backwards compatibility only as of v2.6 and CDA R 2. Preferred value is text/xml.",
+      "sort_order": 1
+    }
+  ],
+  "value_count": 1
+}

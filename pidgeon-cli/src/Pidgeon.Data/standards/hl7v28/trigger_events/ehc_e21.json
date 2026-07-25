@@ -1,0 +1,113 @@
+{
+  "code": "EHC_E21",
+  "name": "Cancel Authorization Request",
+  "version": "HL7 v2.8",
+  "chapter": "Claims and Reimbursement",
+  "description": "This message is used to cancel an Authorization Request, as a result of a previously submitted EHC^E20 – Submit Authorization Request message.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "AUTHORIZATION_REQUEST",
+      "segment_desc": "AUTHORIZATION_REQUEST group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "IVC",
+      "segment_desc": "Invoice Segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION_REQUEST"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PSL_ITEM_INFO",
+      "segment_desc": "PSL_ITEM_INFO group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "AUTHORIZATION_REQUEST"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PSL",
+      "segment_desc": "Product/service Line Item",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION_REQUEST",
+        "PSL_ITEM_INFO"
+      ],
+      "level": 2,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION_REQUEST",
+        "PSL_ITEM_INFO"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "AUT",
+      "segment_desc": "Authorization Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION_REQUEST",
+        "PSL_ITEM_INFO"
+      ],
+      "level": 2,
+      "order_index": 8
+    }
+  ],
+  "segment_count": 9
+}

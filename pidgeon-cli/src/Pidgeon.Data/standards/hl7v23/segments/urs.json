@@ -1,0 +1,100 @@
+{
+  "code": "URS",
+  "name": "Unsolicited selection segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The URS segment is identical with the QRF segment, except that if the name of any field contains Query (of QRY), this word has been changed to Results (see URS-5-R/U other results subject definition).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "URS.1",
+      "field_description": "R/U Where Subject Definition",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "URS.2",
+      "field_description": "R/U When Data Start Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "URS.3",
+      "field_description": "R/U When Data End Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "URS.4",
+      "field_description": "R/U What User Qualifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "URS.5",
+      "field_description": "R/U Other Results Subject Definition",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "URS.6",
+      "field_description": "R/U Which Date/Time Qualifier",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0156"
+    },
+    {
+      "position": 7,
+      "field_name": "URS.7",
+      "field_description": "R/U Which Date/Time Status Qualifier",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0157"
+    },
+    {
+      "position": 8,
+      "field_name": "URS.8",
+      "field_description": "R/U Date/Time Selection Qualifier",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0158"
+    },
+    {
+      "position": 9,
+      "field_name": "URS.9",
+      "field_description": "R/U Quantity/Timing Qualifier",
+      "length": "60",
+      "data_type": "TQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

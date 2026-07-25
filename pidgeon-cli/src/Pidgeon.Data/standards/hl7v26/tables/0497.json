@@ -1,0 +1,29 @@
+{
+  "code": "0497",
+  "name": "Consent Mode",
+  "version": "HL7 v2.6",
+  "chapter": "Medical Records/Information Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "T",
+      "description": "Telephone",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "V",
+      "description": "Verbal",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "W",
+      "description": "Written",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

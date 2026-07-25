@@ -1,0 +1,75 @@
+{
+  "code": "SCN_S37",
+  "message_structure": "SDR_S32",
+  "name": "Notification of Anti-Microbial Device Cycle Data",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "This message is sent from a filler application to notify other applications that anti-microbial device cycle data has been generated.  The information in the SCN segment and the other detail segments as appropriate describe details of a sterilization or decontamination cycle.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "ANTI MICROBIAL DEVICE CYCLE DATA",
+      "segment_desc": "ANTI MICROBIAL DEVICE CYCLE DATA group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "SDD",
+      "segment_desc": "Sterilization Device Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "ANTI MICROBIAL DEVICE CYCLE DATA"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "SCD",
+      "segment_desc": "Anti-Microbial Cycle Data",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "ANTI MICROBIAL DEVICE CYCLE DATA"
+      ],
+      "level": 1,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

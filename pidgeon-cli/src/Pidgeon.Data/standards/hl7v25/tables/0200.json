@@ -1,0 +1,89 @@
+{
+  "code": "0200",
+  "name": "Name type",
+  "version": "HL7 v2.5",
+  "chapter": "Patient Administration",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Alias Name",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Name at Birth",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C",
+      "description": "Adopted Name",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "D",
+      "description": "Display Name",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "I",
+      "description": "Licensing Name",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "L",
+      "description": "Legal Name",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "M",
+      "description": "Maiden Name",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "N",
+      "description": "Nickname /”Call me” Name/Street Name",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "P",
+      "description": "Name of Partner/Spouse (retained for backward compatibility only)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "R",
+      "description": "Registered Name (animals only)",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "S",
+      "description": "Coded Pseudo-Name to ensure anonymity",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "T",
+      "description": "Indigenous/Tribal/Community Name",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "U",
+      "description": "Unspecified",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

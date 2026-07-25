@@ -1,0 +1,80 @@
+{
+  "code": "MRG",
+  "name": "Merge patient information segment-",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "The MRG segment provides receiving applications with information necessary to initiate the merging of patient data as well as groups of records. It is intended that this segment be used throughout the Standard to allow the merging of registration, accounting, and clinical records within specific applications.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MRG.1",
+      "field_description": "Prior Patient Identifier List",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "MRG.2",
+      "field_description": "Prior Alternate Patient ID",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MRG.3",
+      "field_description": "Prior Patient Account Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "MRG.4",
+      "field_description": "Prior Patient ID",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "MRG.5",
+      "field_description": "Prior Visit Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "MRG.6",
+      "field_description": "Prior Alternate Visit ID",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "MRG.7",
+      "field_description": "Prior Patient Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 7
+}

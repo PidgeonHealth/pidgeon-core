@@ -1,0 +1,78 @@
+{
+  "code": "SUR_P09",
+  "name": "Summary product experience report",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The primary application of this message is to transfer information related to an adverse event occurring while a patient was exposed to a product",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "FACILITY",
+      "segment_desc": "FACILITY group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "FAC",
+      "segment_desc": "Facility",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "FACILITY"
+      ],
+      "level": 1,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PRODUCT",
+      "segment_desc": "PRODUCT group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "FACILITY"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PSH",
+      "segment_desc": "Product Summary Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "FACILITY"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "FACILITY DETAIL",
+      "segment_desc": "FACILITY DETAIL group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "FACILITY"
+      ],
+      "level": 1,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

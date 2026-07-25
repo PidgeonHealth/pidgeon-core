@@ -1,0 +1,80 @@
+{
+  "code": "SDD",
+  "name": "Sterilization Device Data",
+  "version": "HL7 v2.7",
+  "chapter": "Materials Management",
+  "description": "The SDD segment contains the attributes of an instance of a cycle that provides sterilization or decontamination of medical supplies.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SDD.1",
+      "field_description": "Lot Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SDD.2",
+      "field_description": "Device Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SDD.3",
+      "field_description": "Device Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SDD.4",
+      "field_description": "Device Data State",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0667"
+    },
+    {
+      "position": 5,
+      "field_name": "SDD.5",
+      "field_description": "Load Status",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0669"
+    },
+    {
+      "position": 6,
+      "field_name": "SDD.6",
+      "field_description": "Control Code",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "SDD.7",
+      "field_description": "Operator Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 7
+}

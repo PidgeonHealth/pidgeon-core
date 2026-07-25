@@ -1,0 +1,180 @@
+{
+  "code": "UB2",
+  "name": "UB92 data",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The UB2 segment contains data necessary to complete UB92 bills. Only UB92 fields that do not exist in other HL7 defined segments appear in this segment. Just as with the UB82 billing, Patient Name and Date of Birth are required; they are included in the PID segment and therefore do not appear here. When the field locators are different on the UB92, as compared to the UB82, the element is listed with its new location in parentheses ( ).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "UB2.1",
+      "field_description": "Set ID - UB2",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "UB2.2",
+      "field_description": "Co-Insurance Days",
+      "length": "3",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "UB2.3",
+      "field_description": "Condition Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "7",
+      "table": "0043"
+    },
+    {
+      "position": 4,
+      "field_name": "UB2.4",
+      "field_description": "Covered Days",
+      "length": "3",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "UB2.5",
+      "field_description": "Non-Covered Days",
+      "length": "4",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "UB2.6",
+      "field_description": "Value Amount & Code",
+      "length": "11",
+      "data_type": "CM_UVC",
+      "optionality": "O",
+      "repeatability": "12",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "UB2.7",
+      "field_description": "Occurrence Code & Date",
+      "length": "11",
+      "data_type": "CM_OCD",
+      "optionality": "O",
+      "repeatability": "8",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "UB2.8",
+      "field_description": "Occurrence Span Code/Dates",
+      "length": "28",
+      "data_type": "CM_OSP",
+      "optionality": "O",
+      "repeatability": "2",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "UB2.9",
+      "field_description": "UB92 Locator 2",
+      "length": "29",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "2",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "UB2.10",
+      "field_description": "UB92 Locator 11",
+      "length": "12",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "2",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "UB2.11",
+      "field_description": "UB92 Locator 31",
+      "length": "5",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "UB2.12",
+      "field_description": "Document Control Number",
+      "length": "23",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "UB2.13",
+      "field_description": "UB92 Locator 49",
+      "length": "4",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "23",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "UB2.14",
+      "field_description": "UB92 Locator 56",
+      "length": "14",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "5",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "UB2.15",
+      "field_description": "UB92 Locator 57",
+      "length": "27",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "UB2.16",
+      "field_description": "UB92 Locator 78",
+      "length": "2",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "2",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "UB2.17",
+      "field_description": "Special Visit Count",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 17
+}

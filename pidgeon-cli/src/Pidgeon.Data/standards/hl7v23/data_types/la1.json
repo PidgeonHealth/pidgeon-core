@@ -1,0 +1,20 @@
+{
+  "code": "LA1",
+  "name": "Location With Address Information (variant 1)",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LA1.1",
+      "field_description": "Point Of Care",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0302"
+    }
+  ],
+  "field_count": 1
+}

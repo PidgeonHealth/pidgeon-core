@@ -1,0 +1,9 @@
+{
+  "code": "TN",
+  "name": "Telephone Number",
+  "version": "HL7 v2.3.1",
+  "description": "For use in the United States and conforming countries, the telephone number is always in the form:\n\nFormat:  [NN] [(999)]999-9999[X99999][B99999][C any text]",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

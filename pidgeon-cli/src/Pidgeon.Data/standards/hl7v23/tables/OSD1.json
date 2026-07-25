@@ -1,0 +1,29 @@
+{
+  "code": "OSD1",
+  "name": "Sequence condition",
+  "version": "HL7 v2.3",
+  "chapter": "Unknown",
+  "description": "Local Content - Tables populated with provider-defined data (for instance, patient locations, etc.).",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Repeating cycle of orders",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Reserved for possible future use",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "S",
+      "description": "Sequence conditions",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

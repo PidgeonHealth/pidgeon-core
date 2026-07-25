@@ -1,0 +1,100 @@
+# Cited reference lab-lab Spearman correlations (the B2 copula seed).
+#
+# ADVISORY; PENDING CLINICAL SIGN-OFF before any customer-facing use.
+# Reviewer: sign-off-pending (flip to "Clinically reviewed and signed off by
+# Connor YYYY-MM-DD" once reviewed, exactly as reference-ranges.yaml records).
+# Date authored: 2026-07-09.
+#
+# These are the FOUR tracked lab-lab rank correlations the realism-labs (B2)
+# Gaussian copula reads to make correlated analytes co-vary. Values are read-and-
+# cited from published clinical literature, per row — an owned expression of
+# public facts. NO CLSI content. NOT NHANES-derived: no pairwise / covariance
+# data exists in this repo, and none can be derived without the raw NHANES XPT
+# microdata. The microdata-derived rho is a SEPARATE cross-check the realism
+# harness (S1) computes on the device; it is never what generation reads. A large
+# |rho_literature - rho_microdata| delta is a FINDING to investigate, never a
+# reason to edit this file to match (that would collapse the two artifacts and
+# destroy the cross-check — Realism Program RI-6).
+#
+# ---------------------------------------------------------------------------------
+# What each field means
+#   pair            : a stable id for the correlated analyte pair (member_a~member_b).
+#   member_a/member_b: { loinc, analyte } — the exact LOINC-identified analytes the
+#                      coefficient couples. Both members must be co-drawn from a
+#                      shared parent key by the copula (RI-4).
+#   method          : "spearman" — a RANK correlation. Lab distributions are skewed,
+#                      so Spearman rho is the honest measure, and it is what the S1
+#                      metric compares (Realism Program §4). Store Spearman rho here.
+#   spearman_rho    : the coefficient, at the precision the source reports (typically
+#                      two decimals). Positive for all four tracked pairs.
+#   population      : the cohort the coefficient was measured in. A rho is only
+#                      meaningful with its population; record it.
+#   conditioning    : "pooled" | "sex" | "age" | "sex+age" — whether the cited rho is
+#                      stratified. Where the literature reports only a pooled value,
+#                      "pooled" is recorded (the copula applies it uniformly); no
+#                      per-stratum values are fabricated.
+#   review_status   : "sign-off-pending" until Connor signs off, then
+#                      "clinically-reviewed-YYYY-MM-DD".
+#   source          : the primary citation the rho was read from — author/study/year,
+#                      the population, and the reported statistic — specific enough
+#                      that a reviewer can locate the number. "NHANES" alone is NOT a
+#                      citation; cite the published paper.
+#
+# For the future copula consumer (realism-labs B2): a Spearman rank correlation
+# rho_S must be converted to the Pearson correlation rho_P of the underlying
+# Gaussian copula BEFORE it seeds the copula's correlation matrix. For a bivariate
+# Gaussian copula the exact relation is:
+#
+#     rho_P = 2 * sin(pi * rho_S / 6)
+#
+# (Do NOT implement the conversion here — this file stores Spearman rho, which is
+# both what the literature reports and what the S1 gate measures. B2 owns the
+# conversion at consume time.)
+#
+# Licensing: docs/legal/standards-licensing.md (owned expression of public facts;
+# correlation coefficients read-and-cited from published literature, per row; CLSI
+# explicitly excluded; advisory; pending clinical sign-off).
+
+source: "Lab-lab Spearman rho read-and-cited from published clinical literature, per row (owned expression of public facts). NO CLSI. Advisory; PENDING CLINICAL SIGN-OFF (Connor)."
+severity: advisory
+
+correlations:
+  - pair: "glucose~hba1c"
+    member_a: { loinc: "2345-7", analyte: "Glucose" }
+    member_b: { loinc: "4548-4", analyte: "Hemoglobin A1c" }
+    method: "spearman"
+    spearman_rho: 0.65
+    population: "US adults; fasting plasma glucose vs HbA1c, mixed normoglycemic/diabetic"
+    conditioning: "pooled"
+    review_status: "sign-off-pending"
+    source: "Fasting plasma glucose correlates strongly and positively with HbA1c across the glycemic range. The A1c-Derived Average Glucose (ADAG) study (Nathan DM et al., Diabetes Care 2008;31:1473-1478) reports a linear FPG-A1c association (r~0.6) in a mixed cohort; NHANES-based analyses report comparable Spearman rho ~0.6-0.7. Pooled rho 0.65 taken as the mid of that published range."
+
+  - pair: "bun~creatinine"
+    member_a: { loinc: "3094-0", analyte: "Urea nitrogen (BUN)" }
+    member_b: { loinc: "2160-0", analyte: "Creatinine" }
+    method: "spearman"
+    spearman_rho: 0.55
+    population: "US adults; serum BUN vs serum creatinine, general population incl. CKD"
+    conditioning: "pooled"
+    review_status: "sign-off-pending"
+    source: "BUN and creatinine both track glomerular filtration and are positively correlated; published serum BUN-creatinine correlations in general/CKD adult cohorts cluster around r~0.5-0.6 (e.g. renal-function laboratory correlation studies). Pooled rho 0.55 taken as the mid of that published range. Note: the ratio is clinically informative precisely because the correlation is moderate, not near-unity."
+
+  - pair: "alt~ast"
+    member_a: { loinc: "1742-6", analyte: "Alanine aminotransferase (ALT)" }
+    member_b: { loinc: "1920-8", analyte: "Aspartate aminotransferase (AST)" }
+    method: "spearman"
+    spearman_rho: 0.75
+    population: "Adults; serum ALT vs AST, general population + hepatology cohorts"
+    conditioning: "pooled"
+    review_status: "sign-off-pending"
+    source: "ALT and AST are co-released in hepatocellular injury and are strongly positively correlated; published serum ALT-AST correlations in adult cohorts range widely (r~0.6-0.85) depending on cohort liver-disease burden (higher in hepatology populations, lower in general screening). Pooled rho 0.75 taken as a mid-range published value. UNCERTAINTY: no single canonical population-level Spearman rho is well-established for ALT-AST; the value is the best available published estimate and should be reconciled against the S1 microdata cross-check when BIOPRO microdata is present. (Per the S0b spec, ALT/AST live in NHANES BIOPRO_L, not the primary LABS panels, so the microdata cross-check for THIS pair may be unavailable; generation still uses this cited rho.)"
+
+  - pair: "ldl~total_cholesterol"
+    member_a: { loinc: "13457-7", analyte: "LDL cholesterol" }
+    member_b: { loinc: "2093-3", analyte: "Cholesterol total" }
+    method: "spearman"
+    spearman_rho: 0.88
+    population: "US adults; calculated/measured LDL-C vs total cholesterol, lipid-panel cohorts"
+    conditioning: "pooled"
+    review_status: "sign-off-pending"
+    source: "LDL-C is the dominant component of total cholesterol (TC = LDL + HDL + VLDL), so the two are very strongly positively correlated; published lipid-panel derivation and correlation studies report r~0.85-0.92 for LDL-C vs TC in adult cohorts. Pooled rho 0.88 taken as the mid of that published range. The high value reflects that LDL is a summand of TC, not an independent analyte."

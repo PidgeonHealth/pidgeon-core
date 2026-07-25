@@ -1,0 +1,144 @@
+{
+  "code": "ADT_A03",
+  "name": "Discharge/end visit",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "An A03 event signals the end of a patient’s stay in a healthcare facility.  It signals that the patient’s status has changed to “discharged” and that a discharge date has been recorded.  The patient is no longer in the facility.  The patient’s location prior to discharge should be entered in PV1-3-assigned patient location.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient visit segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient visit - additional information segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "DB1",
+      "segment_desc": "Disability segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "DG1",
+      "segment_desc": "Diagnosis segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "DRG",
+      "segment_desc": "Diagnosis related group segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PROCEDURE",
+      "segment_desc": "PROCEDURE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PR1",
+      "segment_desc": "Procedures segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROCEDURE"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PROCEDURE"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 12
+    }
+  ],
+  "segment_count": 13
+}

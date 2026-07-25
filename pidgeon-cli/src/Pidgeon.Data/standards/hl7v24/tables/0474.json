@@ -1,0 +1,53 @@
+{
+  "code": "0474",
+  "name": "Organization unit type",
+  "version": "HL7 v2.4",
+  "chapter": "Personnel Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "D",
+      "description": "Department",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "Facility",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "L",
+      "description": "Local market area",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "M",
+      "description": "Medical Center Area",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "S",
+      "description": "Subdivision",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "U",
+      "description": "Subdepartment",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "V",
+      "description": "Division",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

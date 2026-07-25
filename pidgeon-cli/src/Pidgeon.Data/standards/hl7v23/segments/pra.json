@@ -1,0 +1,90 @@
+{
+  "code": "PRA",
+  "name": "Practitioner detail segment",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The PRA segment adds detailed medical practitioner information to the personnel identified by the STF segment. A PRA segment may optionally follow an STF segment. A PRA segment must always have been preceded by a corresponding STF segment. The PRA segment may also be used for staff who work in healthcare who are not practitioners, but need to be certified, e.g., “medical records staff.”",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PRA.1",
+      "field_description": "PRA - Primary Key Value",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PRA.2",
+      "field_description": "Practioner Group",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PRA.3",
+      "field_description": "Practioner Category",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0186"
+    },
+    {
+      "position": 4,
+      "field_name": "PRA.4",
+      "field_description": "Provider Billing",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0187"
+    },
+    {
+      "position": 5,
+      "field_name": "PRA.5",
+      "field_description": "Specialty",
+      "length": "100",
+      "data_type": "CM_SPD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PRA.6",
+      "field_description": "Practitioner ID Numbers",
+      "length": "100",
+      "data_type": "CM_PLN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PRA.7",
+      "field_description": "Privileges",
+      "length": "200",
+      "data_type": "CM_PIP",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PRA.8",
+      "field_description": "Date Entered Practice",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 8
+}

@@ -1,0 +1,71 @@
+{
+  "code": "0191",
+  "name": "Type of referenced data",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AP",
+      "description": "Other application data, typically uninterpreted binary data  (HL7 V2.3 and later)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AU",
+      "description": "Audio data  (HL7 V2.3 and later)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FT",
+      "description": "Formatted text (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "IM",
+      "description": "Image data  (HL7 V2.3 and later)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "multipart",
+      "description": "MIME multipart package",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "NS",
+      "description": "Non-scanned image (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "SD",
+      "description": "Scanned document (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "SI",
+      "description": "Scanned image (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "TEXT",
+      "description": "Machine readable text document (HL7 V2.3.1 and later)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "TX",
+      "description": "Machine readable text document (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

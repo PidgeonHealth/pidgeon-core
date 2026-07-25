@@ -1,0 +1,311 @@
+{
+  "code": "City",
+  "name": "City",
+  "version": "HL7 v2.6",
+  "chapter": "",
+  "description": "",
+  "type": "PreLoaded",
+  "values": [
+    {
+      "value": "Albuquerque",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Arlington",
+      "description": null,
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Atlanta",
+      "description": null,
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Austin",
+      "description": null,
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Baltimore",
+      "description": null,
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "Boston",
+      "description": null,
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Charlotte",
+      "description": null,
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Chicago",
+      "description": null,
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Cleveland",
+      "description": null,
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Colorado Springs",
+      "description": null,
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "Columbus",
+      "description": null,
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Dallas",
+      "description": null,
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "Denver",
+      "description": null,
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "Detroit",
+      "description": null,
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "El Paso",
+      "description": null,
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "Fort Worth",
+      "description": null,
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Fresno",
+      "description": null,
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "Honolulu",
+      "description": null,
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "Houston",
+      "description": null,
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "Indianapolis",
+      "description": null,
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "Jacksonville",
+      "description": null,
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "Kansas City",
+      "description": null,
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "Las Vegas",
+      "description": null,
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "Long Beach",
+      "description": null,
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "Los Angeles",
+      "description": null,
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "Louisville-Jefferson County",
+      "description": null,
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "Memphis",
+      "description": null,
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "Mesa",
+      "description": null,
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "Miami",
+      "description": null,
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "Milwaukee",
+      "description": null,
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "Minneapolis",
+      "description": null,
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "Nashville-Davidson",
+      "description": null,
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "New York",
+      "description": null,
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "Oakland",
+      "description": null,
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "Oklahoma City",
+      "description": null,
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "Omaha",
+      "description": null,
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "Philadelphia",
+      "description": null,
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "Phoenix",
+      "description": null,
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "Portland",
+      "description": null,
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "Raleigh",
+      "description": null,
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "Sacramento",
+      "description": null,
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "San Antonio",
+      "description": null,
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "San Diego",
+      "description": null,
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "San Francisco",
+      "description": null,
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "San Jose",
+      "description": null,
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "Seattle",
+      "description": null,
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "Tucson",
+      "description": null,
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "Tulsa",
+      "description": null,
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "Virginia Beach",
+      "description": null,
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "Washington",
+      "description": null,
+      "comment": "",
+      "sort_order": 50
+    }
+  ],
+  "value_count": 50
+}

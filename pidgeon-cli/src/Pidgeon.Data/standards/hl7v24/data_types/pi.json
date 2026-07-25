@@ -1,0 +1,40 @@
+{
+  "code": "PI",
+  "name": "Person Identifier",
+  "version": "HL7 v2.4",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PI.1",
+      "field_description": "ID Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PI.2",
+      "field_description": "Type Of ID Number",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PI.3",
+      "field_description": "Other Qualifying Info",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

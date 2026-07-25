@@ -1,0 +1,29 @@
+{
+  "code": "0257",
+  "name": "Nature of challenge",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CFST",
+      "description": "Fasting (no calorie intake) for the period specified in the time component of the term, e.g., 1H POST CFST",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EXCZ",
+      "description": "Exercise undertaken as challenge (can be quantified)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FFST",
+      "description": "No fluid intake for the period specified in the time component of the term",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

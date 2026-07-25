@@ -1,0 +1,41 @@
+{
+  "code": "0560",
+  "name": "Quantity Units",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "DY",
+      "description": "Days",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "FL",
+      "description": "Units",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "HS",
+      "description": "Hours",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "MN",
+      "description": "Month",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "YY",
+      "description": "Years",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

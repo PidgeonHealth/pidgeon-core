@@ -1,0 +1,30 @@
+{
+  "code": "UAC",
+  "name": "User Authentication Credential",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "This optional segment provides user authentication credentials, a Kerberos Service Ticket or SAML assertion, to be used by the receiving system to obtain user identification data.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "UAC.1",
+      "field_description": "User Authentication Credential Type Code",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0615"
+    },
+    {
+      "position": 2,
+      "field_name": "UAC.2",
+      "field_description": "User Authentication Credential",
+      "length": "65536",
+      "data_type": "ED",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

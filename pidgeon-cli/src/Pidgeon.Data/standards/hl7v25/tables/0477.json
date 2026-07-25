@@ -1,0 +1,47 @@
+{
+  "code": "0477",
+  "name": "Controlled Substance Schedule*",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "I",
+      "description": "Schedule I",
+      "comment": "Includes drugs that have a high potential for abuse, no currently accepted medical use in the United States and a lack of accepted safety for use under medical supervision.",
+      "sort_order": 1
+    },
+    {
+      "value": "II",
+      "description": "Schedule II",
+      "comment": "Includes drugs having currently accepted medical use in the United States and a high abuse potential, with severe psychological or physical dependence liability.",
+      "sort_order": 2
+    },
+    {
+      "value": "III",
+      "description": "Schedule III",
+      "comment": "Includes drugs having an abuse potential less than that of drugs listed in Schedules I and II. All CS III drugs have a currently accepted medical use in the United States.",
+      "sort_order": 3
+    },
+    {
+      "value": "IV",
+      "description": "Schedule IV",
+      "comment": "Includes drugs having a lesser potential for abuse than those listed in Schedule III. CS IV drugs have a currently accepted medical use in the United States.",
+      "sort_order": 4
+    },
+    {
+      "value": "V",
+      "description": "Schedule V",
+      "comment": "Includes drugs having low abuse potential and limited physical or psychological dependence relative to those listed in IV and have an accepted medical use in the United States.",
+      "sort_order": 5
+    },
+    {
+      "value": "VI",
+      "description": "Schedule VI",
+      "comment": "State defined",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0080",
+  "name": "Nature of abnormal testing",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "An age-based population",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "None - generic normal range",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "R",
+      "description": "A race-based population",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "S",
+      "description": "A sex-based population",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

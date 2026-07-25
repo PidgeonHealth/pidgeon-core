@@ -1,0 +1,50 @@
+{
+  "code": "CM_PIP",
+  "name": "Privileges",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_PIP.1",
+      "field_description": "Privilege",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_PIP.2",
+      "field_description": "Privilege Class",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM_PIP.3",
+      "field_description": "Expiration Date",
+      "length": "0",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CM_PIP.4",
+      "field_description": "Activation Date",
+      "length": "0",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

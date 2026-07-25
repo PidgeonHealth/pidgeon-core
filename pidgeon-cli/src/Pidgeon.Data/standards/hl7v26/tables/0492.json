@@ -1,0 +1,35 @@
+{
+  "code": "0492",
+  "name": "Specimen Appropriateness",
+  "version": "HL7 v2.6",
+  "chapter": "Observation Reporting",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "??",
+      "description": "Inappropriate due to ...",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "A",
+      "description": "Appropriate",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "I",
+      "description": "Inappropriate",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "P",
+      "description": "Preferred",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

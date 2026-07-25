@@ -1,0 +1,263 @@
+{
+  "code": "0112",
+  "name": "Discharge disposition",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "Discharged to home or self care (routine discharge)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "Discharged/transferred to another short term general hospital for inpatient care",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "03",
+      "description": "Discharged/transferred to skilled nursing facility (SNF)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "04",
+      "description": "Discharged/transferred to an intermediate care facility (ICF)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "05",
+      "description": "Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "06",
+      "description": "Discharged/transferred to home under care of organized home health service organization",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "07",
+      "description": "Left against medical advice or discontinued care",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "08",
+      "description": "Discharged/transferred to home under care of Home IV provider",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "09",
+      "description": "Admitted as an inpatient to this hospital",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "10",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "11",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "12",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "13",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "14",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "15",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "16",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "17",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "18",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "19",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "20",
+      "description": "Expired",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "21",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "22",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "23",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "24",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "25",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "26",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "27",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "28",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "29",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "30",
+      "description": "Still patient or expected to return for outpatient services",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "31",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "32",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "33",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "34",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "35",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "36",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "37",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "38",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "39",
+      "description": "Still patient to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "40",
+      "description": "Expired at home",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "41",
+      "description": "Expired in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "42",
+      "description": "Expired - place unknown",
+      "comment": "",
+      "sort_order": 42
+    }
+  ],
+  "value_count": 42
+}

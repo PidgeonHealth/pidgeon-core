@@ -1,0 +1,623 @@
+{
+  "code": "0254",
+  "name": "Kind of quantity",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ABS",
+      "description": "Absorbance",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ACNC",
+      "description": "Concentration, Arbitrary Substance",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ACT",
+      "description": "*Activity",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "APER",
+      "description": "Appearance",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ARB",
+      "description": "*Arbitrary",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "AREA",
+      "description": "Area",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ASPECT",
+      "description": "Aspect",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "CACT",
+      "description": "*Catalytic Activity",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "CCNT",
+      "description": "*Catalytic Content",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "CCRTO",
+      "description": "Catalytic Concentration Ratio",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "CFR",
+      "description": "*Catalytic Fraction",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "CLAS",
+      "description": "Class",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "CNC",
+      "description": "*Catalytic Concentration",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CNST",
+      "description": "*Constant",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "COEF",
+      "description": "*Coefficient",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "COLOR",
+      "description": "Color",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "CONS",
+      "description": "Consistency",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "CRAT",
+      "description": "*Catalytic Rate",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "CRTO",
+      "description": "Catalytic Ratio",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "DEN",
+      "description": "Density",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "DEV",
+      "description": "Device",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "DIFF",
+      "description": "*Difference",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "ELAS",
+      "description": "Elasticity",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "ELPOT",
+      "description": "Electrical Potential (Voltage)",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "ELRAT",
+      "description": "Electrical current (amperage)",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "ELRES",
+      "description": "Electrical Resistance",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "ENGR",
+      "description": "Energy",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "ENT",
+      "description": "*Entitic",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "ENTCAT",
+      "description": "*Entitic Catalytic Activity",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "ENTNUM",
+      "description": "*Entitic Number",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "ENTSUB",
+      "description": "*Entitic Substance of Amount",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "ENTVOL",
+      "description": "*Entitic Volume",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "EQL",
+      "description": "Equilibrium",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "FORCE",
+      "description": "Mechanical force",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "FREQ",
+      "description": "Frequency",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "IMP",
+      "description": "Impression/ interpretation of study",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "KINV",
+      "description": "*Kinematic Viscosity",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "LEN",
+      "description": "Length",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "LINC",
+      "description": "*Length Increment",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "LIQ",
+      "description": "*Liquefaction",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "MASS",
+      "description": "*Mass",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "MCNC",
+      "description": "*Mass Concentration",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "MCNT",
+      "description": "Mass Content",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "MCRTO",
+      "description": "*Mass Concentration Ratio",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "MFR",
+      "description": "*Mass Fraction",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "MGFLUX",
+      "description": "Magnetic flux",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "MINC",
+      "description": "*Mass Increment",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "MORPH",
+      "description": "Morphology",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "MOTIL",
+      "description": "Motility",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "MRAT",
+      "description": "*Mass Rate",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "MRTO",
+      "description": "*Mass Ratio",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "NCNC",
+      "description": "*Number Concentration",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "NCNT",
+      "description": "*Number Content",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "NFR",
+      "description": "*Number Fraction",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "NRTO",
+      "description": "*Number Ratio",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "NUM",
+      "description": "*Number",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "OD",
+      "description": "Optical density",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "OSMOL",
+      "description": "*Osmolality",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "PRES",
+      "description": "*Pressure (Partial)",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "PRID",
+      "description": "Presence/Identity/Existence",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "PWR",
+      "description": "Power (wattage)",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "RANGE",
+      "description": "*Ranges",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "RATIO",
+      "description": "*Ratios",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "RCRLTM",
+      "description": "*Reciprocal Relative Time",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "RDEN",
+      "description": "*Relative Density",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "REL",
+      "description": "*Relative",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "RLMCNC",
+      "description": "*Relative Mass Concentration",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "RLSCNC",
+      "description": "*Relative Substance Concentration",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "RLTM",
+      "description": "*Relative Time",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "SATFR",
+      "description": "*Saturation Fraction",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "SCNC",
+      "description": "*Substance Concentration",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "SCNCIN",
+      "description": "*Substance Concentration Increment",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "SCNT",
+      "description": "*Substance Content",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "SCNTR",
+      "description": "*Substance Content Rate",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "SCRTO",
+      "description": "*Substance Concentration Ratio",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "SFR",
+      "description": "*Substance Fraction",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "SHAPE",
+      "description": "Shape",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "SMELL",
+      "description": "Smell",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "SRAT",
+      "description": "*Substance Rate",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "SRTO",
+      "description": "*Substance Ratio",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "SUB",
+      "description": "*Substance Amount",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "SUSC",
+      "description": "*Susceptibility",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "TASTE",
+      "description": "Taste",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "TEMP",
+      "description": "*Temperature",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "TEMPDF",
+      "description": "*Temperature Difference",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "TEMPIN",
+      "description": "*Temperature Increment",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "THRMCNC",
+      "description": "*Threshold Mass Concentration",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "THRSCNC",
+      "description": "*Threshold Substance Concentration",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "TIME",
+      "description": "*Time (e.g. seconds)",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "TITR",
+      "description": "*Dilution Factor (Titer)",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "TMDF",
+      "description": "*Time Difference",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "TMSTP",
+      "description": "*Time Stamp -- Date and Time",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "TRTO",
+      "description": "*Time Ratio",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "TYPE",
+      "description": "*Type",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "VCNT",
+      "description": "*Volume Content",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "VEL",
+      "description": "*Velocity",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "VELRT",
+      "description": "*Velocity Ratio",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "VFR",
+      "description": "*Volume Fraction",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "VISC",
+      "description": "*Viscosity",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "VOL",
+      "description": "*Volume",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "VRAT",
+      "description": "*Volume Rate",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "VRTO",
+      "description": "*Volume Ratio",
+      "comment": "",
+      "sort_order": 102
+    }
+  ],
+  "value_count": 102
+}

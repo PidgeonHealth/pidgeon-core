@@ -1,0 +1,41 @@
+{
+  "code": "0223",
+  "name": "Living Dependency",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "C",
+      "description": "Small Children Dependent",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "M",
+      "description": "Medical Supervision Required",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "S",
+      "description": "Spouse Dependent",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

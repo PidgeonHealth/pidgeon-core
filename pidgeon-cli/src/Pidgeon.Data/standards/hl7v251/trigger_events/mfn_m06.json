@@ -1,0 +1,112 @@
+{
+  "code": "MFN_M06",
+  "name": "Master files notification - Clinical study with phases and schedules master file",
+  "version": "HL7 v2.5.1",
+  "chapter": "Master Files",
+  "description": "The CM0 (Clinical Study Master), CM1 (Clinical Study Phase), and CM2 (Clinical Study Schedule) segments can be used to transmit master files information between systems.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MF CLIN STUDY",
+      "segment_desc": "MF CLIN STUDY group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF CLIN STUDY"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "CM0",
+      "segment_desc": "Clinical Study Master",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF CLIN STUDY"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "MF PHASE SCHED DETAIL",
+      "segment_desc": "MF PHASE SCHED DETAIL group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MF CLIN STUDY"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "CM1",
+      "segment_desc": "Clinical Study Phase Master",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF CLIN STUDY",
+        "MF PHASE SCHED DETAIL"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "CM2",
+      "segment_desc": "Clinical Study Schedule Master",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF CLIN STUDY",
+        "MF PHASE SCHED DETAIL"
+      ],
+      "level": 2,
+      "order_index": 8
+    }
+  ],
+  "segment_count": 9
+}

@@ -1,0 +1,40 @@
+{
+  "code": "CM_CCP",
+  "name": "Channel Calibration Parameters",
+  "version": "HL7 v2.3",
+  "description": "This component consists of three optional subcomponents (each a maximum of 20 characters, data type NM), separated from each other by subcomponent delimiters (&), which define corrections to channel sensitivity, baseline, and channel time skew which may be derived from a calibration procedure",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_CCP.1",
+      "field_description": "Sensitivity Correction Factor",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_CCP.2",
+      "field_description": "Baseline",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM_CCP.3",
+      "field_description": "Time Skew",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

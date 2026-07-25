@@ -1,0 +1,40 @@
+{
+  "code": "OSP",
+  "name": "Occurrence Span Code and Date",
+  "version": "HL7 v2.5",
+  "description": "A code and the related dates that identify an event that relates to the payment of the claim. For example, Prior Stay Dates which is the from/through dates given by the patient of any hospital stay that ended within 60 days of this hospital or SNF admission.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OSP.1",
+      "field_description": "Occurrence Span Code",
+      "length": "705",
+      "data_type": "CNE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0351"
+    },
+    {
+      "position": 2,
+      "field_name": "OSP.2",
+      "field_description": "Occurrence Span Start Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "OSP.3",
+      "field_description": "Occurrence Span Stop Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

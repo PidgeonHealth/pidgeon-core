@@ -1,0 +1,113 @@
+{
+  "code": "0112",
+  "name": "Discharge Disposition",
+  "version": "HL7 v2.5.1",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "Discharged to home or self care (routine discharge)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "Discharged/transferred to another short term general hospital for inpatient care",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "03",
+      "description": "Discharged/transferred to skilled nursing facility (SNF)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "04",
+      "description": "Discharged/transferred to an intermediate care facility (ICF)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "05",
+      "description": "Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "06",
+      "description": "Discharged/transferred to home under care of organized home health service organization",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "07",
+      "description": "Left against medical advice or discontinued care",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "08",
+      "description": "Discharged/transferred to home under care of Home IV provider",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "09",
+      "description": "Admitted as an inpatient to this hospital",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "10 …19",
+      "description": "Discharge to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "20",
+      "description": "Expired (i.e. dead)",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "21 ... 29",
+      "description": "Expired to be defined at state level, if necessary",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "30",
+      "description": "Still patient or expected to return for outpatient services (i.e. still a patient)",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "31 … 39",
+      "description": "Still patient to be defined at state level, if necessary  (i.e. still a patient)",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "40",
+      "description": "Expired (i.e. died) at home",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "41",
+      "description": "Expired (i.e. died) in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "42",
+      "description": "Expired (i.e. died)  - place unknown",
+      "comment": "",
+      "sort_order": 17
+    }
+  ],
+  "value_count": 17
+}

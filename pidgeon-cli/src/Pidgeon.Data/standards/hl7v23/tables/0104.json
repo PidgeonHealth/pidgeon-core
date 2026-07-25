@@ -1,0 +1,41 @@
+{
+  "code": "0104",
+  "name": "Version ID",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "2.0",
+      "description": "Release 2.0",
+      "comment": "September 1988",
+      "sort_order": 1
+    },
+    {
+      "value": "2.0D",
+      "description": "Demo 2.0",
+      "comment": "October 1988",
+      "sort_order": 2
+    },
+    {
+      "value": "2.1",
+      "description": "Release 2. 1",
+      "comment": "March 1990",
+      "sort_order": 3
+    },
+    {
+      "value": "2.2",
+      "description": "Release 2.2",
+      "comment": "December 1994",
+      "sort_order": 4
+    },
+    {
+      "value": "2.3",
+      "description": "Release 2.3",
+      "comment": "March 1997",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

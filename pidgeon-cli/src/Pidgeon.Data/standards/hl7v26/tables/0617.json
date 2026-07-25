@@ -1,0 +1,29 @@
+{
+  "code": "0617",
+  "name": "Address Usage",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Classification",
+      "comment": "Identifies an address used for the purpose of demographic classification or searching.  Such addresses frequently contain insufficient information to be used as mailing or visit addresses.  For example, they may only indicate country and postal code, without providing a street address.",
+      "sort_order": 1
+    },
+    {
+      "value": "M",
+      "description": "Mailing",
+      "comment": "Identifies an address for mail correspondence from a healthcare provider as stipulated by the subject. For example, under the tenets of certain privacy regulations, it is exclusive to the patient and is typically maintained at the encounter or visit level versus the person level as it only has relevance to the specifics of a given encounter.",
+      "sort_order": 2
+    },
+    {
+      "value": "V",
+      "description": "Visit",
+      "comment": "Identifies an address at which the individual is physically located and may be visited.",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

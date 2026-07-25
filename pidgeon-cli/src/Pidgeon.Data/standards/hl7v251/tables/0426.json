@@ -1,0 +1,101 @@
+{
+  "code": "0426",
+  "name": "Blood Product Code",
+  "version": "HL7 v2.5.1",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CRYO",
+      "description": "Cryoprecipitated AHF",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CRYOP",
+      "description": "Pooled Cryoprecipitate",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FFP",
+      "description": "Fresh Frozen Plasma",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "FFPTH",
+      "description": "Fresh Frozen Plasma - Thawed",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PC",
+      "description": "Packed Cells",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PCA",
+      "description": "Autologous Packed Cells",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PCNEO",
+      "description": "Packed Cells - Neonatal",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "PCW",
+      "description": "Washed Packed Cells",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PLT",
+      "description": "Platelet Concentrate",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PLTNEO",
+      "description": "Reduced Volume Platelets",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PLTP",
+      "description": "Pooled Platelets",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PLTPH",
+      "description": "Platelet Pheresis",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "PLTPHLR",
+      "description": "Leukoreduced Platelet Pheresis",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "RWB",
+      "description": "Reconstituted Whole Blood",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "WBA",
+      "description": "Autologous Whole Blood",
+      "comment": "",
+      "sort_order": 15
+    }
+  ],
+  "value_count": 15
+}

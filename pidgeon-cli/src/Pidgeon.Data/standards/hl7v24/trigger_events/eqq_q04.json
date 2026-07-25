@@ -1,0 +1,40 @@
+{
+  "code": "EQQ_Q04",
+  "name": "Embedded query language query",
+  "version": "HL7 v2.4",
+  "chapter": "Query",
+  "description": "This query provides an envelope with which a query expressed in a language (e.g., SQL) is packaged and sent to the responding system.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EQL",
+      "segment_desc": "Embedded Query Language",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

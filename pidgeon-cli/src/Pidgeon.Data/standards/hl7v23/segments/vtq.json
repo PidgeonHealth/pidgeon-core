@@ -1,0 +1,60 @@
+{
+  "code": "VTQ",
+  "name": "Virtual Table Query Request",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The VTQ segment is used to define queries that are responded to with the Tabular Data Message (TBR). The VTQ query message is an alternate method to the EQQ query message that some systems may find easier to implement, due to its use of HL7 delimiters that separate components of the selection definition, and its limited selection criteria.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "VTQ.1",
+      "field_description": "Query tag",
+      "length": "32",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "VTQ.2",
+      "field_description": "Query/ Response Format Code",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0106"
+    },
+    {
+      "position": 3,
+      "field_name": "VTQ.3",
+      "field_description": "VT Query Name",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "VTQ.4",
+      "field_description": "Virtual Table Name",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "VTQ.5",
+      "field_description": "Selection Criteria",
+      "length": "256",
+      "data_type": "QSC",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

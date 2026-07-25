@@ -1,0 +1,188 @@
+{
+  "code": "MFK_M02",
+  "name": "Master file acknowledgment - Staff/practitioner master file",
+  "version": "HL7 v2.5.1",
+  "chapter": "Master Files",
+  "description": "The staff identification (STF), practitioner detail (PRA), and practitioner organization unit segment (ORG) segments can be used to transmit master files information between systems.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MFA",
+      "segment_desc": "Master File Acknowledgment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "MF STAFF",
+      "segment_desc": "MF STAFF group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "STF",
+      "segment_desc": "Staff Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PRA",
+      "segment_desc": "Practitioner Detail",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "ORG",
+      "segment_desc": "Practitioner Organization Unit",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "AFF",
+      "segment_desc": "Professional Affiliation",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "LAN",
+      "segment_desc": "Language Detail",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 12
+    },
+    {
+      "segment_code": "EDU",
+      "segment_desc": "Educational Detail",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 13
+    },
+    {
+      "segment_code": "CER",
+      "segment_desc": "Certificate Detail",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 14
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF STAFF"
+      ],
+      "level": 1,
+      "order_index": 15
+    }
+  ],
+  "segment_count": 16
+}

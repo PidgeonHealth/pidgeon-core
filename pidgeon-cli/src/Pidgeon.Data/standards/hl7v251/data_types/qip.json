@@ -1,0 +1,30 @@
+{
+  "code": "QIP",
+  "name": "Query Input Parameter List",
+  "version": "HL7 v2.5.1",
+  "description": "This data type contains a segment field name and the list of values to be passed to the query processor.\n\nExample: |@PID.5.1^EVANS|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QIP.1",
+      "field_description": "Segment Field Name",
+      "length": "12",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "QIP.2",
+      "field_description": "Values",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

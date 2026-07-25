@@ -1,0 +1,65 @@
+{
+  "code": "0038",
+  "name": "Order status",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Some, but not all, results available",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CA",
+      "description": "Order was canceled",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CM",
+      "description": "Order is completed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DC",
+      "description": "Order was discontinued",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ER",
+      "description": "Error, order not found",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "HD",
+      "description": "Order is on hold",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "IP",
+      "description": "In process, unspecified",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RP",
+      "description": "Order has been replaced",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "SC",
+      "description": "In process, scheduled",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

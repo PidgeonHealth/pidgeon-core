@@ -1,0 +1,71 @@
+{
+  "code": "0085",
+  "name": "Observation result status codes interpretation",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Record coming over is a correction and thus replaces a final result",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Deletes the OBX record",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "F",
+      "description": "Final results; Can only be changed with a corrected result.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "I",
+      "description": "Specimen in lab; results pending",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "P",
+      "description": "Preliminary results",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "R",
+      "description": "Results entered -- not verified",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "S",
+      "description": "Partial results",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "U",
+      "description": "Results status change to final without retransmitting results already sent as ‘preliminary.’  E.g., radiology changes status from preliminary to final",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "W",
+      "description": "Post original as wrong, e.g., transmitted for wrong patient",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "X",
+      "description": "Results cannot be obtained for this observation",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

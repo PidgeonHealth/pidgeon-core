@@ -1,0 +1,50 @@
+{
+  "code": "CM_ABS_RANGE",
+  "name": "Absolute Range",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_ABS_RANGE.1",
+      "field_description": "Range",
+      "length": "0",
+      "data_type": "CM_RANGE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_ABS_RANGE.2",
+      "field_description": "Numeric Change",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM_ABS_RANGE.3",
+      "field_description": "Percent Per Change",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CM_ABS_RANGE.4",
+      "field_description": "Days",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

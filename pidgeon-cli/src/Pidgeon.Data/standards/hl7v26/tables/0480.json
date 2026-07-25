@@ -1,0 +1,29 @@
+{
+  "code": "0480",
+  "name": "Pharmacy Order Types",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "M",
+      "description": "Medication",
+      "comment": "Default value.  Includes, but is not limited to, tables, capsules, powders, puffs, and other non-injected/non-infused products.",
+      "sort_order": 1
+    },
+    {
+      "value": "O",
+      "description": "Other solution as medication orders",
+      "comment": "Includes, but is not limited to, piggybacks and syringes",
+      "sort_order": 2
+    },
+    {
+      "value": "S",
+      "description": "IV Large Volume Solutions",
+      "comment": "Includes, but is not limited to, TPNs, admixtures, solutions and drips.",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0564",
+  "name": "Adjustment Category Code",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "EA",
+      "description": "Edit/Adjudication Response",
+      "comment": "Payer adjustment",
+      "sort_order": 1
+    },
+    {
+      "value": "IN",
+      "description": "Information",
+      "comment": "Payer adjustment",
+      "sort_order": 2
+    },
+    {
+      "value": "PA",
+      "description": "Provider Adjustment",
+      "comment": "Provider adjustment",
+      "sort_order": 3
+    },
+    {
+      "value": "PR",
+      "description": "Processing Result",
+      "comment": "Payer adjustment",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

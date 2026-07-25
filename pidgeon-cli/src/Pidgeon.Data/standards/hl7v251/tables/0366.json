@@ -1,0 +1,23 @@
+{
+  "code": "0366",
+  "name": "Local/remote control state",
+  "version": "HL7 v2.5.1",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "L",
+      "description": "Local",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Remote",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

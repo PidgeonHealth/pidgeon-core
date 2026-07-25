@@ -1,0 +1,35 @@
+{
+  "code": "0279",
+  "name": "Allow Substitution Codes",
+  "version": "HL7 v2.5",
+  "chapter": "Scheduling",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "Confirm",
+      "description": "Contact the Placer Contact Person prior to making any substitutions of this resource",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "No",
+      "description": "Substitution of this resource is not allowed",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Notify",
+      "description": "Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Yes",
+      "description": "Substitution of this resource is allowed",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

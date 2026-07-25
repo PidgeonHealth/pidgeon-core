@@ -1,0 +1,41 @@
+{
+  "code": "0534",
+  "name": "Notify Clergy Code",
+  "version": "HL7 v2.5",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "L",
+      "description": "Last Rites only",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Y",
+      "description": "Yes",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

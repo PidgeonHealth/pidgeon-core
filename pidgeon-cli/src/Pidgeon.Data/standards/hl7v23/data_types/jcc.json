@@ -1,0 +1,30 @@
+{
+  "code": "JCC",
+  "name": "Job Code Class",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "JCC.1",
+      "field_description": "Job Code",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0327"
+    },
+    {
+      "position": 2,
+      "field_name": "JCC.2",
+      "field_description": "Job Class",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0328"
+    }
+  ],
+  "field_count": 2
+}

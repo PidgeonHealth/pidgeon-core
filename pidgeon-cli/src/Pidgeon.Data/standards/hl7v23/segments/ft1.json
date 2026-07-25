@@ -1,0 +1,260 @@
+{
+  "code": "FT1",
+  "name": "Financial transaction",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The FT1 segment contains the detail data necessary to post charges, payments, adjustments, etc. to patient accounting records.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "FT1.1",
+      "field_description": "Set ID - Financial Transaction",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "FT1.2",
+      "field_description": "Transaction ID",
+      "length": "12",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "FT1.3",
+      "field_description": "Transaction Batch ID",
+      "length": "10",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "FT1.4",
+      "field_description": "Transaction Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "FT1.5",
+      "field_description": "Transaction Posting Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "FT1.6",
+      "field_description": "Transaction Type",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0017"
+    },
+    {
+      "position": 7,
+      "field_name": "FT1.7",
+      "field_description": "Transaction Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0132"
+    },
+    {
+      "position": 8,
+      "field_name": "FT1.8",
+      "field_description": "Transaction Description",
+      "length": "40",
+      "data_type": "ST",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "FT1.9",
+      "field_description": "Transaction Description - alternate",
+      "length": "40",
+      "data_type": "ST",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "FT1.10",
+      "field_description": "Transaction Quantity",
+      "length": "6",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "FT1.11",
+      "field_description": "Transaction Amount - Extended",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "FT1.12",
+      "field_description": "Transaction Amount - Unit",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "FT1.13",
+      "field_description": "Department Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0049"
+    },
+    {
+      "position": 14,
+      "field_name": "FT1.14",
+      "field_description": "Insurance Plan ID",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0072"
+    },
+    {
+      "position": 15,
+      "field_name": "FT1.15",
+      "field_description": "Insurance Amount",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "FT1.16",
+      "field_description": "Assigned Patient Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "FT1.17",
+      "field_description": "Fee Schedule",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0024"
+    },
+    {
+      "position": 18,
+      "field_name": "FT1.18",
+      "field_description": "Patient Type",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0018"
+    },
+    {
+      "position": 19,
+      "field_name": "FT1.19",
+      "field_description": "Diagnosis Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0051"
+    },
+    {
+      "position": 20,
+      "field_name": "FT1.20",
+      "field_description": "Performed By Code",
+      "length": "120",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0084"
+    },
+    {
+      "position": 21,
+      "field_name": "FT1.21",
+      "field_description": "Ordered By Code",
+      "length": "120",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "FT1.22",
+      "field_description": "Unit Cost",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "FT1.23",
+      "field_description": "Filler Order Number",
+      "length": "22",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "FT1.24",
+      "field_description": "Entered By Code",
+      "length": "120",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "FT1.25",
+      "field_description": "Procedure Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0088"
+    }
+  ],
+  "field_count": 25
+}

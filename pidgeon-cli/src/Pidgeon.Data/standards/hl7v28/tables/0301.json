@@ -1,0 +1,95 @@
+{
+  "code": "0301",
+  "name": "Universal ID Type",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CLIA",
+      "description": "Clinical Laboratory Improvement Amendments. Allows for the ability to designate organization identifier as a \"CLIA\" assigned number (for labs)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CLIP",
+      "description": "Clinical laboratory Improvement Program. Allows for the ability to designate organization identifier as a \"CLIP\" assigned number (for labs).Â  Used by US Department of Defense.",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DNS",
+      "description": "An Internet host name, in accordance with RFC 1035; or an IP address. Either in ASCII or as integers, with periods between components (\"dotted\" notation).",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EUI64",
+      "description": "IEEE 64-bit Extended Unique Identifier is comprised of a  24-bit company identifier and a 40-bit instance identifier.  The value shall be formatted as 16 ASCII HEX digits, for example, \"AABBCC1122334455\".  The 24-bit company identifier, formally known as ",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "GUID",
+      "description": "Same as UUID.",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "HCD",
+      "description": "The CEN Healthcare Coding Scheme Designator",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "HL7",
+      "description": "HL7 registration schemes",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ISO",
+      "description": "An International Standards Organization Object Identifier (OID), in accordance with ISO/IEC 8824.  Formatted as decimal digits separated by periods; recommended limit of 64 characters",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "L,M,N",
+      "description": "Locally defined coding entity identifier.",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Random",
+      "description": "Usually a base64 encoded string of random bits.<p>Note: Random IDs are typically used for instance identifiers, rather than an identifier of an Assigning Authority that issues instance identifiers",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "URI",
+      "description": "Uniform Resource Identifier",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "UUID",
+      "description": "The DCE Universal Unique Identifier, in accordance with RFC 4122. Recommended format is 32 hexadecimal digits separated by hyphens, in the digit grouping 8-4-4-4-12",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "x400",
+      "description": "An X.400 MHS identifier. Recommended format is in accordance with RFC 1649",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "x500",
+      "description": "An X.500 directory name",
+      "comment": "",
+      "sort_order": 14
+    }
+  ],
+  "value_count": 14
+}

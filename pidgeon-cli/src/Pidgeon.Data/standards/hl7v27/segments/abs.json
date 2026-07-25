@@ -1,0 +1,150 @@
+{
+  "code": "ABS",
+  "name": "Abstract",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "This segment was created to communicate patient abstract information used for billing and reimbursement purposes. “Abstract” is a condensed form of medical history created for analysis, care planning, etc.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ABS.1",
+      "field_description": "Discharge Care Provider",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0010"
+    },
+    {
+      "position": 2,
+      "field_name": "ABS.2",
+      "field_description": "Transfer Medical Service Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0069"
+    },
+    {
+      "position": 3,
+      "field_name": "ABS.3",
+      "field_description": "Severity Of Illness Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0421"
+    },
+    {
+      "position": 4,
+      "field_name": "ABS.4",
+      "field_description": "Date/Time Of Attestation",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "ABS.5",
+      "field_description": "Attested By",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "ABS.6",
+      "field_description": "Triage Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0422"
+    },
+    {
+      "position": 7,
+      "field_name": "ABS.7",
+      "field_description": "Abstract Completion Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "ABS.8",
+      "field_description": "Abstracted By",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "ABS.9",
+      "field_description": "Case Category Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0423"
+    },
+    {
+      "position": 10,
+      "field_name": "ABS.10",
+      "field_description": "Caesarian Section Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 11,
+      "field_name": "ABS.11",
+      "field_description": "Gestation Category Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0424"
+    },
+    {
+      "position": 12,
+      "field_name": "ABS.12",
+      "field_description": "Gestation Period - Weeks",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "ABS.13",
+      "field_description": "Newborn Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0425"
+    },
+    {
+      "position": 14,
+      "field_name": "ABS.14",
+      "field_description": "Stillborn Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 14
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0331",
+  "name": "Facility type",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Agent for a foreign manufacturer",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Distributor",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Manufacturer",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "U",
+      "description": "User",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

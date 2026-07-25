@@ -1,0 +1,833 @@
+{
+  "code": "0496",
+  "name": "Consent Type",
+  "version": "HL7 v2.6",
+  "chapter": "Medical Records/Information Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "001",
+      "description": "Release of Information/MR / Authorization to Disclosure Protected Health Information",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 1
+    },
+    {
+      "value": "002",
+      "description": "Medical Procedure (invasive)",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 2
+    },
+    {
+      "value": "003",
+      "description": "Acknowledge Receipt of Privacy Notice",
+      "comment": "Acknowledgement/ Notification",
+      "sort_order": 3
+    },
+    {
+      "value": "004",
+      "description": "Abortion",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 4
+    },
+    {
+      "value": "005",
+      "description": "Abortion/Laminaria",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 5
+    },
+    {
+      "value": "006",
+      "description": "Accutane - Information",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 6
+    },
+    {
+      "value": "007",
+      "description": "Accutane - Woman",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 7
+    },
+    {
+      "value": "008",
+      "description": "Advanced Beneficiary Notice",
+      "comment": "Acknowledgement/ Notification",
+      "sort_order": 8
+    },
+    {
+      "value": "009",
+      "description": "AFP (Alpha Fetoprotein) Screening",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 9
+    },
+    {
+      "value": "010",
+      "description": "Amniocentesis (consent & refusal)",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 10
+    },
+    {
+      "value": "011",
+      "description": "Anatomical Gift (organ donation)",
+      "comment": "Administrative",
+      "sort_order": 11
+    },
+    {
+      "value": "012",
+      "description": "Anesthesia - Complications",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 12
+    },
+    {
+      "value": "013",
+      "description": "Anesthesia - Questionnaire",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 13
+    },
+    {
+      "value": "014",
+      "description": "Angiogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 14
+    },
+    {
+      "value": "015",
+      "description": "Angioplasty",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 15
+    },
+    {
+      "value": "016",
+      "description": "Anticancer Drugs",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 16
+    },
+    {
+      "value": "017",
+      "description": "Antipsychotic Medications",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 17
+    },
+    {
+      "value": "018",
+      "description": "Arthrogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 18
+    },
+    {
+      "value": "019",
+      "description": "Autopsy",
+      "comment": "Administrative",
+      "sort_order": 19
+    },
+    {
+      "value": "020",
+      "description": "AZT Therapy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 20
+    },
+    {
+      "value": "021",
+      "description": "Biliary Drainage",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 21
+    },
+    {
+      "value": "022",
+      "description": "Biliary Stone Extraction",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 22
+    },
+    {
+      "value": "023",
+      "description": "Biopsy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 23
+    },
+    {
+      "value": "024",
+      "description": "Bleeding Time Test",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 24
+    },
+    {
+      "value": "025",
+      "description": "Bronchogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 25
+    },
+    {
+      "value": "026",
+      "description": "Cardiac Catheterization",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 26
+    },
+    {
+      "value": "027",
+      "description": "Coronary Angiography",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 27
+    },
+    {
+      "value": "028",
+      "description": "\"\"      \"\" w/o Surgery Capability",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 28
+    },
+    {
+      "value": "029",
+      "description": "Cataract Op/Implant of FDA Aprvd Lens",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 29
+    },
+    {
+      "value": "030",
+      "description": "Cataract Op/Implant of Investigational Lens",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 30
+    },
+    {
+      "value": "031",
+      "description": "Cataract Surgery",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 31
+    },
+    {
+      "value": "032",
+      "description": "Cholera Immunization",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 32
+    },
+    {
+      "value": "033",
+      "description": "Cholesterol Screening",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 33
+    },
+    {
+      "value": "034",
+      "description": "Circumcision - Newborn",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 34
+    },
+    {
+      "value": "035",
+      "description": "Colonoscopy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 35
+    },
+    {
+      "value": "036",
+      "description": "Contact Lenses",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 36
+    },
+    {
+      "value": "037",
+      "description": "CT Scan - Cervical & Lumbar",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 37
+    },
+    {
+      "value": "038",
+      "description": "CT Scan w/ IV Contrast Media into Vein",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 38
+    },
+    {
+      "value": "039",
+      "description": "CVS (Chorionic Villus) Sampling",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 39
+    },
+    {
+      "value": "040",
+      "description": "Cystospy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 40
+    },
+    {
+      "value": "041",
+      "description": "Disclosure of Protected Health Information to Family/Friends",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 41
+    },
+    {
+      "value": "042",
+      "description": "D & C and Conization",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 42
+    },
+    {
+      "value": "043",
+      "description": "Dacryocystogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 43
+    },
+    {
+      "value": "044",
+      "description": "Diagnostic Isotope",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 44
+    },
+    {
+      "value": "045",
+      "description": "Drainage of an Abscess",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 45
+    },
+    {
+      "value": "046",
+      "description": "Drug Screening",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 46
+    },
+    {
+      "value": "047",
+      "description": "Electronic Monitoring of Labor - Refusal",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 47
+    },
+    {
+      "value": "048",
+      "description": "Endometrial Biopsy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 48
+    },
+    {
+      "value": "049",
+      "description": "Endoscopy/Sclerosis of Esophageal Varices",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 49
+    },
+    {
+      "value": "050",
+      "description": "ERCP",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 50
+    },
+    {
+      "value": "051",
+      "description": "Exposure to reportable Communicable Disease",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 51
+    },
+    {
+      "value": "052",
+      "description": "External Version",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 52
+    },
+    {
+      "value": "053",
+      "description": "Fluorescein Angioscopy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 53
+    },
+    {
+      "value": "054",
+      "description": "Hepatitis B - Consent/Declination",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 54
+    },
+    {
+      "value": "055",
+      "description": "Herniogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 55
+    },
+    {
+      "value": "056",
+      "description": "HIV Test - Consent Refusal",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 56
+    },
+    {
+      "value": "057",
+      "description": "HIV Test - Disclosure",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 57
+    },
+    {
+      "value": "058",
+      "description": "HIV Test - Prenatal",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 58
+    },
+    {
+      "value": "059",
+      "description": "Home IV Treatment Program",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 59
+    },
+    {
+      "value": "060",
+      "description": "Home Parenteral Treatment Program",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 60
+    },
+    {
+      "value": "061",
+      "description": "Hysterectomy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 61
+    },
+    {
+      "value": "062",
+      "description": "Hysterosalpingogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 62
+    },
+    {
+      "value": "063",
+      "description": "Injection Slip/ Consent",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 63
+    },
+    {
+      "value": "064",
+      "description": "Intrauterine Device",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 64
+    },
+    {
+      "value": "065",
+      "description": "Intrauterine Device/Sterilization",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 65
+    },
+    {
+      "value": "066",
+      "description": "Intravascular Infusion of Streptokinase/Urokinase",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 66
+    },
+    {
+      "value": "067",
+      "description": "Intravenous Cholangiogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 67
+    },
+    {
+      "value": "068",
+      "description": "Intravenous Digital Angiography",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 68
+    },
+    {
+      "value": "069",
+      "description": "Iodine Administration",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 69
+    },
+    {
+      "value": "070",
+      "description": "ISG",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 70
+    },
+    {
+      "value": "071",
+      "description": "IVP",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 71
+    },
+    {
+      "value": "072",
+      "description": "Laser Photocoagulation",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 72
+    },
+    {
+      "value": "073",
+      "description": "Laser treatment",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 73
+    },
+    {
+      "value": "074",
+      "description": "Lithium Carbonate",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 74
+    },
+    {
+      "value": "075",
+      "description": "Liver Biopsy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 75
+    },
+    {
+      "value": "076",
+      "description": "Lumbar Puncture",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 76
+    },
+    {
+      "value": "077",
+      "description": "Lymphangiogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 77
+    },
+    {
+      "value": "078",
+      "description": "MAO Inhibitors",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 78
+    },
+    {
+      "value": "079",
+      "description": "Med, Psych, and/or Drug/Alcohol",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 79
+    },
+    {
+      "value": "080",
+      "description": "Medical Treatment - Refusal",
+      "comment": "Administrative",
+      "sort_order": 80
+    },
+    {
+      "value": "081",
+      "description": "Morning-after Pill",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 81
+    },
+    {
+      "value": "082",
+      "description": "MRI - Adult",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 82
+    },
+    {
+      "value": "083",
+      "description": "MRI - Pediatric",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 83
+    },
+    {
+      "value": "084",
+      "description": "Myelogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 84
+    },
+    {
+      "value": "085",
+      "description": "Needle Biopsy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 85
+    },
+    {
+      "value": "086",
+      "description": "Needle Biopsy of Lung",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 86
+    },
+    {
+      "value": "087",
+      "description": "Newborn Treatment and Release",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 87
+    },
+    {
+      "value": "088",
+      "description": "Norplant Subdermal Birth Control Implant",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 88
+    },
+    {
+      "value": "089",
+      "description": "Operations, Anesthesia, Transfusions",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 89
+    },
+    {
+      "value": "090",
+      "description": "Oral Contraceptives",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 90
+    },
+    {
+      "value": "091",
+      "description": "Organ Donation",
+      "comment": "Administrative",
+      "sort_order": 91
+    },
+    {
+      "value": "092",
+      "description": "Patient Permits, Consents",
+      "comment": "Administrative",
+      "sort_order": 92
+    },
+    {
+      "value": "093",
+      "description": "Patient Treatment Permit, Release & Admission",
+      "comment": "Administrative",
+      "sort_order": 93
+    },
+    {
+      "value": "094",
+      "description": "Penile Injections",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 94
+    },
+    {
+      "value": "095",
+      "description": "Percutaneous Nephrostomy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 95
+    },
+    {
+      "value": "096",
+      "description": "Percutaneous Transhepatic Cholangiogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 96
+    },
+    {
+      "value": "097",
+      "description": "Photographs",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 97
+    },
+    {
+      "value": "098",
+      "description": "Photographs - Employee",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 98
+    },
+    {
+      "value": "099",
+      "description": "Photographs - Medical Research",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 99
+    },
+    {
+      "value": "100",
+      "description": "Photographs - news Media",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 100
+    },
+    {
+      "value": "101",
+      "description": "Psychiatric Admission - Next of Kin",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 101
+    },
+    {
+      "value": "102",
+      "description": "Psychiatric Information During Hospital Stay",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 102
+    },
+    {
+      "value": "103",
+      "description": "Public Release of Information",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 103
+    },
+    {
+      "value": "104",
+      "description": "Radiologic Procedure",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 104
+    },
+    {
+      "value": "105",
+      "description": "Refusal of Treatment",
+      "comment": "Administrative",
+      "sort_order": 105
+    },
+    {
+      "value": "106",
+      "description": "Release of Body",
+      "comment": "Administrative",
+      "sort_order": 106
+    },
+    {
+      "value": "107",
+      "description": "Release of Limb",
+      "comment": "Administrative",
+      "sort_order": 107
+    },
+    {
+      "value": "108",
+      "description": "Rh Immune Globulin",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 108
+    },
+    {
+      "value": "109",
+      "description": "Rights of Medical Research Participants",
+      "comment": "Administrative",
+      "sort_order": 109
+    },
+    {
+      "value": "110",
+      "description": "Request to Restrict Access/Disclosure to Medical Record/Protected Health Information",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 110
+    },
+    {
+      "value": "111",
+      "description": "Request for Remain Anonymous",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 111
+    },
+    {
+      "value": "112",
+      "description": "Seat Belt Exemption",
+      "comment": "Administrative",
+      "sort_order": 112
+    },
+    {
+      "value": "113",
+      "description": "Sialogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 113
+    },
+    {
+      "value": "1137",
+      "description": "Voiding Cystogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 114
+    },
+    {
+      "value": "114",
+      "description": "Sigmoidoscopy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 115
+    },
+    {
+      "value": "115",
+      "description": "Sterilization - Anesthesia & Medical Services",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 116
+    },
+    {
+      "value": "116",
+      "description": "Sterilization -Federally Funded",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 117
+    },
+    {
+      "value": "117",
+      "description": "Sterilization - Female",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 118
+    },
+    {
+      "value": "118",
+      "description": "Sterilization - Laparoscopy/Pomeroy",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 119
+    },
+    {
+      "value": "119",
+      "description": "Sterilization - Non-Federally Funded",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 120
+    },
+    {
+      "value": "120",
+      "description": "Sterilization - Secondary",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 121
+    },
+    {
+      "value": "121",
+      "description": "Tranquilizers",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 122
+    },
+    {
+      "value": "122",
+      "description": "Transfer - Acknowledgement",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 123
+    },
+    {
+      "value": "123",
+      "description": "Transfer - Authorization",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 124
+    },
+    {
+      "value": "124",
+      "description": "Transfer Certification - Physician",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 125
+    },
+    {
+      "value": "125",
+      "description": "Transfer/Discharge Request",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 126
+    },
+    {
+      "value": "126",
+      "description": "Transfer for Non-Medical Reasons",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 127
+    },
+    {
+      "value": "127",
+      "description": "Transfer - Interfaculty Neonatal",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 128
+    },
+    {
+      "value": "128",
+      "description": "Transfer Refusal",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 129
+    },
+    {
+      "value": "129",
+      "description": "Transfer Refusal of Further Treatment",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 130
+    },
+    {
+      "value": "130",
+      "description": "Treadmill & EKG",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 131
+    },
+    {
+      "value": "131",
+      "description": "Treadmill, Thallium-201",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 132
+    },
+    {
+      "value": "132",
+      "description": "Typhoid",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 133
+    },
+    {
+      "value": "133",
+      "description": "Use of Investigational Device",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 134
+    },
+    {
+      "value": "134",
+      "description": "Use of Investigational Drug",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 135
+    },
+    {
+      "value": "135",
+      "description": "Venogram",
+      "comment": "Medical Treatment/ Procedure",
+      "sort_order": 136
+    },
+    {
+      "value": "136",
+      "description": "Videotape",
+      "comment": "Release of Info/ Disclosure",
+      "sort_order": 137
+    }
+  ],
+  "value_count": 137
+}

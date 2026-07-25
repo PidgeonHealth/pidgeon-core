@@ -1,0 +1,30 @@
+{
+  "code": "SCV",
+  "name": "Scheduling Class Value Pair",
+  "version": "HL7 v2.3",
+  "description": "For use only with the scheduling chapter. \n\nThis field is used to communicate parameters and preferences to the filler application regarding the selection of an appropriate time slot, resource, location, or filler override criterion for an appointment",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SCV.1",
+      "field_description": "Parameter Class",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SCV.2",
+      "field_description": "Parameter Value",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

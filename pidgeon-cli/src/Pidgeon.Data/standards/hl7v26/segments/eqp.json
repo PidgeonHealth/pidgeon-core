@@ -1,0 +1,60 @@
+{
+  "code": "EQP",
+  "name": "Equipment/log Service",
+  "version": "HL7 v2.6",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The equipment log/service segment is the data necessary to maintain an adequate audit trail of events that have occurred on a particular piece of equipment.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "EQP.1",
+      "field_description": "Event type",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0450"
+    },
+    {
+      "position": 2,
+      "field_name": "EQP.2",
+      "field_description": "File Name",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "EQP.3",
+      "field_description": "Start Date/Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "EQP.4",
+      "field_description": "End Date/Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "EQP.5",
+      "field_description": "Transaction Data",
+      "length": "65536",
+      "data_type": "FT",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

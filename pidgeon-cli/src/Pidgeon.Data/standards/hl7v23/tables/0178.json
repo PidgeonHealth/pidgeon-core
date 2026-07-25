@@ -1,0 +1,23 @@
+{
+  "code": "0178",
+  "name": "File level event code",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "REP",
+      "description": "Replace current version of this master file with the version contained in this message",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "UPD",
+      "description": "Change file records as defined in the record-level event codes for each record that follows",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

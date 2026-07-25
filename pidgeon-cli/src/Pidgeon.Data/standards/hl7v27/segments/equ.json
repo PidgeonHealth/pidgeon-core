@@ -1,0 +1,60 @@
+{
+  "code": "EQU",
+  "name": "Equipment Detail",
+  "version": "HL7 v2.7",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The equipment detail segment contains the data necessary to identify and maintain the equipment that is being used throughout the Laboratory Automation System.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "EQU.1",
+      "field_description": "Equipment Instance Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "EQU.2",
+      "field_description": "Event Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "EQU.3",
+      "field_description": "Equipment State",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0365"
+    },
+    {
+      "position": 4,
+      "field_name": "EQU.4",
+      "field_description": "Local/Remote Control State",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0366"
+    },
+    {
+      "position": 5,
+      "field_name": "EQU.5",
+      "field_description": "Alert Level",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0367"
+    }
+  ],
+  "field_count": 5
+}

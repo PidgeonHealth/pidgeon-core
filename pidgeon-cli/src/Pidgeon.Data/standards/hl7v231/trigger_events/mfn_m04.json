@@ -1,0 +1,76 @@
+{
+  "code": "MFN_M04",
+  "name": "Master files charge description",
+  "version": "HL7 v2.3.1",
+  "chapter": "Master Files",
+  "description": "The charge description (CDM) master file segment should be used in conjunction with the general master file segments in Section 8.4, “general master file SEGMENTs.”  Interfacing systems often need not only to communicate data about a patient’s detailed charges, but also to communicate the charge identification entries by which an application knows how to handle a particular charge code.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master file identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MF CDM",
+      "segment_desc": "MF CDM group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master file entry segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF CDM"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "CDM",
+      "segment_desc": "Charge description master segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF CDM"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PRC",
+      "segment_desc": "Pricing segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF CDM"
+      ],
+      "level": 1,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

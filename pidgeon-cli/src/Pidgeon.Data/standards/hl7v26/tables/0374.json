@@ -1,0 +1,17 @@
+{
+  "code": "0374",
+  "name": "System induced contaminants",
+  "version": "HL7 v2.6",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CNTM",
+      "description": "Present, type of contamination unspecified",
+      "comment": "",
+      "sort_order": 1
+    }
+  ],
+  "value_count": 1
+}

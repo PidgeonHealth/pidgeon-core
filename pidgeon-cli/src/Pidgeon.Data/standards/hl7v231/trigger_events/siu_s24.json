@@ -1,0 +1,297 @@
+{
+  "code": "SIU_S24",
+  "message_structure": "SIU_S12",
+  "name": "Notification of opened (\"un-blocked\") schedule time slot(s)",
+  "version": "HL7 v2.3.1",
+  "chapter": "Scheduling",
+  "description": "A notification of blocked schedule time slots is sent by the filler application to other applications when a schedule has one or more time slots open up (“un-blocked”) and become available for use.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SCH",
+      "segment_desc": "Schedule activity information segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient visit segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient visit - additional information segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "DG1",
+      "segment_desc": "Diagnosis segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "RESOURCES",
+      "segment_desc": "RESOURCES group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 10
+    },
+    {
+      "segment_code": "RGS",
+      "segment_desc": "Resource group segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "SERVICE",
+      "segment_desc": "SERVICE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESOURCES"
+      ],
+      "level": 1,
+      "order_index": 12
+    },
+    {
+      "segment_code": "AIS",
+      "segment_desc": "Appointment information - service segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "SERVICE"
+      ],
+      "level": 2,
+      "order_index": 13
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "SERVICE"
+      ],
+      "level": 2,
+      "order_index": 14
+    },
+    {
+      "segment_code": "GENERAL RESOURCE",
+      "segment_desc": "GENERAL RESOURCE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESOURCES"
+      ],
+      "level": 1,
+      "order_index": 15
+    },
+    {
+      "segment_code": "AIG",
+      "segment_desc": "Appointment information - general resource segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "GENERAL RESOURCE"
+      ],
+      "level": 2,
+      "order_index": 16
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "GENERAL RESOURCE"
+      ],
+      "level": 2,
+      "order_index": 17
+    },
+    {
+      "segment_code": "LOCATION RESOURCE",
+      "segment_desc": "LOCATION RESOURCE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESOURCES"
+      ],
+      "level": 1,
+      "order_index": 18
+    },
+    {
+      "segment_code": "AIL",
+      "segment_desc": "Appointment information - location resource segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "LOCATION RESOURCE"
+      ],
+      "level": 2,
+      "order_index": 19
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "LOCATION RESOURCE"
+      ],
+      "level": 2,
+      "order_index": 20
+    },
+    {
+      "segment_code": "PERSONNEL RESOURCE",
+      "segment_desc": "PERSONNEL RESOURCE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESOURCES"
+      ],
+      "level": 1,
+      "order_index": 21
+    },
+    {
+      "segment_code": "AIP",
+      "segment_desc": "Appointment information - personnel resource segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "PERSONNEL RESOURCE"
+      ],
+      "level": 2,
+      "order_index": 22
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESOURCES",
+        "PERSONNEL RESOURCE"
+      ],
+      "level": 2,
+      "order_index": 23
+    }
+  ],
+  "segment_count": 24
+}

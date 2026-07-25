@@ -1,0 +1,89 @@
+{
+  "code": "0528",
+  "name": "Event related period",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AC",
+      "description": "before meal (from lat. ante cibus )",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ACD",
+      "description": "before lunch (from lat. ante cibus diurnus)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ACM",
+      "description": "before breakfast (from lat. ante cibus matutinus)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ACV",
+      "description": "before dinner (from lat. ante cibus vespertinus)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "HS",
+      "description": "the hour of sleep (e.g., H18-22)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "IC",
+      "description": "between meals (from lat. inter cibus)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ICD",
+      "description": "between lunch and dinner",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ICM",
+      "description": "between breakfast and lunch",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "ICV",
+      "description": "between dinner and the hour of sleep",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PC",
+      "description": "after meal (from lat. post cibus )",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PCD",
+      "description": "after lunch (from lat. post cibus diurnus )",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PCM",
+      "description": "after breakfast (from lat. post cibus matutinus)",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "PCV",
+      "description": "after dinner (from lat. post cibus vespertinus)",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

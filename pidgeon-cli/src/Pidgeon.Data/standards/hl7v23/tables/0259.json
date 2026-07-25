@@ -1,0 +1,167 @@
+{
+  "code": "0259",
+  "name": "Modality",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AS",
+      "description": "Angioscopy",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BS",
+      "description": "Biomagnetic imaging",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CD",
+      "description": "Color flow Doppler",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CP",
+      "description": "Colposcopy",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CR",
+      "description": "Computed radiography",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CS",
+      "description": "Cystoscopy",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CT",
+      "description": "Computed tomography",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DD",
+      "description": "Duplex Doppler",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DG",
+      "description": "Diapanography",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "DM",
+      "description": "Digital microscopy",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "EC",
+      "description": "Echocardiography",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ES",
+      "description": "Endoscopy",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "FA",
+      "description": "Fluorescein angiography",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "FS",
+      "description": "Fundoscopy",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "LP",
+      "description": "Laparoscopy",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "LS",
+      "description": "Laser surface scan",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "MA",
+      "description": "Magnetic resonance angiography",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "MS",
+      "description": "Magnetic resonance spectroscopy",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "NM",
+      "description": "Nuclear Medicine (radioisotope study)",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "OT",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "PT",
+      "description": "Positron emission tomography (PET)",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "RF",
+      "description": "Radio fluoroscopy",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "ST",
+      "description": "Single photon emission computed tomography (SPECT)",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "TG",
+      "description": "Thermography",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "US",
+      "description": "Ultrasound",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "XA",
+      "description": "X-ray Angiography",
+      "comment": "",
+      "sort_order": 26
+    }
+  ],
+  "value_count": 26
+}

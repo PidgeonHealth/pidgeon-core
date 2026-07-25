@@ -1,0 +1,29 @@
+{
+  "code": "Z002",
+  "name": "Major Diagnostic Category Coding Systems",
+  "version": "HL7 v2.6",
+  "chapter": "",
+  "description": "",
+  "type": "Local",
+  "values": [
+    {
+      "value": "GMDC2006",
+      "description": "German Major Diagnostic Category codes for 2006",
+      "comment": "Source: German Handbook  for DRGs. version 2006",
+      "sort_order": 1
+    },
+    {
+      "value": "GMDC2007",
+      "description": "German Major Diagnostic Category codes for 2007",
+      "comment": "Source: German Handbook  for DRGs. version 2007",
+      "sort_order": 2
+    },
+    {
+      "value": "GMDC2008",
+      "description": "German Major Diagnostic Category codes for 2008",
+      "comment": "Source: German Handbook  for DRGs. version 2008",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

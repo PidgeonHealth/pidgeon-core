@@ -1,0 +1,59 @@
+{
+  "code": "0371",
+  "name": "Additive",
+  "version": "HL7 v2.4",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BOR",
+      "description": "Borate",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C32",
+      "description": "3.2%  Citrate",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C38",
+      "description": "3.8% Citrate",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EDTK",
+      "description": "Potassium/K EDTA",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "EDTN",
+      "description": "Sodium/Na EDTA",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "HCL6",
+      "description": "6N HCL",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "HEPL",
+      "description": "Lithium/Li  Heparin",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "HEPN",
+      "description": "Sodium/Na  Heparin",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

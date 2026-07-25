@@ -1,0 +1,60 @@
+{
+  "code": "LCH",
+  "name": "Location Characteristic",
+  "version": "HL7 v2.6",
+  "chapter": "Master Files",
+  "description": "The Technical Steward for the LCH segment is Patient Administration.\n\nThe LCH segment is used to identify location characteristics which determine which patients will be assigned to the room or bed.  It contains the location characteristics of the room or bed identified in the preceding LOC segment. There should be one LCH segment for each attribute.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LCH.1",
+      "field_description": "Primary Key Value - LCH",
+      "length": "200",
+      "data_type": "PL",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "LCH.2",
+      "field_description": "Segment Action Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0206"
+    },
+    {
+      "position": 3,
+      "field_name": "LCH.3",
+      "field_description": "Segment Unique Key",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "LCH.4",
+      "field_description": "Location Characteristic ID",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0324"
+    },
+    {
+      "position": 5,
+      "field_name": "LCH.5",
+      "field_description": "Location Characteristic Value-LCH",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

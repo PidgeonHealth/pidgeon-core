@@ -1,0 +1,40 @@
+{
+  "code": "MOP",
+  "name": "Money Or Percentage",
+  "version": "HL7 v2.7",
+  "description": "This data type specifies an amount that may be either currency or a percentage. It is a variation on the MO data type that is limited to currency.\n\nNote: Replaces the CM data type used in section 6.5.8.5 IN3-5, as of v 2.5. This data type is restricted to this field.\n\nExample: USD is the ISO 4217 code for the U.S. American dollar.\n|AT^99.50^USD|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MOP.1",
+      "field_description": "Money Or Percentage Indicator",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0148"
+    },
+    {
+      "position": 2,
+      "field_name": "MOP.2",
+      "field_description": "Money Or Percentage Quantity",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MOP.3",
+      "field_description": "Monetary  Denomination",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0913"
+    }
+  ],
+  "field_count": 3
+}

@@ -1,0 +1,20 @@
+{
+  "code": "ERR",
+  "name": "Error segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The ERR segment is used to add error comments to acknowledgment messages.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ERR.1",
+      "field_description": "Error Code and Location",
+      "length": "80",
+      "data_type": "CM_ELD",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

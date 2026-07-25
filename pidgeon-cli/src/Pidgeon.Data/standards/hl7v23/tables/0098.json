@@ -1,0 +1,29 @@
+{
+  "code": "0098",
+  "name": "Type of agreement",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "M",
+      "description": "Maternity",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "S",
+      "description": "Standard",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "U",
+      "description": "Unified",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

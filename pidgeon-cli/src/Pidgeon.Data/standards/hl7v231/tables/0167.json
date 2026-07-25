@@ -1,0 +1,77 @@
+{
+  "code": "0167",
+  "name": "Substitution status",
+  "version": "HL7 v2.3.1",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "0",
+      "description": "No product selection indicated",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Substitution not allowed by prescriber",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Substitution allowed - patient requested product dispensed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3",
+      "description": "Substitution allowed - pharmacist selected product dispensed",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "4",
+      "description": "Substitution allowed - generic drug not in stock",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "5",
+      "description": "Substitution allowed - brand drug dispensed as a generic",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "7",
+      "description": "Substitution not allowed - brand drug mandated by law",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "8",
+      "description": "Substitution allowed - generic drug not available in marketplace",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "G",
+      "description": "A generic substitution was dispensed.",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "N",
+      "description": "No substitute was dispensed.  This is equivalent to the default (null) value.",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "T",
+      "description": "A therapeutic substitution was dispensed.",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

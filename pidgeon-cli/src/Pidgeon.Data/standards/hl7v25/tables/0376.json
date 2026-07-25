@@ -1,0 +1,113 @@
+{
+  "code": "0376",
+  "name": "Special Handling Code",
+  "version": "HL7 v2.5",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AMB",
+      "description": "Ambient temperature",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C37",
+      "description": "Body temperature",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CAMB",
+      "description": "Critical ambient temperature",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CATM",
+      "description": "Protect from air",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CFRZ",
+      "description": "Critical frozen temperature",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CREF",
+      "description": "Critical refrigerated temperature",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DFRZ",
+      "description": "Deep frozen",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DRY",
+      "description": "Dry",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "FRZ",
+      "description": "Frozen temperature",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "MTLF",
+      "description": "Metal Free",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "NTR",
+      "description": "Liquid nitrogen",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PRTL",
+      "description": "Protect from light",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "PSA",
+      "description": "Do not shake",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "PSO",
+      "description": "No shock",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "REF",
+      "description": "Refrigerated temperature",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "UFRZ",
+      "description": "Ultra frozen",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "UPR",
+      "description": "Upright",
+      "comment": "",
+      "sort_order": 17
+    }
+  ],
+  "value_count": 17
+}

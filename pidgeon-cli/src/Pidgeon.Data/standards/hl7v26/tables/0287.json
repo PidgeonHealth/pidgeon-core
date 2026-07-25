@@ -1,0 +1,53 @@
+{
+  "code": "0287",
+  "name": "Problem/goal action code",
+  "version": "HL7 v2.6",
+  "chapter": "Patient Care",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AD",
+      "description": "ADD",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CO",
+      "description": "CORRECT",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DE",
+      "description": "DELETE",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "LI",
+      "description": "LINK",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "UC",
+      "description": "UNCHANGED",
+      "comment": "The UNCHANGED action code is used to signify to the applications programs that this particular segment includes no information to be modified.  It is supplied in order to identify the correct record for which the following modification is intended. ",
+      "sort_order": 5
+    },
+    {
+      "value": "UN",
+      "description": "UNLINK",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "UP",
+      "description": "UPDATE",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

@@ -1,0 +1,53 @@
+{
+  "code": "0406",
+  "name": "Organization Unit Type",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "Hospital",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Physician Clinic",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Long Term Care",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "Acute Care",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "H",
+      "description": "Home",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "O",
+      "description": "Office",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

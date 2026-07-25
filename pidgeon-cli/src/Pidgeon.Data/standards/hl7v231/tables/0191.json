@@ -1,0 +1,107 @@
+{
+  "code": "0191",
+  "name": "Type of referenced data",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AP",
+      "description": "Other application data, typically uninterpreted binary data",
+      "comment": "(new with HL7 v 2.3)",
+      "sort_order": 1
+    },
+    {
+      "value": "Application",
+      "description": "Other application data, typically uninterpreted binary data",
+      "comment": "(HL7 V2.3 and later)",
+      "sort_order": 2
+    },
+    {
+      "value": "AU",
+      "description": "Audio data",
+      "comment": "(new with HL7 v 2.3)",
+      "sort_order": 3
+    },
+    {
+      "value": "Audio",
+      "description": "Audio data",
+      "comment": "(HL7 V2.3 and later)",
+      "sort_order": 4
+    },
+    {
+      "value": "FT",
+      "description": "Formatted text",
+      "comment": "(HL7 V2.2 only)",
+      "sort_order": 5
+    },
+    {
+      "value": "FT",
+      "description": "Formatted text",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "IM",
+      "description": "Image data",
+      "comment": "(new  with HL7 v 2.3)",
+      "sort_order": 7
+    },
+    {
+      "value": "Image",
+      "description": "Image data",
+      "comment": "(HL7 V2.3 and later)",
+      "sort_order": 8
+    },
+    {
+      "value": "NS",
+      "description": "Non-scanned image",
+      "comment": "(HL7 V2.2 only)",
+      "sort_order": 9
+    },
+    {
+      "value": "NS",
+      "description": "Non-scanned image",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "SD",
+      "description": "Scanned document",
+      "comment": "(HL7 V2.2 only)",
+      "sort_order": 11
+    },
+    {
+      "value": "SI",
+      "description": "Scanned image",
+      "comment": "(HL7 V2.2 only)",
+      "sort_order": 12
+    },
+    {
+      "value": "SI",
+      "description": "Scanned image",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "TEXT",
+      "description": "Machine readable text document",
+      "comment": "(HL7 V2.3.1 and later)",
+      "sort_order": 14
+    },
+    {
+      "value": "TX",
+      "description": "Machine readable text document",
+      "comment": "(HL7 V2.2 only)",
+      "sort_order": 15
+    },
+    {
+      "value": "TX",
+      "description": "Machine readable text document",
+      "comment": "",
+      "sort_order": 16
+    }
+  ],
+  "value_count": 16
+}

@@ -1,0 +1,29 @@
+{
+  "code": "0755",
+  "name": "Status Weight At Birth",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "No weight reported at admission used for grouping",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Weight reported at admission used for grouping",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Default weight (>2499g) used for grouping",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

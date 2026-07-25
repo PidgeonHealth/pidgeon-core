@@ -1,0 +1,353 @@
+{
+  "code": "0119",
+  "name": "Order control codes",
+  "version": "HL7 v2.4",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AF",
+      "description": "ORR^O02",
+      "comment": "Order/service refill request approval",
+      "sort_order": 1
+    },
+    {
+      "value": "CA",
+      "description": "ORM^O01",
+      "comment": "Cancel order/service request",
+      "sort_order": 2
+    },
+    {
+      "value": "CH",
+      "description": "ORM^O01",
+      "comment": "Child order/service",
+      "sort_order": 3
+    },
+    {
+      "value": "CN",
+      "description": "ORU^R01",
+      "comment": "Combined result",
+      "sort_order": 4
+    },
+    {
+      "value": "CR",
+      "description": "ORR^O02",
+      "comment": "Canceled as requested",
+      "sort_order": 5
+    },
+    {
+      "value": "DC",
+      "description": "ORM^O01",
+      "comment": "Discontinue order/service request",
+      "sort_order": 6
+    },
+    {
+      "value": "DE",
+      "description": "ORM^O01",
+      "comment": "Data errors",
+      "sort_order": 7
+    },
+    {
+      "value": "DE",
+      "description": "ORS^O06",
+      "comment": "Data errors",
+      "sort_order": 8
+    },
+    {
+      "value": "DF",
+      "description": "ORR^O02",
+      "comment": "Order/service refill request denied",
+      "sort_order": 9
+    },
+    {
+      "value": "DR",
+      "description": "ORR^O02",
+      "comment": "Discontinued as requested",
+      "sort_order": 10
+    },
+    {
+      "value": "FU",
+      "description": "ORM^O01",
+      "comment": "\"Order/service refilled, unsolicited\"",
+      "sort_order": 11
+    },
+    {
+      "value": "HD",
+      "description": "ORM^O01",
+      "comment": "Hold order request",
+      "sort_order": 12
+    },
+    {
+      "value": "HR",
+      "description": "ORR^O02",
+      "comment": "On hold as requested",
+      "sort_order": 13
+    },
+    {
+      "value": "HR",
+      "description": "ORD^O04",
+      "comment": "On hold as requested",
+      "sort_order": 14
+    },
+    {
+      "value": "LI",
+      "description": "ORM^O01",
+      "comment": "Link order/service to patient care problem or goal",
+      "sort_order": 15
+    },
+    {
+      "value": "LI",
+      "description": "OMP^O09",
+      "comment": "Link order/service to patient care problem or goal",
+      "sort_order": 16
+    },
+    {
+      "value": "NA",
+      "description": "ORR^O02",
+      "comment": "Number assigned",
+      "sort_order": 17
+    },
+    {
+      "value": "NW",
+      "description": "ORM^O01",
+      "comment": "New order/service",
+      "sort_order": 18
+    },
+    {
+      "value": "OC",
+      "description": "ORM^O01",
+      "comment": "Order/service canceled",
+      "sort_order": 19
+    },
+    {
+      "value": "OD",
+      "description": "ORM^O01",
+      "comment": "Order/service discontinued",
+      "sort_order": 20
+    },
+    {
+      "value": "OE",
+      "description": "ORM^O01",
+      "comment": "Order/service released",
+      "sort_order": 21
+    },
+    {
+      "value": "OF",
+      "description": "ORR^O02",
+      "comment": "Order/service refilled as requested",
+      "sort_order": 22
+    },
+    {
+      "value": "OH",
+      "description": "ORM^O01",
+      "comment": "Order/service held",
+      "sort_order": 23
+    },
+    {
+      "value": "OK",
+      "description": "ORR^O02",
+      "comment": "Order/service accepted & OK",
+      "sort_order": 24
+    },
+    {
+      "value": "OR",
+      "description": "ORR^O02",
+      "comment": "Released as requested",
+      "sort_order": 25
+    },
+    {
+      "value": "PA",
+      "description": "ORM^O01",
+      "comment": "Parent order/service",
+      "sort_order": 26
+    },
+    {
+      "value": "PR",
+      "description": "ORM^O01",
+      "comment": "Previous Results with new order/service",
+      "sort_order": 27
+    },
+    {
+      "value": "RE",
+      "description": "ORM^O01",
+      "comment": "Observations/Performed Service to follow",
+      "sort_order": 28
+    },
+    {
+      "value": "RF",
+      "description": "ORM^O01",
+      "comment": "Refill order/service request",
+      "sort_order": 29
+    },
+    {
+      "value": "RL",
+      "description": "ORM^O01",
+      "comment": "Release previous hold",
+      "sort_order": 30
+    },
+    {
+      "value": "RO",
+      "description": "ORM^O01",
+      "comment": "Replacement order",
+      "sort_order": 31
+    },
+    {
+      "value": "RP",
+      "description": "ORM^O01",
+      "comment": "Order/service replace request",
+      "sort_order": 32
+    },
+    {
+      "value": "RQ",
+      "description": "ORR^O02",
+      "comment": "Replaced as requested",
+      "sort_order": 33
+    },
+    {
+      "value": "RR",
+      "description": "ORR^O02",
+      "comment": "Request received",
+      "sort_order": 34
+    },
+    {
+      "value": "RU",
+      "description": "ORM^O01",
+      "comment": "Replaced unsolicited",
+      "sort_order": 35
+    },
+    {
+      "value": "SC",
+      "description": "ORM^O01",
+      "comment": "Status changed",
+      "sort_order": 36
+    },
+    {
+      "value": "SN",
+      "description": "ORM^O01",
+      "comment": "Send order/service number",
+      "sort_order": 37
+    },
+    {
+      "value": "SR",
+      "description": "ORR^O02",
+      "comment": "Response to send order/service status request",
+      "sort_order": 38
+    },
+    {
+      "value": "SS",
+      "description": "ORM^O01",
+      "comment": "Send order/service status request",
+      "sort_order": 39
+    },
+    {
+      "value": "UA",
+      "description": "ORR^O02",
+      "comment": "Unable to accept order/service",
+      "sort_order": 40
+    },
+    {
+      "value": "UA",
+      "description": "RRG^O16",
+      "comment": "Unable to accept order/service",
+      "sort_order": 41
+    },
+    {
+      "value": "UC",
+      "description": "ORR^O02",
+      "comment": "Unable to cancel",
+      "sort_order": 42
+    },
+    {
+      "value": "UC",
+      "description": "ORD^O04",
+      "comment": "Unable to cancel",
+      "sort_order": 43
+    },
+    {
+      "value": "UD",
+      "description": "ORR^O02",
+      "comment": "Unable to discontinue",
+      "sort_order": 44
+    },
+    {
+      "value": "UD",
+      "description": "ORD^O04",
+      "comment": "Unable to discontinue",
+      "sort_order": 45
+    },
+    {
+      "value": "UF",
+      "description": "ORR^O02",
+      "comment": "Unable to refill",
+      "sort_order": 46
+    },
+    {
+      "value": "UH",
+      "description": "ORR^O02",
+      "comment": "Unable to put on hold",
+      "sort_order": 47
+    },
+    {
+      "value": "UM",
+      "description": "ORR^O02",
+      "comment": "Unable to replace",
+      "sort_order": 48
+    },
+    {
+      "value": "UM",
+      "description": "ORG^O20",
+      "comment": "Unable to replace",
+      "sort_order": 49
+    },
+    {
+      "value": "UN",
+      "description": "ORM^O01",
+      "comment": "Unlink order/service from patient care problem or goal",
+      "sort_order": 50
+    },
+    {
+      "value": "UR",
+      "description": "ORR^O02",
+      "comment": "Unable to release",
+      "sort_order": 51
+    },
+    {
+      "value": "UR",
+      "description": "ORD^O04",
+      "comment": "Unable to release",
+      "sort_order": 52
+    },
+    {
+      "value": "UX",
+      "description": "ORR^O02",
+      "comment": "Unable to change",
+      "sort_order": 53
+    },
+    {
+      "value": "XO",
+      "description": "ORM^O01",
+      "comment": "Change order/service request",
+      "sort_order": 54
+    },
+    {
+      "value": "XO",
+      "description": "OMP^O09",
+      "comment": "Change order/service request",
+      "sort_order": 55
+    },
+    {
+      "value": "XR",
+      "description": "ORR^O02",
+      "comment": "Changed as requested",
+      "sort_order": 56
+    },
+    {
+      "value": "XX",
+      "description": "ORM^O01",
+      "comment": "\"Order/service changed, unsol.\"",
+      "sort_order": 57
+    }
+  ],
+  "value_count": 57
+}

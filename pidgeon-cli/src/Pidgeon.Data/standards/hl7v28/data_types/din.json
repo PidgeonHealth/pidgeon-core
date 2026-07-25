@@ -1,0 +1,30 @@
+{
+  "code": "DIN",
+  "name": "Date And Institution Name",
+  "version": "HL7 v2.8",
+  "description": "Specifies the date and institution information where a staff member became active or inactive.\n\nNote: Replaces the CM data type used in sections 15.4.6.12 STF-12 and 15.4.6.14 STF-13, as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DIN.1",
+      "field_description": "Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "DIN.2",
+      "field_description": "Institution Name",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0531"
+    }
+  ],
+  "field_count": 2
+}

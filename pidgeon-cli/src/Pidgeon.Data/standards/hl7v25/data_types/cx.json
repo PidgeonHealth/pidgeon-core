@@ -1,0 +1,110 @@
+{
+  "code": "CX",
+  "name": "Extended Composite ID with Check Digit",
+  "version": "HL7 v2.5",
+  "description": "This data type is used for specifying an identifier with its associated administrative detail.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CX.1",
+      "field_description": "Id Number",
+      "length": "15",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CX.2",
+      "field_description": "Check Digit",
+      "length": "1",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CX.3",
+      "field_description": "Check Digit Scheme",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0061"
+    },
+    {
+      "position": 4,
+      "field_name": "CX.4",
+      "field_description": "Assigning Authority",
+      "length": "227",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0363"
+    },
+    {
+      "position": 5,
+      "field_name": "CX.5",
+      "field_description": "Identifier Type Code",
+      "length": "5",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0203"
+    },
+    {
+      "position": 6,
+      "field_name": "CX.6",
+      "field_description": "Assigning Facility",
+      "length": "227",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "CX.7",
+      "field_description": "Effective Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "CX.8",
+      "field_description": "Expiration Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CX.9",
+      "field_description": "Assigning Jurisdiction",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "CX.10",
+      "field_description": "Assigning Agency Or Department",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 10
+}

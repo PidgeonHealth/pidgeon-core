@@ -1,0 +1,560 @@
+{
+  "code": "GT1",
+  "name": "Guarantor",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The GT1 segment contains guarantor (e.g., the person or the organization with financial responsibility for payment of a patient account) data for patient and insurance billing applications.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "GT1.1",
+      "field_description": "Set ID - Guarantor",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "GT1.2",
+      "field_description": "Guarantor Number",
+      "length": "59",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "GT1.3",
+      "field_description": "Guarantor Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "GT1.4",
+      "field_description": "Guarantor Spouse Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "GT1.5",
+      "field_description": "Guarantor Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "GT1.6",
+      "field_description": "Guarantor Ph Num- Home",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "GT1.7",
+      "field_description": "Guarantor Ph Num-Business",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "GT1.8",
+      "field_description": "Guarantor Date/Time of Birth",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "GT1.9",
+      "field_description": "Guarantor Sex",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0001"
+    },
+    {
+      "position": 10,
+      "field_name": "GT1.10",
+      "field_description": "Guarantor Type",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0068"
+    },
+    {
+      "position": 11,
+      "field_name": "GT1.11",
+      "field_description": "Guarantor Relationship",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0063"
+    },
+    {
+      "position": 12,
+      "field_name": "GT1.12",
+      "field_description": "Guarantor SSN",
+      "length": "11",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "GT1.13",
+      "field_description": "Guarantor Date - Begin",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "GT1.14",
+      "field_description": "Guarantor Date - End",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "GT1.15",
+      "field_description": "Guarantor Priority",
+      "length": "2",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "GT1.16",
+      "field_description": "Guarantor Employer Name",
+      "length": "130",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "GT1.17",
+      "field_description": "Guarantor Employer Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "GT1.18",
+      "field_description": "Guarantor Employ Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "GT1.19",
+      "field_description": "Guarantor Employee ID Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "GT1.20",
+      "field_description": "Guarantor Employment Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0066"
+    },
+    {
+      "position": 21,
+      "field_name": "GT1.21",
+      "field_description": "Guarantor Organization",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "GT1.22",
+      "field_description": "Guarantor Billing Hold Flag",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 23,
+      "field_name": "GT1.23",
+      "field_description": "Guarantor Credit Rating Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "GT1.24",
+      "field_description": "Guarantor Death Date And Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "GT1.25",
+      "field_description": "Guarantor Death Flag",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 26,
+      "field_name": "GT1.26",
+      "field_description": "Guarantor Charge Adjustment Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0218"
+    },
+    {
+      "position": 27,
+      "field_name": "GT1.27",
+      "field_description": "Guarantor Household Annual Income",
+      "length": "10",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "GT1.28",
+      "field_description": "Guarantor Household Size",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "GT1.29",
+      "field_description": "Guarantor Employer ID Number",
+      "length": "20",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "GT1.30",
+      "field_description": "Guarantor Marital Status Code",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0002"
+    },
+    {
+      "position": 31,
+      "field_name": "GT1.31",
+      "field_description": "Guarantor Hire Effective Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 32,
+      "field_name": "GT1.32",
+      "field_description": "Employment Stop Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "GT1.33",
+      "field_description": "Living Dependency",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0223"
+    },
+    {
+      "position": 34,
+      "field_name": "GT1.34",
+      "field_description": "Ambulatory Status Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0009"
+    },
+    {
+      "position": 35,
+      "field_name": "GT1.35",
+      "field_description": "Citizenship",
+      "length": "4",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0171"
+    },
+    {
+      "position": 36,
+      "field_name": "GT1.36",
+      "field_description": "Primary Language",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0296"
+    },
+    {
+      "position": 37,
+      "field_name": "GT1.37",
+      "field_description": "Living Arrangement",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0220"
+    },
+    {
+      "position": 38,
+      "field_name": "GT1.38",
+      "field_description": "Publicity Indicator",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0215"
+    },
+    {
+      "position": 39,
+      "field_name": "GT1.39",
+      "field_description": "Protection Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 40,
+      "field_name": "GT1.40",
+      "field_description": "Student Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0231"
+    },
+    {
+      "position": 41,
+      "field_name": "GT1.41",
+      "field_description": "Religion",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0006"
+    },
+    {
+      "position": 42,
+      "field_name": "GT1.42",
+      "field_description": "Mother s Maiden Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 43,
+      "field_name": "GT1.43",
+      "field_description": "Nationality Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0212"
+    },
+    {
+      "position": 44,
+      "field_name": "GT1.44",
+      "field_description": "Ethnic Group",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0189"
+    },
+    {
+      "position": 45,
+      "field_name": "GT1.45",
+      "field_description": "Contact Person's Name",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 46,
+      "field_name": "GT1.46",
+      "field_description": "Contact Person s Telephone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 47,
+      "field_name": "GT1.47",
+      "field_description": "Contact Reason",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0222"
+    },
+    {
+      "position": 48,
+      "field_name": "GT1.48",
+      "field_description": "Contact Relationship Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0063"
+    },
+    {
+      "position": 49,
+      "field_name": "GT1.49",
+      "field_description": "Job Title",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 50,
+      "field_name": "GT1.50",
+      "field_description": "Job Code/Class",
+      "length": "20",
+      "data_type": "JCC",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 51,
+      "field_name": "GT1.51",
+      "field_description": "Guarantor Employer's Organization Name",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 52,
+      "field_name": "GT1.52",
+      "field_description": "Handicap",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0310"
+    },
+    {
+      "position": 53,
+      "field_name": "GT1.53",
+      "field_description": "Job Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0311"
+    },
+    {
+      "position": 54,
+      "field_name": "GT1.54",
+      "field_description": "Guarantor Financial Class",
+      "length": "50",
+      "data_type": "FC",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 55,
+      "field_name": "GT1.55",
+      "field_description": "Guarantor Race",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0005"
+    }
+  ],
+  "field_count": 55
+}

@@ -1,0 +1,50 @@
+{
+  "code": "CK",
+  "name": "Composite ID With Check Digit",
+  "version": "HL7 v2.3",
+  "description": "This data type is used for certain fields that commonly contain check digits, e.g., PID-3-patient ID (internal). If a site is not using check digits for a particular CK field, the second and third components are not valued.\n\nExample: \n|128952^6^M11^ADT01|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CK.1",
+      "field_description": "ID Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CK.2",
+      "field_description": "Check Digit",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CK.3",
+      "field_description": "Code Identifying The Check Digit Scheme Employed",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0061"
+    },
+    {
+      "position": 4,
+      "field_name": "CK.4",
+      "field_description": "Assigning Authority",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

@@ -1,0 +1,110 @@
+{
+  "code": "ILT",
+  "name": "Material Lot Segment",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "The Material Lot segment (ILT) contains material information specific to a lot within an inventory location associated with the item in the IVT segment. This segment is similar to the IIM segment used with the limited inventory item master message.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ILT.1",
+      "field_description": "Set Id - ILT",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ILT.2",
+      "field_description": "Inventory Lot Number",
+      "length": "250",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "ILT.3",
+      "field_description": "Inventory Expiration Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "ILT.4",
+      "field_description": "Inventory Received Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "ILT.5",
+      "field_description": "Inventory Received Quantity",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "ILT.6",
+      "field_description": "Inventory Received Quantity Unit",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "ILT.7",
+      "field_description": "Inventory Received Item Cost",
+      "length": "12",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "ILT.8",
+      "field_description": "Inventory On Hand Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "ILT.9",
+      "field_description": "Inventory On Hand Quantity",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "ILT.10",
+      "field_description": "Inventory On Hand Quantity Unit",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 10
+}

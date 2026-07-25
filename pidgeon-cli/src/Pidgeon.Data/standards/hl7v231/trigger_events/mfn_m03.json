@@ -1,0 +1,52 @@
+{
+  "code": "MFN_M03",
+  "name": "Master file - Test/Observation",
+  "version": "HL7 v2.3.1",
+  "chapter": "Master Files",
+  "description": "(for backward compatibility only)",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master file identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MF_TEST",
+      "segment_desc": "MF_TEST group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master file entry segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_TEST"
+      ],
+      "level": 1,
+      "order_index": 3
+    }
+  ],
+  "segment_count": 4
+}

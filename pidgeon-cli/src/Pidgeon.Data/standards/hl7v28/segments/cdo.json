@@ -1,0 +1,50 @@
+{
+  "code": "CDO",
+  "name": "Cumulative Dosage",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "The Cumulative Dosage segment allows for the communication of cumulative dosage limits that administrations against this medication order should stay within.  As part of one of the pharmacy messages, one may want to indicate one or more limits that apply, e.g., limit for the duration of the order, lifetime limit, or weekly limit",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CDO.1",
+      "field_description": "Set ID – CDO",
+      "length": "0",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CDO.2",
+      "field_description": "Action Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0206"
+    },
+    {
+      "position": 3,
+      "field_name": "CDO.3",
+      "field_description": "Cumulative Dosage Limit",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CDO.4",
+      "field_description": "Cumulative Dosage Limit Time Interval",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0924"
+    }
+  ],
+  "field_count": 4
+}

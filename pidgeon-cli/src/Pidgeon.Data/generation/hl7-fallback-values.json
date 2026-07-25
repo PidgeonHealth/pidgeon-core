@@ -1,0 +1,34 @@
+{
+  "comment": "Fallback coded values for HL7 generation, extracted from inline arrays (ADR-0001: GenerateCodedValue arrays → provider-served data). userDefinedTableFallbacks serves HL7TableFieldResolver when a table is missing or empty, keyed by HL7 table number. keywordFallbacks serves SmartRandomResolver's coded-field heuristics; entry order is the match order (first keyword hit wins). constraintTableFallbacks serves HL7ConstraintValueGenerator's table-reference fallback, keyed by the zero-padded table reference it receives.",
+  "userDefinedTableFallbacks": {
+    "21": ["A", "B", "C", "D"],
+    "32": ["01", "02", "03", "04"],
+    "42": ["01", "02", "03"],
+    "63": ["SPO", "CHD", "PAR", "SIB", "OTH"],
+    "87": ["R", "A", "P", "S"],
+    "88": ["R", "A", "P", "S"],
+    "111": ["R", "A", "P", "S"],
+    "129": ["P", "S", "SP", "W"],
+    "140": ["01", "02", "03", "04", "05"],
+    "141": ["01", "02", "03", "04", "05"],
+    "142": ["01", "02", "03", "04", "05"],
+    "189": ["USA", "MEX", "CAN", "GBR", "CHN"],
+    "212": ["USA", "MEX", "CAN", "GBR", "CHN"],
+    "214": ["CH", "ES", "FP", "O", "U"],
+    "296": ["en", "es", "fr", "de", "zh"],
+    "436": ["AN", "DI", "DY", "IT", "SW", "RH"]
+  },
+  "keywordFallbacks": [
+    { "keywords": ["sex", "gender"], "values": ["M", "F"] },
+    { "keywords": ["marital"], "values": ["S", "M", "D", "W"] },
+    { "keywords": ["race"], "values": ["1002-5", "2028-9", "2054-5", "2076-8"] },
+    { "keywords": ["admission"], "values": ["E", "I", "O", "P"] },
+    { "keywords": ["class"], "values": ["E", "I", "O", "P", "R"] },
+    { "keywords": ["status"], "values": ["A", "I", "P"] }
+  ],
+  "constraintTableFallbacks": {
+    "0001": ["M", "F", "O", "U"],
+    "0002": ["S", "M", "D", "W"],
+    "0004": ["E", "I", "O", "U"]
+  }
+}

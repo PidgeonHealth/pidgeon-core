@@ -1,0 +1,203 @@
+{
+  "code": "0702",
+  "name": "Cycle Type-",
+  "version": "HL7 v2.7",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "2RS",
+      "description": "Second Rinse",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ANR",
+      "description": "Anesthesia/Respiratory",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BDP",
+      "description": "Bedpans",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "BWD",
+      "description": "Bowie-Dick Test",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CMW",
+      "description": "Chemical Wash",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "COD",
+      "description": "Code",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CRT",
+      "description": "Cart Wash",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DEC",
+      "description": "Decontamination",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DRT",
+      "description": "Dart",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "DRW",
+      "description": "Dart Warm-up Cycle",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "EOH",
+      "description": "EO High Temperature",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "EOL",
+      "description": "EO Low Temperature",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "EXP",
+      "description": "Express",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "FLS",
+      "description": "Flash",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "GLS",
+      "description": "Glassware",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "GNP",
+      "description": "Gen. Purpose",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "GRV",
+      "description": "Gravity",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "GTL",
+      "description": "Gentle",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "ISO",
+      "description": "Isothermal",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "IST",
+      "description": "Instrument Wash",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "LKT",
+      "description": "Leak Test",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "LQD",
+      "description": "Liquid",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "OPW",
+      "description": "Optional Wash",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "PEA",
+      "description": "Peracetic Acid",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "PLA",
+      "description": "Plastic Goods Wash",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "PRV",
+      "description": "Prevac",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "RNS",
+      "description": "Rinse",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "SFP",
+      "description": "Steam Flush Pressure Pulse",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "THR",
+      "description": "Thermal",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "TRB",
+      "description": "Tray/Basin",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "UTL",
+      "description": "Utensil Wash",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "WFP",
+      "description": "Wrap/Steam Flush Pressure Pulse (Wrap/SFPP)",
+      "comment": "",
+      "sort_order": 32
+    }
+  ],
+  "value_count": 32
+}

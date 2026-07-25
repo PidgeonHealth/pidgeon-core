@@ -1,0 +1,41 @@
+{
+  "code": "0002",
+  "name": "Marital status",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Separated",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Divorced",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Married",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "S",
+      "description": "Single",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "W",
+      "description": "Widowed",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

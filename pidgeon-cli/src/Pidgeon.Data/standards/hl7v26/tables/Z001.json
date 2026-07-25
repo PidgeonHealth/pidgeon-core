@@ -1,0 +1,35 @@
+{
+  "code": "Z001",
+  "name": "Diagnostic Related Group Coding Systems",
+  "version": "HL7 v2.6",
+  "chapter": "",
+  "description": "",
+  "type": "Local",
+  "values": [
+    {
+      "value": "",
+      "description": "US DRG codes",
+      "comment": "Source: CMS",
+      "sort_order": 1
+    },
+    {
+      "value": "GDRG2006",
+      "description": "German DRG codes for 2006",
+      "comment": "Source: German Handbook  for DRGs. v2006",
+      "sort_order": 2
+    },
+    {
+      "value": "GDRG2007",
+      "description": "German DRG codes for 2007",
+      "comment": "Source: German Handbook  for DRGs. v2007",
+      "sort_order": 3
+    },
+    {
+      "value": "GDRG2008",
+      "description": "German DRG codes for 2008",
+      "comment": "Source: German Handbook  for DRGs. v2008",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

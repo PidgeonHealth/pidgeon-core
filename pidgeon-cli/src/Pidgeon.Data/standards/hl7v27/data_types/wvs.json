@@ -1,0 +1,30 @@
+{
+  "code": "WVS",
+  "name": "Waveform Source",
+  "version": "HL7 v2.7",
+  "description": "This data type identifies the source of the waveform connected to a channel.\n\nNote: Replaces the CM data type used in 7.14.1.4 OBX-5.2 where OBX-5 Observation value (*) is data type CD as of v 2.5.\n\nAttention: Retained for backward compatibility only in v2.7.  It is used only in the CD Channel Definition data type, which has been retained for backward compatibility only in v2.7.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "WVS.1",
+      "field_description": "Source One Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "WVS.2",
+      "field_description": "Source Two Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

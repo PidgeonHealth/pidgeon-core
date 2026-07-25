@@ -1,0 +1,50 @@
+{
+  "code": "IAR",
+  "name": "Allergy Reaction",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "The IAR segment is used to transmit a single reaction and information associated with this single reaction occurrence for a particular patient allergy (IAM – patient adverse reaction).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "IAR.1",
+      "field_description": "Allergy Reaction Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "IAR.2",
+      "field_description": "Allergy Severity Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0128"
+    },
+    {
+      "position": 3,
+      "field_name": "IAR.3",
+      "field_description": "Sensitivity To Causative Agent Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0436"
+    },
+    {
+      "position": 4,
+      "field_name": "IAR.4",
+      "field_description": "Management",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

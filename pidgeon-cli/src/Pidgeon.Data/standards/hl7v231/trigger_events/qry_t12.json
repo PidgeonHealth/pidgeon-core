@@ -1,0 +1,40 @@
+{
+  "code": "QRY_T12",
+  "name": "Document query",
+  "version": "HL7 v2.3.1",
+  "chapter": "Medical Records/Information Management",
+  "description": "",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Original-style query definition segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Original style query filter segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

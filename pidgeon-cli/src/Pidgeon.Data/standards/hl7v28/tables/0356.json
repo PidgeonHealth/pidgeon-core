@@ -1,0 +1,29 @@
+{
+  "code": "0356",
+  "name": "Alternate Character Set Handling Scheme",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "<null>",
+      "description": "This is the default, indicating that there is no character set switching occurring in this message.",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2.3",
+      "description": "The character set switching mode specified in HL7 2.5, section 2.7.2 and section 2.A.46, \"XPN - extended person name\".",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ISO 2022-1994",
+      "description": "This standard is titled \"Information Technology - Character Code Structure and Extension Technique\". .",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

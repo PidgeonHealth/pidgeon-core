@@ -1,0 +1,341 @@
+{
+  "code": "0227",
+  "name": "Manufacturers of Vaccines",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AB",
+      "description": "Abbott Laboratories",
+      "comment": "(includes Ross Products Division)",
+      "sort_order": 1
+    },
+    {
+      "value": "AD",
+      "description": "Adams Laboratories, Inc.",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ALP",
+      "description": "Alpha Therapeutic Corporation",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AR",
+      "description": "Armour",
+      "comment": "[Inactive--use AVB]",
+      "sort_order": 4
+    },
+    {
+      "value": "AVB",
+      "description": "Aventis Behring L.L.C.",
+      "comment": "(formerly Centeon L.L.C.; includes Armour Pharmaceutical Company) [Inactive--use ZLB]CDC Changes made on: Feb. 28, 2006",
+      "sort_order": 5
+    },
+    {
+      "value": "AVI",
+      "description": "Aviron",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BA",
+      "description": "Baxter Healthcare Corporation",
+      "comment": "[Inactive--use BAH]",
+      "sort_order": 7
+    },
+    {
+      "value": "BAH",
+      "description": "Baxter Healthcare Corporation",
+      "comment": "(includes Hyland Immuno, Immuno International AG, and North American Vaccine, Inc.)",
+      "sort_order": 8
+    },
+    {
+      "value": "BAY",
+      "description": "Bayer Corporation",
+      "comment": "(includes Miles, Inc. and Cutter Laboratories)",
+      "sort_order": 9
+    },
+    {
+      "value": "BP",
+      "description": "Berna Products",
+      "comment": "[Inactive--use BPC]",
+      "sort_order": 10
+    },
+    {
+      "value": "BPC",
+      "description": "Berna Products Corporation",
+      "comment": "(includes Swiss Serum and Vaccine Institute Berne)",
+      "sort_order": 11
+    },
+    {
+      "value": "CEN",
+      "description": "Centeon L.L.C.",
+      "comment": "[Inactive--use AVB]",
+      "sort_order": 12
+    },
+    {
+      "value": "CHI",
+      "description": "Chiron Corporation",
+      "comment": "[Inactive--use NOV] includes PowderJect Pharmaceuticals, Celltech Medeva Vaccines and Evans Medical Limited CDC Changes made on: July 14, 2006",
+      "sort_order": 13
+    },
+    {
+      "value": "CMP",
+      "description": "Celltech Medeva Pharmaceuticals",
+      "comment": "[Inactive--use NOV]CDC Changes made on: July 14, 2006",
+      "sort_order": 14
+    },
+    {
+      "value": "CNJ",
+      "description": "Cangene Corporation",
+      "comment": "CDC Changes made on: Feb. 28, 2006",
+      "sort_order": 15
+    },
+    {
+      "value": "CON",
+      "description": "Connaught",
+      "comment": "[Inactive--use PMC]",
+      "sort_order": 16
+    },
+    {
+      "value": "DVC",
+      "description": "DynPort Vaccine Company, LLC",
+      "comment": "CDC Changes made on: July 14, 2006",
+      "sort_order": 17
+    },
+    {
+      "value": "EVN",
+      "description": "Evans Medical Limited",
+      "comment": "[Inactive--use NOV]CDC Changes made on: July 14, 2006",
+      "sort_order": 18
+    },
+    {
+      "value": "GEO",
+      "description": "GeoVax Labs, Inc.",
+      "comment": "CDC Changes made on: July 14, 2006",
+      "sort_order": 19
+    },
+    {
+      "value": "GRE",
+      "description": "Greer Laboratories, Inc.",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "IAG",
+      "description": "Immuno International AG",
+      "comment": "[Inactive--use BAH]",
+      "sort_order": 21
+    },
+    {
+      "value": "IM",
+      "description": "Merieux",
+      "comment": "[Inactive--use PMC]",
+      "sort_order": 22
+    },
+    {
+      "value": "IUS",
+      "description": "Immuno-U.S., Inc.",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "JPN",
+      "description": "The Research Foundation for Microbial Diseases of Osaka University",
+      "comment": "(BIKEN)",
+      "sort_order": 24
+    },
+    {
+      "value": "KGC",
+      "description": "Korea Green Cross Corporation",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "LED",
+      "description": "Lederle",
+      "comment": "[Inactive--use WAL]",
+      "sort_order": 26
+    },
+    {
+      "value": "MA",
+      "description": "Massachusetts Public Health Biologic Laboratories",
+      "comment": "[Inactive--use MBL]",
+      "sort_order": 27
+    },
+    {
+      "value": "MBL",
+      "description": "Massachusetts Biologic Laboratories",
+      "comment": "(formerly Massachusetts Public Health Biologic Laboratories)",
+      "sort_order": 28
+    },
+    {
+      "value": "MED",
+      "description": "MedImmune, Inc.",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "MIL",
+      "description": "Miles",
+      "comment": "[Inactive--use BAY]",
+      "sort_order": 30
+    },
+    {
+      "value": "MIP",
+      "description": "Bioport Corporation",
+      "comment": "(formerly Michigan Biologic Products Institute)",
+      "sort_order": 31
+    },
+    {
+      "value": "MSD",
+      "description": "Merck & Co., Inc.",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "NAB",
+      "description": "NABI",
+      "comment": "(formerly North American Biologicals, Inc.)",
+      "sort_order": 33
+    },
+    {
+      "value": "NAV",
+      "description": "North American Vaccine, Inc.",
+      "comment": "[Inactive--use BAH]",
+      "sort_order": 34
+    },
+    {
+      "value": "NOV",
+      "description": "Novartis Pharmaceutical Corporation",
+      "comment": "(includes Chiron, PowderJect Pharmaceuticals, Celltech Medeva Vaccines and Evans Limited, Ciba-Geigy Limited and Sandoz Limited)",
+      "sort_order": 35
+    },
+    {
+      "value": "NVX",
+      "description": "Novavax, Inc.",
+      "comment": "CDC Changes made on: July 14, 2006",
+      "sort_order": 36
+    },
+    {
+      "value": "NYB",
+      "description": "New York Blood Center",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "ORT",
+      "description": "Ortho-Clinical Diagnostics",
+      "comment": "(formerly Ortho Diagnostic Systems, Inc.)",
+      "sort_order": 38
+    },
+    {
+      "value": "OTC",
+      "description": "Organon Teknika Corporation",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "OTH",
+      "description": "Other manufacturer",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "PD",
+      "description": "Parkedale Pharmaceuticals",
+      "comment": "(formerly Parke-Davis)",
+      "sort_order": 41
+    },
+    {
+      "value": "PMC",
+      "description": "sanofi pasteur",
+      "comment": "(formerly Aventis Pasteur, Pasteur Merieux Connaught; includes Connaught Laboratories and Pasteur Merieux) CDC Changes made on: Feb. 28, 2006",
+      "sort_order": 42
+    },
+    {
+      "value": "PRX",
+      "description": "Praxis Biologics",
+      "comment": "[Inactive--use WAL]",
+      "sort_order": 43
+    },
+    {
+      "value": "PWJ",
+      "description": "PowderJect Pharmaceuticals",
+      "comment": "(includes Celltech Medeva Vaccines and Evans Medical Limited) [Inactive--use NOV]CDC Changes made on: July 14, 2006",
+      "sort_order": 44
+    },
+    {
+      "value": "SCL",
+      "description": "Sclavo, Inc.",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "SI",
+      "description": "Swiss Serum and Vaccine Inst.",
+      "comment": "[Inactive--use BPC]",
+      "sort_order": 46
+    },
+    {
+      "value": "SKB",
+      "description": "GlaxoSmithKline",
+      "comment": "(formerly SmithKline Beecham; includes SmithKline Beecham and Glaxo Welcome)",
+      "sort_order": 47
+    },
+    {
+      "value": "SOL",
+      "description": "Solvay Pharmaceuticals",
+      "comment": "CDC Changes made on: July 14, 2006",
+      "sort_order": 48
+    },
+    {
+      "value": "TAL",
+      "description": "Talecris Biotherapeutics",
+      "comment": "(includes Bayer Biologicals) CDC Changes made on: Feb. 28, 2006",
+      "sort_order": 49
+    },
+    {
+      "value": "UNK",
+      "description": "Unknown manufacturer",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "USA",
+      "description": "United States Army Medical Research and Material Command",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "VXG",
+      "description": "VaxGen",
+      "comment": "CDC Changes made on: July 14, 2006",
+      "sort_order": 52
+    },
+    {
+      "value": "WA",
+      "description": "Wyeth-Ayerst",
+      "comment": "[Inactive--use WAL]",
+      "sort_order": 53
+    },
+    {
+      "value": "WAL",
+      "description": "Wyeth-Ayerst",
+      "comment": "(includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories, and Praxis Biologics)",
+      "sort_order": 54
+    },
+    {
+      "value": "ZLB",
+      "description": "ZLB Behring",
+      "comment": "(includes Aventis Behring and Armour Pharmaceutical Company) CDC Changes made on: Feb. 28, 2006",
+      "sort_order": 55
+    }
+  ],
+  "value_count": 55
+}

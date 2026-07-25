@@ -1,0 +1,60 @@
+{
+  "code": "FN",
+  "name": "Family Name",
+  "version": "HL7 v2.8",
+  "description": "This data type allows full specification of the surname of a person. Where appropriate, it differentiates the person's own surname from that of the person's partner or spouse, in cases where the person's name may contain elements from either name. It also permits messages to distinguish the surname prefix (such as \"van\" or \"de\") from the surname root.\n\nNote: Appears ONLY in the PPN, XCN and XPN.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "FN.1",
+      "field_description": "Surname",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "FN.2",
+      "field_description": "Own Surname Prefix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "FN.3",
+      "field_description": "Own Surname",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "FN.4",
+      "field_description": "Surname Prefix From Partner/Spouse",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "FN.5",
+      "field_description": "Surname From Partner/Spouse",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

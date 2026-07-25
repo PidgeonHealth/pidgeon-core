@@ -1,0 +1,316 @@
+{
+  "code": "RQA_I10",
+  "name": "Request for resubmission of an authorization",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "If a previously submitted request for treatment authorization is rejected or canceled, this event could trigger a resubmission message for a referenced authorization. For example, the payor may have rejected a request until additional clinical information is sent to support the authorization request",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "RF1",
+      "segment_desc": "Referral Information Segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "AUTHORIZATION",
+      "segment_desc": "AUTHORIZATION group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "AUT",
+      "segment_desc": "Authorization Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PROVIDER",
+      "segment_desc": "PROVIDER group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PRD",
+      "segment_desc": "Provider Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next of kin",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    },
+    {
+      "segment_code": "GUARANTOR INSURANCE",
+      "segment_desc": "GUARANTOR INSURANCE group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 10
+    },
+    {
+      "segment_code": "GT1",
+      "segment_desc": "Guarantor",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "GUARANTOR INSURANCE"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "INSURANCE",
+      "segment_desc": "INSURANCE group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "GUARANTOR INSURANCE"
+      ],
+      "level": 1,
+      "order_index": 12
+    },
+    {
+      "segment_code": "ACC",
+      "segment_desc": "Accident",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 13
+    },
+    {
+      "segment_code": "DG1",
+      "segment_desc": "Diagnosis",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 14
+    },
+    {
+      "segment_code": "DRG",
+      "segment_desc": "Diagnosis Related Group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 15
+    },
+    {
+      "segment_code": "AL1",
+      "segment_desc": "Patient Allergy Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 16
+    },
+    {
+      "segment_code": "PROCEDURE",
+      "segment_desc": "PROCEDURE group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 17
+    },
+    {
+      "segment_code": "PR1",
+      "segment_desc": "Procedures",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROCEDURE"
+      ],
+      "level": 1,
+      "order_index": 18
+    },
+    {
+      "segment_code": "AUTHORIZATION",
+      "segment_desc": "AUTHORIZATION group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "PROCEDURE"
+      ],
+      "level": 1,
+      "order_index": 19
+    },
+    {
+      "segment_code": "OBSERVATION",
+      "segment_desc": "OBSERVATION group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 20
+    },
+    {
+      "segment_code": "OBR",
+      "segment_desc": "Observation request segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "OBSERVATION"
+      ],
+      "level": 1,
+      "order_index": 21
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "OBSERVATION"
+      ],
+      "level": 1,
+      "order_index": 22
+    },
+    {
+      "segment_code": "RESULTS",
+      "segment_desc": "RESULTS group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "OBSERVATION"
+      ],
+      "level": 1,
+      "order_index": 23
+    },
+    {
+      "segment_code": "VISIT",
+      "segment_desc": "VISIT group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 24
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient visit",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 25
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient visit - additional information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 26
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 27
+    }
+  ],
+  "segment_count": 28
+}

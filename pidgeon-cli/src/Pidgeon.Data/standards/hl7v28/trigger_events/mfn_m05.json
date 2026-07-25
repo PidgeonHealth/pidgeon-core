@@ -1,0 +1,159 @@
+{
+  "code": "MFN_M05",
+  "name": "Patient location master file",
+  "version": "HL7 v2.8",
+  "chapter": "Master Files",
+  "description": "This section is specifically concerned with describing a master file message that should be used to transmit information which identifies the inventory of healthcare patient locations, such as nursing units, rooms, beds, clinics, exam rooms, etc.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MF_LOCATION",
+      "segment_desc": "MF_LOCATION group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "LOC",
+      "segment_desc": "Location Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "LCH",
+      "segment_desc": "Location Characteristic",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "LRL",
+      "segment_desc": "Location Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "MF_LOC_DEPT",
+      "segment_desc": "MF_LOC_DEPT group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MF_LOCATION"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "LDP",
+      "segment_desc": "Location Department",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION",
+        "MF_LOC_DEPT"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "LCH",
+      "segment_desc": "Location Characteristic",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION",
+        "MF_LOC_DEPT"
+      ],
+      "level": 2,
+      "order_index": 11
+    },
+    {
+      "segment_code": "LCC",
+      "segment_desc": "Location Charge Code",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF_LOCATION",
+        "MF_LOC_DEPT"
+      ],
+      "level": 2,
+      "order_index": 12
+    }
+  ],
+  "segment_count": 13
+}

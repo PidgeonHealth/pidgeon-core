@@ -1,0 +1,23 @@
+{
+  "code": "0337",
+  "name": "Certification status",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Certified",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Eligible",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

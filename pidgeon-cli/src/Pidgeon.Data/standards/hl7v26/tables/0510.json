@@ -1,0 +1,77 @@
+{
+  "code": "0510",
+  "name": "Blood Product Dispense Status",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CR",
+      "description": "Released into inventory for general availability",
+      "comment": "Status determined by Filler",
+      "sort_order": 1
+    },
+    {
+      "value": "DS",
+      "description": "Dispensed to patient location",
+      "comment": "Status determined by Filler",
+      "sort_order": 2
+    },
+    {
+      "value": "PT",
+      "description": "Presumed transfused (dispensed and not returned)",
+      "comment": "Status determined by Filler",
+      "sort_order": 3
+    },
+    {
+      "value": "RA",
+      "description": "Returned unused/no longer needed",
+      "comment": "Status determined by Filler",
+      "sort_order": 4
+    },
+    {
+      "value": "RD",
+      "description": "Reserved and ready to dispense",
+      "comment": "Status determined by Filler",
+      "sort_order": 5
+    },
+    {
+      "value": "RE",
+      "description": "Released (no longer allocated for the patient)",
+      "comment": "Status determined by Placer or Filler",
+      "sort_order": 6
+    },
+    {
+      "value": "RI",
+      "description": "Received into inventory (for specified patient)",
+      "comment": "Status determined by Filler",
+      "sort_order": 7
+    },
+    {
+      "value": "RL",
+      "description": "Returned unused/keep linked to patient for possible use later",
+      "comment": "Status determined by Filler",
+      "sort_order": 8
+    },
+    {
+      "value": "RQ",
+      "description": "Request to dispense blood product",
+      "comment": "Status determined by Placer",
+      "sort_order": 9
+    },
+    {
+      "value": "RS",
+      "description": "Reserved (ordered and product allocated for the patient)",
+      "comment": "Status determined by Filler",
+      "sort_order": 10
+    },
+    {
+      "value": "WA",
+      "description": "Wasted (product no longer viable)",
+      "comment": "Status determined by Filler",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

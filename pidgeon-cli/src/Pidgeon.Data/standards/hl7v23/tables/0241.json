@@ -1,0 +1,53 @@
+{
+  "code": "0241",
+  "name": "Patient outcome",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "Died",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "Fully recovered",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "N",
+      "description": "Not recovering/unchanged",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "R",
+      "description": "Recovering",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "S",
+      "description": "Sequelae",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "W",
+      "description": "Worsening",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

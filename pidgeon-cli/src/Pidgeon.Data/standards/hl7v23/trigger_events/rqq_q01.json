@@ -1,0 +1,40 @@
+{
+  "code": "RQQ_Q01",
+  "name": "Event replay query Trigger Event (HL7 v2.3)",
+  "version": "RQQ Q01",
+  "chapter": "",
+  "description": "",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "ERQ",
+      "segment_desc": "Event Replay Query Segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation pointer segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

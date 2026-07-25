@@ -1,0 +1,65 @@
+{
+  "code": "0532",
+  "name": "Expanded Yes/no Indicator",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ASKU",
+      "description": "asked but unknown",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NA",
+      "description": "not applicable",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "NASK",
+      "description": "not asked",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "NAV",
+      "description": "temporarily unavailable",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "NI",
+      "description": "No Information",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "NP",
+      "description": "not present",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "UNK",
+      "description": "unknown",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Y",
+      "description": "Yes",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

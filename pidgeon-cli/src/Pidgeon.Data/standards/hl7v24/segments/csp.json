@@ -1,0 +1,50 @@
+{
+  "code": "CSP",
+  "name": "Clinical Study Phase",
+  "version": "HL7 v2.4",
+  "chapter": "Observation Reporting",
+  "description": "The CSP segment contains information on a patients status for a particular phase of the study. This segment is optional and is useful when a study has different evaluation intervals within it.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CSP.1",
+      "field_description": "Study Phase Identifier",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CSP.2",
+      "field_description": "Date/time Study Phase Began",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CSP.3",
+      "field_description": "Date/time Study Phase Ended",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CSP.4",
+      "field_description": "Study Phase Evaluability",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

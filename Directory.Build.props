@@ -1,0 +1,24 @@
+<!--
+  Public mirror build default. This repository IS the community composition: the
+  conditional community item groups in the project files are always active here, so a
+  plain `dotnet build` works with no extra properties. The upstream development source
+  sets this per-invocation instead.
+-->
+<Project>
+  <PropertyGroup>
+    <PidgeonCommunityComposition>true</PidgeonCommunityComposition>
+    <!--
+      This property exists only in the projected public repository. It activates
+      package metadata while the authoritative private monorepo remains
+      non-packable unless its explicit local-candidate flag is supplied.
+    -->
+    <PidgeonPublicProjection>true</PidgeonPublicProjection>
+    <!--
+      Public candidates restore only the checked-in, content-hashed NuGet graph.
+      Dependency updates happen upstream, regenerate all four project lockfiles,
+      and travel through the next deterministic projection.
+    -->
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestoreLockedMode>true</RestoreLockedMode>
+  </PropertyGroup>
+</Project>

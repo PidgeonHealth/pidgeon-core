@@ -1,0 +1,90 @@
+{
+  "code": "AD",
+  "name": "Address",
+  "version": "HL7 v2.3",
+  "description": "Example: \n|10 ASH LN^#3^LIMA^OH^48132|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AD.1",
+      "field_description": "Street Address",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "AD.2",
+      "field_description": "Other Designation",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "AD.3",
+      "field_description": "City",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "AD.4",
+      "field_description": "State Or Province",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "AD.5",
+      "field_description": "Zip Or Postal Code",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "AD.6",
+      "field_description": "Country",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "ISO3166"
+    },
+    {
+      "position": 7,
+      "field_name": "AD.7",
+      "field_description": "Address Type",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0190"
+    },
+    {
+      "position": 8,
+      "field_name": "AD.8",
+      "field_description": "Other Geographic Designation",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 8
+}

@@ -1,0 +1,70 @@
+{
+  "code": "PTH",
+  "name": "Pathway",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Care",
+  "description": "The pathway segment contains the data necessary to add, update, correct, and delete from the record pathways that are utilized to address an individual’s health care",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PTH.1",
+      "field_description": "Action Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0287"
+    },
+    {
+      "position": 2,
+      "field_name": "PTH.2",
+      "field_description": "Pathway ID",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PTH.3",
+      "field_description": "Pathway Instance ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PTH.4",
+      "field_description": "Pathway Established Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PTH.5",
+      "field_description": "Pathway Lifecycle Status",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PTH.6",
+      "field_description": "Change Pathway Lifecycle Status Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

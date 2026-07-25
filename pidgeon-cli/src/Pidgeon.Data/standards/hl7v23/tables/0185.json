@@ -1,0 +1,53 @@
+{
+  "code": "0185",
+  "name": "Preferred method of contact",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "B",
+      "description": "Beeper Number",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Cellular Phone Number",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "E",
+      "description": "E-Mail Address (Not In TN Format)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "F",
+      "description": "FAX Number",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "H",
+      "description": "Home Phone Number",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "M",
+      "description": "Mail",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "O",
+      "description": "Office Phone Number",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

@@ -1,0 +1,191 @@
+{
+  "code": "0411",
+  "name": "Supplemental service information values",
+  "version": "HL7 v2.4",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1ST",
+      "description": "First",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2ND",
+      "description": "Second",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3RD",
+      "description": "Third",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4TH",
+      "description": "Fourth",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5TH",
+      "description": "Fifth",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "A/P",
+      "description": "Anterior/Posterior",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ANT",
+      "description": "Anterior",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BLT",
+      "description": "Bilateral",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DEC",
+      "description": "Decubitus",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "DST",
+      "description": "Distal",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "LAT",
+      "description": "Lateral",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "LFT",
+      "description": "Left",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "LLQ",
+      "description": "Left Lower Quadrant",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "LOW",
+      "description": "Lower",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "LUQ",
+      "description": "Left Upper Quadrant",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "MED",
+      "description": "Medial",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "OR",
+      "description": "Operating Room",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "PED",
+      "description": "Pediatric",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "POS",
+      "description": "Posterior",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "PRT",
+      "description": "Portable",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "PRX",
+      "description": "Proximal",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "REC",
+      "description": "Recumbent",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "RGH",
+      "description": "Right",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "RLQ",
+      "description": "Right Lower Quadrant",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "RUQ",
+      "description": "Right Upper Quadrant",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "UPP",
+      "description": "Upper",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "UPR",
+      "description": "Upright",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "WCT",
+      "description": "With Contrast",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "WOC",
+      "description": "Without Contrast",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "WSD",
+      "description": "With Sedation",
+      "comment": "",
+      "sort_order": 30
+    }
+  ],
+  "value_count": 30
+}

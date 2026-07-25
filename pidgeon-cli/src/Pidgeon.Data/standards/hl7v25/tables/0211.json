@@ -1,0 +1,137 @@
+{
+  "code": "0211",
+  "name": "Alternate character sets",
+  "version": "HL7 v2.5",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "8859/1",
+      "description": "The printable characters from the ISO 8859/1 Character set",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "8859/2",
+      "description": "The printable characters from the ISO 8859/2 Character set",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "8859/3",
+      "description": "The printable characters from the ISO 8859/3 Character set",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "8859/4",
+      "description": "The printable characters from the ISO 8859/4 Character set",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "8859/5",
+      "description": "The printable characters from the ISO 8859/5 Character set",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "8859/6",
+      "description": "The printable characters from the ISO 8859/6 Character set",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "8859/7",
+      "description": "The printable characters from the ISO 8859/7 Character set",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "8859/8",
+      "description": "The printable characters from the ISO 8859/8 Character set",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "8859/9",
+      "description": "The printable characters from the ISO 8859/9 Character set",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "ASCII",
+      "description": "The printable 7-bit ASCII character set.",
+      "comment": "(This is the default if this field is omitted)",
+      "sort_order": 10
+    },
+    {
+      "value": "BIG-5",
+      "description": "Code for Taiwanese Character Set (BIG-5)",
+      "comment": "Does not need an escape sequence. BIG-5 does not need an escape sequence. ASCII is a 7 bit character set, which means that the top bit of the byte is \"0\".",
+      "sort_order": 11
+    },
+    {
+      "value": "CNS 11643-1992",
+      "description": "Code for Taiwanese Character Set (CNS 11643-1992)",
+      "comment": "Does not need an escape sequence.",
+      "sort_order": 12
+    },
+    {
+      "value": "GB 18030-2000",
+      "description": "Code for Chinese Character Set (GB 18030-2000)",
+      "comment": "Does not need an escape sequence.",
+      "sort_order": 13
+    },
+    {
+      "value": "ISO IR14",
+      "description": "Code for Information Exchange (one byte)(JIS X 0201-1976).",
+      "comment": "Note that the code contains a space, i.e. \"ISO IR14\".",
+      "sort_order": 14
+    },
+    {
+      "value": "ISO IR159",
+      "description": "Code of the supplementary Japanese Graphic Character set for information interchange (JIS X 0212-1990).",
+      "comment": "Note that the code contains a space, i.e. \"ISO IR159\".",
+      "sort_order": 15
+    },
+    {
+      "value": "ISO IR87",
+      "description": "Code for the Japanese Graphic Character set for information interchange (JIS X 0208-1990),",
+      "comment": "Note that the code contains a space, i.e. \"ISO IR87\". The JIS X 0208 needs an escape sequence. In Japan, the escape technique is ISO 2022. From basic ASCII, escape sequence \"escape\" $ B (in HEX, 1B 24 42) lets the parser know that following bytes should be handled 2-byte wise. Back to ASCII is 1B 28 42.",
+      "sort_order": 16
+    },
+    {
+      "value": "KS X 1001",
+      "description": "Code for Korean Character Set (KS X 1001)",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "UNICODE",
+      "description": "The world wide character standard from ISO/IEC 10646-1-1993[6]",
+      "comment": "Deprecated. Retained for backward compatibility only as v 2.5. Replaced by specific Unicode encoding codes.",
+      "sort_order": 18
+    },
+    {
+      "value": "UNICODE UTF-16",
+      "description": "UCS Transformation Format, 16-bit form",
+      "comment": "UTF-16 is identical to ISO/IEC 10646 UCS-2. Note that the code contains a space before UTF but not before and after the hyphen.",
+      "sort_order": 19
+    },
+    {
+      "value": "UNICODE UTF-32",
+      "description": "UCS Transformation Format, 32-bit form",
+      "comment": "UTF-32 is defined by Unicode Technical Report #19, and is an officially recognized encoding as of Unicode Version 3.1. UTF-32 is a proper subset of ISO/IEC 10646 UCS-4. Note that the code contains a space before UTF but not before and after the hyphen.",
+      "sort_order": 20
+    },
+    {
+      "value": "UNICODE UTF-8",
+      "description": "UCS Transformation Format, 8-bit form",
+      "comment": "UTF-8 is a variable-length encoding, each code value is represented by 1,2 or 3 bytes, depending on the code value. 7 bit ASCII is a proper subset of UTF-8. Note that the code contains a space before UTF but not before and after the hyphen.",
+      "sort_order": 21
+    }
+  ],
+  "value_count": 21
+}

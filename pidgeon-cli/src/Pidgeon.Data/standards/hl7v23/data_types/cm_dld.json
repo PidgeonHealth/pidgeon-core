@@ -1,0 +1,30 @@
+{
+  "code": "CM_DLD",
+  "name": "Discharge Location",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_DLD.1",
+      "field_description": "Discharge Location",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0113"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_DLD.2",
+      "field_description": "Effective Date",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

@@ -1,0 +1,9 @@
+{
+  "code": "SI",
+  "name": "Sequence ID",
+  "version": "HL7 v2.3",
+  "description": "A non-negative integer in the form of an NM field. The uses of this data type are defined in the chapters defining the segments and messages in which it appears",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

@@ -1,0 +1,70 @@
+{
+  "code": "RXC",
+  "name": "Pharmacy component order segment",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "If the drug or treatment ordered with the RXO segment is a compound drug OR an IV solution, AND there is not a coded value for the Universal Service ID which specifies the components (base and all additives), then the components (the base and additives) are specified by two or more RXC segments. The policy of the pharmacy or treatment application on substitutions at the RXC level is identical to that for the RXO level.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RXC.1",
+      "field_description": "RX Component Type",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0166"
+    },
+    {
+      "position": 2,
+      "field_name": "RXC.2",
+      "field_description": "Component Code",
+      "length": "100",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RXC.3",
+      "field_description": "Component Amount",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "RXC.4",
+      "field_description": "Component Units",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "RXC.5",
+      "field_description": "Component Strength",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "RXC.6",
+      "field_description": "Component Strength Units",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

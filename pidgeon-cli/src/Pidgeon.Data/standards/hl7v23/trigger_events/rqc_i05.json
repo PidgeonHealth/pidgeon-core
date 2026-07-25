@@ -1,0 +1,114 @@
+{
+  "code": "RQC_I05",
+  "name": "Request for patient clinical information",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "This event is used to request clinical information for a specific patient. Generally, this transaction occurs between one provider and another (typically a laboratory or radiology, etc.). However, it may also be very useful for a payor-to-provider request for clinical observation information to be used in considering a request for treatment authorization.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Query definition segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Query filter segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PROVIDER",
+      "segment_desc": "PROVIDER group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PRD",
+      "segment_desc": "Provider Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next of kin",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "GT1",
+      "segment_desc": "Guarantor",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    }
+  ],
+  "segment_count": 10
+}

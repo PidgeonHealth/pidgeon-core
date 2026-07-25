@@ -1,0 +1,30 @@
+{
+  "code": "RDF",
+  "name": "Table Row Definition",
+  "version": "HL7 v2.7",
+  "chapter": "Query",
+  "description": "The RDF segment defines the content of the row data segments (RDT) in the tabular response (RTB).\n- As an optional segment in a query either a QBP or QBS, this segment can be used to limit the number of columns returned and to specify what column positions the fields occupy (where supported, these features can be used to override the defaults for the particular query).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RDF.1",
+      "field_description": "Number Of Columns Per Row",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RDF.2",
+      "field_description": "Column Description",
+      "length": "0",
+      "data_type": "RCD",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

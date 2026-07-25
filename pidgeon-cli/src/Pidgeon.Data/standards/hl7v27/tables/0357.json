@@ -1,0 +1,95 @@
+{
+  "code": "0357",
+  "name": "Message Error Condition Codes",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "0",
+      "description": "Message accepted",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "100",
+      "description": "Segment sequence error",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "101",
+      "description": "Required field missing",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "102",
+      "description": "Data type error",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "103",
+      "description": "Table value not found",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "104",
+      "description": "Value too long",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "200",
+      "description": "Unsupported message type",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "201",
+      "description": "Unsupported event code",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "202",
+      "description": "Unsupported processing id",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "203",
+      "description": "Unsupported version id",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "204",
+      "description": "Unknown key identifier",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "205",
+      "description": "Duplicate key identifier",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "206",
+      "description": "Application record locked",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "207",
+      "description": "Application internal error",
+      "comment": "",
+      "sort_order": 14
+    }
+  ],
+  "value_count": 14
+}

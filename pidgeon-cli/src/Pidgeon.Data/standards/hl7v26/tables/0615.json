@@ -1,0 +1,23 @@
+{
+  "code": "0615",
+  "name": "User Authentication Credential Type Code",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "KERB",
+      "description": "Kerberos Service Ticket",
+      "comment": "Structure defined by RFC 1510",
+      "sort_order": 1
+    },
+    {
+      "value": "SAML",
+      "description": "Authenticated User Identity Assertion",
+      "comment": "XML structure defined by the OASIS Security Assertion Markup Language (SAML) specification",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

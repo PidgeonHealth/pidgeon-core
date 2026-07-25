@@ -1,0 +1,13 @@
+<!-- Generated from config/public-compositions/community.yaml. Do not edit by hand. -->
+<Project>
+  <PropertyGroup>
+    <PidgeonRepositoryRoot Condition="'$(PidgeonRepositoryRoot)' == ''">$(MSBuildThisFileDirectory)..\..\..</PidgeonRepositoryRoot>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(PidgeonRepositoryRoot)/pidgeon-cli/src/Pidgeon.Data.Baseline/BaselineDataResourceProvider.cs" />
+    <Compile Include="$(PidgeonRepositoryRoot)/pidgeon-cli/src/Pidgeon.Data.Baseline/BaselineDataServiceCollectionExtensions.cs" />
+    <ProjectReference Include="$(PidgeonRepositoryRoot)/pidgeon-cli/src/Pidgeon.Core/Pidgeon.Core.csproj" />
+  </ItemGroup>
+</Project>

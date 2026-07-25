@@ -1,0 +1,29 @@
+{
+  "code": "0501",
+  "name": "Consent Non-Disclosure Reason",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "E",
+      "description": "Emergency",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "PR",
+      "description": "Patient Request",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "RX",
+      "description": "Rx Private",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

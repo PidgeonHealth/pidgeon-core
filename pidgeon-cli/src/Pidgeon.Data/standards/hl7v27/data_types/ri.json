@@ -1,0 +1,30 @@
+{
+  "code": "RI",
+  "name": "Repeat Interval",
+  "version": "HL7 v2.7",
+  "description": "contains the interval between repeated services.\n\nNote: The reader is referred to the RPT – Repeat pattern data type, which provides a more rigorous framework for defining repeating time intervals.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RI.1",
+      "field_description": "Repeat Pattern",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0335"
+    },
+    {
+      "position": 2,
+      "field_name": "RI.2",
+      "field_description": "Explicit Time Interval",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

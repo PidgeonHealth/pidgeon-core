@@ -1,0 +1,41 @@
+{
+  "code": "0250",
+  "name": "Relatedness assessment",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "H",
+      "description": "Highly probable",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "I",
+      "description": "Improbable",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Moderately probable",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "N",
+      "description": "Not related",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "S",
+      "description": "Somewhat probable",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

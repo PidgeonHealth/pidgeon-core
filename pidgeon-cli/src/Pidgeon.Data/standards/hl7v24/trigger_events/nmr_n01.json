@@ -1,0 +1,132 @@
+{
+  "code": "NMR_N01",
+  "name": "Application management response",
+  "version": "HL7 v2.4",
+  "chapter": "Application Management",
+  "description": "The N01 event signifies when the NMQ (Application Management Query) message is used by one application to make application control-level requests for information or action to another application.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Original-Style Query Definition",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "CLOCK AND STATS WITH NOTES ALT",
+      "segment_desc": "CLOCK AND STATS WITH NOTES ALT group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NCK",
+      "segment_desc": "System clock",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NST",
+      "segment_desc": "Application control level statistics",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NSC",
+      "segment_desc": "Application status change",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 10
+    }
+  ],
+  "segment_count": 11
+}

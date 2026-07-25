@@ -1,0 +1,17 @@
+# Dependabot config for PidgeonHealth/pidgeon-core.
+version: 2
+updates:
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: weekly
+    # Release mirrors receive dependency updates through the authoritative
+    # monorepo projection. A zero version-update limit preserves Dependabot
+    # security updates without creating an independent development branch.
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 0

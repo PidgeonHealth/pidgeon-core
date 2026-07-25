@@ -1,0 +1,35 @@
+{
+  "code": "0473",
+  "name": "Formulary status",
+  "version": "HL7 v2.4",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "G",
+      "description": "This observation/service is on the formulary, and has guidelines",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "This observation/service is not on the formulary",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "R",
+      "description": "This observation/service is on the formulary, but is restricted",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Y",
+      "description": "This observation/service is on the formulary",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

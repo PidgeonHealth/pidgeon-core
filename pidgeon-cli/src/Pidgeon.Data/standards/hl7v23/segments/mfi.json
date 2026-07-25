@@ -1,0 +1,70 @@
+{
+  "code": "MFI",
+  "name": "Master file identification segment",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MFI.1",
+      "field_description": "Master File Identifier",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0175"
+    },
+    {
+      "position": 2,
+      "field_name": "MFI.2",
+      "field_description": "Master File Application Identifier",
+      "length": "180",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MFI.3",
+      "field_description": "File-Level Event Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0178"
+    },
+    {
+      "position": 4,
+      "field_name": "MFI.4",
+      "field_description": "Entered Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "MFI.5",
+      "field_description": "Effective Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "MFI.6",
+      "field_description": "Response Level Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0179"
+    }
+  ],
+  "field_count": 6
+}

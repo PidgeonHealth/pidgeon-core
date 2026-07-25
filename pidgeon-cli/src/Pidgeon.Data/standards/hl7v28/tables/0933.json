@@ -1,0 +1,89 @@
+{
+  "code": "0933",
+  "name": "Intended Procedure Type",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "2RC",
+      "description": "Double Red Cells",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "GRN",
+      "description": "Granulocytes",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "HEM",
+      "description": "Hemachromatosis",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "HPC",
+      "description": "Hematopoietic Progenitor Cells",
+      "comment": "Stem Cells and other cells classified as Hematopoietic",
+      "sort_order": 4
+    },
+    {
+      "value": "LYM",
+      "description": "Lymphocytes",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PLS",
+      "description": "Plasma",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PLT",
+      "description": "Platelets",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "PNP",
+      "description": "Platelets and Plasma",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PNR",
+      "description": "Platelets and Red Cells",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PPR",
+      "description": "Platelets, Plasma, and Red Cells",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "THA",
+      "description": "Therapeutic Apheresis",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "THW",
+      "description": "Therapeutic Whole Blood",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "WBL",
+      "description": "Whole Blood",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

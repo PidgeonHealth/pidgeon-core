@@ -1,0 +1,109 @@
+{
+  "code": "ADT_A47",
+  "message_structure": "ADT_A44",
+  "name": "Change patient identifier list",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "A change has been done at the patient identifier list level. That is, a single PID-3 - patient identifier list value has been found to be incorrect and has been changed.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "ARV",
+      "segment_desc": "Access Restriction",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge Patient Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 8
+    }
+  ],
+  "segment_count": 9
+}

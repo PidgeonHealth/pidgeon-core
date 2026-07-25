@@ -1,0 +1,30 @@
+{
+  "code": "RI",
+  "name": "Repeat Interval",
+  "version": "HL7 v2.5",
+  "description": "contains the interval between repeated services.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RI.1",
+      "field_description": "Repeat Pattern",
+      "length": "6",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0335"
+    },
+    {
+      "position": 2,
+      "field_name": "RI.2",
+      "field_description": "Explicit Time Interval",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

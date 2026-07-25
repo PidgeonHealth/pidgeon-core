@@ -1,0 +1,9 @@
+{
+  "code": "TM",
+  "name": "Time",
+  "version": "HL7 v2.3",
+  "description": "Format: HH[MM[SS[.S[S[S[S]]]]]][+/-ZZZZ] \n\nIn prior versions of HL7, this data type was always specified to be in the format HHMM[SS[.SSSS]][+/ZZZZ] using a 24 hour clock notation.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

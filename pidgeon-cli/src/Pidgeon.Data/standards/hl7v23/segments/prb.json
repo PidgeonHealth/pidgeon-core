@@ -1,0 +1,260 @@
+{
+  "code": "PRB",
+  "name": "Problem Detail",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "The problem detail segment contains the data necessary to add, update, correct, and delete the problems of a given individual.\n\nThe business and/or application must assume the responsibility for maintaining knowledge about data ownership, versioning, and/or audit trail control (for purposes of data integrity). It is also their responsibility to represent the appropriate version of that data.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PRB.1",
+      "field_description": "Action Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0287"
+    },
+    {
+      "position": 2,
+      "field_name": "PRB.2",
+      "field_description": "Action Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PRB.3",
+      "field_description": "Problem ID",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PRB.4",
+      "field_description": "Problem Instance ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PRB.5",
+      "field_description": "Episode of Care ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PRB.6",
+      "field_description": "Problem List Priority",
+      "length": "60",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PRB.7",
+      "field_description": "Problem Established Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PRB.8",
+      "field_description": "Anticipated Problem Resolution Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "PRB.9",
+      "field_description": "Actual Problem Resolution Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "PRB.10",
+      "field_description": "Problem Classification",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "PRB.11",
+      "field_description": "Problem Management Discipline",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "PRB.12",
+      "field_description": "Problem Persistence",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "PRB.13",
+      "field_description": "Problem Confirmation Status",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "PRB.14",
+      "field_description": "Problem Life Cycle Status",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PRB.15",
+      "field_description": "Problem Life Cycle Status Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "PRB.16",
+      "field_description": "Problem Date of Onset",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "PRB.17",
+      "field_description": "Problem Onset Text",
+      "length": "80",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "PRB.18",
+      "field_description": "Problem Ranking",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "PRB.19",
+      "field_description": "Certainty of Problem",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "PRB.20",
+      "field_description": "Probability of Problem",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "PRB.21",
+      "field_description": "Individual Awareness of Problem",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "PRB.22",
+      "field_description": "Problem Prognosis",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "PRB.23",
+      "field_description": "Individual Awareness of Prognosis",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "PRB.24",
+      "field_description": "Family/Significant Other Awareness of Problem/Prognosis",
+      "length": "200",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "PRB.25",
+      "field_description": "Security/Sensitivity",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 25
+}

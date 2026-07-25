@@ -1,0 +1,51 @@
+{
+  "code": "SLN_S34",
+  "message_structure": "SLR_S28",
+  "name": "Notification of sterilization lot",
+  "version": "HL7 v2.7",
+  "chapter": "Materials Management",
+  "description": "This message is sent from a filler application to notify other applications that a new sterilization lot has been created.  The information provided in the SLT segment describes the new sterilization lot that has been created by the filler application.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "SLT",
+      "segment_desc": "Sterilization Lot",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    }
+  ],
+  "segment_count": 4
+}

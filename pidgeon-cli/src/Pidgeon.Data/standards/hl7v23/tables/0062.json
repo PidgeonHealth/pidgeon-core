@@ -1,0 +1,29 @@
+{
+  "code": "0062",
+  "name": "Event reason",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "Patient request",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "Physician order",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "03",
+      "description": "Census management",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

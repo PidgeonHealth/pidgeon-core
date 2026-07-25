@@ -1,0 +1,30 @@
+{
+  "code": "TS",
+  "name": "Time Stamp",
+  "version": "HL7 v2.6",
+  "description": "Attention: The TS data type has been replaced by the DTM data type and the detail was withdrawn and removed from the standard as of v 2.6.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "TS.1",
+      "field_description": "Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "TS.2",
+      "field_description": "Degree Of Precision",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0283",
+  "name": "Referral status",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Accepted",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Expired",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Pending",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "R",
+      "description": "Rejected",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

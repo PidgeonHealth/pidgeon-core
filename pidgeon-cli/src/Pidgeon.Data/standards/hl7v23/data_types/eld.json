@@ -1,0 +1,20 @@
+{
+  "code": "ELD",
+  "name": "Error",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ELD.1",
+      "field_description": "Segment ID",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

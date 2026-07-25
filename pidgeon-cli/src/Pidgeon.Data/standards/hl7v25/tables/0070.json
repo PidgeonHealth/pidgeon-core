@@ -1,0 +1,2051 @@
+{
+  "code": "0070",
+  "name": "Specimen Source Codes",
+  "version": "HL7 v2.5",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ABS",
+      "description": "Abscess",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ACNE",
+      "description": "Tissue, Acne",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ACNFLD",
+      "description": "Fluid, Acne",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AIRS",
+      "description": "Air Sample",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ALL",
+      "description": "Allograft",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "AMN",
+      "description": "Amniotic fluid",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "AMP",
+      "description": "Amputation",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ANGI",
+      "description": "Catheter Tip, Angio",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "ARTC",
+      "description": "Catheter Tip, Arterial",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "ASERU",
+      "description": "Serum, Acute",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ASP",
+      "description": "Aspirate",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ATTE",
+      "description": "Environmental, Autoclave Ampule",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "AUTOC",
+      "description": "Environment, Attest",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "AUTP",
+      "description": "Autopsy",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "BBL",
+      "description": "Blood bag",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "BCYST",
+      "description": "Cyst, Baker's",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "BDY",
+      "description": "Whole body",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "BIFL",
+      "description": "Bile fluid",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "BITE",
+      "description": "Bite",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "BLD",
+      "description": "Whole blood",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "BLDA",
+      "description": "Blood arterial",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "BLDC",
+      "description": "Blood capillary",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "BLDCO",
+      "description": "Cord blood",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "BLDV",
+      "description": "Blood venous",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "BLEB",
+      "description": "Bleb",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "BLIST",
+      "description": "Blister",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "BOIL",
+      "description": "Boil",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "BON",
+      "description": "Bone",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "BOWL",
+      "description": "Bowel contents",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "BPH",
+      "description": "Basophils",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "BPU",
+      "description": "Blood product unit",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "BRN",
+      "description": "Burn",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "BRO",
+      "description": "Bronchial",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "BRSH",
+      "description": "Brush",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "BRTH",
+      "description": "Breath (use EXHLD)",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "BRUS",
+      "description": "Brushing",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "BUB",
+      "description": "Bubo",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "BULLA",
+      "description": "Bulla/Bullae",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "BX",
+      "description": "Biopsy",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "CALC",
+      "description": "Calculus (=Stone)",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "CARBU",
+      "description": "Carbuncle",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "CAT",
+      "description": "Catheter",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "CBITE",
+      "description": "Bite, Cat",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "CDM",
+      "description": "Cardiac muscle",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "CLIPP",
+      "description": "Clippings",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "CNJT",
+      "description": "Conjunctiva",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "CNL",
+      "description": "Cannula",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "COL",
+      "description": "Colostrum",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "CONE",
+      "description": "Biospy, Cone",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "CSCR",
+      "description": "Scratch, Cat",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "CSERU",
+      "description": "Serum, Convalescent",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "CSF",
+      "description": "Cerebral spinal fluid",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "CSITE",
+      "description": "Catheter Insertion Site",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "CSMY",
+      "description": "Fluid, Cystostomy Tube",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "CST",
+      "description": "Fluid, Cyst",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "CSVR",
+      "description": "Blood, Cell Saver",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "CTP",
+      "description": "Catheter tip",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "CUR",
+      "description": "Curettage",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "CVM",
+      "description": "Cervical mucus",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "CVPS",
+      "description": "Site, CVP",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "CVPT",
+      "description": "Catheter Tip, CVP",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "CVX",
+      "description": "Cervix",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "CYN",
+      "description": "Nodule, Cystic",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "CYST",
+      "description": "Cyst",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "DBITE",
+      "description": "Bite, Dog",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "DCS",
+      "description": "Sputum, Deep Cough",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "DEC",
+      "description": "Ulcer, Decubitus",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "DEION",
+      "description": "Environmental, Water (Deionized)",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "DIA",
+      "description": "Dialysate",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "DIAF",
+      "description": "Dialysis fluid",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "DISCHG",
+      "description": "Discharge",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "DIV",
+      "description": "Diverticulum",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "DOSE",
+      "description": "Dose med or substance",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "DRN",
+      "description": "Drain",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "DRNG",
+      "description": "Drainage, Tube",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "DRNGP",
+      "description": "Drainage, Penrose",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "DUFL",
+      "description": "Duodenal fluid",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "EAR",
+      "description": "Ear",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "EARW",
+      "description": "Ear wax (cerumen)",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "EBRUSH",
+      "description": "Brush, Esophageal",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "EEYE",
+      "description": "Environmental, Eye Wash",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "EFF",
+      "description": "Environmental, Effluent",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "EFFUS",
+      "description": "Effusion",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "EFOD",
+      "description": "Environmental, Food",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "EISO",
+      "description": "Environmental, Isolette",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "ELT",
+      "description": "Electrode",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "ENDC",
+      "description": "Endocardium",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "ENDM",
+      "description": "Endometrium",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "ENVIR",
+      "description": "Environmental, Unidentified Substance",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "EOS",
+      "description": "Eosinophils",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "EOTH",
+      "description": "Environmental, Other Substance",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "ESOI",
+      "description": "Environmental, Soil",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "ESOS",
+      "description": "Environmental, Solution (Sterile)",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "ETA",
+      "description": "Aspirate, Endotrach",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "ETTP",
+      "description": "Catheter Tip, Endotracheal",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "ETTUB",
+      "description": "Tube, Endotracheal",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "EWHI",
+      "description": "Environmental, Whirlpool",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "EXG",
+      "description": "Exhaled gas (=breath)",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "EXS",
+      "description": "Shunt, External",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "EXUDTE",
+      "description": "Exudate",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "EYE",
+      "description": "Eye",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "FAW",
+      "description": "Environmental, Water (Well)",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "FBLOOD",
+      "description": "Blood, Fetal",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "FGA",
+      "description": "Fluid, Abdomen",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "FIB",
+      "description": "Fibroblasts",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "FIST",
+      "description": "Fistula",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "FLD",
+      "description": "Fluid, Other",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "FLT",
+      "description": "Filter",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "FLU",
+      "description": "Body fluid, unsp",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "FLUID",
+      "description": "Fluid",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "FOLEY",
+      "description": "Catheter Tip, Foley",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "FRS",
+      "description": "Fluid, Respiratory",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "FSCLP",
+      "description": "Scalp, Fetal",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "FUR",
+      "description": "Furuncle",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "GAS",
+      "description": "Gas",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "GASA",
+      "description": "Aspirate, Gastric",
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "GASAN",
+      "description": "Antrum, Gastric",
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "GASBR",
+      "description": "Brushing, Gastric",
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "GASD",
+      "description": "Drainage, Gastric",
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "GAST",
+      "description": "Fluid/contents, Gastric",
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "GEN",
+      "description": "Genital",
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "GENC",
+      "description": "Genital cervix",
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "GENL",
+      "description": "Genital lochia",
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "GENV",
+      "description": "Genital vaginal",
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "GRAFT",
+      "description": "Graft",
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "GRANU",
+      "description": "Granuloma",
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "GROSH",
+      "description": "Catheter, Groshong",
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "GSOL",
+      "description": "Solution, Gastrostomy",
+      "comment": "",
+      "sort_order": 128
+    },
+    {
+      "value": "GSPEC",
+      "description": "Biopsy, Gastric",
+      "comment": "",
+      "sort_order": 129
+    },
+    {
+      "value": "GT",
+      "description": "Tube, Gastric",
+      "comment": "",
+      "sort_order": 130
+    },
+    {
+      "value": "GTUBE",
+      "description": "Drainage Tube, Drainage (Gastrostomy)",
+      "comment": "",
+      "sort_order": 131
+    },
+    {
+      "value": "HAR",
+      "description": "Hair",
+      "comment": "",
+      "sort_order": 132
+    },
+    {
+      "value": "HBITE",
+      "description": "Bite, Human",
+      "comment": "",
+      "sort_order": 133
+    },
+    {
+      "value": "HBLUD",
+      "description": "Blood, Autopsy",
+      "comment": "",
+      "sort_order": 134
+    },
+    {
+      "value": "HEMAQ",
+      "description": "Catheter Tip, Hemaquit",
+      "comment": "",
+      "sort_order": 135
+    },
+    {
+      "value": "HEMO",
+      "description": "Catheter Tip, Hemovac",
+      "comment": "",
+      "sort_order": 136
+    },
+    {
+      "value": "HERNI",
+      "description": "Tissue, Herniated",
+      "comment": "",
+      "sort_order": 137
+    },
+    {
+      "value": "HEV",
+      "description": "Drain, Hemovac",
+      "comment": "",
+      "sort_order": 138
+    },
+    {
+      "value": "HIC",
+      "description": "Catheter, Hickman",
+      "comment": "",
+      "sort_order": 139
+    },
+    {
+      "value": "HYDC",
+      "description": "Fluid, Hydrocele",
+      "comment": "",
+      "sort_order": 140
+    },
+    {
+      "value": "IBITE",
+      "description": "Bite, Insect",
+      "comment": "",
+      "sort_order": 141
+    },
+    {
+      "value": "ICYST",
+      "description": "Cyst, Inclusion",
+      "comment": "",
+      "sort_order": 142
+    },
+    {
+      "value": "IDC",
+      "description": "Catheter Tip, Indwelling",
+      "comment": "",
+      "sort_order": 143
+    },
+    {
+      "value": "IHG",
+      "description": "Gas, Inhaled",
+      "comment": "",
+      "sort_order": 144
+    },
+    {
+      "value": "ILEO",
+      "description": "Drainage, Ileostomy",
+      "comment": "",
+      "sort_order": 145
+    },
+    {
+      "value": "ILLEG",
+      "description": "Source of Specimen Is Illegible",
+      "comment": "",
+      "sort_order": 146
+    },
+    {
+      "value": "IMP",
+      "description": "Implant",
+      "comment": "",
+      "sort_order": 147
+    },
+    {
+      "value": "INCI",
+      "description": "Site, Incision/Surgical",
+      "comment": "",
+      "sort_order": 148
+    },
+    {
+      "value": "INFIL",
+      "description": "Infiltrate",
+      "comment": "",
+      "sort_order": 149
+    },
+    {
+      "value": "INS",
+      "description": "Insect",
+      "comment": "",
+      "sort_order": 150
+    },
+    {
+      "value": "INTRD",
+      "description": "Catheter Tip, Introducer",
+      "comment": "",
+      "sort_order": 151
+    },
+    {
+      "value": "ISLT",
+      "description": "Isolate",
+      "comment": "",
+      "sort_order": 152
+    },
+    {
+      "value": "IT",
+      "description": "Intubation tube",
+      "comment": "",
+      "sort_order": 153
+    },
+    {
+      "value": "IUD",
+      "description": "Intrauterine Device",
+      "comment": "",
+      "sort_order": 154
+    },
+    {
+      "value": "IVCAT",
+      "description": "Catheter Tip, IV",
+      "comment": "",
+      "sort_order": 155
+    },
+    {
+      "value": "IVFLD",
+      "description": "Fluid, IV",
+      "comment": "",
+      "sort_order": 156
+    },
+    {
+      "value": "IVTIP",
+      "description": "Tubing Tip, IV",
+      "comment": "",
+      "sort_order": 157
+    },
+    {
+      "value": "JEJU",
+      "description": "Drainage, Jejunal",
+      "comment": "",
+      "sort_order": 158
+    },
+    {
+      "value": "JNTFLD",
+      "description": "Fluid, Joint",
+      "comment": "",
+      "sort_order": 159
+    },
+    {
+      "value": "JP",
+      "description": "Drainage, Jackson Pratt",
+      "comment": "",
+      "sort_order": 160
+    },
+    {
+      "value": "KELOI",
+      "description": "Lavage",
+      "comment": "",
+      "sort_order": 161
+    },
+    {
+      "value": "KIDFLD",
+      "description": "Fluid, Kidney",
+      "comment": "",
+      "sort_order": 162
+    },
+    {
+      "value": "LAM",
+      "description": "Lamella",
+      "comment": "",
+      "sort_order": 163
+    },
+    {
+      "value": "LAVG",
+      "description": "Lavage, Bronhial",
+      "comment": "",
+      "sort_order": 164
+    },
+    {
+      "value": "LAVGG",
+      "description": "Lavage, Gastric",
+      "comment": "",
+      "sort_order": 165
+    },
+    {
+      "value": "LAVGP",
+      "description": "Lavage, Peritoneal",
+      "comment": "",
+      "sort_order": 166
+    },
+    {
+      "value": "LAVPG",
+      "description": "Lavage, Pre-Bronch",
+      "comment": "",
+      "sort_order": 167
+    },
+    {
+      "value": "LENS1",
+      "description": "Contact Lens",
+      "comment": "",
+      "sort_order": 168
+    },
+    {
+      "value": "LENS2",
+      "description": "Contact Lens Case",
+      "comment": "",
+      "sort_order": 169
+    },
+    {
+      "value": "LESN",
+      "description": "Lesion",
+      "comment": "",
+      "sort_order": 170
+    },
+    {
+      "value": "LIQ",
+      "description": "Liquid NOS",
+      "comment": "",
+      "sort_order": 171
+    },
+    {
+      "value": "LIQO",
+      "description": "Liquid, Other",
+      "comment": "",
+      "sort_order": 172
+    },
+    {
+      "value": "LN",
+      "description": "Line",
+      "comment": "",
+      "sort_order": 173
+    },
+    {
+      "value": "LNA",
+      "description": "Line arterial",
+      "comment": "",
+      "sort_order": 174
+    },
+    {
+      "value": "LNV",
+      "description": "Line venous",
+      "comment": "",
+      "sort_order": 175
+    },
+    {
+      "value": "LSAC",
+      "description": "Fluid, Lumbar Sac",
+      "comment": "",
+      "sort_order": 176
+    },
+    {
+      "value": "LYM",
+      "description": "Lymphocytes",
+      "comment": "",
+      "sort_order": 177
+    },
+    {
+      "value": "MAC",
+      "description": "Macrophages",
+      "comment": "",
+      "sort_order": 178
+    },
+    {
+      "value": "MAHUR",
+      "description": "Catheter Tip, Makurkour",
+      "comment": "",
+      "sort_order": 179
+    },
+    {
+      "value": "MAR",
+      "description": "Marrow",
+      "comment": "",
+      "sort_order": 180
+    },
+    {
+      "value": "MASS",
+      "description": "Mass",
+      "comment": "",
+      "sort_order": 181
+    },
+    {
+      "value": "MBLD",
+      "description": "Blood, Menstrual",
+      "comment": "",
+      "sort_order": 182
+    },
+    {
+      "value": "MEC",
+      "description": "Meconium",
+      "comment": "",
+      "sort_order": 183
+    },
+    {
+      "value": "MILK",
+      "description": "Breast milk",
+      "comment": "",
+      "sort_order": 184
+    },
+    {
+      "value": "MLK",
+      "description": "Milk",
+      "comment": "",
+      "sort_order": 185
+    },
+    {
+      "value": "MUCOS",
+      "description": "Mucosa",
+      "comment": "",
+      "sort_order": 186
+    },
+    {
+      "value": "MUCUS",
+      "description": "Mucus",
+      "comment": "",
+      "sort_order": 187
+    },
+    {
+      "value": "NAIL",
+      "description": "Nail",
+      "comment": "",
+      "sort_order": 188
+    },
+    {
+      "value": "NASDR",
+      "description": "Drainage, Nasal",
+      "comment": "",
+      "sort_order": 189
+    },
+    {
+      "value": "NEDL",
+      "description": "Needle",
+      "comment": "",
+      "sort_order": 190
+    },
+    {
+      "value": "NEPH",
+      "description": "Site, Nephrostomy",
+      "comment": "",
+      "sort_order": 191
+    },
+    {
+      "value": "NGASP",
+      "description": "Aspirate, Nasogastric",
+      "comment": "",
+      "sort_order": 192
+    },
+    {
+      "value": "NGAST",
+      "description": "Drainage, Nasogastric",
+      "comment": "",
+      "sort_order": 193
+    },
+    {
+      "value": "NGS",
+      "description": "Site, Naso/Gastric",
+      "comment": "",
+      "sort_order": 194
+    },
+    {
+      "value": "NODUL",
+      "description": "Nodule(s)",
+      "comment": "",
+      "sort_order": 195
+    },
+    {
+      "value": "NOS",
+      "description": "Nose (nasal passage)",
+      "comment": "",
+      "sort_order": 196
+    },
+    {
+      "value": "NSECR",
+      "description": "Secretion, Nasal",
+      "comment": "",
+      "sort_order": 197
+    },
+    {
+      "value": "ORH",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 198
+    },
+    {
+      "value": "ORL",
+      "description": "Lesion, Oral",
+      "comment": "",
+      "sort_order": 199
+    },
+    {
+      "value": "OTH",
+      "description": "Source, Other",
+      "comment": "",
+      "sort_order": 200
+    },
+    {
+      "value": "PACEM",
+      "description": "Pacemaker",
+      "comment": "",
+      "sort_order": 201
+    },
+    {
+      "value": "PAFL",
+      "description": "Pancreatic fluid",
+      "comment": "",
+      "sort_order": 202
+    },
+    {
+      "value": "PAT",
+      "description": "Patient",
+      "comment": "",
+      "sort_order": 203
+    },
+    {
+      "value": "PCFL",
+      "description": "Fluid, Pericardial",
+      "comment": "",
+      "sort_order": 204
+    },
+    {
+      "value": "PDSIT",
+      "description": "Site, Peritoneal Dialysis",
+      "comment": "",
+      "sort_order": 205
+    },
+    {
+      "value": "PDTS",
+      "description": "Site, Peritoneal Dialysis Tunnel",
+      "comment": "",
+      "sort_order": 206
+    },
+    {
+      "value": "PELVA",
+      "description": "Abscess, Pelvic",
+      "comment": "",
+      "sort_order": 207
+    },
+    {
+      "value": "PENIL",
+      "description": "Lesion, Penile",
+      "comment": "",
+      "sort_order": 208
+    },
+    {
+      "value": "PERIA",
+      "description": "Abscess, Perianal",
+      "comment": "",
+      "sort_order": 209
+    },
+    {
+      "value": "PILOC",
+      "description": "Cyst, Pilonidal",
+      "comment": "",
+      "sort_order": 210
+    },
+    {
+      "value": "PINS",
+      "description": "Site, Pin",
+      "comment": "",
+      "sort_order": 211
+    },
+    {
+      "value": "PIS",
+      "description": "Site, Pacemaker Insetion",
+      "comment": "",
+      "sort_order": 212
+    },
+    {
+      "value": "PLAN",
+      "description": "Plant Material",
+      "comment": "",
+      "sort_order": 213
+    },
+    {
+      "value": "PLAS",
+      "description": "Plasma",
+      "comment": "",
+      "sort_order": 214
+    },
+    {
+      "value": "PLB",
+      "description": "Plasma bag",
+      "comment": "",
+      "sort_order": 215
+    },
+    {
+      "value": "PLC",
+      "description": "Placenta",
+      "comment": "",
+      "sort_order": 216
+    },
+    {
+      "value": "PLEVS",
+      "description": "Serum, Peak Level",
+      "comment": "",
+      "sort_order": 217
+    },
+    {
+      "value": "PLR",
+      "description": "Pleural fluid (thoracentesis fld)",
+      "comment": "",
+      "sort_order": 218
+    },
+    {
+      "value": "PMN",
+      "description": "Polymorphonuclear neutrophils",
+      "comment": "",
+      "sort_order": 219
+    },
+    {
+      "value": "PND",
+      "description": "Drainage, Penile",
+      "comment": "",
+      "sort_order": 220
+    },
+    {
+      "value": "POL",
+      "description": "Polyps",
+      "comment": "",
+      "sort_order": 221
+    },
+    {
+      "value": "POPGS",
+      "description": "Graft Site, Popliteal",
+      "comment": "",
+      "sort_order": 222
+    },
+    {
+      "value": "POPLG",
+      "description": "Graft, Popliteal",
+      "comment": "",
+      "sort_order": 223
+    },
+    {
+      "value": "POPLV",
+      "description": "Site, Popliteal Vein",
+      "comment": "",
+      "sort_order": 224
+    },
+    {
+      "value": "PORTA",
+      "description": "Catheter, Porta",
+      "comment": "",
+      "sort_order": 225
+    },
+    {
+      "value": "PPP",
+      "description": "Platelet poor plasma",
+      "comment": "",
+      "sort_order": 226
+    },
+    {
+      "value": "PROST",
+      "description": "Prosthetic Device",
+      "comment": "",
+      "sort_order": 227
+    },
+    {
+      "value": "PRP",
+      "description": "Platelet rich plasma",
+      "comment": "",
+      "sort_order": 228
+    },
+    {
+      "value": "PRT",
+      "description": "Peritoneal fluid /ascites",
+      "comment": "",
+      "sort_order": 229
+    },
+    {
+      "value": "PSC",
+      "description": "Pseudocyst",
+      "comment": "",
+      "sort_order": 230
+    },
+    {
+      "value": "PUNCT",
+      "description": "Wound, Puncture",
+      "comment": "",
+      "sort_order": 231
+    },
+    {
+      "value": "PUS",
+      "description": "Pus",
+      "comment": "",
+      "sort_order": 232
+    },
+    {
+      "value": "PUSFR",
+      "description": "Pustule",
+      "comment": "",
+      "sort_order": 233
+    },
+    {
+      "value": "PUST",
+      "description": "Pus",
+      "comment": "",
+      "sort_order": 234
+    },
+    {
+      "value": "QC3",
+      "description": "Quality Control",
+      "comment": "",
+      "sort_order": 235
+    },
+    {
+      "value": "RANDU",
+      "description": "Urine, Random",
+      "comment": "",
+      "sort_order": 236
+    },
+    {
+      "value": "RBC",
+      "description": "Erythrocytes",
+      "comment": "",
+      "sort_order": 237
+    },
+    {
+      "value": "RBITE",
+      "description": "Bite, Reptile",
+      "comment": "",
+      "sort_order": 238
+    },
+    {
+      "value": "RECT",
+      "description": "Drainage, Rectal",
+      "comment": "",
+      "sort_order": 239
+    },
+    {
+      "value": "RECTA",
+      "description": "Abscess, Rectal",
+      "comment": "",
+      "sort_order": 240
+    },
+    {
+      "value": "RENALC",
+      "description": "Cyst, Renal",
+      "comment": "",
+      "sort_order": 241
+    },
+    {
+      "value": "RENC",
+      "description": "Fluid, Renal Cyst",
+      "comment": "",
+      "sort_order": 242
+    },
+    {
+      "value": "RES",
+      "description": "Respiratory",
+      "comment": "",
+      "sort_order": 243
+    },
+    {
+      "value": "RT",
+      "description": "Route of medicine",
+      "comment": "",
+      "sort_order": 244
+    },
+    {
+      "value": "SAL",
+      "description": "Saliva",
+      "comment": "",
+      "sort_order": 245
+    },
+    {
+      "value": "SCAR",
+      "description": "Tissue, Keloid (Scar)",
+      "comment": "",
+      "sort_order": 246
+    },
+    {
+      "value": "SCLV",
+      "description": "Catheter Tip, Subclavian",
+      "comment": "",
+      "sort_order": 247
+    },
+    {
+      "value": "SCROA",
+      "description": "Abscess, Scrotal",
+      "comment": "",
+      "sort_order": 248
+    },
+    {
+      "value": "SECRE",
+      "description": "Secretion(s)",
+      "comment": "",
+      "sort_order": 249
+    },
+    {
+      "value": "SER",
+      "description": "Serum",
+      "comment": "",
+      "sort_order": 250
+    },
+    {
+      "value": "SHU",
+      "description": "Site, Shunt",
+      "comment": "",
+      "sort_order": 251
+    },
+    {
+      "value": "SHUNF",
+      "description": "Fluid, Shunt",
+      "comment": "",
+      "sort_order": 252
+    },
+    {
+      "value": "SHUNT",
+      "description": "Shunt",
+      "comment": "",
+      "sort_order": 253
+    },
+    {
+      "value": "SITE",
+      "description": "Site",
+      "comment": "",
+      "sort_order": 254
+    },
+    {
+      "value": "SKBP",
+      "description": "Biopsy, Skin",
+      "comment": "",
+      "sort_order": 255
+    },
+    {
+      "value": "SKM",
+      "description": "Skeletal muscle",
+      "comment": "",
+      "sort_order": 256
+    },
+    {
+      "value": "SKN",
+      "description": "Skin",
+      "comment": "",
+      "sort_order": 257
+    },
+    {
+      "value": "SMM",
+      "description": "Mass, Sub-Mandibular",
+      "comment": "",
+      "sort_order": 258
+    },
+    {
+      "value": "SMN",
+      "description": "Seminal fluid",
+      "comment": "",
+      "sort_order": 259
+    },
+    {
+      "value": "SNV",
+      "description": "Synovial fluid (Joint fluid)",
+      "comment": "",
+      "sort_order": 260
+    },
+    {
+      "value": "SPRM",
+      "description": "Spermatozoa",
+      "comment": "",
+      "sort_order": 261
+    },
+    {
+      "value": "SPRP",
+      "description": "Catheter Tip, Suprapubic",
+      "comment": "",
+      "sort_order": 262
+    },
+    {
+      "value": "SPRPB",
+      "description": "Cathether Tip, Suprapubic",
+      "comment": "",
+      "sort_order": 263
+    },
+    {
+      "value": "SPS",
+      "description": "Environmental, Spore Strip",
+      "comment": "",
+      "sort_order": 264
+    },
+    {
+      "value": "SPT",
+      "description": "Sputum",
+      "comment": "",
+      "sort_order": 265
+    },
+    {
+      "value": "SPTC",
+      "description": "Sputum - coughed",
+      "comment": "",
+      "sort_order": 266
+    },
+    {
+      "value": "SPTT",
+      "description": "Sputum - tracheal aspirate",
+      "comment": "",
+      "sort_order": 267
+    },
+    {
+      "value": "SPUT1",
+      "description": "Sputum, Simulated",
+      "comment": "",
+      "sort_order": 268
+    },
+    {
+      "value": "SPUTIN",
+      "description": "Sputum, Inducted",
+      "comment": "",
+      "sort_order": 269
+    },
+    {
+      "value": "SPUTSP",
+      "description": "Sputum, Spontaneous",
+      "comment": "",
+      "sort_order": 270
+    },
+    {
+      "value": "STER",
+      "description": "Environmental, Sterrad",
+      "comment": "",
+      "sort_order": 271
+    },
+    {
+      "value": "STL",
+      "description": "Stool = Fecal",
+      "comment": "",
+      "sort_order": 272
+    },
+    {
+      "value": "STON",
+      "description": "Stone (use CALC)",
+      "comment": "",
+      "sort_order": 273
+    },
+    {
+      "value": "STONE",
+      "description": "Stone, Kidney",
+      "comment": "",
+      "sort_order": 274
+    },
+    {
+      "value": "SUBMA",
+      "description": "Abscess, Submandibular",
+      "comment": "",
+      "sort_order": 275
+    },
+    {
+      "value": "SUBMX",
+      "description": "Abscess, Submaxillary",
+      "comment": "",
+      "sort_order": 276
+    },
+    {
+      "value": "SUMP",
+      "description": "Drainage, Sump",
+      "comment": "",
+      "sort_order": 277
+    },
+    {
+      "value": "SUP",
+      "description": "Suprapubic Tap",
+      "comment": "",
+      "sort_order": 278
+    },
+    {
+      "value": "SUTUR",
+      "description": "Suture",
+      "comment": "",
+      "sort_order": 279
+    },
+    {
+      "value": "SWGZ",
+      "description": "Catheter Tip, Swan Gantz",
+      "comment": "",
+      "sort_order": 280
+    },
+    {
+      "value": "SWT",
+      "description": "Sweat",
+      "comment": "",
+      "sort_order": 281
+    },
+    {
+      "value": "TASP",
+      "description": "Aspirate, Tracheal",
+      "comment": "",
+      "sort_order": 282
+    },
+    {
+      "value": "TEAR",
+      "description": "Tears",
+      "comment": "",
+      "sort_order": 283
+    },
+    {
+      "value": "THRB",
+      "description": "Thrombocyte (platelet)",
+      "comment": "",
+      "sort_order": 284
+    },
+    {
+      "value": "THRT",
+      "description": "Throat",
+      "comment": "",
+      "sort_order": 285
+    },
+    {
+      "value": "TISG",
+      "description": "Tissue gall bladder",
+      "comment": "",
+      "sort_order": 286
+    },
+    {
+      "value": "TISPL",
+      "description": "Tissue placenta",
+      "comment": "",
+      "sort_order": 287
+    },
+    {
+      "value": "TISS",
+      "description": "Tissue",
+      "comment": "",
+      "sort_order": 288
+    },
+    {
+      "value": "TISU",
+      "description": "Tissue ulcer",
+      "comment": "",
+      "sort_order": 289
+    },
+    {
+      "value": "TLC",
+      "description": "Cathether Tip, Triple Lumen",
+      "comment": "",
+      "sort_order": 290
+    },
+    {
+      "value": "TLGI",
+      "description": "Tissue large intestine",
+      "comment": "",
+      "sort_order": 291
+    },
+    {
+      "value": "TLNG",
+      "description": "Tissue lung",
+      "comment": "",
+      "sort_order": 292
+    },
+    {
+      "value": "TRAC",
+      "description": "Site, Tracheostomy",
+      "comment": "",
+      "sort_order": 293
+    },
+    {
+      "value": "TRANS",
+      "description": "Transudate",
+      "comment": "",
+      "sort_order": 294
+    },
+    {
+      "value": "TSERU",
+      "description": "Serum, Trough",
+      "comment": "",
+      "sort_order": 295
+    },
+    {
+      "value": "TSMI",
+      "description": "Tissue small intestine",
+      "comment": "",
+      "sort_order": 296
+    },
+    {
+      "value": "TSTES",
+      "description": "Abscess, Testicular",
+      "comment": "",
+      "sort_order": 297
+    },
+    {
+      "value": "TTRA",
+      "description": "Aspirate, Transtracheal",
+      "comment": "",
+      "sort_order": 298
+    },
+    {
+      "value": "TUB",
+      "description": "Tube NOS",
+      "comment": "",
+      "sort_order": 299
+    },
+    {
+      "value": "TUBES",
+      "description": "Tubes",
+      "comment": "",
+      "sort_order": 300
+    },
+    {
+      "value": "TUMOR",
+      "description": "Tumor",
+      "comment": "",
+      "sort_order": 301
+    },
+    {
+      "value": "TZANC",
+      "description": "Smear, Tzanck",
+      "comment": "",
+      "sort_order": 302
+    },
+    {
+      "value": "UDENT",
+      "description": "Source, Unidentified",
+      "comment": "",
+      "sort_order": 303
+    },
+    {
+      "value": "ULC",
+      "description": "Ulcer",
+      "comment": "",
+      "sort_order": 304
+    },
+    {
+      "value": "UMB",
+      "description": "Umbilical blood",
+      "comment": "",
+      "sort_order": 305
+    },
+    {
+      "value": "UMED",
+      "description": "Unknown medicine",
+      "comment": "",
+      "sort_order": 306
+    },
+    {
+      "value": "UR",
+      "description": "Urine",
+      "comment": "",
+      "sort_order": 307
+    },
+    {
+      "value": "URC",
+      "description": "Urine clean catch",
+      "comment": "",
+      "sort_order": 308
+    },
+    {
+      "value": "URINB",
+      "description": "Urine, Bladder Washings",
+      "comment": "",
+      "sort_order": 309
+    },
+    {
+      "value": "URINC",
+      "description": "Urine, Catheterized",
+      "comment": "",
+      "sort_order": 310
+    },
+    {
+      "value": "URINM",
+      "description": "Urine, Midstream",
+      "comment": "",
+      "sort_order": 311
+    },
+    {
+      "value": "URINN",
+      "description": "Urine, Nephrostomy",
+      "comment": "",
+      "sort_order": 312
+    },
+    {
+      "value": "URINP",
+      "description": "Urine, Pedibag",
+      "comment": "",
+      "sort_order": 313
+    },
+    {
+      "value": "URNS",
+      "description": "Urine sediment",
+      "comment": "",
+      "sort_order": 314
+    },
+    {
+      "value": "URT",
+      "description": "Urine catheter",
+      "comment": "",
+      "sort_order": 315
+    },
+    {
+      "value": "URTH",
+      "description": "Urethra",
+      "comment": "",
+      "sort_order": 316
+    },
+    {
+      "value": "USCOP",
+      "description": "Urine, Cystoscopy",
+      "comment": "",
+      "sort_order": 317
+    },
+    {
+      "value": "USPEC",
+      "description": "Source, Unspecified",
+      "comment": "",
+      "sort_order": 318
+    },
+    {
+      "value": "USUB",
+      "description": "Unknown substance",
+      "comment": "",
+      "sort_order": 319
+    },
+    {
+      "value": "VASTIP",
+      "description": "Catheter Tip, Vas",
+      "comment": "",
+      "sort_order": 320
+    },
+    {
+      "value": "VENT",
+      "description": "Catheter Tip, Ventricular",
+      "comment": "",
+      "sort_order": 321
+    },
+    {
+      "value": "VITF",
+      "description": "Vitreous Fluid",
+      "comment": "",
+      "sort_order": 322
+    },
+    {
+      "value": "VOM",
+      "description": "Vomitus",
+      "comment": "",
+      "sort_order": 323
+    },
+    {
+      "value": "WASH",
+      "description": "Wash",
+      "comment": "",
+      "sort_order": 324
+    },
+    {
+      "value": "WASI",
+      "description": "Washing, e.g. bronchial washing",
+      "comment": "",
+      "sort_order": 325
+    },
+    {
+      "value": "WAT",
+      "description": "Water",
+      "comment": "",
+      "sort_order": 326
+    },
+    {
+      "value": "WB",
+      "description": "Blood, Whole",
+      "comment": "",
+      "sort_order": 327
+    },
+    {
+      "value": "WBC",
+      "description": "Leukocytes",
+      "comment": "",
+      "sort_order": 328
+    },
+    {
+      "value": "WEN",
+      "description": "Wen",
+      "comment": "",
+      "sort_order": 329
+    },
+    {
+      "value": "WICK",
+      "description": "Wick",
+      "comment": "",
+      "sort_order": 330
+    },
+    {
+      "value": "WND",
+      "description": "Wound",
+      "comment": "",
+      "sort_order": 331
+    },
+    {
+      "value": "WNDA",
+      "description": "Wound abscess",
+      "comment": "",
+      "sort_order": 332
+    },
+    {
+      "value": "WNDD",
+      "description": "Wound drainage",
+      "comment": "",
+      "sort_order": 333
+    },
+    {
+      "value": "WNDE",
+      "description": "Wound exudate",
+      "comment": "",
+      "sort_order": 334
+    },
+    {
+      "value": "WORM",
+      "description": "Worm",
+      "comment": "",
+      "sort_order": 335
+    },
+    {
+      "value": "WRT",
+      "description": "Wart",
+      "comment": "",
+      "sort_order": 336
+    },
+    {
+      "value": "WWA",
+      "description": "Environmental, Water",
+      "comment": "",
+      "sort_order": 337
+    },
+    {
+      "value": "WWO",
+      "description": "Environmental, Water (Ocean)",
+      "comment": "",
+      "sort_order": 338
+    },
+    {
+      "value": "WWT",
+      "description": "Environmental, Water (Tap)",
+      "comment": "",
+      "sort_order": 339
+    },
+    {
+      "value": "XXX",
+      "description": "To be specified in another part of the message",
+      "comment": "",
+      "sort_order": 340
+    }
+  ],
+  "value_count": 340
+}

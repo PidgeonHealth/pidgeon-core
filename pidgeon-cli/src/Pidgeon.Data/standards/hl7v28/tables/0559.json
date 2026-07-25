@@ -1,0 +1,29 @@
+{
+  "code": "0559",
+  "name": "Product/Service Status",
+  "version": "HL7 v2.8",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "D",
+      "description": "Denied",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "P",
+      "description": "Processed",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "R",
+      "description": "Rejected",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

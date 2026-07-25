@@ -1,0 +1,40 @@
+{
+  "code": "QPD",
+  "name": "Query Parameter Definition",
+  "version": "HL7 v2.5.1",
+  "chapter": "Query",
+  "description": "The QPD segment defines the parameters of the query.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QPD.1",
+      "field_description": "Message Query Name",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0471"
+    },
+    {
+      "position": 2,
+      "field_name": "QPD.2",
+      "field_description": "Query Tag",
+      "length": "32",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "QPD.3",
+      "field_description": "User Parameters (in successive fields)",
+      "length": "256",
+      "data_type": "VARIES",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

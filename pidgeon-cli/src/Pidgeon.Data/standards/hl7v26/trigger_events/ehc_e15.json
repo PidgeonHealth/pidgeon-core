@@ -1,0 +1,238 @@
+{
+  "code": "EHC_E15",
+  "name": "Payment/Remittance Advice",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "This message is used to send a payment/ remittance advice to a Payee for the payment of HealthCare Services Invoices and/or other adjustments.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PAYMENT REMITTANCE HEADER INFO",
+      "segment_desc": "PAYMENT REMITTANCE HEADER INFO group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PMT",
+      "segment_desc": "Payment Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE HEADER INFO"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PYE",
+      "segment_desc": "Payee Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE HEADER INFO"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PAYMENT REMITTANCE DETAIL INFO",
+      "segment_desc": "PAYMENT REMITTANCE DETAIL INFO group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "IPR",
+      "segment_desc": "Invoice Processing Results",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "IVC",
+      "segment_desc": "Invoice",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PRODUCT SERVICE SECTION",
+      "segment_desc": "PRODUCT SERVICE SECTION group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PSS",
+      "segment_desc": "Product/Service Section",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO",
+        "PRODUCT SERVICE SECTION"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "PRODUCT SERVICE GROUP",
+      "segment_desc": "PRODUCT SERVICE GROUP group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO",
+        "PRODUCT SERVICE SECTION"
+      ],
+      "level": 2,
+      "order_index": 11
+    },
+    {
+      "segment_code": "PSG",
+      "segment_desc": "Product/Service Group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO",
+        "PRODUCT SERVICE SECTION",
+        "PRODUCT SERVICE GROUP"
+      ],
+      "level": 3,
+      "order_index": 12
+    },
+    {
+      "segment_code": "PSL ITEM INFO",
+      "segment_desc": "PSL ITEM INFO group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO",
+        "PRODUCT SERVICE SECTION",
+        "PRODUCT SERVICE GROUP"
+      ],
+      "level": 3,
+      "order_index": 13
+    },
+    {
+      "segment_code": "PSL",
+      "segment_desc": "Product/Service Line Item",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO",
+        "PRODUCT SERVICE SECTION",
+        "PRODUCT SERVICE GROUP",
+        "PSL ITEM INFO"
+      ],
+      "level": 4,
+      "order_index": 14
+    },
+    {
+      "segment_code": "ADJ",
+      "segment_desc": "Adjustment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PAYMENT REMITTANCE DETAIL INFO",
+        "PRODUCT SERVICE SECTION",
+        "PRODUCT SERVICE GROUP",
+        "PSL ITEM INFO"
+      ],
+      "level": 4,
+      "order_index": 15
+    },
+    {
+      "segment_code": "ADJUSTMENT PAYEE",
+      "segment_desc": "ADJUSTMENT PAYEE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 16
+    },
+    {
+      "segment_code": "ADJ",
+      "segment_desc": "Adjustment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "ADJUSTMENT PAYEE"
+      ],
+      "level": 1,
+      "order_index": 17
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "ADJUSTMENT PAYEE"
+      ],
+      "level": 1,
+      "order_index": 18
+    }
+  ],
+  "segment_count": 19
+}

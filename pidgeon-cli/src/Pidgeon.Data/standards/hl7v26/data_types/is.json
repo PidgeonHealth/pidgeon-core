@@ -1,0 +1,9 @@
+{
+  "code": "IS",
+  "name": "Coded value for user-defined tables",
+  "version": "HL7 v2.6",
+  "description": "",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

@@ -1,0 +1,20 @@
+{
+  "code": "CM_DTN",
+  "name": "Day Type And Number",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_DTN.1",
+      "field_description": "Day Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0149"
+    }
+  ],
+  "field_count": 1
+}

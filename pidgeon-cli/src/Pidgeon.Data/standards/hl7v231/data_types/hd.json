@@ -1,0 +1,40 @@
+{
+  "code": "HD",
+  "name": "Hierarchic Designator",
+  "version": "HL7 v2.3.1",
+  "description": "The HD is designed to be more powerful and more general replacement for the application identifier of HL7 versions 2.1 and 2.2. It adds two additional components, the <universal ID> and the <universal ID type> to the former application ID (which is renamed more generically to be the namespace ID)",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "HD.1",
+      "field_description": "Namespace Id",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0300"
+    },
+    {
+      "position": 2,
+      "field_name": "HD.2",
+      "field_description": "Universal Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "HD.3",
+      "field_description": "Universal Id Type",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0301"
+    }
+  ],
+  "field_count": 3
+}

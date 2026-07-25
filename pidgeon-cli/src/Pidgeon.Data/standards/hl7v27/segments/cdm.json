@@ -1,0 +1,140 @@
+{
+  "code": "CDM",
+  "name": "Charge Description Master",
+  "version": "HL7 v2.7",
+  "chapter": "Master Files",
+  "description": "The CDM segment contains the fields for identifying anything which is charged to patient accounts, including procedures, services, supplies.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CDM.1",
+      "field_description": "Primary Key Value - Cdm",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0132"
+    },
+    {
+      "position": 2,
+      "field_name": "CDM.2",
+      "field_description": "Charge Code Alias",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0132"
+    },
+    {
+      "position": 3,
+      "field_name": "CDM.3",
+      "field_description": "Charge Description Short",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CDM.4",
+      "field_description": "Charge Description Long",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CDM.5",
+      "field_description": "Description Override Indicator",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0268"
+    },
+    {
+      "position": 6,
+      "field_name": "CDM.6",
+      "field_description": "Exploding Charges",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0132"
+    },
+    {
+      "position": 7,
+      "field_name": "CDM.7",
+      "field_description": "Procedure Code",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0088"
+    },
+    {
+      "position": 8,
+      "field_name": "CDM.8",
+      "field_description": "Active/Inactive Flag",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0183"
+    },
+    {
+      "position": 9,
+      "field_name": "CDM.9",
+      "field_description": "Inventory Number",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0463"
+    },
+    {
+      "position": 10,
+      "field_name": "CDM.10",
+      "field_description": "Resource Load",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "CDM.11",
+      "field_description": "Contract Number",
+      "length": "0",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "CDM.12",
+      "field_description": "Contract Organization",
+      "length": "0",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "CDM.13",
+      "field_description": "Room Fee Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 13
+}

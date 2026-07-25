@@ -1,0 +1,30 @@
+{
+  "code": "RDF",
+  "name": "Table Row Definition",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The RDF segment defines the content of the row data segments (RDT) in the Tabular Data Response Message (TBR). It is used in two ways:\n \n- As an optional segment in the SPQ message (Stored Procedure Request) or the VQQ (Virtual Table Query) message, this segment can be used to limit the number of columns returned and to specify what column positions the fields occupy (where supported, these …",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RDF.1",
+      "field_description": "Number of Columns per Row",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RDF.2",
+      "field_description": "Column Description",
+      "length": "40",
+      "data_type": "RCD",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

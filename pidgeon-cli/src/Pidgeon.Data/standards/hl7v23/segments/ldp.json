@@ -1,0 +1,20 @@
+{
+  "code": "LDP",
+  "name": "Location Department",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The LDP segment identifies how a patient location room is being used by a certain department. Multiple departments can use the same patient location, so there can be multiple LDP segments following an LOC segment. There must be at least one LDP segment for each LOC segment. This is not intended to include any current occupant information",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LDP.1",
+      "field_description": "LDP Primary Key Value",
+      "length": "200",
+      "data_type": "PL",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

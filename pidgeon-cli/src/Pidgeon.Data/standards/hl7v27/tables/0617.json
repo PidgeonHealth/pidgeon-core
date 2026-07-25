@@ -1,0 +1,29 @@
+{
+  "code": "0617",
+  "name": "Address Usage",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Classification",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "M",
+      "description": "Mailing",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "V",
+      "description": "Visit",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

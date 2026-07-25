@@ -1,0 +1,50 @@
+{
+  "code": "STZ",
+  "name": "Sterilization Parameter",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "The STZ segment contains sterilization-specific attributes of a supply item.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "STZ.1",
+      "field_description": "Sterilization Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0806"
+    },
+    {
+      "position": 2,
+      "field_name": "STZ.2",
+      "field_description": "Sterilization Cycle",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0702"
+    },
+    {
+      "position": 3,
+      "field_name": "STZ.3",
+      "field_description": "Maintenance Cycle",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0809"
+    },
+    {
+      "position": 4,
+      "field_name": "STZ.4",
+      "field_description": "Maintenance Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0811"
+    }
+  ],
+  "field_count": 4
+}

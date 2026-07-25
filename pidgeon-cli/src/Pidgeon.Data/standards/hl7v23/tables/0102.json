@@ -1,0 +1,23 @@
+{
+  "code": "0102",
+  "name": "Delayed Acknowledgment Type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "Message received, stored for later processing",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "acknowledgment after processing",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

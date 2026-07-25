@@ -1,0 +1,70 @@
+{
+  "code": "EVN",
+  "name": "Event type",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The EVN segment is used to communicate necessary trigger event information to receiving applications. Valid event types for all chapters are contained in HL7 table 0003 - Event type.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "EVN.1",
+      "field_description": "Event Type Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": "0003"
+    },
+    {
+      "position": 2,
+      "field_name": "EVN.2",
+      "field_description": "Recorded Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "EVN.3",
+      "field_description": "Date/Time Planned Event",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "EVN.4",
+      "field_description": "Event Reason Code",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0062"
+    },
+    {
+      "position": 5,
+      "field_name": "EVN.5",
+      "field_description": "Operator ID",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0188"
+    },
+    {
+      "position": 6,
+      "field_name": "EVN.6",
+      "field_description": "Event Occurred",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

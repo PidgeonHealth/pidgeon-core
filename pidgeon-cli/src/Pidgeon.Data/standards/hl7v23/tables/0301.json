@@ -1,0 +1,83 @@
+{
+  "code": "0301",
+  "name": "Universal ID type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "DNS",
+      "description": "An Internet dotted name. Either in ASCII or as integers",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "GUID",
+      "description": "Same as UUID",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "HCD",
+      "description": "The CEN Healthcare Coding Scheme Designator. (Identifiers used in DICOM follow this assignment scheme.)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "HL7",
+      "description": "Reserved for future HL7 registration schemes",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ISO",
+      "description": "An International Standards Organization Object Identifier",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "L",
+      "description": "These are reserved for locally defined coding schemes",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "M",
+      "description": "These are reserved for locally defined coding schemes",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "N",
+      "description": "These are reserved for locally defined coding schemes",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Random",
+      "description": "Usually a base64 encoded string of random bits. The uniqueness depends on the length of the bits. Mail systems often generate ASCII string \"unique names,\" from a combination of random bits and system names. Obviously, such identifiers will not be constrained to the base64 character set",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "UUID",
+      "description": "The DCE Universal Unique Identifier",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "x400",
+      "description": "An X.400 MHS format identifier",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "x500",
+      "description": "An X.500 directory name",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

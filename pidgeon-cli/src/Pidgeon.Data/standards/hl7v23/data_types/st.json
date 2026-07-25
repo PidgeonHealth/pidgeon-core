@@ -1,0 +1,9 @@
+{
+  "code": "ST",
+  "name": "String Data",
+  "version": "HL7 v2.3",
+  "description": "To include any HL7 delimiter character (except the segment terminator) within a string data field, use the appropriate HL7 escape sequence (see Section 2.9.1, Formatting codes).",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

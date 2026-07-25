@@ -1,0 +1,41 @@
+{
+  "code": "0868",
+  "name": "Telecommunication Expiration Reason",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "C",
+      "description": "Corrected",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Added in error",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Moved",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "N",
+      "description": "No longer in service",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "R",
+      "description": "On request",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

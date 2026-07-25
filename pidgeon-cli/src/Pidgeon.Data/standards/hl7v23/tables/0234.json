@@ -1,0 +1,71 @@
+{
+  "code": "0234",
+  "name": "Report timing",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "10D",
+      "description": "10 day report",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "15D",
+      "description": "15 day report",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "30D",
+      "description": "30 day report",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3D",
+      "description": "3 day report",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "7D",
+      "description": "7 day report",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "AD",
+      "description": "Additional information",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CO",
+      "description": "Correction",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DE",
+      "description": "Device evaluation",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PD",
+      "description": "Periodic",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "RQ",
+      "description": "Requested information",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

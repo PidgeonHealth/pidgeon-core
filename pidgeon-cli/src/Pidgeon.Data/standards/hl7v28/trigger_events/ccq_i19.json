@@ -1,0 +1,94 @@
+{
+  "code": "CCQ_I19",
+  "name": "Collaborative Care Query/Collaborative Care Query Update",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Referral",
+  "description": "This event triggers a query message to be sent from a referring healthcare provider to a referred to healthcare provider, regarding a specific, previously sent collaborative care referral.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "RF1",
+      "segment_desc": "Referral Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PROVIDER_CONTACT",
+      "segment_desc": "PROVIDER_CONTACT group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PRD",
+      "segment_desc": "Provider Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER_CONTACT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER_CONTACT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "REL",
+      "segment_desc": "Clinical Relationship Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    }
+  ],
+  "segment_count": 8
+}

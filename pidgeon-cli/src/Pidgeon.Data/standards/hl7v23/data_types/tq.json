@@ -1,0 +1,110 @@
+{
+  "code": "TQ",
+  "name": "Timing Quantity",
+  "version": "HL7 v2.3",
+  "description": "Quantity/timing (ORC-7, OBR-27) provides a means of specifying when the service described by the order segment is to be performed and how frequently.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "TQ.1",
+      "field_description": "Quantity",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "TQ.2",
+      "field_description": "Interval",
+      "length": "0",
+      "data_type": "RI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "TQ.3",
+      "field_description": "Duration",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "TQ.4",
+      "field_description": "Start Date/time",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "TQ.5",
+      "field_description": "End Date/time",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "TQ.6",
+      "field_description": "Priority",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "TQ.7",
+      "field_description": "Condition",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "TQ.8",
+      "field_description": "Text",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "TQ.9",
+      "field_description": "Conjunction",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "TQ.10",
+      "field_description": "Order Sequencing",
+      "length": "0",
+      "data_type": "CM_OSD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 10
+}

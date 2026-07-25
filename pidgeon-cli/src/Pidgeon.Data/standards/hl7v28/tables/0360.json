@@ -1,0 +1,371 @@
+{
+  "code": "0360",
+  "name": "Degree/License/Certificate",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AA",
+      "description": "Associate of Arts",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AAS",
+      "description": "Associate of Applied Science",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ABA",
+      "description": "Associate of Business Administration",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AE",
+      "description": "Associate of Engineering",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "AS",
+      "description": "Associate of Science",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BA",
+      "description": "Bachelor of Arts",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BBA",
+      "description": "Bachelor of Business Administration",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BE",
+      "description": "Bachelor or Engineering",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "BFA",
+      "description": "Bachelor of Fine Arts",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "BN",
+      "description": "Bachelor of Nursing",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "BS",
+      "description": "Bachelor of Science",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "BSL",
+      "description": "Bachelor of Science - Law",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "BSN",
+      "description": "Bachelor on Science - Nursing",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "BT",
+      "description": "Bachelor of Theology",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "CANP",
+      "description": "Certified Adult Nurse Practitioner",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "CER",
+      "description": "Certificate",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "CMA",
+      "description": "Certified Medical Assistant",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "CNM",
+      "description": "Certified Nurse Midwife",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "CNP",
+      "description": "Certified Nurse Practitioner",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "CNS",
+      "description": "Certified Nurse Specialist",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "CPNP",
+      "description": "Certified Pediatric Nurse Practitioner",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "CRN",
+      "description": "Certified Registered Nurse",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "DBA",
+      "description": "Doctor of Business Administration",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "DED",
+      "description": "Doctor of Education",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "DIP",
+      "description": "Diploma",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "DO",
+      "description": "Doctor of Osteopathy",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "EMT",
+      "description": "Emergency Medical Technician",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "EMTP",
+      "description": "Emergency Medical Technician - Paramedic",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "FPNP",
+      "description": "Family Practice Nurse Practitioner",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "HS",
+      "description": "High School Graduate",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "JD",
+      "description": "Juris Doctor",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "MA",
+      "description": "Master of Arts",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "MBA",
+      "description": "Master of Business Administration",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "MCE",
+      "description": "Master of Civil Engineering",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "MD",
+      "description": "Doctor of Medicine",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "MDA",
+      "description": "Medical Assistant",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "MDI",
+      "description": "Master of Divinity",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "ME",
+      "description": "Master of Engineering",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "MED",
+      "description": "Master of Education",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "MEE",
+      "description": "Master of Electrical Engineering",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "MFA",
+      "description": "Master of Fine Arts",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "MME",
+      "description": "Master of Mechanical Engineering",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "MS",
+      "description": "Master of Science",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "MSL",
+      "description": "Master of Science - Law",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "MSN",
+      "description": "Master of Science - Nursing",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "MT",
+      "description": "Medical Technician",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "MTH",
+      "description": "Master of Theology",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "NG",
+      "description": "Non-Graduate",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "NP",
+      "description": "Nurse Practitioner",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "PA",
+      "description": "Physician Assistant",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "PharmD",
+      "description": "Doctor of Pharmacy",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "PHD",
+      "description": "Doctor of Philosophy",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "PHE",
+      "description": "Doctor of Engineering",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "PHS",
+      "description": "Doctor of Science",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "PN",
+      "description": "Advanced Practice Nurse",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "RMA",
+      "description": "Registered Medical Assistant",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "RN",
+      "description": "Registered Nurse",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "RPH",
+      "description": "Registered Pharmacist",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "SEC",
+      "description": "Secretarial Certificate",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "TS",
+      "description": "Trade School Graduate",
+      "comment": "",
+      "sort_order": 60
+    }
+  ],
+  "value_count": 60
+}

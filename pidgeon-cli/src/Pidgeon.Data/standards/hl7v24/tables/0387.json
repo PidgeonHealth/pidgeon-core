@@ -1,0 +1,41 @@
+{
+  "code": "0387",
+  "name": "Command response",
+  "version": "HL7 v2.4",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ER",
+      "description": "Command cannot be completed because of error condition (see response parameters)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "OK",
+      "description": "Command completed successfully",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ST",
+      "description": "Command cannot be completed because of the status of the requested equipment",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "TI",
+      "description": "Command cannot be completed within requested completion time",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "UN",
+      "description": "Command cannot be completed for unknown reasons",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

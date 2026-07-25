@@ -1,0 +1,245 @@
+{
+  "code": "0074",
+  "name": "Diagnostic service section ID",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AU",
+      "description": "Audiology",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BG",
+      "description": "Blood gases",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BLB",
+      "description": "Blood bank",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CH",
+      "description": "Chemistry",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CP",
+      "description": "Cytopathology",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CT",
+      "description": "CAT scan",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CTH",
+      "description": "Cardiac catheterization",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "CUS",
+      "description": "Cardiac Ultrasound",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "EC",
+      "description": "Electrocardiac (e.g. EKG, EEC, Holter)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "EN",
+      "description": "Electroneuro (EEG, EMG, EP, PSG)",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "HM",
+      "description": "Hematology",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ICU",
+      "description": "Bedside ICU Monitoring",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "IMM",
+      "description": "Immunology",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "LAB",
+      "description": "Laboratory",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "MB",
+      "description": "Microbiology",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "MCB",
+      "description": "Mycobacteriology",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "MYC",
+      "description": "Mycology",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "NMR",
+      "description": "Nuclear magnetic resonance",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "NMS",
+      "description": "Nuclear medicine scan",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "NRS",
+      "description": "Nursing service measures",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "OSL",
+      "description": "Outside Lab",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "OT",
+      "description": "Occupational Therapy",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "OTH",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "OUS",
+      "description": "OB Ultrasound",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "PF",
+      "description": "Pulmonary function",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "PHR",
+      "description": "Pharmacy",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "PHY",
+      "description": "Physician (Hx. Dx, admission note, etc.l)",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "PT",
+      "description": "Physical Therapy",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "RAD",
+      "description": "Radiology",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "RC",
+      "description": "Respiratory Care (therapy)",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "RT",
+      "description": "Radiation therapy",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "RUS",
+      "description": "Radiology ultrasound",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "RX",
+      "description": "Radiograph",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "SP",
+      "description": "Surgidal Pathology",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "SR",
+      "description": "Serology",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "TX",
+      "description": "Toxicology",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "VR",
+      "description": "Virology",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "VUS",
+      "description": "Vascular Ultrasound",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "XRC",
+      "description": "Cineradiograph",
+      "comment": "",
+      "sort_order": 39
+    }
+  ],
+  "value_count": 39
+}

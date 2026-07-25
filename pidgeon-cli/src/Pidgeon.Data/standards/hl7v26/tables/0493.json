@@ -1,0 +1,65 @@
+{
+  "code": "0493",
+  "name": "Specimen Condition",
+  "version": "HL7 v2.6",
+  "chapter": "Observation Reporting",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AUT",
+      "description": "Autolyzed",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CLOT",
+      "description": "Clotted",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CON",
+      "description": "Contaminated",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "COOL",
+      "description": "Cool",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "FROZ",
+      "description": "Frozen",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "HEM",
+      "description": "Hemolyzed",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "LIVE",
+      "description": "Live",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ROOM",
+      "description": "Room temperature",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "SNR",
+      "description": "Sample not received",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

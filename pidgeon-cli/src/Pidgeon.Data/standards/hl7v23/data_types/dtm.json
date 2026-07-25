@@ -1,0 +1,9 @@
+{
+  "code": "DTM",
+  "name": "Date/Time",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

@@ -1,0 +1,401 @@
+{
+  "code": "0290",
+  "name": "MIME base64 encoding Characters",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "base64 value 0",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "base64 value 1",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C",
+      "description": "base64 value 2",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "D",
+      "description": "base64 value 3",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "E",
+      "description": "base64 value 4",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "F",
+      "description": "base64 value 5",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "G",
+      "description": "base64 value 6",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "H",
+      "description": "base64 value 7",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "I",
+      "description": "base64 value 8",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "J",
+      "description": "base64 value 9",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "K",
+      "description": "base64 value 10",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "L",
+      "description": "base64 value 11",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "M",
+      "description": "base64 value 12",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "N",
+      "description": "base64 value 13",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "O",
+      "description": "base64 value 14",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "P",
+      "description": "base64 value 15",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Q",
+      "description": "base64 value 16",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "R",
+      "description": "base64 value 17",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "S",
+      "description": "base64 value 18",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "T",
+      "description": "base64 value 19",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "U",
+      "description": "base64 value 20",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "V",
+      "description": "base64 value 21",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "W",
+      "description": "base64 value 22",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "X",
+      "description": "base64 value 23",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "Y",
+      "description": "base64 value 24",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "Z",
+      "description": "base64 value 25",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "a",
+      "description": "base64 value 26",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "b",
+      "description": "base64 value 27",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "c",
+      "description": "base64 value 28",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "d",
+      "description": "base64 value 29",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "e",
+      "description": "base64 value 30",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "f",
+      "description": "base64 value 31",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "g",
+      "description": "base64 value 32",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "h",
+      "description": "base64 value 33",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "i",
+      "description": "base64 value 34",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "j",
+      "description": "base64 value 35",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "k",
+      "description": "base64 value 36",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "l",
+      "description": "base64 value 37",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "m",
+      "description": "base64 value 38",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "n",
+      "description": "base64 value 39",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "o",
+      "description": "base64 value 40",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "p",
+      "description": "base64 value 41",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "q",
+      "description": "base64 value 42",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "r",
+      "description": "base64 value 43",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "s",
+      "description": "base64 value 44",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "t",
+      "description": "base64 value 45",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "u",
+      "description": "base64 value 46",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "v",
+      "description": "base64 value 47",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "w",
+      "description": "base64 value 48",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "x",
+      "description": "base64 value 49",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "y",
+      "description": "base64 value 50",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "z",
+      "description": "base64 value 51",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "0",
+      "description": "base64 value 52",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "1",
+      "description": "base64 value 53",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "2",
+      "description": "base64 value 54",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "3",
+      "description": "base64 value 55",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "4",
+      "description": "base64 value 56",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "5",
+      "description": "base64 value 57",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "6",
+      "description": "base64 value 58",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "7",
+      "description": "base64 value 59",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "8",
+      "description": "base64 value 60",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "9",
+      "description": "base64 value 61",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "+",
+      "description": "base64 value 62",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "/",
+      "description": "base64 value 63",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "=",
+      "description": "Padding character",
+      "comment": "Used to pad the final quantum of encoding output",
+      "sort_order": 65
+    }
+  ],
+  "value_count": 65
+}

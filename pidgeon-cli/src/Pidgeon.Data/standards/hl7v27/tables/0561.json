@@ -1,0 +1,53 @@
+{
+  "code": "0561",
+  "name": "Product/Services Clarification Codes",
+  "version": "HL7 v2.7",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CLCTR",
+      "description": "Claim Center",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DGAPP",
+      "description": "Diagnostic Approval Number",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DTCTR",
+      "description": "Data Center Number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ENC",
+      "description": "Encounter Number",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "GFTH",
+      "description": "Good Faith Indicator",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "OOP",
+      "description": "Out of Province Indicator",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "SEQ",
+      "description": "Sequence Number",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

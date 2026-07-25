@@ -1,0 +1,59 @@
+{
+  "code": "0209",
+  "name": "Relational operator",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CT",
+      "description": "Contains",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EQ",
+      "description": "Equal",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "GE",
+      "description": "Greater than or equal",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "GN",
+      "description": "Generic",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "GT",
+      "description": "Greater than",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "LE",
+      "description": "Less than or equal",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "LT",
+      "description": "Less than",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "NE",
+      "description": "Not Equal",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

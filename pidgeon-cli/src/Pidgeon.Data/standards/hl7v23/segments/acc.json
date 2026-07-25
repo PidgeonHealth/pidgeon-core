@@ -1,0 +1,70 @@
+{
+  "code": "ACC",
+  "name": "Accident",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The ACC segment contains patient information relative to an accident in which the patient has been involved.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ACC.1",
+      "field_description": "Accident Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ACC.2",
+      "field_description": "Accident Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0050"
+    },
+    {
+      "position": 3,
+      "field_name": "ACC.3",
+      "field_description": "Accident Location",
+      "length": "25",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "ACC.4",
+      "field_description": "Auto Accident State",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "ACC.5",
+      "field_description": "Accident Job Related Indicator",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 6,
+      "field_name": "ACC.6",
+      "field_description": "Accident Death Indicator",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 6
+}

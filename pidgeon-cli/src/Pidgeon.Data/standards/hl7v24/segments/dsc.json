@@ -1,0 +1,30 @@
+{
+  "code": "DSC",
+  "name": "Continuation Pointer",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "The DSC segment is used in the continuation protocol.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DSC.1",
+      "field_description": "Continuation Pointer",
+      "length": "180",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "DSC.2",
+      "field_description": "Continuation Style",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0398"
+    }
+  ],
+  "field_count": 2
+}

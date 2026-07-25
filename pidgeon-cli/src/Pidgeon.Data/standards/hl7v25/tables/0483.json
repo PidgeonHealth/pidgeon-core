@@ -1,0 +1,71 @@
+{
+  "code": "0483",
+  "name": "Authorization Mode",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "EL",
+      "description": "Electronic",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EM",
+      "description": "E-mail",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FX",
+      "description": "Fax",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "IP",
+      "description": "In Person",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "MA",
+      "description": "Mail",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PA",
+      "description": "Paper",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PH",
+      "description": "Phone",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RE",
+      "description": "Reflexive (Automated system)",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "VC",
+      "description": "Video-conference",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "VO",
+      "description": "Voice",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

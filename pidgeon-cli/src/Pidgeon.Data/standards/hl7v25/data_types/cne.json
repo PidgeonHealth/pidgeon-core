@@ -1,0 +1,100 @@
+{
+  "code": "CNE",
+  "name": "Coded with No Exceptions",
+  "version": "HL7 v2.5",
+  "description": "Specifies a coded element and its associated detail. The CNE data type is used when a required or mandatory coded field is needed. The specified HL7 or externally defined table must be used and may not be extended with local values. Text may not replace the code. A CNE field must have an HL7 defined or external table associated with it. It must be specified in the standard.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CNE.1",
+      "field_description": "Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CNE.2",
+      "field_description": "Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CNE.3",
+      "field_description": "Name Of Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 4,
+      "field_name": "CNE.4",
+      "field_description": "Alternate Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CNE.5",
+      "field_description": "Alternate Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CNE.6",
+      "field_description": "Name Of Alternate Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 7,
+      "field_name": "CNE.7",
+      "field_description": "Coding System Version Id",
+      "length": "10",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "CNE.8",
+      "field_description": "Alternate Coding System Version Id",
+      "length": "10",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CNE.9",
+      "field_description": "Original Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

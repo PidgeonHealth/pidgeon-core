@@ -1,0 +1,95 @@
+{
+  "code": "0907",
+  "name": "Confidentiality",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Business - Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related inf",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Celebrity - Celebrities are people of public interest (VIP) including employees, whose information require special protection.",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "D",
+      "description": "Clinician - Only clinicians may see this item, billing and administration persons can not access this item without special permission.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ETH",
+      "description": "Substance abuse related - Alcohol/drug-abuse related item",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "HIV",
+      "description": "HIV Related - HIV and AIDS related item",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "I",
+      "description": "Individual - Access only to individual persons who are mentioned explicitly as actors of this service and whose actor type warrants that access (cf. to actor typed code).",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "L",
+      "description": "Low - No patient record item can be of low confidentiality.  However, some service objects are not patient related and therefore may have low confidentiality.",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "N",
+      "description": "Normal - Normal confidentiality rules (according to good health care practice) apply, that is, only authorized individuals with a legitimate medical or business need may access this item.",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PSY",
+      "description": "Psychiatry related - Psychiatry related item",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "R",
+      "description": "Restricted - Restricted access, e.g. only to providers having a current care relationship to the patient.",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "S",
+      "description": "Sensitive - Information for which the patient seeks heightened confidentiality.  Sensitive information is not to be shared with family members.  Information reported by the patient about family members is sensitive by default.  Flag can be set or cleared ",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "SDV",
+      "description": "Sexual and domestic violence related - Sexual assault / domestic violence related item",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "T",
+      "description": "Taboo - Information not to be disclosed or discussed with patient except through physician assigned to patient in this case.  This is usually a temporary constraint only; example use is a new fatal diagnosis or finding, such as malignancy or HIV.",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "V",
+      "description": "Very restricted - Very restricted access as declared by the Privacy Officer of the record holder.",
+      "comment": "",
+      "sort_order": 14
+    }
+  ],
+  "value_count": 14
+}

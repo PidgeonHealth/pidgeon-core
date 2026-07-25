@@ -1,0 +1,53 @@
+{
+  "code": "0271",
+  "name": "Document completion status",
+  "version": "HL7 v2.3",
+  "chapter": "Medical Records/Information Management",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AU",
+      "description": "Authenticated",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DI",
+      "description": "Dictated",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DO",
+      "description": "Documented",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "IN",
+      "description": "Incomplete",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "IP",
+      "description": "In Progress",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "LA",
+      "description": "Legally authenticated",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PA",
+      "description": "Pre-authenticated",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

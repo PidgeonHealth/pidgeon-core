@@ -1,0 +1,35 @@
+{
+  "code": "0282",
+  "name": "Referral disposition",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AM",
+      "description": "Assume Management",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "RP",
+      "description": "Return Patient After Evaluation",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "SO",
+      "description": "Second Opinion",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "WR",
+      "description": "Send Written Report",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

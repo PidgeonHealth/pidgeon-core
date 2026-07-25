@@ -1,0 +1,41 @@
+{
+  "code": "0387",
+  "name": "Command Response",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ER",
+      "description": "Command cannot be completed because of error condition",
+      "comment": "See response parameters.",
+      "sort_order": 1
+    },
+    {
+      "value": "OK",
+      "description": "Command completed successfully",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ST",
+      "description": "Command cannot be completed because of the status of the requested equipment",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "TI",
+      "description": "Command cannot be completed within requested completion time",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "UN",
+      "description": "Command cannot be completed for unknown reasons",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

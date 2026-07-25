@@ -1,0 +1,30 @@
+{
+  "code": "PTS",
+  "name": "Authentication person, time stamp",
+  "version": "HL7 v2.3",
+  "description": "This field contains a set of components describing by whom and when authentication was performed. Whenever any one of the ID number - Name type code component s is valued, the when authenticated component, which is time stamp, must be valued as non-null. If the time component of a set is valued as non-null, the person component becomes required. These subcomponents are normally delimited by an ampersand (&). See Chapter 2.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PTS.1",
+      "field_description": "Authentication person",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PTS.2",
+      "field_description": "Authentication time stamp",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

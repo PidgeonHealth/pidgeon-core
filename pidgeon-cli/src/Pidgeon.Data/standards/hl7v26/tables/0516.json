@@ -1,0 +1,35 @@
+{
+  "code": "0516",
+  "name": "Error severity",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "E",
+      "description": "Error",
+      "comment": "Transaction was unsuccessful",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "Fatal Error",
+      "comment": "Message not processed due to application or network failure condition",
+      "sort_order": 2
+    },
+    {
+      "value": "I",
+      "description": "Information",
+      "comment": "Transaction was successful but includes information e.g., inform patient",
+      "sort_order": 3
+    },
+    {
+      "value": "W",
+      "description": "Warning",
+      "comment": "Transaction successful, but there may issues",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

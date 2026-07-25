@@ -1,0 +1,124 @@
+{
+  "code": "OSU_O41",
+  "name": "Order Status Update",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "This message is used to create simple order status updates for any type of order where the ORC is sufficient to communicate the order identifier and no other data changes. This is particularly necessary when status updates are not part of order acknowledgement messages, e.g., a status message occurs 2 days later.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "ARV",
+      "segment_desc": "Access Restriction",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "ORDER_STATUS",
+      "segment_desc": "ORDER_STATUS group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "ORDER_STATUS"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PRT",
+      "segment_desc": "Participation Information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "ORDER_STATUS"
+      ],
+      "level": 1,
+      "order_index": 10
+    }
+  ],
+  "segment_count": 11
+}

@@ -1,0 +1,29 @@
+{
+  "code": "0280",
+  "name": "Referral priority",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "ASAP",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Routine",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "S",
+      "description": "STAT",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

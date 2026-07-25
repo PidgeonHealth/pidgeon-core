@@ -1,0 +1,50 @@
+{
+  "code": "SPQ_Q01",
+  "name": "Stored procedure request Trigger Event (HL7 v2.3)",
+  "version": "SPQ Q01",
+  "chapter": "",
+  "description": "",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SPR",
+      "segment_desc": "Stored Procedure Request Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "RDF",
+      "segment_desc": "Table Row Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation pointer segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    }
+  ],
+  "segment_count": 4
+}

@@ -1,0 +1,147 @@
+{
+  "code": "EHC_E24",
+  "name": "Authorization Response",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "This message is used to send results of an Authorization Request to a Provider Application. Authorization results are sent to the same Network Application ID that originated the Authorization Request, which was specified as the Sending Application on MSH on the original Authorization Request.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "AUTHORIZATION RESPONSE INFO",
+      "segment_desc": "AUTHORIZATION RESPONSE INFO group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "IVC",
+      "segment_desc": "Invoice",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION RESPONSE INFO"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PSL ITEM INFO",
+      "segment_desc": "PSL ITEM INFO group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "AUTHORIZATION RESPONSE INFO"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PSL",
+      "segment_desc": "Product/Service Line Item",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION RESPONSE INFO",
+        "PSL ITEM INFO"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "AUT",
+      "segment_desc": "Authorization Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION RESPONSE INFO",
+        "PSL ITEM INFO"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PAYER ADJUSTMENT",
+      "segment_desc": "PAYER ADJUSTMENT group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "AUTHORIZATION RESPONSE INFO",
+        "PSL ITEM INFO"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "ADJ",
+      "segment_desc": "Adjustment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "AUTHORIZATION RESPONSE INFO",
+        "PSL ITEM INFO",
+        "PAYER ADJUSTMENT"
+      ],
+      "level": 3,
+      "order_index": 11
+    }
+  ],
+  "segment_count": 12
+}

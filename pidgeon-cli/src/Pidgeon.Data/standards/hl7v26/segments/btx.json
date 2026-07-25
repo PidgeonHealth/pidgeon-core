@@ -1,0 +1,200 @@
+{
+  "code": "BTX",
+  "name": "Blood Product Transfusion/Disposition",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "BTX.1",
+      "field_description": "Set ID – BTX",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "BTX.2",
+      "field_description": "BC Donation ID",
+      "length": "22",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "BTX.3",
+      "field_description": "BC Component",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "BTX.4",
+      "field_description": "BC Blood Group",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "BTX.5",
+      "field_description": "CP Commercial Product",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0512"
+    },
+    {
+      "position": 6,
+      "field_name": "BTX.6",
+      "field_description": "CP Manufacturer",
+      "length": "250",
+      "data_type": "XON",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "BTX.7",
+      "field_description": "CP Lot Number",
+      "length": "22",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "BTX.8",
+      "field_description": "BP Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "BTX.9",
+      "field_description": "BP Amount",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "BTX.10",
+      "field_description": "BP Units",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "BTX.11",
+      "field_description": "BP Transfusion/Disposition Status",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0513"
+    },
+    {
+      "position": 12,
+      "field_name": "BTX.12",
+      "field_description": "BP Message Status",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0511"
+    },
+    {
+      "position": 13,
+      "field_name": "BTX.13",
+      "field_description": "BP Date/Time of Status",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "BTX.14",
+      "field_description": "BP Administrator",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "BTX.15",
+      "field_description": "BP Verifier",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "BTX.16",
+      "field_description": "BP Transfusion Start Date/Time of Status",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "BTX.17",
+      "field_description": "BP Transfusion End Date/Time of Status",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "BTX.18",
+      "field_description": "BP Adverse Reaction Type",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0514"
+    },
+    {
+      "position": 19,
+      "field_name": "BTX.19",
+      "field_description": "BP Transfusion Interrupted Reason",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0515"
+    }
+  ],
+  "field_count": 19
+}

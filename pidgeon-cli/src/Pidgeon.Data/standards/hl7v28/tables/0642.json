@@ -1,0 +1,29 @@
+{
+  "code": "0642",
+  "name": "Reorder Theory Codes",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "D",
+      "description": "DOP/DOQ",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "M",
+      "description": "MIN/MAX",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "O",
+      "description": "Override",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

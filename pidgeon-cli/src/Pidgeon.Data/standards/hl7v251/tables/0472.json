@@ -1,0 +1,29 @@
+{
+  "code": "0472",
+  "name": "TQ conjunction ID",
+  "version": "HL7 v2.5.1",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Asynchronous",
+      "comment": "Do the next specification in parallel with this one (unless otherwise constrained by the following components: ORC-7^4-start date/time and ORC-7^5-end date/time). The conjunction of “A” specifies two parallel instructions, as are sometimes used in medication, e.g., prednisone given at 1 tab on Monday, Wednesday, Friday, and at 1/2 tab on Tuesday, Thursday, Saturday, Sunday.",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Actuation Time",
+      "comment": "It will be followed by a completion time for the service. This code allows one to distinguish between the time and priority at which a service should be actuated (e.g., blood should be drawn) and the time and priority at which a service should be completed (e.g., results should be reported).",
+      "sort_order": 2
+    },
+    {
+      "value": "S",
+      "description": "Synchronous",
+      "comment": "Do the next specification after this one (unless otherwise constrained by the following components: ORC-7^4-start date/time and ORC-7^5-end date/time). An “S” specification implies that the second timing sequence follows the first, e.g., when an order is written to measure blood pressure Q15 minutes for the 1st hour, then every 2 hours for the next day.",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

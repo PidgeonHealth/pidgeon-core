@@ -1,0 +1,20 @@
+{
+  "code": "RGS",
+  "name": "Resource Group",
+  "version": "HL7 v2.3",
+  "chapter": "Scheduling",
+  "description": "The RGS segment is used to identify relationships between resources identified for a scheduled event. This segment can be used, on a site specified basis, to identify groups of resources that are used together within a scheduled event, or to describe some other relationship between resources.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RGS.1",
+      "field_description": "Set ID - RGS",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

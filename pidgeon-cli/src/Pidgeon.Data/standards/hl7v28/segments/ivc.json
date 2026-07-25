@@ -1,0 +1,310 @@
+{
+  "code": "IVC",
+  "name": "Invoice Segment",
+  "version": "HL7 v2.8",
+  "chapter": "Claims and Reimbursement",
+  "description": "The Invoice segment is used for HealthCare Services Invoices and contains header style information for an invoice including invoice numbers, Provider Organization and Payer Organization identification.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "IVC.1",
+      "field_description": "Provider Invoice Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "IVC.2",
+      "field_description": "Payer Invoice Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "IVC.3",
+      "field_description": "Contract/Agreement Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "IVC.4",
+      "field_description": "Invoice Control",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0553"
+    },
+    {
+      "position": 5,
+      "field_name": "IVC.5",
+      "field_description": "Invoice Reason",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0554"
+    },
+    {
+      "position": 6,
+      "field_name": "IVC.6",
+      "field_description": "Invoice Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0555"
+    },
+    {
+      "position": 7,
+      "field_name": "IVC.7",
+      "field_description": "Invoice Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "IVC.8",
+      "field_description": "Invoice Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "IVC.9",
+      "field_description": "Payment Terms",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "IVC.10",
+      "field_description": "Provider Organization",
+      "length": "0",
+      "data_type": "XON",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "IVC.11",
+      "field_description": "Payer Organization",
+      "length": "0",
+      "data_type": "XON",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "IVC.12",
+      "field_description": "Attention",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "IVC.13",
+      "field_description": "Last Invoice Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 14,
+      "field_name": "IVC.14",
+      "field_description": "Invoice Booking Period",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "IVC.15",
+      "field_description": "Origin",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "IVC.16",
+      "field_description": "Invoice Fixed Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "IVC.17",
+      "field_description": "Special Costs",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "IVC.18",
+      "field_description": "Amount For Doctors Treatment",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "IVC.19",
+      "field_description": "Responsible Physician",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "IVC.20",
+      "field_description": "Cost Center",
+      "length": "0",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "IVC.21",
+      "field_description": "Invoice Prepaid Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "IVC.22",
+      "field_description": "Total Invoice Amount Without Prepaid Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "IVC.23",
+      "field_description": "Total-amount Of Vat",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "IVC.24",
+      "field_description": "Vat-rates Applied",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "IVC.25",
+      "field_description": "Benefit Group",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0556"
+    },
+    {
+      "position": 26,
+      "field_name": "IVC.26",
+      "field_description": "Provider Tax Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "IVC.27",
+      "field_description": "Payer Tax Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "IVC.28",
+      "field_description": "Provider Tax Status",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0572"
+    },
+    {
+      "position": 29,
+      "field_name": "IVC.29",
+      "field_description": "Payer Tax Status",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0572"
+    },
+    {
+      "position": 30,
+      "field_name": "IVC.30",
+      "field_description": "Sales Tax Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 30
+}

@@ -1,0 +1,70 @@
+{
+  "code": "LRL",
+  "name": "Location Relationship",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The LRL segment is used identify one location’s relationship to another location, the nearest lab, pharmacy, etc.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LRL.1",
+      "field_description": "Primary Key Value",
+      "length": "200",
+      "data_type": "PL",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "LRL.2",
+      "field_description": "Segment Action Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0206"
+    },
+    {
+      "position": 3,
+      "field_name": "LRL.3",
+      "field_description": "Segment Unique Key",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "LRL.4",
+      "field_description": "Location Relationship ID",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0325"
+    },
+    {
+      "position": 5,
+      "field_name": "LRL.5",
+      "field_description": "Organizational Location Relationship Value",
+      "length": "80",
+      "data_type": "XON",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "LRL.6",
+      "field_description": "Patient Location Relationship Value",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

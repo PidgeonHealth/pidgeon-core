@@ -1,0 +1,150 @@
+{
+  "code": "AIG",
+  "name": "Appointment Information - General Resource",
+  "version": "HL7 v2.3",
+  "chapter": "Scheduling",
+  "description": "The AIG segment contains information about various kinds of resources (other than those with specifically defined segments in this chapter) that can be scheduled.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AIG.1",
+      "field_description": "Set ID - AIG",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "AIG.2",
+      "field_description": "Segment Action Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0206"
+    },
+    {
+      "position": 3,
+      "field_name": "AIG.3",
+      "field_description": "Resource ID",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "AIG.4",
+      "field_description": "Resource Type",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "AIG.5",
+      "field_description": "Resource Group",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "AIG.6",
+      "field_description": "Resource Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "AIG.7",
+      "field_description": "Resource Quantity Units",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "AIG.8",
+      "field_description": "Start Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "AIG.9",
+      "field_description": "Start Date/Time Offset",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "AIG.10",
+      "field_description": "Start Date/Time Offset Units",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "AIG.11",
+      "field_description": "Duration",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "AIG.12",
+      "field_description": "Duration Units",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "AIG.13",
+      "field_description": "Allow Substitution Code",
+      "length": "10",
+      "data_type": "IS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0279"
+    },
+    {
+      "position": 14,
+      "field_name": "AIG.14",
+      "field_description": "Filler Status Code",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0278"
+    }
+  ],
+  "field_count": 14
+}

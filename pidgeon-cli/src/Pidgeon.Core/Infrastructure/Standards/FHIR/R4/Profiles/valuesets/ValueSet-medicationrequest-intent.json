@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+  "name": "MedicationRequestIntent",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+        "concept": [
+          { "code": "proposal", "display": "Proposal" },
+          { "code": "plan", "display": "Plan" },
+          { "code": "order", "display": "Order" },
+          { "code": "original-order", "display": "Original Order" },
+          { "code": "reflex-order", "display": "Reflex Order" },
+          { "code": "filler-order", "display": "Filler Order" },
+          { "code": "instance-order", "display": "Instance Order" },
+          { "code": "option", "display": "Option" }
+        ]
+      }
+    ]
+  }
+}

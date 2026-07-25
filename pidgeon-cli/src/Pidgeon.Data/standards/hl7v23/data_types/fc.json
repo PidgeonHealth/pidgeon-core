@@ -1,0 +1,30 @@
+{
+  "code": "FC",
+  "name": "Financial Class",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "FC.1",
+      "field_description": "Financial Class",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0064"
+    },
+    {
+      "position": 2,
+      "field_name": "FC.2",
+      "field_description": "Effective Date",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

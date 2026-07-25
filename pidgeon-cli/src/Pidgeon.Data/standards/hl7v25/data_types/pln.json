@@ -1,0 +1,50 @@
+{
+  "code": "PLN",
+  "name": "Practitioner License or Other ID Number",
+  "version": "HL7 v2.5",
+  "description": "This data type specifies a practitioners license number, or other ID number such as UPIN, Medicare and Medicaid number, and associated detail.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PLN.1",
+      "field_description": "Id Number",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PLN.2",
+      "field_description": "Type Of Id Number",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0338"
+    },
+    {
+      "position": 3,
+      "field_name": "PLN.3",
+      "field_description": "State/Other Qualifying Information",
+      "length": "62",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PLN.4",
+      "field_description": "Expiration Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

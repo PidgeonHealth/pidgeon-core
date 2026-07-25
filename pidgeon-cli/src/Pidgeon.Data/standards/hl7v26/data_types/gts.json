@@ -1,0 +1,9 @@
+{
+  "code": "GTS",
+  "name": "General Timing Specification",
+  "version": "HL7 v2.6",
+  "description": "The General Timing Specification data type is used to communicate complex inter-related information Timing information. The value of such a field follows the formatting rules for a ST field. The string data will be structured according to the rules set forth in the \"Version 3 Data Types Part II Unabridged Specification\" for the General Timing Specification (GTS) data type.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

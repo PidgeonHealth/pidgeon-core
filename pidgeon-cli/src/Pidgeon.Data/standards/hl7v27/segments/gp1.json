@@ -1,0 +1,60 @@
+{
+  "code": "GP1",
+  "name": "Grouping/reimbursement - Visit",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "These fields are used in grouping and reimbursement for CMS APCs. Please refer to the \"Outpatient Prospective Payment System Final Rule\" (\"OPPS Final Rule\") issued by CMS.\n\nThe GP1 segment is specific to the US and may not be implemented in non-US systems.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "GP1.1",
+      "field_description": "Type Of Bill Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0455"
+    },
+    {
+      "position": 2,
+      "field_name": "GP1.2",
+      "field_description": "Revenue Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0456"
+    },
+    {
+      "position": 3,
+      "field_name": "GP1.3",
+      "field_description": "Overall Claim Disposition Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0457"
+    },
+    {
+      "position": 4,
+      "field_name": "GP1.4",
+      "field_description": "Oce Edits Per Visit Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0458"
+    },
+    {
+      "position": 5,
+      "field_name": "GP1.5",
+      "field_description": "Outlier Cost",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

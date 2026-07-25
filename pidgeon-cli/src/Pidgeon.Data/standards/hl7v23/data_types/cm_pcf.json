@@ -1,0 +1,40 @@
+{
+  "code": "CM_PCF",
+  "name": "Pre-certification Required",
+  "version": "HL7 v2.3",
+  "description": "This field indicates whether pre-certification is required for particular patient types, and the time window for obtaining the certification.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_PCF.1",
+      "field_description": "Pre-certification Patient Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0150"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_PCF.2",
+      "field_description": "Pre-certification Required",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 3,
+      "field_name": "CM_PCF.3",
+      "field_description": "Pre-certification Windwow",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

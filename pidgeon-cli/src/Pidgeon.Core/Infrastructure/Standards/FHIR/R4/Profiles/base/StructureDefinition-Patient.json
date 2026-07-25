@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "name": "Patient",
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "snapshot": {
+    "element": [
+      { "path": "Patient", "min": 0, "max": "*" },
+      { "path": "Patient.id", "min": 0, "max": "1", "type": [{ "code": "id" }] },
+      { "path": "Patient.meta", "min": 0, "max": "1", "type": [{ "code": "Meta" }] },
+      { "path": "Patient.identifier", "min": 0, "max": "*", "type": [{ "code": "Identifier" }] },
+      { "path": "Patient.identifier.system", "min": 0, "max": "1", "type": [{ "code": "uri" }] },
+      { "path": "Patient.identifier.value", "min": 0, "max": "1", "type": [{ "code": "string" }] },
+      { "path": "Patient.active", "min": 0, "max": "1", "type": [{ "code": "boolean" }] },
+      { "path": "Patient.name", "min": 0, "max": "*", "type": [{ "code": "HumanName" }] },
+      { "path": "Patient.name.family", "min": 0, "max": "1", "type": [{ "code": "string" }] },
+      { "path": "Patient.name.given", "min": 0, "max": "*", "type": [{ "code": "string" }] },
+      { "path": "Patient.telecom", "min": 0, "max": "*", "type": [{ "code": "ContactPoint" }] },
+      { "path": "Patient.gender", "min": 0, "max": "1", "type": [{ "code": "code" }], "binding": { "strength": "required", "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender" } },
+      { "path": "Patient.birthDate", "min": 0, "max": "1", "type": [{ "code": "date" }] },
+      { "path": "Patient.deceased[x]", "min": 0, "max": "1", "type": [{ "code": "boolean" }, { "code": "dateTime" }] },
+      { "path": "Patient.address", "min": 0, "max": "*", "type": [{ "code": "Address" }] },
+      { "path": "Patient.maritalStatus", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Patient.communication", "min": 0, "max": "*", "type": [{ "code": "BackboneElement" }] },
+      { "path": "Patient.communication.language", "min": 1, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Patient.generalPractitioner", "min": 0, "max": "*", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Practitioner"] }] },
+      { "path": "Patient.managingOrganization", "min": 0, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Organization"] }] }
+    ]
+  }
+}

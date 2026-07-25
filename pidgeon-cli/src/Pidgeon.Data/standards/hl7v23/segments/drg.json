@@ -1,0 +1,110 @@
+{
+  "code": "DRG",
+  "name": "Diagnosis Related Group",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The DRG segment contains diagnoses-related grouping information of various types. The DRG segment is used to send the DRG information, for example, for billing and medical records encoding",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DRG.1",
+      "field_description": "Diagnostic Related Group",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0055"
+    },
+    {
+      "position": 2,
+      "field_name": "DRG.2",
+      "field_description": "DRG Assigned Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "DRG.3",
+      "field_description": "DRG Approval Indicator",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 4,
+      "field_name": "DRG.4",
+      "field_description": "DRG Grouper Review Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0056"
+    },
+    {
+      "position": 5,
+      "field_name": "DRG.5",
+      "field_description": "Outlier Type",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0083"
+    },
+    {
+      "position": 6,
+      "field_name": "DRG.6",
+      "field_description": "Outlier Days",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "DRG.7",
+      "field_description": "Outlier Cost",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "DRG.8",
+      "field_description": "DRG Payor",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0229"
+    },
+    {
+      "position": 9,
+      "field_name": "DRG.9",
+      "field_description": "Outlier Reimbursement",
+      "length": "9",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "DRG.10",
+      "field_description": "Confidential Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 10
+}

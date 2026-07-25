@@ -1,0 +1,41 @@
+{
+  "code": "0147",
+  "name": "Policy type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "2ANC",
+      "description": "Second ancillary",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2MMD",
+      "description": "Second major medical",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3MMD",
+      "description": "Third major medical",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ANC",
+      "description": "Ancillary",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "MMD",
+      "description": "Major medical",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

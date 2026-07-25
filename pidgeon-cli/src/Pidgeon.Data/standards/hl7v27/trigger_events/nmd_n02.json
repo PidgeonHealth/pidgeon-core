@@ -1,0 +1,164 @@
+{
+  "code": "NMD_N02",
+  "name": "Application management data message (unsolicited)",
+  "version": "HL7 v2.7",
+  "chapter": "Application Management",
+  "description": "The N02 event signifies when an unsolicited update (UU) Application Management Data message (NMD) is created by on application to transmit application management information to other applications.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "CLOCK_AND_STATS_WITH_NOTES",
+      "segment_desc": "CLOCK_AND_STATS_WITH_NOTES group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "CLOCK",
+      "segment_desc": "CLOCK group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NCK",
+      "segment_desc": "System Clock",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES",
+        "CLOCK"
+      ],
+      "level": 2,
+      "order_index": 5
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES",
+        "CLOCK"
+      ],
+      "level": 2,
+      "order_index": 6
+    },
+    {
+      "segment_code": "APP_STATS",
+      "segment_desc": "APP_STATS group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "NST",
+      "segment_desc": "Application Control Level Statistics",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES",
+        "APP_STATS"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES",
+        "APP_STATS"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "APP_STATUS",
+      "segment_desc": "APP_STATUS group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "NSC",
+      "segment_desc": "Application Status Change",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES",
+        "APP_STATUS"
+      ],
+      "level": 2,
+      "order_index": 11
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK_AND_STATS_WITH_NOTES",
+        "APP_STATUS"
+      ],
+      "level": 2,
+      "order_index": 12
+    }
+  ],
+  "segment_count": 13
+}

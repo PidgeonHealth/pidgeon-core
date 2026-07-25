@@ -1,0 +1,113 @@
+{
+  "code": "0553",
+  "name": "Invoice Control Code",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AA",
+      "description": "Authorization request for inpatient admission",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AI",
+      "description": "Combined Authorization and Adjudication request",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CA",
+      "description": "Cancel Authorization request",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CG",
+      "description": "Cancel Invoice Product/Service Group",
+      "comment": "Cancel a specific Product/Service Group in an Invoice",
+      "sort_order": 4
+    },
+    {
+      "value": "CL",
+      "description": "Cancel Invoice Product/Service Line Item",
+      "comment": "Cancel a specific Product/Service Line Item in an Invoice",
+      "sort_order": 5
+    },
+    {
+      "value": "CN",
+      "description": "Cancel Invoice",
+      "comment": "Can be used to reverse or cancel an invoice in progress or reverse a paid invoice.  Receiver may only mark Invoice as cancelled, not purge records",
+      "sort_order": 6
+    },
+    {
+      "value": "CP",
+      "description": "Copy of Invoice",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "CQ",
+      "description": "Coverage Register Query",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "EA",
+      "description": "Authorization request for inpatient stay extension",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "OA",
+      "description": "Original Authorization",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "OR",
+      "description": "Original Invoice",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PA",
+      "description": "Pre-Authorization",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "PD",
+      "description": "Pre-Determination Invoice",
+      "comment": "Can be used to submit an invoice through a Payer's edit and adjudication engine to determine if the invoice will be paid - does not result in payment by Payer",
+      "sort_order": 13
+    },
+    {
+      "value": "RA",
+      "description": "Re-Assessment",
+      "comment": "Used on EHC^E04 only",
+      "sort_order": 14
+    },
+    {
+      "value": "RC",
+      "description": "Referral Pre-Authorization",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "RU",
+      "description": "Referral authorization",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "SA",
+      "description": "Special Authorization",
+      "comment": "",
+      "sort_order": 17
+    }
+  ],
+  "value_count": 17
+}

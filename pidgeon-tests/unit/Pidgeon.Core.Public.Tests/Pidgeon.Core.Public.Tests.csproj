@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <PidgeonCommunityComposition>true</PidgeonCommunityComposition>
+    <PidgeonRepositoryRoot Condition="'$(PidgeonRepositoryRoot)' == ''">$(MSBuildThisFileDirectory)..\..\..\</PidgeonRepositoryRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.8.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../pidgeon-cli/src/Pidgeon.Core/Pidgeon.Core.csproj" />
+    <ProjectReference Include="../../../pidgeon-cli/src/Pidgeon.Data.Baseline/Pidgeon.Data.Baseline.csproj" />
+  </ItemGroup>
+
+  <!--
+    These are the public-composition behavioral seams from the authoritative
+    monorepo suite. Linking, rather than copying, prevents a weaker mirror-only
+    test fork. The projector admits this exact list; new tests remain private
+    until deliberately added here and to the projection manifest.
+  -->
+  <ItemGroup>
+    <Compile Include="../Pidgeon.Core.Tests/Generation/DeterminismTestClock.cs" Link="Generation/DeterminismTestClock.cs" />
+    <Compile Include="../Pidgeon.Core.Tests/Data/CommunityBaselineGoldenTests.cs" Link="Data/CommunityBaselineGoldenTests.cs" />
+    <Compile Include="../Pidgeon.Core.Tests/Data/CommunityFhirGenerationSeamTests.cs" Link="Data/CommunityFhirGenerationSeamTests.cs" />
+    <Compile Include="../Pidgeon.Core.Tests/Data/CommunityFhirIgSeamTests.cs" Link="Data/CommunityFhirIgSeamTests.cs" />
+    <Compile Include="../Pidgeon.Core.Tests/Data/CommunityGenerationSeamTests.cs" Link="Data/CommunityGenerationSeamTests.cs" />
+    <Compile Include="../Pidgeon.Core.Tests/Data/CommunityHl7ReferenceSeamTests.cs" Link="Data/CommunityHl7ReferenceSeamTests.cs" />
+    <Compile Include="../Pidgeon.Core.Tests/Data/CommunityValidationSeamTests.cs" Link="Data/CommunityValidationSeamTests.cs" />
+  </ItemGroup>
+
+</Project>

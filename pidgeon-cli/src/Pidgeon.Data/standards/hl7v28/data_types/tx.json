@@ -1,0 +1,9 @@
+{
+  "code": "TX",
+  "name": "Text Data",
+  "version": "HL7 v2.8",
+  "description": "String data meant for user display (on a terminal or printer). Such data would not necessarily be left justified since leading spaces may contribute greatly to the clarity of the presentation to the user.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

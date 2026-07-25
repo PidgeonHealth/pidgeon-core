@@ -1,0 +1,35 @@
+{
+  "code": "0017",
+  "name": "Transaction type",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AJ",
+      "description": "Adjustment",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CD",
+      "description": "Credit",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CG",
+      "description": "Charge",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "PY",
+      "description": "Payment",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

@@ -1,0 +1,65 @@
+{
+  "code": "0935",
+  "name": "Process Interruption Reason",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ASC",
+      "description": "Apheresis Software Crash",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BSC",
+      "description": "Manufacturing Software Crash",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CFT",
+      "description": "Couldn’t follow through with donation (scared)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DBB",
+      "description": "Bathroom",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "DCW",
+      "description": "Couldn’t wait",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DNI",
+      "description": "Phlebotomy Issue",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "GFE",
+      "description": "General Facility Emergency",
+      "comment": "Power outage,  natural disaster (tornado, flood, hurricane, etc.), air conditioning failure, etc.",
+      "sort_order": 7
+    },
+    {
+      "value": "NRG",
+      "description": "No reason given, donor decided to stop without giving a reason",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PCD",
+      "description": "Phone Call-Donor",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

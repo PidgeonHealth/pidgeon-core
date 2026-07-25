@@ -1,0 +1,100 @@
+{
+  "code": "LA1",
+  "name": "Location With Address Variation 1",
+  "version": "HL7 v2.7",
+  "description": "Specifies a location and its address.\n\nNote: Replaces the CM data type used in 4.14.1.8 RXO-8 and 4.14.4.8 RXE-8 as of v 2.5. Retained for backward compatibility only as of v 2.5.\n\nAttention: Retained for backward compatibility only in v2.6. Fields associated with this data type have been replaced by 4 new fields in the RXO and RXE segments.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LA1.1",
+      "field_description": "Point Of Care",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0302"
+    },
+    {
+      "position": 2,
+      "field_name": "LA1.2",
+      "field_description": "Room",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0303"
+    },
+    {
+      "position": 3,
+      "field_name": "LA1.3",
+      "field_description": "Bed",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0304"
+    },
+    {
+      "position": 4,
+      "field_name": "LA1.4",
+      "field_description": "Facility",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "LA1.5",
+      "field_description": "Location Status",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0306"
+    },
+    {
+      "position": 6,
+      "field_name": "LA1.6",
+      "field_description": "Patient Location Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0305"
+    },
+    {
+      "position": 7,
+      "field_name": "LA1.7",
+      "field_description": "Building",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0307"
+    },
+    {
+      "position": 8,
+      "field_name": "LA1.8",
+      "field_description": "Floor",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0308"
+    },
+    {
+      "position": 9,
+      "field_name": "LA1.9",
+      "field_description": "Address",
+      "length": "0",
+      "data_type": "AD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

@@ -1,0 +1,40 @@
+{
+  "code": "VXQ_V01",
+  "name": "Query for vaccination record",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "When a state system does not already have the complete patient vaccination record, it will send a query (with a V01 event) for the definitive (last updated) record. Within the definitions for QRD and QRF, certain components are defined according to position in the field, as detailed in Section 4.11, “QUERIES FOR IMMUNIZATION RECORDS (QRF SEGMENTS).”",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Query definition segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Query filter segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

@@ -1,0 +1,94 @@
+{
+  "code": "PMU_B07",
+  "name": "Add personnel record",
+  "version": "HL7 v2.5.1",
+  "chapter": "Personnel Management",
+  "description": "An event B07 indicates that a health professional is granted a certificate/permission for a special purpose. \n\nA permission is issued by an organization and documented in form of a certificate.  An update of a role results in an issuing of a new certificate.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "STF",
+      "segment_desc": "Staff Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PRA",
+      "segment_desc": "Practitioner Detail",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "CERTIFICATE",
+      "segment_desc": "CERTIFICATE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "CER",
+      "segment_desc": "Certificate Detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CERTIFICATE"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CERTIFICATE"
+      ],
+      "level": 1,
+      "order_index": 7
+    }
+  ],
+  "segment_count": 8
+}

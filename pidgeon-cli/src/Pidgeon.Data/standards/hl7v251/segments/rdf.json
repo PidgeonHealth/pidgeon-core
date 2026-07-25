@@ -1,0 +1,30 @@
+{
+  "code": "RDF",
+  "name": "Table Row Definition",
+  "version": "HL7 v2.5.1",
+  "chapter": "Query",
+  "description": "The RDF segment defines the content of the row data segments (RDT) in the tabular response (RTB).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RDF.1",
+      "field_description": "Number of Columns per Row",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RDF.2",
+      "field_description": "Column Description",
+      "length": "40",
+      "data_type": "RCD",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

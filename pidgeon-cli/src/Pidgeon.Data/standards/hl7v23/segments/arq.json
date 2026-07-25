@@ -1,0 +1,240 @@
+{
+  "code": "ARQ",
+  "name": "Appointment Request",
+  "version": "HL7 v2.3",
+  "chapter": "Scheduling",
+  "description": "The ARQ segment defines a request for the booking of an appointment. It is used in transactions sent from an application acting in the role of a placer.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ARQ.1",
+      "field_description": "Placer Appointment ID",
+      "length": "75",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ARQ.2",
+      "field_description": "Filler Appointment ID",
+      "length": "75",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "ARQ.3",
+      "field_description": "Occurrence Number",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "ARQ.4",
+      "field_description": "Placer Group Number",
+      "length": "75",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "ARQ.5",
+      "field_description": "Schedule ID",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "ARQ.6",
+      "field_description": "Request Event Reason",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "ARQ.7",
+      "field_description": "Appointment Reason",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0276"
+    },
+    {
+      "position": 8,
+      "field_name": "ARQ.8",
+      "field_description": "Appointment Type",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0277"
+    },
+    {
+      "position": 9,
+      "field_name": "ARQ.9",
+      "field_description": "Appointment Duration",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "ARQ.10",
+      "field_description": "Appointment Duration Units",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "ARQ.11",
+      "field_description": "Requested Start Date/Time Range",
+      "length": "53",
+      "data_type": "DR",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "ARQ.12",
+      "field_description": "Priority",
+      "length": "5",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "ARQ.13",
+      "field_description": "Repeating Interval",
+      "length": "100",
+      "data_type": "RI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "ARQ.14",
+      "field_description": "Repeating Interval Duration",
+      "length": "5",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "ARQ.15",
+      "field_description": "Placer Contact Person",
+      "length": "48",
+      "data_type": "XCN",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "ARQ.16",
+      "field_description": "Placer Contact Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "ARQ.17",
+      "field_description": "Placer Contact Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "ARQ.18",
+      "field_description": "Placer Contact Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "ARQ.19",
+      "field_description": "Entered By Person",
+      "length": "48",
+      "data_type": "XCN",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "ARQ.20",
+      "field_description": "Entered By Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "ARQ.21",
+      "field_description": "Entered By Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "ARQ.22",
+      "field_description": "Parent Placer Appointment ID",
+      "length": "75",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "ARQ.23",
+      "field_description": "Parent Filler Appointment ID",
+      "length": "75",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 23
+}

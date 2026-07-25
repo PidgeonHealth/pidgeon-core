@@ -1,0 +1,84 @@
+{
+  "code": "MFN_M17",
+  "name": "DRG Master File Message",
+  "version": "HL7 v2.7",
+  "chapter": "Master Files",
+  "description": "This section is specifically concerned with describing a master file message that should be used to transmit information which identifies the DRG basic information, such as relative weight, lower and upper trim points, etc.\nThe DMI segment must be preceded by the MFI and MFE segments, as described in Section 8.5, GENERAL MASTER FILE SEGMENTS. In the following message, the MFI-1 - Master File Identifier field should equal \"DMI\".",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MF_DRG",
+      "segment_desc": "MF_DRG group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_DRG"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "DMI",
+      "segment_desc": "Drg Master File Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_DRG"
+      ],
+      "level": 1,
+      "order_index": 6
+    }
+  ],
+  "segment_count": 7
+}

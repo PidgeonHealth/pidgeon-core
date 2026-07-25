@@ -1,0 +1,260 @@
+{
+  "code": "PEO",
+  "name": "Product Experience Observation",
+  "version": "HL7 v2.5.1",
+  "chapter": "Observation Reporting",
+  "description": "Details related to a particular clinical experience or event are embodied in the PEO segment. This segment can be used to characterize an event which might be attributed to a product to which the patient was exposed.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PEO.1",
+      "field_description": "Event Identifiers Used",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PEO.2",
+      "field_description": "Event Symptom/Diagnosis Code",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PEO.3",
+      "field_description": "Event Onset Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PEO.4",
+      "field_description": "Event Exacerbation Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PEO.5",
+      "field_description": "Event Improved Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PEO.6",
+      "field_description": "Event Ended Data/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PEO.7",
+      "field_description": "Event Location Occurred Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PEO.8",
+      "field_description": "Event Qualification",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0237"
+    },
+    {
+      "position": 9,
+      "field_name": "PEO.9",
+      "field_description": "Event Serious",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0238"
+    },
+    {
+      "position": 10,
+      "field_name": "PEO.10",
+      "field_description": "Event Expected",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0239"
+    },
+    {
+      "position": 11,
+      "field_name": "PEO.11",
+      "field_description": "Event Outcome",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0240"
+    },
+    {
+      "position": 12,
+      "field_name": "PEO.12",
+      "field_description": "Patient Outcome",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0241"
+    },
+    {
+      "position": 13,
+      "field_name": "PEO.13",
+      "field_description": "Event Description From Others",
+      "length": "600",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "PEO.14",
+      "field_description": "Event From Original Reporter",
+      "length": "600",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PEO.15",
+      "field_description": "Event Description From Patient",
+      "length": "600",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "PEO.16",
+      "field_description": "Event Description From Practitioner",
+      "length": "600",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "PEO.17",
+      "field_description": "Event Description From Autopsy",
+      "length": "600",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "PEO.18",
+      "field_description": "Cause Of Death",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "PEO.19",
+      "field_description": "Primary Observer Name",
+      "length": "250",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "PEO.20",
+      "field_description": "Primary Observer Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "PEO.21",
+      "field_description": "Primary Observer Telephone",
+      "length": "250",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "PEO.22",
+      "field_description": "Primary Observer's Qualification",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0242"
+    },
+    {
+      "position": 23,
+      "field_name": "PEO.23",
+      "field_description": "Confirmation Provided By",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0242"
+    },
+    {
+      "position": 24,
+      "field_name": "PEO.24",
+      "field_description": "Primary Observer Aware Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "PEO.25",
+      "field_description": "Primary Observer's identity May Be Divulged",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0243"
+    }
+  ],
+  "field_count": 25
+}

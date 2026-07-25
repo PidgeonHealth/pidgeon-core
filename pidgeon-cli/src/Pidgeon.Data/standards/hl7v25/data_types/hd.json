@@ -1,0 +1,40 @@
+{
+  "code": "HD",
+  "name": "Hierarchic Designator",
+  "version": "HL7 v2.5",
+  "description": "The basic definition of the HD is that it identifies an (administrative or system or application or other) entity that has responsibility for managing or assigning a defined set of instance identifiers (such as placer or filler number, patient identifiers, provider identifiers, etc.).",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "HD.1",
+      "field_description": "Namespace Id",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0300"
+    },
+    {
+      "position": 2,
+      "field_name": "HD.2",
+      "field_description": "Universal Id",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "HD.3",
+      "field_description": "Universal Id Type",
+      "length": "6",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0301"
+    }
+  ],
+  "field_count": 3
+}

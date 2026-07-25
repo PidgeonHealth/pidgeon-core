@@ -1,0 +1,107 @@
+{
+  "code": "0002",
+  "name": "Marital Status",
+  "version": "HL7 v2.5.1",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Separated",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Unmarried",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C",
+      "description": "Common law",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "D",
+      "description": "Divorced",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "E",
+      "description": "Legally Separated",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "G",
+      "description": "Living together",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "I",
+      "description": "Interlocutory",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "M",
+      "description": "Married",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "N",
+      "description": "Annulled",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "P",
+      "description": "Domestic partner",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "R",
+      "description": "Registered domestic partner",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "S",
+      "description": "Single",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "T",
+      "description": "Unreported",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "W",
+      "description": "Widowed",
+      "comment": "",
+      "sort_order": 16
+    }
+  ],
+  "value_count": 16
+}

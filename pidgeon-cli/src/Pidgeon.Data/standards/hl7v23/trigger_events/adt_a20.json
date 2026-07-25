@@ -1,0 +1,40 @@
+{
+  "code": "ADT_A20",
+  "name": "Bed status update",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "Certain nursing/census applications need to be able to update the Patient Administration system’s bed status",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "NPU",
+      "segment_desc": "Bed status update",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

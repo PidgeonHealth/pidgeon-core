@@ -1,0 +1,35 @@
+{
+  "code": "0418",
+  "name": "Procedure Priority",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "...",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "0",
+      "description": "the admitting procedure",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "1",
+      "description": "the primary procedure",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "2",
+      "description": "for ranked secondary procedures",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

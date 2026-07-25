@@ -1,0 +1,293 @@
+{
+  "code": "BAR_P05",
+  "name": "Update account",
+  "version": "HL7 v2.3.1",
+  "chapter": "Financial Management",
+  "description": "The P05 event is sent when an existing account is being updated.  From Standard Version 2.3 onward, the P01 (add account) event should no longer be used for updating an existing account, but only for creating a new account.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "VISIT",
+      "segment_desc": "VISIT group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient visit segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient visit - additional information segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "DB1",
+      "segment_desc": "Disability segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "AL1",
+      "segment_desc": "Patient allergy information segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "DG1",
+      "segment_desc": "Diagnosis segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "DRG",
+      "segment_desc": "Diagnosis related group segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "PROCEDURE",
+      "segment_desc": "PROCEDURE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 12
+    },
+    {
+      "segment_code": "PR1",
+      "segment_desc": "Procedures segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT",
+        "PROCEDURE"
+      ],
+      "level": 2,
+      "order_index": 13
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT",
+        "PROCEDURE"
+      ],
+      "level": 2,
+      "order_index": 14
+    },
+    {
+      "segment_code": "GT1",
+      "segment_desc": "Guarantor segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 15
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next of kin / associated parties segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 16
+    },
+    {
+      "segment_code": "INSURANCE",
+      "segment_desc": "INSURANCE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 17
+    },
+    {
+      "segment_code": "IN1",
+      "segment_desc": "Insurance segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 18
+    },
+    {
+      "segment_code": "IN2",
+      "segment_desc": "Insurance additional information segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 19
+    },
+    {
+      "segment_code": "IN3",
+      "segment_desc": "Insurance additional information, certification segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "VISIT",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 20
+    },
+    {
+      "segment_code": "ACC",
+      "segment_desc": "Accident segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 21
+    },
+    {
+      "segment_code": "UB1",
+      "segment_desc": "UB82 data segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 22
+    },
+    {
+      "segment_code": "UB2",
+      "segment_desc": "UB92 data segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 23
+    }
+  ],
+  "segment_count": 24
+}

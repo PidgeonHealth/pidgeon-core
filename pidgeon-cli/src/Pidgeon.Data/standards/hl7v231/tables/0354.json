@@ -1,0 +1,707 @@
+{
+  "code": "0354",
+  "name": "Message structure",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ADT_A01",
+      "description": "A01, A04, A05, A08, A13, A14, A28, A31",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ADT_A02",
+      "description": "A02, A21, A22, A23, A25, A26, A27, A29, A32, A33",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ADT_A03",
+      "description": "A03",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ADT_A06",
+      "description": "A06, A07",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ADT_A09",
+      "description": "A09, A10, A11, A15",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ADT_A12",
+      "description": "A12",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ADT_A16",
+      "description": "A16",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ADT_A17",
+      "description": "A17",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "ADT_A18",
+      "description": "A18",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "ADT_A20",
+      "description": "A20",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ADT_A24",
+      "description": "A24",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ADT_A28",
+      "description": "A28, A31",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "ADT_A30",
+      "description": "A30, A34, A35, 136, A46, A47, A48, A49",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "ADT_A37",
+      "description": "A37",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "ADT_A38",
+      "description": "A38",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "ADT_A39",
+      "description": "A39, A40, A41, A42",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "ADT_A43",
+      "description": "A43, A44",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "ADT_A45",
+      "description": "A45",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "ADT_A50",
+      "description": "A50, A51",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "ARD_A19",
+      "description": "A19",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "BAR_P01",
+      "description": "P01, P05",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "BAR_P02",
+      "description": "P02",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "BAR_P06",
+      "description": "P06",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "CRM_C01",
+      "description": "C01, C02, C03, C04, C05, C06, C07, C08",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "CSU_C09",
+      "description": "C09, C10, C11, C12",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "DFT_P03",
+      "description": "P03",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "DOC_T12",
+      "description": "T12",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "DSR_Q01",
+      "description": "Q01",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "DSR_Q03",
+      "description": "Q03",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "EDR_R07",
+      "description": "R07",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "EQQ_Q04",
+      "description": "Q04",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "ERP_R09",
+      "description": "R09",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "MDM_T01",
+      "description": "T01, T03, T05, T07, T09, T11",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "MDM_T02",
+      "description": "T02, T04, T06, T08, T10",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "MFD_P09",
+      "description": "P09",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "MFK_M01",
+      "description": "M01, M03, M05, M06, M07, M08, M09, M10, M11",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "MFN_M01",
+      "description": "M01",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "MFN_M02",
+      "description": "M02",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "MFN_M03",
+      "description": "M03",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "MFN_M05",
+      "description": "M05",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "MFN_M06",
+      "description": "M06",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "MFN_M07",
+      "description": "M07",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "MFN_M08",
+      "description": "M08",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "MFN_M09",
+      "description": "M09",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "MFN_M10",
+      "description": "M10",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "MFN_M11",
+      "description": "M11",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "ORF_R02",
+      "description": "R02, R04",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "ORM__O01",
+      "description": "O01",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "ORM_Q06",
+      "description": "Q06",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "ORR_O02",
+      "description": "O02",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "ORR_Q06",
+      "description": "Q06",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "ORU_R01",
+      "description": "R01",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "ORU_W01",
+      "description": "W01",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "OSQ_Q06",
+      "description": "Q06",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "OSR_Q06",
+      "description": "Q06",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "PEX_P07",
+      "description": "P07, P08",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "PGL_PC6",
+      "description": "PC6, PC7, PC8",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "PIN_107",
+      "description": "I07",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "PPG_PCG",
+      "description": "PCC, PCH, PCJ",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "PPP_PCB",
+      "description": "PCB, PCD",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "PPR_PC1",
+      "description": "PC1, PC2, PC3",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "PPT_PCL",
+      "description": "PCL",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "PPV_PCA",
+      "description": "PCA",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "PRR_PC5",
+      "description": "PC5",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "PTR_PCF",
+      "description": "PCF",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "QCK_Q02",
+      "description": "Q02",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "QRY_A19",
+      "description": "A19",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "QRY_PC4",
+      "description": "PC4, PC9, PCE, PCK",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "QRY_Q01",
+      "description": "Q01",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "QRY_Q02",
+      "description": "Q02",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "QRY_R02",
+      "description": "R02, R04",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "QRY_T12",
+      "description": "T12",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "RAR_RAR",
+      "description": "RAR",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "RAS_O01",
+      "description": "O01",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "RAS_O02",
+      "description": "O022",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "RCI_I05",
+      "description": "I05",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "RCL_I06",
+      "description": "I06",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "RDE_O01",
+      "description": "O01",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "RDR_RDR",
+      "description": "RDR",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "RDS_O01",
+      "description": "O01",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "REF_I12",
+      "description": "I12, I13, I14, I15",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "RER_RER",
+      "description": "RER",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "RGR_RGR",
+      "description": "RGR",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "RGV_O01",
+      "description": "O01",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "RPA_I08",
+      "description": "I08, I09. I10, 1II",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "RPI_I0I",
+      "description": "I01, I04",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "RPL_I02",
+      "description": "I02",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "RPR_I03",
+      "description": "I03",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "RQA_I08",
+      "description": "I08, I09, I10, I11",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "RQC_I05",
+      "description": "I05",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "RQC_I06",
+      "description": "I06",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "RQI_I0I",
+      "description": "I01, I02, I03",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "RQP_I04",
+      "description": "I04",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "RQQ_Q09",
+      "description": "Q09",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "RRA_O02",
+      "description": "O02",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "RRD_O02",
+      "description": "O02",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "RRE_O01",
+      "description": "O01",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "RRG_O02",
+      "description": "O02",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "RRI_I12",
+      "description": "I12, I13, I14, I15",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "RROR_ROR",
+      "description": "ROR",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "SIIU_S12",
+      "description": "S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S26",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "SPQ_Q08",
+      "description": "Q08",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "SQM_S25",
+      "description": "S25",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "SQR_S25",
+      "description": "S25",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "SRM_S01",
+      "description": "S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "SRM_T12",
+      "description": "T12",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "SRR_S01",
+      "description": "S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "SRR_T12",
+      "description": "T12",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "SUR_P09",
+      "description": "P09",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "TBR_R09",
+      "description": "R09",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "UDM_Q05",
+      "description": "Q05",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "VQQ_Q07",
+      "description": "Q07",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "VXQ_V01",
+      "description": "V01",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "VXR_V03",
+      "description": "V03",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "VXU_V04",
+      "description": "V04",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "VXX_V02",
+      "description": "V02",
+      "comment": "",
+      "sort_order": 116
+    }
+  ],
+  "value_count": 116
+}

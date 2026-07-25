@@ -1,0 +1,80 @@
+{
+  "code": "OM3",
+  "name": "Categorical Service/test/observation",
+  "version": "HL7 v2.7",
+  "chapter": "Master Files",
+  "description": "This segment applies to free text and other non-numeric data types.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OM3.1",
+      "field_description": "Sequence Number - Test/Observation Master File",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "OM3.2",
+      "field_description": "Preferred Coding System",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 3,
+      "field_name": "OM3.3",
+      "field_description": "Valid Coded \"answers\"",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 4,
+      "field_name": "OM3.4",
+      "field_description": "Normal Text/Codes For Categorical Observations",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 5,
+      "field_name": "OM3.5",
+      "field_description": "Abnormal Text/Codes For Categorical Observations",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 6,
+      "field_name": "OM3.6",
+      "field_description": "Critical Text/Codes For Categorical Observations",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 7,
+      "field_name": "OM3.7",
+      "field_description": "Value Type",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0125"
+    }
+  ],
+  "field_count": 7
+}

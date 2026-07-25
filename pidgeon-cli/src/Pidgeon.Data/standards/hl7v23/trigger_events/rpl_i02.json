@@ -1,0 +1,94 @@
+{
+  "code": "RPL_I02",
+  "name": "Return patient display list",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "This trigger event occurs when the inquirer specifies a request for a name lookup listing. Generally, this request is used by the responder when insufficient data is on hand for a positive match. In this case, the requester may ask for a list of possible candidates from which to make a selection. This event code is also used by the responder to signify that the return information contains a list of information rather than information specific to a single patient.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message acknowledgement segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PROVIDER",
+      "segment_desc": "PROVIDER group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PRD",
+      "segment_desc": "Provider Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "DSP",
+      "segment_desc": "Display data segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation pointer segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    }
+  ],
+  "segment_count": 8
+}

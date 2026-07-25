@@ -1,0 +1,35 @@
+{
+  "code": "0124",
+  "name": "Transportation mode",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CART",
+      "description": "Cart - patient travels on cart or gurney",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "PORT",
+      "description": "The examining device goes to patient’s location",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "WALK",
+      "description": "Patient walks to diagnostic service",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "WHLC",
+      "description": "Wheelchair",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

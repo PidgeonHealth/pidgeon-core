@@ -1,0 +1,29 @@
+{
+  "code": "0323",
+  "name": "Action Code",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Add",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Delete",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "U",
+      "description": "Update",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

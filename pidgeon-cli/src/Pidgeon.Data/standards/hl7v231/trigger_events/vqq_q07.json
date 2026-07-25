@@ -1,0 +1,50 @@
+{
+  "code": "VQQ_Q07",
+  "name": "Virtual table query",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "VTQ",
+      "segment_desc": "Virtual table query request segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "RDF",
+      "segment_desc": "Table row definition segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation pointer segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    }
+  ],
+  "segment_count": 4
+}

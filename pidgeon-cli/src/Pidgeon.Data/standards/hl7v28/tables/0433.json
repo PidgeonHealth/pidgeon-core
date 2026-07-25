@@ -1,0 +1,65 @@
+{
+  "code": "0433",
+  "name": "Precaution Code",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Aggressive",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Blind",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C",
+      "description": "Confused",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "D",
+      "description": "Deaf",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "I",
+      "description": "On IV",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "N",
+      "description": "\"No-code\" (i.e. Do not resuscitate)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "P",
+      "description": "Paraplegic",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

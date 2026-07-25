@@ -1,0 +1,77 @@
+{
+  "code": "0489",
+  "name": "Risk Codes",
+  "version": "HL7 v2.6",
+  "chapter": "Observation Reporting",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AGG",
+      "description": "Aggressive",
+      "comment": "A danger that can be associated with certain living subjects, including humans.",
+      "sort_order": 1
+    },
+    {
+      "value": "BHZ",
+      "description": "Biohazard",
+      "comment": "Material contains microorganisms that is an environmental hazard.  Must be handled with special care.",
+      "sort_order": 2
+    },
+    {
+      "value": "BIO",
+      "description": "Biological",
+      "comment": "The dangers associated with normal biological materials. I.e. potential risk of unknown infections.  Routine biological materials from living subjects.",
+      "sort_order": 3
+    },
+    {
+      "value": "COR",
+      "description": "Corrosive",
+      "comment": "Material is corrosive and may cause severe injury to skin, mucous membranes and eyes. Avoid any unprotected contact.",
+      "sort_order": 4
+    },
+    {
+      "value": "ESC",
+      "description": "Escape Risk",
+      "comment": "The entity is at risk for escaping from containment or control.",
+      "sort_order": 5
+    },
+    {
+      "value": "EXP",
+      "description": "Explosive",
+      "comment": "Material is an explosive mixture.  Keep away from fire, sparks, and heat.",
+      "sort_order": 6
+    },
+    {
+      "value": "IFL",
+      "description": "MaterialDangerInflammable",
+      "comment": "Material is highly inflammable and in certain mixtures (with air) may lead to explosions.  Keep away from fire, sparks and excessive heat.",
+      "sort_order": 7
+    },
+    {
+      "value": "INF",
+      "description": "MaterialDangerInfectious",
+      "comment": "Material known to be infectious with human pathogenic microorganisms.  Those who handle this material must take precautions for their protection.",
+      "sort_order": 8
+    },
+    {
+      "value": "INJ",
+      "description": "Injury Hazard",
+      "comment": "Material is solid and sharp (e.g., cannulas.)  Dispose in hard container.",
+      "sort_order": 9
+    },
+    {
+      "value": "POI",
+      "description": "Poison",
+      "comment": "Material is poisonous to humans and/or animals.  Special care must be taken to avoid incorporation, even of small amounts.",
+      "sort_order": 10
+    },
+    {
+      "value": "RAD",
+      "description": "Radioactive",
+      "comment": "Material is a source for ionizing radiation and must be handled with special care to avoid injury of those who handle it and to avoid environmental hazards.",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

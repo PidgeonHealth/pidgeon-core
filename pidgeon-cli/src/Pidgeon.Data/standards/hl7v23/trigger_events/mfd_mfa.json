@@ -1,0 +1,40 @@
+{
+  "code": "MFD_MFA",
+  "name": "Master file delayed application acknowledgment",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The MFD transaction is the delayed application acknowledgment. It can be used to return “deferred” application-level acknowledgment statuses at the MFE level, without reference to the original MFN message",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master file identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MFA",
+      "segment_desc": "Master file acknowledgement segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

@@ -1,0 +1,311 @@
+{
+  "code": "State",
+  "name": "State",
+  "version": "HL7 v2.7",
+  "chapter": "",
+  "description": "",
+  "type": "PreLoaded",
+  "values": [
+    {
+      "value": "Alabama",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Alaska",
+      "description": null,
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Arizona",
+      "description": null,
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Arkansas",
+      "description": null,
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "California",
+      "description": null,
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "Colorado",
+      "description": null,
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Connecticut",
+      "description": null,
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Delaware",
+      "description": null,
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Florida",
+      "description": null,
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Georgia",
+      "description": null,
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "Hawaii",
+      "description": null,
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Idaho",
+      "description": null,
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "Illinois",
+      "description": null,
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "Indiana",
+      "description": null,
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "Iowa",
+      "description": null,
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "Kansas",
+      "description": null,
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Kentucky",
+      "description": null,
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "Louisiana",
+      "description": null,
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "Maine",
+      "description": null,
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "Maryland",
+      "description": null,
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "Massachusetts",
+      "description": null,
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "Michigan",
+      "description": null,
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "Minnesota",
+      "description": null,
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "Mississippi",
+      "description": null,
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "Missouri",
+      "description": null,
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "Montana",
+      "description": null,
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "Nebraska",
+      "description": null,
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "Nevada",
+      "description": null,
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "New Hampshire",
+      "description": null,
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "New Jersey",
+      "description": null,
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "New Mexico",
+      "description": null,
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "New York",
+      "description": null,
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "North Carolina",
+      "description": null,
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "North Dakota",
+      "description": null,
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "Ohio",
+      "description": null,
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "Oklahoma",
+      "description": null,
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "Oregon",
+      "description": null,
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "Pennsylvania",
+      "description": null,
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "Rhode Island",
+      "description": null,
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "South Carolina",
+      "description": null,
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "South Dakota",
+      "description": null,
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "Tennessee",
+      "description": null,
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "Texas",
+      "description": null,
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "Utah",
+      "description": null,
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "Vermont",
+      "description": null,
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "Virginia",
+      "description": null,
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "Washington",
+      "description": null,
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "West Virginia",
+      "description": null,
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "Wisconsin",
+      "description": null,
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "Wyoming",
+      "description": null,
+      "comment": "",
+      "sort_order": 50
+    }
+  ],
+  "value_count": 50
+}

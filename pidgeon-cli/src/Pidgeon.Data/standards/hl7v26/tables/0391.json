@@ -1,0 +1,839 @@
+{
+  "code": "0391",
+  "name": "Segment group",
+  "version": "HL7 v2.6",
+  "chapter": "Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ADMINISTRATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ALLERGY",
+      "description": null,
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "APP_STATS",
+      "description": null,
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "APP_STATUS",
+      "description": null,
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ASSOCIATED_PERSON",
+      "description": null,
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ASSOCIATED_RX_ADMIN",
+      "description": null,
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ASSOCIATED_RX_ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "AUTHORIZATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "AUTHORIZATION_CONTACT",
+      "description": null,
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "CERTIFICATE",
+      "description": null,
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "CLOCK",
+      "description": null,
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "CLOCK_AND_STATISTICS",
+      "description": null,
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "CLOCK_AND_STATS_WITH_NOTES",
+      "description": null,
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CLOCK_AND_STATS_WITH_NOTES_ALT",
+      "description": null,
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "COMMAND",
+      "description": null,
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "COMMAND_RESPONSE",
+      "description": null,
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "COMMON_ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "COMPONENT",
+      "description": null,
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "COMPONENTS",
+      "description": null,
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "CONTAINER",
+      "description": null,
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "DEFINITION",
+      "description": null,
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "DIET",
+      "description": null,
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "DISPENSE",
+      "description": null,
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "ENCODED ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "ENCODED_ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "ENCODING",
+      "description": null,
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "EXPERIENCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "FINANCIAL",
+      "description": null,
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "FINANCIAL_COMMON ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "FINANCIAL_INSURANCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "FINANCIAL_OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "FINANCIAL_ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "FINANCIAL_PROCEDURE",
+      "description": null,
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "FINANCIAL_TIMING QUANTITY",
+      "description": null,
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "FINANCIAL_TIMING_QUANTITY",
+      "description": null,
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "GENERAL RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "GENERAL_RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "GIVE",
+      "description": null,
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "GOAL",
+      "description": null,
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "GOAL_OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "GOAL_PATHWAY",
+      "description": null,
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "GOAL_ROLE",
+      "description": null,
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "GUARANTOR_INSURANCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "INSURANCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "LOCATION RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "LOCATION_RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "MERGE_INFO",
+      "description": null,
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "MF",
+      "description": null,
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "MF_CDM",
+      "description": null,
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "MF_CLIN_STUDY",
+      "description": null,
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "MF_CLIN_STUDY_SCHED",
+      "description": null,
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "MF_INV_ITEM",
+      "description": null,
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "MF_LOC_DEPT",
+      "description": null,
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "MF_LOCATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "MF_OBS_ATTRIBUTES",
+      "description": null,
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "MF_PHASE_SCHED_DETAIL",
+      "description": null,
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "MF_QUERY",
+      "description": null,
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "MF_SITE_DEFINED",
+      "description": null,
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "MF_STAFF",
+      "description": null,
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "MF_TEST",
+      "description": null,
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "MF_TEST_BATT_DETAIL",
+      "description": null,
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "MF_TEST_BATTERIES",
+      "description": null,
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "MF_TEST_CALC_DETAIL",
+      "description": null,
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "MF_TEST_CALCULATED",
+      "description": null,
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "MF_TEST_CAT_DETAIL",
+      "description": null,
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "MF_TEST_CATEGORICAL",
+      "description": null,
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "MF_TEST_NUMERIC",
+      "description": null,
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "NK1_TIMING_QTY",
+      "description": null,
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "NOTIFICATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "OBSERVATION_PRIOR",
+      "description": null,
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "OBSERVATION_REQUEST",
+      "description": null,
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "OMSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "ORDER_CHOICE",
+      "description": null,
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "ORDER_DETAIL",
+      "description": null,
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "ORDER_DETAIL_SUPPLEMENT",
+      "description": null,
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "ORDER_DIET",
+      "description": null,
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "ORDER_ENCODED",
+      "description": null,
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "ORDER_OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "ORDER_PRIOR",
+      "description": null,
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "ORDER_TRAY",
+      "description": null,
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "PATHWAY",
+      "description": null,
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "PATHWAY_ROLE",
+      "description": null,
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "PATIENT",
+      "description": null,
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "PATIENT VISIT",
+      "description": null,
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "PATIENT_PRIOR",
+      "description": null,
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "PATIENT_RESULT",
+      "description": null,
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "PATIENT_VISIT",
+      "description": null,
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "PATIENT_VISIT_PRIOR",
+      "description": null,
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "PERSONNEL RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "PERSONNEL_RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "PEX_CAUSE",
+      "description": null,
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "PEX_OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "PRIOR_RESULT",
+      "description": null,
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "PROBLEM",
+      "description": null,
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "PROBLEM_OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "PROBLEM_PATHWAY",
+      "description": null,
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "PROBLEM_ROLE",
+      "description": null,
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "PROCEDURE",
+      "description": null,
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "PRODUCT",
+      "description": null,
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "PRODUCT_STATUS",
+      "description": null,
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "PROVIDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "PROVIDER_CONTACT",
+      "description": null,
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "QBP",
+      "description": null,
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "QRY_WITH_DETAIL",
+      "description": null,
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "QUERY_RESPONSE",
+      "description": null,
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "QUERY_RESULT_CLUSTER",
+      "description": null,
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "REQUEST",
+      "description": null,
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "RESOURCE",
+      "description": null,
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "RESOURCES",
+      "description": null,
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "RESPONSE",
+      "description": null,
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "RESULT",
+      "description": null,
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "RESULTS",
+      "description": null,
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "RESULTS_NOTES",
+      "description": null,
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "ROW_DEFINITION",
+      "description": null,
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "RX_ADMINISTRATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "RX_ORDER",
+      "description": null,
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "SCHEDULE",
+      "description": null,
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "SERVICE",
+      "description": null,
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "SPECIMEN",
+      "description": null,
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "SPECIMEN_CONTAINER",
+      "description": null,
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "STAFF",
+      "description": null,
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "STUDY",
+      "description": null,
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "STUDY_OBSERVATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "STUDY_PHASE",
+      "description": null,
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "STUDY_SCHEDULE",
+      "description": null,
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "TEST_CONFIGURATION",
+      "description": null,
+      "comment": "",
+      "sort_order": 128
+    },
+    {
+      "value": "TIMING",
+      "description": null,
+      "comment": "",
+      "sort_order": 129
+    },
+    {
+      "value": "TIMING_DIET",
+      "description": null,
+      "comment": "",
+      "sort_order": 130
+    },
+    {
+      "value": "TIMING_ENCODED",
+      "description": null,
+      "comment": "",
+      "sort_order": 131
+    },
+    {
+      "value": "TIMING_GIVE",
+      "description": null,
+      "comment": "",
+      "sort_order": 132
+    },
+    {
+      "value": "TIMING_PRIOR",
+      "description": null,
+      "comment": "",
+      "sort_order": 133
+    },
+    {
+      "value": "TIMING_QTY",
+      "description": null,
+      "comment": "",
+      "sort_order": 134
+    },
+    {
+      "value": "TIMING_QUANTITY",
+      "description": null,
+      "comment": "",
+      "sort_order": 135
+    },
+    {
+      "value": "TIMING_TRAY",
+      "description": null,
+      "comment": "",
+      "sort_order": 136
+    },
+    {
+      "value": "TREATMENT",
+      "description": null,
+      "comment": "",
+      "sort_order": 137
+    },
+    {
+      "value": "VISIT",
+      "description": null,
+      "comment": "",
+      "sort_order": 138
+    }
+  ],
+  "value_count": 138
+}

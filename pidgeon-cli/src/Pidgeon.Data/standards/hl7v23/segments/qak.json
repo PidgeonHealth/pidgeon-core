@@ -1,0 +1,30 @@
+{
+  "code": "QAK",
+  "name": "Query Acknowledgement",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The QAK segment contains information sent with responses to a query.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QAK.1",
+      "field_description": "Query tag",
+      "length": "32",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "QAK.2",
+      "field_description": "Query response status",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0208"
+    }
+  ],
+  "field_count": 2
+}

@@ -1,0 +1,29 @@
+{
+  "code": "0554",
+  "name": "Invoice Reason Codes",
+  "version": "HL7 v2.7",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "LATE",
+      "description": "Late Invoice",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "NORM",
+      "description": "Normal submission",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "SUB",
+      "description": "Subscriber coverage problem",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

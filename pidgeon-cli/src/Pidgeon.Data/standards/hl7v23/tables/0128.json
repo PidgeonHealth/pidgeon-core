@@ -1,0 +1,29 @@
+{
+  "code": "0128",
+  "name": "Allergy severity",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "MI",
+      "description": "Mild",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "MO",
+      "description": "Moderate",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "SV",
+      "description": "Severe",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

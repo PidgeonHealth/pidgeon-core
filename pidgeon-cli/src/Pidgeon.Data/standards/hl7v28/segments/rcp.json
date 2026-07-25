@@ -1,0 +1,80 @@
+{
+  "code": "RCP",
+  "name": "Response Control Parameter",
+  "version": "HL7 v2.8",
+  "chapter": "Query",
+  "description": "The RCP segment is used to restrict the amount of data that should be returned in response to query.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RCP.1",
+      "field_description": "Query Priority",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0091"
+    },
+    {
+      "position": 2,
+      "field_name": "RCP.2",
+      "field_description": "Quantity Limited Request",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RCP.3",
+      "field_description": "Response Modality",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0394"
+    },
+    {
+      "position": 4,
+      "field_name": "RCP.4",
+      "field_description": "Execution And Delivery Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "RCP.5",
+      "field_description": "Modify Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0395"
+    },
+    {
+      "position": 6,
+      "field_name": "RCP.6",
+      "field_description": "Sort-by Field",
+      "length": "0",
+      "data_type": "SRT",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "RCP.7",
+      "field_description": "Segment Group Inclusion",
+      "length": "256",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0391"
+    }
+  ],
+  "field_count": 7
+}

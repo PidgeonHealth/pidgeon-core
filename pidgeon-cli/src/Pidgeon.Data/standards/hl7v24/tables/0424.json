@@ -1,0 +1,29 @@
+{
+  "code": "0424",
+  "name": "Gestation category code",
+  "version": "HL7 v2.4",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "Premature / Pre-term",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Full Term",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Overdue / Post-term",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

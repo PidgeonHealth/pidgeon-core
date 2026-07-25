@@ -1,0 +1,30 @@
+{
+  "code": "RI",
+  "name": "Repeat Interval",
+  "version": "HL7 v2.3",
+  "description": "This field contains the interval between repeating appointments. The default setting indicates that the appointment should occur once, when the component is not valued. The definition of this field is equivalent to the definition of the Interval component of the Quantity/Timing field given in Chapter 4, Section 4.4.2 “Interval component (CM).”",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RI.1",
+      "field_description": "Repeat Pattern",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0335"
+    },
+    {
+      "position": 2,
+      "field_name": "RI.2",
+      "field_description": "Explicit Time Interval",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

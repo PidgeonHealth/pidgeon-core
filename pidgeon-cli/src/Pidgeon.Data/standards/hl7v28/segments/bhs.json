@@ -1,0 +1,150 @@
+{
+  "code": "BHS",
+  "name": "Batch Header",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "The BHS segment defines the start of a batch.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "BHS.1",
+      "field_description": "Batch Field Separator",
+      "length": "1",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "BHS.2",
+      "field_description": "Batch Encoding Characters",
+      "length": "5",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "BHS.3",
+      "field_description": "Batch Sending Application",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "BHS.4",
+      "field_description": "Batch Sending Facility",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "BHS.5",
+      "field_description": "Batch Receiving Application",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "BHS.6",
+      "field_description": "Batch Receiving Facility",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "BHS.7",
+      "field_description": "Batch Creation Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "BHS.8",
+      "field_description": "Batch Security",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "BHS.9",
+      "field_description": "Batch Name/Id/Type",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "BHS.10",
+      "field_description": "Batch Comment",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "BHS.11",
+      "field_description": "Batch Control Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "BHS.12",
+      "field_description": "Reference Batch Control Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "BHS.13",
+      "field_description": "Batch Sending Network Address",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "BHS.14",
+      "field_description": "Batch Receiving Network Address",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 14
+}

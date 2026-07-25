@@ -1,0 +1,80 @@
+{
+  "code": "CSU",
+  "name": "Channel Sensitivity",
+  "version": "HL7 v2.5.1",
+  "description": "This data type defines the channel sensitivity (gain) and the units in which it is measured in a waveform result.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CSU.1",
+      "field_description": "Channel Sensitivity",
+      "length": "60",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CSU.2",
+      "field_description": "Unit Of Measure Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CSU.3",
+      "field_description": "Unit Of Measure Description",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CSU.4",
+      "field_description": "Unit Of Measure Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 5,
+      "field_name": "CSU.5",
+      "field_description": "Alternate Unit Of Measure Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CSU.6",
+      "field_description": "Alternate Unit Of Measure Description",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "CSU.7",
+      "field_description": "Alternate Unit Of Measure Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    }
+  ],
+  "field_count": 7
+}

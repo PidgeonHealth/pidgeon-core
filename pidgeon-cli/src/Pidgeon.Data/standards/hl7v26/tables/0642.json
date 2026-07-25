@@ -1,0 +1,29 @@
+{
+  "code": "0642",
+  "name": "Reorder Theory Codes",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "D",
+      "description": "DOP/DOQ",
+      "comment": "Corresponds to the theory that calculates the appropriate order point and recommends the quantity to order based on system parameters and historical trends.  DOP stands for Dynamic Order Point, and DOQ stands for Dynamic Order Quantity.",
+      "sort_order": 1
+    },
+    {
+      "value": "M",
+      "description": "MIN/MAX",
+      "comment": "Corresponds to theory - the quantity recommended is the Order Quantity, less the On Hand Quantity, and less the On Order Quantity.  The Order Amount is the desired Maximum On Hand Quantity.",
+      "sort_order": 2
+    },
+    {
+      "value": "O",
+      "description": "Override",
+      "comment": "The quantity recommended is the Order Quantity, less the On Order Quantity.  The Order Amount is the amount to order when the On Hand reaches the Order Point.",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

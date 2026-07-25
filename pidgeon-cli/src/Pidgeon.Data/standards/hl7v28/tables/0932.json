@@ -1,0 +1,23 @@
+{
+  "code": "0932",
+  "name": "Donation Duration Units",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "min",
+      "description": "Minutes",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "s",
+      "description": "Seconds",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

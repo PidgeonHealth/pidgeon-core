@@ -1,0 +1,20 @@
+{
+  "code": "QRD",
+  "name": "Withdrawn",
+  "version": "HL7 v2.7",
+  "chapter": "Query",
+  "description": "",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QRD.1",
+      "field_description": "QRD.1",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

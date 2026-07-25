@@ -1,0 +1,30 @@
+{
+  "code": "PT",
+  "name": "Processing Type",
+  "version": "HL7 v2.5",
+  "description": "This data type indicates whether to process a message as defined in HL7 Application (level 7) Processing rules.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PT.1",
+      "field_description": "Processing Id",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0103"
+    },
+    {
+      "position": 2,
+      "field_name": "PT.2",
+      "field_description": "Processing Mode",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0207"
+    }
+  ],
+  "field_count": 2
+}

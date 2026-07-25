@@ -1,0 +1,23 @@
+{
+  "code": "0109",
+  "name": "Report priority",
+  "version": "HL7 v2.6",
+  "chapter": "Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "R",
+      "description": "Routine",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "S",
+      "description": "Stat",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

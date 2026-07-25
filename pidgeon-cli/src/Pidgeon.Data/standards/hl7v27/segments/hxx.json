@@ -1,0 +1,20 @@
+{
+  "code": "Hxx",
+  "name": "Any Hl7 Segment",
+  "version": "HL7 v2.7",
+  "chapter": "",
+  "description": "",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "Hxx.1",
+      "field_description": "Hxx.1",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

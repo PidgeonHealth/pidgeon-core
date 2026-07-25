@@ -1,0 +1,29 @@
+{
+  "code": "0167",
+  "name": "Substitution status",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "G",
+      "description": "A generic substitution was dispensed.",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No substitute was dispensed.  This is equivalent to the default (null) value.",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "T",
+      "description": "A therapeutic substitution was dispensed.",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

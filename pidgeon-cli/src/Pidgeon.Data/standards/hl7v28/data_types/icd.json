@@ -1,0 +1,40 @@
+{
+  "code": "ICD",
+  "name": "Insurance Certification Definition",
+  "version": "HL7 v2.8",
+  "description": "This data type specifies whether insurance certification is required for particular patient types, and the time window for obtaining the certification. \n\nNote: Replaces the CM data type used in section 6.5.8.20 IN3-20, as of v2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ICD.1",
+      "field_description": "Certification Patient Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0150"
+    },
+    {
+      "position": 2,
+      "field_name": "ICD.2",
+      "field_description": "Certification Required",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 3,
+      "field_name": "ICD.3",
+      "field_description": "Date/Time Certification Required",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

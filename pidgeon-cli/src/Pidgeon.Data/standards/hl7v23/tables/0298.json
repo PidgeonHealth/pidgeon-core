@@ -1,0 +1,23 @@
+{
+  "code": "0298",
+  "name": "CP range type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "F",
+      "description": "Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "P",
+      "description": "Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

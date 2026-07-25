@@ -1,0 +1,70 @@
+{
+  "code": "CF",
+  "name": "Coded Element with Formatted Values",
+  "version": "HL7 v2.6",
+  "description": "This data type transmits codes and the formatted text associated with the code. This data type can be used to transmit for the first time the formatted text for the canned text portion of a report, for example, a standard radiological description for a normal chest X-ray.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CF.1",
+      "field_description": "Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CF.2",
+      "field_description": "Formatted Text",
+      "length": "65536",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CF.3",
+      "field_description": "Name Of Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 4,
+      "field_name": "CF.4",
+      "field_description": "Alternate Identifier",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CF.5",
+      "field_description": "Alternate Formatted Text",
+      "length": "65536",
+      "data_type": "FT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CF.6",
+      "field_description": "Name Of Alternate Coding System",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    }
+  ],
+  "field_count": 6
+}

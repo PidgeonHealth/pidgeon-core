@@ -1,0 +1,10 @@
+{
+  "code": "0350",
+  "name": "Occurrence code",
+  "version": "HL7 v2.5.1",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [],
+  "value_count": 0
+}

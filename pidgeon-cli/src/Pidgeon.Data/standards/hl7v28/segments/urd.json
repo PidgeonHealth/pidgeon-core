@@ -1,0 +1,20 @@
+{
+  "code": "URD",
+  "name": "Results/Update Definition",
+  "version": "HL7 v2.8",
+  "chapter": "Query",
+  "description": "",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "URD.1",
+      "field_description": "URD.1",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

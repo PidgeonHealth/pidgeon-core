@@ -1,0 +1,53 @@
+{
+  "code": "0548",
+  "name": "Signatory’s Relationship to Subject",
+  "version": "HL7 v2.6",
+  "chapter": "Medical Records/Information Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "Self",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Parent",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Next of Kin",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "Durable Power of Attorney in Healthcare Affairs",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5",
+      "description": "Conservator",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "6",
+      "description": "Emergent Practitioner (practitioner judging case as emergency requiring care without a consent)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "7",
+      "description": "Non-Emergent Practitioner (i.e. medical ethics committee)",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

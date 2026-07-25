@@ -1,0 +1,70 @@
+{
+  "code": "CM_SPS",
+  "name": "Specimen Source",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_SPS.1",
+      "field_description": "Specimen Source Name Or Code",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0070"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_SPS.2",
+      "field_description": "Additives",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM_SPS.3",
+      "field_description": "Freetext",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CM_SPS.4",
+      "field_description": "Body Site",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CM_SPS.5",
+      "field_description": "Site Modifier",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CM_SPS.6",
+      "field_description": "Collection Modifier Method Code",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

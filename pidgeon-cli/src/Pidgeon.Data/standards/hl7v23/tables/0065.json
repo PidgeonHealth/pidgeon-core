@@ -1,0 +1,53 @@
+{
+  "code": "0065",
+  "name": "Specimen action code",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Add ordered tests to the existing specimen",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "G",
+      "description": "Generated order; reflex order",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "L",
+      "description": "Lab to obtain specimen from patient",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "O",
+      "description": "Specimen obtained by service other than Lab",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "P",
+      "description": "Pending specimen; Order sent prior to delivery",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "R",
+      "description": "Revised order",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "S",
+      "description": "Schedule the tests specified below",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

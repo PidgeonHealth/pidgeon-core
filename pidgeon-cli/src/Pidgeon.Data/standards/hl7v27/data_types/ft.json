@@ -1,0 +1,9 @@
+{
+  "code": "FT",
+  "name": "Formatted Text Data",
+  "version": "HL7 v2.7",
+  "description": "This data type is derived from the TX data type by allowing the addition of embedded formatting instructions. These instructions are limited to those that are intrinsic and independent of the circumstances under which the field is being used.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

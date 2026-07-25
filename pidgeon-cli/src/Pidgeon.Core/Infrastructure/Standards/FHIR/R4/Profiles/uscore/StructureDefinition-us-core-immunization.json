@@ -1,0 +1,19 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
+  "name": "USCoreImmunizationProfile",
+  "type": "Immunization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Immunization",
+  "snapshot": {
+    "element": [
+      { "path": "Immunization", "min": 0, "max": "*" },
+      { "path": "Immunization.id", "min": 0, "max": "1", "type": [{ "code": "id" }] },
+      { "path": "Immunization.status", "min": 1, "max": "1", "type": [{ "code": "code" }], "binding": { "strength": "required", "valueSet": "http://hl7.org/fhir/ValueSet/immunization-status" } },
+      { "path": "Immunization.statusReason", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Immunization.vaccineCode", "min": 1, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Immunization.patient", "min": 1, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"] }] },
+      { "path": "Immunization.occurrence[x]", "min": 1, "max": "1", "type": [{ "code": "dateTime" }, { "code": "string" }] },
+      { "path": "Immunization.primarySource", "min": 1, "max": "1", "type": [{ "code": "boolean" }] }
+    ]
+  }
+}

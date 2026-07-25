@@ -1,0 +1,90 @@
+{
+  "code": "IPR",
+  "name": "Invoice Processing Results",
+  "version": "HL7 v2.7",
+  "chapter": "Claims and Reimbursement",
+  "description": "The Invoice Processing Results (IPR) segment provides summary information about an adjudicated Product/Service Group or Product/Service Line Item.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "IPR.1",
+      "field_description": "Ipr Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "IPR.2",
+      "field_description": "Provider Cross Reference Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "IPR.3",
+      "field_description": "Payer Cross Reference Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "IPR.4",
+      "field_description": "Ipr Status",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0571"
+    },
+    {
+      "position": 5,
+      "field_name": "IPR.5",
+      "field_description": "Ipr Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "IPR.6",
+      "field_description": "Adjudicated/Paid Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "IPR.7",
+      "field_description": "Expected Payment Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "IPR.8",
+      "field_description": "Ipr Checksum",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 8
+}

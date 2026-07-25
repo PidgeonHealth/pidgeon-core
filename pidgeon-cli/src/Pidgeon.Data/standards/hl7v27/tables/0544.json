@@ -1,0 +1,137 @@
+{
+  "code": "0544",
+  "name": "Container Condition",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CC",
+      "description": "Container Cracked",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CL",
+      "description": "Container Leaking",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CT",
+      "description": "Container Torn",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SB",
+      "description": "Seal Broken",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "XAMB",
+      "description": "Not Ambient temperature",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "XC37",
+      "description": "Not Body temperature",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "XCAMB",
+      "description": "Not Critical ambient temperature",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "XCATM",
+      "description": "Exposed to Air",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "XCFRZ",
+      "description": "Not Critical frozen temperature",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "XCREF",
+      "description": "Not Critical refrigerated temperature",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "XDFRZ",
+      "description": "Not Deep frozen",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "XDRY",
+      "description": "Not Dry",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "XFRZ",
+      "description": "Not Frozen temperature",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "XMTLF",
+      "description": "Metal Exposed",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "XNTR",
+      "description": "Not Liquid nitrogen",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "XPRTL",
+      "description": "Not Protected from light",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "XPSA",
+      "description": "Shaken",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "XPSO",
+      "description": "Exposed to shock",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "XREF",
+      "description": "Not Refrigerated temperature",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "XUFRZ",
+      "description": "Not Ultra frozen",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "XUPR",
+      "description": "Not Upright",
+      "comment": "",
+      "sort_order": 21
+    }
+  ],
+  "value_count": 21
+}

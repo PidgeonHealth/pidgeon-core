@@ -1,0 +1,35 @@
+{
+  "code": "0916",
+  "name": "Relevant Clinical Information",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "F",
+      "description": "Patient was fasting prior to the procedure",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "FNA",
+      "description": "Fasting not asked of the patient at time of procedure",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NF",
+      "description": "The patient indicated they did not fast prior to the procedure",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "NG",
+      "description": "Not Given – Patient was not asked at the time of the procedure",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

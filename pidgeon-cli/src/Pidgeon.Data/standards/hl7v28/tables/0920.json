@@ -1,0 +1,23 @@
+{
+  "code": "0920",
+  "name": "Preferred Specimen/Attribute Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Alternate",
+      "comment": "This is a specimen that is acceptable as a replacement for a preferred specimen.  In the following field (OM4-17), the sequence number of the preferred specimen must be messaged.",
+      "sort_order": 1
+    },
+    {
+      "value": "P",
+      "description": "Preferred",
+      "comment": "This specimen is Preferred for all attributes (Container and Additive) identified in the OM4 segment.",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

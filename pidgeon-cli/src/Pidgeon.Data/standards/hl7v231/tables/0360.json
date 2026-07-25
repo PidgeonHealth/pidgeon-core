@@ -1,0 +1,245 @@
+{
+  "code": "0360",
+  "name": "Degree",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AA",
+      "description": "Associate of Arts",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AAS",
+      "description": "Associate of Applied Science",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ABA",
+      "description": "Associate of Business Administration",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AE",
+      "description": "Associate of Engineering",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "AS",
+      "description": "Associate of Science",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BA",
+      "description": "Bachelor of Arts",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BBA",
+      "description": "Bachelor of Business Administration",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BE",
+      "description": "Bachelor or Engineering",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "BFA",
+      "description": "Bachelor of Fine Arts",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "BN",
+      "description": "Bachelor of Nursing",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "BS",
+      "description": "Bachelor of Science",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "BSL",
+      "description": "Bachelor of Science Law",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "BT",
+      "description": "Bachelor of Theology",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CER",
+      "description": "Certificate",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "DBA",
+      "description": "Doctor of Business Administration",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "DED",
+      "description": "Doctor of Education",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "DIP",
+      "description": "Diploma",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "DO",
+      "description": "Doctor of Osteopathy",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "HS",
+      "description": "High School Graduate",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "JD",
+      "description": "Juris Doctor",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "MA",
+      "description": "Master of Arts",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "MBA",
+      "description": "Master of Business Administration",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "MCE",
+      "description": "Master of Civil Engineering",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "MD",
+      "description": "Doctor of Medicine",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "MDI",
+      "description": "Master of Divinity",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "ME",
+      "description": "Master of Engineering",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "MED",
+      "description": "Master of Education",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "MEE",
+      "description": "Master of Electrical Engineering",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "MFA",
+      "description": "Master of Fine Arts",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "MME",
+      "description": "Master of Mechanical Engineering",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "MS",
+      "description": "Master of Science",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "MSL",
+      "description": "Master of Science Law",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "MT",
+      "description": "Master of Theology",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "NG",
+      "description": "Non-Graduate",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "PHD",
+      "description": "Doctor of Philosophy",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "PHE",
+      "description": "Doctor of Engineering",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "PHS",
+      "description": "Doctor of Science",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "SEC",
+      "description": "Secretarial Certificate",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "TS",
+      "description": "Trade School Graduate",
+      "comment": "",
+      "sort_order": 39
+    }
+  ],
+  "value_count": 39
+}

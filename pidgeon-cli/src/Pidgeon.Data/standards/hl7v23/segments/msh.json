@@ -1,0 +1,200 @@
+{
+  "code": "MSH",
+  "name": "Message header segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The MSH segment defines the intent, source, destination, and some specifics of the syntax of a message",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MSH.1",
+      "field_description": "Field Separator",
+      "length": "1",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "MSH.2",
+      "field_description": "Encoding Characters",
+      "length": "4",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MSH.3",
+      "field_description": "Sending Application",
+      "length": "180",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "MSH.4",
+      "field_description": "Sending Facility",
+      "length": "180",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "MSH.5",
+      "field_description": "Receiving Application",
+      "length": "180",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "MSH.6",
+      "field_description": "Receiving Facility",
+      "length": "180",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "MSH.7",
+      "field_description": "Date / Time of Message",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "MSH.8",
+      "field_description": "Security",
+      "length": "40",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "MSH.9",
+      "field_description": "Message Type",
+      "length": "7",
+      "data_type": "CM_MSG",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "MSH.10",
+      "field_description": "Message Control ID",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "MSH.11",
+      "field_description": "Processing ID",
+      "length": "3",
+      "data_type": "PT",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "MSH.12",
+      "field_description": "Version ID",
+      "length": "8",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0104"
+    },
+    {
+      "position": 13,
+      "field_name": "MSH.13",
+      "field_description": "Sequence Number",
+      "length": "15",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "MSH.14",
+      "field_description": "Continuation Pointer",
+      "length": "180",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "MSH.15",
+      "field_description": "Accept Acknowledgement Type",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0155"
+    },
+    {
+      "position": 16,
+      "field_name": "MSH.16",
+      "field_description": "Application Acknowledgement Type",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0155"
+    },
+    {
+      "position": 17,
+      "field_name": "MSH.17",
+      "field_description": "Country Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "ISO3166"
+    },
+    {
+      "position": 18,
+      "field_name": "MSH.18",
+      "field_description": "Character Set",
+      "length": "6",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": "0211"
+    },
+    {
+      "position": 19,
+      "field_name": "MSH.19",
+      "field_description": "Principal Language of Message",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 19
+}

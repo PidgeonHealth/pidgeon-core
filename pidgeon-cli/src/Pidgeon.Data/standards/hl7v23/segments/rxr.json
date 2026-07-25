@@ -1,0 +1,50 @@
+{
+  "code": "RXR",
+  "name": "Pharmacy route segment",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "The Pharmacy/Treatment Route segment contains the alternative combination of route, site, administration device, and administration method that are prescribed. The pharmacy, treatment staff and/or nursing staff has a choice between the routes based on either their professional judgment or administration instructions provided by the physician.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RXR.1",
+      "field_description": "Route",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0162"
+    },
+    {
+      "position": 2,
+      "field_name": "RXR.2",
+      "field_description": "Site",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0163"
+    },
+    {
+      "position": 3,
+      "field_name": "RXR.3",
+      "field_description": "Administration Device",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0164"
+    },
+    {
+      "position": 4,
+      "field_name": "RXR.4",
+      "field_description": "Administration Method",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0165"
+    }
+  ],
+  "field_count": 4
+}

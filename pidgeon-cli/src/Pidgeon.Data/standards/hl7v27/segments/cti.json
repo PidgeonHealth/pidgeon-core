@@ -1,0 +1,40 @@
+{
+  "code": "CTI",
+  "name": "Clinical Trial Identification",
+  "version": "HL7 v2.7",
+  "chapter": "Observation Reporting",
+  "description": "The CTI segment is an optional segment that contains information to identify the clinical trial, phase and time point with which an order or result is associated.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CTI.1",
+      "field_description": "Sponsor Study Id",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CTI.2",
+      "field_description": "Study Phase Identifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CTI.3",
+      "field_description": "Study Scheduled Time Point",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    }
+  ],
+  "field_count": 3
+}

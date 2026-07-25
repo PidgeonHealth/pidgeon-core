@@ -1,0 +1,12 @@
+# Local .NET build and test output
+**/bin/
+**/obj/
+/artifacts/
+/TestResults/
+
+# Editor and operating-system state
+.DS_Store
+.idea/
+.vs/
+*.suo
+*.user

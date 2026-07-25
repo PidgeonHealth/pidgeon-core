@@ -1,0 +1,29 @@
+{
+  "code": "0657",
+  "name": "Device Type",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "EO Gas Sterilizer",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Steam Sterilizer",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Peracetic Acid",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

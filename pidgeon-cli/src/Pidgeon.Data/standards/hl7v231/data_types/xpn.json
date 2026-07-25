@@ -1,0 +1,90 @@
+{
+  "code": "XPN",
+  "name": "Extended Person Name",
+  "version": "HL7 v2.3.1",
+  "description": "Example:\n|Smith^John^J^III^DR^PHD^L|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "XPN.1",
+      "field_description": "Family Name & Last Name Prefix",
+      "length": "0",
+      "data_type": "FN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "XPN.2",
+      "field_description": "Given Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "FirstName"
+    },
+    {
+      "position": 3,
+      "field_name": "XPN.3",
+      "field_description": "Middle Initial Or Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "XPN.4",
+      "field_description": "Suffix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "XPN.5",
+      "field_description": "Prefix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "XPN.6",
+      "field_description": "Degree",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0360"
+    },
+    {
+      "position": 7,
+      "field_name": "XPN.7",
+      "field_description": "Name Type Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0200"
+    },
+    {
+      "position": 8,
+      "field_name": "XPN.8",
+      "field_description": "Name Representation Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "4000"
+    }
+  ],
+  "field_count": 8
+}

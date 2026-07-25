@@ -1,0 +1,59 @@
+{
+  "code": "0364",
+  "name": "Comment type",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1R",
+      "description": "Primary Reason",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2R",
+      "description": "Secondary Reason",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AI",
+      "description": "Ancillary Instructions",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DR",
+      "description": "Duplicate/Interaction Reason",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "GI",
+      "description": "General Instructions",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "GR",
+      "description": "General Reason",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PI",
+      "description": "Patient Instructions",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RE",
+      "description": "Remark",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

@@ -1,0 +1,81 @@
+{
+  "code": "ADT_A51",
+  "message_structure": "ADT_A50",
+  "name": "Change Alternate Visit ID",
+  "version": "HL7 v2.5",
+  "chapter": "Patient Administration",
+  "description": "A change has been done at the alternate visit identifier level.  That is, a PV1-50 - Alternate Visit ID has been found to be incorrect and has been changed. \n\nAn A51 event is used to signal a change of an incorrectly assigned alternate visit ID value.  The “incorrect source alternate visit ID” value is stored in the MRG segment (MRG-6 - Prior Alternate Visit ID) and is to be changed to the “correct target alternate visit ID” value stored in the PV1 segment (PV1-50 - Alternate Visit ID).",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge Patient Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient Visit",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    }
+  ],
+  "segment_count": 7
+}

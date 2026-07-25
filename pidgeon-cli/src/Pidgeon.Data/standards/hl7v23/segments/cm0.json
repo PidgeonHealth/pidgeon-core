@@ -1,0 +1,120 @@
+{
+  "code": "CM0",
+  "name": "Clinical Study Master",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The Clinical Study Master (CM0) segment contains the information about the study itself. The sending application study number for each patient is sent in the CSR segment. The optional CM0 enables information about the study at the sending application that may be useful to the receiving systems. All of the fields in the segment describe the study status at the sending facility unless otherwise agreed upon",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM0.1",
+      "field_description": "CM0 - Set ID",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM0.2",
+      "field_description": "Sponsor Study ID",
+      "length": "60",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM0.3",
+      "field_description": "Alternate Study ID",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CM0.4",
+      "field_description": "Title of Study",
+      "length": "300",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CM0.5",
+      "field_description": "Chairman of Study",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CM0.6",
+      "field_description": "Last IRB Approval Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "CM0.7",
+      "field_description": "Total Accrual to Date",
+      "length": "8",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "CM0.8",
+      "field_description": "Last Accrual Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CM0.9",
+      "field_description": "Contact for Study",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "CM0.10",
+      "field_description": "Contact's Tel. Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "CM0.11",
+      "field_description": "Contact's Address",
+      "length": "100",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 11
+}

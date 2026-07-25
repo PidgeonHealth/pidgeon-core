@@ -1,0 +1,47 @@
+{
+  "code": "0511",
+  "name": "BP Observation Status Codes Interpretation",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Record coming over is a correction and thus replaces a final status",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Deletes the BPX record",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "F",
+      "description": "Final status; Can only be changed with a corrected status",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "O",
+      "description": "Order detail description only (no status)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "P",
+      "description": "Preliminary status",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "W",
+      "description": "Post original as wrong, e.g., transmitted for wrong patient",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

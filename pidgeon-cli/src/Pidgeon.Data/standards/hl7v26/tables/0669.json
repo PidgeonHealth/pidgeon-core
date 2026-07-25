@@ -1,0 +1,35 @@
+{
+  "code": "0669",
+  "name": "Load Status",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "LCC",
+      "description": "Load is Complete",
+      "comment": "The load is complete",
+      "sort_order": 1
+    },
+    {
+      "value": "LCN",
+      "description": "Load Canceled",
+      "comment": "The load is canceled",
+      "sort_order": 2
+    },
+    {
+      "value": "LCP",
+      "description": "Load In Process",
+      "comment": "The load is running",
+      "sort_order": 3
+    },
+    {
+      "value": "LLD",
+      "description": "Building a Load",
+      "comment": "A load is being built",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

@@ -1,0 +1,263 @@
+{
+  "code": "0227",
+  "name": "Manufacturers of vaccines",
+  "version": "HL7 v2.4",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AB",
+      "description": "Abbott Laboratories (includes Ross Products Division)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AD",
+      "description": "Adams Laboratories",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ALP",
+      "description": "Alpha Therapeutic Corporation",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AR",
+      "description": "Armour [Inactive-use CEN]",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "AVI",
+      "description": "Aviron",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BA",
+      "description": "Baxter Healthcare Corporation",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BAY",
+      "description": "Bayer Corporation (includes Miles, Inc. and Cutter Laboratories)",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BP",
+      "description": "Berna Products [Inactive-use BPC]",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "BPC",
+      "description": "Berna Products Corporation (includes Swiss Serum and Vaccine Institute Berne)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "CEN",
+      "description": "Centeon L.L.C. (includes Armour Pharmaceutical Company)",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "CHI",
+      "description": "Chiron Corporation",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "CON",
+      "description": "Connaught [Inactive-use PMC]",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "EVN",
+      "description": "Evans Medical Limited (an affiliate of Medeva Pharmaceuticals, Inc.)",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "GRE",
+      "description": "Greer Laboratories, Inc.",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "IAG",
+      "description": "Immuno International AG",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "IM",
+      "description": "Merieux [Inactive-use PMC]",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "IUS",
+      "description": "Immuno-U.S., Inc.",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "JPN",
+      "description": "The Research Foundation for Microbial Diseases of Osaka University (BIKEN)",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "KGC",
+      "description": "Korea Green Cross Corporation",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "LED",
+      "description": "Lederle [Inactive-use WAL]",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "MA",
+      "description": "Massachusetts Public Health Biologic Laboratories",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "MED",
+      "description": "MedImmune, Inc.",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "MIL",
+      "description": "Miles [Inactive-use BAY]",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "MIP",
+      "description": "Bioport Corporation (formerly Michigan Biologic Products Institute)",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "MSD",
+      "description": "Merck & Co., Inc.",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "NAB",
+      "description": "NABI (formerly North American Biologicals, Inc.)",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "NAV",
+      "description": "North American Vaccine, Inc.",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "NOV",
+      "description": "Novartis Pharmaceutical Corporation (includes Ciba-Geigy Limited and Sandoz Limited)",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "NYB",
+      "description": "New York Blood Center",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "ORT",
+      "description": "Ortho Diagnostic Systems, Inc.",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "OTC",
+      "description": "Organon Teknika Corporation",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "OTH",
+      "description": "Other manufacturer",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "PD",
+      "description": "Parkedale Pharmaceuticals (formerly Parke-Davis)",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "PMC",
+      "description": "Aventis Pasteur Inc. (formerly Pasteur Merieux Connaught; includes Connaught Laboratories and Pasteur Merieux)",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "PRX",
+      "description": "Praxis Biologics [Inactive-use WAL]",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "SCL",
+      "description": "Sclavo, Inc.",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "SI",
+      "description": "Swiss Serum and Vaccine Inst. [Inactive-use BPC]",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "SKB",
+      "description": "SmithKline Beecham",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "UNK",
+      "description": "Unknown manufacturer",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "USA",
+      "description": "United States Army Medical Research and Materiel Command",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "WA",
+      "description": "Wyeth-Ayerst [Inactive-use WAL]",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "WAL",
+      "description": "Wyeth-Ayerst (includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories, and Praxis Biologics)",
+      "comment": "",
+      "sort_order": 42
+    }
+  ],
+  "value_count": 42
+}

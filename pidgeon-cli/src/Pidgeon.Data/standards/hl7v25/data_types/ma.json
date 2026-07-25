@@ -1,0 +1,70 @@
+{
+  "code": "MA",
+  "name": "Multiplexed Array",
+  "version": "HL7 v2.5",
+  "description": "This data type is used to represent channel-multiplexed waveform data, (e.g., the digitized values from an analog-to-digital converter or other digital data source).",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MA.1",
+      "field_description": "Sample 1 From Channel 1",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "MA.2",
+      "field_description": "Sample 1 From Channel 2",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MA.3",
+      "field_description": "Sample 1 From Channel N",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "MA.4",
+      "field_description": "Sample 2 From Channel 1",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "MA.5",
+      "field_description": "Sample 2 From Channel N",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "MA.6",
+      "field_description": "Sample N From Channel N",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

@@ -1,0 +1,281 @@
+{
+  "code": "0119",
+  "name": "Order control codes",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AF",
+      "description": "Order refill request approval",
+      "comment": "AF is a response back from the placer authorizing a refill or quantity of refills",
+      "sort_order": 1
+    },
+    {
+      "value": "CA",
+      "description": "Cancel order request",
+      "comment": "A cancellation is a request not to do a previously ordered service. Confirmation of the cancellation request is provided by the filler, e.g., a message with an ORC-1-order control value of CR",
+      "sort_order": 2
+    },
+    {
+      "value": "CH",
+      "description": "Child order",
+      "comment": "The parent (PA) and child (CH) order control codes allow the spawning of “child” orders from a “parent” order without changing the parent (original order).",
+      "sort_order": 3
+    },
+    {
+      "value": "CN",
+      "description": "Combined result",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CR",
+      "description": "Canceled as requested",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DC",
+      "description": "Discontinue order request",
+      "comment": "A discontinue request code is used to stop an ongoing ordered service. It is not the same as a cancellation request, which is used in an attempt to prevent an order from happening",
+      "sort_order": 6
+    },
+    {
+      "value": "DE",
+      "description": "Data Errors",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DF",
+      "description": "Order refill request denied",
+      "comment": "DF indicates that the placer will not authorize refills for the order. The order control code reason may be used to indicate the reason for the request denial.",
+      "sort_order": 8
+    },
+    {
+      "value": "FU",
+      "description": "Order refilled or unsolicited",
+      "comment": "FU notifies the placer that the filler issued a refill for the order at the patient’s request.",
+      "sort_order": 9
+    },
+    {
+      "value": "HD",
+      "description": "Hold order request",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "HR",
+      "description": "On hold as requested",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "LI",
+      "description": "Link order to patient care message",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "NA",
+      "description": "Number assigned",
+      "comment": "The number assigned code allows the “other” application to notify the filler application of the newly-assigned filler order number. ORC-1-order control contains value of NA, ORC-2-placer order number (from the ORC with the SN value), and the newly-assigned filler order number",
+      "sort_order": 13
+    },
+    {
+      "value": "NW",
+      "description": "New Order",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "OC",
+      "description": "Order canceled",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "OD",
+      "description": "Order discontinued",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "OE",
+      "description": "Order released",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "OF",
+      "description": "Order refilled as requested",
+      "comment": "OF directly responds to the placer system’s request for a refill",
+      "sort_order": 18
+    },
+    {
+      "value": "OH",
+      "description": "Order held",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "OK",
+      "description": "Order accepted and OK",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "OR",
+      "description": "Released as requested",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "PA",
+      "description": "Parent order",
+      "comment": "The parent (PA) and child (CH) order control codes allow the spawning of “child” orders from a “parent” order without changing the parent (original order).",
+      "sort_order": 22
+    },
+    {
+      "value": "RE",
+      "description": "Observations to follow",
+      "comment": "The observations-to-follow code is used to transmit patient-specific information with an order. An order detail segment (e.g., OBR) can be followed by one or more observation segments (OBX). Any observation that can be transmitted in an ORU message can be transmitted with this mechanism. When results are transmitted with an order, the results should immediately follow the order or orders that they support",
+      "sort_order": 23
+    },
+    {
+      "value": "RF",
+      "description": "Refill order request",
+      "comment": "RF accommodates requests by both the filler or the placer. The filler may be requesting refill authorization from the placer. A placer system may be requesting a refill to be done by the filler system",
+      "sort_order": 24
+    },
+    {
+      "value": "RL",
+      "description": "Release previous hold",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "RO",
+      "description": "Replacement order",
+      "comment": "The replacement order code is sent by the filler application to another application indicating the exact replacement ordered service. It is used with the RP and RU order control codes as described above",
+      "sort_order": 26
+    },
+    {
+      "value": "RP",
+      "description": "Order replace request",
+      "comment": "The order replace request code permits the order filler to replace one or more new orders with one or more new orders, at the request of the placer application",
+      "sort_order": 27
+    },
+    {
+      "value": "RQ",
+      "description": "Replaced as requested",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "RR",
+      "description": "Request received",
+      "comment": "Left in for backward compatibility. In the current version it is equivalent to an accept acknowledgment. The request-received code indicates that an order message has been received and will be processed later. The order has not yet undergone the processing that would permit a more exact response",
+      "sort_order": 29
+    },
+    {
+      "value": "RU",
+      "description": "Replaced unsolicited",
+      "comment": "The unsolicited replacement code permits the filler application to notify another application without being requested from the placer application",
+      "sort_order": 30
+    },
+    {
+      "value": "SC",
+      "description": "Status changed",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "SN",
+      "description": "Send order number",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "SR",
+      "description": "Response to send order status request",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "SS",
+      "description": "Send order status request",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "UA",
+      "description": "Unable to accept order",
+      "comment": "An unable-to-accept code is used when a new order cannot be accepted by the filler. Possible reasons include requesting a prescription for a drug which the patient is allergic to or for an order which requires certain equipment resources which are not available such that the order cannot be filled. Note that this is different from the communication level acceptance as defined within the MSA segment",
+      "sort_order": 35
+    },
+    {
+      "value": "UC",
+      "description": "Unable to cancel",
+      "comment": "An unable-to-cancel code is used when the ordered service is at a point that it cannot be canceled by the filler or when local rules prevent cancellation by the filler. The use of this code is dependent on the value of ORC-6-response flag",
+      "sort_order": 36
+    },
+    {
+      "value": "UF",
+      "description": "Unable to refill",
+      "comment": "UF indicates an application level denial by the filler system to an authorized refill request",
+      "sort_order": 37
+    },
+    {
+      "value": "UH",
+      "description": "Unable to put on hold",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "UM",
+      "description": "Unable to replace",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "UN",
+      "description": "Unlink order from patient care message",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "UR",
+      "description": "Unable to release",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "UX",
+      "description": "Unable to change",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "XO",
+      "description": "Change order request",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "XR",
+      "description": "Changed as requested",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "XX",
+      "description": "Order changed or unsolicited",
+      "comment": "",
+      "sort_order": 45
+    }
+  ],
+  "value_count": 45
+}

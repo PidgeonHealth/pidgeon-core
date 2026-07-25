@@ -1,0 +1,130 @@
+{
+  "code": "PD1",
+  "name": "Patient Demographic",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The patient additional demographic segment contains demographic information that is likely to change about the patient.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PD1.1",
+      "field_description": "Living Dependency",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0223"
+    },
+    {
+      "position": 2,
+      "field_name": "PD1.2",
+      "field_description": "Living Arrangement",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0220"
+    },
+    {
+      "position": 3,
+      "field_name": "PD1.3",
+      "field_description": "Patient Primary Facility",
+      "length": "90",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PD1.4",
+      "field_description": "Patient Primary Care Provider Name & ID No.",
+      "length": "90",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PD1.5",
+      "field_description": "Student Indicator",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0231"
+    },
+    {
+      "position": 6,
+      "field_name": "PD1.6",
+      "field_description": "Handicap",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0295"
+    },
+    {
+      "position": 7,
+      "field_name": "PD1.7",
+      "field_description": "Living Will",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0315"
+    },
+    {
+      "position": 8,
+      "field_name": "PD1.8",
+      "field_description": "Organ Donor",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0316"
+    },
+    {
+      "position": 9,
+      "field_name": "PD1.9",
+      "field_description": "Separate Bill",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 10,
+      "field_name": "PD1.10",
+      "field_description": "Duplicate Patient",
+      "length": "2",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "PD1.11",
+      "field_description": "Publicity Indicator",
+      "length": "1",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0215"
+    },
+    {
+      "position": 12,
+      "field_name": "PD1.12",
+      "field_description": "Protection Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 12
+}

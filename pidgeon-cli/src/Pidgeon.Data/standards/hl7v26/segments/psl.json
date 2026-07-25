@@ -1,0 +1,490 @@
+{
+  "code": "PSL",
+  "name": "Product/Service Line Item",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "The Product/Service Line Item segment is used to identify individual product/service items that typically are aggregated into an Invoice. Each instance of a Product/Service Line Item corresponds to a unique product delivered or service rendered.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PSL.1",
+      "field_description": "Provider Product/Service Line Item Number",
+      "length": "73",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PSL.2",
+      "field_description": "Payer Product/Service Line Item Number",
+      "length": "73",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PSL.3",
+      "field_description": "Product/Service Line Item Sequence Number",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PSL.4",
+      "field_description": "Provider Tracking ID",
+      "length": "20",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PSL.5",
+      "field_description": "Payer Tracking ID",
+      "length": "20",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PSL.6",
+      "field_description": "Product/Service Line Item Status",
+      "length": "2",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0559"
+    },
+    {
+      "position": 7,
+      "field_name": "PSL.7",
+      "field_description": "Product/Service Code",
+      "length": "177",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0879"
+    },
+    {
+      "position": 8,
+      "field_name": "PSL.8",
+      "field_description": "Product/Service Code Modifier",
+      "length": "177",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "5",
+      "table": "0880"
+    },
+    {
+      "position": 9,
+      "field_name": "PSL.9",
+      "field_description": "Product/Service Code Description",
+      "length": "80",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "PSL.10",
+      "field_description": "Product/Service Effective Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "PSL.11",
+      "field_description": "Product/Service Expiration Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "PSL.12",
+      "field_description": "Product/Service Quantity",
+      "length": "222",
+      "data_type": "CQ",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "PSL.13",
+      "field_description": "Product/Service Unit Cost",
+      "length": "254",
+      "data_type": "CP",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "PSL.14",
+      "field_description": "Number of Items per Unit",
+      "length": "10",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PSL.15",
+      "field_description": "Product/Service Gross Amount",
+      "length": "254",
+      "data_type": "CP",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "PSL.16",
+      "field_description": "Product/Service Billed Amount",
+      "length": "254",
+      "data_type": "CP",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "PSL.17",
+      "field_description": "Product/Service Clarification Code Type",
+      "length": "10",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "20",
+      "table": "0561"
+    },
+    {
+      "position": 18,
+      "field_name": "PSL.18",
+      "field_description": "Product/Service Clarification Code Value",
+      "length": "40",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "20",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "PSL.19",
+      "field_description": "Health Document Reference Identifier",
+      "length": "73",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "5",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "PSL.20",
+      "field_description": "Processing Consideration Code",
+      "length": "10",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "20",
+      "table": "0562"
+    },
+    {
+      "position": 21,
+      "field_name": "PSL.21",
+      "field_description": "Restricted Disclosure Indicator",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 22,
+      "field_name": "PSL.22",
+      "field_description": "Related Product/Service Code Indicator",
+      "length": "177",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0879"
+    },
+    {
+      "position": 23,
+      "field_name": "PSL.23",
+      "field_description": "Product/Service Amount for Physician",
+      "length": "254",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "PSL.24",
+      "field_description": "Product/Service Cost Factor",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "PSL.25",
+      "field_description": "Cost Center",
+      "length": "250",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "PSL.26",
+      "field_description": "Billing Period",
+      "length": "49",
+      "data_type": "DR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "PSL.27",
+      "field_description": "Days without Billing",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "PSL.28",
+      "field_description": "Session-No",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "PSL.29",
+      "field_description": "Executing Physician ID",
+      "length": "20",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "PSL.30",
+      "field_description": "Responsible Physician ID",
+      "length": "20",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "PSL.31",
+      "field_description": "Role Executing Physician",
+      "length": "10",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0881"
+    },
+    {
+      "position": 32,
+      "field_name": "PSL.32",
+      "field_description": "Medical Role Executing Physician",
+      "length": "10",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0882"
+    },
+    {
+      "position": 33,
+      "field_name": "PSL.33",
+      "field_description": "Side of body",
+      "length": "3",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0894"
+    },
+    {
+      "position": 34,
+      "field_name": "PSL.34",
+      "field_description": "Number of TP's PP",
+      "length": "6",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 35,
+      "field_name": "PSL.35",
+      "field_description": "TP-Value PP",
+      "length": "6",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 36,
+      "field_name": "PSL.36",
+      "field_description": "Internal Scaling Factor PP",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 37,
+      "field_name": "PSL.37",
+      "field_description": "External Scaling Factor PP",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 38,
+      "field_name": "PSL.38",
+      "field_description": "Amount PP",
+      "length": "7",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 39,
+      "field_name": "PSL.39",
+      "field_description": "Number of TP's Technical Part",
+      "length": "6",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 40,
+      "field_name": "PSL.40",
+      "field_description": "TP-Value Technical Part",
+      "length": "6",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 41,
+      "field_name": "PSL.41",
+      "field_description": "Internal Scaling Factor Technical Part",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 42,
+      "field_name": "PSL.42",
+      "field_description": "External Scaling Factor Technical Part",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 43,
+      "field_name": "PSL.43",
+      "field_description": "Amount Technical Part",
+      "length": "7",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 44,
+      "field_name": "PSL.44",
+      "field_description": "Total Amount Professional Part + Technical Part",
+      "length": "8",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 45,
+      "field_name": "PSL.45",
+      "field_description": "VAT-Rate",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 46,
+      "field_name": "PSL.46",
+      "field_description": "Main-Service",
+      "length": "20",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 47,
+      "field_name": "PSL.47",
+      "field_description": "Validation",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 48,
+      "field_name": "PSL.48",
+      "field_description": "Comment",
+      "length": "255",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 48
+}

@@ -1,0 +1,65 @@
+{
+  "code": "0532",
+  "name": "Expanded yes/no indicator",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ASKU",
+      "description": "asked but unknown",
+      "comment": "Information was sought but not found (e.g., patient was asked but didn't know",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NA",
+      "description": "not applicable",
+      "comment": "No proper value is applicable in this context (e.g., last menstrual period for a male)",
+      "sort_order": 3
+    },
+    {
+      "value": "NASK",
+      "description": "not asked",
+      "comment": "This information has not been sought (e.g., patient was not asked",
+      "sort_order": 4
+    },
+    {
+      "value": "NAV",
+      "description": "temporarily unavailable",
+      "comment": "Information is not available at this time but it is expected that it will be available later",
+      "sort_order": 5
+    },
+    {
+      "value": "NI",
+      "description": "No Information",
+      "comment": "No information whatsoever can be inferred from this exceptional value. This is the most general exceptional value. It is also the default exceptional value",
+      "sort_order": 6
+    },
+    {
+      "value": "NP",
+      "description": "not present",
+      "comment": "Value is not present in a message. This is only defined in messages, never in application data!  All values not present in the message must be replaced by the applicable default, or no-information (NI) as the default of all defaults",
+      "sort_order": 7
+    },
+    {
+      "value": "UNK",
+      "description": "unknown",
+      "comment": "A proper value is applicable, but not known",
+      "sort_order": 8
+    },
+    {
+      "value": "Y",
+      "description": "Yes",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

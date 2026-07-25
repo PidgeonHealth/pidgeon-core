@@ -1,0 +1,80 @@
+{
+  "code": "PKG",
+  "name": "Packaging Segment",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "This segment contains the type of packaging available for the inventory supply item to be ordered and/or issued to a department or other supply location for a specified Purchasing Vendor. It would be recommended to send this segment in descending unit of measure order corresponding with the ascending Set ID.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PKG.1",
+      "field_description": "Set Id - PKG",
+      "length": "2",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PKG.2",
+      "field_description": "Packaging Units",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0818"
+    },
+    {
+      "position": 3,
+      "field_name": "PKG.3",
+      "field_description": "Default Order Unit Of Measure Indicator",
+      "length": "1",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 4,
+      "field_name": "PKG.4",
+      "field_description": "Package Quantity",
+      "length": "12",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PKG.5",
+      "field_description": "Price",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PKG.6",
+      "field_description": "Future Item Price",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PKG.7",
+      "field_description": "Future Item Price Effective Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 7
+}

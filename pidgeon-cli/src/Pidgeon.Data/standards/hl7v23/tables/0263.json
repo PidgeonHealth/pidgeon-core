@@ -1,0 +1,53 @@
+{
+  "code": "0263",
+  "name": "Level of care",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Ambulatory",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Critical care",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "E",
+      "description": "Emergency",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "F",
+      "description": "Isolation",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "N",
+      "description": "Intensive care",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "R",
+      "description": "Routine",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "S",
+      "description": "Surgery",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

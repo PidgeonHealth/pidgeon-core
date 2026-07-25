@@ -1,0 +1,47 @@
+{
+  "code": "0529",
+  "name": "Precision",
+  "version": "HL7 v2.5",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "day",
+      "comment": "Retained for backward compatibility only",
+      "sort_order": 1
+    },
+    {
+      "value": "H",
+      "description": "hour",
+      "comment": "Retained for backward compatibility only",
+      "sort_order": 2
+    },
+    {
+      "value": "L",
+      "description": "month",
+      "comment": "Retained for backward compatibility only",
+      "sort_order": 3
+    },
+    {
+      "value": "M",
+      "description": "minute",
+      "comment": "Retained for backward compatibility only",
+      "sort_order": 4
+    },
+    {
+      "value": "S",
+      "description": "second",
+      "comment": "Retained for backward compatibility only",
+      "sort_order": 5
+    },
+    {
+      "value": "Y",
+      "description": "year",
+      "comment": "Retained for backward compatibility only",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0248",
+  "name": "Product source",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Actual product involved in incident was evaluated",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "L",
+      "description": "A product from the same lot as the actual product involved was evaluated",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "N",
+      "description": "A product from a controlled/non-related inventory was evaluated",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "R",
+      "description": "A product from a reserve sample was evaluated",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

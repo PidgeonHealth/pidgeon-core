@@ -1,0 +1,279 @@
+{
+  "code": "ORL_O36",
+  "name": "Laboratory Order Response to a Single Container of a Specimen OML",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "The function of this message is to respond to an OML message where the original trigger event produced an OML with the Specimen Group segment above the ORC.  An ORL message is the application acknowledgment to an OML message.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "RESPONSE",
+      "segment_desc": "RESPONSE group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "SPECIMEN",
+      "segment_desc": "SPECIMEN group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "SPM",
+      "segment_desc": "Specimen",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN"
+      ],
+      "level": 3,
+      "order_index": 9
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/Result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN"
+      ],
+      "level": 3,
+      "order_index": 10
+    },
+    {
+      "segment_code": "SPECIMEN CONTAINER",
+      "segment_desc": "SPECIMEN CONTAINER group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN"
+      ],
+      "level": 3,
+      "order_index": 11
+    },
+    {
+      "segment_code": "SAC",
+      "segment_desc": "Specimen Container detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER"
+      ],
+      "level": 4,
+      "order_index": 12
+    },
+    {
+      "segment_code": "ORDER",
+      "segment_desc": "ORDER group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER"
+      ],
+      "level": 4,
+      "order_index": 13
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER",
+        "ORDER"
+      ],
+      "level": 5,
+      "order_index": 14
+    },
+    {
+      "segment_code": "TIMING",
+      "segment_desc": "TIMING group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER",
+        "ORDER"
+      ],
+      "level": 5,
+      "order_index": 15
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/Quantity",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER",
+        "ORDER",
+        "TIMING"
+      ],
+      "level": 6,
+      "order_index": 16
+    },
+    {
+      "segment_code": "TQ2",
+      "segment_desc": "Timing/Quantity Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER",
+        "ORDER",
+        "TIMING"
+      ],
+      "level": 6,
+      "order_index": 17
+    },
+    {
+      "segment_code": "OBSERVATION REQUEST",
+      "segment_desc": "OBSERVATION REQUEST group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER",
+        "ORDER"
+      ],
+      "level": 5,
+      "order_index": 18
+    },
+    {
+      "segment_code": "OBR",
+      "segment_desc": "Observation Request",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT",
+        "SPECIMEN",
+        "SPECIMEN CONTAINER",
+        "ORDER",
+        "OBSERVATION REQUEST"
+      ],
+      "level": 6,
+      "order_index": 19
+    }
+  ],
+  "segment_count": 20
+}

@@ -1,0 +1,40 @@
+{
+  "code": "RCD",
+  "name": "Row Column Definition",
+  "version": "HL7 v2.3",
+  "description": "Each repetition of this field consists of three components",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RCD.1",
+      "field_description": "HL7 Item Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RCD.2",
+      "field_description": "HL7 Date Type",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RCD.3",
+      "field_description": "Maximum Column Width",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

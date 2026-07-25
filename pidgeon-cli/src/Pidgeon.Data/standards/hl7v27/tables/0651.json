@@ -1,0 +1,23 @@
+{
+  "code": "0651",
+  "name": "Labor Calculation Type",
+  "version": "HL7 v2.7",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CST",
+      "description": "Cost",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "TME",
+      "description": "Time",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

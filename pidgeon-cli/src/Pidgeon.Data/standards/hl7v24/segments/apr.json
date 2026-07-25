@@ -1,0 +1,60 @@
+{
+  "code": "APR",
+  "name": "Appointment Preferences",
+  "version": "HL7 v2.4",
+  "chapter": "Scheduling",
+  "description": "The APR segment contains parameters and preference specifications used for requesting appointments in the SRM message. It allows placer applications to provide coded parameters and preference indicators to the filler application, to help determine when a requested appointment should be scheduled.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "APR.1",
+      "field_description": "Time Selection Criteria",
+      "length": "80",
+      "data_type": "SCV",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "APR.2",
+      "field_description": "Resource Selection Criteria",
+      "length": "80",
+      "data_type": "SCV",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "APR.3",
+      "field_description": "Location Selection Criteria",
+      "length": "80",
+      "data_type": "SCV",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "APR.4",
+      "field_description": "Slot Spacing Criteria",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "APR.5",
+      "field_description": "Filler Override Criteria",
+      "length": "80",
+      "data_type": "SCV",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

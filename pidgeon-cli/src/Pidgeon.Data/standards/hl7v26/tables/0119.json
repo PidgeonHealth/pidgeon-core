@@ -1,0 +1,317 @@
+{
+  "code": "0119",
+  "name": "Order control codes",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AF",
+      "description": "Order/service refill request approval",
+      "comment": "Placer Applications. AF is a response to RF where the placer authorizing a refill or quantity of refills.",
+      "sort_order": 1
+    },
+    {
+      "value": "CA",
+      "description": "Cancel order/service request",
+      "comment": "Placer Applications. A cancellation is a request by the placer for the filler not to do a previously ordered service. Confirmation of the cancellation request is provided by the filler, e.g., a message with an ORC-1-order control value of CR. Typical responses include, but are not limited to, CR - Cancelled as requested, UC - Unable to Cancel.",
+      "sort_order": 2
+    },
+    {
+      "value": "CH",
+      "description": "Child order/service",
+      "comment": "Placer or Filler Applications. Used in conjunction with the PA - Parent order control code. Refer to PA order control code for discussion.",
+      "sort_order": 3
+    },
+    {
+      "value": "CN",
+      "description": "Combined result",
+      "comment": "Filler Applications. The combined result code provides a mechanism to transmit results that are associated with two or more orders.",
+      "sort_order": 4
+    },
+    {
+      "value": "CR",
+      "description": "Canceled as requested",
+      "comment": "Filler Applications. A response by the filler application that a request to cancel (CA by the placer application) was performed successfully.",
+      "sort_order": 5
+    },
+    {
+      "value": "DC",
+      "description": "Discontinue order/service request",
+      "comment": "Placer Applications. A request by the placer application for the filler application to discontinue a previously requested service. The differentiation between discontinue and cancel is that discontinue effects the order/service and all future occurrences, cancel refers to just the present action. Typical responses include, but are not limited to, CR - Cancelled as requested, UC - Unable to Cancel.",
+      "sort_order": 6
+    },
+    {
+      "value": "DE",
+      "description": "Data errors",
+      "comment": "Placer or Filler Applications.",
+      "sort_order": 7
+    },
+    {
+      "value": "DF",
+      "description": "Order/service refill request denied",
+      "comment": "Placer Applications. In response to a Filler application requesting refill authorization (RF), DF indicates that the placer does not authorize refills for the order.",
+      "sort_order": 8
+    },
+    {
+      "value": "DR",
+      "description": "Discontinued as requested",
+      "comment": "Filler Applications. The filler, in response to a request to discontinue (DC from the placer application), has discontinued the order/service.",
+      "sort_order": 9
+    },
+    {
+      "value": "FU",
+      "description": "Order/service refilled, unsolicited",
+      "comment": "Filler Applications. FU notifies the placer that the filler issued a refill for the order at the patient's request.",
+      "sort_order": 10
+    },
+    {
+      "value": "HD",
+      "description": "Hold order request",
+      "comment": "Placer Applications. Typical responses include, but are not limited to, CR - Cancelled as requested, UC - Unable to Cancel.",
+      "sort_order": 11
+    },
+    {
+      "value": "HR",
+      "description": "On hold as requested",
+      "comment": "Filler Applications.",
+      "sort_order": 12
+    },
+    {
+      "value": "LI",
+      "description": "Link order/service to patient care problem or goal",
+      "comment": "Placer or Filler Applications. Refer to Chapter 12 Patient Care for complete discussion.",
+      "sort_order": 13
+    },
+    {
+      "value": "MC",
+      "description": "Miscellaneous Charge - not associated with an order",
+      "comment": "applies to DFT^P03^DFT_P03 and DFT^P11^DFT_P11",
+      "sort_order": 14
+    },
+    {
+      "value": "NA",
+      "description": "Number assigned",
+      "comment": "Placer Applications. There are three circumstances that involve requesting an order number (ORC-2-placer order number or ORC-3-filler order number): (1) When the filler application needs to request an ORC-3-filler order number from a centralized application (e.g., HIS).",
+      "sort_order": 15
+    },
+    {
+      "value": "NW",
+      "description": "New order/service",
+      "comment": "Placer Applications.See comments for NA - Number Assigned.",
+      "sort_order": 16
+    },
+    {
+      "value": "OC",
+      "description": "Order/service canceled",
+      "comment": "Filler Applications.",
+      "sort_order": 17
+    },
+    {
+      "value": "OD",
+      "description": "Order/service discontinued",
+      "comment": "Filler Applications.",
+      "sort_order": 18
+    },
+    {
+      "value": "OE",
+      "description": "Order/service released",
+      "comment": "Filler Applications.",
+      "sort_order": 19
+    },
+    {
+      "value": "OF",
+      "description": "Order/service refilled as requested",
+      "comment": "Filler Applications. OF directly responds to the placer system's request for a refill.",
+      "sort_order": 20
+    },
+    {
+      "value": "OH",
+      "description": "Order/service held",
+      "comment": "Filler Applications.",
+      "sort_order": 21
+    },
+    {
+      "value": "OK",
+      "description": "Order/service accepted & OK",
+      "comment": "Filler Applications.See comments for NA - Number Assigned.",
+      "sort_order": 22
+    },
+    {
+      "value": "OP",
+      "description": "Notification of order for outside dispense",
+      "comment": "Placer Applications. These order control codes are used to communicate an order between systems where the order is intended for informational purposes.",
+      "sort_order": 23
+    },
+    {
+      "value": "OR",
+      "description": "Released as requested",
+      "comment": "Filler Applications.",
+      "sort_order": 24
+    },
+    {
+      "value": "PA",
+      "description": "Parent order/service",
+      "comment": "Filler Applications. The parent (PA) and child (CH) order control codes allow the spawning of \"child\" orders from a \"parent\" order without changing the parent (original order).",
+      "sort_order": 25
+    },
+    {
+      "value": "PR",
+      "description": "Previous Results with new order/service",
+      "comment": "Placer Applications. PR indicates that this ORC is part of an ORU structure containing previous observation, which is embedded in the order.",
+      "sort_order": 26
+    },
+    {
+      "value": "PY",
+      "description": "Notification of replacement order for outside dispense",
+      "comment": "Placer Applications. See comments for OP - Notification of order for outside dispense.",
+      "sort_order": 27
+    },
+    {
+      "value": "RE",
+      "description": "Observations/Performed Service to follow",
+      "comment": "Placer or Filler Applications. The observations-to-follow code is used to transmit patient-specific information with an order.",
+      "sort_order": 28
+    },
+    {
+      "value": "RF",
+      "description": "Refill order/service request",
+      "comment": "Placer or Filler Applications. RF accommodates requests by either the filler or the placer. The filler may be requesting refill authorization from the placer. A placer system may be requesting a refill to be done by the filler system. Typical responses include, but are not limited to: For a Filler request AF - Order/service refill request approval, DF - Order/service refill request denied; for a Placer request RE - Observations/Performed Service to follow, UF - Unable to refill.",
+      "sort_order": 29
+    },
+    {
+      "value": "RL",
+      "description": "Release previous hold",
+      "comment": "Placer Applications.",
+      "sort_order": 30
+    },
+    {
+      "value": "RO",
+      "description": "Replacement order",
+      "comment": "Placer or Filler Applications. A replacement is the substitution of one or more orders for one or more previously ordered services.",
+      "sort_order": 31
+    },
+    {
+      "value": "RP",
+      "description": "Order/service replace request",
+      "comment": "Placer Applications. A replacement is the substitution of one or more orders for one or more previously ordered services.",
+      "sort_order": 32
+    },
+    {
+      "value": "RQ",
+      "description": "Replaced as requested",
+      "comment": "Filler Applications. A replacement is the substitution of one or more orders for one or more previously ordered services.",
+      "sort_order": 33
+    },
+    {
+      "value": "RR",
+      "description": "Request received",
+      "comment": "Placer or Filler Applications. Left in for backward compatibility. In the current version it is equivalent to an accept acknowledgment. The request-received code indicates that an order message has been received and will be processed later. The order has not yet undergone the processing that would permit a more exact response.",
+      "sort_order": 34
+    },
+    {
+      "value": "RU",
+      "description": "Replaced unsolicited",
+      "comment": "Filler Applications. A replacement is the substitution of one or more orders for one or more previously ordered services.",
+      "sort_order": 35
+    },
+    {
+      "value": "SC",
+      "description": "Status changed",
+      "comment": "Placer or Filler Applications.",
+      "sort_order": 36
+    },
+    {
+      "value": "SN",
+      "description": "Send order/service number",
+      "comment": "Placer Applications.See comments for NA - Number Assigned.",
+      "sort_order": 37
+    },
+    {
+      "value": "SR",
+      "description": "Response to send order/service status request",
+      "comment": "Filler Applications.",
+      "sort_order": 38
+    },
+    {
+      "value": "SS",
+      "description": "Send order/service status request",
+      "comment": "Placer Applications.",
+      "sort_order": 39
+    },
+    {
+      "value": "UA",
+      "description": "Unable to accept order/service",
+      "comment": "Filler Applications. An unable-to-accept code is used when a new order cannot be accepted by the filler. Possible reasons include requesting a prescription for a drug which the patient is allergic to or for an order which requires certain equipment resources which are not available such that the order cannot be filled. Note that this is different from the communication level acceptance as defined within the MSA segment.",
+      "sort_order": 40
+    },
+    {
+      "value": "UC",
+      "description": "Unable to cancel",
+      "comment": "Filler Applications. An unable-to-cancel code is used when the ordered service is at a point that it cannot be canceled by the filler or when local rules prevent cancellation by the filler. The use of this code is dependent on the value of ORC-6-response flag.",
+      "sort_order": 41
+    },
+    {
+      "value": "UD",
+      "description": "Unable to discontinue",
+      "comment": "Filler Applications.",
+      "sort_order": 42
+    },
+    {
+      "value": "UF",
+      "description": "Unable to refill",
+      "comment": "Filler Applications. Negative response to RF Refill order/service request, indicating that the receiving application was not able to complete the refill request.",
+      "sort_order": 43
+    },
+    {
+      "value": "UH",
+      "description": "Unable to put on hold",
+      "comment": "Filler Applications.",
+      "sort_order": 44
+    },
+    {
+      "value": "UM",
+      "description": "Unable to replace",
+      "comment": "Filler Applications.",
+      "sort_order": 45
+    },
+    {
+      "value": "UN",
+      "description": "Unlink order/service from patient care problem or goal",
+      "comment": "Placer or Filler Applications. Refer to Chapter 12 Patient Care for complete discussion.",
+      "sort_order": 46
+    },
+    {
+      "value": "UR",
+      "description": "Unable to release",
+      "comment": "Filler Applications.",
+      "sort_order": 47
+    },
+    {
+      "value": "UX",
+      "description": "Unable to change",
+      "comment": "Filler Applications.",
+      "sort_order": 48
+    },
+    {
+      "value": "XO",
+      "description": "Change order/service request",
+      "comment": "Placer Applications.",
+      "sort_order": 49
+    },
+    {
+      "value": "XR",
+      "description": "Changed as requested",
+      "comment": "Filler Applications.",
+      "sort_order": 50
+    },
+    {
+      "value": "XX",
+      "description": "Order/service changed, unsol.",
+      "comment": "Filler Applications.",
+      "sort_order": 51
+    }
+  ],
+  "value_count": 51
+}

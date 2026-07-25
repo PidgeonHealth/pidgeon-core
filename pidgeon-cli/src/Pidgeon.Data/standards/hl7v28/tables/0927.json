@@ -1,0 +1,29 @@
+{
+  "code": "0927",
+  "name": "Arm Stick",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "B",
+      "description": "Both Arms",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "L",
+      "description": "Left Arm",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "R",
+      "description": "Right Arm",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,101 @@
+{
+  "code": "0291",
+  "name": "Subtype of referenced data",
+  "version": "HL7 v2.5",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BASIC",
+      "description": "ISDN PCM audio data",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DICOM",
+      "description": "Digital Imaging and Communications in Medicine",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FAX",
+      "description": "Facsimile data",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "GIF",
+      "description": "Graphics Interchange Format",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "HTML",
+      "description": "Hypertext Markup Language",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "JOT",
+      "description": "Electronic ink data (Jot 1.0 standard)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "JPEG",
+      "description": "Joint Photographic Experts Group",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Octet-stream",
+      "description": "Uninterpreted binary data",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PICT",
+      "description": "PICT format image data",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PostScript",
+      "description": "PostScript program",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "RTF",
+      "description": "Rich Text Format",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "SGML",
+      "description": "Standard Generalized Markup Language (HL7 V2.3.1 and later)",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "TIFF",
+      "description": "TIFF image data",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "x-hl7-cda-level-one",
+      "description": "HL7 Clinical Document Architecture Level One document",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "XML",
+      "description": "Extensible Markup Language (HL7 V2.3.1 and later)",
+      "comment": "",
+      "sort_order": 15
+    }
+  ],
+  "value_count": 15
+}

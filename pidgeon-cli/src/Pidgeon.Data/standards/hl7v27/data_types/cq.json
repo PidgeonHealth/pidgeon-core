@@ -1,0 +1,30 @@
+{
+  "code": "CQ",
+  "name": "Composite Quantity With Units",
+  "version": "HL7 v2.7",
+  "description": "Note: CQ cannot be legally expressed when embedded within another data type. Its use is constrained to a segment field.\n\nExamples:\nkilograms is an ISO unit\n|123.7^kg|\n\nweight in pounds is a customary US unit defined within ANSI+.\t\n|150^lb&&ANSI+|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CQ.1",
+      "field_description": "Quantity",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CQ.2",
+      "field_description": "Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

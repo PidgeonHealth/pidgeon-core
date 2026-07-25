@@ -1,0 +1,77 @@
+{
+  "code": "0123",
+  "name": "Result status",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Some, but not all results available",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Correction to results",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "F",
+      "description": "Final results; results stored and verified. Can only be changed with a corrected result.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "I",
+      "description": "No results available; specimen received procedure incomplete",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "O",
+      "description": "Order received; specimen not yet received",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "P",
+      "description": "Preliminary: A verified early result is available final results not yet obtained",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "R",
+      "description": "Results stored; not yet verified",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "S",
+      "description": "No results available; procedure scheduled but not done",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "X",
+      "description": "No results available; Order canceled.",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Y",
+      "description": "No order on record for this test. (Used only on queries)",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "Z",
+      "description": "No record of this patient. (Used only on queries)",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

@@ -1,0 +1,50 @@
+{
+  "code": "MA",
+  "name": "Multiplexed Array",
+  "version": "HL7 v2.6",
+  "description": "This data type is used to represent channel-multiplexed waveform data. Assuming that fields that utilize this data type repeat and that Y represents the specific repetition, the components of the repetition will reflect sample Y from each channel.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MA.1",
+      "field_description": "Sample Y From Channel 1",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "MA.2",
+      "field_description": "Sample Y From Channel 2",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MA.3",
+      "field_description": "Sample Y From Channel 3",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "MA.4",
+      "field_description": "Sample Y From Channel 4",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

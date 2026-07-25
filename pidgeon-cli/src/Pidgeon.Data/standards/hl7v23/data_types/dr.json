@@ -1,0 +1,20 @@
+{
+  "code": "DR",
+  "name": "Date Time Range",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DR.1",
+      "field_description": "Range Start Date/time",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

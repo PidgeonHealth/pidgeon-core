@@ -1,0 +1,40 @@
+{
+  "code": "RQQ_Q09",
+  "name": "Event replay query",
+  "version": "HL7 v2.4",
+  "chapter": "Query",
+  "description": "The Event Replay Query under version 2.3 provides a way for the querying system to request data formatted very similar to the format that would have been used were this data to be sent as an update in response to a trigger event.\nThe RQQ is used to request data formatted as an event replay response",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "ERQ",
+      "segment_desc": "Event Replay Query",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

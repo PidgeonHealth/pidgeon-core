@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    This assembly is the independently composable public baseline boundary.
+    Every runtime resource is an exact, provenance-cleared entry in
+    config/public-compositions/community.yaml (the standards-licensing register
+    holds the dispositions). Do not copy or glob resources from the legacy
+    Pidgeon.Data project into this project: the generated Resources props below
+    is the only admission mechanism. That import is deliberately UNCONDITIONAL -
+    the payload must be present in monorepo builds too, or the in-repo
+    byte-parity proof against the legacy embedded data could not run.
+  -->
+  <Import
+    Project="..\..\..\config\public-compositions\generated\Pidgeon.Data.Baseline.Community.items.props"
+    Condition="'$(PidgeonCommunityComposition)' == 'true'" />
+  <Import
+    Project="..\..\..\config\public-compositions\generated\Pidgeon.Data.Baseline.Resources.items.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!--
+    Package metadata is active only for an explicit monorepo candidate proof or
+    inside the verified public projection. Last-wins override of the
+    IsPackable=false default above.
+  -->
+  <PropertyGroup Condition="'$(PidgeonCandidatePack)' == 'true' Or '$(PidgeonPublicProjection)' == 'true'">
+    <IsPackable>true</IsPackable>
+    <PackageId>Pidgeon.Data.Baseline</PackageId>
+    <Version>0.1.0-beta.1</Version>
+    <Authors>Pidgeon Health</Authors>
+    <Company>Pidgeon Health</Company>
+    <Description>Offline baseline data package for Pidgeon.Core with provenance-cleared reference resources.</Description>
+    <PackageDescription>Offline baseline data package for Pidgeon.Core with provenance-cleared reference resources.</PackageDescription>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/PidgeonHealth/pidgeon-core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PidgeonHealth/pidgeon-core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>healthcare;interoperability;hl7;fhir;reference-data;synthetic-data</PackageTags>
+    <PackageReleaseNotes>First source-correspondent public beta of the Pidgeon baseline data package.</PackageReleaseNotes>
+    <PackageReadmeFile>PACKAGE_README.md</PackageReadmeFile>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EmbedAllSources>true</EmbedAllSources>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(PidgeonCandidatePack)' == 'true' Or '$(PidgeonPublicProjection)' == 'true'">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <None Include="PACKAGE_README.md" Pack="true" PackagePath="/" />
+    <None Include="NOTICE.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(PidgeonCommunityComposition)' != 'true'">
+    <ProjectReference Include="..\Pidgeon.Core\Pidgeon.Core.csproj" />
+  </ItemGroup>
+
+</Project>

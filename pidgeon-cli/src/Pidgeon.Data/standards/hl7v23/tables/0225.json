@@ -1,0 +1,29 @@
+{
+  "code": "0225",
+  "name": "Escort required",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "N",
+      "description": "Not Required",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Required",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

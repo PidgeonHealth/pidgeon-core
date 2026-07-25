@@ -1,0 +1,29 @@
+{
+  "code": "0502",
+  "name": "Non-Subject Consenter Reason",
+  "version": "HL7 v2.5.1",
+  "chapter": "Medical Records/Information Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "LM",
+      "description": "Legally mandated",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "MIN",
+      "description": "Subject is a minor",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NC",
+      "description": "Subject is not competent to consent",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,60 @@
+{
+  "code": "ADT_A30",
+  "name": "Merge person information",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "An A30 event can be used to merge person information on an MPI. The A34 (merge patient information-patient ID only), A35 (merge patient information-account number only), A36 (merge patient information-patient ID & account number), A40 (merge patient-internal ID), A41(merge account-patient account number) and A42 (merge visit-visit number)events should be used to merge patient information for a …",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge patient information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    }
+  ],
+  "segment_count": 5
+}

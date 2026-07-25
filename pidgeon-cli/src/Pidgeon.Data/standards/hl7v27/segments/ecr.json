@@ -1,0 +1,40 @@
+{
+  "code": "ECR",
+  "name": "Equipment Command Response",
+  "version": "HL7 v2.7",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The equipment command response segment contains the receiving component's response to the previously received command.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ECR.1",
+      "field_description": "Command Response",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0387"
+    },
+    {
+      "position": 2,
+      "field_name": "ECR.2",
+      "field_description": "Date/Time Completed",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "ECR.3",
+      "field_description": "Command Response Parameters",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

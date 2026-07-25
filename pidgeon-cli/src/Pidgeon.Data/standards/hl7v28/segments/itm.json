@@ -1,0 +1,340 @@
+{
+  "code": "ITM",
+  "name": "Material Item",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "The Material Item segment (ITM) contains information about inventory supply items (stocked or non-stocked).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ITM.1",
+      "field_description": "Item Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ITM.2",
+      "field_description": "Item Description",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "ITM.3",
+      "field_description": "Item Status",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0776"
+    },
+    {
+      "position": 4,
+      "field_name": "ITM.4",
+      "field_description": "Item Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0778"
+    },
+    {
+      "position": 5,
+      "field_name": "ITM.5",
+      "field_description": "Item Category",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "ITM.6",
+      "field_description": "Subject To Expiration Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 7,
+      "field_name": "ITM.7",
+      "field_description": "Manufacturer Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "ITM.8",
+      "field_description": "Manufacturer Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "ITM.9",
+      "field_description": "Manufacturer Catalog Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "ITM.10",
+      "field_description": "Manufacturer Labeler Identification Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "ITM.11",
+      "field_description": "Patient Chargeable Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 12,
+      "field_name": "ITM.12",
+      "field_description": "Transaction Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0132"
+    },
+    {
+      "position": 13,
+      "field_name": "ITM.13",
+      "field_description": "Transaction Amount - Unit",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "ITM.14",
+      "field_description": "Stocked Item Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 15,
+      "field_name": "ITM.15",
+      "field_description": "Supply Risk Codes",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0871"
+    },
+    {
+      "position": 16,
+      "field_name": "ITM.16",
+      "field_description": "Approving Regulatory Agency",
+      "length": "0",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0790"
+    },
+    {
+      "position": 17,
+      "field_name": "ITM.17",
+      "field_description": "Latex Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 18,
+      "field_name": "ITM.18",
+      "field_description": "Ruling Act",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0793"
+    },
+    {
+      "position": 19,
+      "field_name": "ITM.19",
+      "field_description": "Item Natural Account Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0320"
+    },
+    {
+      "position": 20,
+      "field_name": "ITM.20",
+      "field_description": "Approved To Buy Quantity",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "ITM.21",
+      "field_description": "Approved To Buy Price",
+      "length": "0",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "ITM.22",
+      "field_description": "Taxable Item Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 23,
+      "field_name": "ITM.23",
+      "field_description": "Freight Charge Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 24,
+      "field_name": "ITM.24",
+      "field_description": "Item Set Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 25,
+      "field_name": "ITM.25",
+      "field_description": "Item Set Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "ITM.26",
+      "field_description": "Track Department Usage Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 27,
+      "field_name": "ITM.27",
+      "field_description": "Procedure Code",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0088"
+    },
+    {
+      "position": 28,
+      "field_name": "ITM.28",
+      "field_description": "Procedure Code Modifier",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0340"
+    },
+    {
+      "position": 29,
+      "field_name": "ITM.29",
+      "field_description": "Special Handling Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0376"
+    },
+    {
+      "position": 30,
+      "field_name": "ITM.30",
+      "field_description": "Hazardous Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 31,
+      "field_name": "ITM.31",
+      "field_description": "Sterile Indicator",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 32,
+      "field_name": "ITM.32",
+      "field_description": "Material Data Safety Sheet Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "ITM.33",
+      "field_description": "United Nations Standard Products and Services Code (UNSPSC)",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    }
+  ],
+  "field_count": 33
+}

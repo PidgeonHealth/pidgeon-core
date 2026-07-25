@@ -1,0 +1,20 @@
+{
+  "code": "CM_DDI",
+  "name": "Daily Deductible",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_DDI.1",
+      "field_description": "Delay Days",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

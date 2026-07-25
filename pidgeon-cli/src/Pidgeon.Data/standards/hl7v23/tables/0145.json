@@ -1,0 +1,47 @@
+{
+  "code": "0145",
+  "name": "Room type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "2ICU",
+      "description": "Second intensive care unit",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2PRI",
+      "description": "Second private room",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2SPR",
+      "description": "Second semi-private room",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ICU",
+      "description": "Intensive care unit",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PRI",
+      "description": "Private room",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "SPR",
+      "description": "Semi-private room",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

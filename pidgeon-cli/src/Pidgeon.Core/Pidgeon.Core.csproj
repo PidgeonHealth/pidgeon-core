@@ -1,0 +1,99 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The monorepo builds the full commercial superset by default. Public-source
+    qualification sets PidgeonCommunityComposition=true, which imports the
+    exact generated allowlist for this same assembly. Do not replace this with
+    a second Core project or a directory glob: community membership is owned by
+    config/public-compositions/community.yaml and new files default private.
+  -->
+  <Import
+    Project="..\..\..\config\public-compositions\generated\Pidgeon.Core.Community.items.props"
+    Condition="'$(PidgeonCommunityComposition)' == 'true'" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Public packages are produced only from the verified public-source projection. -->
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!--
+    Package metadata is active only for an explicit monorepo candidate proof or
+    inside the verified public projection. Last-wins override of the
+    IsPackable=false default above - that literal line stays for the
+    publication-policy tests.
+  -->
+  <PropertyGroup Condition="'$(PidgeonCandidatePack)' == 'true' Or '$(PidgeonPublicProjection)' == 'true'">
+    <IsPackable>true</IsPackable>
+    <PackageId>Pidgeon.Core</PackageId>
+    <Version>0.1.0-beta.1</Version>
+    <Authors>Pidgeon Health</Authors>
+    <Company>Pidgeon Health</Company>
+    <Description>Open healthcare interoperability engine for deterministic message generation, validation, lookup, and de-identification.</Description>
+    <PackageDescription>Open healthcare interoperability engine for deterministic message generation, validation, lookup, and de-identification.</PackageDescription>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/PidgeonHealth/pidgeon-core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PidgeonHealth/pidgeon-core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>healthcare;interoperability;hl7;fhir;ncpdp;testing;synthetic-data</PackageTags>
+    <PackageReleaseNotes>First source-correspondent public beta of the Pidgeon healthcare interoperability engine.</PackageReleaseNotes>
+    <PackageReadmeFile>PACKAGE_README.md</PackageReadmeFile>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EmbedAllSources>true</EmbedAllSources>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(PidgeonCandidatePack)' == 'true' Or '$(PidgeonPublicProjection)' == 'true'">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <None Include="PACKAGE_README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3" />
+    <!-- The community reference plugin caches resolved elements via IMemoryCache,
+         so the caching package is part of the community dependency set. -->
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+    <!-- Explicit CC0 FHIR package installation uses IHttpClientFactory in both compositions. -->
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <!-- The generation closure parses YAML reference data (narrative-note corpus,
+         clinical scenario/coherence models), so YamlDotNet (MIT) is part of the
+         community dependency set. -->
+    <PackageReference Include="YamlDotNet" Version="16.1.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(PidgeonCommunityComposition)' != 'true'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.11" />
+    <PackageReference Include="SSH.NET" Version="2024.2.0" />
+    <PackageReference Include="LLamaSharp" Version="0.24.0" ExcludeAssets="native" />
+    <PackageReference Include="LLamaSharp.Backend.Cpu" Version="0.24.0" ExcludeAssets="native" />
+    <PackageReference Include="NSec.Cryptography" Version="24.4.0" />
+    <PackageReference Include="ZstdSharp.Port" Version="0.8.8" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(PidgeonCommunityComposition)' != 'true'">
+    <ProjectReference Include="..\Pidgeon.Data\Pidgeon.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(PidgeonCommunityComposition)' != 'true'">
+    <EmbeddedResource Include="Infrastructure\Standards\FHIR\R4\Profiles\**\*.json">
+      <LogicalName>fhir.r4.profiles.$([System.String]::Copy('%(RecursiveDir)').Replace('\', '.').Replace('/', '.'))%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <!-- The PAS $submit probe payload mirrors the committed cross-checked request fixture at
+         golden/fhir/profile-corpus/pas-request-bundle.conformant.json (golden stays canonical).
+         An in-project copy keeps Docker builds with context pidgeon-cli/ working (b74);
+         drift is enforced by PasSubmitBundleSourceParityTests, not by a path reach-out. -->
+    <EmbeddedResource Include="Infrastructure\Conformance\pas-submit-request-bundle.json">
+      <LogicalName>Pidgeon.Core.Conformance.pas-submit-request-bundle.json</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,59 @@
+{
+  "code": "0140",
+  "name": "Military service",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "NATO",
+      "description": "North Atlantic Treaty Organization",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "NOAA",
+      "description": "National Oceanic and Atmospheric Administration",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "USA",
+      "description": "U.S. Army",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "USAF",
+      "description": "U.S. Air Force",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "USCG",
+      "description": "U.S. Coast Guard",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "USMC",
+      "description": "U.S. Marines",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "USN",
+      "description": "U.S. Navy",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "USPHS",
+      "description": "U.S. Public Health Service",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

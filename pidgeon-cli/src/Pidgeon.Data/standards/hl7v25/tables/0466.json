@@ -1,0 +1,29 @@
+{
+  "code": "0466",
+  "name": "Ambulatory Payment",
+  "version": "HL7 v2.5",
+  "chapter": "Financial Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "031",
+      "description": "Dental procedures",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "163",
+      "description": "Excision/biopsy",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "181",
+      "description": "Level 1 skin repair.",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

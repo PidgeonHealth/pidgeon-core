@@ -1,0 +1,35 @@
+{
+  "code": "0311",
+  "name": "Job status",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "P",
+      "description": "Permanent",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "T",
+      "description": "Temporary",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

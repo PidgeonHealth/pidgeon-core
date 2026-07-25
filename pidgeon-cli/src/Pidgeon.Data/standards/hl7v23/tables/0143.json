@@ -1,0 +1,10 @@
+{
+  "code": "0143",
+  "name": "Non-covered insurance code",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [],
+  "value_count": 0
+}

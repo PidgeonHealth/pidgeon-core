@@ -1,0 +1,35 @@
+{
+  "code": "0478",
+  "name": "Formulary Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "G",
+      "description": "Pharmaceutical substance is in the formulary, but guidelines apply",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "Pharmaceutical substance is NOT in the formulary",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "R",
+      "description": "Pharmaceutical substance is in the formulary, but restrictions apply",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Y",
+      "description": "Pharmaceutical substance is in the formulary",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

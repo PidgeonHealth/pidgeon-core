@@ -1,0 +1,53 @@
+{
+  "code": "0834",
+  "name": "MIME Types",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "application",
+      "description": "Application data",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "audio",
+      "description": "Audio data",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "image",
+      "description": "Image data",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "model",
+      "description": "Model data",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "multipart",
+      "description": "MIME multipart package",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "text",
+      "description": "Text data",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "video",
+      "description": "Video data",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

@@ -1,0 +1,140 @@
+{
+  "code": "EHC_E04",
+  "name": "Re-Assess HealthCare Services Invoice Request",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "This message is used to submit a single Re-Assess HealthCare Services Invoice Request to a TPA/Payer for processing. The Re-Assess HealthCare Services Invoice Request is used by a Provider, to request review of a previously adjudicated HealthCare Services Invoice, with optional specification of a Product/Service Line Item within that Invoice.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "REASSESSMENT REQUEST INFO",
+      "segment_desc": "REASSESSMENT REQUEST INFO group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "IVC",
+      "segment_desc": "Invoice",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PRODUCT SERVICE SECTION",
+      "segment_desc": "PRODUCT SERVICE SECTION group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PSS",
+      "segment_desc": "Product/Service Section",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO",
+        "PRODUCT SERVICE SECTION"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PRODUCT SERVICE GROUP",
+      "segment_desc": "PRODUCT SERVICE GROUP group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO",
+        "PRODUCT SERVICE SECTION"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PSG",
+      "segment_desc": "Product/Service Group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO",
+        "PRODUCT SERVICE SECTION",
+        "PRODUCT SERVICE GROUP"
+      ],
+      "level": 3,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PSL",
+      "segment_desc": "Product/Service Line Item",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "REASSESSMENT REQUEST INFO",
+        "PRODUCT SERVICE SECTION",
+        "PRODUCT SERVICE GROUP"
+      ],
+      "level": 3,
+      "order_index": 10
+    }
+  ],
+  "segment_count": 11
+}

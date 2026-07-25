@@ -1,0 +1,1505 @@
+{
+  "code": "ISO3166",
+  "name": "Country Codes",
+  "version": "HL7 v2.3",
+  "chapter": "Unknown",
+  "description": "Local Content - Tables populated with provider-defined data (for instance, patient locations, etc.).",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ABW",
+      "description": "Aruba",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AFG",
+      "description": "Afghanistan",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AGO",
+      "description": "Angola",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AIA",
+      "description": "Anguilla",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ALA",
+      "description": "Aland Islands",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ALB",
+      "description": "Albania",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "AND",
+      "description": "Andorra",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "ARE",
+      "description": "United Arab Emirates",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "ARG",
+      "description": "Argentina",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "ARM",
+      "description": "Armenia",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ASM",
+      "description": "American Samoa",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ATA",
+      "description": "Antarctica",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "ATF",
+      "description": "French Southern Territories",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "ATG",
+      "description": "Antigua and Barbuda",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "AUS",
+      "description": "Australia",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "AUT",
+      "description": "Austria",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "AZE",
+      "description": "Azerbaijan",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "BDI",
+      "description": "Burundi",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "BEL",
+      "description": "Belgium",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "BEN",
+      "description": "Benin",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "BES",
+      "description": "Bonaire, Sint Eustatius and Saba",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "BFA",
+      "description": "Burkina Faso",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "BGD",
+      "description": "Bangladesh",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "BGR",
+      "description": "Bulgaria",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "BHR",
+      "description": "Bahrain",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "BHS",
+      "description": "Bahamas",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "BIH",
+      "description": "Bosnia and Herzegovina",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "BLM",
+      "description": "Saint BarthÃ©lemy",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "BLR",
+      "description": "Belarus",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "BLZ",
+      "description": "Belize",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "BMU",
+      "description": "Bermuda",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "BOL",
+      "description": "Bolivia (Plurinational State of)",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "BRA",
+      "description": "Brazil",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "BRB",
+      "description": "Barbados",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "BRN",
+      "description": "Brunei Darussalam",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "BTN",
+      "description": "Bhutan",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "BVT",
+      "description": "Bouvet Island",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "BWA",
+      "description": "Botswana",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "CAF",
+      "description": "Central African Republic",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "CAN",
+      "description": "Canada",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "CCK",
+      "description": "Cocos (Keeling) Islands",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "CHE",
+      "description": "Switzerland",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "CHL",
+      "description": "Chile",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "CHN",
+      "description": "China",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "CIV",
+      "description": "CÃ´te d'Ivoire",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "CMR",
+      "description": "Cameroon",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "COD",
+      "description": "Congo, Democratic Republic of the",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "COG",
+      "description": "Congo",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "COK",
+      "description": "Cook Islands",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "COL",
+      "description": "Colombia",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "COM",
+      "description": "Comoros",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "CPV",
+      "description": "Cabo Verde",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "CRI",
+      "description": "Costa Rica",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "CUB",
+      "description": "Cuba",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "CUW",
+      "description": "CuraÃ§ao",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "CXR",
+      "description": "Christmas Island",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "CYM",
+      "description": "Cayman Islands",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "CYP",
+      "description": "Cyprus",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "CZE",
+      "description": "Czechia",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "DEU",
+      "description": "Germany",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "DJI",
+      "description": "Djibouti",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "DMA",
+      "description": "Dominica",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "DNK",
+      "description": "Denmark",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "DOM",
+      "description": "Dominican Republic",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "DZA",
+      "description": "Algeria",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "ECU",
+      "description": "Ecuador",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "EGY",
+      "description": "Egypt",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "ERI",
+      "description": "Eritrea",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "ESH",
+      "description": "Western Sahara",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "ESP",
+      "description": "Spain",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "EST",
+      "description": "Estonia",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "ETH",
+      "description": "Ethiopia",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "FIN",
+      "description": "Finland",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "FJI",
+      "description": "Fiji",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "FLK",
+      "description": "Falkland Islands (Malvinas)",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "FRA",
+      "description": "France",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "FRO",
+      "description": "Faroe Islands",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "FSM",
+      "description": "Micronesia (Federated States of)",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "GAB",
+      "description": "Gabon",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "GBR",
+      "description": "United Kingdom of Great Britain and Northern Ireland",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "GEO",
+      "description": "Georgia",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "GGY",
+      "description": "Guernsey",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "GHA",
+      "description": "Ghana",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "GIB",
+      "description": "Gibraltar",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "GIN",
+      "description": "Guinea",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "GLP",
+      "description": "Guadeloupe",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "GMB",
+      "description": "Gambia",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "GNB",
+      "description": "Guinea-Bissau",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "GNQ",
+      "description": "Equatorial Guinea",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "GRC",
+      "description": "Greece",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "GRD",
+      "description": "Grenada",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "GRL",
+      "description": "Greenland",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "GTM",
+      "description": "Guatemala",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "GUF",
+      "description": "French Guiana",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "GUM",
+      "description": "Guam",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "GUY",
+      "description": "Guyana",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "HKG",
+      "description": "Hong Kong",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "HMD",
+      "description": "Heard Island and McDonald Islands",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "HND",
+      "description": "Honduras",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "HRV",
+      "description": "Croatia",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "HTI",
+      "description": "Haiti",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "HUN",
+      "description": "Hungary",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "IDN",
+      "description": "Indonesia",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "IMN",
+      "description": "Isle of Man",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "IND",
+      "description": "India",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "IOT",
+      "description": "British Indian Ocean Territory",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "IRL",
+      "description": "Ireland",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "IRN",
+      "description": "Iran (Islamic Republic of)",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "IRQ",
+      "description": "Iraq",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "ISL",
+      "description": "Iceland",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "ISR",
+      "description": "Israel",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "ITA",
+      "description": "Italy",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "JAM",
+      "description": "Jamaica",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "JEY",
+      "description": "Jersey",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "JOR",
+      "description": "Jordan",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "JPN",
+      "description": "Japan",
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "KAZ",
+      "description": "Kazakhstan",
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "KEN",
+      "description": "Kenya",
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "KGZ",
+      "description": "Kyrgyzstan",
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "KHM",
+      "description": "Cambodia",
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "KIR",
+      "description": "Kiribati",
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "KNA",
+      "description": "Saint Kitts and Nevis",
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "KOR",
+      "description": "Korea, Republic of",
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "KWT",
+      "description": "Kuwait",
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "LAO",
+      "description": "Lao People's Democratic Republic",
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "LBN",
+      "description": "Lebanon",
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "LBR",
+      "description": "Liberia",
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "LBY",
+      "description": "Libya",
+      "comment": "",
+      "sort_order": 128
+    },
+    {
+      "value": "LCA",
+      "description": "Saint Lucia",
+      "comment": "",
+      "sort_order": 129
+    },
+    {
+      "value": "LIE",
+      "description": "Liechtenstein",
+      "comment": "",
+      "sort_order": 130
+    },
+    {
+      "value": "LKA",
+      "description": "Sri Lanka",
+      "comment": "",
+      "sort_order": 131
+    },
+    {
+      "value": "LSO",
+      "description": "Lesotho",
+      "comment": "",
+      "sort_order": 132
+    },
+    {
+      "value": "LTU",
+      "description": "Lithuania",
+      "comment": "",
+      "sort_order": 133
+    },
+    {
+      "value": "LUX",
+      "description": "Luxembourg",
+      "comment": "",
+      "sort_order": 134
+    },
+    {
+      "value": "LVA",
+      "description": "Latvia",
+      "comment": "",
+      "sort_order": 135
+    },
+    {
+      "value": "MAC",
+      "description": "Macao",
+      "comment": "",
+      "sort_order": 136
+    },
+    {
+      "value": "MAF",
+      "description": "Saint Martin (French part)",
+      "comment": "",
+      "sort_order": 137
+    },
+    {
+      "value": "MAR",
+      "description": "Morocco",
+      "comment": "",
+      "sort_order": 138
+    },
+    {
+      "value": "MCO",
+      "description": "Monaco",
+      "comment": "",
+      "sort_order": 139
+    },
+    {
+      "value": "MDA",
+      "description": "Moldova, Republic of",
+      "comment": "",
+      "sort_order": 140
+    },
+    {
+      "value": "MDG",
+      "description": "Madagascar",
+      "comment": "",
+      "sort_order": 141
+    },
+    {
+      "value": "MDV",
+      "description": "Maldives",
+      "comment": "",
+      "sort_order": 142
+    },
+    {
+      "value": "MEX",
+      "description": "Mexico",
+      "comment": "",
+      "sort_order": 143
+    },
+    {
+      "value": "MHL",
+      "description": "Marshall Islands",
+      "comment": "",
+      "sort_order": 144
+    },
+    {
+      "value": "MKD",
+      "description": "North Macedonia",
+      "comment": "",
+      "sort_order": 145
+    },
+    {
+      "value": "MLI",
+      "description": "Mali",
+      "comment": "",
+      "sort_order": 146
+    },
+    {
+      "value": "MLT",
+      "description": "Malta",
+      "comment": "",
+      "sort_order": 147
+    },
+    {
+      "value": "MMR",
+      "description": "Myanmar",
+      "comment": "",
+      "sort_order": 148
+    },
+    {
+      "value": "MNE",
+      "description": "Montenegro",
+      "comment": "",
+      "sort_order": 149
+    },
+    {
+      "value": "MNG",
+      "description": "Mongolia",
+      "comment": "",
+      "sort_order": 150
+    },
+    {
+      "value": "MNP",
+      "description": "Northern Mariana Islands",
+      "comment": "",
+      "sort_order": 151
+    },
+    {
+      "value": "MOZ",
+      "description": "Mozambique",
+      "comment": "",
+      "sort_order": 152
+    },
+    {
+      "value": "MRT",
+      "description": "Mauritania",
+      "comment": "",
+      "sort_order": 153
+    },
+    {
+      "value": "MSR",
+      "description": "Montserrat",
+      "comment": "",
+      "sort_order": 154
+    },
+    {
+      "value": "MTQ",
+      "description": "Martinique",
+      "comment": "",
+      "sort_order": 155
+    },
+    {
+      "value": "MUS",
+      "description": "Mauritius",
+      "comment": "",
+      "sort_order": 156
+    },
+    {
+      "value": "MWI",
+      "description": "Malawi",
+      "comment": "",
+      "sort_order": 157
+    },
+    {
+      "value": "MYS",
+      "description": "Malaysia",
+      "comment": "",
+      "sort_order": 158
+    },
+    {
+      "value": "MYT",
+      "description": "Mayotte",
+      "comment": "",
+      "sort_order": 159
+    },
+    {
+      "value": "NAM",
+      "description": "Namibia",
+      "comment": "",
+      "sort_order": 160
+    },
+    {
+      "value": "NCL",
+      "description": "New Caledonia",
+      "comment": "",
+      "sort_order": 161
+    },
+    {
+      "value": "NER",
+      "description": "Niger",
+      "comment": "",
+      "sort_order": 162
+    },
+    {
+      "value": "NFK",
+      "description": "Norfolk Island",
+      "comment": "",
+      "sort_order": 163
+    },
+    {
+      "value": "NGA",
+      "description": "Nigeria",
+      "comment": "",
+      "sort_order": 164
+    },
+    {
+      "value": "NIC",
+      "description": "Nicaragua",
+      "comment": "",
+      "sort_order": 165
+    },
+    {
+      "value": "NIU",
+      "description": "Niue",
+      "comment": "",
+      "sort_order": 166
+    },
+    {
+      "value": "NLD",
+      "description": "Netherlands",
+      "comment": "",
+      "sort_order": 167
+    },
+    {
+      "value": "NOR",
+      "description": "Norway",
+      "comment": "",
+      "sort_order": 168
+    },
+    {
+      "value": "NPL",
+      "description": "Nepal",
+      "comment": "",
+      "sort_order": 169
+    },
+    {
+      "value": "NRU",
+      "description": "Nauru",
+      "comment": "",
+      "sort_order": 170
+    },
+    {
+      "value": "NZL",
+      "description": "New Zealand",
+      "comment": "",
+      "sort_order": 171
+    },
+    {
+      "value": "OMN",
+      "description": "Oman",
+      "comment": "",
+      "sort_order": 172
+    },
+    {
+      "value": "PAK",
+      "description": "Pakistan",
+      "comment": "",
+      "sort_order": 173
+    },
+    {
+      "value": "PAN",
+      "description": "Panama",
+      "comment": "",
+      "sort_order": 174
+    },
+    {
+      "value": "PCN",
+      "description": "Pitcairn",
+      "comment": "",
+      "sort_order": 175
+    },
+    {
+      "value": "PER",
+      "description": "Peru",
+      "comment": "",
+      "sort_order": 176
+    },
+    {
+      "value": "PHL",
+      "description": "Philippines",
+      "comment": "",
+      "sort_order": 177
+    },
+    {
+      "value": "PLW",
+      "description": "Palau",
+      "comment": "",
+      "sort_order": 178
+    },
+    {
+      "value": "PNG",
+      "description": "Papua New Guinea",
+      "comment": "",
+      "sort_order": 179
+    },
+    {
+      "value": "POL",
+      "description": "Poland",
+      "comment": "",
+      "sort_order": 180
+    },
+    {
+      "value": "PRI",
+      "description": "Puerto Rico",
+      "comment": "",
+      "sort_order": 181
+    },
+    {
+      "value": "PRK",
+      "description": "Korea (Democratic People's Republic of)",
+      "comment": "",
+      "sort_order": 182
+    },
+    {
+      "value": "PRT",
+      "description": "Portugal",
+      "comment": "",
+      "sort_order": 183
+    },
+    {
+      "value": "PRY",
+      "description": "Paraguay",
+      "comment": "",
+      "sort_order": 184
+    },
+    {
+      "value": "PSE",
+      "description": "Palestine, State of",
+      "comment": "",
+      "sort_order": 185
+    },
+    {
+      "value": "PYF",
+      "description": "French Polynesia",
+      "comment": "",
+      "sort_order": 186
+    },
+    {
+      "value": "QAT",
+      "description": "Qatar",
+      "comment": "",
+      "sort_order": 187
+    },
+    {
+      "value": "REU",
+      "description": "RÃ©union",
+      "comment": "",
+      "sort_order": 188
+    },
+    {
+      "value": "ROU",
+      "description": "Romania",
+      "comment": "",
+      "sort_order": 189
+    },
+    {
+      "value": "RUS",
+      "description": "Russian Federation",
+      "comment": "",
+      "sort_order": 190
+    },
+    {
+      "value": "RWA",
+      "description": "Rwanda",
+      "comment": "",
+      "sort_order": 191
+    },
+    {
+      "value": "SAU",
+      "description": "Saudi Arabia",
+      "comment": "",
+      "sort_order": 192
+    },
+    {
+      "value": "SDN",
+      "description": "Sudan",
+      "comment": "",
+      "sort_order": 193
+    },
+    {
+      "value": "SEN",
+      "description": "Senegal",
+      "comment": "",
+      "sort_order": 194
+    },
+    {
+      "value": "SGP",
+      "description": "Singapore",
+      "comment": "",
+      "sort_order": 195
+    },
+    {
+      "value": "SGS",
+      "description": "South Georgia and the South Sandwich Islands",
+      "comment": "",
+      "sort_order": 196
+    },
+    {
+      "value": "SHN",
+      "description": "Saint Helena, Ascension and Tristan da Cunha",
+      "comment": "",
+      "sort_order": 197
+    },
+    {
+      "value": "SJM",
+      "description": "Svalbard and Jan Mayen",
+      "comment": "",
+      "sort_order": 198
+    },
+    {
+      "value": "SLB",
+      "description": "Solomon Islands",
+      "comment": "",
+      "sort_order": 199
+    },
+    {
+      "value": "SLE",
+      "description": "Sierra Leone",
+      "comment": "",
+      "sort_order": 200
+    },
+    {
+      "value": "SLV",
+      "description": "El Salvador",
+      "comment": "",
+      "sort_order": 201
+    },
+    {
+      "value": "SMR",
+      "description": "San Marino",
+      "comment": "",
+      "sort_order": 202
+    },
+    {
+      "value": "SOM",
+      "description": "Somalia",
+      "comment": "",
+      "sort_order": 203
+    },
+    {
+      "value": "SPM",
+      "description": "Saint Pierre and Miquelon",
+      "comment": "",
+      "sort_order": 204
+    },
+    {
+      "value": "SRB",
+      "description": "Serbia",
+      "comment": "",
+      "sort_order": 205
+    },
+    {
+      "value": "SSD",
+      "description": "South Sudan",
+      "comment": "",
+      "sort_order": 206
+    },
+    {
+      "value": "STP",
+      "description": "Sao Tome and Principe",
+      "comment": "",
+      "sort_order": 207
+    },
+    {
+      "value": "SUR",
+      "description": "Suriname",
+      "comment": "",
+      "sort_order": 208
+    },
+    {
+      "value": "SVK",
+      "description": "Slovakia",
+      "comment": "",
+      "sort_order": 209
+    },
+    {
+      "value": "SVN",
+      "description": "Slovenia",
+      "comment": "",
+      "sort_order": 210
+    },
+    {
+      "value": "SWE",
+      "description": "Sweden",
+      "comment": "",
+      "sort_order": 211
+    },
+    {
+      "value": "SWZ",
+      "description": "Eswatini",
+      "comment": "",
+      "sort_order": 212
+    },
+    {
+      "value": "SXM",
+      "description": "Sint Maarten (Dutch part)",
+      "comment": "",
+      "sort_order": 213
+    },
+    {
+      "value": "SYC",
+      "description": "Seychelles",
+      "comment": "",
+      "sort_order": 214
+    },
+    {
+      "value": "SYR",
+      "description": "Syrian Arab Republic",
+      "comment": "",
+      "sort_order": 215
+    },
+    {
+      "value": "TCA",
+      "description": "Turks and Caicos Islands",
+      "comment": "",
+      "sort_order": 216
+    },
+    {
+      "value": "TCD",
+      "description": "Chad",
+      "comment": "",
+      "sort_order": 217
+    },
+    {
+      "value": "TGO",
+      "description": "Togo",
+      "comment": "",
+      "sort_order": 218
+    },
+    {
+      "value": "THA",
+      "description": "Thailand",
+      "comment": "",
+      "sort_order": 219
+    },
+    {
+      "value": "TJK",
+      "description": "Tajikistan",
+      "comment": "",
+      "sort_order": 220
+    },
+    {
+      "value": "TKL",
+      "description": "Tokelau",
+      "comment": "",
+      "sort_order": 221
+    },
+    {
+      "value": "TKM",
+      "description": "Turkmenistan",
+      "comment": "",
+      "sort_order": 222
+    },
+    {
+      "value": "TLS",
+      "description": "Timor-Leste",
+      "comment": "",
+      "sort_order": 223
+    },
+    {
+      "value": "TON",
+      "description": "Tonga",
+      "comment": "",
+      "sort_order": 224
+    },
+    {
+      "value": "TTO",
+      "description": "Trinidad and Tobago",
+      "comment": "",
+      "sort_order": 225
+    },
+    {
+      "value": "TUN",
+      "description": "Tunisia",
+      "comment": "",
+      "sort_order": 226
+    },
+    {
+      "value": "TUR",
+      "description": "Turkey",
+      "comment": "",
+      "sort_order": 227
+    },
+    {
+      "value": "TUV",
+      "description": "Tuvalu",
+      "comment": "",
+      "sort_order": 228
+    },
+    {
+      "value": "TWN",
+      "description": "Taiwan, Province of China",
+      "comment": "",
+      "sort_order": 229
+    },
+    {
+      "value": "TZA",
+      "description": "Tanzania, United Republic of",
+      "comment": "",
+      "sort_order": 230
+    },
+    {
+      "value": "UGA",
+      "description": "Uganda",
+      "comment": "",
+      "sort_order": 231
+    },
+    {
+      "value": "UKR",
+      "description": "Ukraine",
+      "comment": "",
+      "sort_order": 232
+    },
+    {
+      "value": "UMI",
+      "description": "United States Minor Outlying Islands",
+      "comment": "",
+      "sort_order": 233
+    },
+    {
+      "value": "URY",
+      "description": "Uruguay",
+      "comment": "",
+      "sort_order": 234
+    },
+    {
+      "value": "USA",
+      "description": "United States of America",
+      "comment": "",
+      "sort_order": 235
+    },
+    {
+      "value": "UZB",
+      "description": "Uzbekistan",
+      "comment": "",
+      "sort_order": 236
+    },
+    {
+      "value": "VAT",
+      "description": "Holy See",
+      "comment": "",
+      "sort_order": 237
+    },
+    {
+      "value": "VCT",
+      "description": "Saint Vincent and the Grenadines",
+      "comment": "",
+      "sort_order": 238
+    },
+    {
+      "value": "VEN",
+      "description": "Venezuela (Bolivarian Republic of)",
+      "comment": "",
+      "sort_order": 239
+    },
+    {
+      "value": "VGB",
+      "description": "Virgin Islands (British)",
+      "comment": "",
+      "sort_order": 240
+    },
+    {
+      "value": "VIR",
+      "description": "Virgin Islands (U.S.)",
+      "comment": "",
+      "sort_order": 241
+    },
+    {
+      "value": "VNM",
+      "description": "Viet Nam",
+      "comment": "",
+      "sort_order": 242
+    },
+    {
+      "value": "VUT",
+      "description": "Vanuatu",
+      "comment": "",
+      "sort_order": 243
+    },
+    {
+      "value": "WLF",
+      "description": "Wallis and Futuna",
+      "comment": "",
+      "sort_order": 244
+    },
+    {
+      "value": "WSM",
+      "description": "Samoa",
+      "comment": "",
+      "sort_order": 245
+    },
+    {
+      "value": "YEM",
+      "description": "Yemen",
+      "comment": "",
+      "sort_order": 246
+    },
+    {
+      "value": "ZAF",
+      "description": "South Africa",
+      "comment": "",
+      "sort_order": 247
+    },
+    {
+      "value": "ZMB",
+      "description": "Zambia",
+      "comment": "",
+      "sort_order": 248
+    },
+    {
+      "value": "ZWE",
+      "description": "Zimbabwe",
+      "comment": "",
+      "sort_order": 249
+    }
+  ],
+  "value_count": 249
+}

@@ -1,0 +1,23 @@
+{
+  "code": "Z004",
+  "name": "Procedure Code Modifier Coding Systems",
+  "version": "HL7 v2.6",
+  "chapter": "",
+  "description": "",
+  "type": "Local",
+  "values": [
+    {
+      "value": "CPTM",
+      "description": "CPT Modifier Code",
+      "comment": "Available for the AMA at the address listed for CPT above. These codes are found in Appendix A of CPT 2000 Standard Edition. (CPT 2000 Standard Edition, American Medical Association, Chicago, IL)",
+      "sort_order": 1
+    },
+    {
+      "value": "HPC",
+      "description": "CMS (formerly HCFA) Procedure Codes (HCPCS)",
+      "comment": "Health Care Financing Administration (HCFA) Common Procedure Coding System (HCPCS) including modifiers.[1]",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

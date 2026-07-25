@@ -1,0 +1,125 @@
+{
+  "code": "0078",
+  "name": "Abnormal flags",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "<",
+      "description": "Below absolute low-off instrument scale",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": ">",
+      "description": "Above absolute high-off instrument scale",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "A",
+      "description": "Abnormal (applies to non-numeric results)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AA",
+      "description": "Very abnormal (applies to non-numeric units, analogous to panic limits for numeric units)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "B",
+      "description": "Better--use when direction not relevant",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "D",
+      "description": "Significant change down",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "H",
+      "description": "Above high normal",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "HH",
+      "description": "Above upper panic limits",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "I",
+      "description": "Intermediate. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "L",
+      "description": "Below low normal",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "LL",
+      "description": "Below lower panic limits",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "MS",
+      "description": "Moderately susceptible. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "N",
+      "description": "Normal (applies to non-numeric results)",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "null",
+      "description": "No range defined, or normal ranges don't apply",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "R",
+      "description": "Resistant. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "S",
+      "description": "Susceptible. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "U",
+      "description": "Significant change up",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "VS",
+      "description": "Very susceptible. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "W",
+      "description": "Worse--use when direction not relevant",
+      "comment": "",
+      "sort_order": 19
+    }
+  ],
+  "value_count": 19
+}

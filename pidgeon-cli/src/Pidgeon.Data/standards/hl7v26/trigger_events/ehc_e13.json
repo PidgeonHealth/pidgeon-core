@@ -1,0 +1,227 @@
+{
+  "code": "EHC_E13",
+  "name": "Additional Information Response",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "This message is used by a Provider to immediately respond to an EHC_E12 Request for Additional Information, in other words an automated response.  The EHC_E13 message cannot be sent unsolicited.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "RFI",
+      "segment_desc": "Request for Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "IVC",
+      "segment_desc": "Invoice",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PSS",
+      "segment_desc": "Product/Service Section",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PSG",
+      "segment_desc": "Product/Service Group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 10
+    },
+    {
+      "segment_code": "PSL",
+      "segment_desc": "Product/Service Line Item",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 11
+    },
+    {
+      "segment_code": "REQUEST",
+      "segment_desc": "REQUEST group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 12
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REQUEST"
+      ],
+      "level": 1,
+      "order_index": 13
+    },
+    {
+      "segment_code": "OBR",
+      "segment_desc": "Observation Request",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REQUEST"
+      ],
+      "level": 1,
+      "order_index": 14
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REQUEST"
+      ],
+      "level": 1,
+      "order_index": 15
+    },
+    {
+      "segment_code": "RESPONSE",
+      "segment_desc": "RESPONSE group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "REQUEST"
+      ],
+      "level": 1,
+      "order_index": 16
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/Result",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REQUEST",
+        "RESPONSE"
+      ],
+      "level": 2,
+      "order_index": 17
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REQUEST",
+        "RESPONSE"
+      ],
+      "level": 2,
+      "order_index": 18
+    },
+    {
+      "segment_code": "TXA",
+      "segment_desc": "Transcription Document Header",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "REQUEST",
+        "RESPONSE"
+      ],
+      "level": 2,
+      "order_index": 19
+    }
+  ],
+  "segment_count": 20
+}

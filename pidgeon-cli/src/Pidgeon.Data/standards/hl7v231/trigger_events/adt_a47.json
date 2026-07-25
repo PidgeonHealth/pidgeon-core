@@ -1,0 +1,60 @@
+{
+  "code": "ADT_A47",
+  "name": "Change patient identifier list",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Administration",
+  "description": "A change has been done at the internal identifier level.  That is, a single PID-3-patient identifier list value has been found to be incorrect and has been changed.\n\nAn A47 event is used to signal a change of an incorrectly assigned PID-3-patient identifier list value.  The “incorrect source identifier” value is stored in the MRG segment (MRG-1-prior patient identifier list) and is to be changed to the “correct target patient ID” value stored in the PID segment (PID-3-patient identifier list).",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge patient information segment-",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    }
+  ],
+  "segment_count": 5
+}

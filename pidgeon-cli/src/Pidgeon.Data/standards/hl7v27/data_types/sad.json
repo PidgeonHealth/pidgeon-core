@@ -1,0 +1,40 @@
+{
+  "code": "SAD",
+  "name": "Street Address",
+  "version": "HL7 v2.7",
+  "description": "This data type specifies an entity's street address and associated detail.\nNote: Appears ONLY in the XAD data type",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SAD.1",
+      "field_description": "Street Or Mailing Address",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SAD.2",
+      "field_description": "Street Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SAD.3",
+      "field_description": "Dwelling Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

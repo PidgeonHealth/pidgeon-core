@@ -1,0 +1,29 @@
+{
+  "code": "0277",
+  "name": "Appointment Type Codes",
+  "version": "HL7 v2.7",
+  "chapter": "Scheduling",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "Complete",
+      "description": "A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Normal",
+      "description": "Routine schedule request type - default if not valued",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Tentative",
+      "description": "A request for a tentative (e.g., \"penciled in\") appointment",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

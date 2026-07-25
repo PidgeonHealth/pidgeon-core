@@ -1,0 +1,41 @@
+{
+  "code": "0513",
+  "name": "Blood Product Transfusion/Disposition Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "RA",
+      "description": "Returned unused/no longer needed",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "RL",
+      "description": "Returned unused/keep linked to patient for possible use later",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "TR",
+      "description": "Transfused with adverse reaction",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "TX",
+      "description": "Transfused",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "WA",
+      "description": "Wasted (product no longer viable)",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

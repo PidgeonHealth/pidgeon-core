@@ -1,0 +1,30 @@
+{
+  "code": "EIP",
+  "name": "Entity Identifier Pair",
+  "version": "HL7 v2.5.1",
+  "description": "Specifies an identifier assigned to an entity by either the placer or the filler system. If both components are populated the identifiers must refer to the same entity.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "EIP.1",
+      "field_description": "Placer Assigned Identifier",
+      "length": "427",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "EIP.2",
+      "field_description": "Filler Assigned Identifier",
+      "length": "427",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

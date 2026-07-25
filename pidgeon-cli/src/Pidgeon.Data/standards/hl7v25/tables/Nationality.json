@@ -1,0 +1,1073 @@
+{
+  "code": "Nationality",
+  "name": "Nationality",
+  "version": "HL7 v2.5",
+  "chapter": "",
+  "description": "",
+  "type": "PreLoaded",
+  "values": [
+    {
+      "value": "Afghans",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Afrikaners",
+      "description": null,
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Albanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Algerians",
+      "description": null,
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Americans",
+      "description": null,
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "Andorrans",
+      "description": null,
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Angolans",
+      "description": null,
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Argentines",
+      "description": null,
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Armenians",
+      "description": null,
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Aromanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "Arubans",
+      "description": null,
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Australians",
+      "description": null,
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "Austrians",
+      "description": null,
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "Azeris",
+      "description": null,
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "Bahamians",
+      "description": null,
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "Bahrainis",
+      "description": null,
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Balochi",
+      "description": null,
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "Baltic Germans",
+      "description": null,
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "Baltic Russians",
+      "description": null,
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "Bangladeshis",
+      "description": null,
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "Barbadians",
+      "description": null,
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "Belarusians",
+      "description": null,
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "Belgians",
+      "description": null,
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "Belizeans",
+      "description": null,
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "Boers",
+      "description": null,
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "Bosnians",
+      "description": null,
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "Brazilians",
+      "description": null,
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "Bretons",
+      "description": null,
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "British",
+      "description": null,
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "British Virgin Islanders",
+      "description": null,
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "Bulgarians",
+      "description": null,
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "Burkinabès",
+      "description": null,
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "Burundians",
+      "description": null,
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "Cambodians",
+      "description": null,
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "Cameroonians",
+      "description": null,
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "Canadians",
+      "description": null,
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "Cape Verdeans",
+      "description": null,
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "Catalans",
+      "description": null,
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "Chadians",
+      "description": null,
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "Chileans",
+      "description": null,
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "Chinese",
+      "description": null,
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "Colombians",
+      "description": null,
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "Comorians",
+      "description": null,
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "Congolese",
+      "description": null,
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "Croatians",
+      "description": null,
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "Cubans",
+      "description": null,
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "Cypriots",
+      "description": null,
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "Czechs",
+      "description": null,
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "Danes",
+      "description": null,
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "Dominicans (Commonwealth)",
+      "description": null,
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "Dominicans (Republic)",
+      "description": null,
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "Dutch",
+      "description": null,
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "East Timorese",
+      "description": null,
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "Ecuadorians",
+      "description": null,
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "Egyptians",
+      "description": null,
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "Emiratis",
+      "description": null,
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "English",
+      "description": null,
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "Eritreans",
+      "description": null,
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "Estonians",
+      "description": null,
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "Ethiopians",
+      "description": null,
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "Fijians",
+      "description": null,
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "Filipinos",
+      "description": null,
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "Finnish Swedish",
+      "description": null,
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "Finns",
+      "description": null,
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "French citizens",
+      "description": null,
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "Georgians",
+      "description": null,
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "Germans",
+      "description": null,
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "Ghanaians",
+      "description": null,
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "Gibraltar",
+      "description": null,
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "Greeks",
+      "description": null,
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "Grenadians",
+      "description": null,
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "Guatemalans",
+      "description": null,
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "Guianese",
+      "description": null,
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "Guinea-Bissau nationals",
+      "description": null,
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "Guineans",
+      "description": null,
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "Guyanese",
+      "description": null,
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "Haitians",
+      "description": null,
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "Hondurans",
+      "description": null,
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "Hongkongers",
+      "description": null,
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "Hungarians",
+      "description": null,
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "Icelanders",
+      "description": null,
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "Indians",
+      "description": null,
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "Indigenous Australians",
+      "description": null,
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "Indonesians",
+      "description": null,
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "Iranians",
+      "description": null,
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "Iraqis",
+      "description": null,
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "Irish",
+      "description": null,
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "Israelis",
+      "description": null,
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "Italians",
+      "description": null,
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "Ivoirians",
+      "description": null,
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "Jamaicans",
+      "description": null,
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "Japanese",
+      "description": null,
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "Jordanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "Kazakhs",
+      "description": null,
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "Kenyans",
+      "description": null,
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "Koreans",
+      "description": null,
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "Kosovo Albanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "Kuwaitis",
+      "description": null,
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "Lao",
+      "description": null,
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "Latvians",
+      "description": null,
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "Lebanese",
+      "description": null,
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "Liberians",
+      "description": null,
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "Libyans",
+      "description": null,
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "Liechtensteiners",
+      "description": null,
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "Lithuanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "Luxembourgers",
+      "description": null,
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "Macedonians",
+      "description": null,
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "Malawians",
+      "description": null,
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "Malaysians",
+      "description": null,
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "Maldivians",
+      "description": null,
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "Malians",
+      "description": null,
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "Maltese",
+      "description": null,
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "Manx",
+      "description": null,
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "Mauritians",
+      "description": null,
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "Mexicans",
+      "description": null,
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "Moldovans",
+      "description": null,
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "Mongolians",
+      "description": null,
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "Montenegrins",
+      "description": null,
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "Moroccans",
+      "description": null,
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "Namibians",
+      "description": null,
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "Nepalese",
+      "description": null,
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "New Zealanders",
+      "description": null,
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "Nicaraguans",
+      "description": null,
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "Nigerians",
+      "description": null,
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "Nigeriens",
+      "description": null,
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "Norwegians",
+      "description": null,
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "Pakistanis",
+      "description": null,
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "Palauans",
+      "description": null,
+      "comment": "",
+      "sort_order": 128
+    },
+    {
+      "value": "Palestinians",
+      "description": null,
+      "comment": "",
+      "sort_order": 129
+    },
+    {
+      "value": "Panamanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 130
+    },
+    {
+      "value": "Papua New Guineans",
+      "description": null,
+      "comment": "",
+      "sort_order": 131
+    },
+    {
+      "value": "Paraguayans",
+      "description": null,
+      "comment": "",
+      "sort_order": 132
+    },
+    {
+      "value": "Peruvians",
+      "description": null,
+      "comment": "",
+      "sort_order": 133
+    },
+    {
+      "value": "Poles",
+      "description": null,
+      "comment": "",
+      "sort_order": 134
+    },
+    {
+      "value": "Portuguese",
+      "description": null,
+      "comment": "",
+      "sort_order": 135
+    },
+    {
+      "value": "Puerto Ricans",
+      "description": null,
+      "comment": "",
+      "sort_order": 136
+    },
+    {
+      "value": "Quebecers",
+      "description": null,
+      "comment": "",
+      "sort_order": 137
+    },
+    {
+      "value": "Romanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 138
+    },
+    {
+      "value": "Réunionnais",
+      "description": null,
+      "comment": "",
+      "sort_order": 139
+    },
+    {
+      "value": "Russians",
+      "description": null,
+      "comment": "",
+      "sort_order": 140
+    },
+    {
+      "value": "Rwandans",
+      "description": null,
+      "comment": "",
+      "sort_order": 141
+    },
+    {
+      "value": "Salvadorans",
+      "description": null,
+      "comment": "",
+      "sort_order": 142
+    },
+    {
+      "value": "Saudis",
+      "description": null,
+      "comment": "",
+      "sort_order": 143
+    },
+    {
+      "value": "Scots",
+      "description": null,
+      "comment": "",
+      "sort_order": 144
+    },
+    {
+      "value": "Senegalese",
+      "description": null,
+      "comment": "",
+      "sort_order": 145
+    },
+    {
+      "value": "Serbs",
+      "description": null,
+      "comment": "",
+      "sort_order": 146
+    },
+    {
+      "value": "Sicilians",
+      "description": null,
+      "comment": "",
+      "sort_order": 147
+    },
+    {
+      "value": "Sierra Leoneans",
+      "description": null,
+      "comment": "",
+      "sort_order": 148
+    },
+    {
+      "value": "Singaporeans",
+      "description": null,
+      "comment": "",
+      "sort_order": 149
+    },
+    {
+      "value": "Slovaks",
+      "description": null,
+      "comment": "",
+      "sort_order": 150
+    },
+    {
+      "value": "Slovenes",
+      "description": null,
+      "comment": "",
+      "sort_order": 151
+    },
+    {
+      "value": "Somalis",
+      "description": null,
+      "comment": "",
+      "sort_order": 152
+    },
+    {
+      "value": "South Africans",
+      "description": null,
+      "comment": "",
+      "sort_order": 153
+    },
+    {
+      "value": "Spanish",
+      "description": null,
+      "comment": "",
+      "sort_order": 154
+    },
+    {
+      "value": "Sri Lankans",
+      "description": null,
+      "comment": "",
+      "sort_order": 155
+    },
+    {
+      "value": "Sudanese",
+      "description": null,
+      "comment": "",
+      "sort_order": 156
+    },
+    {
+      "value": "Swedes",
+      "description": null,
+      "comment": "",
+      "sort_order": 157
+    },
+    {
+      "value": "Swiss",
+      "description": null,
+      "comment": "",
+      "sort_order": 158
+    },
+    {
+      "value": "Syrians",
+      "description": null,
+      "comment": "",
+      "sort_order": 159
+    },
+    {
+      "value": "Taiwanese",
+      "description": null,
+      "comment": "",
+      "sort_order": 160
+    },
+    {
+      "value": "Tanzanians",
+      "description": null,
+      "comment": "",
+      "sort_order": 161
+    },
+    {
+      "value": "Thais",
+      "description": null,
+      "comment": "",
+      "sort_order": 162
+    },
+    {
+      "value": "Tibetans",
+      "description": null,
+      "comment": "",
+      "sort_order": 163
+    },
+    {
+      "value": "Tobagonians",
+      "description": null,
+      "comment": "",
+      "sort_order": 164
+    },
+    {
+      "value": "Trinidadians",
+      "description": null,
+      "comment": "",
+      "sort_order": 165
+    },
+    {
+      "value": "Turkish Cypriots",
+      "description": null,
+      "comment": "",
+      "sort_order": 166
+    },
+    {
+      "value": "Turks",
+      "description": null,
+      "comment": "",
+      "sort_order": 167
+    },
+    {
+      "value": "Tuvaluans",
+      "description": null,
+      "comment": "",
+      "sort_order": 168
+    },
+    {
+      "value": "Ugandans",
+      "description": null,
+      "comment": "",
+      "sort_order": 169
+    },
+    {
+      "value": "Ukrainians",
+      "description": null,
+      "comment": "",
+      "sort_order": 170
+    },
+    {
+      "value": "Uruguayans",
+      "description": null,
+      "comment": "",
+      "sort_order": 171
+    },
+    {
+      "value": "Venezuelans",
+      "description": null,
+      "comment": "",
+      "sort_order": 172
+    },
+    {
+      "value": "Vietnamese",
+      "description": null,
+      "comment": "",
+      "sort_order": 173
+    },
+    {
+      "value": "Welsh",
+      "description": null,
+      "comment": "",
+      "sort_order": 174
+    },
+    {
+      "value": "Yemenis",
+      "description": null,
+      "comment": "",
+      "sort_order": 175
+    },
+    {
+      "value": "Zambians",
+      "description": null,
+      "comment": "",
+      "sort_order": 176
+    },
+    {
+      "value": "Zimbabweans",
+      "description": null,
+      "comment": "",
+      "sort_order": 177
+    }
+  ],
+  "value_count": 177
+}

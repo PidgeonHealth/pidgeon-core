@@ -1,0 +1,70 @@
+{
+  "code": "MFA",
+  "name": "Master File Acknowledgment",
+  "version": "HL7 v2.5.1",
+  "chapter": "Master Files",
+  "description": "The Technical Steward for the MFA segment is CQ.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MFA.1",
+      "field_description": "Record-Level Event Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0180"
+    },
+    {
+      "position": 2,
+      "field_name": "MFA.2",
+      "field_description": "MFN Control ID",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "MFA.3",
+      "field_description": "Event Completion Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "MFA.4",
+      "field_description": "MFN Record Level Error Return",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0181"
+    },
+    {
+      "position": 5,
+      "field_name": "MFA.5",
+      "field_description": "Primary Key Value - MFA",
+      "length": "250",
+      "data_type": "VARIES",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "MFA.6",
+      "field_description": "Primary Key Value Type - MFA",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": "0355"
+    }
+  ],
+  "field_count": 6
+}

@@ -1,0 +1,40 @@
+{
+  "code": "CM1",
+  "name": "Clinical Study Phase Master",
+  "version": "HL7 v2.8",
+  "chapter": "Master Files",
+  "description": "Each Clinical Study Phase Master (CM1) segment contains the information about one phase of a study identified in the preceding CM0.  This is an optional structure to be used if the study has more than one treatment or evaluation phase within it.  The identification of study phases that the patient enters are sent in the CSP segment: sequence 2.  The CM1 segment describes the phase in general for the receiving system.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM1.1",
+      "field_description": "Set Id - Cm1",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM1.2",
+      "field_description": "Study Phase Identifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM1.3",
+      "field_description": "Description Of Study Phase",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

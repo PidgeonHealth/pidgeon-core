@@ -1,0 +1,23 @@
+{
+  "code": "0444",
+  "name": "Name assembly order",
+  "version": "HL7 v2.5",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "F",
+      "description": "Prefix Family Middle Given Suffix",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "G",
+      "description": "Prefix Given Middle Family Suffix",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

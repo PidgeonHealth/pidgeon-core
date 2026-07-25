@@ -1,0 +1,240 @@
+{
+  "code": "PCR",
+  "name": "Possible Causal Relationship",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "The PCR segment is used to communicate a potential or suspected relationship between a product (drug or device) or test and an event with detrimental effect on a patient. This segment identifies a potential causal relationship between the product identified in this segment and the event identified in the PEO segment.\n\nMore than one PCR segment can be included in the message if more than one product is possibly causally related to the event.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PCR.1",
+      "field_description": "Implicated Product",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PCR.2",
+      "field_description": "Generic Product",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0249"
+    },
+    {
+      "position": 3,
+      "field_name": "PCR.3",
+      "field_description": "Product Class",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PCR.4",
+      "field_description": "Total Duration Of Therapy",
+      "length": "8",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PCR.5",
+      "field_description": "Product Manufacture Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PCR.6",
+      "field_description": "Product Expiration Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PCR.7",
+      "field_description": "Product Implantation Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PCR.8",
+      "field_description": "Product Explantation Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "PCR.9",
+      "field_description": "Single Use Device",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0244"
+    },
+    {
+      "position": 10,
+      "field_name": "PCR.10",
+      "field_description": "Indication For Product Use",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "PCR.11",
+      "field_description": "Product Problem",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0245"
+    },
+    {
+      "position": 12,
+      "field_name": "PCR.12",
+      "field_description": "Product Serial/Lot Number",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "PCR.13",
+      "field_description": "Product Available For Inspection",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0246"
+    },
+    {
+      "position": 14,
+      "field_name": "PCR.14",
+      "field_description": "Product Evaluation Performed",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PCR.15",
+      "field_description": "Product Evaluation Status",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0247"
+    },
+    {
+      "position": 16,
+      "field_name": "PCR.16",
+      "field_description": "Product Evaluation Results",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "PCR.17",
+      "field_description": "Evaluated Product Source",
+      "length": "8",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0248"
+    },
+    {
+      "position": 18,
+      "field_name": "PCR.18",
+      "field_description": "Date Product Returned To Manufacturer",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "PCR.19",
+      "field_description": "Device Operator Qualifications",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0242"
+    },
+    {
+      "position": 20,
+      "field_name": "PCR.20",
+      "field_description": "Relatedness Assessment",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0250"
+    },
+    {
+      "position": 21,
+      "field_name": "PCR.21",
+      "field_description": "Action Taken In Response To The Event",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "6",
+      "table": "0251"
+    },
+    {
+      "position": 22,
+      "field_name": "PCR.22",
+      "field_description": "Event Causality Observations",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "6",
+      "table": "0252"
+    },
+    {
+      "position": 23,
+      "field_name": "PCR.23",
+      "field_description": "Indirect Exposure Mechanism",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": "0253"
+    }
+  ],
+  "field_count": 23
+}

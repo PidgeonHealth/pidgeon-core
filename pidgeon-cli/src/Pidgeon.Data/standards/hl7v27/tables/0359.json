@@ -1,0 +1,29 @@
+{
+  "code": "0359",
+  "name": "Diagnosis Priority",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "0",
+      "description": "Not included in diagnosis ranking",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "The primary diagnosis",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2 ...",
+      "description": "For ranked secondary diagnoses",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

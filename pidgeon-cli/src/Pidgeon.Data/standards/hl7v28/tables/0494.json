@@ -1,0 +1,29 @@
+{
+  "code": "0494",
+  "name": "Specimen Child Role",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Aliquot",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Component",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Modified from original specimen",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0204",
+  "name": "Organizational name type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Alias name",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Display name",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "L",
+      "description": "Legal name",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SL",
+      "description": "Stock exchange listing name",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

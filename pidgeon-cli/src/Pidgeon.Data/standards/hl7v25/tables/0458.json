@@ -1,0 +1,269 @@
+{
+  "code": "0458",
+  "name": "OCE Edit Code",
+  "version": "HL7 v2.5",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "…",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Invalid diagnosis code",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "10",
+      "description": "Non-covered  service submitted for verification of denial (condition code 21 from header information on claim)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "11",
+      "description": "Non-covered service submitted for FI review (condition code 20 from header information on claim)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "12",
+      "description": "Questionable covered service",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "13",
+      "description": "Additional payment for service not provided by Medicare",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "14",
+      "description": "Code indicates a site of service not included in OPPS",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "15",
+      "description": "Service unit out of range for procedure",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "16",
+      "description": "Multiple bilateral procedures without modifier 50 (see Appendix A)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "17",
+      "description": "Multiple bilateral procedures with modifier 50 (see Appendix A)",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "18",
+      "description": "Inpatient procedure",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "19",
+      "description": "Mutually exclusive procedure that is not allowed even if appropriate modifier present",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "2",
+      "description": "Diagnosis and age conflict",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "20",
+      "description": "Component of a comprehensive procedure that is not allowed even if appropriate modifier present",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "21",
+      "description": "Medical visit on same day as a type \"T\" or \"S\" procedure without modifier 25 (see Appendix B)",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "22",
+      "description": "Invalid modifier",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "23",
+      "description": "Invalid date",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "24",
+      "description": "Date out of OCE range",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "25",
+      "description": "Invalid age",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "26",
+      "description": "Invalid sex",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "27",
+      "description": "Only incidental services reported",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "28",
+      "description": "Code not recognized by Medicare; alternate code for same service available",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "29",
+      "description": "Partial hospitalization service for non-mental health diagnosis",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "3",
+      "description": "Diagnosis and sex conflict",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "30",
+      "description": "Insufficient services on day of partial hospitalization",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "31",
+      "description": "Partial hospitalization on same day as ECT or type \"T\" procedure",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "32",
+      "description": "Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant procedure on at least one of the days",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "33",
+      "description": "Partial hospitalization claim spans more than 3 days with insufficient number of days having mental health services",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "34",
+      "description": "Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial hospitalization criteria",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "35.",
+      "description": "Only activity therapy and/or occupational therapy services provided",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "36.",
+      "description": "Extensive mental health services provided on day of ECT or significant procedure",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "37",
+      "description": "Terminated bilateral procedure or terminated procedure with units greater than one",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "38.",
+      "description": "Inconsistency between implanted device and implantation procedure",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "39.",
+      "description": "Mutually exclusive procedure that would be allowed if appropriate modifier were present",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "4",
+      "description": "Medicare secondary payer alert",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "40.",
+      "description": "Component of a comprehensive procedure that would be allowed if appropriate modifier were present",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "41.",
+      "description": "Invalid revenue code",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "42.",
+      "description": "Multiple medical visits on same day with same revenue code without condition code G0 (see Appendix B)",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "5",
+      "description": "E-code as reason for visit",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "6",
+      "description": "Invalid procedure code",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "7",
+      "description": "Procedure and age conflict",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "8",
+      "description": "Procedure and sex conflict",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "9",
+      "description": "Nov-covered service",
+      "comment": "",
+      "sort_order": 43
+    }
+  ],
+  "value_count": 43
+}

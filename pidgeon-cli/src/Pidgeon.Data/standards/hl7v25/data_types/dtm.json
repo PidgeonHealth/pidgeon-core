@@ -1,0 +1,9 @@
+{
+  "code": "DTM",
+  "name": "Date/Time",
+  "version": "HL7 v2.5",
+  "description": "Specifies a point in time using a 24-hour clock notation.\n\nFormat: YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ].",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

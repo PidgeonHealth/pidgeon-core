@@ -1,0 +1,9 @@
+{
+  "code": "DT",
+  "name": "Date",
+  "version": "HL7 v2.4",
+  "description": "In prior versions of HL7, this data type was always specified to be in the format YYYYMMDD. In the current and future versions, the precision of a date may be expressed by limiting the number of digits used with the format specification YYYY[MM[DD]].",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

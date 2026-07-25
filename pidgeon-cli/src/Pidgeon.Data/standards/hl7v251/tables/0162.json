@@ -1,0 +1,293 @@
+{
+  "code": "0162",
+  "name": "Route of Administration",
+  "version": "HL7 v2.5.1",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AP",
+      "description": "Apply Externally",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Buccal",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DT",
+      "description": "Dental",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EP",
+      "description": "Epidural",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ET",
+      "description": "Endotrachial Tube*",
+      "comment": "used primarily for respiratory therapy and anesthesia delivery",
+      "sort_order": 5
+    },
+    {
+      "value": "GTT",
+      "description": "Gastrostomy Tube",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "GU",
+      "description": "GU Irrigant",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "IA",
+      "description": "Intra-arterial",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "IB",
+      "description": "Intrabursal",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "IC",
+      "description": "Intracardiac",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ICV",
+      "description": "Intracervical (uterus)",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ID",
+      "description": "Intradermal",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "IH",
+      "description": "Inhalation",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "IHA",
+      "description": "Intrahepatic Artery",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "IM",
+      "description": "Intramuscular",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "IMR",
+      "description": "Immerse (Soak) Body Part",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "IN",
+      "description": "Intranasal",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "IO",
+      "description": "Intraocular",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "IP",
+      "description": "Intraperitoneal",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "IS",
+      "description": "Intrasynovial",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "IT",
+      "description": "Intrathecal",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "IU",
+      "description": "Intrauterine",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "IV",
+      "description": "Intravenous",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "MM",
+      "description": "Mucous Membrane",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "MTH",
+      "description": "Mouth/Throat",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "NG",
+      "description": "Nasogastric",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "NP",
+      "description": "Nasal Prongs*",
+      "comment": "used primarily for respiratory therapy and anesthesia delivery",
+      "sort_order": 27
+    },
+    {
+      "value": "NS",
+      "description": "Nasal",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "NT",
+      "description": "Nasotrachial Tube",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "OP",
+      "description": "Ophthalmic",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "OT",
+      "description": "Otic",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "OTH",
+      "description": "Other/Miscellaneous",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "PF",
+      "description": "Perfusion",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "PO",
+      "description": "Oral",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "PR",
+      "description": "Rectal",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "RM",
+      "description": "Rebreather Mask*",
+      "comment": "used primarily for respiratory therapy and anesthesia delivery",
+      "sort_order": 36
+    },
+    {
+      "value": "SC",
+      "description": "Subcutaneous",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "SD",
+      "description": "Soaked Dressing",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "SL",
+      "description": "Sublingual",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "TD",
+      "description": "Transdermal",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "TL",
+      "description": "Translingual",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "TP",
+      "description": "Topical",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "TRA",
+      "description": "Tracheostomy*",
+      "comment": "used primarily for respiratory therapy and anesthesia delivery",
+      "sort_order": 43
+    },
+    {
+      "value": "UR",
+      "description": "Urethral",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "VG",
+      "description": "Vaginal",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "VM",
+      "description": "Ventimask",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "WND",
+      "description": "Wound",
+      "comment": "",
+      "sort_order": 47
+    }
+  ],
+  "value_count": 47
+}

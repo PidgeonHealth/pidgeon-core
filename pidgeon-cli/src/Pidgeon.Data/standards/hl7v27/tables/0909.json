@@ -1,0 +1,47 @@
+{
+  "code": "0909",
+  "name": "Patient Results Release Categorization Scheme",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "SID",
+      "description": "Share In1 Day -<p>Share result regardless of reference/therapeutic range after 1 or more business day as agreed to by the systems in play.",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "SIDC",
+      "description": "Share in 1 Day Conditionally -<p>Share result in reference ranges/therapeutic with patient after 1 or more business day as agreed to by the systems in play.<p>Withhold result out of reference/therapeutic range until physician release",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "SIMM",
+      "description": "Share Immediately -<p>Share result with patient immediately",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "STBD",
+      "description": "Share To Be Determined -<p>Category to be determined",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "SWNL",
+      "description": "Share Within Normal Limits -<p>Share result in reference/therapeutic range with patient immediately<p>Share result out of reference/therapeutic ranges with patient after 1 or more business day as agreed to by the systems in play.",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "SWTH",
+      "description": "Share Withhold -<p>Withhold result regardless of reference/therapeutic ranges",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

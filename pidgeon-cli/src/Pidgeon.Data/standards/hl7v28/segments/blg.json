@@ -1,0 +1,50 @@
+{
+  "code": "BLG",
+  "name": "Billing",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "The BLG segment is used to provide billing information, on the ordered service, to the filling application.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "BLG.1",
+      "field_description": "When To Charge",
+      "length": "0",
+      "data_type": "CCD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "BLG.2",
+      "field_description": "Charge Type",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0122"
+    },
+    {
+      "position": 3,
+      "field_name": "BLG.3",
+      "field_description": "Account Id",
+      "length": "0",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "BLG.4",
+      "field_description": "Charge Type Reason",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0475"
+    }
+  ],
+  "field_count": 4
+}

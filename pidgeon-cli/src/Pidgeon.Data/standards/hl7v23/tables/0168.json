@@ -1,0 +1,53 @@
+{
+  "code": "0168",
+  "name": "Processing priority",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "As soon as possible (a priority lower than stat)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Do at bedside or portable (may be used with other codes)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C",
+      "description": "Measure continuously (e.g., arterial line blood pressure)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "P",
+      "description": "Preoperative (to be done prior to surgery)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "R",
+      "description": "Routine",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "S",
+      "description": "Stat (do immediately)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "T",
+      "description": "Timing critical (do as near as possible to requested time)",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

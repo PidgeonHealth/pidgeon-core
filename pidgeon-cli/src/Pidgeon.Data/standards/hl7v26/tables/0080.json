@@ -1,0 +1,53 @@
+{
+  "code": "0080",
+  "name": "Nature of Abnormal Testing",
+  "version": "HL7 v2.6",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "An age-based population",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Breed",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "N",
+      "description": "None - generic normal range",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "R",
+      "description": "A race-based population",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "S",
+      "description": "A sex-based population",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "SP",
+      "description": "Species",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ST",
+      "description": "Strain",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

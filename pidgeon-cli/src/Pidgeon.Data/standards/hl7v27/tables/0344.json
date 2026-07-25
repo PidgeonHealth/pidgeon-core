@@ -1,0 +1,125 @@
+{
+  "code": "0344",
+  "name": "Patient's Relationship to Insured",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "Patient is insured",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "Spouse",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "03",
+      "description": "Natural child/insured financial responsibility",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "04",
+      "description": "Natural child/Insured does not have financial responsibility",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "05",
+      "description": "Step child",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "06",
+      "description": "Foster child",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "07",
+      "description": "Ward of the court",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "08",
+      "description": "Employee",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "09",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "10",
+      "description": "Handicapped dependent",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "11",
+      "description": "Organ donor",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "12",
+      "description": "Cadaver donor",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "13",
+      "description": "Grandchild",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "14",
+      "description": "Niece/nephew",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "15",
+      "description": "Injured plaintiff",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "16",
+      "description": "Sponsored dependent",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "17",
+      "description": "Minor dependent of a minor dependent",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "18",
+      "description": "Parent",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "19",
+      "description": "Grandparent",
+      "comment": "",
+      "sort_order": 19
+    }
+  ],
+  "value_count": 19
+}

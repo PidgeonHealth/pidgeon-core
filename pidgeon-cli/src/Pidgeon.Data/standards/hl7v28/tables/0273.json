@@ -1,0 +1,35 @@
+{
+  "code": "0273",
+  "name": "Document Availability Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AV",
+      "description": "Available for patient care",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CA",
+      "description": "Deleted",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "OB",
+      "description": "Obsolete",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "UN",
+      "description": "Unavailable for patient care",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

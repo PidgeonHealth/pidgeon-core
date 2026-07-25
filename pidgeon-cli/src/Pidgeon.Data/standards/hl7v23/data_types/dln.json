@@ -1,0 +1,40 @@
+{
+  "code": "DLN",
+  "name": "Driver's License Number",
+  "version": "HL7 v2.3",
+  "description": "This field contains the driver’s license information. For state or province refer to official postal codes for that country; for country refer to ISO 3166 for codes",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DLN.1",
+      "field_description": "Driver s License Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "DLN.2",
+      "field_description": "Issuing State, Province, Country",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "DLN.3",
+      "field_description": "Expiration Date",
+      "length": "0",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

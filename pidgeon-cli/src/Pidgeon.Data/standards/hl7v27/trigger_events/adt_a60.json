@@ -1,0 +1,146 @@
+{
+  "code": "ADT_A60",
+  "name": "Update allergy information",
+  "version": "HL7 v2.7",
+  "chapter": "Patient Administration",
+  "description": "This trigger event is used when person/patient allergy information has changed. It is used in conjunction with a new allergy segment, the IAM - Patient Allergy Information Segment-Unique Identifier, which supports Action code/unique identifier mode update for repeating segments as defined in 2.10.4, \"Protocol for interpreting repeating segments or segment groups in an update Message.\"",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "ARV",
+      "segment_desc": "Access Restriction",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient Visit",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient Visit - Additional Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "ARV",
+      "segment_desc": "Access Restriction",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 8
+    },
+    {
+      "segment_code": "ADVERSE_REACTION_GROUP",
+      "segment_desc": "ADVERSE_REACTION_GROUP group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    },
+    {
+      "segment_code": "IAM",
+      "segment_desc": "Patient Adverse Reaction Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "ADVERSE_REACTION_GROUP"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes And Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "ADVERSE_REACTION_GROUP"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "IAR",
+      "segment_desc": "Allergy Reaction",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "ADVERSE_REACTION_GROUP"
+      ],
+      "level": 1,
+      "order_index": 12
+    }
+  ],
+  "segment_count": 13
+}

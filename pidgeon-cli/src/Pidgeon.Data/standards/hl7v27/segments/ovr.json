@@ -1,0 +1,60 @@
+{
+  "code": "OVR",
+  "name": "Override Segment",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "This segment allows a sender to override specific receiving application's business rules to allow for processing of a message that would normally be rejected or ignored.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OVR.1",
+      "field_description": "Business Rule Override Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0518"
+    },
+    {
+      "position": 2,
+      "field_name": "OVR.2",
+      "field_description": "Business Rule Override Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0521"
+    },
+    {
+      "position": 3,
+      "field_name": "OVR.3",
+      "field_description": "Override Comments",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "OVR.4",
+      "field_description": "Override Entered By",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "OVR.5",
+      "field_description": "Override Authorized By",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

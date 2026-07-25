@@ -1,0 +1,17 @@
+{
+  "code": "0836",
+  "name": "Problem Severity",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Care",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "No Values Defined",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    }
+  ],
+  "value_count": 1
+}

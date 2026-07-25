@@ -1,0 +1,47 @@
+{
+  "code": "0157",
+  "name": "Which date/time status qualifier",
+  "version": "HL7 v2.3",
+  "chapter": "Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ANY",
+      "description": "Any status",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CFN",
+      "description": "Current final value, whether final or corrected",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "COR",
+      "description": "Corrected only (no final with corrections)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "FIN",
+      "description": "Final only (no corrections)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PRE",
+      "description": "Preliminary",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "REP",
+      "description": "Report completion date/time",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

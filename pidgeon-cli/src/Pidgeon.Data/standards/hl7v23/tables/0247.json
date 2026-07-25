@@ -1,0 +1,83 @@
+{
+  "code": "0247",
+  "name": "Status of evaluation",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Evaluation anticipated, but not yet begun",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Product received in condition which made analysis impossible",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "D",
+      "description": "Product discarded -- unable to follow up",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "I",
+      "description": "Product remains implanted -- unable to follow up",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "K",
+      "description": "Problem already known, no evaluation necessary",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "P",
+      "description": "Evaluation in progress",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Q",
+      "description": "Product under quarantine -- unable to follow up",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "R",
+      "description": "Product under recall/corrective action",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "U",
+      "description": "Product unavailable for follow up investigation",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "X",
+      "description": "Product not made by company",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Y",
+      "description": "Evaluation completed",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

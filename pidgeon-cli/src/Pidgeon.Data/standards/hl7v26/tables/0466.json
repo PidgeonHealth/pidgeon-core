@@ -1,0 +1,35 @@
+{
+  "code": "0466",
+  "name": "Ambulatory Payment Classification Code",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "...",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "031",
+      "description": "Dental procedures",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "163",
+      "description": "Excision/biopsy",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "181",
+      "description": "Level 1 skin repair.",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

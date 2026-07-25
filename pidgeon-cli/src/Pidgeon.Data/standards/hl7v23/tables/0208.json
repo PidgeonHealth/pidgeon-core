@@ -1,0 +1,35 @@
+{
+  "code": "0208",
+  "name": "Query response status",
+  "version": "HL7 v2.3",
+  "chapter": "Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AE",
+      "description": "Application error",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AR",
+      "description": "Application reject",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "NF",
+      "description": "No data found, no errors",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "OK",
+      "description": "Data found, no errors (this is the default)",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

@@ -1,0 +1,9 @@
+{
+  "code": "DT",
+  "name": "Date",
+  "version": "HL7 v2.7",
+  "description": "Specifies the century and year with optional precision to month and day. The number of digits populated specifies the precision using the format specification YYYY[MM[DD]].",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

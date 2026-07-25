@@ -1,0 +1,160 @@
+{
+  "code": "PPN",
+  "name": "Performing Person Time Stamp",
+  "version": "HL7 v2.3",
+  "description": "This data type is the equivalent of an XCN data type joined with a TS data type. However, since HL7 does not support subcomponents in Version 2.3, the XCD data type has been flattened.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PPN.1",
+      "field_description": "ID Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PPN.2",
+      "field_description": "Family Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PPN.3",
+      "field_description": "Given Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PPN.4",
+      "field_description": "Middle Initial Or Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PPN.5",
+      "field_description": "Suffix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PPN.6",
+      "field_description": "Prefix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PPN.7",
+      "field_description": "Degree",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PPN.8",
+      "field_description": "Source Table",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0297"
+    },
+    {
+      "position": 9,
+      "field_name": "PPN.9",
+      "field_description": "Assigning Authority",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "PPN.10",
+      "field_description": "Name Type Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0200"
+    },
+    {
+      "position": 11,
+      "field_name": "PPN.11",
+      "field_description": "Identifier Check Digit",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "PPN.12",
+      "field_description": "Code Identifying The Check Digit Scheme Employed",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0061"
+    },
+    {
+      "position": 13,
+      "field_name": "PPN.13",
+      "field_description": "Identifier Type Code",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0203"
+    },
+    {
+      "position": 14,
+      "field_name": "PPN.14",
+      "field_description": "Assigning Facility",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PPN.15",
+      "field_description": "Date/Time Action Performed",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 15
+}

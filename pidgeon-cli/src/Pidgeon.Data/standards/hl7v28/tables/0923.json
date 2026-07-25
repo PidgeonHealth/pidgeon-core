@@ -1,0 +1,29 @@
+{
+  "code": "0923",
+  "name": "Process Interruption",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ABR",
+      "description": "Aborted Run: Process interrupted after the Phlebotomist inserts the needle in the Donor’s arm",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "NIN",
+      "description": "Process was not interrupted",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "WOT",
+      "description": "Walk Out: Process interrupted before the Phlebotomist inserts the needle in the Donor’s arm",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

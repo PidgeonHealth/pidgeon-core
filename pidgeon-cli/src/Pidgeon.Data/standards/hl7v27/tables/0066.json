@@ -1,0 +1,77 @@
+{
+  "code": "0066",
+  "name": "Employment Status",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "Full time employed",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Part time employed",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Unemployed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "Self-employed,",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5",
+      "description": "Retired",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "6",
+      "description": "On active military duty",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "9",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "C",
+      "description": "Contract, per diem",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "L",
+      "description": "Leave of absence (e.g., family leave, sabbatical, etc.)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "T",
+      "description": "Temporarily unemployed",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

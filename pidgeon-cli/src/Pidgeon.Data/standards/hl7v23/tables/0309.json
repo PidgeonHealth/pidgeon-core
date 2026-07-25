@@ -1,0 +1,29 @@
+{
+  "code": "0309",
+  "name": "Coverage type",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Both hospital and physician",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "H",
+      "description": "Hospital/institutional",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Physician/professional",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

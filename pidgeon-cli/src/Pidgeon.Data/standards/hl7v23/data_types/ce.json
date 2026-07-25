@@ -1,0 +1,70 @@
+{
+  "code": "CE",
+  "name": "Coded Element",
+  "version": "HL7 v2.3",
+  "description": "This data type transmits codes and the text associated with the code. To allow all six components of a CE data type to be valued, the maximum length of this data type must be at least 60 (see Section 2.6.2, “Maximum length”)\n\nExample: \n|F-11380^CREATININE^I9^2148-5^CREATININE^LN|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CE.1",
+      "field_description": "Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CE.2",
+      "field_description": "Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CE.3",
+      "field_description": "Name Of Coding System",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CE.4",
+      "field_description": "Alternate Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CE.5",
+      "field_description": "Alternate Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CE.6",
+      "field_description": "Name Of Alternate Coding System",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

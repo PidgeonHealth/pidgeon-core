@@ -1,0 +1,41 @@
+{
+  "code": "0761",
+  "name": "DRG Procedure Determination Status",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "Valid code",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Invalid code",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Not used",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3",
+      "description": "Invalid for this gender",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "4",
+      "description": "Invalid for this age",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

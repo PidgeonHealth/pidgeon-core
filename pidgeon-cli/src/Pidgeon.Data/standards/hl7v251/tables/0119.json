@@ -1,0 +1,305 @@
+{
+  "code": "0119",
+  "name": "Order control codes",
+  "version": "HL7 v2.5.1",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AF",
+      "description": "Order/service refill request approval",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CA",
+      "description": "Cancel order/service request",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CH",
+      "description": "Child order/service",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CN",
+      "description": "Combined result",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CR",
+      "description": "Canceled as requested",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DC",
+      "description": "Discontinue order/service request",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DE",
+      "description": "Data errors",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DF",
+      "description": "Order/service refill request denied",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DR",
+      "description": "Discontinued as requested",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "FU",
+      "description": "Order/service refilled, unsolicited",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "HD",
+      "description": "Hold order request",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "HR",
+      "description": "On hold as requested",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "LI",
+      "description": "Link order/service to patient care problem or goal",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "NA",
+      "description": "Number assigned",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "NW",
+      "description": "New order/service",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "OC",
+      "description": "Order/service canceled",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "OD",
+      "description": "Order/service discontinued",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "OE",
+      "description": "Order/service released",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "OF",
+      "description": "Order/service refilled as requested",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "OH",
+      "description": "Order/service held",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "OK",
+      "description": "Order/service accepted & OK",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "OP",
+      "description": "Notification of order for outside dispense",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "OR",
+      "description": "Released as requested",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "PA",
+      "description": "Parent order/service",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "PY",
+      "description": "Notification of replacement order for outside dispense",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "RE",
+      "description": "Observations/Performed Service to follow",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "RF",
+      "description": "Refill order/service request",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "RL",
+      "description": "Release previous hold",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "RO",
+      "description": "Replacement order",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "RP",
+      "description": "Order/service replace request",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "RQ",
+      "description": "Replaced as requested",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "RR",
+      "description": "Request received",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "RU",
+      "description": "Replaced unsolicited",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "SC",
+      "description": "Status changed",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "SN",
+      "description": "Send order/service number",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "SR",
+      "description": "Response to send order/service status request",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "SS",
+      "description": "Send order/service status request",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "UA",
+      "description": "Unable to accept order/service",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "UC",
+      "description": "Unable to cancel",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "UD",
+      "description": "Unable to discontinue",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "UF",
+      "description": "Unable to refill",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "UH",
+      "description": "Unable to put on hold",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "UM",
+      "description": "Unable to replace",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "UN",
+      "description": "Unlink order/service from patient care problem or goal",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "UR",
+      "description": "Unable to release",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "UX",
+      "description": "Unable to change",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "XO",
+      "description": "Change order/service request",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "XR",
+      "description": "Changed as requested",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "XX",
+      "description": "Order/service changed, unsol.",
+      "comment": "",
+      "sort_order": 49
+    }
+  ],
+  "value_count": 49
+}

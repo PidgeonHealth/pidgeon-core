@@ -1,0 +1,779 @@
+{
+  "code": "Language",
+  "name": "Language",
+  "version": "HL7 v2.3",
+  "chapter": "Unknown",
+  "description": "Reference dataset - Healthcare industry standard values and common demographic data.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "Abkhaz",
+      "description": "",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Afrikaans",
+      "description": "",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Albanian",
+      "description": "",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Amharic",
+      "description": "",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Arabic",
+      "description": "",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "Armenian",
+      "description": "",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Assamese",
+      "description": "",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Assyrian",
+      "description": "",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Aymara",
+      "description": "",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Azeri",
+      "description": "",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "Basque",
+      "description": "",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Belarusian",
+      "description": "",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "Bengali",
+      "description": "",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "Bislama",
+      "description": "",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "Bosnian",
+      "description": "",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "Bulgarian",
+      "description": "",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Burmese",
+      "description": "",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "Catalan",
+      "description": "",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "Chinese",
+      "description": "",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "Croatian",
+      "description": "",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "Czech",
+      "description": "",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "Danish",
+      "description": "",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "Dari",
+      "description": "",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "Dhivehi",
+      "description": "",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "Dutch",
+      "description": "",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "Dzongkha",
+      "description": "",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "English",
+      "description": "",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "Estonian",
+      "description": "",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "Fijian",
+      "description": "",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "Filipino",
+      "description": "",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "Finnish",
+      "description": "",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "French",
+      "description": "",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "Frisian",
+      "description": "",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "Gagauz",
+      "description": "",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "Galician",
+      "description": "",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "Georgian",
+      "description": "",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "German",
+      "description": "",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "Greek",
+      "description": "",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "Guaraní",
+      "description": "",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "Gujarati",
+      "description": "",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "Haitian Creole",
+      "description": "",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "Hebrew",
+      "description": "",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "Hindi",
+      "description": "",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "Hiri Motu",
+      "description": "",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "huatl",
+      "description": "",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "Hungarian",
+      "description": "",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "Icelandic",
+      "description": "",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "Indonesian",
+      "description": "",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "Inuinnaqtun",
+      "description": "",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "Inuktitut",
+      "description": "",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "Irish",
+      "description": "",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "Italian",
+      "description": "",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "Japanese",
+      "description": "",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "Kannada",
+      "description": "",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "Kashmiri",
+      "description": "",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "Kazakh",
+      "description": "",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "Khmer",
+      "description": "",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "Korean",
+      "description": "",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "Kurdish",
+      "description": "",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "Kyrgyz",
+      "description": "",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "Lao",
+      "description": "",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "Latin",
+      "description": "",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "Latvian",
+      "description": "",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "Lithuanian",
+      "description": "",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "Luxembourgish",
+      "description": "",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "Macedonian",
+      "description": "",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "Malagasy",
+      "description": "",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "Malay",
+      "description": "",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "Malayalam",
+      "description": "",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "Maltese",
+      "description": "",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "Manx Gaelic",
+      "description": "",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "Maori",
+      "description": "",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "Marathi",
+      "description": "",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "Mayan",
+      "description": "",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "Moldovan",
+      "description": "",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "Mongolian",
+      "description": "",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "Montenegrin",
+      "description": "",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "Ndebele",
+      "description": "",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "Nepali",
+      "description": "",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "New Zealand Sign Language",
+      "description": "",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "Northern Sotho",
+      "description": "",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "Norwegian",
+      "description": "",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "Occitan",
+      "description": "",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "Oriya",
+      "description": "",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "Ossetian",
+      "description": "",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "Papiamento",
+      "description": "",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "Pashto",
+      "description": "",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "Persian",
+      "description": "",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "Polish",
+      "description": "",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "Portuguese",
+      "description": "",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "Punjabi",
+      "description": "",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "Quechua",
+      "description": "",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "Rhaeto-Romansh",
+      "description": "",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "Romanian",
+      "description": "",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "Russian",
+      "description": "",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "Sanskrit",
+      "description": "",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "Serbian",
+      "description": "",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "Shona",
+      "description": "",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "Sindhi",
+      "description": "",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "Sinhala",
+      "description": "",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "Slovak",
+      "description": "",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "Slovene",
+      "description": "",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "Somali",
+      "description": "",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "Sotho",
+      "description": "",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "Spanish",
+      "description": "",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "Sranan Tongo",
+      "description": "",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "Swahili",
+      "description": "",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "Swati",
+      "description": "",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "Swedish",
+      "description": "",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "Tajik",
+      "description": "",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "Tamil",
+      "description": "",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "Telugu",
+      "description": "",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "Tetum",
+      "description": "",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "Thai",
+      "description": "",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "Tok Pisin",
+      "description": "",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "Tsonga",
+      "description": "",
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "Tswana",
+      "description": "",
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "Turkish",
+      "description": "",
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "Turkmen",
+      "description": "",
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "Ukrainian",
+      "description": "",
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "Urdu",
+      "description": "",
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "Uzbek",
+      "description": "",
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "Venda",
+      "description": "",
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "Vietnamese",
+      "description": "",
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "Welsh",
+      "description": "",
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "Xhosa",
+      "description": "",
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "Yiddish",
+      "description": "",
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "Zulu",
+      "description": "",
+      "comment": "",
+      "sort_order": 128
+    }
+  ],
+  "value_count": 128
+}

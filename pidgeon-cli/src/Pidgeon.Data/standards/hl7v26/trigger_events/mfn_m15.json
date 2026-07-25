@@ -1,0 +1,84 @@
+{
+  "code": "MFN_M15",
+  "name": "Inventory Item Master File Notification",
+  "version": "HL7 v2.6",
+  "chapter": "Master Files",
+  "description": "This section is concerned with describing a master file message that should be used to communicate information that relates to the inventory of items that can be used to perform an ordered service.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MF INV ITEM",
+      "segment_desc": "MF INV ITEM group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF INV ITEM"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "IIM",
+      "segment_desc": "Inventory Item Master",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF INV ITEM"
+      ],
+      "level": 1,
+      "order_index": 6
+    }
+  ],
+  "segment_count": 7
+}

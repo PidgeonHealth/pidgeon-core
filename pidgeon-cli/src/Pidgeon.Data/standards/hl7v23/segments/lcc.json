@@ -1,0 +1,20 @@
+{
+  "code": "LCC",
+  "name": "Location Charge Code",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The optional LCC segment identifies how a patient location room can be billed by a certain department. A department can use different charge codes for the same room or bed, so there can be multiple LCC segments following an LDP segment",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LCC.1",
+      "field_description": "Primary Key Value",
+      "length": "200",
+      "data_type": "PL",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

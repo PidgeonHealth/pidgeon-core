@@ -1,0 +1,450 @@
+{
+  "code": "SAC",
+  "name": "Specimen Container detail",
+  "version": "HL7 v2.5.1",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The container detail segment is the data necessary to maintain the containers that are being used throughout the Laboratory Automation System.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SAC.1",
+      "field_description": "External Accession Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SAC.2",
+      "field_description": "Accession Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SAC.3",
+      "field_description": "Container Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SAC.4",
+      "field_description": "Primary (parent) Container Identifier ",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "SAC.5",
+      "field_description": "Equipment Container Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "SAC.6",
+      "field_description": "Specimen Source",
+      "length": "300",
+      "data_type": "SPS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "SAC.7",
+      "field_description": "Registration Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "SAC.8",
+      "field_description": "Container Status",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0370"
+    },
+    {
+      "position": 9,
+      "field_name": "SAC.9",
+      "field_description": "Carrier Type",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0378"
+    },
+    {
+      "position": 10,
+      "field_name": "SAC.10",
+      "field_description": "Carrier Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "SAC.11",
+      "field_description": "Position in Carrier",
+      "length": "80",
+      "data_type": "NA",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "SAC.12",
+      "field_description": "Tray Type - SAC",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0379"
+    },
+    {
+      "position": 13,
+      "field_name": "SAC.13",
+      "field_description": "Tray Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "SAC.14",
+      "field_description": "Position in Tray",
+      "length": "80",
+      "data_type": "NA",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "SAC.15",
+      "field_description": "Location",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "SAC.16",
+      "field_description": "Container Height",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "SAC.17",
+      "field_description": "Container Diameter",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "SAC.18",
+      "field_description": "Barrier Delta",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "SAC.19",
+      "field_description": "Bottom Delta",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "SAC.20",
+      "field_description": "Container Height/Diameter/Delta Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "SAC.21",
+      "field_description": "Container Volume",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "SAC.22",
+      "field_description": "Available Specimen Volume",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "SAC.23",
+      "field_description": "Initial Specimen Volume",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "SAC.24",
+      "field_description": "Volume Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "SAC.25",
+      "field_description": "Separator Type",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0380"
+    },
+    {
+      "position": 26,
+      "field_name": "SAC.26",
+      "field_description": "Cap Type",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0381"
+    },
+    {
+      "position": 27,
+      "field_name": "SAC.27",
+      "field_description": "Additive",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0371"
+    },
+    {
+      "position": 28,
+      "field_name": "SAC.28",
+      "field_description": "Specimen Component",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "SAC.29",
+      "field_description": "Dilution Factor",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "SAC.30",
+      "field_description": "Treatment",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0373"
+    },
+    {
+      "position": 31,
+      "field_name": "SAC.31",
+      "field_description": "Temperature",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 32,
+      "field_name": "SAC.32",
+      "field_description": "Hemolysis Index",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "SAC.33",
+      "field_description": "Hemolysis Index Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "SAC.34",
+      "field_description": "Lipemia Index",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 35,
+      "field_name": "SAC.35",
+      "field_description": "Lipemia Index Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 36,
+      "field_name": "SAC.36",
+      "field_description": "Icterus Index",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 37,
+      "field_name": "SAC.37",
+      "field_description": "Icterus Index Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 38,
+      "field_name": "SAC.38",
+      "field_description": "Fibrin Index",
+      "length": "20",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 39,
+      "field_name": "SAC.39",
+      "field_description": "Fibrin Index Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 40,
+      "field_name": "SAC.40",
+      "field_description": "System Induced Contaminants",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0374"
+    },
+    {
+      "position": 41,
+      "field_name": "SAC.41",
+      "field_description": "Drug Interference",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0382"
+    },
+    {
+      "position": 42,
+      "field_name": "SAC.42",
+      "field_description": "Artificial Blood",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0375"
+    },
+    {
+      "position": 43,
+      "field_name": "SAC.43",
+      "field_description": "Special Handling Code",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0376"
+    },
+    {
+      "position": 44,
+      "field_name": "SAC.44",
+      "field_description": "Other Environmental Factors",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0377"
+    }
+  ],
+  "field_count": 44
+}

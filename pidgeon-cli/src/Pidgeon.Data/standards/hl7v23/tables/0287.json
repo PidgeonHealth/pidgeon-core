@@ -1,0 +1,53 @@
+{
+  "code": "0287",
+  "name": "Problem/goal action code",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Care",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AD",
+      "description": "ADD",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CO",
+      "description": "CORRECT",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DE",
+      "description": "DELETE",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "LI",
+      "description": "LINK",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "UC",
+      "description": "UNCHANGED *",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "UN",
+      "description": "UNLINK",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "UP",
+      "description": "UPDATE",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

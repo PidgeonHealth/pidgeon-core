@@ -1,0 +1,150 @@
+{
+  "code": "GP2",
+  "name": "Grouping/reimbursement - Procedure Line Item",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "This segment is used for items that pertain to each HCPC/CPT line item.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "GP2.1",
+      "field_description": "Revenue Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0456"
+    },
+    {
+      "position": 2,
+      "field_name": "GP2.2",
+      "field_description": "Number Of Service Units",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "GP2.3",
+      "field_description": "Charge",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "GP2.4",
+      "field_description": "Reimbursement Action Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0459"
+    },
+    {
+      "position": 5,
+      "field_name": "GP2.5",
+      "field_description": "Denial Or Rejection Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0460"
+    },
+    {
+      "position": 6,
+      "field_name": "GP2.6",
+      "field_description": "Oce Edit Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0458"
+    },
+    {
+      "position": 7,
+      "field_name": "GP2.7",
+      "field_description": "Ambulatory Payment Classification Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0466"
+    },
+    {
+      "position": 8,
+      "field_name": "GP2.8",
+      "field_description": "Modifier Edit Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0467"
+    },
+    {
+      "position": 9,
+      "field_name": "GP2.9",
+      "field_description": "Payment Adjustment Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0468"
+    },
+    {
+      "position": 10,
+      "field_name": "GP2.10",
+      "field_description": "Packaging Status Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0469"
+    },
+    {
+      "position": 11,
+      "field_name": "GP2.11",
+      "field_description": "Expected Cms Payment Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "GP2.12",
+      "field_description": "Reimbursement Type Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0470"
+    },
+    {
+      "position": 13,
+      "field_name": "GP2.13",
+      "field_description": "Co-pay Amount",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "GP2.14",
+      "field_description": "Pay Rate Per Service Unit",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 14
+}

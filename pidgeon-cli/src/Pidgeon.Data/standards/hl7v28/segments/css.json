@@ -1,0 +1,40 @@
+{
+  "code": "CSS",
+  "name": "Clinical Study Data Schedule Segment",
+  "version": "HL7 v2.8",
+  "chapter": "Observation Reporting",
+  "description": "The Clinical Study Data Schedule (CSS) segment is optional depending on whether messaging of study data needs to be linked to the scheduled data time points for the study.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CSS.1",
+      "field_description": "Study Scheduled Time Point",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 2,
+      "field_name": "CSS.2",
+      "field_description": "Study Scheduled Patient Time Point",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CSS.3",
+      "field_description": "Study Quality Control Codes",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "3",
+      "table": "9999"
+    }
+  ],
+  "field_count": 3
+}

@@ -1,0 +1,23 @@
+{
+  "code": "0667",
+  "name": "Device Data State",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "Real Time Values",
+      "comment": "Display data",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Historic Values",
+      "comment": "Print data",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

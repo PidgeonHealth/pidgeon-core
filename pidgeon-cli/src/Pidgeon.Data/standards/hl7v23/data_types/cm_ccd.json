@@ -1,0 +1,30 @@
+{
+  "code": "CM_CCD",
+  "name": "Charge Time",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_CCD.1",
+      "field_description": "When To Charge Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0100"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_CCD.2",
+      "field_description": "Date/time",
+      "length": "0",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

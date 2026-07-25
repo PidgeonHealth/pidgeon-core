@@ -1,0 +1,167 @@
+{
+  "code": "0265",
+  "name": "Specialty type",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ALC",
+      "description": "Allergy",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AMB",
+      "description": "Ambulatory",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CAN",
+      "description": "Cancer",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CAR",
+      "description": "Coronary/cardiac care",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CCR",
+      "description": "Critical care",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CHI",
+      "description": "Chiropractic",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "EDI",
+      "description": "Education",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "EMR",
+      "description": "Emergency",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "FPC",
+      "description": "Family planning",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "INT",
+      "description": "Intensive care",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ISO",
+      "description": "Isolation",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "NAT",
+      "description": "Naturopathic",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "NBI",
+      "description": "Newborn, nursery, infants",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "OBG",
+      "description": "Obstetrics, gynecology",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "OBS",
+      "description": "Observation",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "OTH",
+      "description": "Other specialty",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "PED",
+      "description": "Pediatrics",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "PHY",
+      "description": "General/family practice",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "PIN",
+      "description": "Pediatric/neonatal intensive care",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "PPS",
+      "description": "Pediatric psychiatric",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "PRE",
+      "description": "Pediatric rehabilitation",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "PSI",
+      "description": "Psychiatric intensive care",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "PSY",
+      "description": "Psychiatric",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "REH",
+      "description": "Rehabilitation",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "SUR",
+      "description": "Surgery",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "WIC",
+      "description": "Walk-in clinic",
+      "comment": "",
+      "sort_order": 26
+    }
+  ],
+  "value_count": 26
+}

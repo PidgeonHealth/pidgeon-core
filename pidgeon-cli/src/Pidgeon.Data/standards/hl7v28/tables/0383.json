@@ -1,0 +1,77 @@
+{
+  "code": "0383",
+  "name": "Substance Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CE",
+      "description": "Calibration Error",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CW",
+      "description": "Calibration Warning",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "EE",
+      "description": "Expired Error",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EW",
+      "description": "Expired Warning",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "NE",
+      "description": "Not Available Error",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "NW",
+      "description": "Not Available Warning",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "OE",
+      "description": "Other Error",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OK",
+      "description": "OK Status",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "OW",
+      "description": "Other Warning",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "QE",
+      "description": "QC Error",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "QW",
+      "description": "QC Warning",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

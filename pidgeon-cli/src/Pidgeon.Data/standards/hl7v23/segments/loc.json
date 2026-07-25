@@ -1,0 +1,20 @@
+{
+  "code": "LOC",
+  "name": "Location Identification",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The LOC segment can identify any patient location referenced by information systems. This segment gives physical set up information about the location. This is not intended to include any current occupant or current use information. There should be one LOC segment for each patient location. If desired, there can also be one LOC segment for each nursing unit and room.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "LOC.1",
+      "field_description": "Primary Key Value",
+      "length": "200",
+      "data_type": "PL",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

@@ -1,0 +1,83 @@
+{
+  "code": "0175",
+  "name": "Master file identifier code",
+  "version": "HL7 v2.4",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CDM",
+      "description": "Charge description master file",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CLN",
+      "description": "Clinic master file",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CMA",
+      "description": "Clinical study with phases and scheduled master file",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CMB",
+      "description": "Clinical study without phases but with scheduled master file",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LOC",
+      "description": "Location master file",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "OMA",
+      "description": "Numerical observation master file",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "OMB",
+      "description": "Categorical observation master file",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OMC",
+      "description": "Observation batteries master file",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "OMD",
+      "description": "Calculated observations master file",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "OME",
+      "description": "Other basic observation/service attributes",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PRA",
+      "description": "Practitioner master file",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "STF",
+      "description": "Staff master file",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

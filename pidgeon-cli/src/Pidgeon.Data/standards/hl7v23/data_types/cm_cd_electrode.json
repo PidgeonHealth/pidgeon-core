@@ -1,0 +1,30 @@
+{
+  "code": "CM_CD_ELECTRODE",
+  "name": "Electrode Parameter",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_CD_ELECTRODE.1",
+      "field_description": "Source Name 1",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_CD_ELECTRODE.2",
+      "field_description": "Source Name 2",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

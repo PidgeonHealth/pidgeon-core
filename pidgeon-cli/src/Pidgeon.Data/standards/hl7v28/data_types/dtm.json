@@ -1,0 +1,9 @@
+{
+  "code": "DTM",
+  "name": "Date/time",
+  "version": "HL7 v2.8",
+  "description": "Specifies a point in time using a 24-hour clock notation. The number of characters populated (excluding the time zone specification) specifies the precision.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

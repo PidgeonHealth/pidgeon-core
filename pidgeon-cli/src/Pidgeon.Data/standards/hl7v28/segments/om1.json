@@ -1,0 +1,520 @@
+{
+  "code": "OM1",
+  "name": "General Segment",
+  "version": "HL7 v2.8",
+  "chapter": "Master Files",
+  "description": "The OM1 segment contains the attributes that apply to the definition of most observations.  This segment also contains the field attributes that specify what additional segments might also be defined for this observation.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OM1.1",
+      "field_description": "Sequence Number - Test/Observation Master File",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "OM1.2",
+      "field_description": "Producer's Service/Test/Observation Id",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 3,
+      "field_name": "OM1.3",
+      "field_description": "Permitted Data Types",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0125"
+    },
+    {
+      "position": 4,
+      "field_name": "OM1.4",
+      "field_description": "Specimen Required",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 5,
+      "field_name": "OM1.5",
+      "field_description": "Producer Id",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 6,
+      "field_name": "OM1.6",
+      "field_description": "Observation Description",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "OM1.7",
+      "field_description": "Other Service/Test/Observation Ids For The Observation",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 8,
+      "field_name": "OM1.8",
+      "field_description": "Other Names",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "OM1.9",
+      "field_description": "Preferred Report Name For The Observation",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "OM1.10",
+      "field_description": "Preferred Short Name Or Mnemonic For The Observation",
+      "length": "8",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "OM1.11",
+      "field_description": "Preferred Long Name For The Observation",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "OM1.12",
+      "field_description": "Orderability",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 13,
+      "field_name": "OM1.13",
+      "field_description": "Identity Of Instrument Used To Perform This Study",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 14,
+      "field_name": "OM1.14",
+      "field_description": "Coded Representation Of Method",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 15,
+      "field_name": "OM1.15",
+      "field_description": "Portable Device Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 16,
+      "field_name": "OM1.16",
+      "field_description": "Observation Producing Department/Section",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 17,
+      "field_name": "OM1.17",
+      "field_description": "Telephone Number Of Section",
+      "length": "0",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "OM1.18",
+      "field_description": "Nature Of Service/Test/Observation",
+      "length": "1",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0174"
+    },
+    {
+      "position": 19,
+      "field_name": "OM1.19",
+      "field_description": "Report Subheader",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 20,
+      "field_name": "OM1.20",
+      "field_description": "Report Display Order",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "OM1.21",
+      "field_description": "Date/Time Stamp For Any Change In Definition For The Observation",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "OM1.22",
+      "field_description": "Effective Date/Time Of Change",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "OM1.23",
+      "field_description": "Typical Turn-around Time",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "OM1.24",
+      "field_description": "Processing Time",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "OM1.25",
+      "field_description": "Processing Priority",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0168"
+    },
+    {
+      "position": 26,
+      "field_name": "OM1.26",
+      "field_description": "Reporting Priority",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0169"
+    },
+    {
+      "position": 27,
+      "field_name": "OM1.27",
+      "field_description": "Outside Site(s) Where Observation May Be Performed",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 28,
+      "field_name": "OM1.28",
+      "field_description": "Address Of Outside Site(s)",
+      "length": "0",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "OM1.29",
+      "field_description": "Phone Number Of Outside Site",
+      "length": "0",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "OM1.30",
+      "field_description": "Confidentiality Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0177"
+    },
+    {
+      "position": 31,
+      "field_name": "OM1.31",
+      "field_description": "Observations Required To Interpret This Observation",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 32,
+      "field_name": "OM1.32",
+      "field_description": "Interpretation Of Observations",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "OM1.33",
+      "field_description": "Contraindications To Observations",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 34,
+      "field_name": "OM1.34",
+      "field_description": "Reflex Tests/Observations",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 35,
+      "field_name": "OM1.35",
+      "field_description": "Rules That Trigger Reflex Testing",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 36,
+      "field_name": "OM1.36",
+      "field_description": "Fixed Canned Message",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 37,
+      "field_name": "OM1.37",
+      "field_description": "Patient Preparation",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 38,
+      "field_name": "OM1.38",
+      "field_description": "Procedure Medication",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 39,
+      "field_name": "OM1.39",
+      "field_description": "Factors That May Affect The Observation",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 40,
+      "field_name": "OM1.40",
+      "field_description": "Service/Test/Observation Performance Schedule",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 41,
+      "field_name": "OM1.41",
+      "field_description": "Description Of Test Methods",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 42,
+      "field_name": "OM1.42",
+      "field_description": "Kind Of Quantity Observed",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0254"
+    },
+    {
+      "position": 43,
+      "field_name": "OM1.43",
+      "field_description": "Point Versus Interval",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0255"
+    },
+    {
+      "position": 44,
+      "field_name": "OM1.44",
+      "field_description": "Challenge Information",
+      "length": "0",
+      "data_type": "TX",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 45,
+      "field_name": "OM1.45",
+      "field_description": "Relationship Modifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0258"
+    },
+    {
+      "position": 46,
+      "field_name": "OM1.46",
+      "field_description": "Target Anatomic Site Of Test",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 47,
+      "field_name": "OM1.47",
+      "field_description": "Modality Of Imaging Measurement",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0910"
+    },
+    {
+      "position": 48,
+      "field_name": "OM1.48",
+      "field_description": "Exclusive Test",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0919"
+    },
+    {
+      "position": 49,
+      "field_name": "OM1.49",
+      "field_description": "Diagnostic Serv Sect ID",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0074"
+    },
+    {
+      "position": 50,
+      "field_name": "OM1.50",
+      "field_description": "Taxonomic Classification Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0446"
+    },
+    {
+      "position": 51,
+      "field_name": "OM1.51",
+      "field_description": "Other Names",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 51
+}

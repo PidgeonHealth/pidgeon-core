@@ -1,0 +1,77 @@
+{
+  "code": "0252",
+  "name": "Causality observations",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AW",
+      "description": "Abatement of event after product withdrawn",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BE",
+      "description": "Event recurred after product reintroduced",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DR",
+      "description": "Dose response observed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EX",
+      "description": "Alternative explanations for the event available",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "IN",
+      "description": "Event occurred after product introduced",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "LI",
+      "description": "Literature reports association of product with event",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "OE",
+      "description": "Occurrence of event was confirmed by objective evidence",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OT",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PL",
+      "description": "Effect observed when patient receives placebo",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "SE",
+      "description": "Similar events in past for this patient",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "TC",
+      "description": "Toxic levels of product documented in blood or body fluids",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

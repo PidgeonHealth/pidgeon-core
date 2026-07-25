@@ -1,0 +1,150 @@
+{
+  "code": "TCC",
+  "name": "Test Code Configuration",
+  "version": "HL7 v2.5.1",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The test (e.g., analyte) code configuration segment is the data necessary to maintain and transmit information concerning the test entity codes that are being used throughout the \"automated system.\"",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "TCC.1",
+      "field_description": "Universal Service Identifier",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "TCC.2",
+      "field_description": "Test Application Identifier",
+      "length": "80",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "TCC.3",
+      "field_description": "Specimen Source",
+      "length": "300",
+      "data_type": "SPS",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "TCC.4",
+      "field_description": "Auto-Dilution Factor Default",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "TCC.5",
+      "field_description": "Rerun Dilution Factor Default",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "TCC.6",
+      "field_description": "Pre-Dilution Factor Default",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "TCC.7",
+      "field_description": "Endogenous Content of Pre-Dilution Diluent",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "TCC.8",
+      "field_description": "Inventory Limits Warning Level",
+      "length": "10",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "TCC.9",
+      "field_description": "Automatic Rerun Allowed",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 10,
+      "field_name": "TCC.10",
+      "field_description": "Automatic Repeat Allowed",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 11,
+      "field_name": "TCC.11",
+      "field_description": "Automatic Reflex Allowed",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 12,
+      "field_name": "TCC.12",
+      "field_description": "Equipment Dynamic Range",
+      "length": "20",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "TCC.13",
+      "field_description": "Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "TCC.14",
+      "field_description": "Processing Type",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0388"
+    }
+  ],
+  "field_count": 14
+}

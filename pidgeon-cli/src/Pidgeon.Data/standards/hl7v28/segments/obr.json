@@ -1,0 +1,550 @@
+{
+  "code": "OBR",
+  "name": "Observation Request",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "The Observation Request (OBR) segment is used to transmit information specific to an order for a diagnostic study or observation, physical exam, or assessment.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OBR.1",
+      "field_description": "Set Id - Obr",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "OBR.2",
+      "field_description": "Placer Order Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "OBR.3",
+      "field_description": "Filler Order Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "OBR.4",
+      "field_description": "Universal Service Identifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "OBR.5",
+      "field_description": "Priority",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "OBR.6",
+      "field_description": "Requested Date/Time",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "OBR.7",
+      "field_description": "Observation Date/Time #",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "OBR.8",
+      "field_description": "Observation End Date/Time #",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "OBR.9",
+      "field_description": "Collection Volume *",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "OBR.10",
+      "field_description": "Collector Identifier *",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "OBR.11",
+      "field_description": "Specimen Action Code *",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0065"
+    },
+    {
+      "position": 12,
+      "field_name": "OBR.12",
+      "field_description": "Danger Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 13,
+      "field_name": "OBR.13",
+      "field_description": "Relevant Clinical Information",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0916"
+    },
+    {
+      "position": 14,
+      "field_name": "OBR.14",
+      "field_description": "Specimen Received Date/Time",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "OBR.15",
+      "field_description": "Specimen Source",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "OBR.16",
+      "field_description": "Ordering Provider",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "OBR.17",
+      "field_description": "Order Callback Phone Number",
+      "length": "0",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "2",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "OBR.18",
+      "field_description": "Placer Field 1",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "OBR.19",
+      "field_description": "Placer Field 2",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "OBR.20",
+      "field_description": "Filler Field 1 +",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "OBR.21",
+      "field_description": "Filler Field 2 +",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "OBR.22",
+      "field_description": "Results Rpt/Status Chng - Date/Time +",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "OBR.23",
+      "field_description": "Charge To Practice +",
+      "length": "0",
+      "data_type": "MOC",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "OBR.24",
+      "field_description": "Diagnostic Serv Sect Id",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0074"
+    },
+    {
+      "position": 25,
+      "field_name": "OBR.25",
+      "field_description": "Result Status +",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0123"
+    },
+    {
+      "position": 26,
+      "field_name": "OBR.26",
+      "field_description": "Parent Result +",
+      "length": "0",
+      "data_type": "PRL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "OBR.27",
+      "field_description": "Quantity/Timing",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "OBR.28",
+      "field_description": "Result Copies To",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "OBR.29",
+      "field_description": "Parent",
+      "length": "0",
+      "data_type": "EIP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "OBR.30",
+      "field_description": "Transportation Mode",
+      "length": "4",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0124"
+    },
+    {
+      "position": 31,
+      "field_name": "OBR.31",
+      "field_description": "Reason For Study",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 32,
+      "field_name": "OBR.32",
+      "field_description": "Principal Result Interpreter +",
+      "length": "0",
+      "data_type": "NDL",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 33,
+      "field_name": "OBR.33",
+      "field_description": "Assistant Result Interpreter +",
+      "length": "0",
+      "data_type": "NDL",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "OBR.34",
+      "field_description": "Technician +",
+      "length": "0",
+      "data_type": "NDL",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 35,
+      "field_name": "OBR.35",
+      "field_description": "Transcriptionist +",
+      "length": "0",
+      "data_type": "NDL",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 36,
+      "field_name": "OBR.36",
+      "field_description": "Scheduled Date/Time +",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 37,
+      "field_name": "OBR.37",
+      "field_description": "Number Of Sample Containers *",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 38,
+      "field_name": "OBR.38",
+      "field_description": "Transport Logistics Of Collected Sample *",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 39,
+      "field_name": "OBR.39",
+      "field_description": "Collector's Comment *",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 40,
+      "field_name": "OBR.40",
+      "field_description": "Transport Arrangement Responsibility",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 41,
+      "field_name": "OBR.41",
+      "field_description": "Transport Arranged",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0224"
+    },
+    {
+      "position": 42,
+      "field_name": "OBR.42",
+      "field_description": "Escort Required",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0225"
+    },
+    {
+      "position": 43,
+      "field_name": "OBR.43",
+      "field_description": "Planned Patient Transport Comment",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 44,
+      "field_name": "OBR.44",
+      "field_description": "Procedure Code",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0088"
+    },
+    {
+      "position": 45,
+      "field_name": "OBR.45",
+      "field_description": "Procedure Code Modifier",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0340"
+    },
+    {
+      "position": 46,
+      "field_name": "OBR.46",
+      "field_description": "Placer Supplemental Service Information",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0411"
+    },
+    {
+      "position": 47,
+      "field_name": "OBR.47",
+      "field_description": "Filler Supplemental Service Information",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0411"
+    },
+    {
+      "position": 48,
+      "field_name": "OBR.48",
+      "field_description": "Medically Necessary Duplicate Procedure Reason",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0476"
+    },
+    {
+      "position": 49,
+      "field_name": "OBR.49",
+      "field_description": "Result Handling",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0507"
+    },
+    {
+      "position": 50,
+      "field_name": "OBR.50",
+      "field_description": "Parent Universal Service Identifier",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 51,
+      "field_name": "OBR.51",
+      "field_description": "Observation Group Id",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 52,
+      "field_name": "OBR.52",
+      "field_description": "Parent Observation Group Id",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 53,
+      "field_name": "OBR.53",
+      "field_description": "Alternate Placer Order Number",
+      "length": "0",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 54,
+      "field_name": "OBR.54",
+      "field_description": "Parent Order",
+      "length": "0",
+      "data_type": "EIP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 54
+}

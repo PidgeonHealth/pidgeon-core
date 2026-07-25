@@ -1,0 +1,110 @@
+{
+  "code": "AUT",
+  "name": "Authorization Information",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "This segment represents an authorization or a pre-authorization for a referred procedure or requested service by the payor covering the patient’s health care.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AUT.1",
+      "field_description": "Authorizing Payor, Plan Code",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0072"
+    },
+    {
+      "position": 2,
+      "field_name": "AUT.2",
+      "field_description": "Authorizing Payor, Company ID",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0285"
+    },
+    {
+      "position": 3,
+      "field_name": "AUT.3",
+      "field_description": "Authorizing Payor, Company Name",
+      "length": "45",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "AUT.4",
+      "field_description": "Authorization Effective Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "AUT.5",
+      "field_description": "Authorization Expiration Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "AUT.6",
+      "field_description": "Authorization Identifier",
+      "length": "30",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "AUT.7",
+      "field_description": "Reimbursement Limit",
+      "length": "25",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "AUT.8",
+      "field_description": "Requested Number of Treatments",
+      "length": "2",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "AUT.9",
+      "field_description": "Authorized Number of Treatments",
+      "length": "2",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "AUT.10",
+      "field_description": "Process Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 10
+}

@@ -1,0 +1,50 @@
+{
+  "code": "SID",
+  "name": "Substance Identifier",
+  "version": "HL7 v2.6",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The Substance Identifier segment contains data necessary to identify the substance (e.g., reagents) used in the production of analytical test results. The combination of these fields must uniquely identify the substance, i.e., depending on the manufacturer all or some fields are required (this is the reason the optionality is 'C' (conditional)). If the analysis requires multiple substances, this segment is repeated for each substance. The segment(s) should be attached to the TCD segment.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SID.1",
+      "field_description": "Application / Method Identifier",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SID.2",
+      "field_description": "Substance Lot Number",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SID.3",
+      "field_description": "Substance Container Identifier",
+      "length": "200",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SID.4",
+      "field_description": "Substance Manufacturer Identifier",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0385"
+    }
+  ],
+  "field_count": 4
+}

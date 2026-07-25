@@ -1,0 +1,602 @@
+{
+  "code": "PEX_P07",
+  "name": "Unsolicited initial individual product experience report",
+  "version": "HL7 v2.5",
+  "chapter": "Observation Reporting",
+  "description": "The primary application of this message is to transfer information related to an adverse event occurring while a patient was exposed to a product",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "VISIT",
+      "segment_desc": "VISIT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient Visit",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient Visit - Additional Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "VISIT"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "EXPERIENCE",
+      "segment_desc": "EXPERIENCE group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 9
+    },
+    {
+      "segment_code": "PES",
+      "segment_desc": "Product Experience Sender",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "PEX OBSERVATION",
+      "segment_desc": "PEX OBSERVATION group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "PEO",
+      "segment_desc": "Product Experience Observation",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION"
+      ],
+      "level": 2,
+      "order_index": 12
+    },
+    {
+      "segment_code": "PEX CAUSE",
+      "segment_desc": "PEX CAUSE group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION"
+      ],
+      "level": 2,
+      "order_index": 13
+    },
+    {
+      "segment_code": "PCR",
+      "segment_desc": "Possible Causal Relationship",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 14
+    },
+    {
+      "segment_code": "RX ORDER",
+      "segment_desc": "RX ORDER group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 15
+    },
+    {
+      "segment_code": "RXE",
+      "segment_desc": "Pharmacy/Treatment Encoded Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ORDER"
+      ],
+      "level": 4,
+      "order_index": 16
+    },
+    {
+      "segment_code": "TIMING QTY",
+      "segment_desc": "TIMING QTY group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ORDER"
+      ],
+      "level": 4,
+      "order_index": 17
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/Quantity",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ORDER",
+        "TIMING QTY"
+      ],
+      "level": 5,
+      "order_index": 18
+    },
+    {
+      "segment_code": "TQ2",
+      "segment_desc": "Timing/Quantity Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ORDER",
+        "TIMING QTY"
+      ],
+      "level": 5,
+      "order_index": 19
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/Treatment Route",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ORDER"
+      ],
+      "level": 4,
+      "order_index": 20
+    },
+    {
+      "segment_code": "RX ADMINISTRATION",
+      "segment_desc": "RX ADMINISTRATION group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 21
+    },
+    {
+      "segment_code": "RXA",
+      "segment_desc": "Pharmacy/Treatment Administration",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ADMINISTRATION"
+      ],
+      "level": 4,
+      "order_index": 22
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/Treatment Route",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "RX ADMINISTRATION"
+      ],
+      "level": 4,
+      "order_index": 23
+    },
+    {
+      "segment_code": "PRB",
+      "segment_desc": "Problem Details",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 24
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/Result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 25
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 26
+    },
+    {
+      "segment_code": "ASSOCIATED PERSON",
+      "segment_desc": "ASSOCIATED PERSON group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 27
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next of Kin / Associated Parties",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON"
+      ],
+      "level": 4,
+      "order_index": 28
+    },
+    {
+      "segment_code": "ASSOCIATED RX ORDER",
+      "segment_desc": "ASSOCIATED RX ORDER group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON"
+      ],
+      "level": 4,
+      "order_index": 29
+    },
+    {
+      "segment_code": "RXE",
+      "segment_desc": "Pharmacy/Treatment Encoded Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ORDER"
+      ],
+      "level": 5,
+      "order_index": 30
+    },
+    {
+      "segment_code": "NK1 TIMING QTY",
+      "segment_desc": "NK1 TIMING QTY group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ORDER"
+      ],
+      "level": 5,
+      "order_index": 31
+    },
+    {
+      "segment_code": "TQ1",
+      "segment_desc": "Timing/Quantity",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ORDER",
+        "NK1 TIMING QTY"
+      ],
+      "level": 6,
+      "order_index": 32
+    },
+    {
+      "segment_code": "TQ2",
+      "segment_desc": "Timing/Quantity Relationship",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ORDER",
+        "NK1 TIMING QTY"
+      ],
+      "level": 6,
+      "order_index": 33
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/Treatment Route",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ORDER"
+      ],
+      "level": 5,
+      "order_index": 34
+    },
+    {
+      "segment_code": "ASSOCIATED RX ADMIN",
+      "segment_desc": "ASSOCIATED RX ADMIN group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON"
+      ],
+      "level": 4,
+      "order_index": 35
+    },
+    {
+      "segment_code": "RXA",
+      "segment_desc": "Pharmacy/Treatment Administration",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ADMIN"
+      ],
+      "level": 5,
+      "order_index": 36
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/Treatment Route",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON",
+        "ASSOCIATED RX ADMIN"
+      ],
+      "level": 5,
+      "order_index": 37
+    },
+    {
+      "segment_code": "PRB",
+      "segment_desc": "Problem Details",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON"
+      ],
+      "level": 4,
+      "order_index": 38
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/Result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "ASSOCIATED PERSON"
+      ],
+      "level": 4,
+      "order_index": 39
+    },
+    {
+      "segment_code": "STUDY",
+      "segment_desc": "STUDY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE"
+      ],
+      "level": 3,
+      "order_index": 40
+    },
+    {
+      "segment_code": "CSR",
+      "segment_desc": "Clinical Study Registration",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "STUDY"
+      ],
+      "level": 4,
+      "order_index": 41
+    },
+    {
+      "segment_code": "CSP",
+      "segment_desc": "Clinical Study Phase",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "EXPERIENCE",
+        "PEX OBSERVATION",
+        "PEX CAUSE",
+        "STUDY"
+      ],
+      "level": 4,
+      "order_index": 42
+    }
+  ],
+  "segment_count": 43
+}

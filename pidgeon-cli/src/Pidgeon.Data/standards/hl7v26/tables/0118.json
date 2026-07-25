@@ -1,0 +1,10 @@
+{
+  "code": "0118",
+  "name": "Major Diagnostic Category",
+  "version": "HL7 v2.6",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [],
+  "value_count": 0
+}

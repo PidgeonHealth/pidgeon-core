@@ -1,0 +1,23 @@
+{
+  "code": "0347",
+  "name": "State/province",
+  "version": "HL7 v2.5.1",
+  "chapter": "Personnel Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AB",
+      "description": "Alberta  (US and Canada)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "MI",
+      "description": "Michigan  (US)",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

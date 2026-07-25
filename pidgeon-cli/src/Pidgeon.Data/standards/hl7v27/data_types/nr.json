@@ -1,0 +1,30 @@
+{
+  "code": "NR",
+  "name": "Numeric Range",
+  "version": "HL7 v2.7",
+  "description": "Specifies the interval between the lowest and the highest values in a series of data. In the case where a numeric range is unbounded on one side, the component of the unbounded side is null. Whether the end points are included in the range is defined in the usage note for the field.\n\nNote: Replaces the CM data type used in sections 8.8.4.6.1– OM2-6.1, 8.8.4.6.3– OM2-6.3and 8.8.4.6.4– OM2-6.4, as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NR.1",
+      "field_description": "Low Value",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "NR.2",
+      "field_description": "High Value",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

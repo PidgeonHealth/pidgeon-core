@@ -1,0 +1,53 @@
+{
+  "code": "0202",
+  "name": "Telecommunicationequipment type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BP",
+      "description": "Beeper",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CP",
+      "description": "Cellular Phone",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FX",
+      "description": "Fax",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Internet",
+      "description": "Internet Address: Use Only If TelecommunicationUse Code Is NET",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "MD",
+      "description": "Modem",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PH",
+      "description": "Telephone",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "X.400",
+      "description": "X.400 email address: Use Only If TelecommunicationUse Code Is NET",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

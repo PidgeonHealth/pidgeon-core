@@ -1,0 +1,275 @@
+{
+  "code": "0350",
+  "name": "Occurrence code",
+  "version": "HL7 v2.4",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "Auto accident",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "No fault insurance involved-including auto accident/other",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "03",
+      "description": "Accident/tort liability",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "04",
+      "description": "Accident/employment related",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "05",
+      "description": "Other accident",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "06",
+      "description": "Crime victim",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "09",
+      "description": "Start of infertility treatment cycle",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "10",
+      "description": "Last menstrual period",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "11",
+      "description": "Onset of symptoms/illness",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "12",
+      "description": "Date of onset for a chronically dependent individual",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "17",
+      "description": "Date outpatient occupational therapy plan established or last reviewed",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "18",
+      "description": "Date of retirement patient/beneficiary",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "19",
+      "description": "Date of retirement spouse",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "20",
+      "description": "Guarantee of payment began",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "21",
+      "description": "UR notice received",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "22",
+      "description": "Date active care ended",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "24",
+      "description": "Date insurance denied",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "25",
+      "description": "Date benefits terminated by primary payor",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "26",
+      "description": "Date SNF bed available",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "27",
+      "description": "Date home health plan established",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "28",
+      "description": "Spouse’s date of birth",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "29",
+      "description": "Date outpatient physical therapy plan established or last reviewed",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "30",
+      "description": "Date outpatient speech pathology plan established or last reviewed",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "31",
+      "description": "Date beneficiary notified of intent to bill (accommodations)",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "32",
+      "description": "Date beneficiary notified of intent to bill (procedures or treatments)",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "33",
+      "description": "First day of the Medicare coordination period for ESRD beneficiaries covered by EGHP",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "34",
+      "description": "Date of election of extended care facilities",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "35",
+      "description": "Date treatment started for P.T.",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "36",
+      "description": "Date of inpatient hospital discharge for covered transplant patients",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "37",
+      "description": "Date of inpatient hospital discharge for non-covered transplant patient",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "40",
+      "description": "Scheduled date of admission",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "41",
+      "description": "Date of first test for pre-admission testing",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "42",
+      "description": "Date of discharge",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "43",
+      "description": "Scheduled date of canceled surgery",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "44",
+      "description": "Date treatment started for O.T.",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "45",
+      "description": "Date treatment started for S.T.",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "46",
+      "description": "Date treatment started for cardiac rehab.",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "47 ... 49",
+      "description": "Payer codes",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "50",
+      "description": "Date lien released",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "51",
+      "description": "Date treatment started for psychiatric care",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "70 ... 99",
+      "description": "Occurrence span codes and dates",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "A1",
+      "description": "Birthdate - insured A",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "A2",
+      "description": "Effective date - insured A policy",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "A3",
+      "description": "Benefits exhausted payer A",
+      "comment": "",
+      "sort_order": 44
+    }
+  ],
+  "value_count": 44
+}

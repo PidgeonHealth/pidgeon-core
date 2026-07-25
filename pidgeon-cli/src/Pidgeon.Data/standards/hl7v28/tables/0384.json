@@ -1,0 +1,83 @@
+{
+  "code": "0384",
+  "name": "Substance Type",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CO",
+      "description": "Control",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DI",
+      "description": "Diluent",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "LI",
+      "description": "Measurable Liquid Item",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "LW",
+      "description": "Liquid Waste",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "MR",
+      "description": "Multiple Test Reagent",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "OT",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PT",
+      "description": "Pretreatment",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "PW",
+      "description": "Purified Water",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "RC",
+      "description": "Reagent Calibrator",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "SC",
+      "description": "Countable Solid Item",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "SR",
+      "description": "Single Test Reagent",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "SW",
+      "description": "Solid Waste",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

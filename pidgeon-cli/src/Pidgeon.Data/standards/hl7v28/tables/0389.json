@@ -1,0 +1,35 @@
+{
+  "code": "0389",
+  "name": "Analyte Repeat Status",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "Repeated with dilution",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "Reflex test",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "O",
+      "description": "Original, first run",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "R",
+      "description": "Repeated without dilution",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

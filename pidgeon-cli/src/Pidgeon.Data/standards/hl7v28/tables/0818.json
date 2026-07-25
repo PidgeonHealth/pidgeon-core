@@ -1,0 +1,35 @@
+{
+  "code": "0818",
+  "name": "Package",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "BX",
+      "description": "Box",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CS",
+      "description": "Case",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "EA",
+      "description": "Each",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SET",
+      "description": "Set",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

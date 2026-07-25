@@ -1,0 +1,9 @@
+{
+  "code": "DT",
+  "name": "Date",
+  "version": "HL7 v2.8",
+  "description": "Specifies the century and year with optional precision to month and day\n\nThe number of digits populated specifies the precision using the format specification YYYY[MM[DD]]\n\nExamples:\n|19880704|\n|199503|\n\nThe DT data type does not follow the normal truncation pattern, and the truncation character is never valid in the DT data type.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

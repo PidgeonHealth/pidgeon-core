@@ -1,0 +1,47 @@
+{
+  "code": "0262",
+  "name": "Privacy level",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "F",
+      "description": "Isolation",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "J",
+      "description": "Private room - medically justified",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Private room",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Q",
+      "description": "Private room - due to overflow",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "S",
+      "description": "Semi-private room",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "W",
+      "description": "Ward",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

@@ -1,0 +1,50 @@
+{
+  "code": "QRY_P04",
+  "name": "Generate bills and accounts receivable statements ",
+  "version": "HL7 v2.3.1",
+  "chapter": "Financial Management",
+  "description": "For patient accounting systems that support demand billing, the QRY/DSR transaction, as defined in Chapter 2, will provide the mechanism with which to request a copy of the bill for printing or viewing by the requesting system.\n\nNote: This is a display-oriented response.  That is why the associated messages are defined in Chapter 2.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Original-style query definition segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Original style query filter segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation pointer segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    }
+  ],
+  "segment_count": 4
+}

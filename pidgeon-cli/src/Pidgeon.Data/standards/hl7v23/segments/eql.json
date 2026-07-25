@@ -1,0 +1,50 @@
+{
+  "code": "EQL",
+  "name": "Embedded Query Language",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The EQL segment is used to define queries using select statements based on the query language of choice (e.g., SQL). Refer to the functional chapters for the lists of HL7-defined EQL select statements",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "EQL.1",
+      "field_description": "Query tag",
+      "length": "32",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "EQL.2",
+      "field_description": "Query/ Response Format Code",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0106"
+    },
+    {
+      "position": 3,
+      "field_name": "EQL.3",
+      "field_description": "EQL Query Name",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "EQL.4",
+      "field_description": "EQL Query Statement",
+      "length": "4096",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

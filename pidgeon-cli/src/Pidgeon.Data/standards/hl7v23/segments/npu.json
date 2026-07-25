@@ -1,0 +1,30 @@
+{
+  "code": "NPU",
+  "name": "Bed status update",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "The NPU segment allows the updating of census (bed status) data without sending patient-specific data. An example might include changing the status of a bed from “housekeeping” to “unoccupied.”",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NPU.1",
+      "field_description": "Bed Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "NPU.2",
+      "field_description": "Bed Status",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0116"
+    }
+  ],
+  "field_count": 2
+}

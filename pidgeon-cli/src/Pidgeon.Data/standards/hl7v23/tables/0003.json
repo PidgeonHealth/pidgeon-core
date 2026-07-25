@@ -1,0 +1,941 @@
+{
+  "code": "0003",
+  "name": "Event type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "022",
+      "description": "ORL - General laboratory order response message to any OML",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "A01",
+      "description": "ADT/ACK - Admit/visit notification",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "A02",
+      "description": "ADT/ACK - Transfer a patient",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "A03",
+      "description": "ADT/ACK -  Discharge/end visit",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "A04",
+      "description": "ADT/ACK -  Register a patient",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "A05",
+      "description": "ADT/ACK -  Pre-admit a patient",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "A06",
+      "description": "ADT/ACK -  Change an outpatient to an inpatient",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "A07",
+      "description": "ADT/ACK -  Change an inpatient to an outpatient",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "A08",
+      "description": "ADT/ACK -  Update patient information",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "A09",
+      "description": "ADT/ACK -  Patient departing - tracking",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "A10",
+      "description": "ADT/ACK -  Patient arriving - tracking",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "A11",
+      "description": "ADT/ACK -  Cancel admit/visit notification",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "A12",
+      "description": "ADT/ACK -  Cancel transfer",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "A13",
+      "description": "ADT/ACK -  Cancel discharge/end visit",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "A14",
+      "description": "ADT/ACK -  Pending admit",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "A15",
+      "description": "ADT/ACK -  Pending transfer",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "A16",
+      "description": "ADT/ACK -  Pending discharge",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "A17",
+      "description": "ADT/ACK -  Swap patients",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "A18",
+      "description": "ADT/ACK -  Merge patient information (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "A19",
+      "description": "QRY/ADR -  Patient query",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "A20",
+      "description": "ADT/ACK -  Bed status update",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "A21",
+      "description": "ADT/ACK -  Patient goes on a “leave of absence”",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "A22",
+      "description": "ADT/ACK -  Patient returns from a “leave of absence”",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "A23",
+      "description": "ADT/ACK -  Delete a patient record",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "A24",
+      "description": "ADT/ACK -  Link patient information",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "A25",
+      "description": "ADT/ACK -  Cancel pending discharge",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "A26",
+      "description": "ADT/ACK -  Cancel pending transfer",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "A27",
+      "description": "ADT/ACK -  Cancel pending admit",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "A28",
+      "description": "ADT/ACK -  Add person information",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "A29",
+      "description": "ADT/ACK -  Delete person information",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "A30",
+      "description": "ADT/ACK -  Merge person information (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "A31",
+      "description": "ADT/ACK -  Update person information",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "A32",
+      "description": "ADT/ACK -  Cancel patient arriving - tracking",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "A33",
+      "description": "ADT/ACK -  Cancel patient departing - tracking",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "A34",
+      "description": "ADT/ACK -  Merge patient information - patient ID only (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "A35",
+      "description": "ADT/ACK -  Merge patient information - account number only (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "A36",
+      "description": "ADT/ACK -  Merge patient information - patient ID and account number (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "A37",
+      "description": "ADT/ACK -  Unlink patient information",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "A38",
+      "description": "ADT/ACK - Cancel pre-admit",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "A39",
+      "description": "ADT/ACK - Merge person - patient ID (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "A40",
+      "description": "ADT/ACK - Merge patient - patient identifier list",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "A41",
+      "description": "ADT/ACK - Merge account - patient account number",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "A42",
+      "description": "ADT/ACK - Merge visit - visit number",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "A43",
+      "description": "ADT/ACK - Move patient information - patient identifier list",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "A44",
+      "description": "ADT/ACK - Move account information - patient account number",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "A45",
+      "description": "ADT/ACK - Move visit information - visit number",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "A46",
+      "description": "ADT/ACK - Change patient ID (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "A47",
+      "description": "ADT/ACK - Change patient identifier list",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "A48",
+      "description": "ADT/ACK - Change alternate patient ID (for backward compatibility only)",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "A49",
+      "description": "ADT/ACK - Change patient account number",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "A50",
+      "description": "ADT/ACK - Change visit number",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "A51",
+      "description": "ADT/ACK - Change alternate visit ID",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "C01",
+      "description": "CRM - Register a patient on a clinical trial",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "C02",
+      "description": "CRM - Cancel a patient registration on clinical trial (for clerical mistakes only)",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "C03",
+      "description": "CRM - Correct/update registration information",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "C04",
+      "description": "CRM - Patient has gone off a clinical trial",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "C05",
+      "description": "CRM - Patient enters phase of clinical trial",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "C06",
+      "description": "CRM - Cancel patient entering a phase (clerical mistake)",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "C07",
+      "description": "CRM - Correct/update phase information",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "C08",
+      "description": "CRM - Patient has gone off phase of clinical trial",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "C09",
+      "description": "CSU - Automated time intervals for reporting, like monthly",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "C10",
+      "description": "CSU - Patient completes the clinical trial",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "C11",
+      "description": "CSU - Patient completes a phase of the clinical trial",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "C12",
+      "description": "CSU - Update/correction of patient order/result information",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "CNQ",
+      "description": "QRY/EQQ/VQQ/RQQ - Cancel query",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "I01",
+      "description": "RQI/RPI - Request for insurance information",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "I02",
+      "description": "RQI/RPL - Request/receipt of patient selection display list",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "I03",
+      "description": "RQI/RPR - Request/receipt of patient selection list",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "I04",
+      "description": "RQD/RPI - Request for patient demographic data",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "I05",
+      "description": "RQC/RCI - Request for patient clinical information",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "I06",
+      "description": "RQC/RCL - Request/receipt of clinical data listing",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "I07",
+      "description": "PIN/ACK - Unsolicited insurance information",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "I08",
+      "description": "RQA/RPA - Request for treatment authorization information",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "I09",
+      "description": "RQA/RPA - Request for modification to an authorization",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "I10",
+      "description": "RQA/RPA - Request for resubmission of an authorization",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "I11",
+      "description": "RQA/RPA - Request for cancellation of an authorization",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "I12",
+      "description": "REF/RRI -  Patient referral",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "I13",
+      "description": "REF/RRI - Modify patient referral",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "I14",
+      "description": "REF/RRI - Cancel patient referral",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "I15",
+      "description": "REF/RRI - Request patient referral status",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "M01",
+      "description": "MFN/MFK - Master file not otherwise specified ( for backward compatibility only )",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "M02",
+      "description": "MFN/MFK - Master file - staff practitioner",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "M03",
+      "description": "MFN/MFK - Master file - test/observation ( for backward compatibility only )",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "M04",
+      "description": "MFN/MFK - Master files charge description",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "M05",
+      "description": "MFN/MFK - Patient location master file",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "M06",
+      "description": "MFN/MFK - Clinical study with phases and schedules master file",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "M07",
+      "description": "MFN/MFK - Clinical study without phases but with schedules master file",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "M08",
+      "description": "MFN/MFK - Test/observation (numeric) master file",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "M09",
+      "description": "MFN/MFK - Test/observation (categorical) master file",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "M10",
+      "description": "MFN/MFK - Test /observation batteries master file",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "M11",
+      "description": "MFN/MFK - Test/calculated observations master file",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "O01",
+      "description": "ORM - Order message (also RDE, RDS, RGV, RAS)",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "O02",
+      "description": "ORR - Order response (also RRE, RRD, RRG, RRA)",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "P01",
+      "description": "BAR/ACK - Add patient accounts",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "P02",
+      "description": "BAR/ACK - Purge patient accounts",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "P03",
+      "description": "DFT/ACK - Post detail financial transaction",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "P04",
+      "description": "QRY/DSP - Generate bill and A/R statements",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "P05",
+      "description": "BAR/ACK - Update account",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "P06",
+      "description": "BAR/ACK - End account",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "Q01",
+      "description": "QRY/DSR - Query sent for immediate response",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "Q02",
+      "description": "QRY/QCK - Query sent for deferred response",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "Q03",
+      "description": "DSR/ACK - Deferred response to a query",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "Q04",
+      "description": "EQQ - Embedded query language query",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "Q05",
+      "description": "UDM/ACK - Unsolicited display update message",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "Q06",
+      "description": "OSQ/OSR - Query for order status",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "R01",
+      "description": "ORU/ACK - Unsolicited transmission of an observation message",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "R02",
+      "description": "QRY - Query for results of observation",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "R03",
+      "description": "QRY/DSR Display-oriented results, query/unsol. update (for backward compatibility only) (Replaced by Q05)",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "R04",
+      "description": "ORF - Response to query; transmission of requested observation",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "R05",
+      "description": "QRY/DSR - query for display results",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "R06",
+      "description": "UDM - unsolicited update/display results",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "RAR",
+      "description": "RAR - Pharmacy administration information query response",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "RER",
+      "description": "RER-Pharmacy encoded order information query response",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "ROR",
+      "description": "ROR - Pharmacy prescription order query response",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "S01",
+      "description": "SRM/SRR - Request new appointment booking",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "S02",
+      "description": "SRM/SRR - Request appointment rescheduling",
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "S03",
+      "description": "SRM/SRR - Request appointment modification",
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "S04",
+      "description": "SRM/SRR - Request appointment cancellation",
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "S05",
+      "description": "SRM/SRR - Request appointment discontinuation",
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "S06",
+      "description": "SRM/SRR - Request appointment deletion",
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "S07",
+      "description": "SRM/SRR - Request addition of service/resource on appointment",
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "S08",
+      "description": "SRM/SRR - Request modification of service/resource on appointment",
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "S09",
+      "description": "SRM/SRR - Request cancellation of service/resource on appointment",
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "S10",
+      "description": "SRM/SRR - Request discontinuation of service/resource on appointment",
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "S11",
+      "description": "SRM/SRR - Request deletion of service/resource on appointment",
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "S12",
+      "description": "SIU/ACK - Notification of new appointment booking",
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "S13",
+      "description": "SIU/ACK - Notification of appointment rescheduling",
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "S14",
+      "description": "SIU/ACK - Notification of appointment modification",
+      "comment": "",
+      "sort_order": 128
+    },
+    {
+      "value": "S15",
+      "description": "SIU/ACK - Notification of appointment cancellation",
+      "comment": "",
+      "sort_order": 129
+    },
+    {
+      "value": "S16",
+      "description": "SIU/ACK - Notification of appointment discontinuation",
+      "comment": "",
+      "sort_order": 130
+    },
+    {
+      "value": "S17",
+      "description": "SIU/ACK - Notification of appointment deletion",
+      "comment": "",
+      "sort_order": 131
+    },
+    {
+      "value": "S18",
+      "description": "SIU/ACK - Notification of addition of service/resource on appointment",
+      "comment": "",
+      "sort_order": 132
+    },
+    {
+      "value": "S19",
+      "description": "SIU/ACK - Notification of modification of service/resource on appointment",
+      "comment": "",
+      "sort_order": 133
+    },
+    {
+      "value": "S20",
+      "description": "SIU/ACK - Notification of cancellation of service/resource on appointment",
+      "comment": "",
+      "sort_order": 134
+    },
+    {
+      "value": "S21",
+      "description": "SIU/ACK - Notification of discontinuation of service/resource on appointment",
+      "comment": "",
+      "sort_order": 135
+    },
+    {
+      "value": "S22",
+      "description": "SIU/ACK - Notification of deletion of service/resource on appointment",
+      "comment": "",
+      "sort_order": 136
+    },
+    {
+      "value": "S23",
+      "description": "SIU/ACK - Notification of blocked schedule time slot(s)",
+      "comment": "",
+      "sort_order": 137
+    },
+    {
+      "value": "S24",
+      "description": "SIU/ACK - Notification of opened (“unblocked”) schedule time slot(s)",
+      "comment": "",
+      "sort_order": 138
+    },
+    {
+      "value": "S25",
+      "description": "SQM/SQR - Schedule query message and response",
+      "comment": "",
+      "sort_order": 139
+    },
+    {
+      "value": "S26",
+      "description": "SIU/ACK Notification that patient did not show up for schedule appointment",
+      "comment": "",
+      "sort_order": 140
+    },
+    {
+      "value": "T01",
+      "description": "MDM/ACK - Original document notification",
+      "comment": "",
+      "sort_order": 141
+    },
+    {
+      "value": "T02",
+      "description": "MDM/ACK - Original document notification and content",
+      "comment": "",
+      "sort_order": 142
+    },
+    {
+      "value": "T03",
+      "description": "MDM/ACK - Document status change notification",
+      "comment": "",
+      "sort_order": 143
+    },
+    {
+      "value": "T04",
+      "description": "MDM/ACK - Document status change notification and content",
+      "comment": "",
+      "sort_order": 144
+    },
+    {
+      "value": "T05",
+      "description": "MDM/ACK - Document addendum notification",
+      "comment": "",
+      "sort_order": 145
+    },
+    {
+      "value": "T06",
+      "description": "MDM/ACK - Document addendum notification and content",
+      "comment": "",
+      "sort_order": 146
+    },
+    {
+      "value": "T07",
+      "description": "MDM/ACK - Document edit notification",
+      "comment": "",
+      "sort_order": 147
+    },
+    {
+      "value": "T09",
+      "description": "MDM/ACK - Document cancel notification",
+      "comment": "",
+      "sort_order": 148
+    },
+    {
+      "value": "V01",
+      "description": "VXQ - Query for vaccination record",
+      "comment": "",
+      "sort_order": 149
+    },
+    {
+      "value": "V02",
+      "description": "VXX - Response to vaccination query returning multiple PID matches",
+      "comment": "",
+      "sort_order": 150
+    },
+    {
+      "value": "V03",
+      "description": "VXR - Vaccination record response",
+      "comment": "",
+      "sort_order": 151
+    },
+    {
+      "value": "V04",
+      "description": "VXU - Unsolicited vaccination record update",
+      "comment": "",
+      "sort_order": 152
+    },
+    {
+      "value": "Varies",
+      "description": "MFQ/MFR - Master files query (use event same as asking for e.g., M05 - location)",
+      "comment": "",
+      "sort_order": 153
+    },
+    {
+      "value": "W01",
+      "description": "ORU - Waveform result, unsolicited transmission of requested information",
+      "comment": "",
+      "sort_order": 154
+    },
+    {
+      "value": "W02",
+      "description": "QRF - Waveform result, response to query",
+      "comment": "",
+      "sort_order": 155
+    }
+  ],
+  "value_count": 155
+}

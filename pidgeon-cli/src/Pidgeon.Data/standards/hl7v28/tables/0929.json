@@ -1,0 +1,35 @@
+{
+  "code": "0929",
+  "name": "Weight Units",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "[lb_av]",
+      "description": "Pound",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "[oz_av]",
+      "description": "Ounce",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "g",
+      "description": "Gram",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "kg",
+      "description": "Kilogram",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

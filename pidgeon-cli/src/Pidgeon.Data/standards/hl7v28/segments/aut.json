@@ -1,0 +1,300 @@
+{
+  "code": "AUT",
+  "name": "Authorization Information",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Referral",
+  "description": "This segment represents an authorization or a pre-authorization for a referred procedure or requested service by the payor covering the patient's health care.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AUT.1",
+      "field_description": "Authorizing Payor, Plan Id",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0072"
+    },
+    {
+      "position": 2,
+      "field_name": "AUT.2",
+      "field_description": "Authorizing Payor, Company Id",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0285"
+    },
+    {
+      "position": 3,
+      "field_name": "AUT.3",
+      "field_description": "Authorizing Payor, Company Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "AUT.4",
+      "field_description": "Authorization Effective Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "AUT.5",
+      "field_description": "Authorization Expiration Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "AUT.6",
+      "field_description": "Authorization Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "AUT.7",
+      "field_description": "Reimbursement Limit",
+      "length": "0",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "AUT.8",
+      "field_description": "Requested Number Of Treatments",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "AUT.9",
+      "field_description": "Authorized Number Of Treatments",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "AUT.10",
+      "field_description": "Process Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "AUT.11",
+      "field_description": "Requested Discipline(s)",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "AUT.12",
+      "field_description": "Authorized Discipline(s)",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "AUT.13",
+      "field_description": "Authorization Referral Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "AUT.14",
+      "field_description": "Approval Status",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "AUT.15",
+      "field_description": "Planned Treatment Stop Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "AUT.16",
+      "field_description": "Clinical Service",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "AUT.17",
+      "field_description": "Reason Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "AUT.18",
+      "field_description": "Number of Authorized Treatments/Units",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "AUT.19",
+      "field_description": "Number of Used Treatments/Units",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "AUT.20",
+      "field_description": "Number of Schedule Treatments/Units",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "AUT.21",
+      "field_description": "Encounter Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "AUT.22",
+      "field_description": "Remaining Benefit Amount",
+      "length": "0",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "AUT.23",
+      "field_description": "Authorized Provider",
+      "length": "0",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "AUT.24",
+      "field_description": "Authorized Health Professional",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "AUT.25",
+      "field_description": "Source Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "AUT.26",
+      "field_description": "Source Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "AUT.27",
+      "field_description": "Source Phone",
+      "length": "0",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 28,
+      "field_name": "AUT.28",
+      "field_description": "Comment",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "AUT.29",
+      "field_description": "Action Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0206"
+    }
+  ],
+  "field_count": 29
+}

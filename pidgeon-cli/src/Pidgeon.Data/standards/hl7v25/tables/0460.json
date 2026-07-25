@@ -1,0 +1,29 @@
+{
+  "code": "0460",
+  "name": "Denial or Rejection Code",
+  "version": "HL7 v2.5",
+  "chapter": "Financial Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "0",
+      "description": "Line item not denied or rejected",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Line item denied or rejected",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has been denied or rejected.",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

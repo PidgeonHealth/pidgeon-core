@@ -1,0 +1,53 @@
+{
+  "code": "0205",
+  "name": "Price type",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AP",
+      "description": "administrative price or handling fee",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DC",
+      "description": "direct unit cost",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "IC",
+      "description": "indirect unit cost",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "PF",
+      "description": "professional fee for performing provider",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "TF",
+      "description": "technology fee for use of equipment",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "TP",
+      "description": "total price",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "UP",
+      "description": "unit price, may be based on length of procedure or service",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

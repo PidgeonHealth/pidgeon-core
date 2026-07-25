@@ -1,0 +1,20 @@
+{
+  "code": "CM_MDV",
+  "name": "Minimum/maximum Data Values",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_MDV.1",
+      "field_description": "Minimum Value",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

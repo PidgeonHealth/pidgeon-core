@@ -1,0 +1,50 @@
+{
+  "code": "SN",
+  "name": "Structured Numeric",
+  "version": "HL7 v2.8",
+  "description": "The structured numeric data type is used to unambiguously express numeric clinical results along with qualifications. This enables receiving systems to store the components separately, and facilitates the use of numeric database queries.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SN.1",
+      "field_description": "Comparator",
+      "length": "2",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SN.2",
+      "field_description": "Num1",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SN.3",
+      "field_description": "Separator/Suffix",
+      "length": "1",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SN.4",
+      "field_description": "Num2",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

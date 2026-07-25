@@ -1,0 +1,500 @@
+{
+  "code": "IN1",
+  "name": "Insurance",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The IN1 segment contains insurance policy coverage information necessary to produce properly pro-rated and patient and insurance bills.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "IN1.1",
+      "field_description": "Set ID - Insurance",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "IN1.2",
+      "field_description": "Insurance Plan ID",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0072"
+    },
+    {
+      "position": 3,
+      "field_name": "IN1.3",
+      "field_description": "Insurance Company ID",
+      "length": "59",
+      "data_type": "CX",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "IN1.4",
+      "field_description": "Insurance Company Name",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "IN1.5",
+      "field_description": "Insurance Company Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "IN1.6",
+      "field_description": "Insurance Co. Contact Person",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "IN1.7",
+      "field_description": "Insurance Co Phone Number",
+      "length": "40",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "IN1.8",
+      "field_description": "Group Number",
+      "length": "12",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "IN1.9",
+      "field_description": "Group Name",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "IN1.10",
+      "field_description": "Insured's group employer ID",
+      "length": "12",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "IN1.11",
+      "field_description": "Insured's Group Emp Name",
+      "length": "130",
+      "data_type": "XON",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "IN1.12",
+      "field_description": "Plan Effective Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "IN1.13",
+      "field_description": "Plan Expiration Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "IN1.14",
+      "field_description": "Authorization Information",
+      "length": "55",
+      "data_type": "CM_AUI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "IN1.15",
+      "field_description": "Plan Type",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0086"
+    },
+    {
+      "position": 16,
+      "field_name": "IN1.16",
+      "field_description": "Name of Insured",
+      "length": "48",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "IN1.17",
+      "field_description": "Insured's Relationship to Patient",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0063"
+    },
+    {
+      "position": 18,
+      "field_name": "IN1.18",
+      "field_description": "Insured's Date of Birth",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "IN1.19",
+      "field_description": "Insured's Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "IN1.20",
+      "field_description": "Assignment of Benefits",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0135"
+    },
+    {
+      "position": 21,
+      "field_name": "IN1.21",
+      "field_description": "Coordination of Benefits",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0173"
+    },
+    {
+      "position": 22,
+      "field_name": "IN1.22",
+      "field_description": "Coord of Ben. Priority",
+      "length": "2",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "IN1.23",
+      "field_description": "Notice of Admission Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 24,
+      "field_name": "IN1.24",
+      "field_description": "Notice of Admission Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "IN1.25",
+      "field_description": "Report of Eigibility Code",
+      "length": "2",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 26,
+      "field_name": "IN1.26",
+      "field_description": "Report of Eligibility Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 27,
+      "field_name": "IN1.27",
+      "field_description": "Release Information Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0093"
+    },
+    {
+      "position": 28,
+      "field_name": "IN1.28",
+      "field_description": "Pre-Admit Cert",
+      "length": "15",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 29,
+      "field_name": "IN1.29",
+      "field_description": "Verification Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "IN1.30",
+      "field_description": "Verification By",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "IN1.31",
+      "field_description": "Type of Agreement Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0098"
+    },
+    {
+      "position": 32,
+      "field_name": "IN1.32",
+      "field_description": "Billing Status",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0022"
+    },
+    {
+      "position": 33,
+      "field_name": "IN1.33",
+      "field_description": "Lifetime Reserve Days",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "IN1.34",
+      "field_description": "Delay before lifetime reserve days",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 35,
+      "field_name": "IN1.35",
+      "field_description": "Company Plan Code",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0042"
+    },
+    {
+      "position": 36,
+      "field_name": "IN1.36",
+      "field_description": "Policy Number",
+      "length": "15",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 37,
+      "field_name": "IN1.37",
+      "field_description": "Policy Deductible",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 38,
+      "field_name": "IN1.38",
+      "field_description": "Policy Limit - Amount",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 39,
+      "field_name": "IN1.39",
+      "field_description": "Policy Limit - Days",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 40,
+      "field_name": "IN1.40",
+      "field_description": "Room Rate - Semi-Private",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 41,
+      "field_name": "IN1.41",
+      "field_description": "Room Rate - Private",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 42,
+      "field_name": "IN1.42",
+      "field_description": "Insured's Employment Status",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0066"
+    },
+    {
+      "position": 43,
+      "field_name": "IN1.43",
+      "field_description": "Insured's Sex",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0001"
+    },
+    {
+      "position": 44,
+      "field_name": "IN1.44",
+      "field_description": "Insured's Employer Address",
+      "length": "106",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 45,
+      "field_name": "IN1.45",
+      "field_description": "Verification Status",
+      "length": "2",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 46,
+      "field_name": "IN1.46",
+      "field_description": "Prior Insurance Plan ID",
+      "length": "8",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0072"
+    },
+    {
+      "position": 47,
+      "field_name": "IN1.47",
+      "field_description": "Coverage Type",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0309"
+    },
+    {
+      "position": 48,
+      "field_name": "IN1.48",
+      "field_description": "Handicap",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0310"
+    },
+    {
+      "position": 49,
+      "field_name": "IN1.49",
+      "field_description": "Insured's ID Number",
+      "length": "12",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 49
+}

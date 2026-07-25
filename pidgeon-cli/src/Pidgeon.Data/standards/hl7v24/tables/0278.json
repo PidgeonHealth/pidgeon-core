@@ -1,0 +1,71 @@
+{
+  "code": "0278",
+  "name": "Filler status codes",
+  "version": "HL7 v2.4",
+  "chapter": "Scheduling",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "Blocked",
+      "description": "The indicated time slot(s) is(are) blocked",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Booked",
+      "description": "The indicated appointment is booked",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Cancelled",
+      "description": "The indicated appointment was stopped from occurring (canceled prior to starting)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Complete",
+      "description": "The indicated appointment has completed normally (was not discontinued,  canceled, or deleted)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Dc",
+      "description": "The indicated appointment was discontinued (DC'ed while in progress, discontinued parent appointment, or discontinued child appointment)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "Deleted",
+      "description": "The indicated appointment was deleted from the filler application",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Overbook",
+      "description": "The appointment has been confirmed; however it is confirmed in an overbooked state",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Pending",
+      "description": "Appointment has not yet been confirmed",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Started",
+      "description": "The indicated appointment has begun and is currently in progress",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Waitlist",
+      "description": "Appointment has been placed on a waiting list for a particular slot,  or set of slots",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

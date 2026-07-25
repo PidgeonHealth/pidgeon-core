@@ -1,0 +1,9 @@
+{
+  "code": "NM",
+  "name": "Numeric",
+  "version": "HL7 v2.7",
+  "description": "Definition: A number represented as a series of ASCII numeric characters consisting of an optional leading sign (+ or -), the digits and an optional decimal point.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

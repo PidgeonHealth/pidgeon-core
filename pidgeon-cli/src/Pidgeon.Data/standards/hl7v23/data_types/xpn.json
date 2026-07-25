@@ -1,0 +1,20 @@
+{
+  "code": "XPN",
+  "name": "Extended Person Name",
+  "version": "HL7 v2.3",
+  "description": "Example: \n|Smith^John^J^III^DR^PHD^L|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "XPN.1",
+      "field_description": "Family Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "LastName"
+    }
+  ],
+  "field_count": 1
+}

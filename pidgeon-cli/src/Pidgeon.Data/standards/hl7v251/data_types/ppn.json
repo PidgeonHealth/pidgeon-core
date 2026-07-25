@@ -1,0 +1,250 @@
+{
+  "code": "PPN",
+  "name": "Performing Person Time Stamp",
+  "version": "HL7 v2.5.1",
+  "description": "This data type is the equivalent of an XCN data type joined with a TS data type. However, the XCN data type has been flattened to allow legal expression of its embedded complex data types HD, TS, CE and CWE.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PPN.1",
+      "field_description": "Id Number",
+      "length": "15",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PPN.2",
+      "field_description": "Family Name",
+      "length": "194",
+      "data_type": "FN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PPN.3",
+      "field_description": "Given Name",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PPN.4",
+      "field_description": "Second And Further Given Names Or Initials Thereof",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PPN.5",
+      "field_description": "Suffix (e.g., Jr Or Iii)",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PPN.6",
+      "field_description": "Prefix (e.g., Dr)",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "PPN.7",
+      "field_description": "Degree (e.g., Md)",
+      "length": "5",
+      "data_type": "IS",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": "0360"
+    },
+    {
+      "position": 8,
+      "field_name": "PPN.8",
+      "field_description": "Source Table",
+      "length": "4",
+      "data_type": "IS",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0297"
+    },
+    {
+      "position": 9,
+      "field_name": "PPN.9",
+      "field_description": "Assigning Authority",
+      "length": "227",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0363"
+    },
+    {
+      "position": 10,
+      "field_name": "PPN.10",
+      "field_description": "Name Type Code",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0200"
+    },
+    {
+      "position": 11,
+      "field_name": "PPN.11",
+      "field_description": "Identifier Check Digit",
+      "length": "1",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "PPN.12",
+      "field_description": "Check Digit Scheme",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0061"
+    },
+    {
+      "position": 13,
+      "field_name": "PPN.13",
+      "field_description": "Identifier Type Code",
+      "length": "5",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0203"
+    },
+    {
+      "position": 14,
+      "field_name": "PPN.14",
+      "field_description": "Assigning Facility",
+      "length": "227",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PPN.15",
+      "field_description": "Date/Time Action Performed",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "PPN.16",
+      "field_description": "Name Representation Code",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0465"
+    },
+    {
+      "position": 17,
+      "field_name": "PPN.17",
+      "field_description": "Name Context",
+      "length": "483",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0448"
+    },
+    {
+      "position": 18,
+      "field_name": "PPN.18",
+      "field_description": "Name Validity Range",
+      "length": "17",
+      "data_type": "DR",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "PPN.19",
+      "field_description": "Name Assembly Order",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0444"
+    },
+    {
+      "position": 20,
+      "field_name": "PPN.20",
+      "field_description": "Effective Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "PPN.21",
+      "field_description": "Expiration Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "PPN.22",
+      "field_description": "Professional Suffix",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "PPN.23",
+      "field_description": "Assigning Jurisdiction",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "PPN.24",
+      "field_description": "Assigning Agency Or Department",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 24
+}

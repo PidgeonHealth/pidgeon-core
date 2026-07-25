@@ -1,0 +1,20 @@
+{
+  "code": "CN",
+  "name": "Composite ID Number And Name",
+  "version": "HL7 v2.3",
+  "description": "A field identifying a person both as a coded value and with a text name. For specific fields, individual sites may elect to omit the ID or the name\n\nExample:\n|12372^RIGGINS^JOHN^\"\"^\"\"^\"\"^MD^ADT1| \n|12372^^^^^^^ADT1| \n|^RIGGINS^JOHN^\"\"^\"\"^\"\"^MD|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CN.1",
+      "field_description": "ID Number",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

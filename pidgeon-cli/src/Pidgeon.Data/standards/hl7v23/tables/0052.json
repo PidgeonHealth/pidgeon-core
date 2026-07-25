@@ -1,0 +1,29 @@
+{
+  "code": "0052",
+  "name": "Diagnosis type",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Admitting",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "Final",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "W",
+      "description": "Working",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,41 @@
+{
+  "code": "0253",
+  "name": "Indirect exposure mechanism",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "B",
+      "description": "Breast milk",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "F",
+      "description": "Father",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "P",
+      "description": "Transplacental",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "X",
+      "description": "Blood product",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

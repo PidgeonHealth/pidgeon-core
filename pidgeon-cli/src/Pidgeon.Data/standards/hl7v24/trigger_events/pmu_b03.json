@@ -1,0 +1,40 @@
+{
+  "code": "PMU_B03",
+  "name": "Delete personnel record",
+  "version": "HL7 v2.4",
+  "chapter": "Personnel Management",
+  "description": "An event B03 signals to delete the record with the healthcare administration information about an individual healthcare practitioner to correct erroneous entries.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "STF",
+      "segment_desc": "Staff Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

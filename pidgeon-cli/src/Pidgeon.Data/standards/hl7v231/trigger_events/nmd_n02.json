@@ -1,0 +1,144 @@
+{
+  "code": "NMD_N02",
+  "name": "Network management data message",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "One system creates an unsolicited update (UU) Network Management Data message (NMD) to transmit network management information to another system.  In this case, the initiating system sends an NMD message as an unsolicited update (UU) containing network management information to a receiving system, which responds with a generic acknowledgement message (ACK).",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "CLOCK AND STATS WITH NOTES",
+      "segment_desc": "CLOCK AND STATS WITH NOTES group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "CLOCK",
+      "segment_desc": "CLOCK group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES"
+      ],
+      "level": 1,
+      "order_index": 2
+    },
+    {
+      "segment_code": "NCK",
+      "segment_desc": "System Clock",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES",
+        "CLOCK"
+      ],
+      "level": 2,
+      "order_index": 3
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES",
+        "CLOCK"
+      ],
+      "level": 2,
+      "order_index": 4
+    },
+    {
+      "segment_code": "APP STATS",
+      "segment_desc": "APP STATS group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "NST",
+      "segment_desc": "Statistics",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES",
+        "APP STATS"
+      ],
+      "level": 2,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES",
+        "APP STATS"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "APP STATUS",
+      "segment_desc": "APP STATUS group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NSC",
+      "segment_desc": "Status change",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES",
+        "APP STATUS"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES",
+        "APP STATUS"
+      ],
+      "level": 2,
+      "order_index": 10
+    }
+  ],
+  "segment_count": 11
+}

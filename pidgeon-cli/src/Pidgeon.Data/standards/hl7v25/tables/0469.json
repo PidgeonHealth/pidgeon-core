@@ -1,0 +1,29 @@
+{
+  "code": "0469",
+  "name": "Packaging Status Code",
+  "version": "HL7 v2.5",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "Not packaged",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Packaged service (status indicator N, or no HCPCS code and certain revenue codes)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Packaged as part of partial hospitalization per diem or daily mental health service per diem",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

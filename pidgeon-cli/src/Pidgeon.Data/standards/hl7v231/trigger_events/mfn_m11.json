@@ -1,0 +1,102 @@
+{
+  "code": "MFN_M11",
+  "name": "Test/calculated observations master file",
+  "version": "HL7 v2.3.1",
+  "chapter": "Master Files",
+  "description": "",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master file identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MF TEST CALCULATED",
+      "segment_desc": "MF TEST CALCULATED group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master file entry segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST CALCULATED"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "OM1",
+      "segment_desc": "General segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST CALCULATED"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MF TEST CALC DETAIL",
+      "segment_desc": "MF TEST CALC DETAIL group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "MF TEST CALCULATED"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "OM6",
+      "segment_desc": "Observations that are calculated from other observations segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST CALCULATED",
+        "MF TEST CALC DETAIL"
+      ],
+      "level": 2,
+      "order_index": 6
+    },
+    {
+      "segment_code": "OM2",
+      "segment_desc": "Numeric observation segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST CALCULATED",
+        "MF TEST CALC DETAIL"
+      ],
+      "level": 2,
+      "order_index": 7
+    }
+  ],
+  "segment_count": 8
+}

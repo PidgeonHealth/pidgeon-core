@@ -1,0 +1,246 @@
+{
+  "code": "ORR_O02",
+  "name": "General Order Response Message to any ORM",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "Left for backward compatibility only.  It is recommended that the trigger events ORG, ORL, ORD, ORS, ORN, ORI, and ORP be used instead when communicating orders and order related events.\n\nThe function of this message is to respond to an ORM message.  An ORR message is the application acknowledgment to an ORM message.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "RESPONSE",
+      "segment_desc": "RESPONSE group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "PATIENT"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "ORDER",
+      "segment_desc": "ORDER group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "ORDER DETAIL SEGMENT",
+      "segment_desc": "ORDER DETAIL SEGMENT group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "OBR",
+      "segment_desc": "Observation Request",
+      "optionality": "C",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER DETAIL SEGMENT"
+      ],
+      "level": 3,
+      "order_index": 11
+    },
+    {
+      "segment_code": "RQD",
+      "segment_desc": "Requisition Detail",
+      "optionality": "C",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER DETAIL SEGMENT"
+      ],
+      "level": 3,
+      "order_index": 12
+    },
+    {
+      "segment_code": "RQ1",
+      "segment_desc": "Requisition Detail-1",
+      "optionality": "C",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER DETAIL SEGMENT"
+      ],
+      "level": 3,
+      "order_index": 13
+    },
+    {
+      "segment_code": "RXO",
+      "segment_desc": "Pharmacy/Treatment Order",
+      "optionality": "C",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER DETAIL SEGMENT"
+      ],
+      "level": 3,
+      "order_index": 14
+    },
+    {
+      "segment_code": "ODS",
+      "segment_desc": "Dietary Orders, Supplements, and Preferences",
+      "optionality": "C",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER DETAIL SEGMENT"
+      ],
+      "level": 3,
+      "order_index": 15
+    },
+    {
+      "segment_code": "ODT",
+      "segment_desc": "Diet Tray Instructions",
+      "optionality": "C",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER",
+        "ORDER DETAIL SEGMENT"
+      ],
+      "level": 3,
+      "order_index": 16
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 17
+    },
+    {
+      "segment_code": "CTI",
+      "segment_desc": "Clinical Trial Identification",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "RESPONSE",
+        "ORDER"
+      ],
+      "level": 2,
+      "order_index": 18
+    }
+  ],
+  "segment_count": 19
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0436",
+  "name": "Sensitivity to Causative Agent Code",
+  "version": "HL7 v2.5",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AD",
+      "description": "Adverse Reaction (Not otherwise classified)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AL",
+      "description": "Allergy",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CT",
+      "description": "Contraindication",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "IN",
+      "description": "Intolerance",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

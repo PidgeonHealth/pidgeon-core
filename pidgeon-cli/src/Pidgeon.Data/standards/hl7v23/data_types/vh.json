@@ -1,0 +1,50 @@
+{
+  "code": "VH",
+  "name": "Visiting Hours",
+  "version": "HL7 v2.3",
+  "description": "This data type contains the hours when a patient location is open for visiting. Refer to HL7 table 0267 - Days of the week for valid values for the first two components",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "VH.1",
+      "field_description": "Start Day Range",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0267"
+    },
+    {
+      "position": 2,
+      "field_name": "VH.2",
+      "field_description": "End Day Range",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0267"
+    },
+    {
+      "position": 3,
+      "field_name": "VH.3",
+      "field_description": "Start Hour Range",
+      "length": "0",
+      "data_type": "TM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "VH.4",
+      "field_description": "End Hour Range",
+      "length": "0",
+      "data_type": "TM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

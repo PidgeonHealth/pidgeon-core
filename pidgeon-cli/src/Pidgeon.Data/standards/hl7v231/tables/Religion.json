@@ -1,0 +1,143 @@
+{
+  "code": "Religion",
+  "name": "Religion",
+  "version": "HL7 v2.3.1",
+  "chapter": "",
+  "description": "",
+  "type": "PreLoaded",
+  "values": [
+    {
+      "value": "African",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "Animist",
+      "description": null,
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Baha'i",
+      "description": null,
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Buddhism",
+      "description": null,
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Cao",
+      "description": null,
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "Chinese",
+      "description": null,
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Christianity",
+      "description": null,
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Hinduism",
+      "description": null,
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "Irreligious/agnostic/atheism",
+      "description": null,
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "Islam",
+      "description": null,
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "Jainism",
+      "description": null,
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Juche",
+      "description": null,
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "Judaism",
+      "description": null,
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "Mormonism",
+      "description": null,
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "Neo-Paganism",
+      "description": null,
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "Rastafari",
+      "description": null,
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Shinto",
+      "description": null,
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "Sikhism",
+      "description": null,
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "Spiritism",
+      "description": null,
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "Tenrikyo",
+      "description": null,
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "Unitarian",
+      "description": null,
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "Zoroastrianism",
+      "description": null,
+      "comment": "",
+      "sort_order": 22
+    }
+  ],
+  "value_count": 22
+}

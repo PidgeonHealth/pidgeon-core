@@ -1,0 +1,77 @@
+{
+  "code": "0489",
+  "name": "Risk Codes",
+  "version": "HL7 v2.5.1",
+  "chapter": "Observation Reporting",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AGG",
+      "description": "Aggressive",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BHZ",
+      "description": "Biohazard",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BIO",
+      "description": "Biological",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "COR",
+      "description": "Corrosive",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ESC",
+      "description": "Escape Risk",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "EXP",
+      "description": "Explosive",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "IFL",
+      "description": "MaterialDangerInflammable",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "INF",
+      "description": "MaterialDangerInfectious",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "INJ",
+      "description": "Injury Hazard",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "POI",
+      "description": "Poison",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "RAD",
+      "description": "Radioactive",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

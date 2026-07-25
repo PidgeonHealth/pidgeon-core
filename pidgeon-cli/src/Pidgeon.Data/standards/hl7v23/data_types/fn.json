@@ -1,0 +1,30 @@
+{
+  "code": "FN",
+  "name": "Family + Last Name Prefix",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "FN.1",
+      "field_description": "Family Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "LastName"
+    },
+    {
+      "position": 2,
+      "field_name": "FN.2",
+      "field_description": "Last Name Prefix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

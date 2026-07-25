@@ -1,0 +1,23 @@
+{
+  "code": "0187",
+  "name": "Provider billing",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "I",
+      "description": "Institution bills for provider",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "P",
+      "description": "Provider does own billing",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

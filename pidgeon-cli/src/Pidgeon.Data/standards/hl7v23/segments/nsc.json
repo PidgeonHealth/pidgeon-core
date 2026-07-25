@@ -1,0 +1,20 @@
+{
+  "code": "NSC",
+  "name": "Status change",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The NSC segment can be used to request the start-up, shut-down, and/or migration (to a different cpu or file-server/file-system) of a particular application. It can also be used in an unsolicited update from one system to another to announce the start-up, shut-down, or migration of an application.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NSC.1",
+      "field_description": "Network Change Type",
+      "length": "4",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0333"
+    }
+  ],
+  "field_count": 1
+}

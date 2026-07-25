@@ -1,0 +1,122 @@
+{
+  "code": "MFN_M10",
+  "name": "Test /observation batteries master file",
+  "version": "HL7 v2.7",
+  "chapter": "Master Files",
+  "description": "Note: The MFK message is used for an application acknowledgment in either the original or enhanced acknowledgment modes.\nNote: MFI-1 - Master File Identifier = OMC for observation batteries.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MF_TEST_BATTERIES",
+      "segment_desc": "MF_TEST_BATTERIES group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_TEST_BATTERIES"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "OM1",
+      "segment_desc": "General Segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_TEST_BATTERIES"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "MF_TEST_BATT_DETAIL",
+      "segment_desc": "MF_TEST_BATT_DETAIL group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "MF_TEST_BATTERIES"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "OM5",
+      "segment_desc": "Observation Batteries (sets)",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF_TEST_BATTERIES",
+        "MF_TEST_BATT_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "OM4",
+      "segment_desc": "Observations That Require Specimens",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MF_TEST_BATTERIES",
+        "MF_TEST_BATT_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 9
+    }
+  ],
+  "segment_count": 10
+}

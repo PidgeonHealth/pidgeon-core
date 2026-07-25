@@ -1,0 +1,9 @@
+{
+  "code": "TM",
+  "name": "Time",
+  "version": "HL7 v2.5.1",
+  "description": "Specifies the hour of the day with optional minutes, seconds, fraction of second using a 24-hour clock notation and time zone.\n\nFormat: HH[MM[SS[.S[S[S[S]]]]]][+/-ZZZZ]",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

@@ -1,0 +1,40 @@
+{
+  "code": "AUI",
+  "name": "Authorization Information",
+  "version": "HL7 v2.5",
+  "description": "This data type specifies the identifier or code for an insurance authorization instance and its associated detail.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "AUI.1",
+      "field_description": "Authorization Number",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "AUI.2",
+      "field_description": "Date",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "AUI.3",
+      "field_description": "Source",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

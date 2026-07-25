@@ -1,0 +1,47 @@
+{
+  "code": "0432",
+  "name": "Admission level of care code",
+  "version": "HL7 v2.4",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AC",
+      "description": "Acute",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CH",
+      "description": "Chronic",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CO",
+      "description": "Comatose",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CR",
+      "description": "Critical",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "IM",
+      "description": "Improved",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "MO",
+      "description": "Moribund",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

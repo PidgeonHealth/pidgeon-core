@@ -1,0 +1,83 @@
+{
+  "code": "0085",
+  "name": "Observation result status codes interpretation",
+  "version": "HL7 v2.3.1",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Record coming over is a correction and thus replaces a final result",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Deletes the OBX record",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "F",
+      "description": "Final results; Can only be changed with a corrected result.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "I",
+      "description": "Specimen in lab; results pending",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "N",
+      "description": "Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought.",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "O",
+      "description": "Order detail description only (no result)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "P",
+      "description": "Preliminary results",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "R",
+      "description": "Results entered -- not verified",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "S",
+      "description": "Partial results",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "U",
+      "description": "Results status change to final without retransmitting results already sent as ‘preliminary.’  E.g., radiology changes status from preliminary to final",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "W",
+      "description": "Post original as wrong, e.g., transmitted for wrong patient",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "X",
+      "description": "Results cannot be obtained for this observation",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

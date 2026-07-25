@@ -1,0 +1,35 @@
+{
+  "code": "0517",
+  "name": "Inform Person Code",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "HD",
+      "description": "Inform help desk",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "NPAT",
+      "description": "Do NOT inform patient",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "PAT",
+      "description": "Inform patient",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "USR",
+      "description": "Inform User",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

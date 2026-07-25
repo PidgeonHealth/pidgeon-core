@@ -1,0 +1,881 @@
+{
+  "code": "CCU_I20",
+  "name": "Asynchronous Collaborative Care Update",
+  "version": "HL7 v2.7",
+  "chapter": "Patient Referral",
+  "description": "This event triggers a message to be sent from a referred to healthcare provider to the referring health care provider, regarding a specific, previously received collaborative care referral.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "RF1",
+      "segment_desc": "Referral Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "PROVIDER_CONTACT",
+      "segment_desc": "PROVIDER_CONTACT group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "PRD",
+      "segment_desc": "Provider Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER_CONTACT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "CTD",
+      "segment_desc": "Contact Data",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PROVIDER_CONTACT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next Of Kin / Associated Parties",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 10
+    },
+    {
+      "segment_code": "INSURANCE",
+      "segment_desc": "INSURANCE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 11
+    },
+    {
+      "segment_code": "IN1",
+      "segment_desc": "Insurance",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "INSURANCE"
+      ],
+      "level": 1,
+      "order_index": 12
+    },
+    {
+      "segment_code": "IN2",
+      "segment_desc": "Insurance Additional Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "INSURANCE"
+      ],
+      "level": 1,
+      "order_index": 13
+    },
+    {
+      "segment_code": "IN3",
+      "segment_desc": "Insurance Additional Information, Certification",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "INSURANCE"
+      ],
+      "level": 1,
+      "order_index": 14
+    },
+    {
+      "segment_code": "APPOINTMENT_HISTORY",
+      "segment_desc": "APPOINTMENT_HISTORY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 15
+    },
+    {
+      "segment_code": "SCH",
+      "segment_desc": "Scheduling Activity Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "APPOINTMENT_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 16
+    },
+    {
+      "segment_code": "RESOURCES",
+      "segment_desc": "RESOURCES group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "APPOINTMENT_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 17
+    },
+    {
+      "segment_code": "RGS",
+      "segment_desc": "Resource Group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "APPOINTMENT_HISTORY",
+        "RESOURCES"
+      ],
+      "level": 2,
+      "order_index": 18
+    },
+    {
+      "segment_code": "RESOURCE_DETAIL",
+      "segment_desc": "RESOURCE_DETAIL group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "APPOINTMENT_HISTORY",
+        "RESOURCES"
+      ],
+      "level": 2,
+      "order_index": 19
+    },
+    {
+      "segment_code": "AIS",
+      "segment_desc": "Appointment Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "APPOINTMENT_HISTORY",
+        "RESOURCES",
+        "RESOURCE_DETAIL"
+      ],
+      "level": 3,
+      "order_index": 20
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "APPOINTMENT_HISTORY",
+        "RESOURCES",
+        "RESOURCE_DETAIL"
+      ],
+      "level": 3,
+      "order_index": 21
+    },
+    {
+      "segment_code": "CLINICAL_HISTORY",
+      "segment_desc": "CLINICAL_HISTORY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 22
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLINICAL_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 23
+    },
+    {
+      "segment_code": "CLINICAL_HISTORY_DETAIL",
+      "segment_desc": "CLINICAL_HISTORY_DETAIL group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "CLINICAL_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 24
+    },
+    {
+      "segment_code": "OBR",
+      "segment_desc": "Observation Request",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLINICAL_HISTORY",
+        "CLINICAL_HISTORY_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 25
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLINICAL_HISTORY",
+        "CLINICAL_HISTORY_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 26
+    },
+    {
+      "segment_code": "ROLE_CLINICAL_HISTORY",
+      "segment_desc": "ROLE_CLINICAL_HISTORY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "CLINICAL_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 27
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLINICAL_HISTORY",
+        "ROLE_CLINICAL_HISTORY"
+      ],
+      "level": 2,
+      "order_index": 28
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLINICAL_HISTORY",
+        "ROLE_CLINICAL_HISTORY"
+      ],
+      "level": 2,
+      "order_index": 29
+    },
+    {
+      "segment_code": "CTI",
+      "segment_desc": "Clinical Trial Identification",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLINICAL_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 30
+    },
+    {
+      "segment_code": "PATIENT_VISITS",
+      "segment_desc": "PATIENT_VISITS group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 31
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient Visit",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT_VISITS"
+      ],
+      "level": 1,
+      "order_index": 32
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient Visit - Additional Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATIENT_VISITS"
+      ],
+      "level": 1,
+      "order_index": 33
+    },
+    {
+      "segment_code": "MEDICATION_HISTORY",
+      "segment_desc": "MEDICATION_HISTORY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 34
+    },
+    {
+      "segment_code": "ORC",
+      "segment_desc": "Common Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 35
+    },
+    {
+      "segment_code": "MEDICATION_ORDER_DETAIL",
+      "segment_desc": "MEDICATION_ORDER_DETAIL group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "MEDICATION_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 36
+    },
+    {
+      "segment_code": "RXO",
+      "segment_desc": "Pharmacy/treatment Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ORDER_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 37
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/treatment Route",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ORDER_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 38
+    },
+    {
+      "segment_code": "RXC",
+      "segment_desc": "Pharmacy/treatment Component Order",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ORDER_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 39
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ORDER_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 40
+    },
+    {
+      "segment_code": "MEDICATION_ENCODING_DETAIL",
+      "segment_desc": "MEDICATION_ENCODING_DETAIL group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "MEDICATION_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 41
+    },
+    {
+      "segment_code": "RXE",
+      "segment_desc": "Pharmacy/treatment Encoded Order",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ENCODING_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 42
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/treatment Route",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ENCODING_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 43
+    },
+    {
+      "segment_code": "RXC",
+      "segment_desc": "Pharmacy/treatment Component Order",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ENCODING_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 44
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ENCODING_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 45
+    },
+    {
+      "segment_code": "MEDICATION_ADMINISTRATION_DETAIL",
+      "segment_desc": "MEDICATION_ADMINISTRATION_DETAIL group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MEDICATION_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 46
+    },
+    {
+      "segment_code": "RXA",
+      "segment_desc": "Pharmacy/treatment Administration",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ADMINISTRATION_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 47
+    },
+    {
+      "segment_code": "RXR",
+      "segment_desc": "Pharmacy/treatment Route",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ADMINISTRATION_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 48
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY",
+        "MEDICATION_ADMINISTRATION_DETAIL"
+      ],
+      "level": 2,
+      "order_index": 49
+    },
+    {
+      "segment_code": "CTI",
+      "segment_desc": "Clinical Trial Identification",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MEDICATION_HISTORY"
+      ],
+      "level": 1,
+      "order_index": 50
+    },
+    {
+      "segment_code": "PROBLEM",
+      "segment_desc": "PROBLEM group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 51
+    },
+    {
+      "segment_code": "PRB",
+      "segment_desc": "Problem Details",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROBLEM"
+      ],
+      "level": 1,
+      "order_index": 52
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PROBLEM"
+      ],
+      "level": 1,
+      "order_index": 53
+    },
+    {
+      "segment_code": "ROLE_PROBLEM",
+      "segment_desc": "ROLE_PROBLEM group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "PROBLEM"
+      ],
+      "level": 1,
+      "order_index": 54
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PROBLEM",
+        "ROLE_PROBLEM"
+      ],
+      "level": 2,
+      "order_index": 55
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PROBLEM",
+        "ROLE_PROBLEM"
+      ],
+      "level": 2,
+      "order_index": 56
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PROBLEM"
+      ],
+      "level": 1,
+      "order_index": 57
+    },
+    {
+      "segment_code": "GOAL",
+      "segment_desc": "GOAL group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 58
+    },
+    {
+      "segment_code": "GOL",
+      "segment_desc": "Goal Detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "GOAL"
+      ],
+      "level": 1,
+      "order_index": 59
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "GOAL"
+      ],
+      "level": 1,
+      "order_index": 60
+    },
+    {
+      "segment_code": "ROLE_GOAL",
+      "segment_desc": "ROLE_GOAL group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "GOAL"
+      ],
+      "level": 1,
+      "order_index": 61
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "GOAL",
+        "ROLE_GOAL"
+      ],
+      "level": 2,
+      "order_index": 62
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "GOAL",
+        "ROLE_GOAL"
+      ],
+      "level": 2,
+      "order_index": 63
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "GOAL"
+      ],
+      "level": 1,
+      "order_index": 64
+    },
+    {
+      "segment_code": "PATHWAY",
+      "segment_desc": "PATHWAY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 65
+    },
+    {
+      "segment_code": "PTH",
+      "segment_desc": "Pathway",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATHWAY"
+      ],
+      "level": 1,
+      "order_index": 66
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PATHWAY"
+      ],
+      "level": 1,
+      "order_index": 67
+    },
+    {
+      "segment_code": "ROLE_PATHWAY",
+      "segment_desc": "ROLE_PATHWAY group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "PATHWAY"
+      ],
+      "level": 1,
+      "order_index": 68
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "PATHWAY",
+        "ROLE_PATHWAY"
+      ],
+      "level": 2,
+      "order_index": 69
+    },
+    {
+      "segment_code": "VAR",
+      "segment_desc": "Variance",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PATHWAY",
+        "ROLE_PATHWAY"
+      ],
+      "level": 2,
+      "order_index": 70
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "PATHWAY"
+      ],
+      "level": 1,
+      "order_index": 71
+    },
+    {
+      "segment_code": "REL",
+      "segment_desc": "Clinical Relationship Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 72
+    }
+  ],
+  "segment_count": 73
+}

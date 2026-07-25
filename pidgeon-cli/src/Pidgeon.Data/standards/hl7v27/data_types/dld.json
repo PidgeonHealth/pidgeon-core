@@ -1,0 +1,30 @@
+{
+  "code": "DLD",
+  "name": "Discharge To Location And Date",
+  "version": "HL7 v2.7",
+  "description": "Specifies the healthcare facility to which the patient was discharged and the date.\n\nNote: Replaces the CM data type used in section 3.4.3.37 PV1-37, as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DLD.1",
+      "field_description": "Discharge To Location",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0113"
+    },
+    {
+      "position": 2,
+      "field_name": "DLD.2",
+      "field_description": "Effective Date",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

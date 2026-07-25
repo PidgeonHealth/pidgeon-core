@@ -1,0 +1,17 @@
+{
+  "code": "0291",
+  "name": "Subtype of Referenced Data",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "x-hl7-cda-level-one",
+      "description": "HL7 Clinical Document Architecture Level One document",
+      "comment": "",
+      "sort_order": 1
+    }
+  ],
+  "value_count": 1
+}

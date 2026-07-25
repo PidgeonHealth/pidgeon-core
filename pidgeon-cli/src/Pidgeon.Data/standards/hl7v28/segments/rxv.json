@@ -1,0 +1,230 @@
+{
+  "code": "RXV",
+  "name": "Pharmacy/Treatment Infusion",
+  "version": "HL7 v2.8",
+  "chapter": "Order Entry",
+  "description": "The RXV segment details the pharmacy or treatment application’s encoding of specific infusion order parameters",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RXV.1",
+      "field_description": "Set ID - RXV",
+      "length": "0",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RXV.2",
+      "field_description": "Bolus Type",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0917"
+    },
+    {
+      "position": 3,
+      "field_name": "RXV.3",
+      "field_description": "Bolus Dose Amount",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "RXV.4",
+      "field_description": "Bolus Dose Amount Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "RXV.5",
+      "field_description": "Bolus Dose Volume",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "RXV.6",
+      "field_description": "Bolus Dose Volume Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "RXV.7",
+      "field_description": "PCA Type",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0918"
+    },
+    {
+      "position": 8,
+      "field_name": "RXV.8",
+      "field_description": "PCA Dose Amount",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "RXV.9",
+      "field_description": "PCA Dose Amount Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "RXV.10",
+      "field_description": "PCA Dose Amount Volume",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "RXV.11",
+      "field_description": "PCA Dose Amount Volume Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "RXV.12",
+      "field_description": "Max Dose Amount",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "RXV.13",
+      "field_description": "Max Dose Amount Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "RXV.14",
+      "field_description": "Max Dose Amount Volume",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "RXV.15",
+      "field_description": "Max Dose Amount Volume Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "RXV.16",
+      "field_description": "Max Dose per Time",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "RXV.17",
+      "field_description": "Lockout Interval",
+      "length": "0",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "RXV.18",
+      "field_description": "Syringe Manufacturer",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "RXV.19",
+      "field_description": "Syringe Model Number",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "RXV.20",
+      "field_description": "Syringe Size",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "RXV.21",
+      "field_description": "Syringe Size Units",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "RXV.22",
+      "field_description": "Action Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0206"
+    }
+  ],
+  "field_count": 22
+}

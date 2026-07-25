@@ -1,0 +1,160 @@
+{
+  "code": "PR1",
+  "name": "Procedures",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "The PR1 segment contains information relative to various types of procedures that can be performed on a patient. The PR1 segment can be used to send procedure information, for example: Surgical, Nuclear Medicine, X-ray with contrast, etc. The PR1 segment is used to send multiple procedures, for example, for medical records encoding or for billing systems.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PR1.1",
+      "field_description": "Set ID - Procedure",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PR1.2",
+      "field_description": "Procedure Coding Method",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": "0089"
+    },
+    {
+      "position": 3,
+      "field_name": "PR1.3",
+      "field_description": "Procedure Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0088"
+    },
+    {
+      "position": 4,
+      "field_name": "PR1.4",
+      "field_description": "Procedure Description",
+      "length": "40",
+      "data_type": "ST",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PR1.5",
+      "field_description": "Procedure Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PR1.6",
+      "field_description": "Procedure Type",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0230"
+    },
+    {
+      "position": 7,
+      "field_name": "PR1.7",
+      "field_description": "Procedure Minutes",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PR1.8",
+      "field_description": "Anesthesiologist",
+      "length": "120",
+      "data_type": "XCN",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": "0010"
+    },
+    {
+      "position": 9,
+      "field_name": "PR1.9",
+      "field_description": "Anesthesia Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0019"
+    },
+    {
+      "position": 10,
+      "field_name": "PR1.10",
+      "field_description": "Anesthesia Minutes",
+      "length": "4",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "PR1.11",
+      "field_description": "Surgeon",
+      "length": "120",
+      "data_type": "XCN",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": "0010"
+    },
+    {
+      "position": 12,
+      "field_name": "PR1.12",
+      "field_description": "Procedure Practitioner",
+      "length": "230",
+      "data_type": "XCN",
+      "optionality": "B",
+      "repeatability": "∞",
+      "table": "0010"
+    },
+    {
+      "position": 13,
+      "field_name": "PR1.13",
+      "field_description": "Consent Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0059"
+    },
+    {
+      "position": 14,
+      "field_name": "PR1.14",
+      "field_description": "Procedure Priority",
+      "length": "2",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "PR1.15",
+      "field_description": "Associated Diagnosis Code",
+      "length": "80",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 15
+}

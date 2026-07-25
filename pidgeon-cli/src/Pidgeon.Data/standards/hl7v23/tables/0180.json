@@ -1,0 +1,41 @@
+{
+  "code": "0180",
+  "name": "Record Level Event Code",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "MAC",
+      "description": "Reactivate",
+      "comment": "Reactivate deactivated record",
+      "sort_order": 1
+    },
+    {
+      "value": "MAD",
+      "description": "Add",
+      "comment": "Add record to master file",
+      "sort_order": 2
+    },
+    {
+      "value": "MDC",
+      "description": "Deactivate",
+      "comment": "Deactivate: discontinue using record in master file, but do not delete from database",
+      "sort_order": 3
+    },
+    {
+      "value": "MDL",
+      "description": "Delete",
+      "comment": "Delete record from master file",
+      "sort_order": 4
+    },
+    {
+      "value": "MUP",
+      "description": "Update",
+      "comment": "Update record for master file",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

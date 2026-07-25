@@ -1,0 +1,41 @@
+{
+  "code": "0137",
+  "name": "Mail claim party",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "E",
+      "description": "Employer",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "G",
+      "description": "Guarantor",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "I",
+      "description": "Insurance company",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "P",
+      "description": "Patient",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

@@ -1,0 +1,39 @@
+# Signed-out clean-build smoke for PidgeonHealth/pidgeon-core (release policy § 5: "a clean
+# signed-out consumer or navigation smoke appropriate to the target").
+#
+# Proves an anonymous clone builds and tests with NO reference to the private monorepo: no
+# ../pidgeon-cli sibling checkout, no monorepo-only NuGet feed, no repo-local secrets.
+
+name: clean-build-smoke
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  anonymous-clone-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # Deliberately does NOT reuse the checkout action's ref/token conveniences beyond a plain
+      # anonymous clone, to prove the repo is self-sufficient for a stranger who has never heard
+      # of the monorepo.
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 8.0.423
+
+      - name: Clean restore (public feed only)
+        run: dotnet restore --locked-mode --source https://api.nuget.org/v3/index.json
+
+      - name: Build
+        run: dotnet build --no-restore -c Release
+
+      - name: Test
+        run: dotnet test --no-build -c Release

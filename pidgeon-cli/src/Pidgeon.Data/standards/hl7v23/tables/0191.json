@@ -1,0 +1,59 @@
+{
+  "code": "0191",
+  "name": "Type of referenced data",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AP",
+      "description": "Other application data, typically uninterpreted binary data  (HL7 V2.3 and later)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AU",
+      "description": "Audio data  (HL7 V2.3 and later)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FT",
+      "description": "Formatted text (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "IM",
+      "description": "Image data  (HL7 V2.3 and later)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "NS",
+      "description": "Non-scanned image (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "SD",
+      "description": "Scanned document (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "SI",
+      "description": "Scanned image (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "TX",
+      "description": "Machine readable text document (HL7 V2.2 only)",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

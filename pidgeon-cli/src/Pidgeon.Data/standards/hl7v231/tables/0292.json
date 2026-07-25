@@ -1,0 +1,563 @@
+{
+  "code": "0292",
+  "name": "Vaccines administered",
+  "version": "HL7 v2.3.1",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "1",
+      "description": "DTP",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "10",
+      "description": "IPV",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "11",
+      "description": "Pertussis",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "12",
+      "description": "Diphtheria antitoxin",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "13",
+      "description": "TIG",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "14",
+      "description": "IG, NOS",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "15",
+      "description": "Influenza-split (incl. purified surface antigen)",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "16",
+      "description": "Influenza-whole",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "17",
+      "description": "Hib,  NOS",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "18",
+      "description": "Rabies, intramuscular injection",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "19",
+      "description": "BCG",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "2",
+      "description": "OPV",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "20",
+      "description": "DTaP",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "21",
+      "description": "Varicella",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "22",
+      "description": "DTP-Hib",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "23",
+      "description": "Plague",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "24",
+      "description": "Anthrax",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "25",
+      "description": "Typhoid-oral",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "26",
+      "description": "Cholera",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "27",
+      "description": "Botulinum antitoxin",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "28",
+      "description": "DT(pediatric)",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "29",
+      "description": "CMVIG",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "3",
+      "description": "MMR",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "30",
+      "description": "HBIG",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "31",
+      "description": "Hep A, pediatric, NOS",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "32",
+      "description": "Meningococcal",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "33",
+      "description": "Pneumococcal",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "34",
+      "description": "RIG",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "35",
+      "description": "Tetanus toxoid",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "36",
+      "description": "VZIG",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "37",
+      "description": "Yellow fever",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "38",
+      "description": "Rubella/Mumps",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "39",
+      "description": "Japanese encephalitis",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "4",
+      "description": "M/R",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "40",
+      "description": "Rabies, intradermal injection",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "41",
+      "description": "Typhoid-parenteral",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "42",
+      "description": "Hep B, adolescent/high risk infant",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "43",
+      "description": "Hep B, adult",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "44",
+      "description": "Hep B, dialysis",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "45",
+      "description": "Hep B,  NOS",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "46",
+      "description": "Hib (PRP-D)",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "47",
+      "description": "Hib (HbOC)",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "48",
+      "description": "Hib (PRP-T)",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "49",
+      "description": "Hib (PRP-OMP)",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "5",
+      "description": "Measles",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "50",
+      "description": "DtaP-Hib",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "51",
+      "description": "Hib-Hep B",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "52",
+      "description": "Hep A - adult",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "53",
+      "description": "Typhoid, parenteral, AKD (U.S. military)",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "54",
+      "description": "Adenovirus, type 4",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "55",
+      "description": "Adenovirus, type 7",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "56",
+      "description": "Dengue fever",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "57",
+      "description": "Hantavirus",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "58",
+      "description": "Hep C",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "59",
+      "description": "Hep E",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "6",
+      "description": "Rubella",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "60",
+      "description": "Herpes simplex 2",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "61",
+      "description": "HIV",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "62",
+      "description": "HPV",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "63",
+      "description": "Junin virus",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "64",
+      "description": "Leishmaniasis",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "65",
+      "description": "Leprosy",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "66",
+      "description": "Lyme disease",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "67",
+      "description": "Malaria",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "68",
+      "description": "Melanoma",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "69",
+      "description": "Parainfluenza-3",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "7",
+      "description": "Mumps",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "70",
+      "description": "Q fever",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "71",
+      "description": "RSV-IGIV",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "72",
+      "description": "Rheumatic fever",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "73",
+      "description": "Rift Valley fever",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "74",
+      "description": "Rotavirus",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "75",
+      "description": "Smallpox",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "76",
+      "description": "Staphylococcus bacterio lysate",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "77",
+      "description": "Tick-borne encephalitis",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "78",
+      "description": "Tularemia vaccine",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "79",
+      "description": "Vaccinia immune globulin",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "8",
+      "description": "Hep B, adolescent or pediatric",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "80",
+      "description": "VEE, live",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "81",
+      "description": "VEE, inactivated",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "82",
+      "description": "Adenovirus, NOS",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "83",
+      "description": "Hep A, ped/adol, 2 dose",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "84",
+      "description": "Hep A, ped/adol, 3 dose",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "85",
+      "description": "Hep A, NOS",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "86",
+      "description": "IG",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "87",
+      "description": "IGIV",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "88",
+      "description": "Influenza, NOS",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "89",
+      "description": "Polio, NOS",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "9",
+      "description": "Td (Adult)",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "90",
+      "description": "Rabies, NOS",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "91",
+      "description": "Typhoid, NOS",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "92",
+      "description": "VEE, NOS",
+      "comment": "",
+      "sort_order": 92
+    }
+  ],
+  "value_count": 92
+}

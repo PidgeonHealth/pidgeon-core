@@ -1,0 +1,90 @@
+{
+  "code": "SCP",
+  "name": "Sterilizer Configuration (anti-microbial Devices)",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "The sterilization configuration segment contains information specific to configuration of a sterilizer or washer for processing sterilization or decontamination loads.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SCP.1",
+      "field_description": "Number Of Decontamination/Sterilization Devices",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SCP.2",
+      "field_description": "Labor Calculation Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0651"
+    },
+    {
+      "position": 3,
+      "field_name": "SCP.3",
+      "field_description": "Date Format",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0653"
+    },
+    {
+      "position": 4,
+      "field_name": "SCP.4",
+      "field_description": "Device Number",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "SCP.5",
+      "field_description": "Device Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "SCP.6",
+      "field_description": "Device Model Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "SCP.7",
+      "field_description": "Device Type",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0657"
+    },
+    {
+      "position": 8,
+      "field_name": "SCP.8",
+      "field_description": "Lot Control",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0659"
+    }
+  ],
+  "field_count": 8
+}

@@ -1,0 +1,90 @@
+{
+  "code": "XON",
+  "name": "Extended Composite Name And ID For Organizations",
+  "version": "HL7 v2.3",
+  "description": "Example: \n|HL7 Health Center^L^6^M11^HCFA|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "XON.1",
+      "field_description": "Organization Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "XON.2",
+      "field_description": "Organization Name Type Code",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0204"
+    },
+    {
+      "position": 3,
+      "field_name": "XON.3",
+      "field_description": "ID Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "XON.4",
+      "field_description": "Check Digit",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "XON.5",
+      "field_description": "Code Identifying The Check Digit Scheme Employed",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0061"
+    },
+    {
+      "position": 6,
+      "field_name": "XON.6",
+      "field_description": "Assigning Authority",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "XON.7",
+      "field_description": "Identifier Type Code",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0203"
+    },
+    {
+      "position": 8,
+      "field_name": "XON.8",
+      "field_description": "Assigning Facility ID",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 8
+}

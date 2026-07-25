@@ -1,0 +1,59 @@
+{
+  "code": "0391",
+  "name": "Segment group",
+  "version": "HL7 v2.5",
+  "chapter": "Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "Etc",
+      "description": null,
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "OBRG",
+      "description": "OBR group",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ORCG",
+      "description": "ORC group",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "PIDG",
+      "description": "PID group",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "RXAG",
+      "description": "RXA group",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "RXDG",
+      "description": "RXD group",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "RXEG",
+      "description": "RXE group",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RXOG",
+      "description": "RXO group",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

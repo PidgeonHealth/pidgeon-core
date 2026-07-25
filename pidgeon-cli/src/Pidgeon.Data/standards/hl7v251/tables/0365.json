@@ -1,0 +1,65 @@
+{
+  "code": "0365",
+  "name": "Equipment state",
+  "version": "HL7 v2.5.1",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CL",
+      "description": "Clearing",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CO",
+      "description": "Configuring",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ES",
+      "description": "E-stopped",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ID",
+      "description": "Idle",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "IN",
+      "description": "Initializing",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "OP",
+      "description": "Normal Operation",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "PA",
+      "description": "Pausing",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "PD",
+      "description": "Paused",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PU",
+      "description": "Powered Up",
+      "comment": "",
+      "sort_order": 9
+    }
+  ],
+  "value_count": 9
+}

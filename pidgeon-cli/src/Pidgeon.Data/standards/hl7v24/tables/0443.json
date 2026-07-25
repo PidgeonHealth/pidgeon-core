@@ -1,0 +1,53 @@
+{
+  "code": "0443",
+  "name": "Provider role",
+  "version": "HL7 v2.4",
+  "chapter": "Patient Care",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AD",
+      "description": "Admitting",
+      "comment": "PV1-17 Admitting doctor",
+      "sort_order": 1
+    },
+    {
+      "value": "AT",
+      "description": "Attending",
+      "comment": "PV1-7 Attending doctor",
+      "sort_order": 2
+    },
+    {
+      "value": "CP",
+      "description": "Consulting Provider",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "FHCP",
+      "description": "Family Health Care Professional",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PP",
+      "description": "Primary Care Provider",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "RP",
+      "description": "Referring Provider",
+      "comment": "PV1-8 Referring doctor",
+      "sort_order": 6
+    },
+    {
+      "value": "RT",
+      "description": "Referred to Provider",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

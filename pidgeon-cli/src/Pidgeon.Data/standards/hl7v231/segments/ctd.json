@@ -1,0 +1,80 @@
+{
+  "code": "CTD",
+  "name": "Contact Data",
+  "version": "HL7 v2.3.1",
+  "chapter": "Patient Referral",
+  "description": "The CTD segment may identify any contact personnel associated with a patient referral message and its related transactions.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CTD.1",
+      "field_description": "Contact Role",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": "0131"
+    },
+    {
+      "position": 2,
+      "field_name": "CTD.2",
+      "field_description": "Contact Name",
+      "length": "106",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CTD.3",
+      "field_description": "Contact Address",
+      "length": "200",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CTD.4",
+      "field_description": "Contact Location",
+      "length": "60",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CTD.5",
+      "field_description": "Contact Communication Information",
+      "length": "100",
+      "data_type": "XTN",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CTD.6",
+      "field_description": "Preferred Method Of Contact",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0185"
+    },
+    {
+      "position": 7,
+      "field_name": "CTD.7",
+      "field_description": "Contact Identifiers",
+      "length": "100",
+      "data_type": "PI",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 7
+}

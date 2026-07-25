@@ -1,0 +1,29 @@
+{
+  "code": "0394",
+  "name": "Response Modality",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "B",
+      "description": "Batch",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Real Time",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "T",
+      "description": "Bolus (a series of responses sent at the same time without use of batch formatting)",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

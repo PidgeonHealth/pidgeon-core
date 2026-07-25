@@ -1,0 +1,30 @@
+{
+  "code": "MOC",
+  "name": "Charge To Practise",
+  "version": "HL7 v2.4",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MOC.1",
+      "field_description": "Dollar Amount",
+      "length": "0",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "MOC.2",
+      "field_description": "Charge Code",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

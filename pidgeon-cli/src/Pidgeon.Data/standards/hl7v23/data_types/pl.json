@@ -1,0 +1,100 @@
+{
+  "code": "PL",
+  "name": "Person Location",
+  "version": "HL7 v2.3",
+  "description": "This data type is used to specify a patient location within a healthcare institution. Which components are valued depends on the needs of the site. It is most commonly used for specifying patient locations, but may refer to other types of persons within a healthcare setting.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PL.1",
+      "field_description": "Point Of Care",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0302"
+    },
+    {
+      "position": 2,
+      "field_name": "PL.2",
+      "field_description": "Room",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0303"
+    },
+    {
+      "position": 3,
+      "field_name": "PL.3",
+      "field_description": "Bed",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0304"
+    },
+    {
+      "position": 4,
+      "field_name": "PL.4",
+      "field_description": "Facility",
+      "length": "0",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PL.5",
+      "field_description": "Location Status",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0306"
+    },
+    {
+      "position": 6,
+      "field_name": "PL.6",
+      "field_description": "Person Location Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0305"
+    },
+    {
+      "position": 7,
+      "field_name": "PL.7",
+      "field_description": "Building",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0307"
+    },
+    {
+      "position": 8,
+      "field_name": "PL.8",
+      "field_description": "Floor",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0308"
+    },
+    {
+      "position": 9,
+      "field_name": "PL.9",
+      "field_description": "Location Type",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

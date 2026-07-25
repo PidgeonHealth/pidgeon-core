@@ -1,0 +1,41 @@
+{
+  "code": "0895",
+  "name": "Present On Admission (POA) Indicator",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "E",
+      "description": "Exempt",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "W",
+      "description": "Not applicable",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "Y",
+      "description": "Yes",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

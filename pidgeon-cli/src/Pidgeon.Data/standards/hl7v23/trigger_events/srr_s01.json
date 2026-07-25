@@ -1,0 +1,98 @@
+{
+  "code": "SRR_S01",
+  "name": "Response new appointment booking",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "A placer application sends a transaction with this trigger event to a filler application to request that a new appointment be booked. If it is successful, the filler application returns an application acknowledgment (if requested under the enhanced acknowledgment mode, or if the original acknowledgment mode is in use). The acknowledgment may optionally contain an SCH segment and related detail segments describing the actual appointment that was booked.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message acknowledgement segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "SCHEDULE",
+      "segment_desc": "SCHEDULE group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "SCH",
+      "segment_desc": "Schedule Activity Information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "SCHEDULE"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "SCHEDULE"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "PATIENT",
+      "segment_desc": "PATIENT group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "SCHEDULE"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "RESOURCES",
+      "segment_desc": "RESOURCES group",
+      "optionality": "R",
+      "repeatability": "inf",
+      "is_group": true,
+      "group_path": [
+        "SCHEDULE"
+      ],
+      "level": 1,
+      "order_index": 7
+    }
+  ],
+  "segment_count": 8
+}

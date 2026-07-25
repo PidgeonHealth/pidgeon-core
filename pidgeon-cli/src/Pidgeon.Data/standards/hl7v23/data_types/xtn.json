@@ -1,0 +1,100 @@
+{
+  "code": "XTN",
+  "name": "Extended Telecommunication Number",
+  "version": "HL7 v2.3",
+  "description": "Example: \n(415)555-3210^ORN^FX^",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "XTN.1",
+      "field_description": "Telephone Number",
+      "length": "0",
+      "data_type": "TN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "PhoneNumber"
+    },
+    {
+      "position": 2,
+      "field_name": "XTN.2",
+      "field_description": "Telecommunication Use Code",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0201"
+    },
+    {
+      "position": 3,
+      "field_name": "XTN.3",
+      "field_description": "Telecommunication Equipment Type",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0202"
+    },
+    {
+      "position": 4,
+      "field_name": "XTN.4",
+      "field_description": "Email Address",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "XTN.5",
+      "field_description": "Country Code",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "XTN.6",
+      "field_description": "Area/city Code",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "XTN.7",
+      "field_description": "Phone Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "XTN.8",
+      "field_description": "Extension",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "XTN.9",
+      "field_description": "Any Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

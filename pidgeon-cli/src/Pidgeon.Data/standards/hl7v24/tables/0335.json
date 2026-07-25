@@ -1,0 +1,179 @@
+{
+  "code": "0335",
+  "name": "Repeat pattern",
+  "version": "HL7 v2.4",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Ante (before)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BID",
+      "description": "twice a day at institution-specified times (e.g., 9AM-4PM)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "C",
+      "description": "service is provided continuously between start time and stop time",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "D",
+      "description": "Cibus Diurnus (lunch)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "I",
+      "description": "Inter (e.g., between this meal and the next, between dinner and sleep",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "M",
+      "description": "Cibus Matutinus (breakfast)",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "Meal Related Timings",
+      "description": "<timing>C (“cum”)<meal>",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "Once",
+      "description": "one time only.  This is also the default when this component is null.",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "P",
+      "description": "Post (after)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PRN",
+      "description": "given as needed",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PRNxxx",
+      "description": "where xxx is some frequency code (e.g., PRNQ6H); given as needed over the frequency period.",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "Q<integer>D",
+      "description": "every <integer> days",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "Q<integer>H",
+      "description": "every <integer> hours",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "Q<integer>J<day#>",
+      "description": "repeats on a particular day of the week, from the French jour (day).  If <integer> is missing, the repeat rate is assumed to be 1.  Day numbers are counted from 1=Monday to 7=Sunday.  So Q2J2 means every second Tuesday; Q1J6 means every Saturday.",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "Q<integer>L",
+      "description": "every <integer> months (Lunar cycle)",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "Q<integer>M",
+      "description": "every <integer> minutes",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "Q<integer>S",
+      "description": "every <integer> seconds",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "Q<integer>W",
+      "description": "every <integer> weeks",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "QAM",
+      "description": "in the morning at institution-specified time",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "QHS",
+      "description": "every day before the hour of sleep",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "QID",
+      "description": "four times a day at institution-specified times (e.g., 9AM-11AM-4PM-9PM)",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "QOD",
+      "description": "every other day (same as Q2D)",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "QPM",
+      "description": "in the evening at institution-specified time",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "QSHIFT",
+      "description": "during each of three eight-hour shifts at institution-specified times",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "TID",
+      "description": "three times a day at institution-specified times (e.g., 9AM-4PM-9PM)",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "U <spec>",
+      "description": "for future use, where <spec> is an interval specification as defined by the UNIX cron specification.",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "V",
+      "description": "Cibus Vespertinus (dinner)",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "xID",
+      "description": "“X” times per day at institution-specified times, where X is a numeral 5 or greater.  E.g., 5ID=five times per day; 8ID=8 times per day",
+      "comment": "",
+      "sort_order": 28
+    }
+  ],
+  "value_count": 28
+}

@@ -1,0 +1,35 @@
+{
+  "code": "0402",
+  "name": "School type",
+  "version": "HL7 v2.5",
+  "chapter": "Personnel Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "D",
+      "description": "Dental",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "G",
+      "description": "Graduate",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M",
+      "description": "Medical",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "U",
+      "description": "Undergraduate",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

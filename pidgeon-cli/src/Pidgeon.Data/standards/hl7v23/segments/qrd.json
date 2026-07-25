@@ -1,0 +1,130 @@
+{
+  "code": "QRD",
+  "name": "Query definition segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The QRD segment is used to define a query",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QRD.1",
+      "field_description": "Query Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "QRD.2",
+      "field_description": "Query Format Code",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0106"
+    },
+    {
+      "position": 3,
+      "field_name": "QRD.3",
+      "field_description": "Query Priority",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0091"
+    },
+    {
+      "position": 4,
+      "field_name": "QRD.4",
+      "field_description": "Query ID",
+      "length": "10",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "QRD.5",
+      "field_description": "Deferred Response Type",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0107"
+    },
+    {
+      "position": 6,
+      "field_name": "QRD.6",
+      "field_description": "Deferred Response Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "QRD.7",
+      "field_description": "Quantity Limited Request",
+      "length": "10",
+      "data_type": "CQ",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "QRD.8",
+      "field_description": "Who Subject Filter",
+      "length": "60",
+      "data_type": "XCN",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "QRD.9",
+      "field_description": "What Subject Filter",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": "0048"
+    },
+    {
+      "position": 10,
+      "field_name": "QRD.10",
+      "field_description": "What Department Data Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "QRD.11",
+      "field_description": "What Data Code Value Qualifier",
+      "length": "20",
+      "data_type": "CM_VR",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "QRD.12",
+      "field_description": "Query Results Level",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0108"
+    }
+  ],
+  "field_count": 12
+}

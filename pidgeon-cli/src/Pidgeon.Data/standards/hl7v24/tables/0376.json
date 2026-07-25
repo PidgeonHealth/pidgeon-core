@@ -1,0 +1,47 @@
+{
+  "code": "0376",
+  "name": "Special handling considerations",
+  "version": "HL7 v2.4",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C37",
+      "description": "Critical maintain at 37C (e.g., cryoglobulin specimen)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CAMB",
+      "description": "Critical ambient temperature",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CATM",
+      "description": "Critical do not expose to atmosphere - Do not uncap",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CFRZ",
+      "description": "Critical Frozen",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CREF",
+      "description": "Critical refrigerated",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PRTL",
+      "description": "Protect from light",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

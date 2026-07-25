@@ -1,0 +1,23 @@
+{
+  "code": "0435",
+  "name": "Advance Directive Code",
+  "version": "HL7 v2.7",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "DNR",
+      "description": "Do not resuscitate",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No directive",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
+  "name": "USCoreDiagnosticReportProfileLaboratoryReporting",
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "snapshot": {
+    "element": [
+      { "path": "DiagnosticReport", "min": 0, "max": "*" },
+      { "path": "DiagnosticReport.id", "min": 0, "max": "1", "type": [{ "code": "id" }] },
+      { "path": "DiagnosticReport.status", "min": 1, "max": "1", "type": [{ "code": "code" }], "binding": { "strength": "required", "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-report-status" } },
+      { "path": "DiagnosticReport.category", "min": 1, "max": "*", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "DiagnosticReport.code", "min": 1, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "DiagnosticReport.subject", "min": 1, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"] }] },
+      { "path": "DiagnosticReport.effective[x]", "min": 1, "max": "1", "type": [{ "code": "dateTime" }, { "code": "Period" }] },
+      { "path": "DiagnosticReport.issued", "min": 0, "max": "1", "type": [{ "code": "instant" }] },
+      { "path": "DiagnosticReport.result", "min": 0, "max": "*", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"] }] }
+    ]
+  }
+}

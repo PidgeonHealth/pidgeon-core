@@ -1,0 +1,35 @@
+{
+  "code": "0130",
+  "name": "Visit User Code",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "HO",
+      "description": "Home",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "MO",
+      "description": "Mobile Unit",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "PH",
+      "description": "Phone",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "TE",
+      "description": "Teaching",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

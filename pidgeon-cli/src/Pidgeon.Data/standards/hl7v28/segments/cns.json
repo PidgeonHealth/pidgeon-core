@@ -1,0 +1,70 @@
+{
+  "code": "CNS",
+  "name": "Clear Notification",
+  "version": "HL7 v2.8",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "The clear equipment notification segment contains the data necessary to allow the receiving equipment to clear any associated notifications.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CNS.1",
+      "field_description": "Starting Notification Reference Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CNS.2",
+      "field_description": "Ending Notification Reference Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CNS.3",
+      "field_description": "Starting Notification Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CNS.4",
+      "field_description": "Ending Notification Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CNS.5",
+      "field_description": "Starting Notification Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 6,
+      "field_name": "CNS.6",
+      "field_description": "Ending Notification Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    }
+  ],
+  "field_count": 6
+}

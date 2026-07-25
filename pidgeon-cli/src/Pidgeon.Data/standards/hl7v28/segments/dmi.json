@@ -1,0 +1,60 @@
+{
+  "code": "DMI",
+  "name": "Drg Master File Information",
+  "version": "HL7 v2.8",
+  "chapter": "Master Files",
+  "description": "The DMI segment contains the DRG related basic information, for example, relative weight, etc.  The DMI segment is used to send the fixed information assigned to a specific DRG.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DMI.1",
+      "field_description": "Diagnostic Related Group",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0055"
+    },
+    {
+      "position": 2,
+      "field_name": "DMI.2",
+      "field_description": "Major Diagnostic Category",
+      "length": "0",
+      "data_type": "CNE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0118"
+    },
+    {
+      "position": 3,
+      "field_name": "DMI.3",
+      "field_description": "Lower And Upper Trim Points",
+      "length": "0",
+      "data_type": "NR",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "DMI.4",
+      "field_description": "Average Length Of Stay",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "DMI.5",
+      "field_description": "Relative Weight",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

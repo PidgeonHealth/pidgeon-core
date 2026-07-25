@@ -1,0 +1,23 @@
+{
+  "code": "0166",
+  "name": "RX Component Type",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Additive",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Base",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

@@ -1,0 +1,70 @@
+{
+  "code": "PN",
+  "name": "Person Name",
+  "version": "HL7 v2.3.1",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PN.1",
+      "field_description": "Family Name And Last Name Prefix",
+      "length": "0",
+      "data_type": "FN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PN.2",
+      "field_description": "Given Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PN.3",
+      "field_description": "Middle Initial Or Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "PN.4",
+      "field_description": "Suffix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PN.5",
+      "field_description": "Prefix",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PN.6",
+      "field_description": "Degree",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0360"
+    }
+  ],
+  "field_count": 6
+}

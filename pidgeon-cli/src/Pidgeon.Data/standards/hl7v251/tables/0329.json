@@ -1,0 +1,23 @@
+{
+  "code": "0329",
+  "name": "Quantity method",
+  "version": "HL7 v2.5.1",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Actual count",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Estimated (see comment)",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

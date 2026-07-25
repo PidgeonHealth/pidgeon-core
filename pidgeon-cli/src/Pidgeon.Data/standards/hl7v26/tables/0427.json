@@ -1,0 +1,95 @@
+{
+  "code": "0427",
+  "name": "Risk Management Incident Code",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Body fluid exposure",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Contaminated Substance",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "D",
+      "description": "Diet Errors",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "E",
+      "description": "Equipment problem",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "F",
+      "description": "Patient fell (not from bed)",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "H",
+      "description": "Patient fell from bed",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "I",
+      "description": "Infusion error",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "J",
+      "description": "Foreign object left during surgery",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "K",
+      "description": "Sterile precaution violated",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "P",
+      "description": "Procedure error",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "R",
+      "description": "Pharmaceutical error",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "S",
+      "description": "Suicide Attempt",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "T",
+      "description": "Transfusion error",
+      "comment": "",
+      "sort_order": 14
+    }
+  ],
+  "value_count": 14
+}

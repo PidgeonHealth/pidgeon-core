@@ -1,0 +1,41 @@
+{
+  "code": "0457",
+  "name": "Overall claim disposition code",
+  "version": "HL7 v2.4",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "No edits present on claim",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Only edits present are for line item denial or rejection",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Multiple-day claim with one or more days denied or rejected",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3",
+      "description": "Claim denied, rejected, suspended or returned to provider with only post payment edits",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "4",
+      "description": "Claim denied, rejected, suspended or returned to provider with only pre payment edits",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

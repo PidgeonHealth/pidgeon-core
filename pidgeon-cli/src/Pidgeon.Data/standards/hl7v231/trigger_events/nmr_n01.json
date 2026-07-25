@@ -1,0 +1,132 @@
+{
+  "code": "NMR_N01",
+  "name": "Network management response message",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "The NMQ (Network Management Query) message is used by one system to make system-level requests for information or action to another system.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message acknowledgment segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Original-style query definition segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "CLOCK AND STATS WITH NOTES ALT",
+      "segment_desc": "CLOCK AND STATS WITH NOTES ALT group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "NCK",
+      "segment_desc": "System Clock",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NST",
+      "segment_desc": "Statistics",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "NSC",
+      "segment_desc": "Status change",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and comments segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "CLOCK AND STATS WITH NOTES ALT"
+      ],
+      "level": 1,
+      "order_index": 10
+    }
+  ],
+  "segment_count": 11
+}

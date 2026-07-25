@@ -1,0 +1,41 @@
+{
+  "code": "0276",
+  "name": "Appointment reason codes",
+  "version": "HL7 v2.3",
+  "chapter": "Scheduling",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CHECKUP",
+      "description": "A routine check-up such as an annual physical.",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EMERGENCY",
+      "description": "Emergency appointment",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FOLLOWUP",
+      "description": "A follow up visit from a previous appointment.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ROUTINE",
+      "description": "Routine appointment - default if not valued",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "WALKIN",
+      "description": "A previously unscheduled walk-in visit",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

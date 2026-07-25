@@ -1,0 +1,9 @@
+{
+  "code": "TX",
+  "name": "Text Data",
+  "version": "HL7 v2.3.1",
+  "description": "Since TX data is intended for display purposes, the repeat delimiter, when used with a TX data field, implies a series of repeating lines to be displayed on a printer or terminal. Therefore, the repeat delimiters are regarded as paragraph terminators or hard carriage returns (e.g., they would display as though a CR/LF were inserted in the text (DOS type system) or as though a LF were inserted into the text (UNIX style system)).",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

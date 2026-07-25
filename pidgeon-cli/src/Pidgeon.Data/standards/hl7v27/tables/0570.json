@@ -1,0 +1,71 @@
+{
+  "code": "0570",
+  "name": "Payment Method Code",
+  "version": "HL7 v2.7",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CASH",
+      "description": "Cash",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CCCA",
+      "description": "Credit Card",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CCHK",
+      "description": "Cashier's Check",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CDAC",
+      "description": "Credit/Debit Account",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CHCK",
+      "description": "Check",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DDPO",
+      "description": "Direct Deposit",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DEBC",
+      "description": "Debit Card",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "SWFT",
+      "description": "Society for Worldwide Interbank Financial Telecommunications (S.W.I.F.T.)",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "TRAC",
+      "description": "Traveler's Check",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "VISN",
+      "description": "VISA Special Electronic Funds Transfer Network",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

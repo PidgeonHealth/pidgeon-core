@@ -1,0 +1,20 @@
+{
+  "code": "RDT",
+  "name": "Table Row Data",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The RDT segment contains the row data of the tabular data response message (TBR",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RDT.1",
+      "field_description": "Column value",
+      "length": "0",
+      "data_type": "VARIES",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

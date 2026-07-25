@@ -1,0 +1,41 @@
+{
+  "code": "0416",
+  "name": "Procedure DRG Type",
+  "version": "HL7 v2.5",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "1",
+      "description": "1st non-Operative",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "2nd non-Operative",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Major Operative",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "2nd Operative",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5",
+      "description": "3rd Operative",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

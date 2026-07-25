@@ -1,0 +1,35 @@
+{
+  "code": "0504",
+  "name": "Sequence Condition Code",
+  "version": "HL7 v2.5",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "EE",
+      "description": "End related service request(s), end current service request.",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ES",
+      "description": "End related service request(s), start current service request.",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "SE",
+      "description": "Start related service request(s), end current service request.",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SS",
+      "description": "Start related service request(s), start current service request.",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

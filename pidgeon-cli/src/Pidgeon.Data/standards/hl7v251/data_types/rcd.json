@@ -1,0 +1,40 @@
+{
+  "code": "RCD",
+  "name": "Row Column Definition",
+  "version": "HL7 v2.5.1",
+  "description": "This specifies the format of a column in terms of a segment field name, a data type, and a maximum length.\n\nExample: This defines a column containing the value of the \"last name\" component of PID-5, expressed as a ST data type with a maximum width of 20. |@PID.5.1^ST^20|",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RCD.1",
+      "field_description": "Segment Field Name",
+      "length": "12",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RCD.2",
+      "field_description": "Hl7 Data Type",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0440"
+    },
+    {
+      "position": 3,
+      "field_name": "RCD.3",
+      "field_description": "Maximum Column Width",
+      "length": "2",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

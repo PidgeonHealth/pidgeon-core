@@ -1,0 +1,30 @@
+{
+  "code": "TS",
+  "name": "Time Stamp",
+  "version": "HL7 v2.5",
+  "description": "Specifies a point in time.\n\n\nFormat: YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ]^<degree of precision>",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "TS.1",
+      "field_description": "Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "TS.2",
+      "field_description": "Degree Of Precision",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": "0529"
+    }
+  ],
+  "field_count": 2
+}

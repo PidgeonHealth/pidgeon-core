@@ -1,0 +1,41 @@
+{
+  "code": "0397",
+  "name": "Sequencing",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Ascending",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AN",
+      "description": "Ascending, case insensitive",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "D",
+      "description": "Descending",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DN",
+      "description": "Descending, case insensitive",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "N",
+      "description": "None",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

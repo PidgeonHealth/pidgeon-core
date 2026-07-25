@@ -1,0 +1,17 @@
+{
+  "code": "0910",
+  "name": "Acquisition Modality",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "...",
+      "description": null,
+      "comment": "Acquisition Modality codes, Context Group 29, Digital Imaging and Communications in Medicine (DICOM) - Part 16: Content Mapping Resource (PS3.16), available free at http://dicom.nema.org",
+      "sort_order": 1
+    }
+  ],
+  "value_count": 1
+}

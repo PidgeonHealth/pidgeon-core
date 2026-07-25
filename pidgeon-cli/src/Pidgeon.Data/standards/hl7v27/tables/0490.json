@@ -1,0 +1,95 @@
+{
+  "code": "0490",
+  "name": "Specimen Reject Reason",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "EX",
+      "description": "Expired",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "QS",
+      "description": "Quantity not sufficient",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "RA",
+      "description": "Missing patient ID number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "RB",
+      "description": "Broken container",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "RC",
+      "description": "Clotting",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "RD",
+      "description": "Missing collection date",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "RE",
+      "description": "Missing patient name",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "RH",
+      "description": "Hemolysis",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "RI",
+      "description": "Identification problem",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "RM",
+      "description": "Labeling",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "RN",
+      "description": "Contamination",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "RP",
+      "description": "Missing phlebotomist ID",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "RR",
+      "description": "Improper storage",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "RS",
+      "description": "Name misspelling",
+      "comment": "",
+      "sort_order": 14
+    }
+  ],
+  "value_count": 14
+}

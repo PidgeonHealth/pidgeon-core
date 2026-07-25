@@ -1,0 +1,396 @@
+{
+  "code": "ADR_A19",
+  "name": "Patient query",
+  "version": "HL7 v2.4",
+  "chapter": "Patient Administration",
+  "description": "The following trigger event is served by QRY (a query from another system) and ADR (a response from an Patient Administration system.)",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "QAK",
+      "segment_desc": "Query Acknowledgment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Original-Style Query Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Original Style Query Filter",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "QUERY RESPONSE",
+      "segment_desc": "QUERY RESPONSE group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 6
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event Type",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Additional Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 10
+    },
+    {
+      "segment_code": "NK1",
+      "segment_desc": "Next of kin / associated parties",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "PV1",
+      "segment_desc": "Patient visit",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 12
+    },
+    {
+      "segment_code": "PV2",
+      "segment_desc": "Patient visit - additional information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 13
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 14
+    },
+    {
+      "segment_code": "DB1",
+      "segment_desc": "Disability",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 15
+    },
+    {
+      "segment_code": "OBX",
+      "segment_desc": "Observation/Result",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 16
+    },
+    {
+      "segment_code": "AL1",
+      "segment_desc": "Patient allergy information",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 17
+    },
+    {
+      "segment_code": "DG1",
+      "segment_desc": "Diagnosis",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 18
+    },
+    {
+      "segment_code": "DRG",
+      "segment_desc": "Diagnosis Related Group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 19
+    },
+    {
+      "segment_code": "PROCEDURE",
+      "segment_desc": "PROCEDURE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 20
+    },
+    {
+      "segment_code": "PR1",
+      "segment_desc": "Procedures",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE",
+        "PROCEDURE"
+      ],
+      "level": 2,
+      "order_index": 21
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE",
+        "PROCEDURE"
+      ],
+      "level": 2,
+      "order_index": 22
+    },
+    {
+      "segment_code": "GT1",
+      "segment_desc": "Guarantor",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 23
+    },
+    {
+      "segment_code": "INSURANCE",
+      "segment_desc": "INSURANCE group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 24
+    },
+    {
+      "segment_code": "IN1",
+      "segment_desc": "Insurance",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 25
+    },
+    {
+      "segment_code": "IN2",
+      "segment_desc": "Insurance Additional Information",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 26
+    },
+    {
+      "segment_code": "IN3",
+      "segment_desc": "Insurance Additional Information, Certification",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 27
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE",
+        "INSURANCE"
+      ],
+      "level": 2,
+      "order_index": 28
+    },
+    {
+      "segment_code": "ACC",
+      "segment_desc": "Accident",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 29
+    },
+    {
+      "segment_code": "UB1",
+      "segment_desc": "UB82",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 30
+    },
+    {
+      "segment_code": "UB2",
+      "segment_desc": "UB92 Data",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 31
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 32
+    }
+  ],
+  "segment_count": 33
+}

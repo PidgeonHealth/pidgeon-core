@@ -1,0 +1,53 @@
+{
+  "code": "0325",
+  "name": "Location relationship ID",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ALI",
+      "description": "Location Alias(es)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DTY",
+      "description": "Nearest  dietary location",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "LAB",
+      "description": "Nearest  lab",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "LB2",
+      "description": "Second nearest lab",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "PAR",
+      "description": "Parent location",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "RX",
+      "description": "Nearest  pharmacy",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "RX2",
+      "description": "Second nearest pharmacy",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

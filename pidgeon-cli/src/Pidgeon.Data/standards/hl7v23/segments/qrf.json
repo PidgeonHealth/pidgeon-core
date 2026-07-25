@@ -1,0 +1,100 @@
+{
+  "code": "QRF",
+  "name": "Query filter segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The QRF segment is used with the QRD segment to further refine the content of an original style query",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "QRF.1",
+      "field_description": "Where Subject Filter",
+      "length": "20",
+      "data_type": "ST",
+      "optionality": "R",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "QRF.2",
+      "field_description": "When Data Start Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "QRF.3",
+      "field_description": "When Data End Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "QRF.4",
+      "field_description": "What User Qualifier",
+      "length": "60",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "QRF.5",
+      "field_description": "Other QRY Subject Filter",
+      "length": "60",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "QRF.6",
+      "field_description": "Which Date/Time Qualifier",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0156"
+    },
+    {
+      "position": 7,
+      "field_name": "QRF.7",
+      "field_description": "Which Date/Time Status Qualifier",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0157"
+    },
+    {
+      "position": 8,
+      "field_name": "QRF.8",
+      "field_description": "Date/Time Selection Qualifier",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0158"
+    },
+    {
+      "position": 9,
+      "field_name": "QRF.9",
+      "field_description": "When Quantity/Timing Qualifier",
+      "length": "60",
+      "data_type": "TQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

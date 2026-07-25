@@ -1,0 +1,40 @@
+{
+  "code": "ERQ",
+  "name": "Event Replay Query Segment",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "The ERQ segment is used to issue queries where the desired response is formatted as an event replay response message. This enables the querying application to request detailed event data from an application that supports this feature, such that it may no longer be necessary for it to capture and store all event information at the time of the original trigger event.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "ERQ.1",
+      "field_description": "Query tag",
+      "length": "32",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "ERQ.2",
+      "field_description": "Event identifier",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "ERQ.3",
+      "field_description": "Input parameter list",
+      "length": "256",
+      "data_type": "QIP",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

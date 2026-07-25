@@ -1,0 +1,40 @@
+{
+  "code": "QRY_R02",
+  "name": "Deferred query",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "For clarity, A is the system initiating the query and B is the system sending the responses. Multiple queries and responses are permitted within single messages. The responses to a given query may be broken into several separate DSR messages. A single DSR message may contain responses to more than one QRY.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "QRD",
+      "segment_desc": "Query definition segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "QRF",
+      "segment_desc": "Query filter segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    }
+  ],
+  "segment_count": 3
+}

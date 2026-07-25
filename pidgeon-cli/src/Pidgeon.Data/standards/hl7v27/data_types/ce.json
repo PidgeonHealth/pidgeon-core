@@ -1,0 +1,70 @@
+{
+  "code": "CE",
+  "name": "Coded Element",
+  "version": "HL7 v2.7",
+  "description": "The CE data type has been replaced by the CWE and CNE data types and the detail was withdrawn and removed from the standard as of v 2.6.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CE.1",
+      "field_description": "Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CE.2",
+      "field_description": "Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CE.3",
+      "field_description": "Name Of Coding System",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 4,
+      "field_name": "CE.4",
+      "field_description": "Alternate Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CE.5",
+      "field_description": "Alternate Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CE.6",
+      "field_description": "Name Of Alternate Coding System",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "W",
+      "repeatability": "-",
+      "table": "0396"
+    }
+  ],
+  "field_count": 6
+}

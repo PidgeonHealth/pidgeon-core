@@ -1,0 +1,59 @@
+{
+  "code": "0260",
+  "name": "Patient location type",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Bed",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Clinic",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "D",
+      "description": "Department",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "E",
+      "description": "Exam Room",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "L",
+      "description": "Other Location",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "N",
+      "description": "Nursing Unit",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "O",
+      "description": "Operating Room",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "R",
+      "description": "Room",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

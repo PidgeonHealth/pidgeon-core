@@ -1,0 +1,137 @@
+{
+  "code": "0200",
+  "name": "Name Type",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Assigned",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Birth name",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BAD",
+      "description": "Bad Name",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "C",
+      "description": "Adopted Name",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "D",
+      "description": "Customary Name",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "I",
+      "description": "Licensing Name",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "K",
+      "description": "Business name",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "L",
+      "description": "Official Registry Name",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "M",
+      "description": "Maiden Name",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "MSK",
+      "description": "Masked",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "N",
+      "description": "Nickname",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "NAV",
+      "description": "Temporarily Unavailable",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "NB",
+      "description": "Newborn Name",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "NOUSE",
+      "description": "No Longer To Be Used",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "P",
+      "description": "Name of Partner/Spouse",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "R",
+      "description": "Registered Name",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "REL",
+      "description": "Religious",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "S",
+      "description": "Pseudonym",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "T",
+      "description": "Indigenous/Tribal",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "TEMP",
+      "description": "Temporary Name",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 21
+    }
+  ],
+  "value_count": 21
+}

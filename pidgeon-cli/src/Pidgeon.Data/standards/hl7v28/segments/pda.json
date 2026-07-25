@@ -1,0 +1,100 @@
+{
+  "code": "PDA",
+  "name": "Patient Death And Autopsy",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "This segment carries information on a patient's death and possible autopsy.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PDA.1",
+      "field_description": "Death Cause Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "PDA.2",
+      "field_description": "Death Location",
+      "length": "0",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "PDA.3",
+      "field_description": "Death Certified Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 4,
+      "field_name": "PDA.4",
+      "field_description": "Death Certificate Signed Date/Time",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "PDA.5",
+      "field_description": "Death Certified By",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "PDA.6",
+      "field_description": "Autopsy Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 7,
+      "field_name": "PDA.7",
+      "field_description": "Autopsy Start And End Date/Time",
+      "length": "0",
+      "data_type": "DR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "PDA.8",
+      "field_description": "Autopsy Performed By",
+      "length": "0",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "PDA.9",
+      "field_description": "Coroner Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    }
+  ],
+  "field_count": 9
+}

@@ -1,0 +1,89 @@
+{
+  "code": "0485",
+  "name": "Extended Priority Codes",
+  "version": "HL7 v2.6",
+  "chapter": "Order Entry",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "ASAP",
+      "comment": "Fill after S orders",
+      "sort_order": 1
+    },
+    {
+      "value": "C",
+      "description": "Callback",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Preop",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "PRN",
+      "description": "As needed",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "R",
+      "description": "Routine",
+      "comment": "Default",
+      "sort_order": 5
+    },
+    {
+      "value": "S",
+      "description": "Stat",
+      "comment": "With highest priority",
+      "sort_order": 6
+    },
+    {
+      "value": "T",
+      "description": "Timing critical",
+      "comment": "A request implying that it is critical to come as close as possible to the requested time, e.g., for a trough anti-microbial level.",
+      "sort_order": 7
+    },
+    {
+      "value": "TD<integer>",
+      "description": null,
+      "comment": "Timing critical within <integer> days.",
+      "sort_order": 8
+    },
+    {
+      "value": "TH<integer>",
+      "description": null,
+      "comment": "Timing critical within <integer> hours.",
+      "sort_order": 9
+    },
+    {
+      "value": "TL<integer>",
+      "description": null,
+      "comment": "Timing critical within <integer> months.",
+      "sort_order": 10
+    },
+    {
+      "value": "TM<integer>",
+      "description": null,
+      "comment": "Timing critical within <integer> minutes.",
+      "sort_order": 11
+    },
+    {
+      "value": "TS<integer>",
+      "description": null,
+      "comment": "Timing critical within <integer> seconds.",
+      "sort_order": 12
+    },
+    {
+      "value": "TW<integer>",
+      "description": null,
+      "comment": "Timing critical within <integer> weeks.",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

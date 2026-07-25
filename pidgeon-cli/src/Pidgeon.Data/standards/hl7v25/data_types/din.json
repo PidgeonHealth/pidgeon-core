@@ -1,0 +1,30 @@
+{
+  "code": "DIN",
+  "name": "Date and Institution Name",
+  "version": "HL7 v2.5",
+  "description": "Specifies the date and institution information where a staff member became active or inactive.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DIN.1",
+      "field_description": "Date",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "DIN.2",
+      "field_description": "Institution Name",
+      "length": "483",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0531"
+    }
+  ],
+  "field_count": 2
+}

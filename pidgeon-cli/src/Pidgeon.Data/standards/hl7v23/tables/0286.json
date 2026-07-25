@@ -1,0 +1,35 @@
+{
+  "code": "0286",
+  "name": "Provider role",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Referral",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "CP",
+      "description": "Consulting Provider",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "PP",
+      "description": "Primary Care Provider",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "RP",
+      "description": "Referring Provider",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "RT",
+      "description": "Referred to Provider",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

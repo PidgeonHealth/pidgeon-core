@@ -1,0 +1,521 @@
+{
+  "code": "0006",
+  "name": "Religion",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ABC",
+      "description": "Christian: American Baptist Church",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AGN",
+      "description": "Agnostic",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AME",
+      "description": "Christian: African Methodist Episcopal Zion",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AMT",
+      "description": "Christian: African Methodist Episcopal",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ANG",
+      "description": "Christian: Anglican",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "AOG",
+      "description": "Christian: Assembly of God",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ATH",
+      "description": "Atheist",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BAH",
+      "description": "Baha'i",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "BAP",
+      "description": "Christian: Baptist",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "BMA",
+      "description": "Buddhist: Mahayana",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "BOT",
+      "description": "Buddhist: Other",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "BRE",
+      "description": "Brethren",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "BTA",
+      "description": "Buddhist: Tantrayana",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "BTH",
+      "description": "Buddhist: Theravada",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "BUD",
+      "description": "Buddhist",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "CAT",
+      "description": "Christian: Roman Catholic",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "CFR",
+      "description": "Chinese Folk Religionist",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "CHR",
+      "description": "Christian",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "CHS",
+      "description": "Christian: Christian Science",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "CMA",
+      "description": "Christian: Christian Missionary Alliance",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "CNF",
+      "description": "Confucian",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "COC",
+      "description": "Christian: Church of Christ",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "COG",
+      "description": "Christian: Church of God",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "COI",
+      "description": "Christian: Church of God in Christ",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "COL",
+      "description": "Christian: Congregational",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "COM",
+      "description": "Christian: Community",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "COP",
+      "description": "Christian: Other Pentecostal",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "COT",
+      "description": "Christian: Other",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "CRR",
+      "description": "Christian: Christian Reformed",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "DOC",
+      "description": "Disciples of Christ",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "EOT",
+      "description": "Christian: Eastern Orthodox",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "EPI",
+      "description": "Christian: Episcopalian",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "ERL",
+      "description": "Ethnic Religionist",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "EVC",
+      "description": "Christian: Evangelical Church",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "FRQ",
+      "description": "Christian: Friends",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "FUL",
+      "description": "Christian: Full Gospel",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "FWB",
+      "description": "Christian: Free Will Baptist",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "GRE",
+      "description": "Christian: Greek Orthodox",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "HIN",
+      "description": "Hindu",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "HOT",
+      "description": "Hindu: Other",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "HSH",
+      "description": "Hindu: Shaivites",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "HVA",
+      "description": "Hindu: Vaishnavites",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "JAI",
+      "description": "Jain",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "JCO",
+      "description": "Jewish: Conservative",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "JEW",
+      "description": "Jewish",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "JOR",
+      "description": "Jewish: Orthodox",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "JOT",
+      "description": "Jewish: Other",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "JRC",
+      "description": "Jewish: Reconstructionist",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "JRF",
+      "description": "Jewish: Reform",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "JRN",
+      "description": "Jewish: Renewal",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "JWN",
+      "description": "Christian: Jehovah's Witness",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "LMS",
+      "description": "Christian: Lutheran Missouri Synod",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "LUT",
+      "description": "Christian: Lutheran",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "MEN",
+      "description": "Christian: Mennonite",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "MET",
+      "description": "Christian: Methodist",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "MOM",
+      "description": "Christian: Latter-day Saints",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "MOS",
+      "description": "Muslim",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "MOT",
+      "description": "Muslim: Other",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "MSH",
+      "description": "Muslim: Shiite",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "MSU",
+      "description": "Muslim: Sunni",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "NAM",
+      "description": "Native American",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "NAZ",
+      "description": "Christian: Church of the Nazarene",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "NOE",
+      "description": "Nonreligious",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "NRL",
+      "description": "New Religionist",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "ORT",
+      "description": "Christian: Orthodox",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "OTH",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "PEN",
+      "description": "Christian: Pentecostal",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "PRC",
+      "description": "Christian: Other Protestant",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "PRE",
+      "description": "Christian: Presbyterian",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "PRO",
+      "description": "Christian: Protestant",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "REC",
+      "description": "Christian: Reformed Church",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "REO",
+      "description": "Christian: Reorganized Church of Jesus Christ-LDS",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "SAA",
+      "description": "Christian: Salvation Army",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "SEV",
+      "description": "Christian: Seventh Day Adventist",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "SHN",
+      "description": "Shintoist",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "SIK",
+      "description": "Sikh",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "SOU",
+      "description": "Christian: Southern Baptist",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "SPI",
+      "description": "Spiritist",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "UCC",
+      "description": "Christian: United Church of Christ",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "UMD",
+      "description": "Christian: United Methodist",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "UNI",
+      "description": "Christian: Unitarian",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "UNU",
+      "description": "Christian: Unitarian Universalist",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "VAR",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "WES",
+      "description": "Christian: Wesleyan",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "WMC",
+      "description": "Christian: Wesleyan Methodist",
+      "comment": "",
+      "sort_order": 85
+    }
+  ],
+  "value_count": 85
+}

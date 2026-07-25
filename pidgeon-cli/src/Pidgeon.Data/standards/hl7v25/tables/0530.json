@@ -1,0 +1,47 @@
+{
+  "code": "0530",
+  "name": "Organization, agency, department",
+  "version": "HL7 v2.5",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AE",
+      "description": "American Express",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DEA",
+      "description": "Drug Enforcement Agency",
+      "comment": "The US Drug Enforcement Administration does not solely assign DEA numbers in the United States. Hospitals have the authority to issue DEA numbers to their medical residents. These DEA numbers are based upon the hospital’s DEA number, but the authority rests with the hospital on the assignment to the residents. Thus, DEA as an Assigning Authority is necessary in addition to DEA as an Identifier Type.",
+      "sort_order": 2
+    },
+    {
+      "value": "DOD",
+      "description": "Department of Defense",
+      "comment": "In some countries e.g., the US, more than one department may issue a military identifier. Hence, US is not sufficient as the Assigning Authority.",
+      "sort_order": 3
+    },
+    {
+      "value": "MC",
+      "description": "Master Card",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "VA",
+      "description": "Veterans Affairs",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "VI",
+      "description": "Visa",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

@@ -1,0 +1,185 @@
+{
+  "code": "0078",
+  "name": "Interpretation Codes",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "<",
+      "description": "Below absolute low-off instrument scale",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": ">",
+      "description": "Above absolute high-off instrument scale",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "A",
+      "description": "Abnormal (applies to non-numeric results)",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AA",
+      "description": "Very abnormal (applies to non-numeric units, analogous to panic limits for numeric units)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "AC",
+      "description": "Anti-complementary substances present",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "B",
+      "description": "Better-use when direction not relevant",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "D",
+      "description": "Significant change down",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DET",
+      "description": "Detected",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "H",
+      "description": "Above high normal",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "HH",
+      "description": "Above upper panic limits",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "I",
+      "description": "Intermediate. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "IND",
+      "description": "Indeterminate",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "L",
+      "description": "Below low normal",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "LL",
+      "description": "Below lower panic limits",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "MS",
+      "description": "Moderately susceptible. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "N",
+      "description": "Normal (applies to non-numeric results)",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "ND",
+      "description": "Not Detected",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "NEG",
+      "description": "Negative",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "NR",
+      "description": "Non-reactive",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "POS",
+      "description": "Positive",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "QCF",
+      "description": "Quality Control Failure",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "R",
+      "description": "Resistant. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "RR",
+      "description": "Reactive",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "S",
+      "description": "Susceptible. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "TOX",
+      "description": "Cytotoxic substance present",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "U",
+      "description": "Significant change up",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "VS",
+      "description": "Very susceptible. Indicates for microbiology susceptibilities only.",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "W",
+      "description": "Worse-use when direction not relevant",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "WR",
+      "description": "Weakly reactive",
+      "comment": "",
+      "sort_order": 29
+    }
+  ],
+  "value_count": 29
+}

@@ -1,0 +1,77 @@
+{
+  "code": "0351",
+  "name": "Occurrence span",
+  "version": "HL7 v2.4",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "70",
+      "description": "Qualifying stay dates for SNF",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "71",
+      "description": "Prior stay dates",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "72",
+      "description": "First/last visit",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "73",
+      "description": "Benefit eligibility period",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "74",
+      "description": "Non-covered level of care",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "75",
+      "description": "SNF level of care",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "76",
+      "description": "Patient liability",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "77",
+      "description": "Provider liability period",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "78",
+      "description": "SNF prior stay dates",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "79",
+      "description": "Payer code",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "M0",
+      "description": "PSRO/UR approved stay dates",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

@@ -1,0 +1,50 @@
+{
+  "code": "DLT",
+  "name": "Delta",
+  "version": "HL7 v2.7",
+  "description": "Describes the information that controls delta check warnings.\n\nNote: Replaces the CM data type used in section 8.8.4.9 – OM2-9, as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DLT.1",
+      "field_description": "Normal Range",
+      "length": "0",
+      "data_type": "NR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "DLT.2",
+      "field_description": "Numeric Threshold",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "DLT.3",
+      "field_description": "Change Computation",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0523"
+    },
+    {
+      "position": 4,
+      "field_name": "DLT.4",
+      "field_description": "Days Retained",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

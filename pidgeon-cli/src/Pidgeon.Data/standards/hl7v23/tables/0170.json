@@ -1,0 +1,29 @@
+{
+  "code": "0170",
+  "name": "Derived specimen",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Child Observation",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "Not Applicable",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Parent Observation",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

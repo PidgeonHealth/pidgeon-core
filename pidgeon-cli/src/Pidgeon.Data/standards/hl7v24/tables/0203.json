@@ -1,0 +1,287 @@
+{
+  "code": "0203",
+  "name": "Identifier type",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AM",
+      "description": "American Express",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AN",
+      "description": "Account number",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BA",
+      "description": "Bank Account Number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "BR",
+      "description": "Birth registry number",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "BRN",
+      "description": "Breed Registry Number",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DI",
+      "description": "Diner’s Club card",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DL",
+      "description": "Driver’s license number",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DN",
+      "description": "Doctor number",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DR",
+      "description": "Donor Registration Number",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "DS",
+      "description": "Discover Card",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "EI",
+      "description": "Employee number",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "EN",
+      "description": "Employer number",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "FI",
+      "description": "Facility ID",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "GI",
+      "description": "Guarantor internal identifier",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "GN",
+      "description": "Guarantor external  identifier",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "HC",
+      "description": "Health Card Number",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "JHN",
+      "description": "Jurisdictional health number (Canada)",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "LN",
+      "description": "License number",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "LR",
+      "description": "Local Registry ID",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "MA",
+      "description": "Medicaid number",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "MC",
+      "description": "Medicare number",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "MCN",
+      "description": "Microchip Number",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "MR",
+      "description": "Medical record number",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "MS",
+      "description": "MasterCard",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "NE",
+      "description": "National employer identifier",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "NH",
+      "description": "National Health Plan Identifier",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "NI",
+      "description": "National unique individual identifier",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "NNxxx",
+      "description": "National Person Identifier where the xxx is the ISO table 3166  3-character (alphabetic) country code",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "NPI",
+      "description": "National provider identifier",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "PEN",
+      "description": "Pension Number",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "PI",
+      "description": "Patient internal identifier",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "PN",
+      "description": "Person number",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "PRN",
+      "description": "Provider number",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "PT",
+      "description": "Patient external identifier",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "RR",
+      "description": "Railroad Retirement number",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "RRI",
+      "description": "Regional registry ID",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "SL",
+      "description": "State license",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "SR",
+      "description": "State registry ID",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "SS",
+      "description": "Social Security number",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "U",
+      "description": "Unspecified",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "UPIN",
+      "description": "Medicare/HCFA’s Universal Physician Identification numbers",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "VN",
+      "description": "Visit number",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "VS",
+      "description": "VISA",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "WC",
+      "description": "WIC identifier",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "WCN",
+      "description": "Workers’ Comp Number",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "XX",
+      "description": "Organization identifier",
+      "comment": "",
+      "sort_order": 46
+    }
+  ],
+  "value_count": 46
+}

@@ -1,0 +1,353 @@
+{
+  "code": "0371",
+  "name": "Additive/Preservative",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ACDA",
+      "description": "ACD Solution A",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ACDB",
+      "description": "ACD Solution B",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ACET",
+      "description": "Acetic Acid",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AMIES",
+      "description": "Amies transport medium",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "BACTM",
+      "description": "Bacterial Transport medium",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BF10",
+      "description": "Buffered 10% formalin",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BOR",
+      "description": "Borate Boric Acid",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BOUIN",
+      "description": "Bouin's solution",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "BSKM",
+      "description": "Buffered skim milk",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "C32",
+      "description": "3.2%  Citrate",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "C38",
+      "description": "3.8% Citrate",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "CARS",
+      "description": "Carson's Modified 10% formalin",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "CARY",
+      "description": "Cary Blair Medium",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CHLTM",
+      "description": "Chlamydia transport medium",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "CTAD",
+      "description": "CTAD (this should be spelled out if not universally understood)",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "EDTK",
+      "description": "Potassium/K EDTA",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "EDTK15",
+      "description": "Potassium/K EDTA 15%",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "EDTK75",
+      "description": "Potassium/K EDTA 7.5%",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "EDTN",
+      "description": "Sodium/Na EDTA",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "ENT",
+      "description": "Enteric bacteria transport medium",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "ENT+",
+      "description": "Enteric plus",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "F10",
+      "description": "10% Formalin",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "FDP",
+      "description": "Thrombin NIH; soybean trypsin inhibitor (Fibrin Degradation Products)",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "FL10",
+      "description": "Sodium Fluoride, 10mg",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "FL100",
+      "description": "Sodium Fluoride, 100mg",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "HCL6",
+      "description": "6N HCL",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "HEPA",
+      "description": "Ammonium heparin",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "HEPL",
+      "description": "Lithium/Li  Heparin",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "HEPN",
+      "description": "Sodium/Na  Heparin",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "HNO3",
+      "description": "Nitric Acid",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "JKM",
+      "description": "Jones Kendrick Medium",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "KARN",
+      "description": "Karnovsky's fixative",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "KOX",
+      "description": "Potassium Oxalate",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "LIA",
+      "description": "Lithium iodoacetate",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "M4",
+      "description": "M4",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "M4RT",
+      "description": "M4-RT",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "M5",
+      "description": "M5",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "MICHTM",
+      "description": "Michel's transport medium",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "MMDTM",
+      "description": "MMD transport medium",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "NAF",
+      "description": "Sodium Fluoride",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "NAPS",
+      "description": "Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "NONE",
+      "description": "None",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "PAGE",
+      "description": "Pages's Saline",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "PHENOL",
+      "description": "Phenol",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "PVA",
+      "description": "PVA (polyvinylalcohol)",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "RLM",
+      "description": "Reagan Lowe Medium",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "SILICA",
+      "description": "Siliceous earth, 12 mg",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "SPS",
+      "description": "SPS(this should be spelled out if not universally understood)",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "SST",
+      "description": "Serum Separator Tube (Polymer Gel)",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "STUTM",
+      "description": "Stuart transport medium",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "THROM",
+      "description": "Thrombin",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "THYMOL",
+      "description": "Thymol",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "THYO",
+      "description": "Thyoglycollate broth",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "TOLU",
+      "description": "Toluene",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "URETM",
+      "description": "Ureaplasma transport medium",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "VIRTM",
+      "description": "Viral Transport medium",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "WEST",
+      "description": "Buffered Citrate (Westergren Sedimentation Rate)",
+      "comment": "",
+      "sort_order": 57
+    }
+  ],
+  "value_count": 57
+}

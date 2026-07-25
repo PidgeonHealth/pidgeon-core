@@ -1,0 +1,167 @@
+{
+  "code": "0255",
+  "name": "Duration categories",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "*",
+      "description": "(asterisk) Life of the \"unit.\"  Used for blood products.",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "12H",
+      "description": "12 hours",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "1H",
+      "description": "1 hour",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "1L",
+      "description": "1 months (30 days)",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "1W",
+      "description": "1 week",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "2.5H",
+      "description": "2½ hours",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "24H",
+      "description": "24 hours",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "2D",
+      "description": "2 days",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "2H",
+      "description": "2 hours",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "2L",
+      "description": "2 months",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "2W",
+      "description": "2 weeks",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "30M",
+      "description": "30 minutes",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "3D",
+      "description": "3 days",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "3H",
+      "description": "3 hours",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "3L",
+      "description": "3 months",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "3W",
+      "description": "3 weeks",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "4D",
+      "description": "4 days",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "4H",
+      "description": "4 hours",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "4W",
+      "description": "4 weeks",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "5D",
+      "description": "5 days",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "5H",
+      "description": "5 hours",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "6D",
+      "description": "6 days",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "6H",
+      "description": "6 hours",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "7H",
+      "description": "7 hours",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "8H",
+      "description": "8 hours",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "PT",
+      "description": "To identify measures at a point in time.  This is a synonym for \"spot\" or \"random\" as applied to urine measurements.",
+      "comment": "",
+      "sort_order": 26
+    }
+  ],
+  "value_count": 26
+}

@@ -1,0 +1,50 @@
+{
+  "code": "RFI",
+  "name": "Request for Information",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RFI.1",
+      "field_description": "Request Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RFI.2",
+      "field_description": "Response Due Date",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RFI.3",
+      "field_description": "Patient Consent",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 4,
+      "field_name": "RFI.4",
+      "field_description": "Date Additional Information was submitted",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 4
+}

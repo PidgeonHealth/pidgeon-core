@@ -1,0 +1,83 @@
+{
+  "code": "0429",
+  "name": "Production Class Code",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "BR",
+      "description": "Breeding/genetic stock",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DA",
+      "description": "Dairy",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DR",
+      "description": "Draft",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DU",
+      "description": "Dual Purpose",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LY",
+      "description": "Layer, Includes Multiplier flocks",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "MT",
+      "description": "Meat",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "NA",
+      "description": "Not Applicable",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OT",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PL",
+      "description": "Pleasure",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "RA",
+      "description": "Racing",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "SH",
+      "description": "Show",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "U",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 12
+    }
+  ],
+  "value_count": 12
+}

@@ -1,0 +1,335 @@
+{
+  "code": "0153",
+  "name": "Value code",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "01",
+      "description": "Most common semi-private rate",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "02",
+      "description": "Hospital has no semi-private rooms",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "04",
+      "description": "Inpatient professional component charges which are combined billed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "05",
+      "description": "Professional component included in charges and also billed separate to carrier",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "06",
+      "description": "Medicare blood deductible",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "08",
+      "description": "Medicare life time reserve amount in the first calendar year",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "09",
+      "description": "Medicare co-insurance amount in the first calendar year",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "10",
+      "description": "Lifetime reserve amount in the second calendar year",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "11",
+      "description": "Co-insurance amount in the second calendar year",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "12",
+      "description": "Working aged beneficiary/spouse with employer group health plan",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "13",
+      "description": "ESRD beneficiary in a Medicare coordination period with an employer group health plan",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "14",
+      "description": "No Fault including auto/other",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "15",
+      "description": "Worker's Compensation",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "16",
+      "description": "PHS, or other federal agency",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "17",
+      "description": "Payer code",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "21",
+      "description": "Catastrophic",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "22",
+      "description": "Surplus",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "23",
+      "description": "Recurring monthly incode",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "24",
+      "description": "Medicaid rate code",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "30",
+      "description": "Pre-admission testing",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "31",
+      "description": "Patient liability amount",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "37",
+      "description": "Pints of blood furnished",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "38",
+      "description": "Blood deductible pints",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "39",
+      "description": "Pints of blood replaced",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "40",
+      "description": "New coverage not implemented by HMO (for inpatient service only)",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "41",
+      "description": "Black lung",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "42",
+      "description": "VA",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "43",
+      "description": "Disabled beneficiary under age 64 with LGHP",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "44",
+      "description": "Amount provider agreed to accept from primary payer when this amount is less than charges but higher than payment received,, then a Medicare secondary payment is due",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "45",
+      "description": "Accident hour",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "46",
+      "description": "Number of grace days",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "47",
+      "description": "Any liability insurance",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "48",
+      "description": "Hemoglobin reading",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "49",
+      "description": "Hematocrit reading",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "50",
+      "description": "Physical therapy visits",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "51",
+      "description": "Occupational therapy visits",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "52",
+      "description": "Speech therapy visits",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "53",
+      "description": "Cardiac rehab visits",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "56",
+      "description": "Skilled nurse - home visit hours",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "57",
+      "description": "Home health aide - home visit hours",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "58",
+      "description": "Arterial blood gas",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "59",
+      "description": "Oxygen saturation",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "60",
+      "description": "HHA branch MSA",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "67",
+      "description": "Peritoneal dialysis",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "68",
+      "description": "EPO-drug",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "70 ... 72",
+      "description": "Payer codes",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "75 ... 79",
+      "description": "Payer codes",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "80",
+      "description": "Psychiatric visits",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "81",
+      "description": "Visits subject to co-payment",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "A1",
+      "description": "Deductible payer A",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "A2",
+      "description": "Coinsurance payer A",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "A3",
+      "description": "Estimated responsibility payer A",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "X0",
+      "description": "Service excluded on primary policy",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "X4",
+      "description": "Supplemental coverage",
+      "comment": "",
+      "sort_order": 54
+    }
+  ],
+  "value_count": 54
+}

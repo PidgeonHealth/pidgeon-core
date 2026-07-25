@@ -1,0 +1,191 @@
+{
+  "code": "0227",
+  "name": "Manufacturers of vaccines",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AB",
+      "description": "Abbott",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AD",
+      "description": "Adams",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ALP",
+      "description": "Alpha",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "AR",
+      "description": "Armour",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "BA",
+      "description": "Baxter",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BAY",
+      "description": "Bayer",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BP",
+      "description": "Berna",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "CON",
+      "description": "Connaught",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "EVN",
+      "description": "Evans",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "GRE",
+      "description": "Greer",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "IM",
+      "description": "Merieux",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "IUS",
+      "description": "Immuno-US",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "JPN",
+      "description": "Microbial Dis/Osaka U",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "KGC",
+      "description": "Korea Green Cross",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "LED",
+      "description": "Lederle",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "MA",
+      "description": "Massachusetts Public Health",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "MIL",
+      "description": "Miles",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "MIP",
+      "description": "Michigan Dept Public Health",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "MSD",
+      "description": "Merck",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "NAB",
+      "description": "North American Biologicals",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "NYB",
+      "description": "New York Blood Center",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "OTC",
+      "description": "Organon Teknika",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "OTH",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "PD",
+      "description": "Parke Davis",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "PRX",
+      "description": "Praxis Biologics",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "SCL",
+      "description": "Sclavo",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "SI",
+      "description": "Swiss Serum and Vaccine Inst.",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "SKB",
+      "description": "SmithKline",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "UNK",
+      "description": "Unknown manufacturer",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "WA",
+      "description": "Wyeth-Ayerst",
+      "comment": "",
+      "sort_order": 30
+    }
+  ],
+  "value_count": 30
+}

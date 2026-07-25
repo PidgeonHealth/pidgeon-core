@@ -1,0 +1,40 @@
+{
+  "code": "MSG",
+  "name": "Message Type",
+  "version": "HL7 v2.7",
+  "description": "This field contains the message type, trigger event, and the message structure ID for the message.\n\nNote: Replaces the CM data type used in 2.16.9.9 MSH-9 as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "MSG.1",
+      "field_description": "Message Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0076"
+    },
+    {
+      "position": 2,
+      "field_name": "MSG.2",
+      "field_description": "Trigger Event",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0003"
+    },
+    {
+      "position": 3,
+      "field_name": "MSG.3",
+      "field_description": "Message Structure",
+      "length": "7",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0354"
+    }
+  ],
+  "field_count": 3
+}

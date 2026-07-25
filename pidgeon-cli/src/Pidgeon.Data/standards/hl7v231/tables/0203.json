@@ -1,0 +1,239 @@
+{
+  "code": "0203",
+  "name": "Identifier type",
+  "version": "HL7 v2.3.1",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AM",
+      "description": "American Express",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AN",
+      "description": "Account number",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BR",
+      "description": "Birth registry number",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DI",
+      "description": "Diners Club card",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "DL",
+      "description": "Drivers license number",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "DN",
+      "description": "Doctor number",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "DS",
+      "description": "Discover Card",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "EI",
+      "description": "Employee number",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "EN",
+      "description": "Employer number",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "FI",
+      "description": "Facility ID",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "GI",
+      "description": "Guarantor internal identifier",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "GN",
+      "description": "Guarantor external identifier",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "LN",
+      "description": "License number",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "LR",
+      "description": "Local Registry ID",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "MA",
+      "description": "Medicaid number",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "MC",
+      "description": "Medicare number",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "MR",
+      "description": "Medical record number",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "MS",
+      "description": "MasterCard",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "NE",
+      "description": "National employer identifier",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "NH",
+      "description": "National Health Plan Identifier",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "NI",
+      "description": "National unique individual identifier",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "NNxxx",
+      "description": "National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "NPI",
+      "description": "National provider identifier",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "PI",
+      "description": "Patient internal identifier",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "PN",
+      "description": "Person number",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "PRN",
+      "description": "Provider number",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "PT",
+      "description": "Patient external identifier",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "RR",
+      "description": "Railroad Retirement number",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "RRI",
+      "description": "Regional registry ID",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "SL",
+      "description": "State license",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "SR",
+      "description": "State registry ID",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "SS",
+      "description": "Social Security number",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "U",
+      "description": "Unspecified",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "UPIN",
+      "description": "Medicare/HCFAs Universal Physician Identification numbers",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "VN",
+      "description": "Visit number",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "VS",
+      "description": "VISA",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "WC",
+      "description": "WIC identifier",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "XX",
+      "description": "Organization identifier",
+      "comment": "",
+      "sort_order": 38
+    }
+  ],
+  "value_count": 38
+}

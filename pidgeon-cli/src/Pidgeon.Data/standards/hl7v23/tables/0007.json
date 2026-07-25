@@ -1,0 +1,35 @@
+{
+  "code": "0007",
+  "name": "Admission type",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "A",
+      "description": "Accident",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Emergency",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "L",
+      "description": "Labor and Delivery",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "R",
+      "description": "Routine",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

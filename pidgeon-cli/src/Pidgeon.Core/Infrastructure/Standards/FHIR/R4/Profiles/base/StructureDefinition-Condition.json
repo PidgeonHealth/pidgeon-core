@@ -1,0 +1,21 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "name": "Condition",
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "snapshot": {
+    "element": [
+      { "path": "Condition", "min": 0, "max": "*" },
+      { "path": "Condition.id", "min": 0, "max": "1", "type": [{ "code": "id" }] },
+      { "path": "Condition.clinicalStatus", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }], "binding": { "strength": "required", "valueSet": "http://hl7.org/fhir/ValueSet/condition-clinical" } },
+      { "path": "Condition.verificationStatus", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }], "binding": { "strength": "required", "valueSet": "http://hl7.org/fhir/ValueSet/condition-ver-status" } },
+      { "path": "Condition.category", "min": 0, "max": "*", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Condition.code", "min": 0, "max": "1", "type": [{ "code": "CodeableConcept" }] },
+      { "path": "Condition.subject", "min": 1, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Patient"] }] },
+      { "path": "Condition.encounter", "min": 0, "max": "1", "type": [{ "code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Encounter"] }] },
+      { "path": "Condition.onset[x]", "min": 0, "max": "1", "type": [{ "code": "dateTime" }, { "code": "Age" }, { "code": "Period" }, { "code": "Range" }, { "code": "string" }] },
+      { "path": "Condition.recordedDate", "min": 0, "max": "1", "type": [{ "code": "dateTime" }] }
+    ]
+  }
+}

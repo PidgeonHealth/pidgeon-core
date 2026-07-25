@@ -1,0 +1,89 @@
+{
+  "code": "0104",
+  "name": "Version ID",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "2.0",
+      "description": "Release 2.0",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2.0D",
+      "description": "Demo 2.0",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2.1",
+      "description": "Release 2.1",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "2.2",
+      "description": "Release 2.2",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "2.3",
+      "description": "Release 2.3",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "2.3.1",
+      "description": "Release 2.3.1",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "2.4",
+      "description": "Release 2.4",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "2.5",
+      "description": "Release 2.5",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "2.5.1",
+      "description": "Release 2.5.1",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "2.6",
+      "description": "Release 2.6",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "2.7",
+      "description": "Release 2.7",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "2.7.1",
+      "description": "Release 2.7.1",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "2.8",
+      "description": "Release 2.8",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

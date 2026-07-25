@@ -1,0 +1,263 @@
+{
+  "code": "0488",
+  "name": "Specimen Collection Method",
+  "version": "HL7 v2.5",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ANP",
+      "description": "Plates, Anaerobic",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BAP",
+      "description": "Plates, Blood Agar",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "BCAE",
+      "description": "Blood Culture, Aerobic Bottle",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "BCAN",
+      "description": "Blood Culture, Anaerobic Bottle",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "BCPD",
+      "description": "Blood Culture, Pediatric Bottle",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BIO",
+      "description": "Biopsy",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CAP",
+      "description": "Capillary Specimen",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "CATH",
+      "description": "Catheterized",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "CVP",
+      "description": "Line, CVP",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "EPLA",
+      "description": "Environmental, Plate",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ESWA",
+      "description": "Environmental, Swab",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "FNA",
+      "description": "Aspiration, Fine Needle",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "KOFFP",
+      "description": "Plate, Cough",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "LNA",
+      "description": "Line, Arterial",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "LNV",
+      "description": "Line, Venous",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "MARTL",
+      "description": "Martin-Lewis Agar",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "ML11",
+      "description": "Mod. Martin-Lewis Agar",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "MLP",
+      "description": "Plate, Martin-Lewis",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "NYP",
+      "description": "Plate, New York City",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "PACE",
+      "description": "Pace, Gen-Probe",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "PIN",
+      "description": "Pinworm Prep",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "PNA",
+      "description": "Aterial puncture",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "PRIME",
+      "description": "Pump Prime",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "PUMP",
+      "description": "Pump Specimen",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "QC5",
+      "description": "Quality Control For Micro",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "SCLP",
+      "description": "Scalp, Fetal Vein",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "SCRAPS",
+      "description": "Scrapings",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "SHA",
+      "description": "Shaving",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "SWA",
+      "description": "Swab",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "SWD",
+      "description": "Swab, Dacron tipped",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "TMAN",
+      "description": "Transport Media, Anaerobic",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "TMCH",
+      "description": "Transport Media, Chalamydia",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "TMM4",
+      "description": "Transport Media, M4",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "TMMY",
+      "description": "Transport Media, Mycoplasma",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "TMOT",
+      "description": "Transport Media,",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "TMP",
+      "description": "Plate, Thayer-Martin",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "TMPV",
+      "description": "Transport Media, PVA",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "TMSC",
+      "description": "Transport Media, Stool Culture",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "TMUP",
+      "description": "Transport Media, Ureaplasma",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "TMVI",
+      "description": "Transport Media, Viral",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "VENIP",
+      "description": "Venipuncture",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "WOOD",
+      "description": "Swab, Wooden Shaft",
+      "comment": "",
+      "sort_order": 42
+    }
+  ],
+  "value_count": 42
+}

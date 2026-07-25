@@ -1,0 +1,95 @@
+{
+  "code": "0270",
+  "name": "Document type",
+  "version": "HL7 v2.3",
+  "chapter": "Medical Records/Information Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AR",
+      "description": "Autopsy report",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CD",
+      "description": "Cardiodiagnostics",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CN",
+      "description": "Consultation",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "DI",
+      "description": "Diagnostic imaging",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "DS",
+      "description": "Discharge summary",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ED",
+      "description": "Emergency department report",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "HP",
+      "description": "History and physical examination",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OP",
+      "description": "Operative report",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PC",
+      "description": "Psychiatric consultation",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PH",
+      "description": "Psychiatric history and physical examination",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PN",
+      "description": "Procedure note",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PR",
+      "description": "Progress note",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "SP",
+      "description": "Surgical pathology",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "TS",
+      "description": "Transfer summary",
+      "comment": "",
+      "sort_order": 14
+    }
+  ],
+  "value_count": 14
+}

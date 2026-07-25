@@ -1,0 +1,30 @@
+{
+  "code": "TS",
+  "name": "Time Stamp",
+  "version": "HL7 v2.4",
+  "description": "Contains the exact time of an event, including the date and time. The date portion of a time stamp follows the rules of a date field and the time portion follows the rules of a time field.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "TS.1",
+      "field_description": "Time Of An Event",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "TS.2",
+      "field_description": "Degree of precision",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "B",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

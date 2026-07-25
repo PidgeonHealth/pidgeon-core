@@ -1,0 +1,1035 @@
+# Protected D2 release for PidgeonHealth/pidgeon-core.
+#
+# NuGet's stock packer writes random OPC relationship identifiers and current
+# ZIP timestamps, so rebuilding an otherwise identical package does not
+# preserve its container hash. This workflow therefore has two separate modes:
+#
+#   1. dry_run=true stages two unsigned main packages, their two symbol
+#      packages, and a normalized SBOM;
+#   2. dry_run=false promotes that exact staged candidate without repacking.
+#
+# The protected `core-package` job rechecks the approved unsigned hashes,
+# malware-scans and author-signs those bytes with SSL.com eSigner, publishes
+# through NuGet Trusted Publishing/OIDC, then verifies the repository-signed
+# live packages. No long-lived NuGet credential is read.
+
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "publish-core" to allow a real publish to nuget.org.'
+        type: string
+        required: false
+      dry_run:
+        description: 'Stage and verify one main/symbol/SBOM bundle; do not publish.'
+        type: boolean
+        default: true
+      candidate_run_id:
+        description: 'Successful dry-run release workflow run containing the approved candidate.'
+        type: string
+        required: false
+      core_sha256:
+        description: 'Approved unsigned Pidgeon.Core nupkg SHA-256.'
+        type: string
+        required: false
+      baseline_sha256:
+        description: 'Approved unsigned Pidgeon.Data.Baseline nupkg SHA-256.'
+        type: string
+        required: false
+      core_symbols_sha256:
+        description: 'Approved Pidgeon.Core snupkg SHA-256.'
+        type: string
+        required: false
+      baseline_symbols_sha256:
+        description: 'Approved Pidgeon.Data.Baseline snupkg SHA-256.'
+        type: string
+        required: false
+      sbom_sha256:
+        description: 'Approved normalized SPDX manifest SHA-256.'
+        type: string
+        required: false
+      controls_receipt_sha256:
+        description: 'Approved external release-control receipt SHA-256.'
+        type: string
+        required: false
+
+permissions:
+  actions: read
+  contents: read
+  id-token: write
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - name: Validate staging ref or signed release ref and intent
+        shell: bash
+        env:
+          CONFIRM: ${{ inputs.confirm }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          CANDIDATE_RUN_ID: ${{ inputs.candidate_run_id }}
+          CORE_SHA256: ${{ inputs.core_sha256 }}
+          BASELINE_SHA256: ${{ inputs.baseline_sha256 }}
+          CORE_SYMBOLS_SHA256: ${{ inputs.core_symbols_sha256 }}
+          BASELINE_SYMBOLS_SHA256: ${{ inputs.baseline_symbols_sha256 }}
+          SBOM_SHA256: ${{ inputs.sbom_sha256 }}
+          CONTROLS_RECEIPT_SHA256: ${{ inputs.controls_receipt_sha256 }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [[ "$DRY_RUN" == "true" && "$GITHUB_REF_TYPE" == "branch" ]]; then
+            repo_json="$(curl --fail-with-body --silent --show-error \
+              --header 'Accept: application/vnd.github+json' \
+              --header "Authorization: Bearer $GH_TOKEN" \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY")"
+            default_branch="$(jq -r '.default_branch' <<<"$repo_json")"
+            if [[ "$GITHUB_REF_NAME" != "$default_branch" ]]; then
+              echo '::error::An unpublished branch dry run must use the default branch.'
+              exit 1
+            fi
+            branch_json="$(curl --fail-with-body --silent --show-error \
+              --header 'Accept: application/vnd.github+json' \
+              --header "Authorization: Bearer $GH_TOKEN" \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/branches/$GITHUB_REF_NAME")"
+            if [[ "$(jq -r '.commit.sha' <<<"$branch_json")" != "$GITHUB_SHA" ]]; then
+              echo '::error::An unpublished dry run must use the exact default-branch head.'
+              exit 1
+            fi
+          else
+            if [[ "$GITHUB_REF_TYPE" != "tag" ||
+                  "$GITHUB_REF_NAME" != "v0.1.0-beta.1" ]]; then
+              echo '::error::Publication and tagged staging require protected v0.1.0-beta.1.'
+              exit 1
+            fi
+
+            ref_json="$(curl --fail-with-body --silent --show-error \
+              --header 'Accept: application/vnd.github+json' \
+              --header "Authorization: Bearer $GH_TOKEN" \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/git/ref/tags/$GITHUB_REF_NAME")"
+            tag_type="$(jq -r '.object.type' <<<"$ref_json")"
+            tag_sha="$(jq -r '.object.sha' <<<"$ref_json")"
+            if [[ "$tag_type" != "tag" ]]; then
+              echo '::error::The release ref must be an annotated signed tag, not a lightweight tag.'
+              exit 1
+            fi
+            tag_json="$(curl --fail-with-body --silent --show-error \
+              --header 'Accept: application/vnd.github+json' \
+              --header "Authorization: Bearer $GH_TOKEN" \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/git/tags/$tag_sha")"
+            if [[ "$(jq -r '.verification.verified' <<<"$tag_json")" != "true" ]]; then
+              reason="$(jq -r '.verification.reason // "unknown"' <<<"$tag_json")"
+              echo "::error::GitHub did not verify the release-tag signature (reason=$reason)."
+              exit 1
+            fi
+            if [[ "$(jq -r '.object.type' <<<"$tag_json")" != "commit" ||
+                  "$(jq -r '.object.sha' <<<"$tag_json")" != "$GITHUB_SHA" ]]; then
+              echo '::error::The verified tag must point directly at the workflow commit.'
+              exit 1
+            fi
+          fi
+
+          if [[ "$DRY_RUN" == "false" ]]; then
+            if [[ "$CONFIRM" != "publish-core" ]]; then
+              echo '::error::A real publish requires confirm=publish-core.'
+              exit 1
+            fi
+            if [[ ! "$CANDIDATE_RUN_ID" =~ ^[0-9]+$ ]]; then
+              echo '::error::A real publish requires a numeric candidate_run_id.'
+              exit 1
+            fi
+            for value in \
+              "$CORE_SHA256" \
+              "$BASELINE_SHA256" \
+              "$CORE_SYMBOLS_SHA256" \
+              "$BASELINE_SYMBOLS_SHA256" \
+              "$SBOM_SHA256"; do
+              if [[ ! "$value" =~ ^[0-9a-f]{64}$ ]]; then
+                echo '::error::Every approved candidate hash must be 64 lowercase hex characters.'
+                exit 1
+              fi
+            done
+
+            run_json="$(curl --fail-with-body --silent --show-error \
+              --header 'Accept: application/vnd.github+json' \
+              --header "Authorization: Bearer $GH_TOKEN" \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$CANDIDATE_RUN_ID")"
+            if [[ "$(jq -r '.repository.full_name' <<<"$run_json")" != "$GITHUB_REPOSITORY" ||
+                  "$(jq -r '.path' <<<"$run_json")" != ".github/workflows/release.yml" ||
+                  "$(jq -r '.event' <<<"$run_json")" != "workflow_dispatch" ||
+                  "$(jq -r '.conclusion' <<<"$run_json")" != "success" ||
+                  "$(jq -r '.head_sha' <<<"$run_json")" != "$GITHUB_SHA" ||
+                  "$(jq -r '.head_branch' <<<"$run_json")" != "$GITHUB_REF_NAME" ]]; then
+              echo '::error::candidate_run_id is not a successful dry-run of this workflow and exact tag.'
+              exit 1
+            fi
+
+            if [[ ! "$CONTROLS_RECEIPT_SHA256" =~ ^[0-9a-f]{64}$ ]]; then
+              echo '::error::Publication requires the approved external release-control receipt hash.'
+              exit 1
+            fi
+          fi
+
+          echo "Release preflight accepted (dry_run=${DRY_RUN})."
+
+  stage-candidate:
+    needs: preflight
+    if: ${{ inputs.dry_run }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 8.0.423
+
+      - name: Restore, build, and test exact public source
+        run: |
+          set -euo pipefail
+          dotnet restore --locked-mode --source https://api.nuget.org/v3/index.json
+          dotnet build --no-restore -c Release
+          dotnet test --no-build -c Release --logger "console;verbosity=normal"
+
+      - name: Pack one unsigned candidate pair
+        run: |
+          set -euo pipefail
+          dotnet pack pidgeon-cli/src/Pidgeon.Core/Pidgeon.Core.csproj \
+            --no-build --no-restore -c Release -o artifacts/candidate/packages
+          dotnet pack pidgeon-cli/src/Pidgeon.Data.Baseline/Pidgeon.Data.Baseline.csproj \
+            --no-build --no-restore -c Release -o artifacts/candidate/packages
+          test -f artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.nupkg
+          test -f artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.snupkg
+          test -f artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg
+          test -f artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.snupkg
+          test "$(find artifacts/candidate/packages -maxdepth 1 -name '*.nupkg' | wc -l)" -eq 2
+          test "$(find artifacts/candidate/packages -maxdepth 1 -name '*.snupkg' | wc -l)" -eq 2
+
+      - name: Verify symbols and Source Link against the exact public commit
+        working-directory: artifacts/candidate/packages
+        run: |
+          set -euo pipefail
+          dotnet run \
+            --project ../../../pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj \
+            --configuration Release \
+            --no-build \
+            -- \
+            --commit "$GITHUB_SHA"
+
+      - name: Install pinned Microsoft SBOM Tool
+        shell: bash
+        env:
+          SBOM_TOOL_SHA256: bf5d4f99bc98c119d549d08fc02ae92598a7a42772f17317c01031a92632e05b
+        run: |
+          curl --fail --location --silent --show-error \
+            --output "$RUNNER_TEMP/sbom-tool" \
+            https://github.com/microsoft/sbom-tool/releases/download/v4.1.5/sbom-tool-linux-x64
+          echo "$SBOM_TOOL_SHA256  $RUNNER_TEMP/sbom-tool" | sha256sum --check
+          chmod 0555 "$RUNNER_TEMP/sbom-tool"
+
+      - name: Generate and validate candidate SBOM
+        shell: bash
+        run: |
+          set -euo pipefail
+          commit_epoch="$(git show -s --format=%ct "$GITHUB_SHA")"
+          generated_at="$(date --utc --date="@$commit_epoch" +'%Y-%m-%dT%H:%M:%SZ')"
+          mkdir -p "$GITHUB_WORKSPACE/artifacts/candidate/sbom"
+          "$RUNNER_TEMP/sbom-tool" generate \
+            -b "$GITHUB_WORKSPACE/artifacts/candidate/packages" \
+            -bc "$GITHUB_WORKSPACE" \
+            -m "$GITHUB_WORKSPACE/artifacts/candidate/sbom" \
+            -pn Pidgeon.Core-public-source \
+            -pv 0.1.0-beta.1 \
+            -ps "Pidgeon Health" \
+            -nsb https://pidgeon.health/sbom \
+            -nsu "$GITHUB_SHA" \
+            -gt "$generated_at" \
+            -pm true \
+            -li false \
+            -F false
+          manifest="artifacts/candidate/sbom/_manifest/spdx_2.2/manifest.spdx.json"
+          jq --sort-keys --arg candidate "$GITHUB_SHA" \
+            'walk(if type == "string" then sub("tag_id=[0-9a-fA-F-]+"; "tag_id=" + $candidate) elif type == "array" then sort_by(tostring) else . end)' \
+            "$manifest" > "$RUNNER_TEMP/manifest.spdx.json"
+          mv "$RUNNER_TEMP/manifest.spdx.json" "$manifest"
+          sha256sum "$manifest" | awk '{print $1}' > "$manifest.sha256"
+          "$RUNNER_TEMP/sbom-tool" validate \
+            -b "$GITHUB_WORKSPACE/artifacts/candidate/packages" \
+            -m "$GITHUB_WORKSPACE/artifacts/candidate/sbom/_manifest" \
+            -o "$GITHUB_WORKSPACE/artifacts/candidate/sbom/validation.json" \
+            -mi SPDX:2.2 \
+            -n true \
+            -F false
+
+      - name: Seal candidate manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          core="artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.nupkg"
+          core_symbols="artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.snupkg"
+          baseline="artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg"
+          baseline_symbols="artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.snupkg"
+          sbom="artifacts/candidate/sbom/_manifest/spdx_2.2/manifest.spdx.json"
+          jq -n \
+            --arg repository "$GITHUB_REPOSITORY" \
+            --arg commit "$GITHUB_SHA" \
+            --arg tag "$GITHUB_REF_NAME" \
+            --arg run_id "$GITHUB_RUN_ID" \
+            --arg sdk_version "$(dotnet --version)" \
+            --arg runner_image "${ImageOS:-unknown}/${ImageVersion:-unknown}" \
+            --arg core_sha256 "$(sha256sum "$core" | awk '{print $1}')" \
+            --arg core_symbols_sha256 "$(sha256sum "$core_symbols" | awk '{print $1}')" \
+            --arg baseline_sha256 "$(sha256sum "$baseline" | awk '{print $1}')" \
+            --arg baseline_symbols_sha256 "$(sha256sum "$baseline_symbols" | awk '{print $1}')" \
+            --arg sbom_sha256 "$(sha256sum "$sbom" | awk '{print $1}')" \
+            '{
+              repository: $repository,
+              commit: $commit,
+              tag: $tag,
+              run_id: $run_id,
+              version: "0.1.0-beta.1",
+              toolchain: {
+                dotnet_sdk: $sdk_version,
+                runner_image: $runner_image
+              },
+              packages: {
+                "Pidgeon.Core": {
+                  nupkg_sha256: $core_sha256,
+                  snupkg_sha256: $core_symbols_sha256
+                },
+                "Pidgeon.Data.Baseline": {
+                  nupkg_sha256: $baseline_sha256,
+                  snupkg_sha256: $baseline_symbols_sha256
+                }
+              },
+              sbom_sha256: $sbom_sha256
+            }' > artifacts/candidate/candidate.json
+          jq . artifacts/candidate/candidate.json
+
+      - name: Upload sealed candidate
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pidgeon-core-candidate-${{ github.run_id }}
+          path: artifacts/candidate
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Dry-run summary
+        if: ${{ inputs.dry_run }}
+        run: |
+          echo "Dry run: one candidate pair and its SBOM were sealed and left unpublished." |
+            tee -a "$GITHUB_STEP_SUMMARY"
+          jq . artifacts/candidate/candidate.json | tee -a "$GITHUB_STEP_SUMMARY"
+
+  publish:
+    needs: preflight
+    if: ${{ inputs.dry_run == false }}
+    runs-on: windows-latest
+    environment: core-package
+    permissions:
+      actions: read
+      contents: write
+      id-token: write
+    timeout-minutes: 60
+    env:
+      CODESIGNTOOL_VERSION: "1.3.3"
+      CODESIGNTOOL_SHA256: 317d429be3aa12a5f2c1ffdd575eab0cb0ce5e2408ab0056bcdcaab29875f73d
+      CANDIDATE_RUN_ID: ${{ inputs.candidate_run_id }}
+      APPROVED_CORE_SHA256: ${{ inputs.core_sha256 }}
+      APPROVED_BASELINE_SHA256: ${{ inputs.baseline_sha256 }}
+      APPROVED_CORE_SYMBOLS_SHA256: ${{ inputs.core_symbols_sha256 }}
+      APPROVED_BASELINE_SYMBOLS_SHA256: ${{ inputs.baseline_symbols_sha256 }}
+      APPROVED_SBOM_SHA256: ${{ inputs.sbom_sha256 }}
+      APPROVED_CONTROLS_RECEIPT_SHA256: ${{ inputs.controls_receipt_sha256 }}
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+
+      - name: Download the approved sealed candidate
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.0
+        with:
+          name: pidgeon-core-candidate-${{ inputs.candidate_run_id }}
+          path: artifacts/candidate
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.candidate_run_id }}
+
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 8.0.423
+
+      - name: Build the locked verification tool
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          dotnet restore `
+            pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj `
+            --locked-mode `
+            --source https://api.nuget.org/v3/index.json
+          if ($LASTEXITCODE -ne 0) { throw "verification-tool restore failed" }
+          dotnet build `
+            pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj `
+            --no-restore `
+            --configuration Release
+          if ($LASTEXITCODE -ne 0) { throw "verification-tool build failed" }
+
+      - name: Verify approved candidate identity and hashes
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $candidate = Get-Content artifacts/candidate/candidate.json -Raw | ConvertFrom-Json
+          if ($candidate.repository -ne $env:GITHUB_REPOSITORY -or
+              $candidate.commit -ne $env:GITHUB_SHA -or
+              $candidate.tag -ne $env:GITHUB_REF_NAME -or
+              $candidate.run_id -ne $env:CANDIDATE_RUN_ID -or
+              $candidate.version -ne "0.1.0-beta.1") {
+            throw "sealed candidate identity does not match the approved workflow inputs"
+          }
+
+          $core = "artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.nupkg"
+          $coreSymbols = "artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.snupkg"
+          $baseline = "artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg"
+          $baselineSymbols = "artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.snupkg"
+          $sbom = "artifacts/candidate/sbom/_manifest/spdx_2.2/manifest.spdx.json"
+          $packages = @(Get-ChildItem artifacts/candidate/packages/*.nupkg)
+          $symbolPackages = @(Get-ChildItem artifacts/candidate/packages/*.snupkg)
+          if ($packages.Count -ne 2) { throw "sealed candidate must contain exactly two nupkg files" }
+          if ($symbolPackages.Count -ne 2) { throw "sealed candidate must contain exactly two snupkg files" }
+
+          $actualCore = (Get-FileHash $core -Algorithm SHA256).Hash.ToLowerInvariant()
+          $actualCoreSymbols = (Get-FileHash $coreSymbols -Algorithm SHA256).Hash.ToLowerInvariant()
+          $actualBaseline = (Get-FileHash $baseline -Algorithm SHA256).Hash.ToLowerInvariant()
+          $actualBaselineSymbols = (Get-FileHash $baselineSymbols -Algorithm SHA256).Hash.ToLowerInvariant()
+          $actualSbom = (Get-FileHash $sbom -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actualCore -ne $env:APPROVED_CORE_SHA256 -or
+              $actualCore -ne $candidate.packages.'Pidgeon.Core'.nupkg_sha256) {
+            throw "Pidgeon.Core candidate hash does not match the sealed and approved values"
+          }
+          if ($actualCoreSymbols -ne $env:APPROVED_CORE_SYMBOLS_SHA256 -or
+              $actualCoreSymbols -ne $candidate.packages.'Pidgeon.Core'.snupkg_sha256) {
+            throw "Pidgeon.Core symbol candidate hash does not match the sealed and approved values"
+          }
+          if ($actualBaseline -ne $env:APPROVED_BASELINE_SHA256 -or
+              $actualBaseline -ne $candidate.packages.'Pidgeon.Data.Baseline'.nupkg_sha256) {
+            throw "Pidgeon.Data.Baseline candidate hash does not match the sealed and approved values"
+          }
+          if ($actualBaselineSymbols -ne $env:APPROVED_BASELINE_SYMBOLS_SHA256 -or
+              $actualBaselineSymbols -ne $candidate.packages.'Pidgeon.Data.Baseline'.snupkg_sha256) {
+            throw "Pidgeon.Data.Baseline symbol candidate hash does not match the sealed and approved values"
+          }
+          if ($actualSbom -ne $env:APPROVED_SBOM_SHA256 -or
+              $actualSbom -ne $candidate.sbom_sha256) {
+            throw "candidate SBOM hash does not match the sealed and approved values"
+          }
+
+      - name: Download and verify eSigner CodeSignTool
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $archive = Join-Path $env:RUNNER_TEMP "CodeSignTool-v$env:CODESIGNTOOL_VERSION-windows.zip"
+          Invoke-WebRequest -Uri "https://www.ssl.com/download/codesigntool-for-windows/" -OutFile $archive
+          $actual = (Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actual -ne $env:CODESIGNTOOL_SHA256) {
+            throw "eSigner CodeSignTool archive digest mismatch"
+          }
+
+          $installDir = Join-Path $env:RUNNER_TEMP "CodeSignTool-v$env:CODESIGNTOOL_VERSION"
+          Expand-Archive -Path $archive -DestinationPath $installDir
+          $tool = Join-Path $installDir "CodeSignTool.bat"
+          $properties = Join-Path $installDir "conf\code_sign_tool.properties"
+          if (-not (Test-Path $tool) -or -not (Test-Path $properties)) {
+            throw "eSigner CodeSignTool archive is incomplete"
+          }
+          if (-not (Select-String -Path $properties -SimpleMatch "TSA_LEGACY_URL=" -Quiet)) {
+            $contents = (Get-Content -Path $properties -Raw).TrimEnd([char[]]"`r`n") +
+              "`r`nTSA_LEGACY_URL=http://ts.ssl.com/legacy`r`n"
+            Set-Content -Path $properties -Value $contents -NoNewline
+          }
+          $legacyTsa = (ConvertFrom-StringData (Get-Content -Path $properties -Raw)).TSA_LEGACY_URL
+          if ($legacyTsa -ne "http://ts.ssl.com/legacy") {
+            throw "eSigner CodeSignTool legacy timestamp endpoint was not configured"
+          }
+          "CODE_SIGN_TOOL_PATH=$installDir" | Out-File $env:GITHUB_ENV -Append
+          "CODESIGNTOOL_PATH=$tool" | Out-File $env:GITHUB_ENV -Append
+
+      - name: Pre-sign malware scan exact candidate packages
+        shell: pwsh
+        env:
+          ES_USERNAME: ${{ secrets.ES_USERNAME }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          CREDENTIAL_ID: ${{ secrets.CREDENTIAL_ID }}
+        run: |
+          $ErrorActionPreference = "Stop"
+          Get-ChildItem artifacts/candidate/packages/*.nupkg | ForEach-Object {
+            Push-Location $env:CODE_SIGN_TOOL_PATH
+            try {
+              & $env:CODESIGNTOOL_PATH scan_code `
+                "-credential_id=$env:CREDENTIAL_ID" `
+                "-username=$env:ES_USERNAME" `
+                "-password=$env:ES_PASSWORD" `
+                "-input_file_path=$($_.FullName)"
+              $exitCode = $LASTEXITCODE
+            } finally {
+              Pop-Location
+            }
+            if ($exitCode -ne 0) { throw "pre-sign malware scan failed: $($_.Name)" }
+          }
+
+      - name: Author-sign the exact candidate packages
+        shell: pwsh
+        env:
+          ES_USERNAME: ${{ secrets.ES_USERNAME }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_TOTP_SECRET: ${{ secrets.ES_TOTP_SECRET }}
+          CREDENTIAL_ID: ${{ secrets.CREDENTIAL_ID }}
+        run: |
+          $ErrorActionPreference = "Stop"
+          New-Item -ItemType Directory -Force artifacts/signed | Out-Null
+          $signedDir = (Resolve-Path artifacts/signed).Path
+          Get-ChildItem artifacts/candidate/packages/*.nupkg | ForEach-Object {
+            Push-Location $env:CODE_SIGN_TOOL_PATH
+            try {
+              & $env:CODESIGNTOOL_PATH sign `
+                "-credential_id=$env:CREDENTIAL_ID" `
+                "-username=$env:ES_USERNAME" `
+                "-password=$env:ES_PASSWORD" `
+                "-totp_secret=$env:ES_TOTP_SECRET" `
+                "-input_file_path=$($_.FullName)" `
+                "-output_dir_path=$signedDir"
+              $exitCode = $LASTEXITCODE
+            } finally {
+              Pop-Location
+            }
+            if ($exitCode -ne 0) { throw "author-sign failed: $($_.Name)" }
+          }
+
+      - name: Verify author signatures and record signed hashes
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          function Get-PayloadDigest([string]$Path) {
+            $archive = [System.IO.Compression.ZipFile]::OpenRead((Resolve-Path $Path))
+            try {
+              $lines = $archive.Entries |
+                Where-Object { $_.FullName -ne ".signature.p7s" -and -not $_.FullName.EndsWith("/") } |
+                Sort-Object FullName |
+                ForEach-Object {
+                  $stream = $_.Open()
+                  try {
+                    $hash = [System.Security.Cryptography.SHA256]::HashData($stream)
+                    "$($_.FullName)=$([Convert]::ToHexString($hash).ToLowerInvariant())"
+                  } finally {
+                    $stream.Dispose()
+                  }
+                }
+              $bytes = [Text.Encoding]::UTF8.GetBytes(($lines -join "`n"))
+              return [Convert]::ToHexString(
+                [System.Security.Cryptography.SHA256]::HashData($bytes)
+              ).ToLowerInvariant()
+            } finally {
+              $archive.Dispose()
+            }
+          }
+          New-Item -ItemType Directory -Force artifacts/receipt | Out-Null
+          $receipt = "artifacts/receipt/d2-package-signing.txt"
+          "candidate_run_id=$env:CANDIDATE_RUN_ID" | Out-File $receipt
+          "commit=$env:GITHUB_SHA" | Out-File $receipt -Append
+          "tag=$env:GITHUB_REF_NAME" | Out-File $receipt -Append
+          "unsigned_core_sha256=$env:APPROVED_CORE_SHA256" | Out-File $receipt -Append
+          "unsigned_baseline_sha256=$env:APPROVED_BASELINE_SHA256" | Out-File $receipt -Append
+          "core_symbols_sha256=$env:APPROVED_CORE_SYMBOLS_SHA256" | Out-File $receipt -Append
+          "baseline_symbols_sha256=$env:APPROVED_BASELINE_SYMBOLS_SHA256" | Out-File $receipt -Append
+          "sbom_sha256=$env:APPROVED_SBOM_SHA256" | Out-File $receipt -Append
+          "controls_receipt_sha256=$env:APPROVED_CONTROLS_RECEIPT_SHA256" |
+            Out-File $receipt -Append
+          Get-ChildItem artifacts/signed/*.nupkg | Sort-Object Name | ForEach-Object {
+            $out = dotnet nuget verify $_.FullName --all 2>&1 | Out-String
+            $out | Out-File $receipt -Append
+            if ($LASTEXITCODE -ne 0 -or
+                $out -notmatch "Signature type: Author" -or
+                $out -notmatch "Pattern Engine LLC") {
+              throw "author-signature verification failed: $($_.Name)"
+            }
+            $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+            $payloadHash = Get-PayloadDigest $_.FullName
+            "author_signed_sha256=$hash  $($_.Name)" | Out-File $receipt -Append
+            "author_payload_sha256=$payloadHash  $($_.Name)" | Out-File $receipt -Append
+            if ($_.Name -eq "Pidgeon.Core.0.1.0-beta.1.nupkg") {
+              "AUTHOR_CORE_PAYLOAD_SHA256=$payloadHash" | Out-File $env:GITHUB_ENV -Append
+            } elseif ($_.Name -eq "Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg") {
+              "AUTHOR_BASELINE_PAYLOAD_SHA256=$payloadHash" | Out-File $env:GITHUB_ENV -Append
+            } else {
+              throw "unexpected signed package: $($_.Name)"
+            }
+          }
+          Get-Content $receipt
+
+      - name: NuGet login (OIDC to temporary API key)
+        id: login
+        uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841 # v1.2.0
+        with:
+          user: ${{ vars.NUGET_USER }}
+
+      - name: Publish or resume only an exact live payload
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          function Get-PayloadDigest([string]$Path) {
+            $archive = [System.IO.Compression.ZipFile]::OpenRead((Resolve-Path $Path))
+            try {
+              $lines = $archive.Entries |
+                Where-Object { $_.FullName -ne ".signature.p7s" -and -not $_.FullName.EndsWith("/") } |
+                Sort-Object FullName |
+                ForEach-Object {
+                  $stream = $_.Open()
+                  try {
+                    $hash = [System.Security.Cryptography.SHA256]::HashData($stream)
+                    "$($_.FullName)=$([Convert]::ToHexString($hash).ToLowerInvariant())"
+                  } finally {
+                    $stream.Dispose()
+                  }
+                }
+              $bytes = [Text.Encoding]::UTF8.GetBytes(($lines -join "`n"))
+              return [Convert]::ToHexString(
+                [System.Security.Cryptography.SHA256]::HashData($bytes)
+              ).ToLowerInvariant()
+            } finally {
+              $archive.Dispose()
+            }
+          }
+
+          New-Item -ItemType Directory -Force artifacts/preexisting | Out-Null
+          $items = @(
+            @{
+              Id = "Pidgeon.Core"
+              LowerId = "pidgeon.core"
+              Main = "artifacts/signed/Pidgeon.Core.0.1.0-beta.1.nupkg"
+              Symbols = "artifacts/candidate/packages/Pidgeon.Core.0.1.0-beta.1.snupkg"
+              ExpectedPayload = $env:AUTHOR_CORE_PAYLOAD_SHA256
+            },
+            @{
+              Id = "Pidgeon.Data.Baseline"
+              LowerId = "pidgeon.data.baseline"
+              Main = "artifacts/signed/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg"
+              Symbols = "artifacts/candidate/packages/Pidgeon.Data.Baseline.0.1.0-beta.1.snupkg"
+              ExpectedPayload = $env:AUTHOR_BASELINE_PAYLOAD_SHA256
+            }
+          )
+
+          foreach ($item in $items) {
+            $uri = "https://api.nuget.org/v3-flatcontainer/$($item.LowerId)/0.1.0-beta.1/" +
+              "$($item.LowerId).0.1.0-beta.1.nupkg"
+            $existing = "artifacts/preexisting/$($item.LowerId).0.1.0-beta.1.nupkg"
+            $alreadyPublished = $false
+            try {
+              Invoke-WebRequest -Uri $uri -OutFile $existing
+              $alreadyPublished = $true
+            } catch {
+              if ($null -eq $_.Exception.Response -or
+                  [int]$_.Exception.Response.StatusCode -ne 404) {
+                throw
+              }
+            }
+
+            if ($alreadyPublished) {
+              $verify = dotnet nuget verify $existing --all 2>&1 | Out-String
+              $verify | Out-File artifacts/receipt/d2-package-signing.txt -Append
+              $payload = Get-PayloadDigest $existing
+              if ($LASTEXITCODE -ne 0 -or
+                  $verify -notmatch "Signature type: Author" -or
+                  $verify -notmatch "Pattern Engine LLC" -or
+                  $verify -notmatch "Signature type: Repository" -or
+                  $payload -ne $item.ExpectedPayload) {
+                throw "$($item.Id) already exists but is not the exact approved payload"
+              }
+              "registry_resume=already-exact  $($item.Id)" |
+                Out-File artifacts/receipt/d2-package-signing.txt -Append
+            } else {
+              dotnet nuget push $item.Main `
+                --no-symbols `
+                --api-key "${{ steps.login.outputs.NUGET_API_KEY }}" `
+                --source https://api.nuget.org/v3/index.json
+              if ($LASTEXITCODE -ne 0) {
+                throw "NuGet publication failed: $($item.Id)"
+              }
+              "registry_resume=published-now  $($item.Id)" |
+                Out-File artifacts/receipt/d2-package-signing.txt -Append
+            }
+
+            $symbolName = Split-Path $item.Symbols -Leaf
+            Push-Location artifacts/candidate/packages
+            try {
+              dotnet run `
+                --project ../../../pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj `
+                --configuration Release `
+                --no-build `
+                -- `
+                --commit "$env:GITHUB_SHA" `
+                --package "$symbolName" `
+                --symbol-server-probe
+              $symbolProbeExit = $LASTEXITCODE
+            } finally {
+              Pop-Location
+            }
+
+            if ($symbolProbeExit -eq 0) {
+              "symbol_resume=already-exact  $($item.Id)" |
+                Out-File artifacts/receipt/d2-package-signing.txt -Append
+            } elseif ($symbolProbeExit -eq 3) {
+              dotnet nuget push $item.Symbols `
+                --api-key "${{ steps.login.outputs.NUGET_API_KEY }}" `
+                --source https://api.nuget.org/v3/index.json
+              $symbolPushExit = $LASTEXITCODE
+              if ($symbolPushExit -eq 0) {
+                "symbol_resume=published-now  $($item.Id)" |
+                  Out-File artifacts/receipt/d2-package-signing.txt -Append
+              } else {
+                # A prior accepted upload can remain temporarily absent from
+                # the symbol CDN. Accept this failed/duplicate push only after
+                # the server returns the exact approved PDB bytes.
+                Push-Location artifacts/candidate/packages
+                try {
+                  dotnet run `
+                    --project ../../../pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj `
+                    --configuration Release `
+                    --no-build `
+                    -- `
+                    --commit "$env:GITHUB_SHA" `
+                    --package "$symbolName" `
+                    --symbol-server
+                  $symbolRecoveryExit = $LASTEXITCODE
+                } finally {
+                  Pop-Location
+                }
+                if ($symbolRecoveryExit -ne 0) {
+                  throw "NuGet symbol push failed and no exact indexed symbol was recoverable: $($item.Id)"
+                }
+                "symbol_resume=push-failed-but-live-exact  $($item.Id)" |
+                  Out-File artifacts/receipt/d2-package-signing.txt -Append
+              }
+            } else {
+              throw "NuGet symbol-server probe failed closed: $($item.Id)"
+            }
+          }
+
+      - name: Verify live repository-signed packages
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          function Get-PayloadDigest([string]$Path) {
+            $archive = [System.IO.Compression.ZipFile]::OpenRead((Resolve-Path $Path))
+            try {
+              $lines = $archive.Entries |
+                Where-Object { $_.FullName -ne ".signature.p7s" -and -not $_.FullName.EndsWith("/") } |
+                Sort-Object FullName |
+                ForEach-Object {
+                  $stream = $_.Open()
+                  try {
+                    $hash = [System.Security.Cryptography.SHA256]::HashData($stream)
+                    "$($_.FullName)=$([Convert]::ToHexString($hash).ToLowerInvariant())"
+                  } finally {
+                    $stream.Dispose()
+                  }
+                }
+              $bytes = [Text.Encoding]::UTF8.GetBytes(($lines -join "`n"))
+              return [Convert]::ToHexString(
+                [System.Security.Cryptography.SHA256]::HashData($bytes)
+              ).ToLowerInvariant()
+            } finally {
+              $archive.Dispose()
+            }
+          }
+          New-Item -ItemType Directory -Force artifacts/live | Out-Null
+          foreach ($id in @("pidgeon.core", "pidgeon.data.baseline")) {
+            $uri = "https://api.nuget.org/v3-flatcontainer/$id/0.1.0-beta.1/$id.0.1.0-beta.1.nupkg"
+            $destination = "artifacts/live/$id.0.1.0-beta.1.nupkg"
+            $available = $false
+            for ($attempt = 1; $attempt -le 20; $attempt++) {
+              try {
+                Invoke-WebRequest -Uri $uri -OutFile $destination
+                $available = $true
+                break
+              } catch {
+                if ($attempt -eq 20) { throw }
+                Start-Sleep -Seconds 15
+              }
+            }
+            if (-not $available) { throw "$id did not become readable from the live registry" }
+            $out = dotnet nuget verify $destination --all 2>&1 | Out-String
+            $out | Out-File artifacts/receipt/d2-package-signing.txt -Append
+            if ($LASTEXITCODE -ne 0 -or
+                $out -notmatch "Signature type: Author" -or
+                $out -notmatch "Pattern Engine LLC" -or
+                $out -notmatch "Signature type: Repository") {
+              throw "live author/repository signature verification failed: $id"
+            }
+            $hash = (Get-FileHash $destination -Algorithm SHA256).Hash.ToLowerInvariant()
+            $payloadHash = Get-PayloadDigest $destination
+            $expectedPayloadHash = if ($id -eq "pidgeon.core") {
+              $env:AUTHOR_CORE_PAYLOAD_SHA256
+            } else {
+              $env:AUTHOR_BASELINE_PAYLOAD_SHA256
+            }
+            if ($payloadHash -ne $expectedPayloadHash) {
+              throw "live repository signing changed the approved package payload: $id"
+            }
+            "live_repository_signed_sha256=$hash  $id.0.1.0-beta.1.nupkg" |
+              Out-File artifacts/receipt/d2-package-signing.txt -Append
+            "live_payload_sha256=$payloadHash  $id.0.1.0-beta.1.nupkg" |
+              Out-File artifacts/receipt/d2-package-signing.txt -Append
+          }
+
+      - name: Verify NuGet.org symbol indexing and exact PDB bytes
+        working-directory: artifacts/candidate/packages
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          dotnet run `
+            --project ../../../pidgeon-tests/tools/Pidgeon.SourceLinkVerifier/Pidgeon.SourceLinkVerifier.csproj `
+            --configuration Release `
+            --no-build `
+            -- `
+            --commit "$env:GITHUB_SHA" `
+            --symbol-server
+          if ($LASTEXITCODE -ne 0) { throw "NuGet symbol-server verification failed" }
+
+      - name: Publish or verify the immutable GitHub Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = "Stop"
+          New-Item -ItemType Directory -Force artifacts/release | Out-Null
+          Copy-Item `
+            artifacts/live/pidgeon.core.0.1.0-beta.1.nupkg `
+            artifacts/release/Pidgeon.Core.0.1.0-beta.1.nupkg
+          Copy-Item `
+            artifacts/live/pidgeon.data.baseline.0.1.0-beta.1.nupkg `
+            artifacts/release/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg
+          Copy-Item `
+            artifacts/candidate/packages/*.snupkg `
+            artifacts/release/
+          Copy-Item `
+            artifacts/candidate/sbom/_manifest/spdx_2.2/manifest.spdx.json `
+            artifacts/release/pidgeon-core-0.1.0-beta.1.spdx.json
+          Copy-Item `
+            artifacts/candidate/candidate.json `
+            artifacts/release/candidate.json
+
+          $coreLiveHash = (
+            Get-FileHash `
+              artifacts/release/Pidgeon.Core.0.1.0-beta.1.nupkg `
+              -Algorithm SHA256
+          ).Hash.ToLowerInvariant()
+          $baselineLiveHash = (
+            Get-FileHash `
+              artifacts/release/Pidgeon.Data.Baseline.0.1.0-beta.1.nupkg `
+              -Algorithm SHA256
+          ).Hash.ToLowerInvariant()
+          @(
+            "candidate_run_id=$env:CANDIDATE_RUN_ID"
+            "commit=$env:GITHUB_SHA"
+            "tag=$env:GITHUB_REF_NAME"
+            "unsigned_core_sha256=$env:APPROVED_CORE_SHA256"
+            "unsigned_baseline_sha256=$env:APPROVED_BASELINE_SHA256"
+            "core_symbols_sha256=$env:APPROVED_CORE_SYMBOLS_SHA256"
+            "baseline_symbols_sha256=$env:APPROVED_BASELINE_SYMBOLS_SHA256"
+            "sbom_sha256=$env:APPROVED_SBOM_SHA256"
+            "controls_receipt_sha256=$env:APPROVED_CONTROLS_RECEIPT_SHA256"
+            "live_core_sha256=$coreLiveHash"
+            "live_baseline_sha256=$baselineLiveHash"
+          ) | Set-Content artifacts/release/d2-release-receipt.txt
+
+          Get-ChildItem artifacts/release -File |
+            Sort-Object Name |
+            ForEach-Object {
+              $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+              "$hash  $($_.Name)"
+            } | Set-Content artifacts/release/SHA256SUMS
+
+          @"
+          Pidgeon.Core and Pidgeon.Data.Baseline 0.1.0-beta.1
+
+          Public beta packages for deterministic healthcare interoperability
+          generation, validation, lookup, and de-identification.
+
+          Source commit: $env:GITHUB_SHA
+          Candidate run: $env:CANDIDATE_RUN_ID
+
+          This is a beta release. The attached packages, symbols, SBOM,
+          checksums, and sanitized signing receipt are the qualified D2 assets.
+          "@ | Set-Content artifacts/release-notes.md
+
+          $expectedBody = (
+            Get-Content artifacts/release-notes.md -Raw
+          ).Replace("`r`n", "`n").TrimEnd()
+          $expectedNames = @(
+            Get-ChildItem artifacts/release -File |
+              Sort-Object Name |
+              Select-Object -ExpandProperty Name
+          )
+
+          function Assert-ExactRelease {
+            param(
+              [object]$Release,
+              [bool]$ExpectDraft
+            )
+            $releaseBody = ([string]$Release.body).Replace("`r`n", "`n").TrimEnd()
+            if ([bool]$Release.draft -ne $ExpectDraft -or
+                -not $Release.prerelease -or
+                $Release.tag_name -ne $env:GITHUB_REF_NAME -or
+                $Release.name -ne "Pidgeon Core 0.1.0-beta.1" -or
+                $releaseBody -ne $expectedBody) {
+              throw "GitHub Release metadata does not match the approved release"
+            }
+
+            $releaseNames = @(
+              $Release.assets |
+                Sort-Object name |
+                Select-Object -ExpandProperty name
+            )
+            if (($expectedNames -join "`n") -ne ($releaseNames -join "`n")) {
+              throw "GitHub Release asset inventory is not exact"
+            }
+
+            foreach ($local in Get-ChildItem artifacts/release -File) {
+              $remote = @($Release.assets | Where-Object { $_.name -eq $local.Name })
+              $expectedDigest = "sha256:" + (
+                Get-FileHash $local.FullName -Algorithm SHA256
+              ).Hash.ToLowerInvariant()
+              if ($remote.Count -ne 1 -or
+                  $remote[0].state -ne "uploaded" -or
+                  [long]$remote[0].size -ne $local.Length -or
+                  $remote[0].digest -ne $expectedDigest) {
+                throw "GitHub Release asset digest is not exact: $($local.Name)"
+              }
+            }
+          }
+
+          $releaseList = @(
+            gh api `
+              -H "X-GitHub-Api-Version: 2026-03-10" `
+              "repos/$env:GITHUB_REPOSITORY/releases?per_page=100" |
+              ConvertFrom-Json
+          )
+          if ($LASTEXITCODE -ne 0) { throw "unable to inspect GitHub Releases" }
+          $matches = @($releaseList | Where-Object { $_.tag_name -eq $env:GITHUB_REF_NAME })
+          if ($matches.Count -gt 1) { throw "multiple releases exist for the canonical tag" }
+
+          $assets = @(Get-ChildItem artifacts/release -File | ForEach-Object { $_.FullName })
+          if ($matches.Count -eq 0) {
+            gh release create $env:GITHUB_REF_NAME `
+              --repo $env:GITHUB_REPOSITORY `
+              --draft `
+              --prerelease `
+              --verify-tag `
+              --title "Pidgeon Core 0.1.0-beta.1" `
+              --notes-file artifacts/release-notes.md `
+              @assets
+            if ($LASTEXITCODE -ne 0) { throw "unable to create draft GitHub Release" }
+          } elseif ($matches[0].draft) {
+            gh release edit $env:GITHUB_REF_NAME `
+              --repo $env:GITHUB_REPOSITORY `
+              --draft=true `
+              --prerelease=true `
+              --title "Pidgeon Core 0.1.0-beta.1" `
+              --notes-file artifacts/release-notes.md
+            if ($LASTEXITCODE -ne 0) { throw "unable to normalize draft release metadata" }
+            foreach ($existingAsset in @($matches[0].assets)) {
+              gh api `
+                --method DELETE `
+                -H "X-GitHub-Api-Version: 2026-03-10" `
+                "repos/$env:GITHUB_REPOSITORY/releases/assets/$($existingAsset.id)"
+              if ($LASTEXITCODE -ne 0) {
+                throw "unable to remove stale draft asset: $($existingAsset.name)"
+              }
+            }
+            gh release upload $env:GITHUB_REF_NAME `
+              --repo $env:GITHUB_REPOSITORY `
+              @assets
+            if ($LASTEXITCODE -ne 0) { throw "unable to upload exact draft release assets" }
+          }
+
+          $releaseList = @(
+            gh api `
+              -H "X-GitHub-Api-Version: 2026-03-10" `
+              "repos/$env:GITHUB_REPOSITORY/releases?per_page=100" |
+              ConvertFrom-Json
+          )
+          if ($LASTEXITCODE -ne 0) { throw "unable to re-inspect GitHub Releases" }
+          $matches = @($releaseList | Where-Object { $_.tag_name -eq $env:GITHUB_REF_NAME })
+          if ($matches.Count -ne 1) { throw "canonical draft/published release is not unique" }
+          $currentRelease = $matches[0]
+          Assert-ExactRelease -Release $currentRelease -ExpectDraft ([bool]$currentRelease.draft)
+
+          if ($currentRelease.draft) {
+            # Asset names, sizes, and GitHub-computed SHA-256 digests are exact
+            # before this operation crosses the immutable-release boundary.
+            gh release edit $env:GITHUB_REF_NAME `
+              --repo $env:GITHUB_REPOSITORY `
+              --draft=false `
+              --prerelease=true `
+              --title "Pidgeon Core 0.1.0-beta.1" `
+              --notes-file artifacts/release-notes.md
+            if ($LASTEXITCODE -ne 0) { throw "unable to publish immutable GitHub Release" }
+          } elseif (-not $currentRelease.immutable) {
+            throw "preexisting published GitHub Release is not immutable"
+          }
+
+          $liveRelease = gh api `
+            -H "X-GitHub-Api-Version: 2026-03-10" `
+            "repos/$env:GITHUB_REPOSITORY/releases/tags/$env:GITHUB_REF_NAME" |
+            ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0) { throw "unable to inspect the live GitHub Release" }
+          Assert-ExactRelease -Release $liveRelease -ExpectDraft $false
+          if (-not $liveRelease.immutable) {
+            throw "published GitHub Release is not immutable"
+          }
+
+          New-Item -ItemType Directory -Force artifacts/release-live | Out-Null
+          gh release download $env:GITHUB_REF_NAME `
+            --repo $env:GITHUB_REPOSITORY `
+            --dir artifacts/release-live `
+            --clobber
+          if ($LASTEXITCODE -ne 0) { throw "unable to download live release assets" }
+
+          foreach ($local in Get-ChildItem artifacts/release -File) {
+            $served = Join-Path artifacts/release-live $local.Name
+            if (-not (Test-Path $served)) {
+              throw "live GitHub Release is missing $($local.Name)"
+            }
+            $localHash = (Get-FileHash $local.FullName -Algorithm SHA256).Hash
+            $servedHash = (Get-FileHash $served -Algorithm SHA256).Hash
+            if ($localHash -ne $servedHash) {
+              throw "live GitHub Release asset hash mismatch: $($local.Name)"
+            }
+          }
+
+      - name: Upload D2 signing and registry receipt
+        if: ${{ always() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pidgeon-core-d2-receipt-${{ github.run_id }}
+          path: |
+            artifacts/receipt
+            artifacts/candidate/candidate.json
+            artifacts/candidate/sbom
+            artifacts/release/SHA256SUMS
+          if-no-files-found: warn
+          retention-days: 90

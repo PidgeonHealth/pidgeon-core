@@ -1,0 +1,35 @@
+{
+  "code": "0193",
+  "name": "Amount class",
+  "version": "HL7 v2.5.1",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AT",
+      "description": "Amount",
+      "comment": "Retained for backward compatibility only as of v 2.5",
+      "sort_order": 1
+    },
+    {
+      "value": "LM",
+      "description": "Limit",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "PC",
+      "description": "Percentage",
+      "comment": "Retained for backward compatibility only as of v 2.5",
+      "sort_order": 3
+    },
+    {
+      "value": "UL",
+      "description": "Unlimited",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

@@ -1,0 +1,119 @@
+{
+  "code": "RSP_E03",
+  "name": "HealthCare Services Invoice Status Query Response",
+  "version": "HL7 v2.7",
+  "chapter": "Query",
+  "description": "This message is used to respond to a QPB^E03 – Query HealthCare Services Invoice. It provides Invoice and invoice processing information to a Provider.\n\nA QBP^E03 – Query HealthCare Services Invoice can be used to query against an Invoice or a specific Product/Service Line Item in an Invoice. The same response message, RSP^E03 – HealthCare Services Invoice Query Response, is used for both types of query.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MSA",
+      "segment_desc": "Message Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "ERR",
+      "segment_desc": "Error",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "QUERY ACK",
+      "segment_desc": "QUERY ACK group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 5
+    },
+    {
+      "segment_code": "QAK",
+      "segment_desc": "Query Acknowledgment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY ACK"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "QPD",
+      "segment_desc": "Query Parameter Definition",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY ACK"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "INVOICE PROCESSING RESULTS INFO",
+      "segment_desc": "INVOICE PROCESSING RESULTS INFO group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "QUERY ACK"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "IPR",
+      "segment_desc": "Invoice Processing Results",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "QUERY ACK",
+        "INVOICE PROCESSING RESULTS INFO"
+      ],
+      "level": 2,
+      "order_index": 9
+    }
+  ],
+  "segment_count": 10
+}

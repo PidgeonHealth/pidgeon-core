@@ -1,0 +1,53 @@
+{
+  "code": "0305",
+  "name": "Person Location Type",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "C",
+      "description": "Clinic",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Department",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "H",
+      "description": "Home",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "N",
+      "description": "Nursing Unit",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "O",
+      "description": "Provider's Office",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "P",
+      "description": "Phone",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "S",
+      "description": "SNF",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

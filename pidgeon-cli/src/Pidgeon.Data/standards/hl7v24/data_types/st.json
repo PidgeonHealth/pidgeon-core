@@ -1,0 +1,9 @@
+{
+  "code": "ST",
+  "name": "String Data",
+  "version": "HL7 v2.4",
+  "description": "String data is left justified with trailing blanks optional. Any displayable (printable) ACSII characters (hexadecimal values between 20 and 7E, inclusive, or ASCII decimal values between 32 and 126), except the defined escape characters and defined delimiter characters.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

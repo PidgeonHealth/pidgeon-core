@@ -1,0 +1,30 @@
+{
+  "code": "UVC",
+  "name": "UB Value Code and Amount",
+  "version": "HL7 v2.5.1",
+  "description": "A code structure to relate amounts or values to identified data elements necessary to process this claim as qualified by the payer organization.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "UVC.1",
+      "field_description": "Value Code",
+      "length": "20",
+      "data_type": "CNE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0153"
+    },
+    {
+      "position": 2,
+      "field_name": "UVC.2",
+      "field_description": "Value Amount",
+      "length": "20",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

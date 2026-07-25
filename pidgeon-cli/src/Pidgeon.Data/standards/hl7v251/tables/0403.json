@@ -1,0 +1,41 @@
+{
+  "code": "0403",
+  "name": "Language Ability",
+  "version": "HL7 v2.5.1",
+  "chapter": "Personnel Management",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "1",
+      "description": "Read",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "2",
+      "description": "Write",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "3",
+      "description": "Speak",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "4",
+      "description": "Understand",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "5",
+      "description": "Sign",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

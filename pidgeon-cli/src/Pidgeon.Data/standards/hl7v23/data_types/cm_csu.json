@@ -1,0 +1,80 @@
+{
+  "code": "CM_CSU",
+  "name": "Channel Sensitivity/units",
+  "version": "HL7 v2.3",
+  "description": "This CM data type defines the channel sensitivity (gain) and the units in which it is measured. This component consists of up to seven subcomponents, separated from each other by subcomponent delimiters (&). The first subcomponent specifies the sensitivity, while the remaining six subcomponents are used to specify the units of the sensitivity, using a format similar to the components of the coded entry (CE) data type.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_CSU.1",
+      "field_description": "Sensitivity",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CM_CSU.2",
+      "field_description": "Unit Identifier",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CM_CSU.3",
+      "field_description": "Unit Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CM_CSU.4",
+      "field_description": "Units Name Of Coding System",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CM_CSU.5",
+      "field_description": "Units Alternate Identifier",
+      "length": "0",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CM_CSU.6",
+      "field_description": "Units Alternate Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "CM_CSU.7",
+      "field_description": "Units Name Of Alternate Coding System",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 7
+}

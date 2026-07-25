@@ -1,0 +1,47 @@
+{
+  "code": "0467",
+  "name": "Modifier Edit Code",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "Modifier does NOT exist",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Modifier present, no errors",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Modifier invalid",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3",
+      "description": "Modifier NOT approved for ASC/HOPD use",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "4",
+      "description": "Modifier approved for ASC/HOPD use, inappropriate for code",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "U",
+      "description": "Modifier edit code unknown",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

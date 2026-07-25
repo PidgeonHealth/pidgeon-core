@@ -1,0 +1,41 @@
+{
+  "code": "0778",
+  "name": "Item Type",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "EQP",
+      "description": "Equipment",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "IMP",
+      "description": "Implant",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "MED",
+      "description": "Medication",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "SUP",
+      "description": "Supply",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "TDC",
+      "description": "Tubes, Drains, and Catheters",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

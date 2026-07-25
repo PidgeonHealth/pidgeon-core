@@ -1,0 +1,29 @@
+{
+  "code": "0921",
+  "name": "Certification Type Code",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ADM",
+      "description": "Admitting",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "PROC",
+      "description": "Procedure",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "SERV",
+      "description": "Service",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

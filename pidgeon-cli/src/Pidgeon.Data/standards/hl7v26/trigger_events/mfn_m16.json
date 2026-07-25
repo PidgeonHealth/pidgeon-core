@@ -1,0 +1,251 @@
+{
+  "code": "MFN_M16",
+  "name": "Enhanced Inventory Item Master File Notification",
+  "version": "HL7 v2.6",
+  "chapter": "Master Files",
+  "description": "This section describes a master file message designed to communicate information that relates to the sharing of material item master catalog and material item-inventory information between materials management systems and other systems such as surgical and immunization systems.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master File Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MATERIAL ITEM RECORD",
+      "segment_desc": "MATERIAL ITEM RECORD group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master File Entry",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "ITM",
+      "segment_desc": "Material Item",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD"
+      ],
+      "level": 1,
+      "order_index": 7
+    },
+    {
+      "segment_code": "STERILIZATION",
+      "segment_desc": "STERILIZATION group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MATERIAL ITEM RECORD"
+      ],
+      "level": 1,
+      "order_index": 8
+    },
+    {
+      "segment_code": "STZ",
+      "segment_desc": "Sterilization Parameter",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "STERILIZATION"
+      ],
+      "level": 2,
+      "order_index": 9
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "STERILIZATION"
+      ],
+      "level": 2,
+      "order_index": 10
+    },
+    {
+      "segment_code": "PURCHASING VENDOR",
+      "segment_desc": "PURCHASING VENDOR group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MATERIAL ITEM RECORD"
+      ],
+      "level": 1,
+      "order_index": 11
+    },
+    {
+      "segment_code": "VND",
+      "segment_desc": "Purchasing Vendor",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "PURCHASING VENDOR"
+      ],
+      "level": 2,
+      "order_index": 12
+    },
+    {
+      "segment_code": "PACKAGING",
+      "segment_desc": "PACKAGING group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "PURCHASING VENDOR"
+      ],
+      "level": 2,
+      "order_index": 13
+    },
+    {
+      "segment_code": "PKG",
+      "segment_desc": "Packaging Segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "PURCHASING VENDOR",
+        "PACKAGING"
+      ],
+      "level": 3,
+      "order_index": 14
+    },
+    {
+      "segment_code": "PCE",
+      "segment_desc": "Patient Charge Cost Center Exception",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "PURCHASING VENDOR",
+        "PACKAGING"
+      ],
+      "level": 3,
+      "order_index": 15
+    },
+    {
+      "segment_code": "MATERIAL LOCATION",
+      "segment_desc": "MATERIAL LOCATION group",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [
+        "MATERIAL ITEM RECORD"
+      ],
+      "level": 1,
+      "order_index": 16
+    },
+    {
+      "segment_code": "IVT",
+      "segment_desc": "Material Location",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "MATERIAL LOCATION"
+      ],
+      "level": 2,
+      "order_index": 17
+    },
+    {
+      "segment_code": "ILT",
+      "segment_desc": "Material Lot Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "MATERIAL LOCATION"
+      ],
+      "level": 2,
+      "order_index": 18
+    },
+    {
+      "segment_code": "NTE",
+      "segment_desc": "Notes and Comments",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "MATERIAL ITEM RECORD",
+        "MATERIAL LOCATION"
+      ],
+      "level": 2,
+      "order_index": 19
+    }
+  ],
+  "segment_count": 20
+}

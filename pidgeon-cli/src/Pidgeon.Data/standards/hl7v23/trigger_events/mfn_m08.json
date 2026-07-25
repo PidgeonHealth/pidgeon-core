@@ -1,0 +1,115 @@
+{
+  "code": "MFN_M08",
+  "name": "Test/observation (numeric) master file",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "MFI-1-master file identifier = OMA, for numeric observations",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "MFI",
+      "segment_desc": "Master file identification segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "MF TEST NUMERIC",
+      "segment_desc": "MF TEST NUMERIC group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "MFE",
+      "segment_desc": "Master file entry segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST NUMERIC"
+      ],
+      "level": 1,
+      "order_index": 3
+    },
+    {
+      "segment_code": "OM1",
+      "segment_desc": "General - fields that apply to most observations",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST NUMERIC"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "MF NUMERIC OBSERVATION",
+      "segment_desc": "MF NUMERIC OBSERVATION group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "MF TEST NUMERIC"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "OM2",
+      "segment_desc": "Numeric observation",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST NUMERIC",
+        "MF NUMERIC OBSERVATION"
+      ],
+      "level": 2,
+      "order_index": 6
+    },
+    {
+      "segment_code": "OM3",
+      "segment_desc": "Categorical test/observation",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST NUMERIC",
+        "MF NUMERIC OBSERVATION"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "OM4",
+      "segment_desc": "Observations that require specimens",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "MF TEST NUMERIC",
+        "MF NUMERIC OBSERVATION"
+      ],
+      "level": 2,
+      "order_index": 8
+    }
+  ],
+  "segment_count": 9
+}

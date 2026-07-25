@@ -1,0 +1,71 @@
+{
+  "code": "0235",
+  "name": "Report source",
+  "version": "HL7 v2.3",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Clinical trial",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "D",
+      "description": "Database/registry/poison control center",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "E",
+      "description": "Distributor",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "H",
+      "description": "Health professional",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "L",
+      "description": "Literature",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "M",
+      "description": "Manufacturer/marketing authority holder",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "N",
+      "description": "Non-healthcare professional",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "O",
+      "description": "Other",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "P",
+      "description": "Patient",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "R",
+      "description": "Regulatory agency",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

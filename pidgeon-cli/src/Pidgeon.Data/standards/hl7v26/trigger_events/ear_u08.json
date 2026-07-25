@@ -1,0 +1,132 @@
+{
+  "code": "EAR_U08",
+  "name": "Automated Equipment Response",
+  "version": "HL7 v2.6",
+  "chapter": "Clinical Laboratory Automation",
+  "description": "This message is used to send equipment responses to previously issued commands from one application to another (e.g., automated Equipment to a Laboratory Automation System).",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "EQU",
+      "segment_desc": "Equipment Detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "COMMAND RESPONSE",
+      "segment_desc": "COMMAND RESPONSE group",
+      "optionality": "R",
+      "repeatability": "∞",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    },
+    {
+      "segment_code": "ECD",
+      "segment_desc": "Equipment Command",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 5
+    },
+    {
+      "segment_code": "SPECIMEN CONTAINER",
+      "segment_desc": "SPECIMEN CONTAINER group",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [
+        "COMMAND RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 6
+    },
+    {
+      "segment_code": "SAC",
+      "segment_desc": "Specimen Container Detail",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND RESPONSE",
+        "SPECIMEN CONTAINER"
+      ],
+      "level": 2,
+      "order_index": 7
+    },
+    {
+      "segment_code": "SPM",
+      "segment_desc": "Specimen",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "COMMAND RESPONSE",
+        "SPECIMEN CONTAINER"
+      ],
+      "level": 2,
+      "order_index": 8
+    },
+    {
+      "segment_code": "ECR",
+      "segment_desc": "Equipment Command Response",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "COMMAND RESPONSE"
+      ],
+      "level": 1,
+      "order_index": 9
+    },
+    {
+      "segment_code": "ROL",
+      "segment_desc": "Role",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 10
+    }
+  ],
+  "segment_count": 11
+}

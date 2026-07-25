@@ -1,0 +1,29 @@
+{
+  "code": "0919",
+  "name": "Exclusive Test",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "In some cases, this test should be only exclusively with like tests (examples are cyto or pathology)",
+      "comment": "When  D is specified for this field, using field OM1-49 determines how tests must be grouped together.  Tests within the same Diagnostic Service Sector may be on the same requisition, and therefore in the same message",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "This test can be included with any number of other tests",
+      "comment": "Default –.will be assumed when this field is empty",
+      "sort_order": 2
+    },
+    {
+      "value": "Y",
+      "description": "This test should be exclusive",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

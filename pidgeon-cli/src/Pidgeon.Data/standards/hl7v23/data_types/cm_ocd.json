@@ -1,0 +1,20 @@
+{
+  "code": "CM_OCD",
+  "name": "Occurence",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_OCD.1",
+      "field_description": "Occurrence Code",
+      "length": "0",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 1
+}

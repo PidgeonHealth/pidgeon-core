@@ -1,0 +1,77 @@
+{
+  "code": "0140",
+  "name": "Military Service",
+  "version": "HL7 v2.8",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AUSA",
+      "description": "Australian Army",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "AUSAF",
+      "description": "Australian Air Force",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "AUSN",
+      "description": "Australian Navy",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "NATO",
+      "description": "North Atlantic Treaty Organization",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "NOAA",
+      "description": "National Oceanic and Atmospheric Administration",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "USA",
+      "description": "US Army",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "USAF",
+      "description": "US Air Force",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "USCG",
+      "description": "US Coast Guard",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "USMC",
+      "description": "US Marine Corps",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "USN",
+      "description": "US Navy",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "USPHS",
+      "description": "US Public Health Service",
+      "comment": "",
+      "sort_order": 11
+    }
+  ],
+  "value_count": 11
+}

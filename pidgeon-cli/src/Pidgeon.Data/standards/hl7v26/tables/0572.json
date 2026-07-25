@@ -1,0 +1,23 @@
+{
+  "code": "0572",
+  "name": "Tax status",
+  "version": "HL7 v2.6",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "RVAT",
+      "description": "Registered in VAT register",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "UVAT",
+      "description": "Unregistered in VAT register",
+      "comment": "",
+      "sort_order": 2
+    }
+  ],
+  "value_count": 2
+}

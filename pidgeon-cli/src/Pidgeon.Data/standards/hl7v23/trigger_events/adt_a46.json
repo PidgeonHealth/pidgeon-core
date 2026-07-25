@@ -1,0 +1,60 @@
+{
+  "code": "ADT_A46",
+  "name": "Change external ID",
+  "version": "HL7 v2.3",
+  "chapter": "Patient Administration",
+  "description": "An A46 event is used to signal a change of an incorrectly assigned external ID value. The “incorrect source external ID” value is stored in the MRG segment (MRG-4-prior patient ID-external) and is to be changed to the “correct target external ID” value stored in the PID segment (PID-2-patient ID-external). \n\nA change has been done at the external identifier level. That is, a PID-2-patient ID (external ID) has been found to be incorrect and has been changed.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message header segment",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "EVN",
+      "segment_desc": "Event type",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "PID",
+      "segment_desc": "Patient Identification",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "PD1",
+      "segment_desc": "Patient Demographic",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "MRG",
+      "segment_desc": "Merge patient information",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 4
+    }
+  ],
+  "segment_count": 5
+}

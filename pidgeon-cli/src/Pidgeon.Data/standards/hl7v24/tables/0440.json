@@ -1,0 +1,341 @@
+{
+  "code": "0440",
+  "name": "Data types",
+  "version": "HL7 v2.4",
+  "chapter": "Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AD",
+      "description": "Address",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CD",
+      "description": "Channel definition",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CE",
+      "description": "Coded element",
+      "comment": "250",
+      "sort_order": 3
+    },
+    {
+      "value": "CF",
+      "description": "Coded element with formatted values",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CK",
+      "description": "Composite ID with check digit",
+      "comment": "250",
+      "sort_order": 5
+    },
+    {
+      "value": "CM",
+      "description": "Composite",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CN",
+      "description": "Composite ID number and name",
+      "comment": "250",
+      "sort_order": 7
+    },
+    {
+      "value": "CNE",
+      "description": "Coded with no exceptions",
+      "comment": "250",
+      "sort_order": 8
+    },
+    {
+      "value": "CP",
+      "description": "Composite price",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "CQ",
+      "description": "Composite quantity with units",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "CWE",
+      "description": "Coded with exceptions",
+      "comment": "250",
+      "sort_order": 11
+    },
+    {
+      "value": "CX",
+      "description": "Extended composite ID with check digit",
+      "comment": "250",
+      "sort_order": 12
+    },
+    {
+      "value": "DLN",
+      "description": "Driver’s license number",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "DR",
+      "description": "Date/time range",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "DT",
+      "description": "Date",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "ED",
+      "description": "Encapsulated data",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "EI",
+      "description": "Entity identifier",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "FC",
+      "description": "Financial class",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "FN",
+      "description": "Family name",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "FT",
+      "description": "Formatted text",
+      "comment": "65536",
+      "sort_order": 20
+    },
+    {
+      "value": "HD",
+      "description": "Hierarchic designator",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "ID",
+      "description": "Coded values for HL7 tables",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "IS",
+      "description": "Coded value for user-defined tables",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "JCC",
+      "description": "Job code/class",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "MA",
+      "description": "Multiplexed array",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "MO",
+      "description": "Money",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "NA",
+      "description": "Numeric array",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "NM",
+      "description": "Numeric",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "PL",
+      "description": "Person location",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "PN",
+      "description": "Person name",
+      "comment": "48",
+      "sort_order": 30
+    },
+    {
+      "value": "PPN",
+      "description": "Performing person time stamp",
+      "comment": "250",
+      "sort_order": 31
+    },
+    {
+      "value": "PT",
+      "description": "Processing type",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "QIP",
+      "description": "Query input parameter list",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "QSC",
+      "description": "Query selection criteria",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "RCD",
+      "description": "Row column definition",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "RI",
+      "description": "Repeat interval",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "RP",
+      "description": "Reference pointer",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "SAD",
+      "description": "Street Address",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "SCV",
+      "description": "Scheduling class value pair",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "SI",
+      "description": "Sequence ID",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "SN",
+      "description": "Structured numeric",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "SRT",
+      "description": "Sort order",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "ST",
+      "description": "String",
+      "comment": "199",
+      "sort_order": 43
+    },
+    {
+      "value": "TM",
+      "description": "Time",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "TN",
+      "description": "Telephone number",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "TQ",
+      "description": "Timing/quantity",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "TS",
+      "description": "Time stamp",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "TX",
+      "description": "Text data",
+      "comment": "65536",
+      "sort_order": 48
+    },
+    {
+      "value": "VH",
+      "description": "Visiting hours",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "VID",
+      "description": "Version identifier",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "XAD",
+      "description": "Extended address",
+      "comment": "250",
+      "sort_order": 51
+    },
+    {
+      "value": "XCN",
+      "description": "Extended composite ID number and name",
+      "comment": "250",
+      "sort_order": 52
+    },
+    {
+      "value": "XON",
+      "description": "Extended composite name and ID number for organizations",
+      "comment": "250",
+      "sort_order": 53
+    },
+    {
+      "value": "XPN",
+      "description": "Extended person name",
+      "comment": "250",
+      "sort_order": 54
+    },
+    {
+      "value": "XTN",
+      "description": "Extended telecommunications number",
+      "comment": "250",
+      "sort_order": 55
+    }
+  ],
+  "value_count": 55
+}

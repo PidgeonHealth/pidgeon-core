@@ -1,0 +1,233 @@
+{
+  "code": "0162",
+  "name": "Route of administration",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AP",
+      "description": "Apply Externally",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "B",
+      "description": "Buccal",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DT",
+      "description": "Dental",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EP",
+      "description": "Epidural",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ET",
+      "description": "Endotrachial Tube",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "GTT",
+      "description": "Gastronomy Tube",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "GU",
+      "description": "GU Irrigant",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "IA",
+      "description": "Intra-arterial",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "IB",
+      "description": "Intrabursal",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "IC",
+      "description": "Intracardiac",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "ICV",
+      "description": "Intracervical (uterus)",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "ID",
+      "description": "Intradermal",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "IH",
+      "description": "Inhalation",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "IMR",
+      "description": "Immerse (Soak) Body Part",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "MM",
+      "description": "Mucous Membrane",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "NG",
+      "description": "Nasogastric",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "NP",
+      "description": "Nasal Prongs",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "NS",
+      "description": "Nasal",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "NT",
+      "description": "Nasotrachial Tube",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "OP",
+      "description": "Ophthalmic",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "OT",
+      "description": "Otic",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "OTH",
+      "description": "Other/Miscellaneous",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "PF",
+      "description": "Perfusion",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "PO",
+      "description": "Oral",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "PR",
+      "description": "Rectal",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "RM",
+      "description": "Rebreather Mask",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "SC",
+      "description": "Subcutaneous",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "SD",
+      "description": "Soaked Dressing",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "SL",
+      "description": "Sublingual",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "TD",
+      "description": "Transdermal",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "TL",
+      "description": "Translingual",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "TP",
+      "description": "Topical",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "TRA",
+      "description": "Tracheostomy",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "UR",
+      "description": "Urethral",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "VG",
+      "description": "Vaginal",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "VM",
+      "description": "Ventimask",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "WND",
+      "description": "Wound",
+      "comment": "",
+      "sort_order": 37
+    }
+  ],
+  "value_count": 37
+}

@@ -1,0 +1,40 @@
+{
+  "code": "CM_PTA",
+  "name": "Policy Type",
+  "version": "HL7 v2.3",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CM_PTA.1",
+      "field_description": "Policy Type",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0147"
+    },
+    {
+      "position": 2,
+      "field_name": "CM_PTA.2",
+      "field_description": "Amount Class",
+      "length": "0",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0193"
+    },
+    {
+      "position": 3,
+      "field_name": "CM_PTA.3",
+      "field_description": "Amount",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

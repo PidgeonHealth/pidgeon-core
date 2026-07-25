@@ -1,0 +1,89 @@
+{
+  "code": "0417",
+  "name": "Tissue Type Code",
+  "version": "HL7 v2.7",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "No tissue expected",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Insufficient Tissue",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Not abnormal",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3",
+      "description": "Abnormal-not categorized",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "4",
+      "description": "Mechanical abnormal",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "5",
+      "description": "Growth alteration",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "6",
+      "description": "Degeneration & necrosis",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "7",
+      "description": "Non-acute inflammation",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "8",
+      "description": "Non-malignant neoplasm",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "9",
+      "description": "Malignant neoplasm",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "B",
+      "description": "Basal cell carcinoma",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "C",
+      "description": "Carcinoma-unspecified type",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "G",
+      "description": "Additional tissue required",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

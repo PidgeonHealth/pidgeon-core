@@ -1,0 +1,101 @@
+{
+  "code": "0165",
+  "name": "Administration method",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CH",
+      "description": "Chew",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DI",
+      "description": "Dissolve",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DU",
+      "description": "Dust",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "IF",
+      "description": "Infiltrate",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "IR",
+      "description": "Irrigate",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "IS",
+      "description": "Insert",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "IVP",
+      "description": "IV Push",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "IVPB",
+      "description": "IV Piggyback",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "NB",
+      "description": "Nebulized",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PF",
+      "description": "Perfuse",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PT",
+      "description": "Pain",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "SH",
+      "description": "Shampoo",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "SO",
+      "description": "Soak",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "WA",
+      "description": "Wash",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "WI",
+      "description": "Wipe",
+      "comment": "",
+      "sort_order": 15
+    }
+  ],
+  "value_count": 15
+}

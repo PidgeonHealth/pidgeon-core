@@ -1,0 +1,29 @@
+{
+  "code": "0503",
+  "name": "Sequence/Results Flag",
+  "version": "HL7 v2.5.1",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "C",
+      "description": "Cyclical",
+      "comment": "Used for indicating a repeating cycle of service requests; for example, individual intravenous solutions used in a cyclical sequence (a.k.a. \"Alternating IVs\"). This value would be compatible with linking separate service requests or with having all cyclical service request components in a single service request. Likewise, the value would be compatible with either Parent-Child messages or a single service request message to communicate the service requests' sequencing",
+      "sort_order": 1
+    },
+    {
+      "value": "R",
+      "description": "Reserved for future use",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "S",
+      "description": "Sequential",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,29 @@
+{
+  "code": "0093",
+  "name": "Release information",
+  "version": "HL7 v2.3",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "*",
+      "description": "or user-defined codes",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "N",
+      "description": "No",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "Y",
+      "description": "Yes",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

@@ -1,0 +1,100 @@
+{
+  "code": "NSC",
+  "name": "Application Status Change",
+  "version": "HL7 v2.6",
+  "chapter": "Application Management",
+  "description": "The NSC segment is used to inform (NMR query response) or announce (NMD unsolicited update) the start-up, shut-down, and/or migration (to a different CPU or file-server/file-system) of a particular application.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "NSC.1",
+      "field_description": "Application Change Type",
+      "length": "4",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0409"
+    },
+    {
+      "position": 2,
+      "field_name": "NSC.2",
+      "field_description": "Current CPU",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "NSC.3",
+      "field_description": "Current Fileserver",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "NSC.4",
+      "field_description": "Current Application",
+      "length": "30",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "NSC.5",
+      "field_description": "Current Facility",
+      "length": "30",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "NSC.6",
+      "field_description": "New CPU",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "NSC.7",
+      "field_description": "New Fileserver",
+      "length": "30",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "NSC.8",
+      "field_description": "New Application",
+      "length": "30",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "NSC.9",
+      "field_description": "New Facility",
+      "length": "30",
+      "data_type": "HD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

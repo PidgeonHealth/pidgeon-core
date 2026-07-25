@@ -1,0 +1,581 @@
+{
+  "code": "0440",
+  "name": "Data types",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "Address",
+      "description": "AD",
+      "comment": "Address",
+      "sort_order": 1
+    },
+    {
+      "value": "Authorization information",
+      "description": "AUI",
+      "comment": "Authorization information",
+      "sort_order": 2
+    },
+    {
+      "value": "Channel calibration parameters",
+      "description": "CCP",
+      "comment": "Channel calibration parameters",
+      "sort_order": 3
+    },
+    {
+      "value": "Channel definition",
+      "description": "CD",
+      "comment": "Channel definition",
+      "sort_order": 4
+    },
+    {
+      "value": "Channel Identifier",
+      "description": "WVI",
+      "comment": "Channel Identifier",
+      "sort_order": 5
+    },
+    {
+      "value": "Channel sensitivity",
+      "description": "CSU",
+      "comment": "Channel sensitivity",
+      "sort_order": 6
+    },
+    {
+      "value": "Charge code and date",
+      "description": "CCD",
+      "comment": "Charge code and date",
+      "sort_order": 7
+    },
+    {
+      "value": "Coded element",
+      "description": "CE",
+      "comment": "Coded element",
+      "sort_order": 8
+    },
+    {
+      "value": "Coded element with formatted values",
+      "description": "CF",
+      "comment": "Coded element with formatted values",
+      "sort_order": 9
+    },
+    {
+      "value": "Coded value for user-defined tables",
+      "description": "IS",
+      "comment": "Coded value for user-defined tables",
+      "sort_order": 10
+    },
+    {
+      "value": "Coded values for HL7 tables",
+      "description": "ID",
+      "comment": "Coded values for HL7 tables",
+      "sort_order": 11
+    },
+    {
+      "value": "Coded with exceptions",
+      "description": "CWE",
+      "comment": "Coded with exceptions",
+      "sort_order": 12
+    },
+    {
+      "value": "Coded with no exceptions",
+      "description": "CNE",
+      "comment": "Coded with no exceptions",
+      "sort_order": 13
+    },
+    {
+      "value": "Composite",
+      "description": "CM",
+      "comment": "Composite",
+      "sort_order": 14
+    },
+    {
+      "value": "Composite ID number and name",
+      "description": "CN",
+      "comment": "Composite ID number and name",
+      "sort_order": 15
+    },
+    {
+      "value": "Composite ID number and name simplified",
+      "description": "CNS",
+      "comment": "Composite ID number and name simplified",
+      "sort_order": 16
+    },
+    {
+      "value": "Composite ID with check digit",
+      "description": "CK",
+      "comment": "Composite ID with check digit",
+      "sort_order": 17
+    },
+    {
+      "value": "Composite price",
+      "description": "CP",
+      "comment": "Composite price",
+      "sort_order": 18
+    },
+    {
+      "value": "Composite quantity with units",
+      "description": "CQ",
+      "comment": "Composite quantity with units",
+      "sort_order": 19
+    },
+    {
+      "value": "Daily deductible information",
+      "description": "DDI",
+      "comment": "Daily deductible information",
+      "sort_order": 20
+    },
+    {
+      "value": "Data Type Name",
+      "description": "Data type",
+      "comment": "Data Type Name",
+      "sort_order": 21
+    },
+    {
+      "value": "Date",
+      "description": "DT",
+      "comment": "Date",
+      "sort_order": 22
+    },
+    {
+      "value": "Date and institution name",
+      "description": "DIN",
+      "comment": "Date and institution name",
+      "sort_order": 23
+    },
+    {
+      "value": "Date/time",
+      "description": "DTM",
+      "comment": "Date/time",
+      "sort_order": 24
+    },
+    {
+      "value": "Date/time range",
+      "description": "DR",
+      "comment": "Date/time range",
+      "sort_order": 25
+    },
+    {
+      "value": "Day type and number",
+      "description": "DTN",
+      "comment": "Day type and number",
+      "sort_order": 26
+    },
+    {
+      "value": "Delta",
+      "description": "DLT",
+      "comment": "Delta",
+      "sort_order": 27
+    },
+    {
+      "value": "Discharge to location and date",
+      "description": "DLD",
+      "comment": "Discharge to location and date",
+      "sort_order": 28
+    },
+    {
+      "value": "Driver's license number",
+      "description": "DLN",
+      "comment": "Driver's license number",
+      "sort_order": 29
+    },
+    {
+      "value": "Encapsulated data",
+      "description": "ED",
+      "comment": "Encapsulated data",
+      "sort_order": 30
+    },
+    {
+      "value": "Entity identifier",
+      "description": "EI",
+      "comment": "Entity identifier",
+      "sort_order": 31
+    },
+    {
+      "value": "Entity identifier pair",
+      "description": "EIP",
+      "comment": "Entity identifier pair",
+      "sort_order": 32
+    },
+    {
+      "value": "Error location",
+      "description": "ERL",
+      "comment": "Error location",
+      "sort_order": 33
+    },
+    {
+      "value": "Error location and description",
+      "description": "LD",
+      "comment": "Error location and description",
+      "sort_order": 34
+    },
+    {
+      "value": "Extended address",
+      "description": "XAD",
+      "comment": "Extended address",
+      "sort_order": 35
+    },
+    {
+      "value": "Extended composite ID number and name",
+      "description": "XCN",
+      "comment": "Extended composite ID number and name",
+      "sort_order": 36
+    },
+    {
+      "value": "Extended composite ID with check digit",
+      "description": "CX",
+      "comment": "Extended composite ID with check digit",
+      "sort_order": 37
+    },
+    {
+      "value": "Extended composite name and ID number for organizations",
+      "description": "XON",
+      "comment": "Extended composite name and ID number for organizations",
+      "sort_order": 38
+    },
+    {
+      "value": "Extended person name",
+      "description": "XPN",
+      "comment": "Extended person name",
+      "sort_order": 39
+    },
+    {
+      "value": "Extended telecommunications number",
+      "description": "XTN",
+      "comment": "Extended telecommunications number",
+      "sort_order": 40
+    },
+    {
+      "value": "Family name",
+      "description": "FN",
+      "comment": "Family name",
+      "sort_order": 41
+    },
+    {
+      "value": "Financial class",
+      "description": "FC",
+      "comment": "Financial class",
+      "sort_order": 42
+    },
+    {
+      "value": "Formatted text",
+      "description": "FT",
+      "comment": "Formatted text",
+      "sort_order": 43
+    },
+    {
+      "value": "General timing specification",
+      "description": "GTS",
+      "comment": "General timing specification",
+      "sort_order": 44
+    },
+    {
+      "value": "Hierarchic designator",
+      "description": "HD",
+      "comment": "Hierarchic designator",
+      "sort_order": 45
+    },
+    {
+      "value": "Insurance certification definition",
+      "description": "ICD",
+      "comment": "Insurance certification definition",
+      "sort_order": 46
+    },
+    {
+      "value": "Job code/class",
+      "description": "JCC",
+      "comment": "Job code/class",
+      "sort_order": 47
+    },
+    {
+      "value": "Location with address variation 1",
+      "description": "LA1",
+      "comment": "Location with address variation 1",
+      "sort_order": 48
+    },
+    {
+      "value": "Location with address variation 2",
+      "description": "LA2",
+      "comment": "Location with address variation 2",
+      "sort_order": 49
+    },
+    {
+      "value": "Message type",
+      "description": "MSG",
+      "comment": "Message type",
+      "sort_order": 50
+    },
+    {
+      "value": "Money",
+      "description": "MO",
+      "comment": "Money",
+      "sort_order": 51
+    },
+    {
+      "value": "Money and charge code",
+      "description": "MOC",
+      "comment": "Money and charge code",
+      "sort_order": 52
+    },
+    {
+      "value": "Money or percentage",
+      "description": "MOP",
+      "comment": "Money or percentage",
+      "sort_order": 53
+    },
+    {
+      "value": "Multiplexed array",
+      "description": "MA",
+      "comment": "Multiplexed array",
+      "sort_order": 54
+    },
+    {
+      "value": "Name with location and date",
+      "description": "NDL",
+      "comment": "Name with location and date",
+      "sort_order": 55
+    },
+    {
+      "value": "Numeric",
+      "description": "NM",
+      "comment": "Numeric",
+      "sort_order": 56
+    },
+    {
+      "value": "Numeric array",
+      "description": "NA",
+      "comment": "Numeric array",
+      "sort_order": 57
+    },
+    {
+      "value": "Numeric range",
+      "description": "NR",
+      "comment": "Numeric range",
+      "sort_order": 58
+    },
+    {
+      "value": "Occurrence code and date",
+      "description": "OCD",
+      "comment": "Occurrence code and date",
+      "sort_order": 59
+    },
+    {
+      "value": "Occurrence span code and date",
+      "description": "OSP",
+      "comment": "Occurrence span code and date",
+      "sort_order": 60
+    },
+    {
+      "value": "Order sequence definition",
+      "description": "OSD",
+      "comment": "Order sequence definition",
+      "sort_order": 61
+    },
+    {
+      "value": "Parent result link",
+      "description": "PRL",
+      "comment": "Parent result link",
+      "sort_order": 62
+    },
+    {
+      "value": "Performing person time stamp",
+      "description": "PPN",
+      "comment": "Performing person time stamp",
+      "sort_order": 63
+    },
+    {
+      "value": "Person location",
+      "description": "PL",
+      "comment": "Person location",
+      "sort_order": 64
+    },
+    {
+      "value": "Person name",
+      "description": "PN",
+      "comment": "Person name",
+      "sort_order": 65
+    },
+    {
+      "value": "Policy type and amount",
+      "description": "PTA",
+      "comment": "Policy type and amount",
+      "sort_order": 66
+    },
+    {
+      "value": "Practitioner institutional privileges",
+      "description": "PIP",
+      "comment": "Practitioner institutional privileges",
+      "sort_order": 67
+    },
+    {
+      "value": "Practitioner license or other ID number",
+      "description": "PLN",
+      "comment": "Practitioner license or other ID number",
+      "sort_order": 68
+    },
+    {
+      "value": "Processing type",
+      "description": "PT",
+      "comment": "Processing type",
+      "sort_order": 69
+    },
+    {
+      "value": "Query input parameter list",
+      "description": "QIP",
+      "comment": "Query input parameter list",
+      "sort_order": 70
+    },
+    {
+      "value": "Query selection criteria",
+      "description": "QSC",
+      "comment": "Query selection criteria",
+      "sort_order": 71
+    },
+    {
+      "value": "Reference pointer",
+      "description": "RP",
+      "comment": "Reference pointer",
+      "sort_order": 72
+    },
+    {
+      "value": "Reference range",
+      "description": "RFR",
+      "comment": "Reference range",
+      "sort_order": 73
+    },
+    {
+      "value": "Repeat interval",
+      "description": "RI",
+      "comment": "Repeat interval",
+      "sort_order": 74
+    },
+    {
+      "value": "Repeat pattern",
+      "description": "RPT",
+      "comment": "Repeat pattern",
+      "sort_order": 75
+    },
+    {
+      "value": "Room coverage",
+      "description": "RMC",
+      "comment": "Room coverage",
+      "sort_order": 76
+    },
+    {
+      "value": "Row column definition",
+      "description": "RCD",
+      "comment": "Row column definition",
+      "sort_order": 77
+    },
+    {
+      "value": "Scheduling class value pair",
+      "description": "SCV",
+      "comment": "Scheduling class value pair",
+      "sort_order": 78
+    },
+    {
+      "value": "Sequence ID",
+      "description": "SI",
+      "comment": "Sequence ID",
+      "sort_order": 79
+    },
+    {
+      "value": "Sort order",
+      "description": "SRT",
+      "comment": "Sort order",
+      "sort_order": 80
+    },
+    {
+      "value": "Specialty description",
+      "description": "SPD",
+      "comment": "Specialty description",
+      "sort_order": 81
+    },
+    {
+      "value": "Specimen source",
+      "description": "SPS",
+      "comment": "Specimen source",
+      "sort_order": 82
+    },
+    {
+      "value": "Street Address",
+      "description": "SAD",
+      "comment": "Street Address",
+      "sort_order": 83
+    },
+    {
+      "value": "String",
+      "description": "ST",
+      "comment": "String",
+      "sort_order": 84
+    },
+    {
+      "value": "Structured numeric",
+      "description": "SN",
+      "comment": "Structured numeric",
+      "sort_order": 85
+    },
+    {
+      "value": "Telephone number",
+      "description": "TN",
+      "comment": "Telephone number",
+      "sort_order": 86
+    },
+    {
+      "value": "Text data",
+      "description": "TX",
+      "comment": "Text data",
+      "sort_order": 87
+    },
+    {
+      "value": "Time",
+      "description": "TM",
+      "comment": "Time",
+      "sort_order": 88
+    },
+    {
+      "value": "Time stamp",
+      "description": "TS",
+      "comment": "Time stamp",
+      "sort_order": 89
+    },
+    {
+      "value": "Timing/quantity",
+      "description": "TQ",
+      "comment": "Timing/quantity",
+      "sort_order": 90
+    },
+    {
+      "value": "UB value code and amount",
+      "description": "UVC",
+      "comment": "UB value code and amount",
+      "sort_order": 91
+    },
+    {
+      "value": "Value range",
+      "description": "VR",
+      "comment": "Value range",
+      "sort_order": 92
+    },
+    {
+      "value": "Version identifier",
+      "description": "VID",
+      "comment": "Version identifier",
+      "sort_order": 93
+    },
+    {
+      "value": "Visiting hours",
+      "description": "VH",
+      "comment": "Visiting hours",
+      "sort_order": 94
+    },
+    {
+      "value": "Waveform source",
+      "description": "WVS",
+      "comment": "Waveform source",
+      "sort_order": 95
+    }
+  ],
+  "value_count": 95
+}

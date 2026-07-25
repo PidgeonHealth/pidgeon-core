@@ -1,0 +1,41 @@
+{
+  "code": "0121",
+  "name": "Response flag",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "Same as R, also other associated segments",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "E",
+      "description": "Report exceptions only",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "F",
+      "description": "Same as D, plus confirmations explicitly",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "N",
+      "description": "Only the MSA segment is returned",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "R",
+      "description": "Same as E, also Replacement and Parent-Child",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

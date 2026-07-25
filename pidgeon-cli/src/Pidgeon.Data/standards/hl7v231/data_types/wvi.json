@@ -1,0 +1,30 @@
+{
+  "code": "WVI",
+  "name": "Channel Identifier",
+  "version": "HL7 v2.3.1",
+  "description": "",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "WVI.1",
+      "field_description": "Channel Number",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "WVI.2",
+      "field_description": "Channel Name",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

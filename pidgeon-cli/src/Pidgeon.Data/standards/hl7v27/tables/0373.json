@@ -1,0 +1,59 @@
+{
+  "code": "0373",
+  "name": "Treatment",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ACID",
+      "description": "Acidification",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ALK",
+      "description": "Alkalization",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DEFB",
+      "description": "Defibrination",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "FILT",
+      "description": "Filtration",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LDLP",
+      "description": "LDL Precipitation",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "NEUT",
+      "description": "Neutralization",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "RECA",
+      "description": "Recalification",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "UFIL",
+      "description": "Ultrafiltration",
+      "comment": "",
+      "sort_order": 8
+    }
+  ],
+  "value_count": 8
+}

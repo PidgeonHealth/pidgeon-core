@@ -1,0 +1,100 @@
+{
+  "code": "IPC",
+  "name": "Imaging Procedure Control Segment",
+  "version": "HL7 v2.7",
+  "chapter": "Order Entry",
+  "description": "The IPC segment contains information about tasks that need to be performed in order to fulfill the request for imaging service.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "IPC.1",
+      "field_description": "Accession Identifier",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "IPC.2",
+      "field_description": "Requested Procedure Id",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "IPC.3",
+      "field_description": "Study Instance Uid",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "IPC.4",
+      "field_description": "Scheduled Procedure Step Id",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "IPC.5",
+      "field_description": "Modality",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "9999"
+    },
+    {
+      "position": 6,
+      "field_name": "IPC.6",
+      "field_description": "Protocol Code",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 7,
+      "field_name": "IPC.7",
+      "field_description": "Scheduled Station Name",
+      "length": "0",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "IPC.8",
+      "field_description": "Scheduled Procedure Step Location",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 9,
+      "field_name": "IPC.9",
+      "field_description": "Scheduled Station Ae Title",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 9
+}

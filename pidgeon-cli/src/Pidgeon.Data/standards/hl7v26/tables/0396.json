@@ -1,0 +1,749 @@
+{
+  "code": "0396",
+  "name": "Coding system",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "99zzz or L",
+      "description": "Local general code (where z is an alphanumeric character) ",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ACR",
+      "description": "American College of Radiology finding codes ",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ALPHAID2006",
+      "description": "German Alpha-ID v2006 ",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ALPHAID2007",
+      "description": "German Alpha-ID v2007 ",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ALPHAID2008",
+      "description": "German Alpha-ID v2008 ",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ANS+",
+      "description": "HL7 set of units of measure ",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "ART",
+      "description": "WHO Adverse Reaction Terms ",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "AS4",
+      "description": "ASTM E1238/ E1467 Universal ",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "AS4E",
+      "description": "AS4 Neurophysiology Codes ",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "ATC",
+      "description": "American Type Culture Collection ",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "C4",
+      "description": "CPT-4 ",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "C5",
+      "description": "CPT-5 ",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "CAS",
+      "description": "Chemical abstract codes ",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CCC",
+      "description": "Clinical Care Classification system ",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "CD2",
+      "description": "CDT-2 Codes ",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "CDCA",
+      "description": "CDC Analyte Codes ",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "CDCM",
+      "description": "CDC Methods/Instruments Codes ",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "CDS",
+      "description": "CDC Surveillance ",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "CE (obsolete)",
+      "description": "CEN ECG diagnostic codes ",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "CLP",
+      "description": "CLIP ",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "CPTM",
+      "description": "CPT Modifier Code ",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "CST",
+      "description": "COSTART ",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "CVX",
+      "description": "CDC Vaccine Codes ",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "DCM",
+      "description": "DICOM Controlled Terminology ",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "E",
+      "description": "EUCLIDES ",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "E5",
+      "description": "Euclides  quantity codes ",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "E6",
+      "description": "Euclides Lab method codes ",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "E7",
+      "description": "Euclides Lab equipment codes ",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "ENZC",
+      "description": "Enzyme Codes ",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "FDDC",
+      "description": "First DataBank Drug Codes ",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "FDDX",
+      "description": "First DataBank Diagnostic Codes ",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "FDK",
+      "description": "FDA K10 ",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "GDRG2004",
+      "description": "G-DRG German DRG Codes v2004 ",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "GDRG2005",
+      "description": "G-DRG German DRG Codes v2005 ",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "GDRG2006",
+      "description": "G-DRG German DRG Codes v2006 ",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "GDRG2007",
+      "description": "G-DRG German DRG Codes v2007 ",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "GDRG2008",
+      "description": "G-DRG German DRG Codes v2008 ",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "GMDC2004",
+      "description": "German Major Diagnostic Codes v2004 ",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "GMDC2005",
+      "description": "German Major Diagnostic Codes v2005 ",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "GMDC2006",
+      "description": "German Major Diagnostic Codes v2006 ",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "GMDC2007",
+      "description": "German Major Diagnostic Codes v2007 ",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "GMDC2008",
+      "description": "German Major Diagnostic Codes v2008 ",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "HB",
+      "description": "HIBCC ",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "HCPCS",
+      "description": "CMS (formerly HCFA)  Common Procedure Coding System ",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "HCPT",
+      "description": "Health Care Provider Taxonomy ",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "HHC",
+      "description": "Home Health Care ",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "HI",
+      "description": "Health Outcomes ",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "HL7nnnn",
+      "description": "HL7 Defined Codes where nnnn is the HL7 table number ",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "HOT",
+      "description": "Japanese Nationwide Medicine Code ",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "HPC",
+      "description": "CMS (formerly HCFA )Procedure Codes (HCPCS) ",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "I10",
+      "description": "ICD-10 ",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "I10G2004",
+      "description": "ICD 10 Germany v2004 ",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "I10G2005",
+      "description": "ICD 10 Germany v2005 ",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "I10G2006",
+      "description": "ICD 10 Germany v2006 ",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "I10P",
+      "description": "ICD-10  Procedure Codes ",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "I9",
+      "description": "ICD9 ",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "I9C",
+      "description": "ICD-9CM ",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "I9CDX",
+      "description": "ICD-9CM Diagnosis codes ",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "I9CP",
+      "description": "ICD-9CM Procedure codes ",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "IBT",
+      "description": "ISBT ",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "IBTnnnn",
+      "description": "ISBT 128 codes where nnnn  specifies a specific table within ISBT 128. ",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "ICD10AM",
+      "description": "ICD-10 Australian modification ",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "ICD10CA",
+      "description": "ICD-10 Canada ",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "ICD10GM2007",
+      "description": "ICD 10 Germany v2007 ",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "ICD10GM2008",
+      "description": "ICD 10 Germany v2008 ",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "ICDO",
+      "description": "International Classification of Diseases for Oncology ",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "ICS",
+      "description": "ICCS ",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "ICSD",
+      "description": "International Classification of Sleep Disorders ",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "ISO+",
+      "description": "ISO 2955.83 (units of measure) with HL7 extensions ",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "ISOnnnn",
+      "description": "ISO Defined Codes where nnnn is the ISO table number ",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "ITIS",
+      "description": "Integrated Taxonomic Information System ",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "IUPC",
+      "description": "IUPAC/IFCC Component Codes ",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "IUPP",
+      "description": "IUPAC/IFCC Property Codes ",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "JC10",
+      "description": "JLAC/JSLM nationwide laboratory code ",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "JC8",
+      "description": "Japanese Chemistry ",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "JJ1017",
+      "description": "Japanese Image Examination Cache ",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "LB",
+      "description": "Local billing code ",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "LN",
+      "description": "Logical Observation Identifier Names and Codes (LOINCÃ‚Â®) ",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "MCD",
+      "description": "Medicaid ",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "MCR",
+      "description": "Medicare ",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "MDC",
+      "description": "Medical Device Communication ",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "MDDX",
+      "description": "Medispan Diagnostic Codes ",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "MEDC",
+      "description": "Medical Economics Drug Codes ",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "MEDR",
+      "description": "Medical Dictionary for Drug Regulatory Affairs (MEDDRA) ",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "MEDX",
+      "description": "Medical Economics Diagnostic Codes ",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "MGPI",
+      "description": "Medispan GPI ",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "MVX",
+      "description": "CDC Vaccine Manufacturer Codes ",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "NCPDPnnnnsss",
+      "description": "NCPDP code list for data element nnnn [as used in segment sss] ",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "NDA",
+      "description": "NANDA ",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "NDC",
+      "description": "National drug codes ",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "NIC",
+      "description": "Nursing Interventions Classification ",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "NPI",
+      "description": "National Provider Identifier ",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "NUBC",
+      "description": "National Uniform Billing Committee Code ",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "O301",
+      "description": "German Procedure Codes ",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "O3012004",
+      "description": "OPS Germany v2004 ",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "O3012005",
+      "description": "OPS Germany v2005 ",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "O3012006",
+      "description": "OPS Germany v2006 ",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "OHA",
+      "description": "Omaha System ",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "OPS2007",
+      "description": "OPS Germany v2007 ",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "OPS2008",
+      "description": "OPS Germany v2008 ",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "POS",
+      "description": "POS Codes ",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "RC",
+      "description": "Read Classification ",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "SCT",
+      "description": "SNOMED Clinical Terms ",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "SCT2",
+      "description": "SNOMED Clinical Terms alphanumeric codes ",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "SDM",
+      "description": "SNOMED- DICOM Microglossary ",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "SNM",
+      "description": "Systemized Nomenclature of Medicine (SNOMED) ",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "SNM3",
+      "description": "SNOMED International ",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "SNT",
+      "description": "SNOMED topology codes (anatomic sites) ",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "UB04FL14",
+      "description": "Priority (Type) of Visit ",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "UB04FL15",
+      "description": "Point of Origin ",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "UB04FL17",
+      "description": "Patient Discharge Status ",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "UC",
+      "description": "UCDS ",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "UCUM",
+      "description": "UCUM code set for units of measure(from Regenstrief) ",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "UMD",
+      "description": "MDNS ",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "UML",
+      "description": "Unified Medical Language ",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "UPC",
+      "description": "Universal Product Code ",
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "UPIN",
+      "description": "UPIN ",
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "USPS",
+      "description": "United States Postal Service ",
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "W1",
+      "description": "WHO record # drug codes (6 digit) ",
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "W2",
+      "description": "WHO record # drug codes (8 digit) ",
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "W4",
+      "description": "WHO record # code with ASTM extension ",
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "WC",
+      "description": "WHO ATC ",
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "X12DEnnnn",
+      "description": "ASC X12 Code List nnnn ",
+      "comment": "",
+      "sort_order": 123
+    }
+  ],
+  "value_count": 123
+}

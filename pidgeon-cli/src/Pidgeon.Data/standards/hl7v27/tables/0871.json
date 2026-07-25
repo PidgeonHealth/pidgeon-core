@@ -1,0 +1,53 @@
+{
+  "code": "0871",
+  "name": "Supply Risk Codes",
+  "version": "HL7 v2.7",
+  "chapter": "Materials Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "COR",
+      "description": "Corrosive",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "EXP",
+      "description": "Explosive",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FLA",
+      "description": "Flammable",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "INJ",
+      "description": "Injury Hazard",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "RAD",
+      "description": "Radioactive",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "TOX",
+      "description": "Toxic",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "UNK",
+      "description": "Unknown",
+      "comment": "",
+      "sort_order": 7
+    }
+  ],
+  "value_count": 7
+}

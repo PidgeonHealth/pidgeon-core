@@ -1,0 +1,89 @@
+{
+  "code": "0175",
+  "name": "Master file identifier code",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "CDM",
+      "description": "Charge description master file",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CM0",
+      "description": "Clinical study master",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CM1",
+      "description": "Clinical study phase master",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CM2",
+      "description": "Clinical study Data Schedule Master",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LOC",
+      "description": "Location master file",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "OM1",
+      "description": "Observation test master file segments",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "OM2",
+      "description": "Observation test master file segments",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OM3",
+      "description": "Observation test master file segments",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "OM4",
+      "description": "Observation test master file segments",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "OM5",
+      "description": "Observation test master file segments",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "OM6",
+      "description": "Observation test master file segments",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PRA",
+      "description": "Practitioner master file",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "STF",
+      "description": "Staff master file",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

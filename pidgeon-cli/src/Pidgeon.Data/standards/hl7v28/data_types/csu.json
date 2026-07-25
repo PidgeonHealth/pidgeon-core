@@ -1,0 +1,240 @@
+{
+  "code": "CSU",
+  "name": "Channel Sensitivity And Units",
+  "version": "HL7 v2.8",
+  "description": "This data type defines the channel sensitivity (gain) and the units in which it is measured in a waveform result. Note: Replaces the CM data type used in 7.14.1.5 OBX-5.3 where OBX-5 Observation value (*) is data type CD as of v 2.5.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CSU.1",
+      "field_description": "Channel Sensitivity",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CSU.2",
+      "field_description": "Unit Of Measure Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CSU.3",
+      "field_description": "Unit Of Measure Description",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CSU.4",
+      "field_description": "Unit Of Measure Coding System",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 5,
+      "field_name": "CSU.5",
+      "field_description": "Alternate Unit Of Measure Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CSU.6",
+      "field_description": "Alternate Unit Of Measure Description",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "CSU.7",
+      "field_description": "Alternate Unit Of Measure Coding System",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 8,
+      "field_name": "CSU.8",
+      "field_description": "Unit Of Measure Coding System Version Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "CSU.9",
+      "field_description": "Alternate Unit Of Measure Coding System Version Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "CSU.10",
+      "field_description": "Original Text",
+      "length": "199",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "CSU.11",
+      "field_description": "Second Alternate Unit Of Measure Identifier",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "CSU.12",
+      "field_description": "Second Alternate Unit Of Measure Text",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "CSU.13",
+      "field_description": "Name Of Second Alternate Unit Of Measure Coding Sy",
+      "length": "12",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0396"
+    },
+    {
+      "position": 14,
+      "field_name": "CSU.14",
+      "field_description": "Second Alternate Unit Of Measure Coding System Ver",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "CSU.15",
+      "field_description": "Unit Of Measure Coding System Oid",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "CSU.16",
+      "field_description": "Unit Of Measure Value Set Oid",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "CSU.17",
+      "field_description": "Unit Of Measure Value Set Version Id",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "CSU.18",
+      "field_description": "Alternate Unit Of Measure Coding System Oid",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "CSU.19",
+      "field_description": "Alternate Unit Of Measure Value Set Oid",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "CSU.20",
+      "field_description": "Alternate Unit Of Measure Value Set Version Id",
+      "length": "0",
+      "data_type": "DTM",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "CSU.21",
+      "field_description": "Alternate Unit Of Measure Coding System Oid",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "CSU.22",
+      "field_description": "Alternate Unit Of Measure Value Set Oid",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "CSU.23",
+      "field_description": "Alternate Unit Of Measure Value Set Version Id",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 23
+}

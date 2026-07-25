@@ -1,0 +1,107 @@
+{
+  "code": "0495",
+  "name": "Body Site Modifier",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ANT",
+      "description": "Anterior",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "BIL",
+      "description": "Bilateral",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DIS",
+      "description": "Distal",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "EXT",
+      "description": "External",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "L",
+      "description": "Left",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "LAT",
+      "description": "Lateral",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "LLQ",
+      "description": "Quadrant, Left Lower",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "LOW",
+      "description": "Lower",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "LUQ",
+      "description": "Quadrant, Left Upper",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "MED",
+      "description": "Medial",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "POS",
+      "description": "Posterior",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "PRO",
+      "description": "Proximal",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "R",
+      "description": "Right",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "RLQ",
+      "description": "Quadrant, Right Lower",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "RUQ",
+      "description": "Quadrant, Right Upper",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "UPP",
+      "description": "Upper",
+      "comment": "",
+      "sort_order": 16
+    }
+  ],
+  "value_count": 16
+}

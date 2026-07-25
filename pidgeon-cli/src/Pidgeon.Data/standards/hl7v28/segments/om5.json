@@ -1,0 +1,40 @@
+{
+  "code": "OM5",
+  "name": "Observation Batteries (sets)",
+  "version": "HL7 v2.8",
+  "chapter": "Master Files",
+  "description": "This segment contains the information about batteries and supersets (a nature code of F, P or S, as described in OM1-18 - Nature of Service/Test/Observation).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "OM5.1",
+      "field_description": "Sequence Number - Test/Observation Master File",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "OM5.2",
+      "field_description": "Test/Observations Included Within An Ordered Test Battery",
+      "length": "0",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "9999"
+    },
+    {
+      "position": 3,
+      "field_name": "OM5.3",
+      "field_description": "Observation Id Suffixes",
+      "length": "0",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

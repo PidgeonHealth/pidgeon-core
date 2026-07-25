@@ -1,0 +1,47 @@
+{
+  "code": "0530",
+  "name": "Organization, Agency, Department",
+  "version": "HL7 v2.7",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "AE",
+      "description": "American Express",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DEA",
+      "description": "Drug Enforcement Agency",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DOD",
+      "description": "Department of Defense",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "MC",
+      "description": "Master Card",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "VA",
+      "description": "Veterans Affairs",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "VI",
+      "description": "Visa",
+      "comment": "",
+      "sort_order": 6
+    }
+  ],
+  "value_count": 6
+}

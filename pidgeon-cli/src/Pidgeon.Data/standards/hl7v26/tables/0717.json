@@ -1,0 +1,89 @@
+{
+  "code": "0717",
+  "name": "Access Restriction Value",
+  "version": "HL7 v2.6",
+  "chapter": "Patient Administration",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ALL",
+      "description": "All",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "DEM",
+      "description": "All demographic data",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "DRG",
+      "description": "Drug",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "HIV",
+      "description": "HIV status and results",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "LOC",
+      "description": "Patient Location",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "NO",
+      "description": "None",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "OI",
+      "description": "Opt in all registries (HIPAA)",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "OO",
+      "description": "Opt out all registries (HIPAA)",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "PID-17",
+      "description": "Religion",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "PID-7",
+      "description": "Date of Birth",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "PSY",
+      "description": "Psychiatric Mental health",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "SMD",
+      "description": "Sensitive medical data",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "STD",
+      "description": "Sexually transmitted diseases",
+      "comment": "",
+      "sort_order": 13
+    }
+  ],
+  "value_count": 13
+}

@@ -1,0 +1,60 @@
+{
+  "code": "GP1",
+  "name": "Grouping/Reimbursement - Visit",
+  "version": "HL7 v2.4",
+  "chapter": "Financial Management",
+  "description": "These fields are used in grouping and reimbursement for HCFA APCs. Please refer to the Outpatient Prospective Payment System Final Rule (OPPS Final Rule) issued by HCFA.\n\nThe GP1 segment is specific to the US and may not be implemented in non-US systems.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "GP1.1",
+      "field_description": "Type of Bill Code",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0455"
+    },
+    {
+      "position": 2,
+      "field_name": "GP1.2",
+      "field_description": "Revenue Code",
+      "length": "3",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0456"
+    },
+    {
+      "position": 3,
+      "field_name": "GP1.3",
+      "field_description": "Overall Claim Disposition Code",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0457"
+    },
+    {
+      "position": 4,
+      "field_name": "GP1.4",
+      "field_description": "OCE Edits per Visit Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": "0458"
+    },
+    {
+      "position": 5,
+      "field_name": "GP1.5",
+      "field_description": "Outlier Cost",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 5
+}

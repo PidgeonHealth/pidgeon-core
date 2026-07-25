@@ -1,0 +1,40 @@
+{
+  "code": "RGS",
+  "name": "Resource Group",
+  "version": "HL7 v2.4",
+  "chapter": "Scheduling",
+  "description": "The RGS segment is used to identify relationships between resources identified for a scheduled event. This segment can be used, on a site specified basis, to identify groups of resources that are used together within a scheduled event, or to describe some other relationship between resources. To specify related groups of resources within a message, begin each group with an RGS segment, and then follow that RGS with one or more of the Appointment Information segments (AIG, AIL, AIS, or AIP).",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RGS.1",
+      "field_description": "Set ID - RGS",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RGS.2",
+      "field_description": "Segment Action Code",
+      "length": "3",
+      "data_type": "ID",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0206"
+    },
+    {
+      "position": 3,
+      "field_name": "RGS.3",
+      "field_description": "Resource Group ID",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 3
+}

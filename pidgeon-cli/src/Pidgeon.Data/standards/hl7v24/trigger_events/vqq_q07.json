@@ -1,0 +1,50 @@
+{
+  "code": "VQQ_Q07",
+  "name": "Virtual table query",
+  "version": "HL7 v2.4",
+  "chapter": "Query",
+  "description": "The VTQ provides a way to query for data to be expressed as tables without having to specify SQL or a stored procedure. The reader is advised to consider using the new recommended queries described in section 5.3.3.4.\n\nThe VQQ supports queries against server database table (virtual or actual) based on specific selection criteria delineated in the VTQ segment.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "VTQ",
+      "segment_desc": "Virtual Table Query Request",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "RDF",
+      "segment_desc": "Table Row Definition",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "DSC",
+      "segment_desc": "Continuation Pointer",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    }
+  ],
+  "segment_count": 4
+}

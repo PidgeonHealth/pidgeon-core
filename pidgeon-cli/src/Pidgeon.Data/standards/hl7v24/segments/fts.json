@@ -1,0 +1,30 @@
+{
+  "code": "FTS",
+  "name": "File Trailer Segment",
+  "version": "HL7 v2.4",
+  "chapter": "Control/Query",
+  "description": "The FTS segment defines the end of a file.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "FTS.1",
+      "field_description": "File Batch Count",
+      "length": "10",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "FTS.2",
+      "field_description": "File Trailer Comment",
+      "length": "80",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 2
+}

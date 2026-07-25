@@ -1,0 +1,70 @@
+{
+  "code": "CD",
+  "name": "Channel Definition",
+  "version": "HL7 v2.7",
+  "description": "This data type is used for labeling of digital waveform data. It defines a recording channel, which is associated with one of the values in each time sample of waveform data.",
+  "category": "composite",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "CD.1",
+      "field_description": "Channel Identifier",
+      "length": "0",
+      "data_type": "WVI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "CD.2",
+      "field_description": "Waveform Source",
+      "length": "0",
+      "data_type": "WVS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "CD.3",
+      "field_description": "Channel Sensitivity And Units",
+      "length": "0",
+      "data_type": "CSU",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "CD.4",
+      "field_description": "Channel Calibration Parameters",
+      "length": "0",
+      "data_type": "CCP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "CD.5",
+      "field_description": "Channel Sampling Frequency",
+      "length": "0",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "CD.6",
+      "field_description": "Minimum And Maximum Data Values",
+      "length": "0",
+      "data_type": "NR",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 6
+}

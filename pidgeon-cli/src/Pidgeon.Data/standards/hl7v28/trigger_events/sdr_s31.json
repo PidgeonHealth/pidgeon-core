@@ -1,0 +1,74 @@
+{
+  "code": "SDR_S31",
+  "name": "Request anti-microbial device data",
+  "version": "HL7 v2.8",
+  "chapter": "Materials Management",
+  "description": "This trigger event is sent by the placer application to the filler application to request anti-microbial device data created during the decontamination/sterilization of medical supplies.  In the context of this message segment, the term 'device' refers to a sterilizer or a washer.  Sterilizers perform a sterilization process and washers perform a decontamination process.",
+  "segments": [
+    {
+      "segment_code": "MSH",
+      "segment_desc": "Message Header",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 0
+    },
+    {
+      "segment_code": "SFT",
+      "segment_desc": "Software Segment",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 1
+    },
+    {
+      "segment_code": "UAC",
+      "segment_desc": "User Authentication Credential Segment",
+      "optionality": "O",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [],
+      "level": 0,
+      "order_index": 2
+    },
+    {
+      "segment_code": "ANTI-MICROBIAL_DEVICE_DATA",
+      "segment_desc": "ANTI-MICROBIAL_DEVICE_DATA group",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": true,
+      "group_path": [],
+      "level": 0,
+      "order_index": 3
+    },
+    {
+      "segment_code": "SDD",
+      "segment_desc": "Sterilization Device Data",
+      "optionality": "R",
+      "repeatability": "-",
+      "is_group": false,
+      "group_path": [
+        "ANTI-MICROBIAL_DEVICE_DATA"
+      ],
+      "level": 1,
+      "order_index": 4
+    },
+    {
+      "segment_code": "SCD",
+      "segment_desc": "Anti-microbial Cycle Data",
+      "optionality": "O",
+      "repeatability": "∞",
+      "is_group": false,
+      "group_path": [
+        "ANTI-MICROBIAL_DEVICE_DATA"
+      ],
+      "level": 1,
+      "order_index": 5
+    }
+  ],
+  "segment_count": 6
+}

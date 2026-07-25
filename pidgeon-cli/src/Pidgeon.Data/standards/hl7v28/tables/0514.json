@@ -1,0 +1,125 @@
+{
+  "code": "0514",
+  "name": "Transfusion Adverse Reaction",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "ABOINC",
+      "description": "ABO Incompatible Transfusion Reaction",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ACUTHEHTR",
+      "description": "Acute Hemolytic Transfusion Reaction",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ALLERGIC1",
+      "description": "Allergic Reaction - First",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "ALLERGIC2",
+      "description": "Allergic Reaction - Recurrent",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "ALLERGICR",
+      "description": "Allergic Reaction - Repeating",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "ANAPHYLAC",
+      "description": "Anaphylactic Reaction",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BACTCONTAM",
+      "description": "Reaction to Bacterial Contamination",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DELAYEDHTR",
+      "description": "Delayed Hemolytic Transfusion Reaction",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DELAYEDSTR",
+      "description": "Delayed Serological Transfusion Reaction",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "GVHD",
+      "description": "Graft vs Host Disease - Transfusion - Associated",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "HYPOTENS",
+      "description": "Non-hemolytic Hypotensive Reaction",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "NONHTR1",
+      "description": "Non-Hemolytic Fever Chill Transfusion Reaction - First",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "NONHTR2",
+      "description": "Non-Hemolytic Fever Chill Transfusion Reaction - Recurrent",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "NONHTRREC",
+      "description": "Non-Hemolytic Fever Chill Transfusion Reaction - Repeating",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "NONIMMUNE",
+      "description": "Non-Immune Hemolysis",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "NONSPEC",
+      "description": "Non-Specific, Non-Hemolytic Transfusion Reaction",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "NORXN",
+      "description": "No Evidence of Transfusion Reaction",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "PTP",
+      "description": "Posttransfusion Purpura",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "VOLOVER",
+      "description": "Symptoms most likely due to volume overload",
+      "comment": "",
+      "sort_order": 19
+    }
+  ],
+  "value_count": 19
+}

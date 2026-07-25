@@ -1,0 +1,20 @@
+{
+  "code": "PRC",
+  "name": "Pricing",
+  "version": "HL7 v2.3",
+  "chapter": "Master Files",
+  "description": "The PRC segment contains the pricing information for the preceding CDM segment’s chargeable item. It contains the fields which, for the same chargeable item, might vary depending upon facility or department or patient type. The preceding CDM segment contains the fields which, for one chargeable item, remain the same across facilities, departments, and patient types",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "PRC.1",
+      "field_description": "Primary Key Value",
+      "length": "200",
+      "data_type": "CE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0132"
+    }
+  ],
+  "field_count": 1
+}

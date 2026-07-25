@@ -1,0 +1,29 @@
+{
+  "code": "0272",
+  "name": "Document confidentiality status",
+  "version": "HL7 v2.3",
+  "chapter": "Medical Records/Information Management",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "RE",
+      "description": "Restricted",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "UC",
+      "description": "Usual control",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "VR",
+      "description": "Very restricted",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

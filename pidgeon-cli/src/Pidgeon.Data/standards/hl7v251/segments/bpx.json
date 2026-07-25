@@ -1,0 +1,220 @@
+{
+  "code": "BPX",
+  "name": "Blood product dispense status",
+  "version": "HL7 v2.5.1",
+  "chapter": "Order Entry",
+  "description": "In the processing of blood products, it is necessary for the transfusion service and the placer system to communicate information. The status messages need to contain additional information regarding the blood products requested, such as the unique donation ID, product code, blood type, expiration date/time of the blood product, and current status of the product. This segment is similar to an OBX segment, but contains additional attributes.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "BPX.1",
+      "field_description": "Set ID - BPX",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "BPX.2",
+      "field_description": "BP Dispense Status",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0510"
+    },
+    {
+      "position": 3,
+      "field_name": "BPX.3",
+      "field_description": "BP Status",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": "0511"
+    },
+    {
+      "position": 4,
+      "field_name": "BPX.4",
+      "field_description": "BP Date/Time of Status",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "BPX.5",
+      "field_description": "BC Donation ID",
+      "length": "22",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "BPX.6",
+      "field_description": "BC Component",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "BPX.7",
+      "field_description": "BC Donation Type / Intended Use",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "BPX.8",
+      "field_description": "CP Commercial Product",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": "0512"
+    },
+    {
+      "position": 9,
+      "field_name": "BPX.9",
+      "field_description": "CP Manufacturer",
+      "length": "250",
+      "data_type": "XON",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "BPX.10",
+      "field_description": "CP Lot Number",
+      "length": "22",
+      "data_type": "EI",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 11,
+      "field_name": "BPX.11",
+      "field_description": "BP Blood Group",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "BPX.12",
+      "field_description": "BC Special Testing",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "BPX.13",
+      "field_description": "BP Expiration Date/Time",
+      "length": "26",
+      "data_type": "TS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "BPX.14",
+      "field_description": "BP Quantity",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "R",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "BPX.15",
+      "field_description": "BP Amount",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "BPX.16",
+      "field_description": "BP Units",
+      "length": "250",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "BPX.17",
+      "field_description": "BP Unique ID",
+      "length": "22",
+      "data_type": "EI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "BPX.18",
+      "field_description": "BP Actual Dispensed To Location",
+      "length": "80",
+      "data_type": "PL",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "BPX.19",
+      "field_description": "BP Actual Dispensed To Address",
+      "length": "250",
+      "data_type": "XAD",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "BPX.20",
+      "field_description": "BP Dispensed to Receiver",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 21,
+      "field_name": "BPX.21",
+      "field_description": "BP Dispensing Individual",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 21
+}

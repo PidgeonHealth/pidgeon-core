@@ -1,0 +1,35 @@
+{
+  "code": "0759",
+  "name": "Status Admission",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "0",
+      "description": "Admission status is valid; used for grouping",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "1",
+      "description": "Admission status is valid; not used for grouping",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "2",
+      "description": "Admission status is invalid; not used for grouping",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "3",
+      "description": "Admission status is invalid; default value used for grouping",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

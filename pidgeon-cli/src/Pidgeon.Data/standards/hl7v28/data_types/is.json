@@ -1,0 +1,9 @@
+{
+  "code": "IS",
+  "name": "Coded Value For User-defined Tables",
+  "version": "HL7 v2.8",
+  "description": "As of v2.7, the only approved use of the IS data type is in the HD.1, EI.2 and PL.6 plus a limited number of fields where a determination could not readily be made as to whether the item is an identifier or an actual coded item.",
+  "category": "primitive",
+  "fields": [],
+  "field_count": 0
+}

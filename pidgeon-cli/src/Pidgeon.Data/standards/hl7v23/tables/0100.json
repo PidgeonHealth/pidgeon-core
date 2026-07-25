@@ -1,0 +1,41 @@
+{
+  "code": "0100",
+  "name": "When to charge",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "D",
+      "description": "On discharge",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "O",
+      "description": "On receipt of order",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "R",
+      "description": "At time service is completed",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "S",
+      "description": "At time service is started",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "T",
+      "description": "At a designated date/time",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}

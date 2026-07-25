@@ -1,0 +1,71 @@
+{
+  "code": "0202",
+  "name": "Telecommunication equipment type",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BP",
+      "description": "Beeper",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CP",
+      "description": "Cellular or Mobile Phone",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "FX",
+      "description": "Fax",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "Internet",
+      "description": "Internet Address",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "MD",
+      "description": "Modem",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "PH",
+      "description": "Telephone",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "SAT",
+      "description": "Satellite Phone",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "TDD",
+      "description": "Telecommunications Device for the Deaf",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "TTY",
+      "description": "Teletypewriter",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "X.400",
+      "description": "X.400 email address",
+      "comment": "",
+      "sort_order": 10
+    }
+  ],
+  "value_count": 10
+}

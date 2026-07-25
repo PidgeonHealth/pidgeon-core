@@ -1,0 +1,110 @@
+{
+  "code": "RQD",
+  "name": "Requisition detail",
+  "version": "HL7 v2.3",
+  "chapter": "Order Entry",
+  "description": "RQD contains the detail for each requisitioned item.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "RQD.1",
+      "field_description": "Requisition Line Number",
+      "length": "4",
+      "data_type": "SI",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "RQD.2",
+      "field_description": "Item Code - Internal",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "RQD.3",
+      "field_description": "Item Code - External",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "RQD.4",
+      "field_description": "Hospital Item Code",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "C",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "RQD.5",
+      "field_description": "Requisition Quantity",
+      "length": "6",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "RQD.6",
+      "field_description": "Requisition Unit of Measure",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "RQD.7",
+      "field_description": "Department Cost Center",
+      "length": "30",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0319"
+    },
+    {
+      "position": 8,
+      "field_name": "RQD.8",
+      "field_description": "Item Natural Account Code",
+      "length": "30",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0320"
+    },
+    {
+      "position": 9,
+      "field_name": "RQD.9",
+      "field_description": "Deliver To ID",
+      "length": "60",
+      "data_type": "CE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "RQD.10",
+      "field_description": "Date Needed",
+      "length": "8",
+      "data_type": "DT",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 10
+}

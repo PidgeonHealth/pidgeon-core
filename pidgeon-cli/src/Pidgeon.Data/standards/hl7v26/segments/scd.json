@@ -1,0 +1,380 @@
+{
+  "code": "SCD",
+  "name": "Anti-Microbial Cycle Data",
+  "version": "HL7 v2.6",
+  "chapter": "Materials Management",
+  "description": "The SCD segment contains cycle data representing an instance of a sterilization or decontamination.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "SCD.1",
+      "field_description": "Cycle Start Time",
+      "length": "16",
+      "data_type": "TM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 2,
+      "field_name": "SCD.2",
+      "field_description": "Cycle Count",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "SCD.3",
+      "field_description": "Temp Max",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 4,
+      "field_name": "SCD.4",
+      "field_description": "Temp Min",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 5,
+      "field_name": "SCD.5",
+      "field_description": "Load Number",
+      "length": "16",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 6,
+      "field_name": "SCD.6",
+      "field_description": "Condition Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "SCD.7",
+      "field_description": "Sterilize Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "SCD.8",
+      "field_description": "Exhaust Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 9,
+      "field_name": "SCD.9",
+      "field_description": "Total Cycle Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "SCD.10",
+      "field_description": "Device Status",
+      "length": "4",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0682"
+    },
+    {
+      "position": 11,
+      "field_name": "SCD.11",
+      "field_description": "Cycle Start Date/Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 12,
+      "field_name": "SCD.12",
+      "field_description": "Dry Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "SCD.13",
+      "field_description": "Leak Rate",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 14,
+      "field_name": "SCD.14",
+      "field_description": "Control Temperature",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 15,
+      "field_name": "SCD.15",
+      "field_description": "Sterilizer Temperature",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "SCD.16",
+      "field_description": "Cycle Complete Time",
+      "length": "16",
+      "data_type": "TM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "SCD.17",
+      "field_description": "Under Temperature",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 18,
+      "field_name": "SCD.18",
+      "field_description": "Over Temperature",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "SCD.19",
+      "field_description": "Abort Cycle",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 20,
+      "field_name": "SCD.20",
+      "field_description": "Alarm",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 21,
+      "field_name": "SCD.21",
+      "field_description": "Long in Charge Phase",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 22,
+      "field_name": "SCD.22",
+      "field_description": "Long in Exhaust Phase",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 23,
+      "field_name": "SCD.23",
+      "field_description": "Long in Fast Exhaust Phase",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 24,
+      "field_name": "SCD.24",
+      "field_description": "Reset",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 25,
+      "field_name": "SCD.25",
+      "field_description": "Operator - Unload",
+      "length": "15",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "SCD.26",
+      "field_description": "Door Open",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 27,
+      "field_name": "SCD.27",
+      "field_description": "Reading Failure",
+      "length": "4",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0532"
+    },
+    {
+      "position": 28,
+      "field_name": "SCD.28",
+      "field_description": "Cycle Type",
+      "length": "3",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0702"
+    },
+    {
+      "position": 29,
+      "field_name": "SCD.29",
+      "field_description": "Thermal Rinse Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 30,
+      "field_name": "SCD.30",
+      "field_description": "Wash Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 31,
+      "field_name": "SCD.31",
+      "field_description": "Injection Rate",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 32,
+      "field_name": "SCD.32",
+      "field_description": "Procedure Code",
+      "length": "705",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0088"
+    },
+    {
+      "position": 33,
+      "field_name": "SCD.33",
+      "field_description": "Patient Identifier List",
+      "length": "250",
+      "data_type": "CX",
+      "optionality": "O",
+      "repeatability": "∞",
+      "table": ""
+    },
+    {
+      "position": 34,
+      "field_name": "SCD.34",
+      "field_description": "Attending Doctor",
+      "length": "250",
+      "data_type": "XCN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0010"
+    },
+    {
+      "position": 35,
+      "field_name": "SCD.35",
+      "field_description": "Dilution Factor",
+      "length": "36",
+      "data_type": "SN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 36,
+      "field_name": "SCD.36",
+      "field_description": "Fill Time",
+      "length": "16",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 37,
+      "field_name": "SCD.37",
+      "field_description": "Inlet Temperature",
+      "length": "36",
+      "data_type": "CQ",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    }
+  ],
+  "field_count": 37
+}

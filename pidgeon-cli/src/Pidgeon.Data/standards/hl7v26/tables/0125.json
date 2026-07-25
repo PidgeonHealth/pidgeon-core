@@ -1,0 +1,161 @@
+{
+  "code": "0125",
+  "name": "Value type",
+  "version": "HL7 v2.6",
+  "chapter": "Observation Reporting",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "AD",
+      "description": "Address",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "CF",
+      "description": "Coded Element With Formatted Values",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "CK",
+      "description": "Composite ID With Check Digit",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "CN",
+      "description": "Composite ID And Name",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "CP",
+      "description": "Composite Price",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "CWE",
+      "description": "Coded Entry",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "CX",
+      "description": "Extended Composite ID With Check Digit",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "DT",
+      "description": "Date",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "DTM",
+      "description": "Time Stamp (Date & Time)",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "ED",
+      "description": "Encapsulated Data",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "FT",
+      "description": "Formatted Text (Display)",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "MO",
+      "description": "Money",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "NM",
+      "description": "Numeric",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "PN",
+      "description": "Person Name",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "RP",
+      "description": "Reference Pointer",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "SN",
+      "description": "Structured Numeric",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "ST",
+      "description": "String Data.",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "TM",
+      "description": "Time",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "TN",
+      "description": "Telephone Number",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "TX",
+      "description": "Text Data (Display)",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "XAD",
+      "description": "Extended Address",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "XCN",
+      "description": "Extended Composite Name And Number For Persons",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "XON",
+      "description": "Extended Composite Name And Number For Organizations",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "XPN",
+      "description": "Extended Person Name",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "XTN",
+      "description": "Extended Telecommunications Number",
+      "comment": "",
+      "sort_order": 25
+    }
+  ],
+  "value_count": 25
+}

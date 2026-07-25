@@ -1,0 +1,35 @@
+{
+  "code": "0557",
+  "name": "Payee Type",
+  "version": "HL7 v2.8",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "EMPL",
+      "description": "Employer",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ORG",
+      "description": "Payee Organization",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "PERS",
+      "description": "Person",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "PPER",
+      "description": "Pay Person",
+      "comment": "",
+      "sort_order": 4
+    }
+  ],
+  "value_count": 4
+}

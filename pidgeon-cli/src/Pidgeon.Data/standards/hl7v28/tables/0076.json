@@ -1,0 +1,827 @@
+{
+  "code": "0076",
+  "name": "Message Type",
+  "version": "HL7 v2.8",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "ACK",
+      "description": "General acknowledgment message",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "ADR",
+      "description": "ADT response",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "ADT",
+      "description": "ADT message",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "BAR",
+      "description": "Add/change billing account",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "BPS",
+      "description": "Blood product dispense status message",
+      "comment": "",
+      "sort_order": 5
+    },
+    {
+      "value": "BRP",
+      "description": "Blood product dispense status acknowledgement message",
+      "comment": "",
+      "sort_order": 6
+    },
+    {
+      "value": "BRT",
+      "description": "Blood product transfusion/disposition acknowledgement message",
+      "comment": "",
+      "sort_order": 7
+    },
+    {
+      "value": "BTS",
+      "description": "Blood product transfusion/disposition message",
+      "comment": "",
+      "sort_order": 8
+    },
+    {
+      "value": "CCF",
+      "description": "Collaborative Care Fetch",
+      "comment": "",
+      "sort_order": 9
+    },
+    {
+      "value": "CCI",
+      "description": "Collaborative Care Information",
+      "comment": "",
+      "sort_order": 10
+    },
+    {
+      "value": "CCM",
+      "description": "Collaborative Care Message",
+      "comment": "",
+      "sort_order": 11
+    },
+    {
+      "value": "CCQ",
+      "description": "Collaborative Care Referral",
+      "comment": "",
+      "sort_order": 12
+    },
+    {
+      "value": "CCU",
+      "description": "Collaborative Care Referral",
+      "comment": "",
+      "sort_order": 13
+    },
+    {
+      "value": "CQU",
+      "description": "Collaborative Care Referral",
+      "comment": "",
+      "sort_order": 14
+    },
+    {
+      "value": "CRM",
+      "description": "Clinical study registration message",
+      "comment": "",
+      "sort_order": 15
+    },
+    {
+      "value": "CSU",
+      "description": "Unsolicited study data message",
+      "comment": "",
+      "sort_order": 16
+    },
+    {
+      "value": "DFT",
+      "description": "Detail financial transactions",
+      "comment": "",
+      "sort_order": 17
+    },
+    {
+      "value": "DOC",
+      "description": "Document response",
+      "comment": "",
+      "sort_order": 18
+    },
+    {
+      "value": "DSR",
+      "description": "Display response",
+      "comment": "",
+      "sort_order": 19
+    },
+    {
+      "value": "EAC",
+      "description": "Automated equipment command message",
+      "comment": "",
+      "sort_order": 20
+    },
+    {
+      "value": "EAN",
+      "description": "Automated equipment notification message",
+      "comment": "",
+      "sort_order": 21
+    },
+    {
+      "value": "EAR",
+      "description": "Automated equipment response message",
+      "comment": "",
+      "sort_order": 22
+    },
+    {
+      "value": "EHC",
+      "description": "Health Care Invoice",
+      "comment": "",
+      "sort_order": 23
+    },
+    {
+      "value": "ESR",
+      "description": "Automated equipment status update acknowledgment message",
+      "comment": "",
+      "sort_order": 24
+    },
+    {
+      "value": "ESU",
+      "description": "Automated equipment status update message",
+      "comment": "",
+      "sort_order": 25
+    },
+    {
+      "value": "INR",
+      "description": "Automated equipment inventory request message",
+      "comment": "",
+      "sort_order": 26
+    },
+    {
+      "value": "INU",
+      "description": "Automated equipment inventory update message",
+      "comment": "",
+      "sort_order": 27
+    },
+    {
+      "value": "LSR",
+      "description": "Automated equipment log/service request message",
+      "comment": "",
+      "sort_order": 28
+    },
+    {
+      "value": "LSU",
+      "description": "Automated equipment log/service update message",
+      "comment": "",
+      "sort_order": 29
+    },
+    {
+      "value": "MDM",
+      "description": "Medical document management",
+      "comment": "",
+      "sort_order": 30
+    },
+    {
+      "value": "MFD",
+      "description": "Master files delayed application acknowledgment",
+      "comment": "",
+      "sort_order": 31
+    },
+    {
+      "value": "MFK",
+      "description": "Master files application acknowledgment",
+      "comment": "",
+      "sort_order": 32
+    },
+    {
+      "value": "MFN",
+      "description": "Master files notification",
+      "comment": "",
+      "sort_order": 33
+    },
+    {
+      "value": "MFQ",
+      "description": "Master files query",
+      "comment": "",
+      "sort_order": 34
+    },
+    {
+      "value": "MFR",
+      "description": "Master files response",
+      "comment": "",
+      "sort_order": 35
+    },
+    {
+      "value": "NMD",
+      "description": "Application management data message",
+      "comment": "",
+      "sort_order": 36
+    },
+    {
+      "value": "NMQ",
+      "description": "Application management query message",
+      "comment": "",
+      "sort_order": 37
+    },
+    {
+      "value": "NMR",
+      "description": "Application management response message",
+      "comment": "",
+      "sort_order": 38
+    },
+    {
+      "value": "OMB",
+      "description": "Blood product order message",
+      "comment": "",
+      "sort_order": 39
+    },
+    {
+      "value": "OMD",
+      "description": "Dietary order",
+      "comment": "",
+      "sort_order": 40
+    },
+    {
+      "value": "OMG",
+      "description": "General clinical order message",
+      "comment": "",
+      "sort_order": 41
+    },
+    {
+      "value": "OMI",
+      "description": "Imaging order",
+      "comment": "",
+      "sort_order": 42
+    },
+    {
+      "value": "OML",
+      "description": "Laboratory order message",
+      "comment": "",
+      "sort_order": 43
+    },
+    {
+      "value": "OMN",
+      "description": "Non-stock requisition order message",
+      "comment": "",
+      "sort_order": 44
+    },
+    {
+      "value": "OMP",
+      "description": "Pharmacy/treatment order message",
+      "comment": "",
+      "sort_order": 45
+    },
+    {
+      "value": "OMS",
+      "description": "Stock requisition order message",
+      "comment": "",
+      "sort_order": 46
+    },
+    {
+      "value": "OPL",
+      "description": "Population/Location-Based Laboratory Order Message",
+      "comment": "",
+      "sort_order": 47
+    },
+    {
+      "value": "OPR",
+      "description": "Population/Location-Based Laboratory Order Acknowledgment Message",
+      "comment": "",
+      "sort_order": 48
+    },
+    {
+      "value": "OPU",
+      "description": "Unsolicited Population/Location-Based Laboratory Observation Message",
+      "comment": "",
+      "sort_order": 49
+    },
+    {
+      "value": "ORA",
+      "description": "Observation Report  Acknowledgment",
+      "comment": "",
+      "sort_order": 50
+    },
+    {
+      "value": "ORB",
+      "description": "Blood product order acknowledgement message",
+      "comment": "",
+      "sort_order": 51
+    },
+    {
+      "value": "ORD",
+      "description": "Dietary order acknowledgment message",
+      "comment": "",
+      "sort_order": 52
+    },
+    {
+      "value": "ORF",
+      "description": "Query for results of observation",
+      "comment": "",
+      "sort_order": 53
+    },
+    {
+      "value": "ORG",
+      "description": "General clinical order acknowledgment message",
+      "comment": "",
+      "sort_order": 54
+    },
+    {
+      "value": "ORI",
+      "description": "Imaging order acknowledgement message",
+      "comment": "",
+      "sort_order": 55
+    },
+    {
+      "value": "ORL",
+      "description": "Laboratory acknowledgment message (unsolicited)",
+      "comment": "",
+      "sort_order": 56
+    },
+    {
+      "value": "ORM",
+      "description": "Pharmacy/treatment order message",
+      "comment": "",
+      "sort_order": 57
+    },
+    {
+      "value": "ORN",
+      "description": "Non-stock requisition - General order acknowledgment message",
+      "comment": "",
+      "sort_order": 58
+    },
+    {
+      "value": "ORP",
+      "description": "Pharmacy/treatment order acknowledgment message",
+      "comment": "",
+      "sort_order": 59
+    },
+    {
+      "value": "ORR",
+      "description": "General order response message response to any ORM",
+      "comment": "",
+      "sort_order": 60
+    },
+    {
+      "value": "ORS",
+      "description": "Stock requisition - Order acknowledgment message",
+      "comment": "",
+      "sort_order": 61
+    },
+    {
+      "value": "ORU",
+      "description": "Unsolicited transmission of an observation message",
+      "comment": "",
+      "sort_order": 62
+    },
+    {
+      "value": "OSM",
+      "description": "Specimen Shipment Message",
+      "comment": "",
+      "sort_order": 63
+    },
+    {
+      "value": "OSQ",
+      "description": "Query response for order status",
+      "comment": "",
+      "sort_order": 64
+    },
+    {
+      "value": "OSR",
+      "description": "Query response for order status",
+      "comment": "",
+      "sort_order": 65
+    },
+    {
+      "value": "OUL",
+      "description": "Unsolicited laboratory observation message",
+      "comment": "",
+      "sort_order": 66
+    },
+    {
+      "value": "PEX",
+      "description": "Product experience message",
+      "comment": "",
+      "sort_order": 67
+    },
+    {
+      "value": "PGL",
+      "description": "Patient goal message",
+      "comment": "",
+      "sort_order": 68
+    },
+    {
+      "value": "PIN",
+      "description": "Patient insurance information",
+      "comment": "",
+      "sort_order": 69
+    },
+    {
+      "value": "PMU",
+      "description": "Add personnel record",
+      "comment": "",
+      "sort_order": 70
+    },
+    {
+      "value": "PPG",
+      "description": "Patient pathway message (goal-oriented)",
+      "comment": "",
+      "sort_order": 71
+    },
+    {
+      "value": "PPP",
+      "description": "Patient pathway message (problem-oriented)",
+      "comment": "",
+      "sort_order": 72
+    },
+    {
+      "value": "PPR",
+      "description": "Patient problem message",
+      "comment": "",
+      "sort_order": 73
+    },
+    {
+      "value": "PPT",
+      "description": "Patient pathway goal-oriented response",
+      "comment": "",
+      "sort_order": 74
+    },
+    {
+      "value": "PPV",
+      "description": "Patient goal response",
+      "comment": "",
+      "sort_order": 75
+    },
+    {
+      "value": "PRR",
+      "description": "Patient problem response",
+      "comment": "",
+      "sort_order": 76
+    },
+    {
+      "value": "PTR",
+      "description": "Patient pathway problem-oriented response",
+      "comment": "",
+      "sort_order": 77
+    },
+    {
+      "value": "QBP",
+      "description": "Query by parameter",
+      "comment": "",
+      "sort_order": 78
+    },
+    {
+      "value": "QCK",
+      "description": "Deferred query",
+      "comment": "",
+      "sort_order": 79
+    },
+    {
+      "value": "QCN",
+      "description": "Cancel query",
+      "comment": "",
+      "sort_order": 80
+    },
+    {
+      "value": "QRY",
+      "description": "Query, original mode",
+      "comment": "",
+      "sort_order": 81
+    },
+    {
+      "value": "QSB",
+      "description": "Create subscription",
+      "comment": "",
+      "sort_order": 82
+    },
+    {
+      "value": "QSX",
+      "description": "Cancel subscription/acknowledge message",
+      "comment": "",
+      "sort_order": 83
+    },
+    {
+      "value": "QVR",
+      "description": "Query for previous events",
+      "comment": "",
+      "sort_order": 84
+    },
+    {
+      "value": "RAR",
+      "description": "Pharmacy/treatment administration information",
+      "comment": "",
+      "sort_order": 85
+    },
+    {
+      "value": "RAS",
+      "description": "Pharmacy/treatment administration message",
+      "comment": "",
+      "sort_order": 86
+    },
+    {
+      "value": "RCI",
+      "description": "Return clinical information",
+      "comment": "",
+      "sort_order": 87
+    },
+    {
+      "value": "RCL",
+      "description": "Return clinical list",
+      "comment": "",
+      "sort_order": 88
+    },
+    {
+      "value": "RDE",
+      "description": "Pharmacy/treatment encoded order message",
+      "comment": "",
+      "sort_order": 89
+    },
+    {
+      "value": "RDR",
+      "description": "Pharmacy/treatment dispense information",
+      "comment": "",
+      "sort_order": 90
+    },
+    {
+      "value": "RDS",
+      "description": "Pharmacy/treatment dispense message",
+      "comment": "",
+      "sort_order": 91
+    },
+    {
+      "value": "RDY",
+      "description": "Display based response",
+      "comment": "",
+      "sort_order": 92
+    },
+    {
+      "value": "REF",
+      "description": "Patient referral",
+      "comment": "",
+      "sort_order": 93
+    },
+    {
+      "value": "RER",
+      "description": "Pharmacy/treatment encoded order information",
+      "comment": "",
+      "sort_order": 94
+    },
+    {
+      "value": "RGR",
+      "description": "Pharmacy/treatment dose information",
+      "comment": "",
+      "sort_order": 95
+    },
+    {
+      "value": "RGV",
+      "description": "Pharmacy/treatment give message",
+      "comment": "",
+      "sort_order": 96
+    },
+    {
+      "value": "ROR",
+      "description": "Pharmacy/treatment order response",
+      "comment": "",
+      "sort_order": 97
+    },
+    {
+      "value": "RPA",
+      "description": "Return patient authorization",
+      "comment": "",
+      "sort_order": 98
+    },
+    {
+      "value": "RPI",
+      "description": "Return patient information",
+      "comment": "",
+      "sort_order": 99
+    },
+    {
+      "value": "RPL",
+      "description": "Return patient display list",
+      "comment": "",
+      "sort_order": 100
+    },
+    {
+      "value": "RPR",
+      "description": "Return patient list",
+      "comment": "",
+      "sort_order": 101
+    },
+    {
+      "value": "RQA",
+      "description": "Request patient authorization",
+      "comment": "",
+      "sort_order": 102
+    },
+    {
+      "value": "RQC",
+      "description": "Request clinical information",
+      "comment": "",
+      "sort_order": 103
+    },
+    {
+      "value": "RQI",
+      "description": "Request patient information",
+      "comment": "",
+      "sort_order": 104
+    },
+    {
+      "value": "RQP",
+      "description": "Request patient demographics",
+      "comment": "",
+      "sort_order": 105
+    },
+    {
+      "value": "RRA",
+      "description": "Pharmacy/treatment administration acknowledgment message",
+      "comment": "",
+      "sort_order": 106
+    },
+    {
+      "value": "RRD",
+      "description": "Pharmacy/treatment dispense acknowledgment message",
+      "comment": "",
+      "sort_order": 107
+    },
+    {
+      "value": "RRE",
+      "description": "Pharmacy/treatment encoded order acknowledgment message",
+      "comment": "",
+      "sort_order": 108
+    },
+    {
+      "value": "RRG",
+      "description": "Pharmacy/treatment give acknowledgment message",
+      "comment": "",
+      "sort_order": 109
+    },
+    {
+      "value": "RRI",
+      "description": "Return referral information",
+      "comment": "",
+      "sort_order": 110
+    },
+    {
+      "value": "RSP",
+      "description": "Segment pattern response",
+      "comment": "",
+      "sort_order": 111
+    },
+    {
+      "value": "RTB",
+      "description": "Tabular response",
+      "comment": "",
+      "sort_order": 112
+    },
+    {
+      "value": "SCN",
+      "description": "Notification of Anti-Microbial Device Cycle Data",
+      "comment": "",
+      "sort_order": 113
+    },
+    {
+      "value": "SDN",
+      "description": "Notification of Anti-Microbial Device Data",
+      "comment": "",
+      "sort_order": 114
+    },
+    {
+      "value": "SDR",
+      "description": "Sterilization anti-microbial device data request",
+      "comment": "",
+      "sort_order": 115
+    },
+    {
+      "value": "SIU",
+      "description": "Schedule information unsolicited",
+      "comment": "",
+      "sort_order": 116
+    },
+    {
+      "value": "SLN",
+      "description": "Notification of New Sterilization Lot",
+      "comment": "",
+      "sort_order": 117
+    },
+    {
+      "value": "SLR",
+      "description": "Sterilization lot request",
+      "comment": "",
+      "sort_order": 118
+    },
+    {
+      "value": "SMD",
+      "description": "Sterilization anti-microbial device cycle data request",
+      "comment": "",
+      "sort_order": 119
+    },
+    {
+      "value": "SQM",
+      "description": "Schedule query message",
+      "comment": "",
+      "sort_order": 120
+    },
+    {
+      "value": "SQR",
+      "description": "Schedule query response",
+      "comment": "",
+      "sort_order": 121
+    },
+    {
+      "value": "SRM",
+      "description": "Schedule request message",
+      "comment": "",
+      "sort_order": 122
+    },
+    {
+      "value": "SRR",
+      "description": "Scheduled request response",
+      "comment": "",
+      "sort_order": 123
+    },
+    {
+      "value": "SSR",
+      "description": "Specimen status request message",
+      "comment": "",
+      "sort_order": 124
+    },
+    {
+      "value": "SSU",
+      "description": "Specimen status update message",
+      "comment": "",
+      "sort_order": 125
+    },
+    {
+      "value": "STC",
+      "description": "Notification of Sterilization Configuration",
+      "comment": "",
+      "sort_order": 126
+    },
+    {
+      "value": "STI",
+      "description": "Sterilization item request",
+      "comment": "",
+      "sort_order": 127
+    },
+    {
+      "value": "SUR",
+      "description": "Summary product experience report",
+      "comment": "",
+      "sort_order": 128
+    },
+    {
+      "value": "TBR",
+      "description": "Tabular data response",
+      "comment": "",
+      "sort_order": 129
+    },
+    {
+      "value": "TCR",
+      "description": "Automated equipment test code settings request message",
+      "comment": "",
+      "sort_order": 130
+    },
+    {
+      "value": "TCU",
+      "description": "Automated equipment test code settings update message",
+      "comment": "",
+      "sort_order": 131
+    },
+    {
+      "value": "UDM",
+      "description": "Unsolicited display update message",
+      "comment": "",
+      "sort_order": 132
+    },
+    {
+      "value": "VXQ",
+      "description": "Query for vaccination record",
+      "comment": "",
+      "sort_order": 133
+    },
+    {
+      "value": "VXR",
+      "description": "Vaccination record response",
+      "comment": "",
+      "sort_order": 134
+    },
+    {
+      "value": "VXU",
+      "description": "Unsolicited vaccination record update",
+      "comment": "",
+      "sort_order": 135
+    },
+    {
+      "value": "VXX",
+      "description": "Response for vaccination query with multiple PID matches",
+      "comment": "",
+      "sort_order": 136
+    }
+  ],
+  "value_count": 136
+}

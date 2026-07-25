@@ -1,0 +1,29 @@
+{
+  "code": "0881",
+  "name": "Role Executing Physician",
+  "version": "HL7 v2.7",
+  "chapter": "Claims and Reimbursement",
+  "description": "User Defined Tables - Tables with data suggested by HL7 organization. Most table are customized to reflect system workflows and coded values (such as lab values).",
+  "type": "User",
+  "values": [
+    {
+      "value": "B",
+      "description": "Both",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "P",
+      "description": "Professional Part",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "T",
+      "description": "Technical Part",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

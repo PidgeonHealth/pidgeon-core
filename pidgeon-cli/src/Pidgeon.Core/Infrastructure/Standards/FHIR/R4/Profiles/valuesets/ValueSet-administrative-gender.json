@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://hl7.org/fhir/ValueSet/administrative-gender",
+  "name": "AdministrativeGender",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/administrative-gender",
+        "concept": [
+          { "code": "male", "display": "Male" },
+          { "code": "female", "display": "Female" },
+          { "code": "other", "display": "Other" },
+          { "code": "unknown", "display": "Unknown" }
+        ]
+      }
+    ]
+  }
+}

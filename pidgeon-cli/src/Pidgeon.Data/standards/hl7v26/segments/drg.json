@@ -1,0 +1,340 @@
+{
+  "code": "DRG",
+  "name": "Diagnosis Related Group",
+  "version": "HL7 v2.6",
+  "chapter": "Financial Management",
+  "description": "The DRG segment contains diagnoses-related grouping information of various types. The DRG segment is used to send the DRG information, for example, for billing and medical records encoding.",
+  "fields": [
+    {
+      "position": 1,
+      "field_name": "DRG.1",
+      "field_description": "Diagnostic Related Group",
+      "length": "250",
+      "data_type": "CNE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0055"
+    },
+    {
+      "position": 2,
+      "field_name": "DRG.2",
+      "field_description": "DRG Assigned Date/Time",
+      "length": "24",
+      "data_type": "DTM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 3,
+      "field_name": "DRG.3",
+      "field_description": "DRG Approval Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 4,
+      "field_name": "DRG.4",
+      "field_description": "DRG Grouper Review Code",
+      "length": "2",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0056"
+    },
+    {
+      "position": 5,
+      "field_name": "DRG.5",
+      "field_description": "Outlier Type",
+      "length": "250",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0083"
+    },
+    {
+      "position": 6,
+      "field_name": "DRG.6",
+      "field_description": "Outlier Days",
+      "length": "3",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 7,
+      "field_name": "DRG.7",
+      "field_description": "Outlier Cost",
+      "length": "12",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 8,
+      "field_name": "DRG.8",
+      "field_description": "DRG Payor",
+      "length": "1",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0229"
+    },
+    {
+      "position": 9,
+      "field_name": "DRG.9",
+      "field_description": "Outlier Reimbursement",
+      "length": "9",
+      "data_type": "CP",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 10,
+      "field_name": "DRG.10",
+      "field_description": "Confidential Indicator",
+      "length": "1",
+      "data_type": "ID",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 11,
+      "field_name": "DRG.11",
+      "field_description": "DRG Transfer Type",
+      "length": "21",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0415"
+    },
+    {
+      "position": 12,
+      "field_name": "DRG.12",
+      "field_description": "Name of Coder",
+      "length": "1103",
+      "data_type": "XPN",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 13,
+      "field_name": "DRG.13",
+      "field_description": "Grouper Status",
+      "length": "705",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0734"
+    },
+    {
+      "position": 14,
+      "field_name": "DRG.14",
+      "field_description": "PCCL Value Code",
+      "length": "20",
+      "data_type": "CWE",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0136"
+    },
+    {
+      "position": 15,
+      "field_name": "DRG.15",
+      "field_description": "Effective Weight",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 16,
+      "field_name": "DRG.16",
+      "field_description": "Monetary Amount",
+      "length": "20",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 17,
+      "field_name": "DRG.17",
+      "field_description": "Status Patient",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0739"
+    },
+    {
+      "position": 18,
+      "field_name": "DRG.18",
+      "field_description": "Grouper Software Name",
+      "length": "100",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 19,
+      "field_name": "DRG.19",
+      "field_description": "Grouper Software Version",
+      "length": "100",
+      "data_type": "ST",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 20,
+      "field_name": "DRG.20",
+      "field_description": "Status Financial Calculation",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0742"
+    },
+    {
+      "position": 21,
+      "field_name": "DRG.21",
+      "field_description": "Relative Discount/Surcharge",
+      "length": "20",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 22,
+      "field_name": "DRG.22",
+      "field_description": "Basic Charge",
+      "length": "20",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 23,
+      "field_name": "DRG.23",
+      "field_description": "Total Charge",
+      "length": "20",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 24,
+      "field_name": "DRG.24",
+      "field_description": "Discount/Surcharge",
+      "length": "20",
+      "data_type": "MO",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 25,
+      "field_name": "DRG.25",
+      "field_description": "Calculated Days",
+      "length": "5",
+      "data_type": "NM",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": ""
+    },
+    {
+      "position": 26,
+      "field_name": "DRG.26",
+      "field_description": "Status Gender",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0749"
+    },
+    {
+      "position": 27,
+      "field_name": "DRG.27",
+      "field_description": "Status Age",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0749"
+    },
+    {
+      "position": 28,
+      "field_name": "DRG.28",
+      "field_description": "Status Length of Stay",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0749"
+    },
+    {
+      "position": 29,
+      "field_name": "DRG.29",
+      "field_description": "Status Same Day Flag",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0749"
+    },
+    {
+      "position": 30,
+      "field_name": "DRG.30",
+      "field_description": "Status Separation Mode",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0749"
+    },
+    {
+      "position": 31,
+      "field_name": "DRG.31",
+      "field_description": "Status Weight at Birth",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0755"
+    },
+    {
+      "position": 32,
+      "field_name": "DRG.32",
+      "field_description": "Status Respiration Minutes",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0757"
+    },
+    {
+      "position": 33,
+      "field_name": "DRG.33",
+      "field_description": "Status Admission",
+      "length": "20",
+      "data_type": "IS",
+      "optionality": "O",
+      "repeatability": "-",
+      "table": "0759"
+    }
+  ],
+  "field_count": 33
+}

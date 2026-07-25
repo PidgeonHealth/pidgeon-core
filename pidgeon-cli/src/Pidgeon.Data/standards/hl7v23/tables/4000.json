@@ -1,0 +1,29 @@
+{
+  "code": "4000",
+  "name": "Name/address representation",
+  "version": "HL7 v2.3",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined by the HL7 organization. Most tables in this category are related to the standard and its message structures.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "A",
+      "description": "Alphabetic (i.e., Default or some single-byte)",
+      "comment": "",
+      "sort_order": 1
+    },
+    {
+      "value": "I",
+      "description": "Ideographic (i.e., Kanji)",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "P",
+      "description": "Phonetic (i.e., ASCII, Katakana, Hiragana, etc.)",
+      "comment": "",
+      "sort_order": 3
+    }
+  ],
+  "value_count": 3
+}

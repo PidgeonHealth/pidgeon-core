@@ -1,0 +1,41 @@
+{
+  "code": "0061",
+  "name": "Check digit scheme",
+  "version": "HL7 v2.6",
+  "chapter": "Control/Query",
+  "description": "HL7 Standard Tables - Tables defined in the HL7 standard.",
+  "type": "HL7",
+  "values": [
+    {
+      "value": "BCV",
+      "description": "Bank Card Validation Number",
+      "comment": "A non-embossed number included on bank cards and used to validate authenticity of the card and the person presenting the card",
+      "sort_order": 1
+    },
+    {
+      "value": "ISO",
+      "description": "ISO 7064: 1983",
+      "comment": "",
+      "sort_order": 2
+    },
+    {
+      "value": "M10",
+      "description": "Mod 10 algorithm",
+      "comment": "",
+      "sort_order": 3
+    },
+    {
+      "value": "M11",
+      "description": "Mod 11 algorithm",
+      "comment": "",
+      "sort_order": 4
+    },
+    {
+      "value": "NPI",
+      "description": "Check digit algorithm in the US National Provider Identifier",
+      "comment": "",
+      "sort_order": 5
+    }
+  ],
+  "value_count": 5
+}
